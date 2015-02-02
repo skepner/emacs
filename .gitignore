@@ -3,3 +3,9 @@
 
 # Packaging
 .cask
+
+auto-save-list
+server
+recentf
+elpa
+*~
