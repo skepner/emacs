@@ -1,5 +1,5 @@
-(define-key js-mode-map "\M-=" 'eu-js-func-delimiter)
-(modify-syntax-entry ?_ "w" js-mode-syntax-table)
+;(define-key js-mode-map "\M-=" 'eu-js-func-delimiter)
+;(modify-syntax-entry ?_ "w" js-mode-syntax-table)
 ;(define-key js-mode-map "\C-m" 'newline-and-indent)
 ;(define-key js-mode-map "\C-j" 'newline)
 ;(setq interpreter-mode-alist (cons '("node" . js-mode) interpreter-mode-alist))
