@@ -63,6 +63,7 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Anonymous_Pro"))))
  '(font-lock-comment-face ((t (:foreground "green4" :slant italic))))
- '(font-lock-function-name-face ((t (:foreground "dark red"))))
+ '(font-lock-function-name-face ((t (:foreground "dark red" :weight bold))))
+ '(font-lock-keyword-face ((t (:foreground "dark green" :weight bold))))
  '(font-lock-string-face ((t (:foreground "dark blue"))))
  '(pulse-highlight-start-face ((t (:background "#FF8000")))))
