@@ -59,6 +59,7 @@
     ((and (not (eq buffer-file-name nil)) (string-match "\\.acd1\\(\\.bz2\\)?$" buffer-file-name) 'multi) 119 ".acd1 (%d)")
     ((and (not (eq buffer-file-name nil)) (string-match "\\.pydata\\(\\.bz2\\)?$" buffer-file-name) 'multi) 119 ".pydata (%d)")
 
+    ((and (eq major-mode 'elm-mode) 'multi) 124 "Elm (%d)")
     ((and (eq major-mode 'markdown-mode) 'multi) 125 "Markdown (%d)")
 
     ((and (and (or (eq major-mode 'cperl-mode) (eq major-mode 'perl-mode))) 'multi) 151 "Perl (%d)")
@@ -88,7 +89,7 @@
     ((and (eq major-mode 'tar-mode) 'multi) 250 "Tar (%d)")
 
     ((and (eq major-mode 'text-mode) 'multi) 5010 "Text (%d)")
-    ((and buffer-file-name (string-match "README" buffer-file-name) 'multi) 40 "README (%d)")
+    ((and buffer-file-name (string-match "README" buffer-file-name) 'multi) 5020 "README (%d)")
     ((and (eq major-mode 'Info-mode) 'multi) 5030 "Info (%d)")
     ((and (eq major-mode 'Man-mode) 'multi) 5030 "Manuals (%d)")
     ((and buffer-file-name (buffer-modified-p) 'multi) 10030 "Changed files (%d)")
