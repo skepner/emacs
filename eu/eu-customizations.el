@@ -23,7 +23,9 @@
  '(find-file-visit-truename t)
  '(global-whitespace-mode t)
  '(helm-buffer-max-length 50)
- '(hippie-expand-try-functions-list (quote (try-expand-dabbrev try-complete-file-name try-expand-all-abbrevs try-expand-list try-complete-file-name-partially try-expand-dabbrev-all-buffers try-expand-dabbrev-from-kill try-complete-lisp-symbol-partially try-complete-lisp-symbol try-expand-line)))
+ '(hippie-expand-try-functions-list
+   (quote
+    (try-expand-dabbrev try-complete-file-name try-expand-all-abbrevs try-expand-list try-complete-file-name-partially try-expand-dabbrev-all-buffers try-expand-dabbrev-from-kill try-complete-lisp-symbol-partially try-complete-lisp-symbol try-expand-line)))
  '(hippie-expand-verbose nil)
  '(history-length 1000)
  '(imenu-sort-function (quote imenu--sort-by-name))
@@ -41,6 +43,7 @@
  '(ns-command-modifier (quote meta))
  '(ns-pop-up-frames nil)
  '(recentf-mode t)
+ '(safe-local-variable-values (quote ((js-indent-level . 2))))
  '(server-mode t)
  '(shell-file-name "~/bin/ec")
  '(show-paren-mode t)
