@@ -44,6 +44,8 @@
  '(show-paren-mode t)
  '(show-paren-style (quote mixed))
  '(size-indication-mode t)
+ '(smartparens-global-mode t)
+ '(smartparens-global-strict-mode t)
  '(split-height-threshold 101)
  '(split-width-threshold 360)
  '(tool-bar-mode nil)
