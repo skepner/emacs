@@ -174,7 +174,7 @@
   (interactive)
   (let ((f (and (buffer-file-name) (file-truename (buffer-file-name)))))
     (if (and f (> (length f) 7) (string= (substring f 0 7) "/Users/"))
-        (turn-on-real-auto-save))))
+        (real-auto-save-mode))))
 
 (add-hook 'emacs-lisp-mode-hook 'eu-turn-on-real-auto-save)
 (add-hook 'python-mode-hook 'eu-turn-on-real-auto-save)
