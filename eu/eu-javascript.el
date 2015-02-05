@@ -1,4 +1,3 @@
-;(define-key js-mode-map "\M-=" 'eu-js-func-delimiter)
 ;(modify-syntax-entry ?_ "w" js-mode-syntax-table)
 ;(define-key js-mode-map "\C-m" 'newline-and-indent)
 ;(define-key js-mode-map "\C-j" 'newline)
@@ -12,7 +11,6 @@
 (defun eu-js2-mode-setup ()
   (interactive)
   (modify-syntax-entry ?_ "w" js2-mode-syntax-table)
-  (define-key js2-mode-map "\M-=" 'eu-js-func-delimiter)
   (define-key js2-mode-map [C-right] 'forward-word)
   (define-key js2-mode-map [M-right] 'forward-sexp)
   (define-key js2-mode-map [C-left] 'backward-word)
@@ -27,21 +25,10 @@
   (electric-indent-mode t)
 )
 
-(defun eu-js-func-delimiter ()
-  (interactive)
-  (beginning-of-line)
-  (insert "// ======================================================================\n"))
-
 ;----------------------------------------------------------------------
 ; Coffeescript
 ;----------------------------------------------------------------------
 
-(defun eu-coffee-func-delimiter ()
-  (interactive)
-  (beginning-of-line)
-  (insert "# ==============================================================================\n"))
-
-(define-key coffee-mode-map [?\M-=] 'eu-coffee-func-delimiter)
 (define-key coffee-mode-map [?\A-\M-r] nil)
 
 ;; (require 'flymake-coffee)
@@ -82,13 +69,6 @@
 
 (define-key css-mode-map "\C-m" 'newline-and-indent)
 (define-key css-mode-map "\C-j" 'newline)
-
-(defun eu-css-func-delimiter ()
-  (interactive)
-  (beginning-of-line)
-  (insert "/* ====================================================================== */\n"))
-
-(define-key css-mode-map "\M-=" 'eu-css-func-delimiter)
 
 ; (require 'flymake-less)
 (add-hook 'less-css-mode-hook 'flymake-less-load)

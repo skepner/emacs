@@ -66,11 +66,6 @@
 
   (define-key c-mode-base-map [(alt ?`)] 'insert-include)
   (define-key c-mode-base-map [(alt meta ?`)] 'insert-local-include)
-  (define-key c-mode-base-map "\M-=" 'insert-c-func-delimiter)
-  (define-key c++-mode-map "\M-=" 'insert-c++-func-delimiter)
-  (define-key c++-mode-map [f24] 'insert-c++-func-delimiter)
-  (define-key java-mode-map "\M-=" 'insert-c++-func-delimiter)
-  (define-key java-mode-map [f24] 'insert-c++-func-delimiter)
   (define-key c-mode-base-map "\C-cC" 'make-cc-file)
   (define-key c-mode-base-map "\C-cI" 'make-icc-file)
   (define-key c++-mode-map "\C-cc" 'make-class-decl)
@@ -185,20 +180,6 @@
 
 ;----------------------------------------------------------------------
 
-(defun insert-c++-func-delimiter ()
-  ""
-  (interactive)
-  (insert "//======================================================================\n")
-)
-
-(defun insert-c-func-delimiter ()
-  ""
-  (interactive)
-  (insert "/*======================================================================*/\n")
-)
-
-;----------------------------------------------------------------------
-
 (defun c++-make-function-implementation (count)
   (interactive "p")
   (while (> count 0)
@@ -221,11 +202,11 @@
         (forward-word -1))
       (kill-new (buffer-substring (point) e))	; save function name
       (end-of-line)
-      (delete-trailing-spaces)
+      ;(delete-trailing-spaces)
       (insert "\n{\n\n} // ")
       (yank)
       (insert "\n\n")
-      (insert-c++-func-delimiter)
+      (eu-func-delimiter)
       (forward-line)
       (setq count (1- count)))))
 
@@ -248,11 +229,11 @@
       (forward-word -1)
       (kill-new (buffer-substring (point) e))	; save function name
       (end-of-line)
-      (delete-trailing-spaces)
+      ;(delete-trailing-spaces)
       (insert "\n{\n\n} /* ")
       (yank)
       (insert " */\n\n")
-      (insert-c-func-delimiter)
+      (eu-func-delimiter)
       (forward-line)
       (setq count (1- count)))))
 
@@ -313,11 +294,11 @@
 ;;     (next-line 2)
 ;;     (insert "#ifndef " make-ifndef-name "\n#define " make-ifndef-name "\n\n")
 ;;     (insert "#ifdef __GNUG__\n#pragma interface\n#endif\n\n")
-;;     (insert-c++-func-delimiter)
+;;     (eu-func-delimiter)
 ;;     (insert "\n\n")
-;; ;    (insert-c++-func-delimiter)
+;; ;    (eu-func-delimiter)
 ;; ;    (insert "\n#if INLINES_INSIDE_HH\n#include \"" (downcase make-hh-name) ".icc\"\n#endif\n\n")
-;; ;    (insert-c++-func-delimiter)
+;; ;    (eu-func-delimiter)
 ;;     (insert "\n#endif // " make-ifndef-name "\n\n")
 ;;     (my-c++-insert-header)
 ;;     (next-line -6)))

@@ -15,24 +15,11 @@
   (save-some-buffers t)
   (eu-compile-autoclose (concat "latex-view " buffer-file-name)))
 
-(defun eu-latex-delimiter ()
-  (interactive)
-  (beginning-of-line)
-  (insert "% ----------------------------------------------------------------------\n"))
-
 (define-key tex-mode-map [f9] 'eu-latex-view)
-(define-key tex-mode-map "\M-=" 'eu-latex-delimiter)
 
 ;----------------------------------------------------------------------
 ; Haskell
 ;----------------------------------------------------------------------
-
-(defun eu-haskell-func-delimiter ()
-  (interactive)
-  (beginning-of-line)
-  (insert "----------------------------------------------------------------------\n"))
-
-(define-key haskell-mode-map "\M-=" 'eu-haskell-func-delimiter)
 
 (defun my-haskell-mode-hook ()
   (local-set-key "\C-cl" 'hs-lint)
@@ -58,13 +45,6 @@
 
 (add-hook 'python-mode-hook 'eu-python-mode-setup)
 
-(defun eu-python-func-delimiter ()
-  (interactive)
-  (beginning-of-line)
-  (insert "# ======================================================================\n"))
-
-(define-key python-mode-map "\M-=" 'eu-python-func-delimiter)
-
 (add-hook 'python-mode-hook 'abbrev-mode)
 
 (define-key python-mode-map [?\A-\M-t] '(lambda () (interactive) (insert "True")))
@@ -85,6 +65,34 @@
       (py-indent-line-outmost))))
 
 (define-key python-mode-map "\t" 'eu-python-indent-line)
+
+
+;----------------------------------------------------------------------
+; func delimiter
+;----------------------------------------------------------------------
+
+(defun eu-func-delimiter ()
+  (interactive)
+  (beginning-of-line)
+  (let ((start (point)))
+    (insert "----------------------------------------------------------------------\n")
+    (comment-region start (point))))
+
+(defun eu-func-delimiter-set-hook ()
+  (define-key (current-local-map) "\M-=" 'eu-func-delimiter))
+
+(add-hook 'emacs-lisp-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'python-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'haskell-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'latex-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'c++-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'c-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'java-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'js-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'js2-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'coffee-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'css-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'makefile-mode-hook 'eu-func-delimiter-set-hook)
 
 ;----------------------------------------------------------------------
 
