@@ -42,6 +42,7 @@
  '(ns-alternate-modifier (quote alt))
  '(ns-command-modifier (quote meta))
  '(ns-pop-up-frames nil)
+ '(real-auto-save-interval 30)
  '(recentf-mode t)
  '(safe-local-variable-values (quote ((js-indent-level . 2))))
  '(server-mode t)
