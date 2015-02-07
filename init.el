@@ -20,6 +20,7 @@
                       python-mode
                       real-auto-save
                       smartparens
+                      typescript
                       yasnippet
                       )
   "A list of packages to ensure are installed at launch.")
@@ -51,6 +52,7 @@
 (require 'python-mode)
 (require 'real-auto-save)
 (require 'tex-mode)
+(require 'typescript)
 (require 'yasnippet)
 
 ;; ----------------------------------------------------------------------
