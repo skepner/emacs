@@ -66,6 +66,13 @@
 
 (define-key python-mode-map "\t" 'eu-python-indent-line)
 
+;; ----------------------------------------------------------------------
+;  Typescript
+;; ----------------------------------------------------------------------
+
+(add-to-list 'compilation-error-regexp-alist-alist
+             '(typescript "^\\([A-Za-z0-9\\.][^(]+\\)(\\([0-9]+\\),\\([0-9]+\\)) *: +\\(error\\|fatal error\\|warning\\) [A-Z]+[0-9]+:.*" 1 2 3))
+(add-to-list 'compilation-error-regexp-alist 'typescript)
 
 ;----------------------------------------------------------------------
 ; func delimiter

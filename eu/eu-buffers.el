@@ -50,6 +50,7 @@
 
     ((and (eq major-mode 'ess-mode) 'multi) 114 "R (%d)")
     ((and (or (eq major-mode 'coffee-mode)) 'multi) 115 "CoffeScript (%d)")
+    ((and (or (eq major-mode 'typescript-mode)) 'multi) 115 "Typescript (%d)")
     ((and (or (eq major-mode 'less-css-mode)) 'multi) 115 "LESS (%d)")
     ((and (or (eq major-mode 'javascript-mode) (eq major-mode 'js-mode) (eq major-mode 'js2-mode)) 'multi) 116 "Javascript (%d)")
     ((and (not (eq buffer-file-name nil)) (string-match "\\.json$" buffer-file-name) 'multi) 116 "JSON (%d)")
