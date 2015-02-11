@@ -1,0 +1,4 @@
+# name: module_logger
+# key: l:
+# --
+module_logger.${3:debug}('$1 {}'.format($2))

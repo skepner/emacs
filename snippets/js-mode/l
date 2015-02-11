@@ -1,4 +1,4 @@
 # -*- mode: snippet -*-
-# name: log
+# name: l:
 # --
 console.${2:log}(${0:this.constructor.NAME}, '$1');

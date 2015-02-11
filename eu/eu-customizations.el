@@ -63,7 +63,10 @@
    (quote
     (face tabs trailing space-before-tab indentation empty space-after-tab tab-mark)))
  '(x-stretch-cursor t)
- '(yas-global-mode t nil (yasnippet)))
+ '(yas-global-mode t nil (yasnippet))
+ '(yas-snippet-dirs
+   (quote
+    ("~/.emacs.d/snippets" "/Users/eu/.emacs.d/elpa/haskell-mode-20150124.1059/snippets")) nil (yasnippet)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
