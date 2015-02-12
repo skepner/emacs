@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: l:
+# --
+console.${2:log}('$1');
