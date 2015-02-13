@@ -88,18 +88,19 @@
 (defun eu-func-delimiter-set-hook ()
   (define-key (current-local-map) "\M-=" 'eu-func-delimiter))
 
-(add-hook 'emacs-lisp-mode-hook 'eu-func-delimiter-set-hook)
-(add-hook 'python-mode-hook 'eu-func-delimiter-set-hook)
-(add-hook 'haskell-mode-hook 'eu-func-delimiter-set-hook)
-(add-hook 'latex-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'c++-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'c-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'coffee-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'css-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'emacs-lisp-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'haskell-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'java-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'js-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'js2-mode-hook 'eu-func-delimiter-set-hook)
-(add-hook 'coffee-mode-hook 'eu-func-delimiter-set-hook)
-(add-hook 'css-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'latex-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'makefile-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'python-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'typescript-mode-hook 'eu-func-delimiter-set-hook)
 
 ;----------------------------------------------------------------------
 
