@@ -139,6 +139,14 @@
 
 ;; ----------------------------------------------------------------------
 
+(defun eu-compile-push-history (command)
+  (interactive)
+  (compile command nil)
+  (push command compile-history)
+  (delete-dups compile-history))
+
+;; ----------------------------------------------------------------------
+
 (provide 'eu-emacs)
 
 ;;; Local Variables:

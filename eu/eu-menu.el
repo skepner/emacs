@@ -9,19 +9,19 @@
        (eu-add-submenu
         '("Eugene"
            ("c2"
-            ["c2 make [app]" (compile "cd ~/ac/acmacs && c2 make -j$(nproc)" nil) t]
-            ["c2 make acmacs" (compile "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs" nil) t]
-            ["c2 make clean all" (compile "cd ~/ac/acmacs && c2 make clean all -j$(nproc)" nil) t]
-            ["c2 make clean" (compile "cd ~/ac/acmacs && c2 make clean" nil) t]
-            ["c2 make test" (compile "cd ~/ac/acmacs && c2 make test" nil) t]
-            ["c2 make final" (compile "cd ~/ac/acmacs && c2 make acmacs-web-final -j$(nproc)" nil) t]
-            ["c2 make dmg" (compile "cd ~/ac/acmacs && c2 make acmacs-web-image -j$(nproc)" nil) t]
+            ["c2 make [app]" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc)" nil) t]
+            ["c2 make acmacs" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs" nil) t]
+            ["c2 make clean all" (eu-compile-push-history "cd ~/ac/acmacs && c2 make clean all -j$(nproc)" nil) t]
+            ["c2 make clean" (eu-compile-push-history "cd ~/ac/acmacs && c2 make clean" nil) t]
+            ["c2 make test" (eu-compile-push-history "cd ~/ac/acmacs && c2 make test" nil) t]
+            ["c2 make final" (eu-compile-push-history "cd ~/ac/acmacs && c2 make acmacs-web-final -j$(nproc)" nil) t]
+            ["c2 make dmg" (eu-compile-push-history "cd ~/ac/acmacs && c2 make acmacs-web-image -j$(nproc)" nil) t]
             "-"
             ["c2 git" (magit-status "~/ac/acmacs/") t]
             )
 
            ;("aw albertine"
-            ["list-whocc" (compile "aw -h albertine aw-chain.py list-whocc") t]
+            ["list-whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
            ; )
             ["dtra" (find-file "~/Shared/AC/Projects/Nicola-DTRA/README" t) t]
 
