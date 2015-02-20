@@ -177,15 +177,15 @@
     (if (and f (> (length f) 7) (string= (substring f 0 7) "/Users/"))
         (real-auto-save-mode))))
 
-(add-hook 'emacs-lisp-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'python-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'c++-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'c-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'sh-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'js-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'js2-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'css-mode-hook 'eu-turn-on-real-auto-save)
-(add-hook 'text-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'emacs-lisp-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'python-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'c++-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'c-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'sh-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'js-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'js2-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'css-mode-hook 'eu-turn-on-real-auto-save)
+;(add-hook 'text-mode-hook 'eu-turn-on-real-auto-save)
 
 ;----------------------------------------------------------------------
 ; Resize window
