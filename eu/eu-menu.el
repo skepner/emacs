@@ -40,7 +40,15 @@
 
            "-"
            ("Buch"
-            ["MTel" (find-file "~/Shared/buch/makondo/mtel/mobile.txt" t) t]
+            ("AC"
+             ["aw tunnel" (find-file "~/Shared/buch/ac/acmacs-web-tunnel-for-cdc.txt" t) t]
+             ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]
+             )
+            ("Hund"
+             ["beneful" (find-file "~/Shared/buch/hund/korm-beneful.txt" t) t])
+            ("Makondo"
+             ["MTel" (find-file "~/Shared/buch/makondo/mtel/mobile.txt" t) t]
+             )
             )
            "-"
            ("ac.org"
