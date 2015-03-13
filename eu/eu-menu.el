@@ -48,6 +48,7 @@
              ["beneful" (find-file "~/Shared/buch/hund/korm-beneful.txt" t) t])
             ("Makondo"
              ["MTel" (find-file "~/Shared/buch/makondo/mtel/mobile.txt" t) t]
+             ["Drulya" (find-file "~/Shared/buch/makondo/drulya.txt" t) t]
              )
             )
            "-"
