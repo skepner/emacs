@@ -8,4 +8,8 @@ auto-save-list
 server
 recentf
 elpa
+
+.DS_Store
 *~
+*#
+.#*
