@@ -57,6 +57,8 @@
  '(tool-bar-mode nil)
  '(transient-mark-mode nil)
  '(truncate-lines t)
+ '(typescript-enabled-frameworks (quote (typescript)))
+ '(typescript-expr-indent-offset 2)
  '(vc-make-backup-files t)
  '(whitespace-action (quote (auto-cleanup)))
  '(whitespace-style

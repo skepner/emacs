@@ -43,6 +43,7 @@
 (require 'haskell-mode)
 (require 'imenu)
 (require 'js2-mode)
+(require 'json)
 (require 'less-css-mode)
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (require 'minibuffer-complete-cycle)

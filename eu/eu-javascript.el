@@ -46,20 +46,32 @@
   (while (re-search-forward "↵" nil t)
     (replace-match "\n" nil nil)))
 
+;; ----------------------------------------------------------------------
+;  Typescript
+;; ----------------------------------------------------------------------
+
+(add-to-list 'compilation-error-regexp-alist-alist
+             '(typescript "^\\([A-Za-z0-9\\.][^(]+\\)(\\([0-9]+\\),\\([0-9]+\\)) *: +\\(error\\|fatal error\\|\\(warning\\)\\) [A-Z]+[0-9]+:.*" 1 2 3 (5 . nil)))
+(add-to-list 'compilation-error-regexp-alist 'typescript)
+
+(modify-syntax-entry ?_ "w" typescript-mode-syntax-table)
+
 ;----------------------------------------------------------------------
 ; JSON
 ;----------------------------------------------------------------------
 
-; http://irreal.org/blog/?p=354
-(defun json-pretty-print ()
-  (interactive)
-  (let ((m (mark)) (e (point)))
-    (if (not m)
-        (progn
-          (setq m (point-min))
-          (setq e (point-max))))
-    (save-excursion
-      (shell-command-on-region m e "python -m json.tool" (buffer-name) t))))
+; see built-in json.el
+
+;; ; http://irreal.org/blog/?p=354
+;; (defun json-pretty-print ()
+;;   (interactive)
+;;   (let ((m (mark)) (e (point)))
+;;     (if (not m)
+;;         (progn
+;;           (setq m (point-min))
+;;           (setq e (point-max))))
+;;     (save-excursion
+;;       (shell-command-on-region m e "python -m json.tool" (buffer-name) t))))
 
 ;----------------------------------------------------------------------
 ; CSS
