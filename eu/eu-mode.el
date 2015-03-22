@@ -13,7 +13,7 @@
 (defun eu-latex-view ()
   (interactive)
   (save-some-buffers t)
-  (eu-compile-autoclose (concat "latex-view " buffer-file-name)))
+  (eu-compile-autoclose (concat "latex-view '" buffer-file-name "'")))
 
 (define-key tex-mode-map [f9] 'eu-latex-view)
 

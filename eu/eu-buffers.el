@@ -89,6 +89,7 @@
 
     ((and (eq major-mode 'tar-mode) 'multi) 250 "Tar (%d)")
 
+    ((and (eq major-mode 'latex-mode) 'multi) 5010 "LaTeX (%d)")
     ((and (eq major-mode 'text-mode) 'multi) 5010 "Text (%d)")
     ((and buffer-file-name (string-match "README" buffer-file-name) 'multi) 5020 "README (%d)")
     ((and (eq major-mode 'Info-mode) 'multi) 5030 "Info (%d)")
