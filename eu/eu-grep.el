@@ -11,6 +11,7 @@
   "The command to be run by the gr function.")
 
 (defvar gr-template "gr <R> <D>")
+(defvar gr-template-c "gr -c <R> <D>")
 
 (defun gr-build-command ()
   (concat gr-command " "))
@@ -45,7 +46,7 @@
 
 ;----------------------------------------------------------------------
 
-(defun gr (regexp &optional files dir confirm)
+(defun gr (regexp &optional files dir confirm case-insensitive)
   (interactive
    (let* ((regexp (grep-read-regexp))
           (files nil) ;(grep-read-files regexp))
@@ -57,11 +58,12 @@
   (when (and (stringp regexp) (> (length regexp) 0))
     ;; (unless (and dir (file-directory-p dir) (file-readable-p dir))
     ;;   (setq dir default-directory))
-    (let ((command regexp))
+    (let ((command regexp)
+          (template (if case-insensitive gr-template-c gr-template)))
       ;(setq dir (file-name-as-directory (expand-file-name dir)))
       (setq dir (expand-file-name dir))
       (setq command (grep-expand-template
-                       gr-template
+                       template
                        regexp
                        files
                        dir ;(when dir (concat "'" dir "'"))

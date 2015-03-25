@@ -50,7 +50,7 @@
  '(show-paren-mode t)
  '(show-paren-style (quote mixed))
  '(size-indication-mode t)
- '(smartparens-global-mode t)
+ '(smartparens-global-mode nil)
  '(smartparens-global-strict-mode nil)
  '(split-height-threshold 101)
  '(split-width-threshold 360)
