@@ -20,12 +20,14 @@
             ["c2 git" (magit-status "~/ac/acmacs/") t]
             )
 
-           ;("aw albertine"
-            ["list-whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
-           ; )
+           ["list-whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
+           ("vaccines"
+            ["edit information-list-vaccines" (find-file "~/ac/acmacs/acmacs-web/data/information-list-vaccines.pydata.bz2" t) t]
+            ["update on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines") t]
+            )
             ["dtra" (find-file "~/Shared/AC/Projects/Nicola-DTRA/README" t) t]
 
-           ("acmacs-web-c2"
+           ("acmacs-web-c2 log"
             ["acmacs-web.debug.log" (eu-tail-file "/Users/eu/AcmacsWeb/log/acmacs-web.debug.log") t]
             ["acmacs-web.error.log" (eu-tail-file "/Users/eu/AcmacsWeb/log/acmacs-web.error.log") t]
             ["cherokee.access" (eu-tail-file "/Users/eu/AcmacsWeb/log/cherokee.access") t]

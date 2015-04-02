@@ -24,7 +24,8 @@
 (defun my-haskell-mode-hook ()
   (local-set-key "\C-cl" 'hs-lint)
   (capitalized-words-mode -1)
-  (turn-on-haskell-indentation))
+  (turn-on-haskell-indentation)
+  (superword-mode +1))
 (add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
 
 ;----------------------------------------------------------------------
