@@ -45,12 +45,19 @@
             ("AC"
              ["aw tunnel" (find-file "~/Shared/buch/ac/acmacs-web-tunnel-for-cdc.txt" t) t]
              ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]
+             ["haskell" (find-file "~/Shared/buch/ac/haskell.txt" t) t]
              )
             ("Hund"
              ["beneful" (find-file "~/Shared/buch/hund/korm-beneful.txt" t) t])
             ("Makondo"
              ["MTel" (find-file "~/Shared/buch/makondo/mtel/mobile.txt" t) t]
              ["Drulya" (find-file "~/Shared/buch/makondo/drulya.txt" t) t]
+             )
+            ("Ubuntu"
+             ["adduser" (find-file "~/Shared/buch/ubuntu/adduser.md" t) t]
+             ["backup-users" (find-file "~/Shared/buch/ubuntu/backup-users.md" t) t]
+             ["haskell" (find-file "~/Shared/buch/ubuntu/haskell.txt" t) t]
+             ["packages" (find-file "~/Shared/buch/ubuntu/packages.md" t) t]
              )
             )
            "-"

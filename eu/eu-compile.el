@@ -37,9 +37,12 @@
 
 (defun eu-compile-cd-pwd ()
   (interactive)
-  (let ((dir (file-name-directory (buffer-file-name)))
-        (basename (file-name-nondirectory (buffer-file-name))))
-    (setq compile-command (concat "cd " dir " && c2 ./" basename))
+  (let* ((dir (file-name-directory (buffer-file-name)))
+         (basename (file-name-nondirectory (buffer-file-name)))
+         (cmd (if (string-match "\\.cabal$" basename)
+                  "cabal install -j"
+                (concat "c2 ./" basename))))
+    (setq compile-command (concat "cd " dir " && " cmd))
     (call-interactively 'compile)))
 
 ;----------------------------------------------------------------------
