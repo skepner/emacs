@@ -47,6 +47,8 @@
              ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]
              ["haskell" (find-file "~/Shared/buch/ac/haskell.txt" t) t]
              )
+            ("DE"
+             ["letters" (find-file "~/Shared/buch/de/letters.txt" t) t])
             ("Hund"
              ["beneful" (find-file "~/Shared/buch/hund/korm-beneful.txt" t) t])
             ("Makondo"
