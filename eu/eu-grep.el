@@ -7,14 +7,16 @@
 
 ;----------------------------------------------------------------------
 
-(defvar gr-command "gr"
-  "The command to be run by the gr function.")
+;; (defvar gr-command "grr"
+;;   "The command to be run by the gr function.")
 
-(defvar gr-template "gr <R> <D>")
-(defvar gr-template-c "gr -c <R> <D>")
+(defvar gr-template "grr <R> <D>")
+(defvar gr-template-c "grr -C <R> <D>")
+;; (defvar gr-template "gr <R> <D>")
+;; (defvar gr-template-c "gr -c <R> <D>")
 
-(defun gr-build-command ()
-  (concat gr-command " "))
+;; (defun gr-build-command ()
+;;   (concat gr-command " "))
 
 (define-compilation-mode gr-mode "Gr"
   "Gr compilation mode."
