@@ -38,12 +38,27 @@
 (defun eu-compile-cd-pwd ()
   (interactive)
   (let* ((dir (file-name-directory (buffer-file-name)))
-         (basename (file-name-nondirectory (buffer-file-name)))
-         (cmd (if (string-match "\\.cabal$" basename)
-                  "cabal install -j"
-                (concat "c2 ./" basename))))
-    (setq compile-command (concat "cd " dir " && " cmd))
+         (stop-dir (substitute-in-file-name "$HOME"))
+         (makefile (or (eu-compile-find-makefile "Makefile" dir stop-dir) (eu-compile-find-makefile "\\.cabal$" dir stop-dir) (eu-compile-find-makefile "AA.py" dir stop-dir)))
+         (basename (if makefile (file-name-nondirectory makefile) nil))
+         (dirname (if makefile (file-name-directory makefile) nil))
+         (cmd (cond
+               ((not makefile) (concat "cd " dir " && c2 ./" (file-name-nondirectory (buffer-file-name))))
+               ((string-match "\\.cabal$" basename) (concat "cd " dirname " && cabal install -j"))
+               ((string-match "Makefile" basename) (concat "make -C " dirname " -j -k"))
+               ((string-match "\\.py$" basename) (concat "cd " dirname " && c2 ./" basename))
+               )))
+    (setq compile-command cmd)
     (call-interactively 'compile)))
+
+(defun eu-compile-find-makefile (pattern directory stop-directory)
+  (let ((files (directory-files directory t pattern)))
+    (if files
+        (car files)
+      (let ((up-dir (file-name-directory (directory-file-name directory))))
+        (if (or (equal up-dir stop-directory) (equal up-dir "/"))
+            nil
+          (eu-compile-find-makefile pattern up-dir stop-directory))))))
 
 ;----------------------------------------------------------------------
 
