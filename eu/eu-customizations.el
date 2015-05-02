@@ -13,6 +13,7 @@
  '(autopair-global-mode t)
  '(backup-directory-alist (quote (("." . "~/.emacs.d/backup"))))
  '(blink-cursor-mode nil)
+ '(coffee-tab-width 2)
  '(cursor-type (quote box))
  '(desktop-globals-to-save
    (quote

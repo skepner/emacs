@@ -10,8 +10,8 @@
 ;; (defvar gr-command "grr"
 ;;   "The command to be run by the gr function.")
 
-(defvar gr-template "grr <R> <D>")
-(defvar gr-template-c "grr -C <R> <D>")
+(defvar gr-template "/Users/eu/Shared/AC/Projects/gr/dist/gr <R> <D>")
+(defvar gr-template-c "/Users/eu/Shared/AC/Projects/gr/dist/gr -C <R> <D>")
 ;; (defvar gr-template "gr <R> <D>")
 ;; (defvar gr-template-c "gr -c <R> <D>")
 
