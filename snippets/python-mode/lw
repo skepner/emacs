@@ -1,0 +1,4 @@
+# name: module_logger.warning
+# key: lw
+# --
+module_logger.${3:warning}('$1 {}'.format($2))
