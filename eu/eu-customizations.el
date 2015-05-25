@@ -30,6 +30,7 @@
     (try-expand-dabbrev try-complete-file-name try-expand-all-abbrevs try-expand-list try-complete-file-name-partially try-expand-dabbrev-all-buffers try-expand-dabbrev-from-kill try-complete-lisp-symbol-partially try-complete-lisp-symbol try-expand-line)))
  '(hippie-expand-verbose nil)
  '(history-length 1000)
+ '(imenu-max-items 50)
  '(imenu-sort-function (quote imenu--sort-by-name))
  '(indent-tabs-mode nil)
  '(kept-new-versions 4)
