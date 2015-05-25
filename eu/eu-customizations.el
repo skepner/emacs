@@ -21,6 +21,7 @@
  '(desktop-save t)
  '(desktop-save-mode t)
  '(enable-local-eval t)
+ '(epg-gpg-program "/usr/local/bin/gpg")
  '(find-file-visit-truename t)
  '(global-whitespace-mode t)
  '(helm-buffer-max-length 50)
