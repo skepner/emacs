@@ -39,11 +39,12 @@
   (interactive)
   (let* ((dir (file-name-directory (buffer-file-name)))
          (stop-dir (substitute-in-file-name "$HOME"))
-         (makefile (or (eu-compile-find-makefile "Makefile" dir stop-dir) (eu-compile-find-makefile "\\.cabal$" dir stop-dir) (eu-compile-find-makefile "AA.py" dir stop-dir)))
+         (makefile (or (eu-compile-find-makefile "Makefile" dir stop-dir) (eu-compile-find-makefile "im$" dir stop-dir) (eu-compile-find-makefile "AA.py" dir stop-dir) (eu-compile-find-makefile "\\.cabal$" dir stop-dir)))
          (basename (if makefile (file-name-nondirectory makefile) nil))
          (dirname (if makefile (file-name-directory makefile) nil))
          (cmd (cond
                ((not makefile) (concat "cd " dir " && c2 ./" (file-name-nondirectory (buffer-file-name))))
+               ((string-match "im" basename) (concat "cd " dirname " && c2 ./im"))
                ((string-match "\\.cabal$" basename) (concat "cd " dirname " && cabal install -j"))
                ((string-match "Makefile" basename) (concat "make -C " dirname " -j -k"))
                ((string-match "\\.py$" basename) (concat "cd " dirname " && c2 ./" basename))
