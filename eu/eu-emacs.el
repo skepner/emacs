@@ -60,7 +60,7 @@
 
 (defun eu-occur-warning ()
   (interactive)
-  (occur "warning"))
+  (occur "warn"))
 
 ;; ----------------------------------------------------------------------
 
