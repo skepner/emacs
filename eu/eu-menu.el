@@ -42,6 +42,7 @@
 
            "-"
            ("Buch"
+            ["todo" (find-file "~/Google Drive/ASS/Eu/todo.txt" t) t]
             ("AC"
              ["aw tunnel" (find-file "~/Shared/buch/ac/acmacs-web-tunnel-for-cdc.txt" t) t]
              ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]

@@ -182,6 +182,7 @@
 ;; (global-set-key [?\A-\M-r] '(lambda nil (interactive) (find-file "/Users/eu/Shared/AC/rd-links.txt")))
 ;; (global-set-key [?\A-\M-i] '(lambda nil (interactive) (find-file "/Users/eu/ac/acmacs-b/b3/bin/who-index-page-generator.py")))
 (global-set-key [?\A-\M-z] '(lambda nil (interactive) (find-file "/Users/eu/Shared/AC/todo.txt")))
+(global-set-key [?\A-\M-x] '(lambda nil (interactive) (find-file "~/Google Drive/ASS/Eu/todo.txt")))
 (global-set-key [?\A-\M-t] '(lambda nil (interactive) (find-file "~/ac/acmacs/docs/template")))
 
 ;; (global-set-key (kbd "A-m") '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-map.js")))
