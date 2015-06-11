@@ -56,6 +56,12 @@
              ["MTel" (find-file "~/Shared/buch/makondo/mtel/mobile.txt" t) t]
              ["Drulya" (find-file "~/Shared/buch/makondo/drulya.txt" t) t]
              )
+            ("OSX"
+             ["condor" (find-file "~/Shared/buch/osx/condor.txt" t) t]
+             ["delete-timemachine-backups" (find-file "~/Shared/buch/osx/delete-timemachine-backups.txt" t) t]
+             ["install-new" (find-file "~/Shared/buch/osx/install-new.md" t) t]
+             ["windows-bootable-usb" (find-file "~/Shared/buch/osx/windows-bootable-usb.txt" t) t]
+             )
             ("Ubuntu"
              ["adduser" (find-file "~/Shared/buch/ubuntu/adduser.md" t) t]
              ["backup-users" (find-file "~/Shared/buch/ubuntu/backup-users.md" t) t]
