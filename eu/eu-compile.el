@@ -38,7 +38,8 @@
 (defun eu-compile-cd-pwd ()
   (interactive)
   (let* ((dir (file-name-directory (buffer-file-name)))
-         (stop-dir (substitute-in-file-name "$HOME"))
+         ;(stop-dir (substitute-in-file-name "$HOME"))
+         (stop-dir dir)
          (makefile (or (eu-compile-find-makefile "Makefile" dir stop-dir) (eu-compile-find-makefile "im$" dir stop-dir) (eu-compile-find-makefile "AA.py" dir stop-dir) (eu-compile-find-makefile "\\.cabal$" dir stop-dir)))
          (basename (if makefile (file-name-nondirectory makefile) nil))
          (dirname (if makefile (file-name-directory makefile) nil))
@@ -57,7 +58,7 @@
     (if files
         (car files)
       (let ((up-dir (file-name-directory (directory-file-name directory))))
-        (if (or (equal up-dir stop-directory) (equal up-dir "/"))
+        (if (or (equal directory stop-directory) (equal up-dir stop-directory) (equal up-dir "/"))
             nil
           (eu-compile-find-makefile pattern up-dir stop-directory))))))
 
