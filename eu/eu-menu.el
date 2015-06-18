@@ -67,6 +67,7 @@
              ["backup-users" (find-file "~/Shared/buch/ubuntu/backup-users.md" t) t]
              ["haskell" (find-file "~/Shared/buch/ubuntu/haskell.txt" t) t]
              ["packages" (find-file "~/Shared/buch/ubuntu/packages.md" t) t]
+             ["R" (find-file "~/Shared/buch/ubuntu/r.md" t) t]
              )
             )
            "-"
