@@ -15,6 +15,12 @@
          (b (get-buffer bname)))
     (if b (switch-to-buffer b) (progn (beep) (message (format "No buffer %s" bname))))))
 
+(defun eu-switch-to-compilation-autoclose-buffer ()
+  (interactive)
+  (let* ((bname "*compilation-autoclose*")
+         (b (get-buffer bname)))
+    (if b (switch-to-buffer b) (progn (beep) (message (format "No buffer %s" bname))))))
+
 ;; (global-unset-key "\C-b")
 ;; (global-set-key "\C-b\C-c" 'eu-switch-to-compilation-buffer)
 ;; (global-set-key "\C-b\C-m" 'eu-switch-to-makefile)
