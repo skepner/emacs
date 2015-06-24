@@ -11,6 +11,7 @@
            ("c2"
             ["c2 make [app]" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc)") t]
             ["c2 make acmacs" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs") t]
+            ["c2 make core-bundle" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs-core-bundle") t]
             ["c2 make clean all" (eu-compile-push-history "cd ~/ac/acmacs && c2 make clean all -j$(nproc)") t]
             ["c2 make clean" (eu-compile-push-history "cd ~/ac/acmacs && c2 make clean") t]
             ["c2 make test" (eu-compile-push-history "cd ~/ac/acmacs && c2 make test") t]
