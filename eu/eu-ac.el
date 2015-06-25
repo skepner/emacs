@@ -29,6 +29,58 @@
 
 ;----------------------------------------------------------------------
 
+(defun who-release ()
+  (interactive)
+  (call-interactively 'mail)
+  (erase-buffer)
+  (insert "From: Eugene Skepner <eu@antigenic-cartography.org>
+To: who-cc-hi-data-updated@antigenic-cartography.org
+Subject: WHO CC HI data
+--text follows this line--
+The new HI table and antigenic map website:
+
+https://acmacs-web.antigenic-cartography.org/whocc/
+
+updated with links to the following HI tables and routine diagnostics for them:
+
+
+
+For removal/addition to this list, email to cc-data@antigenic-cartography.org
+
+----------------------------
+
+New HI table and antigenic map website usage instructions:
+
+Please enter your regular username and password that you use to view
+the old antigenic cartography website. Upon logging in please wait few
+seconds before list of tables appear, it may take longer in the time
+before the teleconferences and vaccine choosing meeting when our
+servers process a lot of maps and could be quite busy.
+
+At the top of the page, right under Acmacs logo, appear four tab
+labels corresponding to the flu subtypes and lineages processed by
+AcmacsWeb: A(H1N1)2009pdm, A(H3N2), B/Vic, B/Yam. Clicking the label
+switches the tab and list of tables shown within the tab.
+
+You may open time series tab by clicking the Time series link at the
+top. Please wait few seconds before maps appear.
+
+You may open routine diagnostics tab for a table by clicking on the
+table name. You may resize each map by dragging the bottom right
+corner of it. Moving mouse close to the top of a map shows toolbar
+with few commands available for that map, e.g. showing/hiding labels,
+reducing/enlarging labels and points, downloading pdf for the map,
+showing/hiding error lines (for individual table maps only),
+downloading table and map data in various formats.
+
+Eugene Skepner
+Antigenic Cartography
+")
+  (goto-char 336)
+  )
+
+;; ----------------------------------------------------------------------
+
 (provide 'eu-ac)
 
 ;;; Local Variables:
