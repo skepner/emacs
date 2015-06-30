@@ -124,6 +124,7 @@
 ; helm
 
 (global-set-key [f4] 'helm-mini)
+(global-set-key [C-f4] 'helm-imenu)
 ;(global-set-key (kbd "C-x C-f") 'helm-find-files)
 ;(global-set-key (kbd "M-x") 'helm-M-x)
 
