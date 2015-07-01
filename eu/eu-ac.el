@@ -81,6 +81,24 @@ Antigenic Cartography
 
 ;; ----------------------------------------------------------------------
 
+(defun who-table (l tt tables)
+  (interactive (list
+                (completing-read "Lab: " '("cdc" "cnic" "niid" "nimr") nil t)
+                (completing-read "Subtype: " '("h1pdm" "h3" "bv" "by") nil t)
+                (read-string "Tables: ")))
+  (let ((lab (upcase l))
+        (subtype (cdr (assoc tt '(("h1pdm" . "A(H1N1pdm)") ("h3" . "A(H3N2)") ("bv" . "B/Vic") ("by" . "B/Yam"))))))
+    (call-interactively 'mail)
+    (erase-buffer)
+    (insert "From: Eugene Skepner <eu@antigenic-cartography.org>\nTo: hacking@antigenic-cartography.org\n")
+    (insert "Subject: " lab " " subtype " " tables "\n")
+    (insert "--text follows this line--\n")
+    (insert lab " " subtype " " tables "\n\nhttps://acmacs-web.antigenic-cartography.org/whocc-full/\n\nEu\n")
+    (goto-char (+ 130 (length lab) (length subtype) (length tables)))
+    ))
+
+;; ----------------------------------------------------------------------
+
 (provide 'eu-ac)
 
 ;;; Local Variables:
