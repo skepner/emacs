@@ -83,11 +83,11 @@ Antigenic Cartography
 
 (defun who-table (l tt tables)
   (interactive (list
-                (completing-read "Lab: " '("cdc" "cnic" "niid" "nimr") nil t)
-                (completing-read "Subtype: " '("h1pdm" "h3" "bv" "by") nil t)
+                (completing-read "Lab: " '("cdc" "cnic" "melb" "niid" "nimr" "CDC" "CNIC" "MELB" "NIID" "NIMR") nil t)
+                (completing-read "Subtype: " '("h1pdm" "h3" "bv" "by" "H1PDM" "H3" "BV" "BY") nil t)
                 (read-string "Tables: ")))
   (let ((lab (upcase l))
-        (subtype (cdr (assoc tt '(("h1pdm" . "A(H1N1pdm)") ("h3" . "A(H3N2)") ("bv" . "B/Vic") ("by" . "B/Yam"))))))
+        (subtype (cdr (assoc (downcase tt) '(("h1pdm" . "A(H1N1pdm)") ("h3" . "A(H3N2)") ("bv" . "B/Vic") ("by" . "B/Yam"))))))
     (call-interactively 'mail)
     (erase-buffer)
     (insert "From: Eugene Skepner <eu@antigenic-cartography.org>\nTo: hacking@antigenic-cartography.org\n")
