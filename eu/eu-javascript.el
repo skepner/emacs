@@ -56,6 +56,14 @@
 
 (modify-syntax-entry ?_ "w" typescript-mode-syntax-table)
 
+;; ; tide (https://github.com/ananthakumaran/tide)
+;; (add-hook 'typescript-mode-hook
+;;           (lambda ()
+;;             (tide-setup)
+;;             (flycheck-mode t)
+;;             (setq flycheck-check-syntax-automatically '(save mode-enabled))
+;;             (eldoc-mode t)))
+
 ;----------------------------------------------------------------------
 ; JSON
 ;----------------------------------------------------------------------
