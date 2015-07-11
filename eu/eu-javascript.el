@@ -64,6 +64,21 @@
 ;;             (setq flycheck-check-syntax-automatically '(save mode-enabled))
 ;;             (eldoc-mode t)))
 
+(defun eu-typescript_to-remove-comment (beg end)
+  (interactive "*r")
+  (if (> beg end) (let (mid) (setq mid beg beg end end mid)))
+  (save-excursion
+    (goto-char beg)
+    (skip-chars-forward " \t\n\r")
+    (beginning-of-line)
+    (while (< (point) end)
+      (progn
+        (insert "//!")
+        (setq end (+ end 3))
+        (forward-line)))))
+
+(define-key typescript-mode-map [?\A-\M-:] 'eu-typescript_to-remove-comment)
+
 ;----------------------------------------------------------------------
 ; JSON
 ;----------------------------------------------------------------------
