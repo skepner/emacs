@@ -50,7 +50,7 @@
             ("AC"
              ["aw tunnel" (find-file "~/Shared/buch/ac/acmacs-web-tunnel-for-cdc.txt" t) t]
              ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]
-             ["sequences-to-phylogenetic-tree" (find-file "~/Shared/buch/ac/sequences-to-phylogenetic-tree.txt" t) t]
+             ["sequences-to-phylogenetic-tree" (find-file "~/Shared/buch/ac/sequences-to-phylogenetic-tree.md" t) t]
              ["haskell" (find-file "~/Shared/buch/ac/haskell.txt" t) t]
              )
             ("DE"
