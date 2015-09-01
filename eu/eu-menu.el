@@ -50,6 +50,7 @@
             ("AC"
              ["aw tunnel" (find-file "~/Shared/buch/ac/acmacs-web-tunnel-for-cdc.txt" t) t]
              ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]
+             ["sequences-to-phylogenetic-tree" (find-file "~/Shared/buch/ac/sequences-to-phylogenetic-tree.txt" t) t]
              ["haskell" (find-file "~/Shared/buch/ac/haskell.txt" t) t]
              )
             ("DE"
@@ -73,6 +74,7 @@
              ["packages" (find-file "~/Shared/buch/ubuntu/packages.md" t) t]
              ["R" (find-file "~/Shared/buch/ubuntu/r.md" t) t]
              )
+            ["makondo-skepner.tex" (find-file "~/Google Drive/ASS/Makondo/invoices/makondo-skepner.tex" t) t]
             )
            "-"
            ("ac.org"
