@@ -80,15 +80,16 @@
            ("ac.org"
             ["i19 apache ssl" (find-file "/scp:i19:/home/eu/Shared/System/Apache2/sites/notebooks.ac.org-ssl.conf") t]
             ["i19 apache" (find-file "/scp:i19:/home/eu/Shared/System/Apache2/sites/notebooks.ac.org.conf") t]
+            ["i19 index page" (find-file "/scp:i19:/syn/WebSites/Protected/eu/index.html") t]
            "-"
            ["i19 acmacs-web-2 debug log" (find-file "/scp:eu@i19:/home/eu/AcmacsWeb/log/acmacs-web.debug.log") t]
            "-"
             ["odette nginx" (find-file "/scp:odette:/home/eu/Shared/System/Nginx/sites-available/default.public") t]
-           "-"
-            ["x12 apache ssl" (find-file "/scp:gilberte:/etc/apache2/sites/0000_any_443_acmacs-web.antigenic-cartography.org.conf") t]
-           "-"
-            ["x12 full index page" (find-file "/scp:gilberte:www/index-full.html") t]
-            ["x12 index page" (find-file "/scp:gilberte:www/index.html") t]
+           ;; "-"
+           ;;  ["x12 apache ssl" (find-file "/scp:gilberte:/etc/apache2/sites/0000_any_443_acmacs-web.antigenic-cartography.org.conf") t]
+           ;; "-"
+           ;;  ["x12 full index page" (find-file "/scp:gilberte:www/index-full.html") t]
+           ;;  ["x12 index page" (find-file "/scp:gilberte:www/index.html") t]
             )
            "-"
            ("Logs"
