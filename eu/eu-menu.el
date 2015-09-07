@@ -81,6 +81,7 @@
             ["i19 apache ssl" (find-file "/scp:i19:/home/eu/Shared/System/Apache2/sites/notebooks.ac.org-ssl.conf") t]
             ["i19 apache" (find-file "/scp:i19:/home/eu/Shared/System/Apache2/sites/notebooks.ac.org.conf") t]
             ["i19 index page" (find-file "/scp:i19:/syn/WebSites/Protected/eu/index.html") t]
+            ["SSM report index" (find-file "/scp:i19:/syn/WebSites/Protected/ssmreport/index.html") t]
            "-"
            ["i19 acmacs-web-2 debug log" (find-file "/scp:eu@i19:/home/eu/AcmacsWeb/log/acmacs-web.debug.log") t]
            "-"
