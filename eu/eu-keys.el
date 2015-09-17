@@ -177,36 +177,6 @@
 (global-set-key [A-f9] 'eu-compile-cd-pwd)
 
 ;----------------------------------------------------------------------
-; eu-ac
-
-(global-set-key [?\C-\A-\M-a] 'eu-antigen-serum)
-
-;; (global-set-key [?\A-\M-r] '(lambda nil (interactive) (find-file "/Users/eu/Shared/AC/rd-links.txt")))
-;; (global-set-key [?\A-\M-i] '(lambda nil (interactive) (find-file "/Users/eu/ac/acmacs-b/b3/bin/who-index-page-generator.py")))
-(global-set-key [?\A-\M-z] '(lambda nil (interactive) (find-file "/Users/eu/Shared/AC/todo.txt")))
-(global-set-key [?\A-\M-x] '(lambda nil (interactive) (find-file "~/Google Drive/ASS/Eu/todo.txt")))
-(global-set-key [?\A-\M-t] '(lambda nil (interactive) (find-file "~/ac/acmacs/docs/template")))
-
-;; (global-set-key (kbd "A-m") '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-map.js")))
-;; (global-set-key [?\A-c] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-chart.js")))
-;; (global-set-key [?\A-h] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-chain.js")))
-;; (global-set-key [?\A-i] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-inspector.js")))
-;; (global-set-key [?\A-e] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-extensions.js")))
-;; (global-set-key [?\A-a] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-application.js")))
-;; (global-set-key [?\A-t] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-text.js")))
-;; (global-set-key [?\A-s] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-chart-selector.js")))
-
-;; (global-set-key [?\A-\M-c] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs/mongodb_collections/chart.py")))
-
-;; (global-set-key [?\A-b] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/static/brazil/brazil.coffee")))
-;; (global-set-key [?\A-n] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/static/brazil/brazil.less")))
-
-;; (global-set-key [?\A-3] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/static/brazil/canvas-3d.coffee")))
-
-;; (global-set-key [?\C-\M-m] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs/core/markings.py")))
-;; (global-set-key [?\A-\M-m] '(lambda nil (interactive) (find-file "~/ac/acmacs/acmacs-web/yui/acmacs/js/cherry-markings.js")))
-
-;----------------------------------------------------------------------
 ; Scroll Other Window by Meta-Arrows
 ;----------------------------------------------------------------------
 
