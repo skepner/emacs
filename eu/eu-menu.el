@@ -22,12 +22,12 @@
             )
 
            ["list-whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
-           ("vaccines"
+           ("SSM"
             ["edit information-list-vaccines" (find-file "~/ac/acmacs/acmacs-web/data/information-list-vaccines.pydata.bz2" t) t]
             ["update on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines") t]
             "-"
-            ["edit information-list-serum-circles" (find-file "~/ac/acmacs/acmacs-web/data/information-list-serum-circles.pydata.bz2" t) t]
-            ["update serum circles on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines ~/ac/acmacs/acmacs-web/data/information-list-serum-circles.pydata.bz2") t]
+            ["serum-circles" (find-file "~/ac/acmacs/acmacs/directories/serum_circles.py" t) t]
+            ;; ["update serum circles on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines ~/ac/acmacs/acmacs-web/data/information-list-serum-circles.pydata.bz2") t]
             )
             ["dtra" (find-file "~/Shared/AC/Projects/Nicola-DTRA/README" t) t]
 
