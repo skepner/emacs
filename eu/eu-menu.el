@@ -65,6 +65,7 @@
              ["condor" (find-file "~/Shared/buch/osx/condor.txt" t) t]
              ["delete-timemachine-backups" (find-file "~/Shared/buch/osx/delete-timemachine-backups.txt" t) t]
              ["install-new" (find-file "~/Shared/buch/osx/install-new.md" t) t]
+             ["netstat-listen-port" (find-file "~/Shared/buch/osx/netstat-listen-port.txt" t) t]
              ["windows-bootable-usb" (find-file "~/Shared/buch/osx/windows-bootable-usb.txt" t) t]
              )
             ("Ubuntu"
