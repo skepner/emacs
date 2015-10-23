@@ -67,9 +67,9 @@
 (require 'eu-grep)
 (require 'eu-javascript)
 (require 'eu-keys)
-(require 'eu-menu)
 (require 'eu-mode)
 (require 'eu-mouse)
+(require 'eu-menu)
 
 ;; ----------------------------------------------------------------------
 

@@ -3,11 +3,13 @@
        ;; get rid of Buffers menu in the menu bar
        ;; (define-key global-map [menu-bar buffer] 'nil)
 
+       (require 'eu-buch)
+
        (defun eu-add-submenu (menu)
          (easy-menu-define nil global-map "Eugene's menu" menu))
 
        (eu-add-submenu
-        '("Eugene"
+        (append '("Eugene"
            ("c2"
             ["c2 make [app]" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc)") t]
             ["c2 make acmacs" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs") t]
@@ -44,40 +46,44 @@
            "-"
            ["mds svn" (svn-status "~/ac/mds/trunk") t]
 
-           "-"
-           ("Buch"
-            ["todo" (find-file "~/Google Drive/ASS/Eu/todo.txt" t) t]
-            ("AC"
-             ["aw tunnel" (find-file "~/Shared/buch/ac/acmacs-web-tunnel-for-cdc.txt" t) t]
-             ["albertine-free-space" (find-file "~/Shared/buch/ac/albertine-free-space.txt" t) t]
-             ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]
-             ["sequences-to-phylogenetic-tree" (find-file "~/Shared/buch/ac/sequences-to-phylogenetic-tree.md" t) t]
-             ["haskell" (find-file "~/Shared/buch/ac/haskell.txt" t) t]
-             )
-            ("DE"
-             ["letters" (find-file "~/Shared/buch/de/letters.txt" t) t])
-            ("Hund"
-             ["beneful" (find-file "~/Shared/buch/hund/korm-beneful.txt" t) t])
-            ("Makondo"
-             ["MTel" (find-file "~/Shared/buch/makondo/mtel/mobile.txt" t) t]
-             ["Drulya" (find-file "~/Shared/buch/makondo/drulya.txt" t) t]
-             )
-            ("OSX"
-             ["condor" (find-file "~/Shared/buch/osx/condor.txt" t) t]
-             ["delete-timemachine-backups" (find-file "~/Shared/buch/osx/delete-timemachine-backups.txt" t) t]
-             ["install-new" (find-file "~/Shared/buch/osx/install-new.md" t) t]
-             ["netstat-listen-port" (find-file "~/Shared/buch/osx/netstat-listen-port.txt" t) t]
-             ["windows-bootable-usb" (find-file "~/Shared/buch/osx/windows-bootable-usb.txt" t) t]
-             )
-            ("Ubuntu"
-             ["adduser" (find-file "~/Shared/buch/ubuntu/adduser.md" t) t]
-             ["backup-users" (find-file "~/Shared/buch/ubuntu/backup-users.md" t) t]
-             ["haskell" (find-file "~/Shared/buch/ubuntu/haskell.txt" t) t]
-             ["packages" (find-file "~/Shared/buch/ubuntu/packages.md" t) t]
-             ["R" (find-file "~/Shared/buch/ubuntu/r.md" t) t]
-             )
-            ["makondo-skepner.tex" (find-file "~/Google Drive/ASS/Makondo/invoices/makondo-skepner.tex" t) t]
-            )
+           "-")
+
+           (list (append '("Buch") (eu-buch-make-menu)))
+
+           '(
+            ;;  ("buch"
+            ;; ["todo" (find-file "~/Google Drive/ASS/Eu/todo.txt" t) t]
+            ;; ("AC"
+            ;;  ["aw tunnel" (find-file "~/Shared/buch/ac/acmacs-web-tunnel-for-cdc.txt" t) t]
+            ;;  ["albertine-free-space" (find-file "~/Shared/buch/ac/albertine-free-space.txt" t) t]
+            ;;  ["beast" (find-file "~/Shared/buch/ac/beast.txt" t) t]
+            ;;  ["sequences-to-phylogenetic-tree" (find-file "~/Shared/buch/ac/sequences-to-phylogenetic-tree.md" t) t]
+            ;;  ["haskell" (find-file "~/Shared/buch/ac/haskell.txt" t) t]
+            ;;  )
+            ;; ("DE"
+            ;;  ["letters" (find-file "~/Shared/buch/de/letters.txt" t) t])
+            ;; ("Hund"
+            ;;  ["beneful" (find-file "~/Shared/buch/hund/korm-beneful.txt" t) t])
+            ;; ("Makondo"
+            ;;  ["MTel" (find-file "~/Shared/buch/makondo/mtel/mobile.txt" t) t]
+            ;;  ["Drulya" (find-file "~/Shared/buch/makondo/drulya.txt" t) t]
+            ;;  )
+            ;; ("OSX"
+            ;;  ["condor" (find-file "~/Shared/buch/osx/condor.txt" t) t]
+            ;;  ["delete-timemachine-backups" (find-file "~/Shared/buch/osx/delete-timemachine-backups.txt" t) t]
+            ;;  ["install-new" (find-file "~/Shared/buch/osx/install-new.md" t) t]
+            ;;  ["netstat-listen-port" (find-file "~/Shared/buch/osx/netstat-listen-port.txt" t) t]
+            ;;  ["windows-bootable-usb" (find-file "~/Shared/buch/osx/windows-bootable-usb.txt" t) t]
+            ;;  )
+            ;; ("Ubuntu"
+            ;;  ["adduser" (find-file "~/Shared/buch/ubuntu/adduser.md" t) t]
+            ;;  ["backup-users" (find-file "~/Shared/buch/ubuntu/backup-users.md" t) t]
+            ;;  ["haskell" (find-file "~/Shared/buch/ubuntu/haskell.txt" t) t]
+            ;;  ["packages" (find-file "~/Shared/buch/ubuntu/packages.md" t) t]
+            ;;  ["R" (find-file "~/Shared/buch/ubuntu/r.md" t) t]
+            ;;  )
+            ;; ["makondo-skepner.tex" (find-file "~/Google Drive/ASS/Makondo/invoices/makondo-skepner.tex" t) t]
+            ;; )
            "-"
            ("ac.org"
             ["i19 apache ssl" (find-file "/scp:i19:/home/eu/Shared/System/Apache2/sites/notebooks.ac.org-ssl.conf") t]
@@ -118,7 +124,7 @@
            ;; ["gnuplot mode" (gnuplot-make-buffer) t]
            ;; ["Ghostview region" (eu-ghostview-region (region-beginning) (region-end)) (< (region-beginning) (region-end))]
            )
-          ))
+          )))
        ))
 
 ;----------------------------------------------------------------------
