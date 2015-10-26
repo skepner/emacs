@@ -15,9 +15,8 @@
          (make-dir-entry (function (lambda (dir)
                                       (append (list (file-name-nondirectory dir)) (funcall process-dir dir)))))
          (process-dir (function (lambda (dir)
-                                  (append (mapcar make-dir-entry (funcall list-subdirs-or-files dir t)) (mapcar make-file-entry (funcall list-subdirs-or-files dir nil))))))
-         (menu (funcall process-dir eu-buch-root)))
-    menu))
+                                  (append (mapcar make-dir-entry (funcall list-subdirs-or-files dir t)) (mapcar make-file-entry (funcall list-subdirs-or-files dir nil)))))))
+    (funcall process-dir eu-buch-root)))
 
 ;; ----------------------------------------------------------------------
 
