@@ -23,8 +23,10 @@
             "-"
             ["c2 git" (magit-status "~/ac/acmacs/") t]
             )
-
-           ["list-whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
+           ("AW"
+            ["list whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
+            ["list users" (eu-compile-push-history "aw -h albertine aw-user.py list") t]
+            )
            ("SSM"
             ["edit information-list-vaccines" (find-file "~/ac/acmacs/acmacs-web/data/information-list-vaccines.pydata.bz2" t) t]
             ["update on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines") t]
