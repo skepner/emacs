@@ -4,7 +4,6 @@
 # Packaging
 .cask
 
-auto-save
 auto-save-list
 server
 recentf
