@@ -11,15 +11,15 @@
        (eu-add-submenu
         (append '("Eugene"
            ("c2"
-            ["c2 make [app]" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc)") t]
-            ["c2 make acmacs" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs") t]
-            ["c2 make core-bundle" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs-core-bundle") t]
-            ["c2 make core-dmg" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -j$(nproc) acmacs-core-dmg") t]
+            ["c2 make [app]" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -w -j$(nproc)") t]
+            ["c2 make acmacs" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -w -j$(nproc) acmacs") t]
+            ["c2 make core-bundle" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -w -j$(nproc) acmacs-core-bundle") t]
+            ["c2 make core-dmg" (eu-compile-push-history "cd ~/ac/acmacs && c2 make -w -j$(nproc) acmacs-core-dmg") t]
             ["c2 make clean all" (eu-compile-push-history "cd ~/ac/acmacs && c2 make clean all -j$(nproc)") t]
             ["c2 make clean" (eu-compile-push-history "cd ~/ac/acmacs && c2 make clean") t]
             ["c2 make test" (eu-compile-push-history "cd ~/ac/acmacs && c2 make test") t]
-            ["c2 make final" (eu-compile-push-history "cd ~/ac/acmacs && c2 make acmacs-web-final -j$(nproc)") t]
-            ["c2 make dmg" (eu-compile-push-history "cd ~/ac/acmacs && c2 make acmacs-web-image -j$(nproc)") t]
+            ["c2 make final" (eu-compile-push-history "cd ~/ac/acmacs && c2 make acmacs-web-final -w -j$(nproc)") t]
+            ["c2 make dmg" (eu-compile-push-history "cd ~/ac/acmacs && c2 make acmacs-web-image -w -j$(nproc)") t]
             "-"
             ["c2 git" (magit-status "~/ac/acmacs/") t]
             )
