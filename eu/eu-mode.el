@@ -50,6 +50,8 @@
 (define-key python-mode-map [?\A-\M-t] '(lambda () (interactive) (insert "True")))
 (define-key python-mode-map [?\A-\M-f] '(lambda () (interactive) (insert "False")))
 (define-key python-mode-map [?\A-\M-n] '(lambda () (interactive) (insert "None")))
+(define-key python-mode-map "\r" 'py-newline-and-indent)
+(define-key python-mode-map [?\C-j] 'newline)
 
 (defun eu-python-indent-line ()
   (interactive)
