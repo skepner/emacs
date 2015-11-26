@@ -24,6 +24,9 @@
  '(epg-gpg-program "/usr/local/bin/gpg")
  '(find-file-visit-truename t)
  '(global-whitespace-mode t)
+ '(gnus-summary-line-format
+   "%U%R%z%I%(%[%4L: %-23,23f%]%) %(%&user-date;  %-15,15f  %B%s%)
+")
  '(helm-buffer-max-length 50)
  '(hippie-expand-try-functions-list
    (quote
@@ -37,6 +40,7 @@
  '(kept-old-versions 4)
  '(line-move-visual nil)
  '(mail-host-address "skepner.eu")
+ '(message-auto-save-directory "~/.emacs.d/auto-save-message")
  '(minibuffer-complete-cycle t nil (minibuffer-complete-cycle))
  '(mouse-drag-copy-region t)
  '(mouse-wheel-mode nil)
@@ -48,7 +52,7 @@
  '(ns-pop-up-frames nil)
  '(real-auto-save-interval 30)
  '(recentf-mode t)
- '(safe-local-variable-values (quote ((js-indent-level . 2))))
+ '(safe-local-variable-values (quote ((encoding . utf-8) (js-indent-level . 2))))
  '(send-mail-function (quote smtpmail-send-it))
  '(server-mode t)
  '(shell-file-name "~/bin/ec")
