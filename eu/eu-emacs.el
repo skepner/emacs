@@ -146,6 +146,8 @@
   (delete-dups compile-history))
 
 ;; ----------------------------------------------------------------------
+;; Mail
+;; ----------------------------------------------------------------------
 ;; gnus
 ;; https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/gnus-guide-en.org
 
@@ -159,6 +161,30 @@
 (define-key gnus-group-mode-map
   ;; list all the subscribed groups even they contain zero un-read messages
   (kbd "o") 'my-gnus-group-list-subscribed-groups)
+
+;; ----------------------------------------------------------------------
+;; message
+
+(defface eu-message-cited-2
+  '((t
+     (:foreground "ForestGreen")))
+  "Face used for displaying double cited text."
+  :group 'message-faces)
+
+(defface eu-message-cited-3
+  '((t
+     (:foreground "dark red")))
+  "Face used for displaying triple cited text."
+  :group 'message-faces)
+
+;; colorizing multiply-quoted lines
+(add-hook 'message-mode-hook
+          (lambda ()
+            (font-lock-add-keywords nil
+                                    '(("^[ \t]*>[ \t]*>[ \t]*>.*$"
+                                       (0 'eu-message-cited-3))
+                                      ("^[ \t]*>[ \t]*>.*$"
+                                       (0 'eu-message-cited-2))))))
 
 ;; ----------------------------------------------------------------------
 
