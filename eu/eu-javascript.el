@@ -50,6 +50,8 @@
 ;  Typescript
 ;; ----------------------------------------------------------------------
 
+(require 'typescript)
+
 (add-to-list 'compilation-error-regexp-alist-alist
              '(typescript "^\\([A-Za-z0-9\\.][^(]+\\)(\\([0-9]+\\),\\([0-9]+\\)) *: +\\(error\\|fatal error\\|\\(warning\\)\\) [A-Z]+[0-9]+:.*" 1 2 3 (5 . nil)))
 (add-to-list 'compilation-error-regexp-alist 'typescript)

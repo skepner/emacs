@@ -1,5 +1,6 @@
 (defvar eu-emacs-package-dir-root
   (file-name-directory (file-truename user-init-file)))
+(add-to-list 'load-path eu-emacs-package-dir-root)
 (add-to-list 'load-path (concat eu-emacs-package-dir-root "eu"))
 
 ;; ----------------------------------------------------------------------
@@ -20,7 +21,6 @@
                       python-mode
                       real-auto-save
                       smartparens
-                      typescript
                       yasnippet
                       )
   "A list of packages to ensure are installed at launch.")
