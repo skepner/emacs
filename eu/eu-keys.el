@@ -107,6 +107,7 @@
 
 (global-set-key (kbd "A-M-.") 'eu-find-tag-current-word)
 (global-set-key (kbd "A-M-,") '(lambda nil (interactive) (find-tag nil t)))
+(global-set-key (kbd "C-M-,") 'helm-etags-select)
 
 ;----------------------------------------------------------------------
 ; eu-emacs

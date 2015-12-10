@@ -498,10 +498,10 @@ getting timeout messages."
     (mapc (lambda (key)
             (define-key keymap key #'typescript-insert-and-indent))
           '("{" "}" "(" ")" ":" ";" ","))
-    (define-key keymap [(control ?c) (meta ?:)] #'typescript-eval)
-    (define-key keymap [(control ?c) (control ?j)] #'typescript-set-typescript-context)
-    (define-key keymap [(control meta ?x)] #'typescript-eval-defun)
-    (define-key keymap [(meta ?.)] #'typescript-find-symbol)
+    ;(define-key keymap [(control ?c) (meta ?:)] #'typescript-eval)
+    ;(define-key keymap [(control ?c) (control ?j)] #'typescript-set-typescript-context)
+    ;(define-key keymap [(control meta ?x)] #'typescript-eval-defun)
+    ;(define-key keymap [(meta ?.)] #'typescript-find-symbol)
     (easy-menu-define nil keymap "typescript Menu"
       '("typescript"
         ["Select new Mozilla context…" typescript-set-typescript-context

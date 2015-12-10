@@ -136,6 +136,24 @@ Antigenic Cartography
 
 ;; ----------------------------------------------------------------------
 
+(defun eu-keys-find-file (filename)
+  `(lambda nil (interactive) (find-file ,filename)))
+
+(defun eu-keys-amv ()
+  (interactive)
+  (global-set-key [?\A-1] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/amv-level1.ts"))
+  (global-set-key [?\A-2] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/amv-2d.ts"))
+  (global-set-key [?\A-3] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/amv-3d.ts"))
+  (global-set-key [?\A-4] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/test-4d.ts"))
+  (global-set-key [?\A-d] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/antigenic-map-viewer.d.ts"))
+  (global-set-key [?\A-0] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/amv.ts"))
+  (global-set-key [?\A-\C-1] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/amv-level2.ts"))
+  (global-set-key [?\A-\C-2] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/amv-manipulator-2d.ts"))
+  (global-set-key [?\A-\C-3] (eu-keys-find-file "/Users/eu/ac/antigenic-map-viewer-v2/amv-manipulator-3d.ts"))
+  )
+
+;; ----------------------------------------------------------------------
+
 (provide 'eu-ac)
 
 ;;; Local Variables:
