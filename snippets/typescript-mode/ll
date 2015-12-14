@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: ll:
+# --
+Amv.LOG('$1');
