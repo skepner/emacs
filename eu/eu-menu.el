@@ -33,6 +33,8 @@
             "-"
             ["serum-circles" (find-file "~/ac/acmacs/acmacs/directories/serum_circles.py" t) t]
             ;; ["update serum circles on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines ~/ac/acmacs/acmacs-web/data/information-list-serum-circles.pydata.bz2") t]
+            "-"
+            ["SSM report index" (find-file "/scp:i19:/syn/WebSites/Protected/ssmreport/index.html") t]
             )
             ["dtra" (find-file "~/Shared/AC/Projects/Nicola-DTRA/README" t) t]
 

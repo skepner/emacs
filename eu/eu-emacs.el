@@ -186,6 +186,23 @@
                                       ("^[ \t]*>[ \t]*>.*$"
                                        (0 'eu-message-cited-2))))))
 
+(defun eu-replace-string-in-current-buffer (from to)
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward from nil t)
+      (replace-match to nil t))))
+
+(defun eu-message-remove-equals ()
+  (interactive)
+  (eu-replace-string-in-current-buffer "=\n" "")
+  (eu-replace-string-in-current-buffer "=20" " ")
+  (eu-replace-string-in-current-buffer "=E2=80=99" "'")
+  (eu-replace-string-in-current-buffer "=E2=80=9C" "\"")
+  (eu-replace-string-in-current-buffer "=E2=80=9D" "\"")
+  ; the next replacement must be the last one!
+  (eu-replace-string-in-current-buffer "=3D" "=")
+  )
+
 ;; ----------------------------------------------------------------------
 
 (provide 'eu-emacs)
