@@ -94,4 +94,8 @@
  '(font-lock-type-face ((t (:foreground "dark red"))))
  '(font-lock-variable-name-face ((t (:foreground "dark magenta"))))
  '(message-cited-text ((t (:foreground "blue"))))
+ '(outline-1 ((t (:foreground "magenta" :weight bold))))
+ '(outline-2 ((t (:foreground "red3" :weight bold))))
+ '(outline-3 ((t (:foreground "green4" :weight bold))))
+ '(outline-4 ((t (:foreground "Cyan4" :weight bold))))
  '(pulse-highlight-start-face ((t (:background "#FF8000")))))
