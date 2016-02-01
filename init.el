@@ -15,6 +15,7 @@
                       helm
                       ; helm-dash
                       js2-mode
+                      json-mode
                       less-css-mode
                       markdown-mode
                       minibuffer-complete-cycle
