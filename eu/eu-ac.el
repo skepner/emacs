@@ -37,9 +37,14 @@
 ;; ----------------------------------------------------------------------
 
 (defun eu-rename-buffer ()
-  (let ((under-acmacs (cdr (member "acmacs" (split-string (buffer-file-name) "/")))))
+  (let* ((dirs (split-string (buffer-file-name) "/"))
+         (under-acmacs (cdr (member "acmacs" dirs)))
+         (under-gh (cdr (member "GH" dirs))))
     (if under-acmacs
-        (rename-buffer (mapconcat 'identity (reverse under-acmacs) " ")))))
+        (rename-buffer (mapconcat 'identity (reverse under-acmacs) " "))
+      (if under-gh
+          (rename-buffer (mapconcat 'identity (reverse under-gh) " "))
+        ))))
 
 ;----------------------------------------------------------------------
 
