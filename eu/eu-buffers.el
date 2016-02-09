@@ -39,6 +39,8 @@
     ((and (eq major-mode 'python-mode) buffer-file-name (string-match "/tmp/" buffer-file-name) 'multi) 40 "Tmp (%d)")
     ((and (eq major-mode 'python-mode) buffer-file-name (string-match "^/\\(System\\|usr\\|Library\\)/" buffer-file-name) 'multi) 40 "Python System (%d)")
     ((and (eq major-mode 'python-mode) buffer-file-name (string-match "/ac/results/" buffer-file-name) 'multi) 40 "Results (%d)")
+
+    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "/GH/" buffer-file-name) 'multi) 50 "Python GH (%d)")
     ((and (eq major-mode 'python-mode) 'multi) 50 "Python (%d)")
 
     ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "/ac/" buffer-file-name) 'multi) 100 "C++ AC (%d)")
