@@ -36,6 +36,7 @@
  '(imenu-max-items 50)
  '(imenu-sort-function (quote imenu--sort-by-name))
  '(indent-tabs-mode nil)
+ '(json-reformat:indent-width 2)
  '(kept-new-versions 4)
  '(kept-old-versions 4)
  '(line-move-visual nil)
