@@ -48,7 +48,7 @@
          ; (stop-dir dir)
          (makefile (or (eu-compile-find-makefile "Makefile" dir stop-dir)
                        (eu-compile-find-makefile "CMakeLists.txt" dir stop-dir)
-                       (eu-compile-find-makefile "im$" dir stop-dir)
+                       ;(eu-compile-find-makefile "im$" dir stop-dir)
                        (eu-compile-find-makefile "AA.py" dir stop-dir)
                        (eu-compile-find-makefile "\\.cabal$" dir stop-dir)))
          (basename (if makefile (file-name-nondirectory makefile) nil))
