@@ -95,6 +95,8 @@
  '(font-lock-type-face ((t (:foreground "dark red"))))
  '(font-lock-variable-name-face ((t (:foreground "dark magenta"))))
  '(message-cited-text ((t (:foreground "blue"))))
+ '(org-level-2 ((t (:inherit outline-3))))
+ '(org-level-3 ((t (:inherit outline-4))))
  '(outline-1 ((t (:foreground "magenta" :weight bold))))
  '(outline-2 ((t (:foreground "red3" :weight bold))))
  '(outline-3 ((t (:foreground "green4" :weight bold))))
