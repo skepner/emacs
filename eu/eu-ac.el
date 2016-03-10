@@ -160,6 +160,19 @@ Antigenic Cartography
 
 ;; ----------------------------------------------------------------------
 
+(defvar eu-whocc-scan2-highlights
+  '(
+    ("<[^>]+>" . font-lock-warning-face)
+    ("^ *> [^<]*" . font-lock-constant-face)
+    ("^[0-9]+ .*" . font-lock-comment-face)
+    ))
+
+(define-derived-mode eu-whocc-scan2-mode fundamental-mode
+  (setq font-lock-defaults '(eu-whocc-scan2-highlights))
+  (setq mode-name "whocc-scan2"))
+
+;; ----------------------------------------------------------------------
+
 (provide 'eu-ac)
 
 ;;; Local Variables:
