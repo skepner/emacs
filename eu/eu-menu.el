@@ -96,6 +96,8 @@
             ["i19 index page" (find-file "/scp:i19:/syn/WebSites/Protected/eu/index.html") t]
             ["SSM report index" (find-file "/scp:i19:/syn/WebSites/Protected/ssmreport/index.html") t]
            "-"
+           ["i19 eu index page" (find-file "/scp:eu@i19:/syn/WebSites/Protected/eu/index.html") t]
+           "-"
            ["i19 acmacs-web-2 debug log" (find-file "/scp:eu@i19:/home/eu/AcmacsWeb/log/acmacs-web.debug.log") t]
            "-"
             ["odette nginx" (find-file "/scp:odette:/home/eu/Shared/System/Nginx/sites-available/default.public") t]
