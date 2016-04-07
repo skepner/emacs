@@ -45,6 +45,7 @@
 
     ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "/ac/" buffer-file-name) 'multi) 100 "C++ AC (%d)")
     ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "/GH/" buffer-file-name) 'multi) 100 "C++ GH (%d)")
+    ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "/AC/Projects/" buffer-file-name) 'multi) 100 "C++ AC/Projects (%d)")
     ((and buffer-file-name (string-match "^/usr/include" buffer-file-name) 'multi) 100 "C STD Includes (%d)")
     ;((and buffer-file-name (string-match "^/opt/local/include/mongo" buffer-file-name) 'multi) 100 "Mongo C++ Includes (%d)")
     ((and (eq major-mode 'c-mode) 'multi) 110 "C (%d)")
