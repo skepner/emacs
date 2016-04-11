@@ -107,7 +107,6 @@
 
 (global-set-key (kbd "A-M-.") 'eu-find-tag-current-word)
 (global-set-key (kbd "A-M-,") '(lambda nil (interactive) (find-tag nil t)))
-(global-set-key (kbd "C-M-,") 'helm-etags-select)
 
 ;----------------------------------------------------------------------
 ; eu-emacs
@@ -128,18 +127,10 @@
 (global-set-key [C-f4] 'helm-imenu)
 ;(global-set-key (kbd "C-x C-f") 'helm-find-files)
 ;(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-h b") 'helm-descbinds)
+(global-set-key (kbd "C-M-,") 'helm-etags-select)
 
 ;----------------------------------------------------------------------
-
-(defun eu-assign-key (key)
-  (interactive "kShow current buffer using key: ")
-  (if (or (not (global-key-binding key)) (y-or-n-p "Redefine that key? "))
-      (let ((action (if (buffer-file-name)
-                        `(lambda nil (interactive) (find-file ,(buffer-file-name)))
-                      `(lambda nil (interactive) (switch-to-buffer ,(buffer-name))))))
-                                        ;(prin1 action)
-        (global-set-key key action)
-        (message (format "Key assigned to %s" (or (buffer-file-name) (buffer-name)))))))
 
 ;----------------------------------------------------------------------
 

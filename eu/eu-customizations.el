@@ -28,11 +28,13 @@
    "%U%R%z%I%(%[%4L: %-23,23f%]%) %(%&user-date;  %-15,15f  %B%s%)
 ")
  '(helm-buffer-max-length 50)
+ '(helm-ff-auto-update-initial-value t)
  '(hippie-expand-try-functions-list
    (quote
     (try-expand-dabbrev try-complete-file-name try-expand-all-abbrevs try-expand-list try-complete-file-name-partially try-expand-dabbrev-all-buffers try-expand-dabbrev-from-kill try-complete-lisp-symbol-partially try-complete-lisp-symbol try-expand-line)))
  '(hippie-expand-verbose nil)
  '(history-length 1000)
+ '(imenu-eager-completion-buffer nil)
  '(imenu-max-items 50)
  '(imenu-sort-function (quote imenu--sort-by-name))
  '(indent-tabs-mode nil)
@@ -55,6 +57,7 @@
  '(real-auto-save-interval 30)
  '(recentf-mode t)
  '(safe-local-variable-values (quote ((encoding . utf-8) (js-indent-level . 2))))
+ '(semantic-imenu-sort-bucket-function (quote semantic-sort-tags-by-name-increasing))
  '(send-mail-function (quote smtpmail-send-it))
  '(server-mode t)
  '(shell-file-name "~/bin/ec")

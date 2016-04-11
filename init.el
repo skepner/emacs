@@ -71,6 +71,7 @@
 (require 'eu-mode)
 (require 'eu-mouse)
 (require 'eu-menu)
+(require 'eu-projects)
 
 ;; ----------------------------------------------------------------------
 
