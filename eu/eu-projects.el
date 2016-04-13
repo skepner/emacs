@@ -1,3 +1,6 @@
+;;
+;; ----------------------------------------------------------------------
+
 (defun eu-assign-key (key)
   (interactive "kShow current buffer using key: ")
   (if (or (not (global-key-binding key)) (y-or-n-p "Redefine that key? "))
@@ -18,13 +21,21 @@
 
 ;; ----------------------------------------------------------------------
 
+(global-set-key (kbd "C-x p") (eu--project-find-file "/Users/eu/Shared/emacs/eu/eu-projects.el"))
+
+;; ----------------------------------------------------------------------
+
 (defun eu-project-seqdb ()
   (interactive)
-  (global-set-key (kbd "A-C-a") (eu--project-find-file "~/Shared/AC/Projects/seqdb/src/amino-acids.cc"))
-  (global-set-key (kbd "A-M-a") (eu--project-find-file "~/Shared/AC/Projects/seqdb/src/amino-acids.hh"))
-  (global-set-key (kbd "A-C-s") (eu--project-find-file "~/Shared/AC/Projects/seqdb/src/seqdb.cc"))
-  (global-set-key (kbd "A-M-s") (eu--project-find-file "~/Shared/AC/Projects/seqdb/src/seqdb.hh"))
-  (global-set-key (kbd "A-C-p") (eu--project-find-file "~/Shared/AC/Projects/seqdb/src/seqdb-py.cc"))
+  (setq eu--project-root-dir "~/Shared/AC/Projects/seqdb")
+  (global-set-key (kbd "A-C-a") (eu--project-find-file (eu--project-make-filename "src/amino-acids.cc")))
+  (global-set-key (kbd "A-a")   (eu--project-find-file (eu--project-make-filename "src/amino-acids.hh")))
+  (global-set-key (kbd "A-C-s") (eu--project-find-file (eu--project-make-filename "src/seqdb.cc")))
+  (global-set-key (kbd "A-s")   (eu--project-find-file (eu--project-make-filename "src/seqdb.hh")))
+  (global-set-key (kbd "A-j")   (eu--project-find-file (eu--project-make-filename "src/json-write.hh")))
+  (global-set-key (kbd "A-C-p") (eu--project-find-file (eu--project-make-filename "src/seqdb-py.cc")))
+  (global-set-key (kbd "A-M-u") (eu--project-find-file (eu--project-make-filename "python/seqdb/update.py")))
+  (global-set-key (kbd "A-M-h") (eu--project-find-file (eu--project-make-filename "python/seqdb/hidb.py")))
   )
 
 ;; ----------------------------------------------------------------------
