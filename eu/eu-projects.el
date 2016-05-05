@@ -48,6 +48,10 @@
   (global-set-key (kbd "A-g")   (eu--project-find-file (eu--project-make-filename "src/signature-page.hh")))
   (global-set-key (kbd "A-C-h") (eu--project-find-file (eu--project-make-filename "src/time-series.cc")))
   (global-set-key (kbd "A-h")   (eu--project-find-file (eu--project-make-filename "src/time-series.hh")))
+  (global-set-key (kbd "A-C-k") (eu--project-find-file (eu--project-make-filename "src/draw-clades.cc")))
+  (global-set-key (kbd "A-k")   (eu--project-find-file (eu--project-make-filename "src/draw-clades.hh")))
+  (global-set-key (kbd "A-C-l") (eu--project-find-file (eu--project-make-filename "src/settings.cc")))
+  (global-set-key (kbd "A-l")   (eu--project-find-file (eu--project-make-filename "src/settings.hh")))
   )
 
 ;; ----------------------------------------------------------------------
