@@ -27,7 +27,7 @@
 
 (defun eu-project-seqdb ()
   (interactive)
-  (setq eu--project-root-dir "~/Shared/AC/Projects/seqdb")
+  (setq eu--project-root-dir "~/GH/seqdb")
   (global-set-key (kbd "A-C-a") (eu--project-find-file (eu--project-make-filename "src/amino-acids.cc")))
   (global-set-key (kbd "A-a")   (eu--project-find-file (eu--project-make-filename "src/amino-acids.hh")))
   (global-set-key (kbd "A-C-s") (eu--project-find-file (eu--project-make-filename "src/seqdb.cc")))
