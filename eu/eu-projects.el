@@ -52,6 +52,8 @@
   (global-set-key (kbd "A-k")   (eu--project-find-file (eu--project-make-filename "src/draw-clades.hh")))
   (global-set-key (kbd "A-C-l") (eu--project-find-file (eu--project-make-filename "src/settings.cc")))
   (global-set-key (kbd "A-l")   (eu--project-find-file (eu--project-make-filename "src/settings.hh")))
+  (global-set-key (kbd "A-C-n") (eu--project-find-file (eu--project-make-filename "src/antigenic-maps.cc")))
+  (global-set-key (kbd "A-n")   (eu--project-find-file (eu--project-make-filename "src/antigenic-maps.hh")))
   )
 
 ;; ----------------------------------------------------------------------
