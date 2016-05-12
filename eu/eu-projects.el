@@ -33,7 +33,7 @@
   (global-set-key (kbd "A-C-s") (eu--project-find-file (eu--project-make-filename "src/seqdb.cc")))
   (global-set-key (kbd "A-s")   (eu--project-find-file (eu--project-make-filename "src/seqdb.hh")))
   (global-set-key (kbd "A-C-j")   (eu--project-find-file (eu--project-make-filename "src/seqdb-json.cc")))
-  (global-set-key (kbd "A-j")   (eu--project-find-file (eu--project-make-filename "src/json-write.hh")))
+  (global-set-key (kbd "A-j")   (eu--project-find-file (eu--project-make-filename "src/json-read.hh")))
   (global-set-key (kbd "A-C-p") (eu--project-find-file (eu--project-make-filename "src/seqdb-py.cc")))
   (global-set-key (kbd "A-M-u") (eu--project-find-file (eu--project-make-filename "python/seqdb/update.py")))
   (global-set-key (kbd "A-M-h") (eu--project-find-file (eu--project-make-filename "python/seqdb/hidb.py")))
@@ -54,6 +54,8 @@
   (global-set-key (kbd "A-l")   (eu--project-find-file (eu--project-make-filename "src/settings.hh")))
   (global-set-key (kbd "A-C-n") (eu--project-find-file (eu--project-make-filename "src/antigenic-maps.cc")))
   (global-set-key (kbd "A-n")   (eu--project-find-file (eu--project-make-filename "src/antigenic-maps.hh")))
+  (global-set-key (kbd "A-C-b") (eu--project-find-file (eu--project-make-filename "src/chart.cc")))
+  (global-set-key (kbd "A-b")   (eu--project-find-file (eu--project-make-filename "src/chart.hh")))
   )
 
 ;; ----------------------------------------------------------------------
