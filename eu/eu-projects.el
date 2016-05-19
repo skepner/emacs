@@ -40,6 +40,7 @@
   (global-set-key (kbd "A-C-t") (eu--project-find-file (eu--project-make-filename "src/tree.cc")))
   (global-set-key (kbd "A-t")   (eu--project-find-file (eu--project-make-filename "src/tree.hh")))
   (global-set-key (kbd "M-C-t") (eu--project-find-file (eu--project-make-filename "bin/whocc-make-tree")))
+  (global-set-key (kbd "A-M-m") (eu--project-find-file (eu--project-make-filename "python/seqdb/make_tree.py")))
   (global-set-key (kbd "A-C-d") (eu--project-find-file (eu--project-make-filename "src/draw.cc")))
   (global-set-key (kbd "A-d")   (eu--project-find-file (eu--project-make-filename "src/draw.hh")))
   (global-set-key (kbd "A-C-S-d")   (eu--project-find-file (eu--project-make-filename "bin/tree-draw")))
