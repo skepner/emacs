@@ -1,0 +1,183 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "seqdb-export"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Exports seqdb data into fasta.
+\"\"\"" code nil nil [43 81])
+            ("traceback" include nil nil [83 112])
+            ("re" include nil nil [83 112])
+            ("os" include nil nil [83 112])
+            ("sys" include nil nil [83 112])
+            ("if" code nil nil [113 191])
+            ("sys" variable nil nil [191 271])
+            ("logging" include nil nil [272 286])
+            ("whoccseq" include nil nil [333 359])
+            ("whoccseq" include nil nil [360 417])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [502 506]))              ) nil [493 2717])
+            ("exit" code nil nil [6453 6468]))          
+      :file "seqdb-export"
+      :pointmax 6635
+      :fsize 6634
+      :lastmodtime '(22260 6304 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 6371 . 6453) (COLON 6369 . 6370) (TRY 2792 . 2795) (AS 6363 . 6365)))
+    (semanticdb-table "seqdb-distance"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Computes humming distance between some sequence and other sequences
+\"\"\"" code nil nil [43 118])
+            ("os" include nil nil [120 134])
+            ("sys" include nil nil [120 134])
+            ("if" code nil nil [135 213])
+            ("sys" variable nil nil [213 293])
+            ("operator" include nil nil [294 324])
+            ("traceback" include nil nil [294 324])
+            ("re" include nil nil [294 324])
+            ("logging" include nil nil [325 339])
+            ("whoccseq" include nil nil [386 421])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [506 510]))              ) nil [497 1836])
+            ("exit" code nil nil [3255 3270]))          
+      :file "seqdb-distance"
+      :pointmax 3437
+      :fsize 3436
+      :lastmodtime '(22260 863 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 3173 . 3255) (COLON 3171 . 3172) (TRY 1911 . 1914) (AS 3165 . 3167)))
+    (semanticdb-table "seqdb-hi-match"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Updates seqdb with matching HI names
+\"\"\"" code nil nil [43 87])
+            ("collections" include nil nil [89 149])
+            ("datetime" include nil nil [89 149])
+            ("pprint" include nil nil [89 149])
+            ("traceback" include nil nil [89 149])
+            ("re" include nil nil [89 149])
+            ("os" include nil nil [89 149])
+            ("sys" include nil nil [89 149])
+            ("if" code nil nil [150 228])
+            ("sys" variable nil nil [228 308])
+            ("logging" include nil nil [309 323])
+            ("whoccseq" include nil nil [370 396])
+            ("whoccseq" include nil nil [397 454])
+            ("STAT_WHOCC_ANNUAL_REPORT" variable nil nil [530 668])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [753 757]))              ) nil [744 1182])
+            ("match" function (:arguments 
+              ( ("db" variable nil (reparse-symbol function_parameters) [1267 1269])
+                ("hi" variable nil (reparse-symbol function_parameters) [1271 1273]))              ) nil [1257 2479])
+            ("apply_matches" function (:arguments 
+              ( ("matches" variable nil (reparse-symbol function_parameters) [2572 2579])
+                ("name" variable nil (reparse-symbol function_parameters) [2581 2585])
+                ("db_entry" variable nil (reparse-symbol function_parameters) [2587 2595])
+                ("seq_entries" variable nil (reparse-symbol function_parameters) [2597 2608])
+                ("hi_entry" variable nil (reparse-symbol function_parameters) [2610 2618])
+                ("vt" variable nil (reparse-symbol function_parameters) [2620 2622])
+                ("hi" variable nil (reparse-symbol function_parameters) [2624 2626]))              ) nil [2554 3635])
+            ("update_b_lineage" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [3731 3735])
+                ("hi_name" variable nil (reparse-symbol function_parameters) [3737 3744])
+                ("db_entry" variable nil (reparse-symbol function_parameters) [3746 3754])
+                ("hi_entry" variable nil (reparse-symbol function_parameters) [3756 3764]))              ) nil [3710 3886])
+            ("update_h1_lineage" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [3983 3987])
+                ("hi_name" variable nil (reparse-symbol function_parameters) [3989 3996])
+                ("db_entry" variable nil (reparse-symbol function_parameters) [3998 4006])
+                ("vt" variable nil (reparse-symbol function_parameters) [4008 4010]))              ) nil [3961 4272])
+            ("update_lineage" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [4366 4370])
+                ("hi_name" variable nil (reparse-symbol function_parameters) [4372 4379])
+                ("db_entry" variable nil (reparse-symbol function_parameters) [4381 4389])
+                ("lineage" variable nil (reparse-symbol function_parameters) [4391 4398]))              ) nil [4347 4618])
+            ("update_date" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [4709 4713])
+                ("hi_name" variable nil (reparse-symbol function_parameters) [4715 4722])
+                ("db_entry" variable nil (reparse-symbol function_parameters) [4724 4732])
+                ("hi_entry" variable nil (reparse-symbol function_parameters) [4734 4742]))              ) nil [4693 4939])
+            ("match_passages" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [5033 5037])
+                ("seq_passages" variable nil (reparse-symbol function_parameters) [5039 5051])
+                ("hi_variants_passages" variable nil (reparse-symbol function_parameters) [5053 5073]))              ) nil [5014 5945])
+            ("sRePassageGroup" variable nil nil [6020 6070])
+            ("sRePassageDate" variable nil nil [6071 6124])
+            ("sRePassage" variable nil nil [6125 6220])
+            ("match_level" function (:arguments 
+              ( ("sp" variable nil (reparse-symbol function_parameters) [6238 6240])
+                ("hp" variable nil (reparse-symbol function_parameters) [6242 6244]))              ) nil [6222 8324])
+            ("sReSplitPassageNumber" variable nil nil [8399 8447])
+            ("same_passage_type" function (:arguments 
+              ( ("sp" variable nil (reparse-symbol function_parameters) [8471 8473])
+                ("hp" variable nil (reparse-symbol function_parameters) [8475 8477]))              ) nil [8449 8659])
+            ("close_passage_type" function (:arguments 
+              ( ("sp" variable nil (reparse-symbol function_parameters) [8683 8685])
+                ("hp" variable nil (reparse-symbol function_parameters) [8687 8689]))              ) nil [8660 9003])
+            ("HIDB" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("with" code nil (reparse-symbol indented_block_body) [9133 9237])
+                            ("if" code nil (reparse-symbol indented_block_body) [9245 9396])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9404 9439]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9108 9112])
+                            ("filename" variable nil (reparse-symbol function_parameters) [9114 9122]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9095 9473])
+                    ("find_antigen_by_cdcid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9504 9508])
+                            ("cdcid" variable nil (reparse-symbol function_parameters) [9510 9515]))                          )
+                        (reparse-symbol indented_block_body) [9478 9684])
+                    ("find_antigen_by_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9766 9770])
+                            ("name" variable nil (reparse-symbol function_parameters) [9772 9776]))                          )
+                        (reparse-symbol indented_block_body) [9741 10128]))                  
+                :type "class")
+                nil [9078 10128])
+            ("exit" code nil nil [11267 11282]))          
+      :file "seqdb-hi-match"
+      :pointmax 11449
+      :fsize 11448
+      :lastmodtime '(22275 30853 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 11185 . 11267) (COLON 11183 . 11184) (TRY 10203 . 10206) (AS 11177 . 11179)))
+    (semanticdb-table "make-tree"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Exports seqdb data into fasta.
+\"\"\"" code nil nil [43 81])
+            ("traceback" include nil nil [83 124])
+            ("subprocess" include nil nil [83 124])
+            ("re" include nil nil [83 124])
+            ("os" include nil nil [83 124])
+            ("sys" include nil nil [83 124])
+            ("if" code nil nil [125 203])
+            ("sys" variable nil nil [203 283])
+            ("logging" include nil nil [284 298])
+            ("pathlib" include nil nil [344 368])
+            ("whoccseq" include nil nil [370 421])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [506 510]))              ) nil [497 2611])
+            ("export" function (:arguments 
+              ( ("output_dir" variable nil (reparse-symbol function_parameters) [2697 2707])
+                ("args" variable nil (reparse-symbol function_parameters) [2709 2713]))              ) nil [2686 4508])
+            ("exit" code nil nil [8986 9001]))          
+      :file "make-tree"
+      :pointmax 9168
+      :fsize 9167
+      :lastmodtime '(22261 6144 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 8904 . 8986) (COLON 8902 . 8903) (TRY 4583 . 4586) (AS 8896 . 8898))))
+  :file "!Users!eu!GH!whocc-sequences!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

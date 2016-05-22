@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("draw.cc"
+ (filename . "~/GH/seqdb/src/draw.cc")
+ (front-context-string . "Context,   radiu")
+ (rear-context-string . " cairo_line_to(a")
+ (position . 3538))
+)

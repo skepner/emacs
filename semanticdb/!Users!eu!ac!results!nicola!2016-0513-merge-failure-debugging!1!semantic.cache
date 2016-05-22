@@ -1,0 +1,19 @@
+;; Object 1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "1/"
+  :tables
+  (list
+    (semanticdb-table "553750e51a24be480a8d13e0.acd1"
+      :major-mode 'python-mode
+      :tags 
+        '( ("nan" variable nil nil [120 131])
+            ("inf" variable nil nil [132 143])
+            ("data" variable nil nil [145 307828]))          
+      :file "553750e51a24be480a8d13e0.acd1"
+      :pointmax 307829
+      :fsize 307828
+      :lastmodtime '(22325 57808 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!results!nicola!2016-0513-merge-failure-debugging!1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

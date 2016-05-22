@@ -1,0 +1,20 @@
+;; Object avanan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "avanan/"
+  :tables
+  (list
+    (semanticdb-table "avanan-test"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [26 40])
+            ("sys" include nil nil [26 40])
+            ("main" function nil nil [116 646])
+            ("main" code nil nil [721 727]))          
+      :file "avanan-test"
+      :pointmax 728
+      :fsize 727
+      :lastmodtime '(22304 34443 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!Shared!buch!job!avanan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1828 @@
+;; Object api/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "api/"
+  :tables
+  (list
+    (semanticdb-table "location.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Commands to query and update locations database
+\"\"\"" code nil nil [113 168])
+            ("logging" include nil nil [170 184])
+            ("continent" include nil nil [247 338])
+            ("LocationReplacement" include nil nil [247 338])
+            ("LocationNotFound" include nil nil [247 338])
+            ("locations_db_updater" include nil nil [247 338])
+            ("locations_db" include nil nil [247 338])
+            ("arguments" include nil nil [346 386])
+            ("command" include nil nil [346 386])
+            ("command_registrator" include nil nil [402 428])
+            ("" code nil nil [524 543])
+            ("LocationLookup" type
+               (:documentation "Returns information about location by its name or cdc-abbreviation."
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [674 1092])
+                    ("results" variable nil (reparse-symbol indented_block_body) [1098 1456])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1474 1478]))                          )
+                        (reparse-symbol indented_block_body) [1462 3570])
+                    ("continent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3589 3593])
+                            ("result" variable nil (reparse-symbol function_parameters) [3595 3601]))                          )
+                        (reparse-symbol indented_block_body) [3575 3693]))                  
+                :type "class")
+                nil [544 3693])
+            ("" code nil nil [3788 3825])
+            ("LocationExportCdcAbbreviations" type
+               (:documentation "Dupms entries having cdc abbreviations."
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [3944 3971])
+                    ("results" variable nil (reparse-symbol indented_block_body) [3977 4043])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4061 4065]))                          )
+                        (reparse-symbol indented_block_body) [4049 4177]))                  
+                :type "class")
+                nil [3826 4177])
+            ("" code nil nil [4272 4294])
+            ("LocationContinent" type
+               (:documentation "Returns continents of the provided countries."
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [4406 4485])
+                    ("results" variable nil (reparse-symbol indented_block_body) [4491 4614])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4632 4636]))                          )
+                        (reparse-symbol indented_block_body) [4620 4834]))                  
+                :type "class")
+                nil [4295 4834])
+            ("" code nil nil [4929 4959])
+            ("LocationContinentOfName" type
+               (:documentation "Returns continent of the provided names, names are normalized before finding location and continent. [Used for coloring by continent.]"
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [5166 5243])
+                    ("results" variable nil (reparse-symbol indented_block_body) [5249 5310])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5328 5332]))                          )
+                        (reparse-symbol indented_block_body) [5316 5893])
+                    ("continent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5912 5916])
+                            ("name" variable nil (reparse-symbol function_parameters) [5918 5922])
+                            ("index" variable nil (reparse-symbol function_parameters) [5924 5929])
+                            ("importer" variable nil (reparse-symbol function_parameters) [5931 5939])
+                            ("validation_data" variable nil (reparse-symbol function_parameters) [5941 5956]))                          )
+                        (reparse-symbol indented_block_body) [5898 6217]))                  
+                :type "class")
+                nil [4960 6217])
+            ("" code nil nil [6312 6328])
+            ("LocationAdd" type
+               (:documentation "Adds new location to the database"
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [6425 6834])
+                    ("results" variable nil (reparse-symbol indented_block_body) [6840 6920])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6938 6942]))                          )
+                        (reparse-symbol indented_block_body) [6926 7582])
+                    ("continent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7601 7605])
+                            ("result" variable nil (reparse-symbol function_parameters) [7607 7613]))                          )
+                        (reparse-symbol indented_block_body) [7587 7705]))                  
+                :type "class")
+                nil [6329 7705])
+            ("" code nil nil [7800 7819])
+            ("LocationDelete" type
+               (:documentation "Removes name from the location database."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [7926 8156])
+                    ("results" variable nil (reparse-symbol indented_block_body) [8162 8187])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8205 8209]))                          )
+                        (reparse-symbol indented_block_body) [8193 8346]))                  
+                :type "class")
+                nil [7820 8346])
+            ("" code nil nil [8441 8474])
+            ("LocationAddCdcAbbreviation" type
+               (:documentation "Adds cdc abbreviation to location entry."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [8593 8786])
+                    ("results" variable nil (reparse-symbol indented_block_body) [8792 8817])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8835 8839]))                          )
+                        (reparse-symbol indented_block_body) [8823 9007]))                  
+                :type "class")
+                nil [8475 9007])
+            ("" code nil nil [9102 9138])
+            ("LocationRemoveCdcAbbreviation" type
+               (:documentation "Removes cdc abbreviation from location entry."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [9265 9382])
+                    ("results" variable nil (reparse-symbol indented_block_body) [9388 9413])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9431 9435]))                          )
+                        (reparse-symbol indented_block_body) [9419 9590]))                  
+                :type "class")
+                nil [9139 9590])
+            ("" code nil nil [9685 9707])
+            ("LocationAddAlias" type
+               (:documentation "Adds new_name to the location entry found by name."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [9826 9964])
+                    ("results" variable nil (reparse-symbol indented_block_body) [9970 10058])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10076 10080]))                          )
+                        (reparse-symbol indented_block_body) [10064 10486])
+                    ("continent" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10505 10509])
+                            ("result" variable nil (reparse-symbol function_parameters) [10511 10517]))                          )
+                        (reparse-symbol indented_block_body) [10491 10609]))                  
+                :type "class")
+                nil [9708 10609])
+            ("" code nil nil [10704 10732])
+            ("LocationAddReplacement" type
+               (:documentation "Adds replacement entry for new_name to replace_with."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [10859 11012])
+                    ("results" variable nil (reparse-symbol indented_block_body) [11018 11043])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11061 11065]))                          )
+                        (reparse-symbol indented_block_body) [11049 11224]))                  
+                :type "class")
+                nil [10733 11224])
+            ("" code nil nil [11319 11350])
+            ("LocationRemoveReplacement" type
+               (:documentation "Removes replacement entry for name."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [11463 11559])
+                    ("results" variable nil (reparse-symbol indented_block_body) [11565 11590])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11608 11612]))                          )
+                        (reparse-symbol indented_block_body) [11596 11738]))                  
+                :type "class")
+                nil [11351 11738])
+            ("" code nil nil [11833 11853])
+            ("LocationsExport" type
+               (:documentation "Exports locations database, for backup purposes."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("results" variable nil (reparse-symbol indented_block_body) [11969 12073])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12091 12095]))                          )
+                        (reparse-symbol indented_block_body) [12079 12181]))                  
+                :type "class")
+                nil [11854 12181])
+            ("" code nil nil [12276 12296])
+            ("LocationsImport" type
+               (:documentation "Imports locations database, for backup purposes."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [12412 12648])
+                    ("results" variable nil (reparse-symbol indented_block_body) [12654 12679])
+                    ("exclude_from_command_log" variable nil (reparse-symbol indented_block_body) [12685 12724])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12774 12778]))                          )
+                        (reparse-symbol indented_block_body) [12762 12945]))                  
+                :type "class")
+                nil [12297 12945])
+            ("" code nil nil [13040 13061])
+            ("LocationsVersion" type
+               (:documentation "Returns version of the locations database."
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("results" variable nil (reparse-symbol indented_block_body) [13169 13226])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13244 13248]))                          )
+                        (reparse-symbol indented_block_body) [13232 13324]))                  
+                :type "class")
+                nil [13062 13324]))          
+      :file "location.py"
+      :pointmax 13598
+      :fsize 13597
+      :lastmodtime '(22158 26205 0 0)
+      :unmatched-syntax '((RETURN 6148 . 6154) (IF 6182 . 6184) (ELSE 6202 . 6206) (PERIOD 5380 . 5381) (FROM 5374 . 5378) (PERIOD 5379 . 5380) (PERIOD 5349 . 5350) (FROM 5343 . 5347) (PERIOD 5348 . 5349) (INDENT_BLOCK 3241 . 3570) (NEWLINE 3153 . 3154) (COLON 3152 . 3153) (TRY 1523 . 1526) (AS 3146 . 3148) (INDENT_BLOCK 2261 . 2389) (NEWLINE 2177 . 2178) (COLON 2176 . 2177) (TRY 1855 . 1858) (AS 2170 . 2172) (FROM 387 . 391) (PERIOD 392 . 393) (FROM 339 . 343) (PERIOD 344 . 345) (PERIOD 236 . 237) (FROM 230 . 234) (PERIOD 235 . 236)))
+    (semanticdb-table "inspectors.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Inspector access API commands
+\"\"\"" code nil nil [113 150])
+            ("pprint" include nil nil [152 165])
+            ("logging" include nil nil [166 180])
+            ("mongodb_collections" include nil nil [253 279])
+            ("mongodb" include nil nil [288 302])
+            ("arguments" include nil nil [310 350])
+            ("command" include nil nil [310 350])
+            ("command_registrator" include nil nil [366 392])
+            ("routine_diagnostics" include nil nil [411 482])
+            ("avidity" include nil nil [411 482])
+            ("hemi_local" include nil nil [411 482])
+            ("optimization" include nil nil [411 482])
+            ("messages" include nil nil [411 482])
+            ("markings" include nil nil [495 524])
+            ("" code nil nil [620 638])
+            ("InspectorList" type
+               (:documentation "Returns list of inspectors."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [730 2183])
+                    ("results" variable nil (reparse-symbol indented_block_body) [2189 2276])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2294 2298]))                          )
+                        (reparse-symbol indented_block_body) [2282 2914])
+                    ("clean" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2929 2933])
+                            ("inspector" variable nil (reparse-symbol function_parameters) [2935 2944]))                          
+                        :documentation "add hint for json_serializable to avoid dumping some fields that are not needed on the client side (and might make client to do redundant job).")
+                        (reparse-symbol indented_block_body) [2919 3213]))                  
+                :type "class")
+                nil [639 3213])
+            ("" code nil nil [3308 3328])
+            ("InspectorSearch" type
+               (:documentation "Returns list of inspectors."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [3422 4556])
+                    ("results" variable nil (reparse-symbol indented_block_body) [4562 4641])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4659 4663]))                          )
+                        (reparse-symbol indented_block_body) [4647 5217])
+                    ("clean" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5232 5236])
+                            ("inspector" variable nil (reparse-symbol function_parameters) [5238 5247]))                          
+                        :documentation "add hint for json_serializable to avoid dumping some fields that are not needed on the client side (and might make client to do redundant job).")
+                        (reparse-symbol indented_block_body) [5222 5484]))                  
+                :type "class")
+                nil [3329 5484])
+            ("" code nil nil [5579 5603])
+            ("InspectorTreeState" type
+               (:documentation "Returns tree of sub-inspectors and their states."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [5721 5936])
+                    ("results" variable nil (reparse-symbol indented_block_body) [5942 6007])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6025 6029]))                          )
+                        (reparse-symbol indented_block_body) [6013 6187]))                  
+                :type "class")
+                nil [5604 6187])
+            ("" code nil nil [6282 6310])
+            ("InspectorRemoveOrphans" type
+               (:documentation "Removes inspectors (and their subinspectors) having missing sources (orphaned by removing charts)."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [6482 6509])
+                    ("results" variable nil (reparse-symbol indented_block_body) [6515 6540])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6558 6562]))                          )
+                        (reparse-symbol indented_block_body) [6546 6676]))                  
+                :type "class")
+                nil [6311 6676])
+            ("InspectorCommand" type
+               (:superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [6807 7209])
+                    ("preprocess_inspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7240 7244])
+                            ("inspector" variable nil (reparse-symbol function_parameters) [7246 7255])
+                            ("submit" variable nil (reparse-symbol function_parameters) [7257 7263]))                          )
+                        (reparse-symbol indented_block_body) [7215 8005]))                  
+                :type "class")
+                nil [6751 8005])
+            ("" code nil nil [8100 8130])
+            ("InspectorNewOptimization" type
+               (:documentation "Creates new optimization chain inspector and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [8254 10295])
+                    ("results" variable nil (reparse-symbol indented_block_body) [10301 10400])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10418 10422]))                          )
+                        (reparse-symbol indented_block_body) [10406 11095]))                  
+                :type "class")
+                nil [8131 11095])
+            ("" code nil nil [11190 11213])
+            ("InspectorQuickMap" type
+               (:documentation "Quickly optimizes chart."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [11298 12065])
+                    ("results" variable nil (reparse-symbol indented_block_body) [12071 12164])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12182 12186]))                          )
+                        (reparse-symbol indented_block_body) [12170 12555]))                  
+                :type "class")
+                nil [11214 12555])
+            ("" code nil nil [12650 12689])
+            ("InspectorNewOptimizationExisting" type
+               (:documentation "Creates new optimization inspector of the existing projection and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [12842 13210])
+                    ("results" variable nil (reparse-symbol indented_block_body) [13216 13444])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13462 13466]))                          )
+                        (reparse-symbol indented_block_body) [13450 14178]))                  
+                :type "class")
+                nil [12690 14178])
+            ("" code nil nil [14273 14301])
+            ("InspectorNewHemiLocal" type
+               (:documentation "Creates new hemi/local chain inspector and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [14420 16136])
+                    ("results" variable nil (reparse-symbol indented_block_body) [16142 16241])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16259 16263]))                          )
+                        (reparse-symbol indented_block_body) [16247 17001]))                  
+                :type "class")
+                nil [14302 17001])
+            ("" code nil nil [17096 17121])
+            ("InspectorNewAvidity" type
+               (:documentation "Creates new avidity chain inspector and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [17235 18391])
+                    ("results" variable nil (reparse-symbol indented_block_body) [18397 18496])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18514 18518]))                          )
+                        (reparse-symbol indented_block_body) [18502 19098]))                  
+                :type "class")
+                nil [17122 19098])
+            ("" code nil nil [19193 19235])
+            ("InspectorOptimalMinimumColumnBasis" type
+               (:documentation "Creates inspector for figuring out minimum column basis for a table and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [19396 19913])
+                    ("results" variable nil (reparse-symbol indented_block_body) [19919 20018])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20036 20040]))                          )
+                        (reparse-symbol indented_block_body) [20024 20467]))                  
+                :type "class")
+                nil [19236 20467])
+            ("" code nil nil [20562 20599])
+            ("InspectorNewRoutineDiagnostics" type
+               (:documentation "Creates new simple routine diagnostics chain inspector and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [20743 22342])
+                    ("results" variable nil (reparse-symbol indented_block_body) [22348 22447])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22465 22469]))                          )
+                        (reparse-symbol indented_block_body) [22453 23041]))                  
+                :type "class")
+                nil [20600 23041])
+            ("" code nil nil [23136 23167])
+            ("InspectorIncrementalChain" type
+               (:documentation "Creates or updates incremental chain inspector, optionally submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [23306 27041])
+                    ("results" variable nil (reparse-symbol indented_block_body) [27047 27309])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27327 27331]))                          )
+                        (reparse-symbol indented_block_body) [27315 28660])
+                    ("update_inspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28686 28690])
+                            ("args" variable nil (reparse-symbol function_parameters) [28692 28696]))                          )
+                        (reparse-symbol indented_block_body) [28665 29981])
+                    ("create_inspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30007 30011])
+                            ("args" variable nil (reparse-symbol function_parameters) [30013 30017]))                          )
+                        (reparse-symbol indented_block_body) [29986 30328])
+                    ("_create_inspector_2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30357 30361])
+                            ("inspector" variable nil (reparse-symbol function_parameters) [30363 30372])
+                            ("args" variable nil (reparse-symbol function_parameters) [30374 30378]))                          )
+                        (reparse-symbol indented_block_body) [30333 30715])
+                    ("create_fork" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30736 30740])
+                            ("args" variable nil (reparse-symbol function_parameters) [30742 30746]))                          )
+                        (reparse-symbol indented_block_body) [30720 32768]))                  
+                :type "class")
+                nil [23168 32768])
+            ("" code nil nil [32863 32891])
+            ("InspectorDimensionTest" type
+               (:documentation "Creates inspector for dimension test and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [33009 33749])
+                    ("results" variable nil (reparse-symbol indented_block_body) [33755 33854])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33872 33876]))                          )
+                        (reparse-symbol indented_block_body) [33860 34332]))                  
+                :type "class")
+                nil [32892 34332])
+            ("" code nil nil [34427 34460])
+            ("InspectorMapResolutionTest" type
+               (:documentation "Creates inspector for map resolution test and submits it."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [34587 36069])
+                    ("results" variable nil (reparse-symbol indented_block_body) [36075 36174])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36192 36196]))                          )
+                        (reparse-symbol indented_block_body) [36180 36859]))                  
+                :type "class")
+                nil [34461 36859])
+            ("" code nil nil [36954 37006])
+            ("InspectorMapResolutionTestCollectAllErrrors" type
+               (:documentation "Returns all errors for a completed map resolution test."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [37148 37241])
+                    ("results" variable nil (reparse-symbol indented_block_body) [37247 37313])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37331 37335]))                          )
+                        (reparse-symbol indented_block_body) [37319 37499]))                  
+                :type "class")
+                nil [37007 37499])
+            ("" code nil nil [37594 37613])
+            ("InspectorReset" type
+               (:documentation "Resets inspector, removes its results."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [37717 38068])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38086 38090]))                          )
+                        (reparse-symbol indented_block_body) [38074 38291]))                  
+                :type "class")
+                nil [37614 38291])
+            ("" code nil nil [38386 38407])
+            ("InspectorMessage" type
+               (:documentation "Sends message to inspector."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [38502 38703])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38721 38725]))                          )
+                        (reparse-symbol indented_block_body) [38709 38889]))                  
+                :type "class")
+                nil [38408 38889])
+            ("" code nil nil [38984 39010])
+            ("InspectorChangeState" type
+               (:documentation "Changes the inspector state."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [39110 39399])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39417 39421]))                          )
+                        (reparse-symbol indented_block_body) [39405 39604]))                  
+                :type "class")
+                nil [39011 39604])
+            ("" code nil nil [39699 39721])
+            ("InspectorKeywords" type
+               (:documentation "Changes and retrieves the inspector keywords."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [39835 40084])
+                    ("results" variable nil (reparse-symbol indented_block_body) [40090 40203])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40221 40225]))                          )
+                        (reparse-symbol indented_block_body) [40209 40860]))                  
+                :type "class")
+                nil [39722 40860])
+            ("" code nil nil [40955 40972])
+            ("InspectorLog" type
+               (:documentation "Returns log of an inspector."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [41064 42065])
+                    ("results" variable nil (reparse-symbol indented_block_body) [42071 42394])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42412 42416]))                          )
+                        (reparse-symbol indented_block_body) [42400 43328])
+                    ("format_log" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [43365 43368])
+                            ("data" variable nil (reparse-symbol function_parameters) [43370 43374]))                          )
+                        (reparse-symbol indented_block_body) [43333 43670]))                  
+                :type "class")
+                nil [40973 43670])
+            ("" code nil nil [43765 43789])
+            ("InspectorLogRemove" type
+               (:documentation "Removes log of an inspector."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [43887 44078])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44096 44100]))                          )
+                        (reparse-symbol indented_block_body) [44084 44286]))                  
+                :type "class")
+                nil [43790 44286])
+            ("" code nil nil [44381 44404])
+            ("InspectorLogsList" type
+               (:documentation "Returns list of log documents for all inspectors."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("results" variable nil (reparse-symbol indented_block_body) [44523 44613])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44631 44635]))                          )
+                        (reparse-symbol indented_block_body) [44619 44729]))                  
+                :type "class")
+                nil [44405 44729])
+            ("" code nil nil [44824 44856])
+            ("InspectorRemoveLastSource" type
+               (:documentation "Removes last source(s) from the incremental chain inspector. CAREFUL: it may remove other chains which list removed charts as sources."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [45067 45388])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45406 45410]))                          )
+                        (reparse-symbol indented_block_body) [45394 45902]))                  
+                :type "class")
+                nil [44857 45902])
+            ("" code nil nil [45997 46028])
+            ("InspectorKMeansClustering" type
+               (:documentation "Splits antigens into clusters."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [46127 46981])
+                    ("results" variable nil (reparse-symbol indented_block_body) [46987 47343])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47361 47365]))                          )
+                        (reparse-symbol indented_block_body) [47349 48073]))                  
+                :type "class")
+                nil [46029 48073])
+            ("" code nil nil [48168 48192])
+            ("InspectorPlotStyle" type
+               (:documentation "Applies plot style to the all charts of inspector."
+                :superclasses ("InspectorCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [48304 48449])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48467 48471]))                          )
+                        (reparse-symbol indented_block_body) [48455 48707]))                  
+                :type "class")
+                nil [48193 48707]))          
+      :file "inspectors.py"
+      :pointmax 48873
+      :fsize 48872
+      :lastmodtime '(22172 50491 0 0)
+      :unmatched-syntax '((PERIOD 489 . 490) (FROM 483 . 487) (PERIOD 488 . 489) (PERIOD 399 . 400) (FROM 393 . 397) (PERIOD 398 . 399) (FROM 351 . 355) (PERIOD 356 . 357) (FROM 303 . 307) (PERIOD 308 . 309) (PERIOD 286 . 287) (FROM 280 . 284) (PERIOD 285 . 286) (PERIOD 232 . 233) (FROM 226 . 230) (PERIOD 231 . 232)))
+    (semanticdb-table "charts.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Charts access API commands
+\"\"\"" code nil nil [113 147])
+            ("traceback" include nil nil [149 184])
+            ("pprint" include nil nil [149 184])
+            ("lzma" include nil nil [149 184])
+            ("bz2" include nil nil [149 184])
+            ("logging" include nil nil [185 199])
+            ("parsers" include nil nil [257 316])
+            ("chart" include nil nil [257 316])
+            ("conformance" include nil nil [257 316])
+            ("backend" include nil nil [257 316])
+            ("validation" include nil nil [333 350])
+            ("MongodbDocumentId" include nil nil [375 399])
+            ("permissions" include nil nil [427 501])
+            ("chart" include nil nil [427 501])
+            ("mongodb_collections" include nil nil [427 501])
+            ("messages" include nil nil [520 535])
+            ("markings" include nil nil [548 642])
+            ("map_data" include nil nil [548 642])
+            ("media" include nil nil [548 642])
+            ("PlotAPIError" include nil nil [548 642])
+            ("PlotAPI" include nil nil [548 642])
+            ("json" include nil nil [660 671])
+            ("name_maker" include nil nil [687 732])
+            ("supported_viruses" include nil nil [687 732])
+            ("factory" include nil nil [687 732])
+            ("mongodb" include nil nil [741 755])
+            ("arguments" include nil nil [763 803])
+            ("command" include nil nil [763 803])
+            ("command_registrator" include nil nil [819 845])
+            ("sMediaTypeToMIME" variable nil nil [921 1031])
+            ("" code nil nil [1127 1156])
+            ("ChartsListForMapsTest" type
+               (:documentation "Temporary command for old maps_test app."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [1269 1480])
+                    ("results" variable nil (reparse-symbol indented_block_body) [1486 1579])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1597 1601]))                          )
+                        (reparse-symbol indented_block_body) [1585 2162]))                  
+                :type "class")
+                nil [1157 2162])
+            ("" code nil nil [2257 2273])
+            ("TableSearch" type
+               (:documentation "Lists table (root) charts matching the search words."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [2388 3697])
+                    ("results" variable nil (reparse-symbol indented_block_body) [3703 3904])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3922 3926]))                          )
+                        (reparse-symbol indented_block_body) [3910 5391])
+                    ("test_data" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5427 5430]))                          )
+                        (reparse-symbol indented_block_body) [5396 5844]))                  
+                :type "class")
+                nil [2274 5844])
+            ("" code nil nil [5939 5953])
+            ("TableList" type
+               (:documentation "Lists table (root) charts matching the passed criteria."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [6069 7211])
+                    ("results" variable nil (reparse-symbol indented_block_body) [7217 7310])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7328 7332]))                          )
+                        (reparse-symbol indented_block_body) [7316 7752])
+                    ("test_data" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [7788 7791]))                          )
+                        (reparse-symbol indented_block_body) [7757 8176]))                  
+                :type "class")
+                nil [5954 8176])
+            ("" code nil nil [8271 8287])
+            ("ChartSearch" type
+               (:documentation "Lists charts (with projections) matching the search words."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [8408 9394])
+                    ("results" variable nil (reparse-symbol indented_block_body) [9400 9601])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9619 9623]))                          )
+                        (reparse-symbol indented_block_body) [9607 10866]))                  
+                :type "class")
+                nil [8288 10866])
+            ("" code nil nil [10961 10975])
+            ("ChartList" type
+               (:documentation "Lists projection charts matching the passed criteria."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [11089 12385])
+                    ("results" variable nil (reparse-symbol indented_block_body) [12391 12484])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12502 12506]))                          )
+                        (reparse-symbol indented_block_body) [12490 12903]))                  
+                :type "class")
+                nil [10976 12903])
+            ("" code nil nil [12998 13015])
+            ("ChartDetails" type
+               (:documentation "Returns requested details of a chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [13116 13669])
+                    ("results" variable nil (reparse-symbol indented_block_body) [13675 13831])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13849 13853]))                          )
+                        (reparse-symbol indented_block_body) [13837 14431]))                  
+                :type "class")
+                nil [13016 14431])
+            ("" code nil nil [14526 14552])
+            ("ChartDetailsForRoot" type
+               (:documentation "Finds root chart for the passed id and returns requested details of it.
+    "
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [14699 15148])
+                    ("results" variable nil (reparse-symbol indented_block_body) [15154 15310])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15328 15332]))                          )
+                        (reparse-symbol indented_block_body) [15316 16018]))                  
+                :type "class")
+                nil [14553 16018])
+            ("" code nil nil [16113 16127])
+            ("ChartRoot" type
+               (:documentation "Finds root chart for the passed id and returns all fields of it.
+    "
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [16257 16380])
+                    ("results" variable nil (reparse-symbol indented_block_body) [16386 16467])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16485 16489]))                          )
+                        (reparse-symbol indented_block_body) [16473 16804]))                  
+                :type "class")
+                nil [16128 16804])
+            ("" code nil nil [16899 16925])
+            ("ChartDetailsForMain" type
+               (:documentation "Finds main chart for the passed id and returns requested details of that main chart.
+    Main chart for root table chart is itself,
+    main chart for hemi or avidity chart is its final optimization chart parent.
+    "
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [17213 17547])
+                    ("results" variable nil (reparse-symbol indented_block_body) [17553 17709])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17727 17731]))                          )
+                        (reparse-symbol indented_block_body) [17715 18107]))                  
+                :type "class")
+                nil [16926 18107])
+            ("" code nil nil [18202 18230])
+            ("ChartDetailsForBranch" type
+               (:documentation "Finds root chart for the passed id and returns requested details of it.
+    If children_tree is in details returns just children of the branch where the
+    passed chart present.
+    "
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [18486 18820])
+                    ("results" variable nil (reparse-symbol indented_block_body) [18826 18982])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19000 19004]))                          )
+                        (reparse-symbol indented_block_body) [18988 19384]))                  
+                :type "class")
+                nil [18231 19384])
+            ("" code nil nil [19479 19500])
+            ("ChartRemoveRoot" type
+               (:documentation "Finds root chart for the passed id and removes it and all its children.
+    "
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [19643 19868])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19886 19890]))                          )
+                        (reparse-symbol indented_block_body) [19874 20409]))                  
+                :type "class")
+                nil [19501 20409])
+            ("" code nil nil [20504 20534])
+            ("ChartsListPorjectionsOf" type
+               (:documentation "Lists projection charts of the specified table chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [20662 21051])
+                    ("results" variable nil (reparse-symbol indented_block_body) [21057 21150])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21168 21172]))                          )
+                        (reparse-symbol indented_block_body) [21156 21389]))                  
+                :type "class")
+                nil [20535 21389])
+            ("" code nil nil [21484 21512])
+            ("ChartListSharingUsers" type
+               (:documentation "Lists users sharing charts with the session user."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [21634 21659])
+                    ("results" variable nil (reparse-symbol indented_block_body) [21665 21770])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21788 21792]))                          )
+                        (reparse-symbol indented_block_body) [21776 21903]))                  
+                :type "class")
+                nil [21513 21903])
+            ("for" code nil nil [22022 22419])
+            ("" code nil nil [22514 22527])
+            ("ChartNew" type
+               (:documentation "Makes new document(s) in charts collection."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [22630 23870])
+                    ("results" variable nil (reparse-symbol indented_block_body) [23876 23965])
+                    ("exclude_from_command_log" variable nil (reparse-symbol indented_block_body) [23971 24025])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24075 24079]))                          )
+                        (reparse-symbol indented_block_body) [24063 26449]))                  
+                :type "class")
+                nil [22528 26449])
+            ("" code nil nil [26544 26569])
+            ("ChartNewProjections" type
+               (:documentation "Makes new document (of Projections type) in charts collection, adds projection to it."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [26725 27088])
+                    ("results" variable nil (reparse-symbol indented_block_body) [27094 27284])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27302 27306]))                          )
+                        (reparse-symbol indented_block_body) [27290 27891]))                  
+                :type "class")
+                nil [26570 27891])
+            ("" code nil nil [27986 28000])
+            ("ChartCopy" type
+               (:documentation "Copies root chart into new chart, owner of the new chart is taken from session, permissions are reset."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [28163 28261])
+                    ("results" variable nil (reparse-symbol indented_block_body) [28267 28354])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28372 28376]))                          )
+                        (reparse-symbol indented_block_body) [28360 28836]))                  
+                :type "class")
+                nil [28001 28836])
+            ("" code nil nil [28931 28953])
+            ("ChartSetKeywords" type
+               (:documentation "Sets chart keywords."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [29041 29317])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29335 29339]))                          )
+                        (reparse-symbol indented_block_body) [29323 29726]))                  
+                :type "class")
+                nil [28954 29726])
+            ("" code nil nil [31170 31193])
+            ("ChartUpdateLayout" type
+               (:documentation "Sets new layout for the projection of the chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [31310 31586])
+                    ("results" variable nil (reparse-symbol indented_block_body) [31592 31617])
+                    ("exclude_from_command_log" variable nil (reparse-symbol indented_block_body) [31623 31664])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31714 31718]))                          )
+                        (reparse-symbol indented_block_body) [31702 32126]))                  
+                :type "class")
+                nil [31194 32126])
+            ("" code nil nil [32221 32239])
+            ("ChartReorient" type
+               (:documentation "Reorient the chart to match master orientation."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [32351 32746])
+                    ("results" variable nil (reparse-symbol indented_block_body) [32752 32777])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32795 32799]))                          )
+                        (reparse-symbol indented_block_body) [32783 33363]))                  
+                :type "class")
+                nil [32240 33363])
+            ("" code nil nil [35191 35207])
+            ("ChartsYears" type
+               (:documentation "Returns dict of years as keys and number of charts made in those years as values."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [35351 35467])
+                    ("results" variable nil (reparse-symbol indented_block_body) [35473 35575])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35593 35597]))                          )
+                        (reparse-symbol indented_block_body) [35581 35733]))                  
+                :type "class")
+                nil [35208 35733])
+            ("" code nil nil [35828 35858])
+            ("ChartsDistinctFieldsValues" type
+               (:documentation "Returns dict of field names as keys and lists of distinct values for thoses fields as values."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("results" variable nil (reparse-symbol indented_block_body) [36029 36134])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36152 36156]))                          )
+                        (reparse-symbol indented_block_body) [36140 36258]))                  
+                :type "class")
+                nil [35859 36258])
+            ("charts_attributes_distinct_for_make_variants" function nil nil [36333 36560])
+            ("" code nil nil [36581 36615])
+            ("ChartsDistinctForField" type
+               (:documentation "Returns list of distinct values for the passed field of all charts available for the user."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [36779 36910])
+                    ("results" variable nil (reparse-symbol indented_block_body) [36916 37020])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37038 37042]))                          )
+                        (reparse-symbol indented_block_body) [37026 37168]))                  
+                :type "class")
+                nil [36616 37168])
+            ("" code nil nil [37263 37288])
+            ("ChartsOlderVersions" type
+               (:documentation "Gets list of ids and modification times of older versions of the specified chart, most recent first."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [37459 37557])
+                    ("results" variable nil (reparse-symbol indented_block_body) [37563 37663])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37681 37685]))                          )
+                        (reparse-symbol indented_block_body) [37669 37807]))                  
+                :type "class")
+                nil [37289 37807])
+            ("" code nil nil [37902 37928])
+            ("ChartsRecentVersions" type
+               (:documentation "Returns list of ids and modification times of the more recent
+    versions of the specified chart, closest to the original chart
+    first. Chart may have multiple immediate more recent versions,
+    they are listed in arbitrary order, then versions of the next
+    level are listed in arbitrary order, and so on."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [38313 38411])
+                    ("results" variable nil (reparse-symbol indented_block_body) [38417 38517])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38535 38539]))                          )
+                        (reparse-symbol indented_block_body) [38523 38662]))                  
+                :type "class")
+                nil [37929 38662])
+            ("" code nil nil [38757 38773])
+            ("ChartExport" type
+               (:documentation "Retrieves chart in one of the supported formats."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [38884 39608])
+                    ("results" variable nil (reparse-symbol indented_block_body) [39614 39885])
+                    ("sFormatToContentType" variable nil (reparse-symbol indented_block_body) [39891 40286])
+                    ("sFormatToSuffix" variable nil (reparse-symbol indented_block_body) [40291 40701])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40719 40723]))                          )
+                        (reparse-symbol indented_block_body) [40707 41696]))                  
+                :type "class")
+                nil [38774 41696])
+            ("" code nil nil [41791 41813])
+            ("ChartExportEntry" type
+               (:documentation "Retrieves chart entry (for debugging and database investigation purposes)."
+                :superclasses ("command.PrivelegedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [41956 42042])
+                    ("results" variable nil (reparse-symbol indented_block_body) [42048 42133])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42151 42155]))                          )
+                        (reparse-symbol indented_block_body) [42139 42318]))                  
+                :type "class")
+                nil [41814 42318])
+            ("" code nil nil [42413 42437])
+            ("ChartExportArchive" type
+               (:documentation "Retrieves chart and derived charts as an archive which could be later imported into another server."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [42606 42784])
+                    ("results" variable nil (reparse-symbol indented_block_body) [42790 42987])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43005 43009]))                          )
+                        (reparse-symbol indented_block_body) [42993 43524]))                  
+                :type "class")
+                nil [42438 43524])
+            ("" code nil nil [43619 43643])
+            ("ChartImportArchive" type
+               (:documentation "Imports archive earlier created by chart_export_archive."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [43769 44035])
+                    ("results" variable nil (reparse-symbol indented_block_body) [44041 44150])
+                    ("exclude_from_command_log" variable nil (reparse-symbol indented_block_body) [44156 44195])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44245 44249]))                          )
+                        (reparse-symbol indented_block_body) [44233 44402]))                  
+                :type "class")
+                nil [43644 44402])
+            ("" code nil nil [44497 44518])
+            ("ChartDescription" type
+               (:documentation "Retrieves chart description."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [44614 44690])
+                    ("results" variable nil (reparse-symbol indented_block_body) [44696 44784])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44802 44806]))                          )
+                        (reparse-symbol indented_block_body) [44790 44994]))                  
+                :type "class")
+                nil [44519 44994])
+            ("" code nil nil [45089 45105])
+            ("ChartLayout" type
+               (:documentation "Retrieves layout of a projection of the chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [45214 45399])
+                    ("results" variable nil (reparse-symbol indented_block_body) [45405 45506])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45524 45528]))                          )
+                        (reparse-symbol indented_block_body) [45512 45885]))                  
+                :type "class")
+                nil [45106 45885])
+            ("" code nil nil [45980 46005])
+            ("TableGetForViewing" type
+               (:documentation "Retrieves table data for viewing/editing. Works for table charts
+    only, returns error for other charts."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [46181 46417])
+                    ("results" variable nil (reparse-symbol indented_block_body) [46423 46783])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46801 46805]))                          )
+                        (reparse-symbol indented_block_body) [46789 47145]))                  
+                :type "class")
+                nil [46006 47145])
+            ("" code nil nil [47240 47265])
+            ("TableEditingAllowed" type
+               (:documentation "Returns if editing of various parts of the table allowed."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [47393 47469])
+                    ("results" variable nil (reparse-symbol indented_block_body) [47475 47551])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47569 47573]))                          )
+                        (reparse-symbol indented_block_body) [47557 47709]))                  
+                :type "class")
+                nil [47266 47709])
+            ("" code nil nil [47804 47820])
+            ("TableUpdate" type
+               (:documentation "Updates chart data upon editing. Number of antigens/sera must
+    be the same. Only changed fields need to be passed in chart. If
+    number of antigens/sera changed, use table_replace command.
+    data can be null/None to just re-save the chart and update fields, e.g. conformance,
+    upon changing code."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [48189 48346])
+                    ("results" variable nil (reparse-symbol indented_block_body) [48352 48561])
+                    ("exclude_from_command_log" variable nil (reparse-symbol indented_block_body) [48567 48606])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48656 48660]))                          )
+                        (reparse-symbol indented_block_body) [48644 48879]))                  
+                :type "class")
+                nil [47821 48879])
+            ("" code nil nil [48974 48991])
+            ("TableReplace" type
+               (:documentation "Replaces chart data upon editing. Number of antigens/sera may
+    change. All fields need to be passed in chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [49167 49311])
+                    ("results" variable nil (reparse-symbol indented_block_body) [49317 49526])
+                    ("exclude_from_command_log" variable nil (reparse-symbol indented_block_body) [49532 49571])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49621 49625]))                          )
+                        (reparse-symbol indented_block_body) [49609 49973]))                  
+                :type "class")
+                nil [48992 49973])
+            ("" code nil nil [50068 50094])
+            ("TableSeraCorrelation" type
+               (:documentation "Computes and returns sera correlation matrix for a chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [50223 50449])
+                    ("results" variable nil (reparse-symbol indented_block_body) [50455 50784])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50802 50806]))                          )
+                        (reparse-symbol indented_block_body) [50790 51187]))                  
+                :type "class")
+                nil [50095 51187])
+            ("" code nil nil [51282 51311])
+            ("TableAntigenSerumNames" type
+               (:documentation "Returns names of the antigens and sera in the table of the specified type."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [51459 51640])
+                    ("results" variable nil (reparse-symbol indented_block_body) [51646 51748])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51766 51770]))                          )
+                        (reparse-symbol indented_block_body) [51754 52141]))                  
+                :type "class")
+                nil [51312 52141])
+            ("" code nil nil [52236 52252])
+            ("ChartsMerge" type
+               (:documentation "Merges multiple charts. Resulting chart has no projections."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [52374 52590])
+                    ("results" variable nil (reparse-symbol indented_block_body) [52596 52676])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52694 52698]))                          )
+                        (reparse-symbol indented_block_body) [52682 52863]))                  
+                :type "class")
+                nil [52253 52863])
+            ("" code nil nil [52958 52986])
+            ("ChartsIncrementalMerge" type
+               (:documentation "Merges chart into master chart. Resulting chart has one
+    projection with common antigens/sera coordinates from the master
+    chart and other antigens/sera coordinates set to NaN."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [53242 53472])
+                    ("results" variable nil (reparse-symbol indented_block_body) [53478 53558])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53576 53580]))                          )
+                        (reparse-symbol indented_block_body) [53564 53773]))                  
+                :type "class")
+                nil [52987 53773])
+            ("" code nil nil [53868 53896])
+            ("ChartUpdateOrientation" type
+               (:documentation "Updates transformation matrix stored in projection."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [54021 54378])
+                    ("results" variable nil (reparse-symbol indented_block_body) [54384 54409])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54427 54431]))                          )
+                        (reparse-symbol indented_block_body) [54415 54779]))                  
+                :type "class")
+                nil [53897 54779])
+            ("" code nil nil [54874 54907])
+            ("ChartUpdateFieldsFromData" type
+               (:documentation "Re-saves chart entry to update fields from underlying chart object."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [55051 55249])
+                    ("results" variable nil (reparse-symbol indented_block_body) [55255 55280])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55298 55302]))                          )
+                        (reparse-symbol indented_block_body) [55286 55918]))                  
+                :type "class")
+                nil [54908 55918])
+            ("" code nil nil [56013 56027])
+            ("ChartPlot" type
+               (:documentation "Generates plot of the projection or procrustes of chart(s) into specified media."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [56168 59713])
+                    ("results" variable nil (reparse-symbol indented_block_body) [59719 61875])
+                    ("sPlotAPIFunction" variable nil (reparse-symbol indented_block_body) [61881 61931])
+                    ("sNotPassedToPlotAPI" variable nil (reparse-symbol indented_block_body) [61936 62027])
+                    ("Error" type
+                       (:superclasses ("Exception")
+                        :members 
+                          ( ("pass" code nil (reparse-symbol indented_block_body) [62066 62070]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [62033 62071])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [62088 62092]))                          )
+                        (reparse-symbol indented_block_body) [62076 62835])
+                    ("map_data_base" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [62858 62862]))                          )
+                        (reparse-symbol indented_block_body) [62840 63441])
+                    ("response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [63541 63545])
+                            ("map_data" variable nil (reparse-symbol function_parameters) [63547 63555])
+                            ("media" variable nil (reparse-symbol function_parameters) [63557 63562]))                          )
+                        (reparse-symbol indented_block_body) [63528 67733]))                  
+                :type "class")
+                nil [56028 67733])
+            ("" code nil nil [67828 67847])
+            ("ChartPlotHemi" type
+               (:documentation "Generates hemi/local test results plots into specified media."
+                :superclasses ("ChartPlot")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [67958 68322])
+                    ("sPlotAPIFunction" variable nil (reparse-symbol indented_block_body) [68328 68383]))                  
+                :type "class")
+                nil [67848 68384])
+            ("" code nil nil [68479 68501])
+            ("ChartPlotAvidity" type
+               (:documentation "Generates avidity test results plots into specified media."
+                :superclasses ("ChartPlot")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [68612 68982])
+                    ("sPlotAPIFunction" variable nil (reparse-symbol indented_block_body) [68988 69046]))                  
+                :type "class")
+                nil [68502 69047])
+            ("" code nil nil [69142 69169])
+            ("ChartAvidityHistogram" type
+               (:documentation "Generates plot of the avidity histogram into specified media."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [69303 70055])
+                    ("results" variable nil (reparse-symbol indented_block_body) [70061 70335])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [70354 70358]))                          )
+                        (reparse-symbol indented_block_body) [70342 71195]))                  
+                :type "class")
+                nil [69170 71195])
+            ("" code nil nil [71290 71315])
+            ("ChartAvidityResults" type
+               (:documentation "Gets avidity results in various formats."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [71426 71834])
+                    ("results" variable nil (reparse-symbol indented_block_body) [71840 72114])
+                    ("sFormatToContentType" variable nil (reparse-symbol indented_block_body) [72120 72233])
+                    ("sFormatToSuffix" variable nil (reparse-symbol indented_block_body) [72238 72322])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [72340 72344]))                          )
+                        (reparse-symbol indented_block_body) [72328 73190]))                  
+                :type "class")
+                nil [71316 73190])
+            ("" code nil nil [73285 73315])
+            ("ChartProcrustesHistogram" type
+               (:documentation "Generates plot of the procrustes histogram into specified media."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [73455 74768])
+                    ("results" variable nil (reparse-symbol indented_block_body) [74774 75048])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [75066 75070]))                          )
+                        (reparse-symbol indented_block_body) [75054 76675]))                  
+                :type "class")
+                nil [73316 76675])
+            ("" code nil nil [76770 76797])
+            ("ChartProcrustesMatrix" type
+               (:documentation "Generates plots and histograms of the procrustes matrix into specified media."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [76947 78739])
+                    ("results" variable nil (reparse-symbol indented_block_body) [78745 78856])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [78874 78878]))                          )
+                        (reparse-symbol indented_block_body) [78862 79614]))                  
+                :type "class")
+                nil [76798 79614])
+            ("" code nil nil [79709 79733])
+            ("ChartProcrustesSet" type
+               (:documentation "Generates plots and optionally histograms of the procrustes set into specified media.
+    5 plots are generated: for all points, antigens only, sera only, reference antigens only, test antigens only.
+    "
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [80007 81858])
+                    ("results" variable nil (reparse-symbol indented_block_body) [81864 81997])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [82015 82019]))                          )
+                        (reparse-symbol indented_block_body) [82003 83018]))                  
+                :type "class")
+                nil [79734 83018])
+            ("" code nil nil [83113 83158])
+            ("ChartMapVsTableDistancesScatterPlot" type
+               (:documentation "Generates scatter plot of table distances vs. map distances."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [83305 84408])
+                    ("results" variable nil (reparse-symbol indented_block_body) [84414 84688])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [84706 84710]))                          )
+                        (reparse-symbol indented_block_body) [84694 86653]))                  
+                :type "class")
+                nil [83159 86653])
+            ("" code nil nil [86748 86787])
+            ("ChartMapVsTableDistancesErrors" type
+               (:documentation "Generates list of differences between map and table distances."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [86931 87443])
+                    ("results" variable nil (reparse-symbol indented_block_body) [87449 87723])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [87741 87745]))                          )
+                        (reparse-symbol indented_block_body) [87729 88957]))                  
+                :type "class")
+                nil [86788 88957])
+            ("" code nil nil [89052 89080])
+            ("ChartStressesHistogram" type
+               (:documentation "Generates plot of the stresses histogram into specified media."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [89216 90157])
+                    ("results" variable nil (reparse-symbol indented_block_body) [90163 90437])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [90455 90459]))                          )
+                        (reparse-symbol indented_block_body) [90443 91109]))                  
+                :type "class")
+                nil [89081 91109])
+            ("" code nil nil [91204 91227])
+            ("ChartStressesList" type
+               (:documentation "Generates list of the stresses histogram into specified format."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [91359 91780])
+                    ("results" variable nil (reparse-symbol indented_block_body) [91786 92060])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [92078 92082]))                          )
+                        (reparse-symbol indented_block_body) [92066 92942]))                  
+                :type "class")
+                nil [91228 92942])
+            ("" code nil nil [93037 93075])
+            ("ChartDistancesBetweenAllPoints" type
+               (:documentation "Generates list of distances between all points."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [93204 93615])
+                    ("results" variable nil (reparse-symbol indented_block_body) [93621 93895])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [93913 93917]))                          )
+                        (reparse-symbol indented_block_body) [93901 95054]))                  
+                :type "class")
+                nil [93076 95054])
+            ("" code nil nil [95149 95174])
+            ("ChartPlotGeographic" type
+               (:documentation "generates geographic map of chart into specified media."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [95300 97170])
+                    ("results" variable nil (reparse-symbol indented_block_body) [97176 97450])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [97468 97472]))                          )
+                        (reparse-symbol indented_block_body) [97456 99514])
+                    ("make_plot_style" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [99539 99543])
+                            ("chart" variable nil (reparse-symbol function_parameters) [99545 99550]))                          )
+                        (reparse-symbol indented_block_body) [99519 99946])
+                    ("response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [99964 99968])
+                            ("map_data" variable nil (reparse-symbol function_parameters) [99970 99978])
+                            ("media" variable nil (reparse-symbol function_parameters) [99980 99985]))                          )
+                        (reparse-symbol indented_block_body) [99951 100309]))                  
+                :type "class")
+                nil [95175 100309])
+            ("" code nil nil [100404 100425])
+            ("ChartErrorLines" type
+               (:documentation "Generates error lines data for the projection of chart into specified media."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [100568 100967])
+                    ("results" variable nil (reparse-symbol indented_block_body) [100973 101073])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [101091 101095]))                          )
+                        (reparse-symbol indented_block_body) [101079 101441]))                  
+                :type "class")
+                nil [100426 101441])
+            ("" code nil nil [101536 101551])
+            ("ChartBlobs" type
+               (:documentation "Generates blobs data for the projection of chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [101662 102055])
+                    ("results" variable nil (reparse-symbol indented_block_body) [102061 102300])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [102318 102322]))                          )
+                        (reparse-symbol indented_block_body) [102306 102796]))                  
+                :type "class")
+                nil [101552 102796])
+            ("" code nil nil [102891 102912])
+            ("ChartTimeSeries" type
+               (:documentation "Generates time series data for the chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [103020 103806])
+                    ("results" variable nil (reparse-symbol indented_block_body) [103812 104142])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [104160 104164]))                          )
+                        (reparse-symbol indented_block_body) [104148 105263]))                  
+                :type "class")
+                nil [102913 105263])
+            ("" code nil nil [105358 105383])
+            ("ChartTimeSeriesSet" type
+               (:documentation "Generates time series data for the chart (images) in background and put results into cache."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [105544 107751])
+                    ("results" variable nil (reparse-symbol indented_block_body) [107757 107859])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [107877 107881]))                          )
+                        (reparse-symbol indented_block_body) [107865 108669]))                  
+                :type "class")
+                nil [105384 108669])
+            ("" code nil nil [109332 109368])
+            ("ChartTimeSeriesGeographicSet" type
+               (:documentation "Generates combined geographic time series data for the charts (images) in background and put results into cache."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [109560 111477])
+                    ("results" variable nil (reparse-symbol indented_block_body) [111483 111585])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [111603 111607]))                          )
+                        (reparse-symbol indented_block_body) [111591 112459]))                  
+                :type "class")
+                nil [109369 112459])
+            ("" code nil nil [112554 112572])
+            ("NameNormalize" type
+               (:documentation "Normalizes passed antigen/serum names."
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [112673 113148])
+                    ("results" variable nil (reparse-symbol indented_block_body) [113154 113236])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [113254 113258]))                          )
+                        (reparse-symbol indented_block_body) [113242 113482])
+                    ("normalize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [113501 113505])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [113507 113515])
+                            ("viruses_api" variable nil (reparse-symbol function_parameters) [113517 113528]))                          )
+                        (reparse-symbol indented_block_body) [113487 113774]))                  
+                :type "class")
+                nil [112573 113774])
+            ("" code nil nil [114953 114974])
+            ("PassageNormalize" type
+               (:documentation "Normalizes passed antigen passages."
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [115075 115428])
+                    ("results" variable nil (reparse-symbol indented_block_body) [115434 115522])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [115540 115544]))                          )
+                        (reparse-symbol indented_block_body) [115528 116019]))                  
+                :type "class")
+                nil [114975 116019])
+            ("" code nil nil [116114 116132])
+            ("DateNormalize" type
+               (:documentation "Normalizes passed dates."
+                :superclasses ("command.RegularCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [116219 116313])
+                    ("results" variable nil (reparse-symbol indented_block_body) [116319 116401])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [116419 116423]))                          )
+                        (reparse-symbol indented_block_body) [116407 116515])
+                    ("process_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [116537 116541])
+                            ("date" variable nil (reparse-symbol function_parameters) [116543 116547]))                          )
+                        (reparse-symbol indented_block_body) [116520 116718]))                  
+                :type "class")
+                nil [116133 116718])
+            ("" code nil nil [116813 116839])
+            ("ChartPlotSpecModify" type
+               (:documentation "Modifies plot spec of the chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [116942 117386])
+                    ("results" variable nil (reparse-symbol indented_block_body) [117392 117481])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [117499 117503]))                          )
+                        (reparse-symbol indented_block_body) [117487 117730]))                  
+                :type "class")
+                nil [116840 117730])
+            ("" code nil nil [117825 117857])
+            ("ChartAntigensSeraMatching" type
+               (:documentation "Generates antigens/sera matching report for two charts (tables). This matching is used by procrustes and merging"
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [118046 118719])
+                    ("results" variable nil (reparse-symbol indented_block_body) [118725 119128])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [119146 119150]))                          )
+                        (reparse-symbol indented_block_body) [119134 120137]))                  
+                :type "class")
+                nil [117858 120137])
+            ("" code nil nil [120232 120260])
+            ("ChartAvailableMarkings" type
+               (:documentation "Returns list (of dict) for markings available for the given chart."
+                :superclasses ("command.SessionedCommand")
+                :members 
+                  ( ("arguments" variable nil (reparse-symbol indented_block_body) [120400 120485])
+                    ("results" variable nil (reparse-symbol indented_block_body) [120491 120643])
+                    ("process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [120661 120665]))                          )
+                        (reparse-symbol indented_block_body) [120649 120945]))                  
+                :type "class")
+                nil [120261 120945]))          
+      :file "charts.py"
+      :pointmax 121111
+      :fsize 121110
+      :lastmodtime '(22294 13466 0 0)
+      :unmatched-syntax '((PERIOD 119389 . 119390) (FROM 119383 . 119387) (PERIOD 119388 . 119389) (INDENT_BLOCK 116694 . 116718) (NEWLINE 116693 . 116694) (COLON 116692 . 116693) (TRY 116558 . 116561) (AS 116686 . 116688) (PERIOD 115561 . 115562) (FROM 115555 . 115559) (PERIOD 115560 . 115561) (PERIOD 113275 . 113276) (FROM 113269 . 113273) (PERIOD 113274 . 113275) (PERIOD 104181 . 104182) (FROM 104175 . 104179) (PERIOD 104180 . 104181) (PERIOD 97489 . 97490) (FROM 97483 . 97487) (PERIOD 97488 . 97489) (INDENT_BLOCK 82734 . 83018) (NEWLINE 82733 . 82734) (COLON 82732 . 82733) (TRY 82212 . 82215) (AS 82726 . 82728) (INDENT_BLOCK 62657 . 62835) (NEWLINE 62656 . 62657) (COLON 62655 . 62656) (TRY 62172 . 62175) (AS 62649 . 62651) (NAME 55313 . 55316) (IF 55335 . 55337) (ELSE 55369 . 55373) (NAME 4962 . 4970) (IF 4979 . 4981) (ELSE 5010 . 5014) (FROM 804 . 808) (PERIOD 809 . 810) (FROM 756 . 760) (PERIOD 761 . 762) (PERIOD 739 . 740) (FROM 733 . 737) (PERIOD 738 . 739) (PERIOD 678 . 679) (FROM 672 . 676) (PERIOD 677 . 678) (PERIOD 649 . 650) (FROM 643 . 647) (PERIOD 648 . 649) (PERIOD 542 . 543) (FROM 536 . 540) (PERIOD 541 . 542) (PERIOD 508 . 509) (FROM 502 . 506) (PERIOD 507 . 508) (PERIOD 406 . 407) (FROM 400 . 404) (PERIOD 405 . 406) (PERIOD 357 . 358) (FROM 351 . 355) (PERIOD 356 . 357) (PERIOD 323 . 324) (FROM 317 . 321) (PERIOD 322 . 323) (PERIOD 251 . 252) (FROM 245 . 249) (PERIOD 250 . 251) (NAME 4962 . 4970) (IF 4979 . 4981) (ELSE 5010 . 5014) (FROM 804 . 808) (PERIOD 809 . 810) (FROM 756 . 760) (PERIOD 761 . 762) (PERIOD 739 . 740) (FROM 733 . 737) (PERIOD 738 . 739) (PERIOD 678 . 679) (FROM 672 . 676) (PERIOD 677 . 678) (PERIOD 649 . 650) (FROM 643 . 647) (PERIOD 648 . 649) (PERIOD 542 . 543) (FROM 536 . 540) (PERIOD 541 . 542) (PERIOD 508 . 509) (FROM 502 . 506) (PERIOD 507 . 508) (PERIOD 406 . 407) (FROM 400 . 404) (PERIOD 405 . 406) (PERIOD 357 . 358) (FROM 351 . 355) (PERIOD 356 . 357) (PERIOD 323 . 324) (FROM 317 . 321) (PERIOD 322 . 323) (PERIOD 251 . 252) (FROM 245 . 249) (PERIOD 250 . 251)))
+    (semanticdb-table "arguments.py"
+      :file "arguments.py"
+      :fsize 14712
+      :lastmodtime '(22158 25046 0 0))
+    (semanticdb-table "command.py"
+      :file "command.py"
+      :fsize 21693
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "permissions.py"
+      :file "permissions.py"
+      :fsize 36601
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "api.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Helper class to execute api command by sending it via http or using
+this instance of acmacs directly (for debugging purposes).
+\"\"\"" code nil nil [113 247])
+            ("urllib.request" include nil nil [249 291])
+            ("re" include nil nil [249 291])
+            ("random" include nil nil [249 291])
+            ("os" include nil nil [249 291])
+            ("sys" include nil nil [249 291])
+            ("logging" include nil nil [292 306])
+            ("hash" include nil nil [369 386])
+            ("json" include nil nil [369 386])
+            ("response" include nil nil [394 423])
+            ("CommandError" type
+               (:documentation "Raised by api._execute if command resposne contains error and raise_error flag is set."
+                :superclasses ("Exception")
+                :type "class")
+                nil [499 628])
+            ("LoginFailed" type
+               (:documentation "Raised on login failure"
+                :superclasses ("Exception")
+                :type "class")
+                nil [629 694])
+            ("API" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"If host is None, execute command in this acmacs instance directly.\"\"\"" code nil (reparse-symbol indented_block_body) [888 960])
+                            ("self" variable nil (reparse-symbol indented_block_body) [969 997])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1006 1028])
+                            ("if" code nil (reparse-symbol indented_block_body) [1037 1102]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [798 802])
+                            ("session" variable nil (reparse-symbol function_parameters) [804 811])
+                            ("user" variable nil (reparse-symbol function_parameters) [818 822])
+                            ("password" variable nil (reparse-symbol function_parameters) [829 837])
+                            ("url_prefix" variable nil (reparse-symbol function_parameters) [842 852]))                          
+                        :documentation "If host is None, execute command in this acmacs instance directly."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [785 1102])
+                    ("_execute" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1120 1124])
+                            ("command" variable nil (reparse-symbol function_parameters) [1126 1133])
+                            ("print_response" variable nil (reparse-symbol function_parameters) [1135 1149])
+                            ("log_error" variable nil (reparse-symbol function_parameters) [1157 1166])
+                            ("raise_error" variable nil (reparse-symbol function_parameters) [1173 1184]))                          )
+                        (reparse-symbol indented_block_body) [1107 2664])
+                    ("_execute_http" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2687 2691])
+                            ("command" variable nil (reparse-symbol function_parameters) [2693 2700]))                          )
+                        (reparse-symbol indented_block_body) [2669 3182])
+                    ("_login" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3198 3202])
+                            ("user" variable nil (reparse-symbol function_parameters) [3204 3208])
+                            ("password" variable nil (reparse-symbol function_parameters) [3210 3218]))                          )
+                        (reparse-symbol indented_block_body) [3187 4161])
+                    ("command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4178 4182])
+                            ("C" variable nil (reparse-symbol function_parameters) [4184 4185])
+                            ("print_response" variable nil (reparse-symbol function_parameters) [4187 4201])
+                            ("log_error" variable nil (reparse-symbol function_parameters) [4209 4218])
+                            ("raise_error" variable nil (reparse-symbol function_parameters) [4225 4236])
+                            ("args" variable nil (reparse-symbol function_parameters) [4244 4250]))                          )
+                        (reparse-symbol indented_block_body) [4166 4546])
+                    ("download" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4564 4568])
+                            ("id" variable nil (reparse-symbol function_parameters) [4570 4572]))                          )
+                        (reparse-symbol indented_block_body) [4551 4702])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4723 4727])
+                            ("name" variable nil (reparse-symbol function_parameters) [4729 4733]))                          )
+                        (reparse-symbol indented_block_body) [4707 4871])
+                    ("_fix_command_chart_new" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4903 4907])
+                            ("cmd" variable nil (reparse-symbol function_parameters) [4909 4912]))                          )
+                        (reparse-symbol indented_block_body) [4876 5132])
+                    ("_fix_args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5151 5155])
+                            ("args" variable nil (reparse-symbol function_parameters) [5157 5161]))                          )
+                        (reparse-symbol indented_block_body) [5137 5333]))                  
+                :type "class")
+                nil [769 5333]))          
+      :file "api.py"
+      :pointmax 5499
+      :fsize 5498
+      :lastmodtime '(22259 41574 0 0)
+      :unmatched-syntax '((FROM 1734 . 1738) (PERIOD 1739 . 1740) (PERIOD 1551 . 1552) (FROM 1545 . 1549) (PERIOD 1550 . 1551) (FROM 387 . 391) (PERIOD 392 . 393) (PERIOD 358 . 359) (FROM 352 . 356) (PERIOD 357 . 358)))
+    (semanticdb-table "response.py"
+      :file "response.py"
+      :fsize 4516
+      :lastmodtime '(22086 5788 0 0)))
+  :file "!Users!eu!ac!acmacs!acmacs!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

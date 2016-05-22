@@ -1,0 +1,41 @@
+;; Object tre2pdf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tre2pdf/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-mode
+      :tags 
+        '( ("MAKEFLAGS" variable (:default-value ("-w")) nil [116 131])
+            ("SOURCES_DIR" variable (:default-value ("src")) nil [206 224])
+            ("TRE2PDF_SOURCES" variable (:default-value ("tre2pdf.cc" "tree.cc" "tree-import.cc" "tree-image.cc" "color.cc" "xz.cc")) nil [225 306])
+            ("NEWICK2JSON_SOURCES" variable (:default-value ("newick2json.cc" "tree-import.cc" "tree.cc" "tree-image.cc" "color.cc" "xz.cc")) nil [306 395])
+            ("TREDIFF_SOURCES" variable (:default-value ("trediff.cc" "tree.cc" "tree-import.cc" "xz.cc")) nil [395 453])
+            ("CLANG" variable (:default-value ("$(shell if g++ --version 2>&1 | grep -i llvm >/dev/null; then echo Y; else echo N; fi)")) nil [528 623])
+            ("WARNINGS" variable nil nil [797 822])
+            ("OPTIMIZATION" variable nil nil [822 843])
+            ("CXXFLAGS" variable (:default-value ("-MMD" "-g" "$(OPTIMIZATION)" "-std=$(STD)" "$(WEVERYTHING)" "$(WARNINGS)" "-I$(BUILD)/include" "$$(pkg-config --cflags cairo)" "$$(pkg-config --cflags liblzma)")) nil [843 998])
+            ("LDFLAGS" variable nil nil [998 1008])
+            ("TRE2PDF_LDLIBS" variable (:default-value ("$$(pkg-config --libs cairo)" "$$(pkg-config --libs liblzma)")) nil [1008 1083])
+            ("NEWICK2JSON_LDLIBS" variable (:default-value ("$$(pkg-config --libs cairo)" "$$(pkg-config --libs liblzma)")) nil [1083 1162])
+            ("TREDIFF_LDLIBS" variable (:default-value ("$$(pkg-config --libs liblzma)")) nil [1162 1209])
+            ("BUILD" variable (:default-value ("build")) nil [1284 1298])
+            ("DIST" variable (:default-value ("dist")) nil [1298 1310])
+            ("all" function (:arguments ("$(DIST)/newick2json" "$(DIST)/tre2pdf" "$(DIST)/trediff")) nil [1311 1368])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(NEWICK2JSON_SOURCES))" "|" "$(DIST)")) nil [1922 2053])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(TRE2PDF_SOURCES))" "|" "$(DIST)")) nil [2054 2173])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(TREDIFF_SOURCES))" "|" "$(DIST)")) nil [2174 2293])
+            ("test" function (:arguments ("all")) nil [2294 2928])
+            ("clean" function nil nil [2929 2978])
+            ("distclean" function (:arguments ("clean")) nil [2979 3018])
+            ("$(BUILD)" function (:arguments ("$(SOURCES_DIR)/%.cc" "|" "$(BUILD)" "axe" "command-line-arguments" "cairo" "jsonhpp")) nil [3093 3208])
+            ("$(DIST)" function nil nil [3283 3330])
+            ("$(BUILD)" function nil nil [3331 3381]))          
+      :file "Makefile"
+      :pointmax 3381
+      :fsize 3380
+      :lastmodtime '(22256 9590 0 0)
+      :unmatched-syntax '((shell-command 3342 . 3380) (bol 3341 . 3341) (semantic-list 1825 . 1840) (punctuation 1824 . 1825) (INCLUDE 1816 . 1823) (bol 1814 . 1814) (ENDIF 1808 . 1813) (bol 1806 . 1806) (ENDIF 1800 . 1805) (bol 1796 . 1796) (semantic-list 1742 . 1795) (punctuation 1741 . 1742) (bol 1735 . 1735) (ELSE 1730 . 1734) (bol 1726 . 1726) (semantic-list 1676 . 1725) (punctuation 1675 . 1676) (bol 1669 . 1669) (semantic-list 1633 . 1668) (IFEQ 1628 . 1632) (bol 1624 . 1624) (semantic-list 1592 . 1623) (IFEQ 1587 . 1591) (bol 1585 . 1585) (symbol 1534 . 1539) (punctuation 1532 . 1533) (punctuation 1531 . 1532) (symbol 1520 . 1530) (bol 1520 . 1520) (symbol 1515 . 1519) (punctuation 1513 . 1514) (punctuation 1512 . 1513) (symbol 1502 . 1511) (bol 1502 . 1502) (symbol 1483 . 1501) (punctuation 1481 . 1482) (punctuation 1480 . 1481) (symbol 1466 . 1479) (bol 1466 . 1466) (symbol 1386 . 1390) (semantic-list 1379 . 1386) (punctuation 1378 . 1379) (symbol 1369 . 1377) (bol 1369 . 1369) (symbol 787 . 789) (punctuation 786 . 787) (punctuation 785 . 786) (symbol 784 . 785) (punctuation 782 . 783) (symbol 778 . 781) (bol 776 . 776) (symbol 768 . 775) (symbol 762 . 767) (punctuation 760 . 761) (symbol 748 . 759) (bol 746 . 746) (symbol 738 . 740) (punctuation 737 . 738) (punctuation 736 . 737) (symbol 735 . 736) (punctuation 733 . 734) (symbol 729 . 732) (bol 727 . 727) (symbol 715 . 726) (symbol 696 . 714) (punctuation 695 . 696) (punctuation 694 . 695) (symbol 688 . 694) (symbol 678 . 687) (punctuation 677 . 678) (punctuation 676 . 677) (symbol 670 . 676) (symbol 657 . 669) (punctuation 655 . 656) (symbol 643 . 654) (bol 641 . 641))))
+  :file "!Users!eu!GH!tre2pdf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

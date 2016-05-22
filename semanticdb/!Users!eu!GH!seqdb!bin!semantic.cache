@@ -1,0 +1,282 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "test"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Scans sequences.
+\"\"\"" code nil nil [43 67])
+            ("traceback" include nil nil [69 94])
+            ("os" include nil nil [69 94])
+            ("sys" include nil nil [69 94])
+            ("if" code nil nil [95 173])
+            ("pathlib" include nil nil [173 197])
+            ("sys" variable nil nil [198 339])
+            ("logging" include nil nil [340 354])
+            ("seqdb" include nil nil [401 413])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [498 502]))              ) nil [489 622])
+            ("exit" code nil nil [1772 1787]))          
+      :file "test"
+      :pointmax 1954
+      :fsize 1953
+      :lastmodtime '(22321 58275 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "seqdb-create"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Creates (non-whocc) seqdb from fasta files.
+\"\"\"" code nil nil [43 94])
+            ("pprint" include nil nil [96 129])
+            ("traceback" include nil nil [96 129])
+            ("os" include nil nil [96 129])
+            ("sys" include nil nil [96 129])
+            ("if" code nil nil [130 208])
+            ("pathlib" include nil nil [208 232])
+            ("sys" variable nil nil [233 374])
+            ("logging" include nil nil [375 389])
+            ("seqdb" include nil nil [436 448])
+            ("seqdb" include nil nil [449 502])
+            ("seqdb.update" include nil nil [503 540])
+            ("seqdb.hidb" include nil nil [541 568])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [653 657]))              ) nil [644 1187])
+            ("with" code nil nil [1262 2780])
+            ("exit" code nil nil [2780 2795]))          
+      :file "seqdb-create"
+      :pointmax 2962
+      :fsize 2961
+      :lastmodtime '(22293 58952 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 2690 . 2780) (NEWLINE 2689 . 2690) (COLON 2688 . 2689) (TRY 1299 . 1302) (AS 2682 . 2684)))
+    (semanticdb-table "tree-draw"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [43 86])
+            ("traceback" include nil nil [43 86])
+            ("subprocess" include nil nil [43 86])
+            ("os" include nil nil [43 86])
+            ("sys" include nil nil [43 86])
+            ("if" code nil nil [87 165])
+            ("pathlib" include nil nil [165 189])
+            ("sys" variable nil nil [190 331])
+            ("logging" include nil nil [332 346])
+            ("seqdb" include nil nil [393 405])
+            ("seqdb" include nil nil [406 433])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [518 522]))              ) nil [509 3486])
+            ("with" code nil nil [3561 6636])
+            ("exit" code nil nil [6636 6651]))          
+      :file "tree-draw"
+      :pointmax 6818
+      :fsize 6817
+      :lastmodtime '(22331 1680 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "whocc-make-tree"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Makes phylogenetic tree for WHO CC sequences
+\"\"\"" code nil nil [43 95])
+            ("sys" include nil nil [97 107])
+            ("if" code nil nil [108 186])
+            ("traceback" include nil nil [186 233])
+            ("socket" include nil nil [186 233])
+            ("getpass" include nil nil [186 233])
+            ("datetime" include nil nil [186 233])
+            ("os" include nil nil [186 233])
+            ("pathlib" include nil nil [234 258])
+            ("sys" variable nil nil [259 400])
+            ("logging" include nil nil [401 415])
+            ("seqdb" include nil nil [462 485])
+            ("seqdb" include nil nil [486 524])
+            ("sBaseSeq" variable nil nil [600 783])
+            ("sStartDates" variable nil nil [785 902])
+            ("sVirusTypeLineage" variable nil nil [904 1055])
+            ("sWorkingDirRoot" variable nil nil [1057 1112])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [1197 1201]))              ) nil [1188 3868])
+            ("make_working_dir" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [3964 3968]))              ) nil [3943 4407])
+            ("run_in_background" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [4504 4515]))              ) nil [4482 4828])
+            ("with" code nil nil [4903 8757])
+            ("exit" code nil nil [8757 8772]))          
+      :file "whocc-make-tree"
+      :pointmax 8939
+      :fsize 8938
+      :lastmodtime '(22334 63111 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "seqdb-make-tree"
+      :major-mode 'python-mode
+      :tags 
+        '( ("" code nil nil [58 106])
+            ("\"\"\"
+Makes phylogenetic tree
+
+Base seq/outgroups and start date 2016-05-08
+H1pdm: SWITZERLAND/9772556/2013 SIAT1          20141201
+H3   : HAWAII/22/2012 MDCK1                    20150301
+B/Vic: VICTORIA/830/2013 MDCK2                 20141201
+B/Yam: CAMBODIA/FSS29374/2014 MDCK1            20141201
+\"\"\"" code nil nil [108 409])
+            ("time" include nil nil [411 506])
+            ("getpass" include nil nil [411 506])
+            ("json" include nil nil [411 506])
+            ("pprint" include nil nil [411 506])
+            ("traceback" include nil nil [411 506])
+            ("socket" include nil nil [411 506])
+            ("collections" include nil nil [411 506])
+            ("operator" include nil nil [411 506])
+            ("re" include nil nil [411 506])
+            ("sys" include nil nil [411 506])
+            ("if" code nil nil [507 585])
+            ("pathlib" include nil nil [585 609])
+            ("sys" variable nil nil [610 751])
+            ("logging" include nil nil [752 766])
+            ("seqdb" include nil nil [813 880])
+            ("seqdb.raxml" include nil nil [881 910])
+            ("seqdb.garli" include nil nil [911 940])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [1025 1029]))              ) nil [1016 2252])
+            ("run_raxml_garli" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [2347 2358])
+                ("fasta_file" variable nil (reparse-symbol function_parameters) [2360 2370])
+                ("base_seq_name" variable nil (reparse-symbol function_parameters) [2372 2385])
+                ("machines" variable nil (reparse-symbol function_parameters) [2387 2395])
+                ("args" variable nil (reparse-symbol function_parameters) [2397 2401]))              ) nil [2327 4037])
+            ("JSONEncoder" type
+               (:superclasses ("json.JSONEncoder")
+                :members 
+                  ( ("default" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4167 4171])
+                            ("o" variable nil (reparse-symbol function_parameters) [4173 4174]))                          )
+                        (reparse-symbol indented_block_body) [4155 4212]))                  
+                :type "class")
+                nil [4112 4212])
+            ("export_fasta" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [6652 6663])
+                ("args" variable nil (reparse-symbol function_parameters) [6665 6669]))              ) nil [6635 7420])
+            ("make_working_dir" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [7516 7527]))              ) nil [7495 7764])
+            ("with" code nil nil [7839 11260])
+            ("exit" code nil nil [11260 11275]))          
+      :file "seqdb-make-tree"
+      :pointmax 11442
+      :fsize 11441
+      :lastmodtime '(22321 38050 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 11170 . 11260) (NEWLINE 11169 . 11170) (COLON 11168 . 11169) (TRY 7869 . 7872) (AS 11162 . 11164) (NAME 2434 . 2440) (IF 2450 . 2452) (ELSE 2469 . 2473) (INDENT_BLOCK 1959 . 2252) (NEWLINE 1958 . 1959) (COLON 1957 . 1958) (TRY 1036 . 1039) (AS 1951 . 1953) (punctuation 56 . 57) (COLON 48 . 49) (NAME 2434 . 2440) (IF 2450 . 2452) (ELSE 2469 . 2473) (INDENT_BLOCK 1959 . 2252) (NEWLINE 1958 . 1959) (COLON 1957 . 1958) (TRY 1036 . 1039) (AS 1951 . 1953) (punctuation 56 . 57) (COLON 48 . 49)))
+    (semanticdb-table "tree-to-tree"
+      :major-mode 'python-mode
+      :tags 
+        '( ("traceback" include nil nil [43 64])
+            ("sys" include nil nil [43 64])
+            ("if" code nil nil [65 143])
+            ("pathlib" include nil nil [143 167])
+            ("sys" variable nil nil [168 309])
+            ("logging" include nil nil [310 324])
+            ("seqdb" include nil nil [371 383])
+            ("seqdb" include nil nil [384 411])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [496 500]))              ) nil [487 906])
+            ("with" code nil nil [981 2057])
+            ("exit" code nil nil [2057 2072]))          
+      :file "tree-to-tree"
+      :pointmax 2239
+      :unmatched-syntax '((INDENT_BLOCK 1967 . 2057) (NEWLINE 1966 . 1967) (COLON 1965 . 1966) (TRY 1017 . 1020) (AS 1959 . 1961)))
+    (semanticdb-table "tree-info"
+      :major-mode 'python-mode
+      :tags 
+        '( ("traceback" include nil nil [43 64])
+            ("sys" include nil nil [43 64])
+            ("if" code nil nil [65 143])
+            ("pathlib" include nil nil [143 167])
+            ("sys" variable nil nil [168 309])
+            ("logging" include nil nil [310 324])
+            ("seqdb" include nil nil [371 383])
+            ("seqdb" include nil nil [384 411])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [496 500]))              ) nil [487 812])
+            ("with" code nil nil [1285 2529])
+            ("exit" code nil nil [2529 2544]))          
+      :file "tree-info"
+      :pointmax 2711
+      :fsize 2710
+      :lastmodtime '(22328 20763 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tree-import"
+      :major-mode 'python-mode
+      :tags 
+        '( ("traceback" include nil nil [43 64])
+            ("sys" include nil nil [43 64])
+            ("if" code nil nil [65 143])
+            ("pathlib" include nil nil [143 167])
+            ("sys" variable nil nil [168 309])
+            ("logging" include nil nil [310 324])
+            ("seqdb" include nil nil [371 383])
+            ("seqdb" include nil nil [384 411])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [496 500]))              ) nil [487 965])
+            ("with" code nil nil [1040 2259])
+            ("exit" code nil nil [2259 2274]))          
+      :file "tree-import"
+      :pointmax 2441
+      :fsize 2440
+      :lastmodtime '(22334 64093 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "whocc-make-tree-postprocess"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Postprocess data in the directories upon making tree via whocc-make-tree
+\"\"\"" code nil nil [43 123])
+            ("sys" include nil nil [125 135])
+            ("if" code nil nil [136 214])
+            ("traceback" include nil nil [214 230])
+            ("pathlib" include nil nil [231 255])
+            ("sys" variable nil nil [256 397])
+            ("logging" include nil nil [398 412])
+            ("seqdb" include nil nil [458 527])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [612 616]))              ) nil [603 1424])
+            ("exit" code nil nil [2081 2096]))          
+      :file "whocc-make-tree-postprocess"
+      :pointmax 2263
+      :fsize 2262
+      :lastmodtime '(22333 22313 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "whocc-make-tree-postprocess-raxml"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Postprocess data in the directories upon making tree via whocc-make-tree
+\"\"\"" code nil nil [43 123])
+            ("sys" include nil nil [125 135])
+            ("if" code nil nil [136 214])
+            ("traceback" include nil nil [214 230])
+            ("pathlib" include nil nil [231 255])
+            ("sys" variable nil nil [256 397])
+            ("logging" include nil nil [398 412])
+            ("seqdb" include nil nil [458 527])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [612 616]))              ) nil [603 2329])
+            ("state_at" function (:arguments 
+              ( ("tt" variable nil (reparse-symbol function_parameters) [2417 2419])
+                ("ee" variable nil (reparse-symbol function_parameters) [2421 2423])
+                ("killed" variable nil (reparse-symbol function_parameters) [2425 2431]))              ) nil [2404 2819])
+            ("load" function (:arguments 
+              ( ("filepath" variable nil (reparse-symbol function_parameters) [2829 2837]))              ) nil [2820 2951])
+            ("exit" code nil nil [3608 3623]))          
+      :file "whocc-make-tree-postprocess-raxml"
+      :pointmax 3790
+      :fsize 3789
+      :lastmodtime '(22333 29878 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!GH!seqdb!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

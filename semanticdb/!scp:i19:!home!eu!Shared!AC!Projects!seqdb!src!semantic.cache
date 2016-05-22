@@ -1,0 +1,1114 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "seqdb.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34])
+            ("string" include (:system-flag t) nil [35 52])
+            ("functional" include (:system-flag t) nil [53 74])
+            ("algorithm" include (:system-flag t) nil [75 95])
+            ("regex" include (:system-flag t) nil [96 112])
+            ("iterator" include (:system-flag t) nil [113 132])
+            ("deque" include (:system-flag t) nil [133 149])
+            ("messages.hh" include nil nil [151 173])
+            ("json-write.hh" include nil nil [174 198])
+            ("sequence-shift.hh" include nil nil [199 227])
+            ("amino-acids.hh" include nil nil [228 253])
+            ("Seqdb" type
+               (:prototype t
+                :type "class")
+                nil [1037 1049])
+            ("SeqdbIterator" type
+               (:prototype t
+                :type "class")
+                nil [1050 1070])
+            ("SeqdbSeq" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1165 1172])
+                    ("SeqdbSeq" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("SeqdbSeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1177 1211])
+                    ("SeqdbSeq" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNucleotides" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1233 1258])
+                            ("aAminoAcids" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1259 1283])
+                            ("aGene" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1284 1302]))                          
+                        :type ("SeqdbSeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1217 1486])
+                    ("SeqdbSeq" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNucleotides" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1508 1533])
+                            ("aGene" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1534 1552]))                          
+                        :type ("SeqdbSeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1492 1627])
+                    ("json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("target" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1660 1680])
+                            ("comma" variable (:type ("jsonw::IfPrependComma" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1681 1709])
+                            ("indent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1710 1724])
+                            ("prefix" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1725 1739]))                          
+                        :type ("jsonw::IfPrependComma" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1633 1746])
+                    ("align" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aForce" variable (:type "bool") (reparse-symbol arg-sub-list) [1778 1790])
+                            ("aMessages" variable
+                               (:reference 1
+                                :type ("Messages" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1791 1811]))                          
+                        :type ("AlignAminoAcidsData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1752 1812])
+                    ("match_update_nucleotides" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aNucleotides" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1902 1927]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1872 1928])
+                    ("match_update_amino_acids" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aAminoAcids" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1963 1987]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1933 1988])
+                    ("add_passage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aPassage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2010 2031]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1993 2032])
+                    ("update_gene" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aGene" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2054 2072])
+                            ("aMessages" variable
+                               (:reference 1
+                                :type ("Messages" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2073 2093])
+                            ("replace_ha" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2094 2117]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2037 2119])
+                    ("add_reassortant" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aReassortant" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2145 2170]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2124 2171])
+                    ("add_lab_id" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aLab" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2192 2209])
+                            ("aLabId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2210 2229]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2176 2230])
+                    ("update_clades" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aVirusType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2254 2277])
+                            ("aLineage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2278 2299]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2235 2300])
+                    ("is_short" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2306 2473])
+                    ("translated" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2478 2541])
+                    ("aligned" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2546 2612])
+                    ("matched" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2617 2674])
+                    ("has_lab" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aLab" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2700 2717]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2680 2771])
+                    ("lab" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2776 2875])
+                    ("lab_id" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2880 3038])
+                    ("cdcids" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3043 3197])
+                    ("passages" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3202 3279])
+                    ("passage" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3284 3379])
+                    ("reassortant" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3384 3467])
+                    ("gene" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3472 3521])
+                    ("hi_names" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3527 3603])
+                    ("hi_names" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3608 3672])
+                    ("add_hi_name" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aHiName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3701 3721]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3677 3754])
+                    ("amino_acids" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aAligned" variable (:type "bool") (reparse-symbol arg-sub-list) [3784 3798]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3760 3805])
+                    ("nucleotides" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aAligned" variable (:type "bool") (reparse-symbol arg-sub-list) [3834 3848]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3810 3855])
+                    ("private" label nil (reparse-symbol classsubparts) [4123 4131])
+                    ("mPassages" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4136 4171])
+                    ("mNucleotides" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4176 4201])
+                    ("mAminoAcids" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4206 4230])
+                    ("mNucleotidesShift" variable (:type ("Shift" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4235 4259])
+                    ("mAminoAcidsShift" variable (:type ("Shift" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4264 4287])
+                    ("mLabIds" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4292 4348])
+                    ("mGene" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4353 4371])
+                    ("mHiNames" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4376 4410])
+                    ("mReassortant" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4415 4453])
+                    ("mClades" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4458 4491])
+                    ("shift" function
+                       (:typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("aSource" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4529 4549])
+                            ("aShift" variable (:type "int") (reparse-symbol arg-sub-list) [4550 4561])
+                            ("aFill" variable (:type "char") (reparse-symbol arg-sub-list) [4562 4573]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4497 4836])
+                    ("Seqdb" friend nil (reparse-symbol classsubparts) [4842 4860])
+                    ("SeqdbIterator" friend nil (reparse-symbol classsubparts) [4866 4892])
+                    ("SeqdbIteratorBase" friend nil (reparse-symbol classsubparts) [4898 4928]))                  
+                :type "class")
+                nil [1147 4933])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5060 5078])
+                    ("seq" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SeqdbSeq" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5079 5099]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [5028 5199])
+            ("SeqdbEntry" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5296 5303])
+                    ("SeqdbEntry" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("SeqdbEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5308 5330])
+                    ("SeqdbEntry" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5353 5371]))                          
+                        :type ("SeqdbEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5335 5389])
+                    ("json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("target" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5422 5442])
+                            ("comma" variable (:type ("jsonw::IfPrependComma" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5443 5471])
+                            ("indent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5472 5486])
+                            ("prefix" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5487 5501]))                          
+                        :type ("jsonw::IfPrependComma" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5395 5508])
+                    ("name" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5514 5563])
+                    ("empty" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5568 5618])
+                    ("virus_type" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5624 5684])
+                    ("virus_type" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aVirusType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5712 5735]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5689 5764])
+                    ("add_date" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aDate" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5783 5801]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5769 5802])
+                    ("date" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5807 5897])
+                    ("lineage" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5902 5957])
+                    ("update_lineage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aLineage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5982 6003])
+                            ("aMessages" variable
+                               (:reference 1
+                                :type ("Messages" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6004 6024]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5962 6025])
+                    ("update_subtype" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aSubtype" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6050 6071])
+                            ("aMessages" variable
+                               (:reference 1
+                                :type ("Messages" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6072 6092]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6030 6093])
+                    ("add_or_update_sequence" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aSequence" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6185 6207])
+                            ("aPassage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6208 6229])
+                            ("aReassortant" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6230 6255])
+                            ("aLab" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6256 6273])
+                            ("aLabId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6274 6293])
+                            ("aGene" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6294 6312]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6150 6313])
+                    ("date_within_range" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aBegin" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6349 6368])
+                            ("aEnd" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6369 6386]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6319 6587])
+                    ("remove_short_sequences" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6593 6761])
+                    ("remove_not_translated_sequences" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6767 6955])
+                    ("cdcids" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6961 7314])
+                    ("begin_seq" function
+                       (:typemodifiers ("inline")
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7320 7368])
+                    ("end_seq" function
+                       (:typemodifiers ("inline")
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7373 7417])
+                    ("private" label nil (reparse-symbol classsubparts) [7675 7683])
+                    ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7688 7706])
+                    ("mDates" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7711 7743])
+                    ("mLineage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7748 7769])
+                    ("mVirusType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7774 7797])
+                    ("mSeq" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("SeqdbSeq" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7802 7829])
+                    ("Seqdb" friend nil (reparse-symbol classsubparts) [7835 7853])
+                    ("SeqdbIteratorBase" friend nil (reparse-symbol classsubparts) [7859 7889])
+                    ("SeqdbIterator" friend nil (reparse-symbol classsubparts) [7895 7921])
+                    ("ConstSeqdbIterator" friend nil (reparse-symbol classsubparts) [7927 7958]))                  
+                :type "class")
+                nil [5276 7962])
+            ("SeqdbEntrySeq" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8062 8069])
+                    ("SeqdbEntrySeq" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aEntry" variable
+                               (:reference 1
+                                :type ("SeqdbEntry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8095 8114])
+                            ("aSeq" variable
+                               (:reference 1
+                                :type ("SeqdbSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8115 8130]))                          
+                        :type ("SeqdbEntrySeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8074 8164])
+                    ("SeqdbEntrySeq" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aEntry" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SeqdbEntry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8190 8215])
+                            ("aSeq" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SeqdbSeq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8216 8237]))                          
+                        :type ("SeqdbEntrySeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8169 8319])
+                    ("entry" function
+                       (:typemodifiers ("inline")
+                        :type ("SeqdbEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8325 8371])
+                    ("seq" function
+                       (:typemodifiers ("inline")
+                        :type ("SeqdbSeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8376 8416])
+                    ("entry" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("SeqdbEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8421 8479])
+                    ("seq" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("SeqdbSeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8484 8536])
+                    ("make_name" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aPassageSeparator" variable
+                               (:default-value "\" \""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8571 8606]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8542 8762])
+                    ("seq_id" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8768 8857])
+                    ("private" label nil (reparse-symbol classsubparts) [8860 8868])
+                    ("mEntry" variable
+                       (:pointer 1
+                        :type ("SeqdbEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8873 8892])
+                    ("mSeq" variable
+                       (:pointer 1
+                        :type ("SeqdbSeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8897 8912]))                  
+                :type "class")
+                nil [8039 8915])
+            ("std" type
+               (:members 
+                  ( ("noexcept" function
+                       (:arguments 
+                          ( ("" variable (:type ("is_nothrow_move_constructible" type
+                                 (:template-specifier 
+                                    ( ("SeqdbEntrySeq" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [9010 9055])
+                            ("" variable
+                               (:reference 1
+                                :type ("value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9056 9064])
+                            ("" variable (:type ("is_nothrow_move_assignable" type
+                                 (:template-specifier 
+                                    ( ("SeqdbEntrySeq" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [9065 9107])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9108 9114]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9001 9209]))                  
+                :type "namespace")
+                nil [8917 9211])
+            ("SeqdbIteratorBase" type
+               (:superclasses 
+                  ( ("std::iterator" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [9378 9385])
+                    ("SeqdbIteratorBase" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline" "virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9521 9559])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline" "virtual")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9596 9629]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9565 9704])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline" "virtual")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9740 9773]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9709 9813])
+                    ("filter_lab" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aLab" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9856 9873]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9819 9920])
+                    ("filter_subtype" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aSubtype" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9966 9987]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9925 10042])
+                    ("filter_lineage" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aLineage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10088 10109]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10047 10164])
+                    ("filter_aligned" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aAligned" variable (:type "bool") (reparse-symbol arg-sub-list) [10210 10224]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10169 10279])
+                    ("filter_gene" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aGene" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10322 10340]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10284 10389])
+                    ("filter_date_range" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aBegin" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10438 10457])
+                            ("aEnd" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10458 10475]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10394 10539])
+                    ("filter_hi_name" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aHasHiName" variable (:type "bool") (reparse-symbol arg-sub-list) [10585 10601]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10544 10660])
+                    ("filter_name_regex" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNameRegex" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10709 10732]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10665 10842])
+                    ("seqdb" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :type ("Seqdb" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10848 10887])
+                    ("make_name" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aPassageSeparator" variable
+                               (:default-value "\" \""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10922 10957]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10892 10969])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10975 11016])
+                    ("validate" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11022 11051])
+                    ("protected" label nil (reparse-symbol classsubparts) [11054 11064])
+                    ("SeqdbIteratorBase" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11069 11131])
+                    ("SeqdbIteratorBase" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aEntryNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11161 11177])
+                            ("aSeqNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11178 11192]))                          
+                        :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11136 11316])
+                    ("suitable_entry" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11322 11357])
+                    ("suitable_seq" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11362 11395])
+                    ("next_seq" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11400 11423])
+                    ("next_entry" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11428 11453])
+                    ("entry_no" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11459 11510])
+                    ("seq_no" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11515 11562])
+                    ("private" label nil (reparse-symbol classsubparts) [11565 11573])
+                    ("mEntryNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11578 11594])
+                    ("mSeqNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11599 11613])
+                    ("mLab" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11635 11652])
+                    ("mSubtype" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11657 11678])
+                    ("mLineage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11683 11704])
+                    ("mAligned" variable (:type "bool") (reparse-symbol classsubparts) [11709 11723])
+                    ("mGene" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11728 11746])
+                    ("mBegin" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11751 11770])
+                    ("mEnd" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11775 11792])
+                    ("mHasHiName" variable (:type "bool") (reparse-symbol classsubparts) [11797 11813])
+                    ("mNameMatcherSet" variable (:type "bool") (reparse-symbol classsubparts) [11818 11839])
+                    ("mNameMatcher" variable (:type ("std::regex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11844 11868])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11874 11951])
+                    ("filter_added" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11956 12043]))                  
+                :type "class")
+                nil [9288 12047])
+            ("SeqdbIterator" type
+               (:superclasses 
+                  ( ("SeqdbIteratorBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12201 12208])
+                    ("SeqdbIterator" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline" "virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [12328 12362])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SeqdbIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12391 12420]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12368 12507])
+                    ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :type ("SeqdbEntrySeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12513 12546])
+                    ("seqdb" function
+                       (:typemodifiers ("inline" "virtual")
+                        :constant-flag t
+                        :type ("Seqdb" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12552 12612])
+                    ("make_name" function
+                       (:typemodifiers ("inline" "virtual")
+                        :arguments 
+                          ( ("aPassageSeparator" variable
+                               (:default-value "\" \""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12654 12689]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12617 12783])
+                    ("private" label nil (reparse-symbol classsubparts) [12786 12794])
+                    ("SeqdbIterator" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aSeqdb" variable
+                               (:reference 1
+                                :type ("Seqdb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12820 12834]))                          
+                        :type ("SeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12799 12875])
+                    ("SeqdbIterator" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aSeqdb" variable
+                               (:reference 1
+                                :type ("Seqdb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12901 12915])
+                            ("aEntryNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12916 12932])
+                            ("aSeqNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12933 12947]))                          
+                        :type ("SeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12880 13004])
+                    ("mSeqdb" variable (:type ("Seqdb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13010 13024])
+                    ("Seqdb" friend nil (reparse-symbol classsubparts) [13030 13048]))                  
+                :type "class")
+                nil [12151 13053])
+            ("ConstSeqdbIterator" type
+               (:superclasses 
+                  ( ("SeqdbIteratorBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [13133 13140])
+                    ("ConstSeqdbIterator" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline" "virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [13280 13319])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ConstSeqdbIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13348 13382]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [13325 13469])
+                    ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("SeqdbEntrySeq" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13475 13520])
+                    ("seqdb" function
+                       (:typemodifiers ("inline" "virtual")
+                        :constant-flag t
+                        :type ("Seqdb" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13526 13586])
+                    ("make_name" function
+                       (:typemodifiers ("inline" "virtual")
+                        :arguments 
+                          ( ("aPassageSeparator" variable
+                               (:default-value "\" \""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13628 13663]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13591 13723])
+                    ("private" label nil (reparse-symbol classsubparts) [13726 13734])
+                    ("ConstSeqdbIterator" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aSeqdb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Seqdb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13765 13785]))                          
+                        :type ("ConstSeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13739 13826])
+                    ("ConstSeqdbIterator" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aSeqdb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Seqdb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13857 13877])
+                            ("aEntryNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13878 13894])
+                            ("aSeqNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13895 13909]))                          
+                        :type ("ConstSeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13831 13966])
+                    ("mSeqdb" variable
+                       (:constant-flag t
+                        :type ("Seqdb" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13972 13992])
+                    ("Seqdb" friend nil (reparse-symbol classsubparts) [13998 14016]))                  
+                :type "class")
+                nil [13078 14021])
+            ("Seqdb" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14141 14148])
+                    ("Seqdb" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Seqdb" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14153 14170])
+                    ("from_json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14191 14208]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14176 14209])
+                    ("load" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14224 14245]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14214 14246])
+                    ("json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("indent" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14268 14285]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14251 14293])
+                    ("save" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14308 14329])
+                            ("indent" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14330 14347]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14298 14355])
+                    ("number_of_entries" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14361 14428])
+                    ("find_by_name" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14466 14484]))                          
+                        :type ("SeqdbEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14434 14658])
+                    ("new_entry" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14686 14704]))                          
+                        :type ("SeqdbEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14664 14705])
+                    ("cleanup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("remove_short_sequences" variable (:type "bool") (reparse-symbol arg-sub-list) [14819 14847]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14799 14848])
+                    ("report" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14879 14906])
+                    ("report_identical" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14911 14948])
+                    ("all_hi_names" function
+                       (:prototype-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [14953 14999])
+                    ("remove_hi_names" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [15004 15027])
+                    ("begin" function
+                       (:typemodifiers ("inline")
+                        :type ("SeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15082 15149])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("SeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15154 15213])
+                    ("begin" function
+                       (:typemodifiers ("inline")
+                        :type ("ConstSeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15218 15301])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("ConstSeqdbIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15306 15381])
+                    ("begin_entry" function
+                       (:typemodifiers ("inline")
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15386 15440])
+                    ("end_entry" function
+                       (:typemodifiers ("inline")
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15445 15495])
+                    ("find_identical_sequences" function
+                       (:template 
+                          ( ("Value" type (:type "class") nil nil))                          
+                        :type ("std::deque" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("value" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15591 15603]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [15501 15610])
+                    ("private" label nil (reparse-symbol classsubparts) [15613 15621])
+                    ("mEntries" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("SeqdbEntry" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [15626 15659])
+                    ("find_insertion_place" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15727 15745]))                          
+                        :type ("std::vector::iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15665 15930])
+                    ("SeqdbIteratorBase" friend nil (reparse-symbol classsubparts) [15936 15966])
+                    ("SeqdbIterator" friend nil (reparse-symbol classsubparts) [15972 15998])
+                    ("ConstSeqdbIterator" friend nil (reparse-symbol classsubparts) [16004 16035]))                  
+                :type "class")
+                nil [14126 16039])
+            ("validate" function
+               (:parent "SeqdbIteratorBase"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [16116 16331])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :parent "SeqdbIterator"
+                :typemodifiers ("inline")
+                :type ("SeqdbEntrySeq" type (:type "class") nil nil))
+                nil [16436 16603])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :parent "ConstSeqdbIterator"
+                :typemodifiers ("inline")
+                :constant-flag t
+                :type ("SeqdbEntrySeq" type (:type "class") nil nil))
+                nil [16708 16892])
+            ("suitable_entry" function
+               (:parent "SeqdbIteratorBase"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [17457 17761])
+            ("suitable_seq" function
+               (:parent "SeqdbIteratorBase"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [17871 18285])
+            ("next_seq" function
+               (:parent "SeqdbIteratorBase"
+                :typemodifiers ("inline")
+                :type "bool")
+                nil [18393 18621])
+            ("next_entry" function
+               (:parent "SeqdbIteratorBase"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [18725 19135])
+            ("++" function
+               (:operator-flag t
+                :parent "SeqdbIteratorBase"
+                :typemodifiers ("inline")
+                :type ("SeqdbIteratorBase" type (:type "class") nil nil))
+                nil [19241 19374])
+            ("find_identical_sequences" function
+               (:template 
+                  ( ("Value" type (:type "class") nil nil))                  
+                :type ("std::deque" type
+                     (:template-specifier 
+                        ( ("std::vector" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("value" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19578 19590]))                  
+                :parent "Seqdb")
+                nil [19481 20388])
+            ("SeqdbParsingError" type
+               (:superclasses 
+                  ( ("std::runtime_error" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [20555 20562])
+                    ("std::runtime_error::runtime_error" variable (:type "int") (reparse-symbol classsubparts) [20573 20607]))                  
+                :type "class")
+                nil [20500 20610]))          
+      :file "seqdb.hh"
+      :pointmax 20686
+      :fsize 25372
+      :lastmodtime '(22322 60299)
+      :unmatched-syntax nil)
+    (semanticdb-table "messages.hh"
+      :file "messages.hh"
+      :fsize 466
+      :lastmodtime '(22308 39651))
+    (semanticdb-table "json-write.hh"
+      :file "json-write.hh"
+      :fsize 5990
+      :lastmodtime '(22312 38807))
+    (semanticdb-table "sequence-shift.hh"
+      :file "sequence-shift.hh"
+      :fsize 2678
+      :lastmodtime '(22314 4310))
+    (semanticdb-table "amino-acids.hh"
+      :file "amino-acids.hh"
+      :fsize 2631
+      :lastmodtime '(22293 64953))
+    (semanticdb-table "newick.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [24 43])
+            ("sstream" include (:system-flag t) nil [44 62])
+            ("stack" include (:system-flag t) nil [63 79])
+            ("regex" include (:system-flag t) nil [80 96])
+            ("axe.h" include nil nil [98 114])
+            ("newick.hh" include nil nil [116 136])
+            ("NodeStack" type
+               (:typedef ("std::stack" type
+                     (:template-specifier 
+                        ( ("Node::Subtree" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [213 258])
+            ("parse_newick" function
+               (:arguments 
+                  ( ("data" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 370]))                  
+                :type ("Tree" type (:type "class") nil nil))
+                nil [335 4804]))          
+      :file "newick.cc"
+      :pointmax 4880
+      :fsize 4873
+      :lastmodtime '(22306 13845)
+      :unmatched-syntax nil)
+    (semanticdb-table "newick.hh"
+      :file "newick.hh"
+      :fsize 745
+      :lastmodtime '(22305 51044)))
+  :file "!scp:i19:!home!eu!Shared!AC!Projects!seqdb!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

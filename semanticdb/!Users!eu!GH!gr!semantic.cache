@@ -1,0 +1,1188 @@
+;; Object gr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gr/"
+  :tables
+  (list
+    (semanticdb-table "gr.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdexcept" include (:system-flag t) nil [21 41])
+            ("algorithm" include (:system-flag t) nil [42 62])
+            ("string" include (:system-flag t) nil [63 80])
+            ("cstring" include (:system-flag t) nil [81 99])
+            ("stack" include (:system-flag t) nil [100 116])
+            ("forward_list" include (:system-flag t) nil [117 140])
+            ("regex" include (:system-flag t) nil [141 157])
+            ("list" include (:system-flag t) nil [158 173])
+            ("vector" include (:system-flag t) nil [174 191])
+            ("sys/types.h" include (:system-flag t) nil [193 215])
+            ("dirent.h" include (:system-flag t) nil [216 235])
+            ("sys/stat.h" include (:system-flag t) nil [237 258])
+            ("unistd.h" include (:system-flag t) nil [259 278])
+            ("fcntl.h" include (:system-flag t) nil [279 297])
+            ("sys/mman.h" include (:system-flag t) nil [298 319])
+            ("bzlib.h" include (:system-flag t) nil [321 339])
+            ("offset_t" type
+               (:typedef ("long")
+                :type "typedef")
+                nil [416 438])
+            ("MatchInfo" type
+               (:members 
+                  ( ("MatchInfo" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [480 491])
+                            ("l" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [492 503]))                          
+                        :type ("MatchInfo" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [463 526])
+                    ("assign" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [550 561])
+                            ("l" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [562 573]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [531 598])
+                    ("first" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [603 618])
+                    ("last" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [667 681]))                  
+                :type "struct")
+                nil [440 729])
+            ("MatchingLineInfo" type
+               (:members 
+                  ( ("no" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [761 773])
+                    ("first" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [778 793])
+                    ("last" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [798 812])
+                    ("matches" variable (:type ("std::list" type
+                         (:template-specifier 
+                            ( ("MatchInfo" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [848 877]))                  
+                :type "struct")
+                nil [731 880])
+            ("Output" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [973 980])
+                    ("Output" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Output" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [985 1241])
+                    ("error" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1265 1294])
+                            ("aError" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1295 1321]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1247 1442])
+                    ("message" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1461 1490])
+                            ("aLineNo" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1491 1508])
+                            ("aColumnNo" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1509 1528])
+                            ("aText" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1529 1547])
+                            ("aSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1548 1563])
+                            ("aHighlight" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::list" type
+                                     (:template-specifier 
+                                        ( ("MatchInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1564 1603]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1448 1604])
+                    ("binary_file_matches" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1635 1664]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1610 1665])
+                    ("exit_code" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1671 1821])
+                    ("private" label nil (reparse-symbol classsubparts) [1824 1832])
+                    ("mExitCode" variable (:type "int") (reparse-symbol classsubparts) [1837 1851])
+                    ("mLines" variable (:type "int") (reparse-symbol classsubparts) [1856 1867])
+                    ("startColor" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1872 1895])
+                    ("resetColor" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1900 1923])
+                    ("mLongLineThreshold" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1928 1956])
+                    ("mFirstMatchOffsetThreshold" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1961 1997])
+                    ("mFirstMatchOffsetIndent" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2002 2035])
+                    ("mAfterLastMatchThreshold" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2040 2074]))                  
+                :type "class")
+                nil [957 2077])
+            ("message" function
+               (:parent "Output"
+                :arguments 
+                  ( ("aFilename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2100 2129])
+                    ("aLineNo" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2130 2147])
+                    ("aColumnNo" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2148 2167])
+                    ("aText" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2168 2186])
+                    ("aSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2187 2202])
+                    ("aHighlight" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::list" type
+                             (:template-specifier 
+                                ( ("MatchInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2203 2242]))                  
+                :type "void")
+                nil [2079 3264])
+            ("binary_file_matches" function
+               (:parent "Output"
+                :arguments 
+                  ( ("aFilename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3299 3328]))                  
+                :type "void")
+                nil [3266 3418])
+            ("Options" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3512 3519])
+                    ("mFilenameForStdin" function (:type "int") (reparse-symbol classsubparts) [3779 3827])
+                    ("regex_flags" function
+                       (:typemodifiers ("inline")
+                        :type ("std::regex::flag_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3833 3939])
+                    ("ignore_filename" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3973 4002]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3945 4096])
+                    ("lineLengthThreshold" function
+                       (:typemodifiers ("inline")
+                        :type ("offset_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4102 4178])
+                    ("filename_for_stdin" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4184 4259])
+                    ("private" label nil (reparse-symbol classsubparts) [4262 4270])
+                    ("mFilenamesToIgnore" variable (:type ("std::regex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4275 4305])
+                    ("mLineLengthThreshold" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4310 4340])
+                    ("mFilenameForStdin" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4345 4375]))                  
+                :type "class")
+                nil [3495 4378])
+            ("FileType" type (:type "class") nil [4460 4522])
+            ("NameEntry" type
+               (:members 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4547 4564])
+                    ("size" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4569 4583])
+                    ("file_type" variable (:type ("FileType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4588 4607])
+                    ("error" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4612 4630]))                  
+                :type "struct")
+                nil [4524 4633])
+            ("NameListB" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4729 4736])
+                    ("NameListB" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4758 4774]))                          
+                        :type ("NameListB" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4741 4796])
+                    ("NameListB" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4801 4831])
+                    ("get" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("NameEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4837 4866])
+                    ("next" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4871 4883])
+                    ("at_end" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4889 4921])
+                    ("protected" label nil (reparse-symbol classsubparts) [4924 4934])
+                    ("output" function
+                       (:typemodifiers ("inline")
+                        :type ("Output" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4939 4982])
+                    ("entry" function
+                       (:typemodifiers ("inline")
+                        :type ("NameEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4987 5033])
+                    ("advance" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5039 5066])
+                    ("expand_current" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5072 5094])
+                    ("get_entry" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5099 5128])
+                    ("stat_to_entry" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5133 5162])
+                    ("private" label nil (reparse-symbol classsubparts) [5165 5173])
+                    ("mOutput" variable (:type ("Output" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5178 5194])
+                    ("mCurrent" variable (:type ("NameEntry" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5199 5218])
+                    ("expand" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5224 5238]))                  
+                :type "class")
+                nil [4710 5241])
+            ("get" function
+               (:parent "NameListB"
+                :typemodifiers ("inline")
+                :constant-flag t
+                :type ("NameEntry" type (:type "class") nil nil))
+                nil [5243 5388])
+            ("next" function
+               (:parent "NameListB"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [5390 5460])
+            ("expand_current" function
+               (:parent "NameListB"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [5463 5558])
+            ("stat_to_entry" function
+               (:parent "NameListB"
+                :type "void")
+                nil [5560 6998])
+            ("expand" function
+               (:parent "NameListB"
+                :type "bool")
+                nil [7000 7494])
+            ("NameList" type
+               (:template 
+                  ( ("InputIterator" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7567 7574])
+                    ("NameList" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7595 7615])
+                            ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7616 7635])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7636 7652]))                          
+                        :type ("NameList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7579 7761])
+                    ("at_end" function
+                       (:typemodifiers ("virtual" "inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7767 7859])
+                    ("protected" label nil (reparse-symbol classsubparts) [7862 7872])
+                    ("advance" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7877 7974])
+                    ("get_entry" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [7980 8005])
+                    ("private" label nil (reparse-symbol classsubparts) [8008 8016])
+                    ("mCurrent" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8021 8044])
+                    ("mLast" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8049 8069]))                  
+                :superclasses 
+                  ( ("NameListB" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [7496 8072])
+            ("get_entry" function
+               (:template 
+                  ( ("InputIterator" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "NameList")
+                nil [8074 8381])
+            ("Directory" type
+               (:superclasses 
+                  ( ("NameListB" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8496 8503])
+                    ("Directory" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("aPath" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8518 8543])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8544 8560])
+                            ("aOptions" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8561 8585]))                          
+                        :type ("Directory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8508 8586])
+                    ("Directory" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8591 8612])
+                    ("protected" label nil (reparse-symbol classsubparts) [8615 8625])
+                    ("advance" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8630 8653])
+                    ("at_end" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8658 8686])
+                    ("get_entry" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8691 8716])
+                    ("private" label nil (reparse-symbol classsubparts) [8719 8727])
+                    ("mPath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8732 8750])
+                    ("mDir" variable
+                       (:pointer 1
+                        :type ("DIR" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8755 8765])
+                    ("mCurrent" variable
+                       (:pointer 1
+                        :type ("dirent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8770 8787])
+                    ("mOptions" variable
+                       (:constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8792 8816]))                  
+                :type "class")
+                nil [8458 8819])
+            ("Directory" function
+               (:constructor-flag t
+                :parent "Directory"
+                :arguments 
+                  ( ("aPath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8842 8867])
+                    ("aOutput" variable
+                       (:reference 1
+                        :type ("Output" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8868 8884])
+                    ("aOptions" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8885 8909]))                  
+                :type ("Directory" type (:type "class") nil nil))
+                nil [8821 9293])
+            ("Directory" function
+               (:destructor-flag t
+                :parent "Directory"
+                :type "void")
+                nil [9295 9371])
+            ("advance" function
+               (:parent "Directory"
+                :type "void")
+                nil [9373 9432])
+            ("at_end" function
+               (:parent "Directory"
+                :type "bool")
+                nil [9434 9500])
+            ("get_entry" function
+               (:parent "Directory"
+                :type "void")
+                nil [9502 10832])
+            ("FileScanner" type
+               (:prototype t
+                :type "class")
+                nil [10909 10927])
+            ("FileScannerIterator" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10958 10965])
+                    ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :constant-flag t
+                        :type ("NameEntry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10970 11005])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("FileScannerIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11010 11044])
+                    ("==" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FileScannerIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11123 11152])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FileScannerIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11153 11182]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11100 11183])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("friend" "inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FileScannerIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11218 11247])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FileScannerIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11248 11277]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11188 11299])
+                    ("private" label nil (reparse-symbol classsubparts) [11302 11310])
+                    ("FileScanner" friend nil (reparse-symbol classsubparts) [11315 11339])
+                    ("mParent" variable
+                       (:pointer 1
+                        :type ("FileScanner" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11345 11366])
+                    ("FileScannerIterator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("aParent" variable
+                               (:pointer 1
+                                :type ("FileScanner" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11401 11422]))                          
+                        :type ("FileScannerIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11381 11423])
+                    ("check_stack" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11428 11447])
+                    ("expand" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11500 11514])
+                    ("eq" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("it" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FileScannerIterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11576 11606]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11568 11613]))                  
+                :type "class")
+                nil [10929 11616])
+            ("FileScanner" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11714 11721])
+                    ("FileScanner" function
+                       (:template 
+                          ( ("InputIt" type (:type "class") nil nil))                          
+                        :type ("FileScanner" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("first" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11772 11786])
+                            ("last" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11787 11800])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11801 11817])
+                            ("aOptions" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11818 11842]))                          
+                        :typemodifiers ("inline")
+                        :constructor-flag t)
+                        (reparse-symbol classsubparts) [11726 12208])
+                    ("begin" function
+                       (:typemodifiers ("inline")
+                        :type ("FileScannerIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12214 12286])
+                    ("end" function
+                       (:typemodifiers ("inline")
+                        :type ("FileScannerIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12291 12364])
+                    ("push_directory" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aPath" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12397 12422]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12370 12522])
+                    ("private" label nil (reparse-symbol classsubparts) [12525 12533])
+                    ("FileScannerIterator" friend nil (reparse-symbol classsubparts) [12538 12570])
+                    ("mOutput" variable (:type ("Output" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12576 12592])
+                    ("mOptions" variable
+                       (:constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12597 12621])
+                    ("mStack" variable (:type ("std::stack" type
+                         (:template-specifier 
+                            ( ("std::shared_ptr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [12626 12672]))                  
+                :type "class")
+                nil [11693 12675])
+            ("FileScannerIterator" function
+               (:constructor-flag t
+                :parent "FileScannerIterator"
+                :arguments 
+                  ( ("aParent" variable
+                       (:pointer 1
+                        :type ("FileScanner" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12793 12814]))                  
+                :type ("FileScannerIterator" type (:type "class") nil nil))
+                nil [12752 13062])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :parent "FileScannerIterator"
+                :typemodifiers ("inline")
+                :constant-flag t
+                :type ("NameEntry" type (:type "class") nil nil))
+                nil [13064 13171])
+            ("++" function
+               (:operator-flag t
+                :parent "FileScannerIterator"
+                :type ("FileScannerIterator" type (:type "class") nil nil))
+                nil [13173 13520])
+            ("check_stack" function
+               (:parent "FileScannerIterator"
+                :type "bool")
+                nil [13522 13797])
+            ("expand" function
+               (:parent "FileScannerIterator"
+                :type "bool")
+                nil [13799 14640])
+            ("==" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FileScannerIterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14665 14694])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FileScannerIterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14695 14724]))                  
+                :type "bool")
+                nil [14642 14748])
+            ("eq" function
+               (:parent "FileScannerIterator"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("it" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FileScannerIterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14786 14816]))                  
+                :type "bool")
+                nil [14750 14937])
+            ("FileSearch" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [15034 15041])
+                    ("FileSearch" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [15046 15068])
+                    ("search" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aRegex" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::regex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15093 15118])
+                            ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15119 15148])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15149 15165]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15073 15176]))                  
+                :type "class")
+                nil [15014 15179])
+            ("FileSearch" function
+               (:destructor-flag t
+                :parent "FileSearch"
+                :type "void")
+                nil [15182 15211])
+            ("FileSearchBuffer" type
+               (:superclasses 
+                  ( ("FileSearch" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [15335 15342])
+                    ("FileSearchBuffer" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("FileSearchBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15347 15392])
+                    ("search" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aRegex" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::regex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15418 15443])
+                            ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15444 15473])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15474 15490]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15398 15497])
+                    ("buffer" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [15503 15542])
+                    ("buffer_size" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("offset_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15547 15588])
+                    ("protected" label nil (reparse-symbol classsubparts) [15591 15601])
+                    ("line_of" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aOffset" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15619 15636])
+                            ("aMatchingLineInfo" variable
+                               (:reference 1
+                                :type ("MatchingLineInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15637 15673]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15606 15680])
+                    ("output" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15697 15726])
+                            ("aLine" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MatchingLineInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15727 15757])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15758 15774]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15685 15781])
+                    ("check_binary" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("start" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15804 15822])
+                            ("end" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [15823 15839]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [15786 15846])
+                    ("private" label nil (reparse-symbol classsubparts) [15849 15857])
+                    ("mNewLine" variable (:type "char") (reparse-symbol classsubparts) [15862 15876]))                  
+                :type "class")
+                nil [15288 15879])
+            ("search" function
+               (:parent "FileSearchBuffer"
+                :arguments 
+                  ( ("aRegex" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::regex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15911 15936])
+                    ("aFilename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15937 15966])
+                    ("aOutput" variable
+                       (:reference 1
+                        :type ("Output" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15967 15983]))                  
+                :type "void")
+                nil [15881 17304])
+            ("line_of" function
+               (:parent "FileSearchBuffer"
+                :arguments 
+                  ( ("aOffset" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17337 17354])
+                    ("aLineInfo" variable
+                       (:reference 1
+                        :type ("MatchingLineInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17355 17383]))                  
+                :type "void")
+                nil [17306 18134])
+            ("output" function
+               (:parent "FileSearchBuffer"
+                :arguments 
+                  ( ("aFilename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18166 18195])
+                    ("aLine" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MatchingLineInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18196 18226])
+                    ("aOutput" variable
+                       (:reference 1
+                        :type ("Output" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18227 18243]))                  
+                :type "void")
+                nil [18136 18393])
+            ("check_binary" function
+               (:parent "FileSearchBuffer"
+                :arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18431 18449])
+                    ("end" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18450 18466]))                  
+                :type "bool")
+                nil [18395 18742])
+            ("FileSearchMmap" type
+               (:superclasses 
+                  ( ("FileSearchBuffer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [18869 18876])
+                    ("FileSearchMmap" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18903 18925])
+                            ("aSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18926 18941]))                          
+                        :type ("FileSearchMmap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18881 19364])
+                    ("FileSearchMmap" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [19370 19396])
+                    ("buffer" function
+                       (:pointer 1
+                        :typemodifiers ("virtual" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [19402 19461])
+                    ("buffer_size" function
+                       (:typemodifiers ("virtual" "inline")
+                        :type ("offset_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19466 19527])
+                    ("private" label nil (reparse-symbol classsubparts) [19530 19538])
+                    ("mSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19543 19558])
+                    ("mData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [19563 19581])
+                    ("mFd" variable (:type "int") (reparse-symbol classsubparts) [19586 19594]))                  
+                :type "class")
+                nil [18819 19597])
+            ("FileSearchMmap" function
+               (:destructor-flag t
+                :parent "FileSearchMmap"
+                :type "void")
+                nil [19599 19780])
+            ("FileSearchBzip2" type
+               (:superclasses 
+                  ( ("FileSearchBuffer" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [19908 19915])
+                    ("FileSearchBzip2" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [19936 19955])
+                            ("size" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19956 19970]))                          
+                        :type ("FileSearchBzip2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19920 19971])
+                    ("FileSearchBzip2" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [19976 20003])
+                    ("buffer" function
+                       (:pointer 1
+                        :typemodifiers ("virtual" "inline")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [20009 20075])
+                    ("buffer_size" function
+                       (:typemodifiers ("virtual" "inline")
+                        :type ("offset_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20080 20171])
+                    ("bzipped" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [20197 20216])
+                            ("size" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20217 20231]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [20177 20232])
+                    ("private" label nil (reparse-symbol classsubparts) [20235 20243])
+                    ("mData" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("char" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [20248 20272])
+                    ("Bzip2Decompressor" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [20313 20320])
+                            ("Bzip2Decompressor" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("input" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [20354 20372])
+                                    ("size" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20373 20387]))                                  
+                                :type ("Bzip2Decompressor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20329 20903])
+                            ("Bzip2Decompressor" function
+                               (:destructor-flag t
+                                :typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [20913 21015])
+                            ("stream" function
+                               (:typemodifiers ("inline")
+                                :type ("bz_stream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [21025 21071])
+                            ("private" label nil (reparse-symbol classsubparts) [21078 21086])
+                            ("mStream" variable (:type ("bz_stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21095 21113]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [20278 21120]))                  
+                :type "class")
+                nil [19857 21123])
+            ("FileSearchBzip2" function
+               (:destructor-flag t
+                :parent "FileSearchBzip2"
+                :type "void")
+                nil [21125 21164])
+            ("bzipped" function
+               (:parent "FileSearchBzip2"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21196 21215])
+                    ("size" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21216 21230]))                  
+                :type "bool")
+                nil [21166 21349])
+            ("FileSearchBzip2" function
+               (:constructor-flag t
+                :parent "FileSearchBzip2"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21384 21403])
+                    ("size" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21404 21418]))                  
+                :type ("FileSearchBzip2" type (:type "class") nil nil))
+                nil [21351 22851])
+            ("FileSearchStdin" type
+               (:superclasses 
+                  ( ("FileSearch" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [22973 22980])
+                    ("FileSearchStdin" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23008 23030]))                          
+                        :type ("FileSearchStdin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22985 23056])
+                    ("search" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aRegex" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::regex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23081 23106])
+                            ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23107 23136])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23137 23153]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23061 23160])
+                    ("private" label nil (reparse-symbol classsubparts) [23163 23171])
+                    ("mFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23176 23198]))                  
+                :type "class")
+                nil [22928 23201])
+            ("search" function
+               (:parent "FileSearchStdin"
+                :arguments 
+                  ( ("aRegex" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::regex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23232 23257])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23258 23291])
+                    ("aOutput" variable
+                       (:reference 1
+                        :type ("Output" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23292 23308]))                  
+                :type "void")
+                nil [23203 24538])
+            ("open_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aFilename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24653 24682])
+                    ("aSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24683 24698])
+                    ("aOptions" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24699 24723]))                  
+                :type ("std::shared_ptr" type
+                     (:template-specifier 
+                        ( ("FileSearch" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [24615 24724])
+            ("open_file" function
+               (:arguments 
+                  ( ("aFilename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24764 24793])
+                    ("aSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24794 24809])
+                    ("aOptions" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24810 24834]))                  
+                :type ("std::shared_ptr" type
+                     (:template-specifier 
+                        ( ("FileSearch" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [24726 25274])
+            ("Grep" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [25365 25372])
+                    ("Grep" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aRegex" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::regex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25690 25715])
+                            ("aFilename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25716 25745])
+                            ("aFileSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25746 25765])
+                            ("aOutput" variable
+                               (:reference 1
+                                :type ("Output" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25766 25782])
+                            ("aOptions" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25783 25807]))                          
+                        :type ("Grep" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [25678 25934])
+                    ("Grep" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [25940 25974])
+                    ("search" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [25980 26313])
+                    ("private" label nil (reparse-symbol classsubparts) [26316 26324])
+                    ("mRegex" variable (:type ("std::regex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26329 26347])
+                    ("mFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26352 26374])
+                    ("mFileSize" variable (:type ("offset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26379 26398])
+                    ("mOutput" variable (:type ("Output" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26403 26419])
+                    ("mOptions" variable
+                       (:constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [26424 26448]))                  
+                :type "class")
+                nil [25351 26451])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26537 26546])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26547 26565]))                  
+                :type "int")
+                nil [26528 27358]))          
+      :file "gr.cc"
+      :pointmax 27434
+      :fsize 27433
+      :lastmodtime '(22297 53675 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!GH!gr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

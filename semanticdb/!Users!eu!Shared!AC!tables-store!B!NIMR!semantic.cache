@@ -1,0 +1,19 @@
+;; Object NIMR/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "NIMR/"
+  :tables
+  (list
+    (semanticdb-table "b-nimr-turkey-20160422.acd1.bz2"
+      :major-mode 'python-mode
+      :tags 
+        '( ("inf" variable nil nil [156 174])
+            ("nan" variable nil nil [175 193])
+            ("data" variable nil nil [194 21141]))          
+      :file "b-nimr-turkey-20160422.acd1.bz2"
+      :pointmax 21142
+      :fsize 2227
+      :lastmodtime '(22303 6129 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!Shared!AC!tables-store!B!NIMR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,27 @@
+;; Object NIID/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "NIID/"
+  :tables
+  (list
+    (semanticdb-table "b-niid-turkey-20160310_002.acd1.bz2"
+      :major-mode 'python-mode
+      :tags 
+        '( ("inf" variable nil nil [156 174])
+            ("nan" variable nil nil [175 193])
+            ("data" variable nil nil [194 29210]))          
+      :file "b-niid-turkey-20160310_002.acd1.bz2"
+      :pointmax 29211
+      :fsize 2321
+      :lastmodtime '(22305 63391 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "b-niid-turkey-20160414_002.acd1.bz2"
+      :major-mode 'python-mode
+      :tags nil
+      :file "b-niid-turkey-20160414_002.acd1.bz2"
+      :pointmax 17849
+      :fsize 1876
+      :lastmodtime '(22329 59138 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!Shared!AC!tables-store!B!NIID!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

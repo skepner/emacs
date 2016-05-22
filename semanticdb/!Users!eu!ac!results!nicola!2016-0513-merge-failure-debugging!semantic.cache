@@ -1,0 +1,38 @@
+;; Object 2016-0513-merge-failure-debugging/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2016-0513-merge-failure-debugging/"
+  :tables
+  (list
+    (semanticdb-table "5735c4aa362ccae494b2b155.acp1"
+      :major-mode 'python-mode
+      :tags 
+        '( ("inf" variable nil nil [114 132])
+            ("nan" variable nil nil [133 151]))          
+      :file "5735c4aa362ccae494b2b155.acp1"
+      :pointmax 7735
+      :fsize 7734
+      :lastmodtime '(22325 58052 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "5735c4aa362ccae494b2b155.acd1"
+      :major-mode 'python-mode
+      :tags 
+        '( ("inf" variable nil nil [143 161])
+            ("nan" variable nil nil [162 180]))          
+      :file "5735c4aa362ccae494b2b155.acd1"
+      :pointmax 8472
+      :fsize 8471
+      :lastmodtime '(22325 58068 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "USDA-ARS-NADC-20160226-serum-id-fixed.acd1"
+      :major-mode 'python-mode
+      :tags 
+        '( ("inf" variable nil nil [143 161])
+            ("nan" variable nil nil [162 180]))          
+      :file "USDA-ARS-NADC-20160226-serum-id-fixed.acd1"
+      :pointmax 8481
+      :fsize 8480
+      :lastmodtime '(22325 58480 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!results!nicola!2016-0513-merge-failure-debugging!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

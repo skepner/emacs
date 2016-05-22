@@ -1,0 +1,146 @@
+;; Object parsers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "parsers/"
+  :tables
+  (list
+    (semanticdb-table "test-parsers.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [120 139])
+            ("sstream" include (:system-flag t) nil [140 158])
+            ("iomanip" include (:system-flag t) nil [159 177])
+            ("iterator" include (:system-flag t) nil [178 197])
+            ("cstring" include (:system-flag t) nil [198 216])
+            ("unistd.h" include (:system-flag t) nil [217 236])
+            ("passage.hh" include nil nil [272 293])
+            ("serumid.hh" include nil nil [336 357])
+            ("reassortant.hh" include nil nil [404 429])
+            ("virus-name.hh" include nil nil [475 499])
+            ("date.hh" include nil nil [539 557])
+            ("test_passage" function
+               (:arguments 
+                  ( ("sample" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "0"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [657 679]))                  
+                :type "int")
+                nil [640 5533])
+            ("test_passages" function (:type "int") nil [5688 7237])
+            ("test_date" function
+               (:arguments 
+                  ( ("sample" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "0"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7327 7349]))                  
+                :type "int")
+                nil [7313 10716])
+            ("test_serumid" function
+               (:arguments 
+                  ( ("sample" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "0"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10809 10831]))                  
+                :type "int")
+                nil [10792 19860])
+            ("test_serumids" function (:type "int") nil [20015 21075])
+            ("ReassortantArray" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [21177 21184])
+                    ("ReassortantArray" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("ReassortantArray" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21189 21317])
+                    ("ReassortantArray" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [21323 21398])
+                    ("private" label nil (reparse-symbol classsubparts) [21477 21485])
+                    ("mData" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [21490 21502]))                  
+                :type "class")
+                nil [21151 21505])
+            ("test_reassortant" function
+               (:arguments 
+                  ( ("sample" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "0"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21602 21624]))                  
+                :type "int")
+                nil [21581 33011])
+            ("test_reassortants" function (:type "int") nil [33170 34850])
+            ("test_virus_name" function
+               (:arguments 
+                  ( ("sample" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "0"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34946 34968]))                  
+                :type "int")
+                nil [34926 38621])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [38706 38715])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38716 38735]))                  
+                :type "int")
+                nil [38697 40113]))          
+      :file "test-parsers.cc"
+      :pointmax 40345
+      :fsize 40344
+      :lastmodtime '(22204 31228 0 0)
+      :unmatched-syntax '((semantic-list 21437 . 21474) (semantic-list 21426 . 21428) (punctuation 21424 . 21425) (CHAR 21420 . 21424) (OPERATOR 21411 . 21419) (INLINE 21404 . 21410)))
+    (semanticdb-table "passage.l"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "passage.l"
+      :pointmax 25983
+      :fsize 25982
+      :lastmodtime '(22279 50661 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "passage.hh"
+      :file "passage.hh"
+      :fsize 1408
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "serumid.hh"
+      :file "serumid.hh"
+      :fsize 1065
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "reassortant.hh"
+      :file "reassortant.hh"
+      :fsize 2002
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "virus-name.hh"
+      :file "virus-name.hh"
+      :fsize 1817
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "date.hh"
+      :file "date.hh"
+      :fsize 2029
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "reassortant.l"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "reassortant.l"
+      :pointmax 13218
+      :fsize 13331
+      :lastmodtime '(22295 43130 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!acmacs!parsers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

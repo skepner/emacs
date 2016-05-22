@@ -1,0 +1,18 @@
+;; Object 0C0237D5-9E77-407A-BB15-2D2C3E0B29C7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "0C0237D5-9E77-407A-BB15-2D2C3E0B29C7/"
+  :tables
+  (list
+    (semanticdb-table "573c2794c0f502102b95f22d.chart.acd1.xz"
+      :major-mode 'python-mode
+      :tags 
+        '( ("inf" variable nil nil [114 132])
+            ("nan" variable nil nil [133 151]))          
+      :file "573c2794c0f502102b95f22d.chart.acd1.xz"
+      :pointmax 682104
+      :fsize 30972
+      :lastmodtime '(22333 50046 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!Library!Containers!com.apple.mail!Data!Library!Mail Downloads!0C0237D5-9E77-407A-BB15-2D2C3E0B29C7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1159 @@
+;; Object seqdb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seqdb/"
+  :tables
+  (list
+    (semanticdb-table "update.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pprint" include nil nil [113 134])
+            ("re" include nil nil [113 134])
+            ("os" include nil nil [113 134])
+            ("logging" include nil nil [135 149])
+            ("hidb" include nil nil [202 242])
+            ("open_file" include nil nil [202 242])
+            ("acmacs" include nil nil [202 242])
+            ("SeqdbUpdater" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [433 451])
+                            ("self" variable nil (reparse-symbol indented_block_body) [460 484])
+                            ("self" variable nil (reparse-symbol indented_block_body) [493 531])
+                            ("self" variable nil (reparse-symbol indented_block_body) [540 556])
+                            ("if" code nil (reparse-symbol indented_block_body) [565 598]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [356 360])
+                            ("seqdb" variable nil (reparse-symbol function_parameters) [362 367])
+                            ("filename" variable nil (reparse-symbol function_parameters) [369 377])
+                            ("normalize_names" variable nil (reparse-symbol function_parameters) [379 394])
+                            ("load" variable nil (reparse-symbol function_parameters) [401 405])
+                            ("hidb" variable nil (reparse-symbol function_parameters) [413 417]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [343 598])
+                    ("load" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [612 616]))                          )
+                        (reparse-symbol indented_block_body) [603 713])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [727 731])
+                            ("indent" variable nil (reparse-symbol function_parameters) [733 739]))                          )
+                        (reparse-symbol indented_block_body) [718 896])
+                    ("set_hidb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [914 918])
+                            ("hidb" variable nil (reparse-symbol function_parameters) [920 924]))                          )
+                        (reparse-symbol indented_block_body) [901 952])
+                    ("add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [965 969])
+                            ("data" variable nil (reparse-symbol function_parameters) [971 975]))                          
+                        :documentation "data is list of dicts {\"date\":, \"lab\":, \"name\":, \"passage\":, \"sequence\":, \"virus_type\":, \"gene\":}")
+                        (reparse-symbol indented_block_body) [957 1339])
+                    ("add_clades" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1359 1363]))                          )
+                        (reparse-symbol indented_block_body) [1344 1526])
+                    ("match_hidb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1546 1550]))                          )
+                        (reparse-symbol indented_block_body) [1531 1764])
+                    ("sReName" variable nil (reparse-symbol indented_block_body) [1847 1891])
+                    ("_add_sequence" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1915 1919])
+                            ("data" variable nil (reparse-symbol function_parameters) [1921 1925]))                          )
+                        (reparse-symbol indented_block_body) [1897 2714])
+                    ("_update_db_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2740 2744])
+                            ("entry" variable nil (reparse-symbol function_parameters) [2746 2751])
+                            ("data" variable nil (reparse-symbol function_parameters) [2753 2757]))                          )
+                        (reparse-symbol indented_block_body) [2719 3675])
+                    ("_match_hidb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3842 3846])
+                            ("seqdb_entry" variable nil (reparse-symbol function_parameters) [3848 3859]))                          )
+                        (reparse-symbol indented_block_body) [3826 5272])
+                    ("_apply_matches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5296 5300])
+                            ("matches" variable nil (reparse-symbol function_parameters) [5302 5309])
+                            ("name" variable nil (reparse-symbol function_parameters) [5311 5315])
+                            ("seqdb_entry" variable nil (reparse-symbol function_parameters) [5317 5328])
+                            ("hi_entry" variable nil (reparse-symbol function_parameters) [5330 5338]))                          )
+                        (reparse-symbol indented_block_body) [5277 6234])
+                    ("sVariantFieldOrder" variable nil (reparse-symbol indented_block_body) [6239 6391])
+                    ("_make_hi_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6415 6419])
+                            ("name" variable nil (reparse-symbol function_parameters) [6421 6425])
+                            ("hi_variant" variable nil (reparse-symbol function_parameters) [6427 6437]))                          )
+                        (reparse-symbol indented_block_body) [6397 6546])
+                    ("_normalize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6644 6648])
+                            ("data" variable nil (reparse-symbol function_parameters) [6650 6654]))                          )
+                        (reparse-symbol indented_block_body) [6629 8291])
+                    ("_normalize_by_acmacs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8321 8325])
+                            ("data" variable nil (reparse-symbol function_parameters) [8327 8331]))                          )
+                        (reparse-symbol indented_block_body) [8296 8640]))                  
+                :type "class")
+                nil [318 8640]))          
+      :file "update.py"
+      :pointmax 8807
+      :fsize 8806
+      :lastmodtime '(22308 41188 0 0)
+      :unmatched-syntax '((FROM 195 . 199) (PERIOD 200 . 201)))
+    (semanticdb-table "hidb.py"
+      :file "hidb.py"
+      :fsize 9085
+      :lastmodtime '(22296 27421 0 0))
+    (semanticdb-table "open_file.py"
+      :file "open_file.py"
+      :fsize 8028
+      :lastmodtime '(22297 59488 0 0))
+    (semanticdb-table "acmacs.py"
+      :file "acmacs.py"
+      :fsize 2958
+      :lastmodtime '(22294 14131 0 0))
+    (semanticdb-table "make_tree.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [114 128])
+            ("pathlib" include nil nil [174 198])
+            ("subprocess" include nil nil [199 226])
+            ("operator" include nil nil [199 226])
+            ("json" include nil nil [234 245])
+            ("make_r_score_vs_time" include nil nil [258 305])
+            ("RaxmlResult" include nil nil [258 305])
+            ("Raxml" include nil nil [258 305])
+            ("GarliResults" include nil nil [318 344])
+            ("Garli" include nil nil [318 344])
+            ("run_raxml_best_garli" function
+               (:documentation "Run RAxML raxml_num_runs times, take the best result and run GARLI garli_num_runs times starting with that best result."
+                :arguments 
+                  ( ("working_dir" variable nil (reparse-symbol function_parameters) [445 456])
+                    ("run_id" variable nil (reparse-symbol function_parameters) [458 464])
+                    ("fasta_file" variable nil (reparse-symbol function_parameters) [466 476])
+                    ("number_of_sequences" variable nil (reparse-symbol function_parameters) [478 497])
+                    ("base_seq_name" variable nil (reparse-symbol function_parameters) [499 512])
+                    ("raxml_kill_rate" variable nil (reparse-symbol function_parameters) [514 529])
+                    ("raxml_bfgs" variable nil (reparse-symbol function_parameters) [531 541])
+                    ("raxml_model_optimization_precision" variable nil (reparse-symbol function_parameters) [543 577])
+                    ("raxml_num_runs" variable nil (reparse-symbol function_parameters) [579 593])
+                    ("garli_num_runs" variable nil (reparse-symbol function_parameters) [595 609])
+                    ("garli_attachmentspertaxon" variable nil (reparse-symbol function_parameters) [611 636])
+                    ("garli_stoptime" variable nil (reparse-symbol function_parameters) [638 652])
+                    ("email" variable nil (reparse-symbol function_parameters) [654 659])
+                    ("machines" variable nil (reparse-symbol function_parameters) [661 669]))                  )
+                nil [420 1977])
+            ("run_raxml_survived_best_garli" function
+               (:documentation "Run RAxML raxml_num_runs times with raxml_kill_rate, take the best result and run GARLI garli_num_runs times starting with that best result."
+                :arguments 
+                  ( ("working_dir" variable nil (reparse-symbol function_parameters) [2086 2097])
+                    ("run_id" variable nil (reparse-symbol function_parameters) [2099 2105])
+                    ("fasta_file" variable nil (reparse-symbol function_parameters) [2107 2117])
+                    ("number_of_sequences" variable nil (reparse-symbol function_parameters) [2119 2138])
+                    ("base_seq_name" variable nil (reparse-symbol function_parameters) [2140 2153])
+                    ("raxml_kill_rate" variable nil (reparse-symbol function_parameters) [2155 2170])
+                    ("raxml_bfgs" variable nil (reparse-symbol function_parameters) [2172 2182])
+                    ("raxml_model_optimization_precision" variable nil (reparse-symbol function_parameters) [2184 2218])
+                    ("raxml_num_runs" variable nil (reparse-symbol function_parameters) [2220 2234])
+                    ("garli_num_runs" variable nil (reparse-symbol function_parameters) [2236 2250])
+                    ("garli_attachmentspertaxon" variable nil (reparse-symbol function_parameters) [2252 2277])
+                    ("garli_stoptime" variable nil (reparse-symbol function_parameters) [2279 2293])
+                    ("email" variable nil (reparse-symbol function_parameters) [2295 2300])
+                    ("machines" variable nil (reparse-symbol function_parameters) [2302 2310]))                  )
+                nil [2052 3681])
+            ("run_raxml_all_garli" function
+               (:documentation "Run RAxML raxml_num_runs times, take all the results and run GARLI garli_num_runs times starting with each result."
+                :arguments 
+                  ( ("working_dir" variable nil (reparse-symbol function_parameters) [3780 3791])
+                    ("run_id" variable nil (reparse-symbol function_parameters) [3793 3799])
+                    ("fasta_file" variable nil (reparse-symbol function_parameters) [3801 3811])
+                    ("number_of_sequences" variable nil (reparse-symbol function_parameters) [3813 3832])
+                    ("base_seq_name" variable nil (reparse-symbol function_parameters) [3834 3847])
+                    ("raxml_kill_rate" variable nil (reparse-symbol function_parameters) [3849 3864])
+                    ("raxml_bfgs" variable nil (reparse-symbol function_parameters) [3866 3876])
+                    ("raxml_model_optimization_precision" variable nil (reparse-symbol function_parameters) [3878 3912])
+                    ("raxml_num_runs" variable nil (reparse-symbol function_parameters) [3914 3928])
+                    ("garli_num_runs" variable nil (reparse-symbol function_parameters) [3930 3944])
+                    ("garli_attachmentspertaxon" variable nil (reparse-symbol function_parameters) [3946 3971])
+                    ("garli_stoptime" variable nil (reparse-symbol function_parameters) [3973 3987])
+                    ("email" variable nil (reparse-symbol function_parameters) [3989 3994])
+                    ("machines" variable nil (reparse-symbol function_parameters) [3996 4004]))                  )
+                nil [3756 5327])
+            ("save_settings" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [5420 5431])
+                ("args" variable nil (reparse-symbol function_parameters) [5433 5439]))              ) nil [5402 5499])
+            ("run_raxml" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [5588 5599])
+                ("run_id" variable nil (reparse-symbol function_parameters) [5601 5607])
+                ("fasta_file" variable nil (reparse-symbol function_parameters) [5609 5619])
+                ("base_seq_name" variable nil (reparse-symbol function_parameters) [5621 5634])
+                ("raxml_bfgs" variable nil (reparse-symbol function_parameters) [5636 5646])
+                ("raxml_model_optimization_precision" variable nil (reparse-symbol function_parameters) [5648 5682])
+                ("raxml_num_runs" variable nil (reparse-symbol function_parameters) [5684 5698])
+                ("email" variable nil (reparse-symbol function_parameters) [5700 5705])
+                ("machines" variable nil (reparse-symbol function_parameters) [5707 5715]))              ) nil [5574 6461])
+            ("run_raxml_survived" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [6559 6570])
+                ("run_id" variable nil (reparse-symbol function_parameters) [6572 6578])
+                ("fasta_file" variable nil (reparse-symbol function_parameters) [6580 6590])
+                ("base_seq_name" variable nil (reparse-symbol function_parameters) [6592 6605])
+                ("raxml_kill_rate" variable nil (reparse-symbol function_parameters) [6607 6622])
+                ("raxml_bfgs" variable nil (reparse-symbol function_parameters) [6624 6634])
+                ("raxml_model_optimization_precision" variable nil (reparse-symbol function_parameters) [6636 6670])
+                ("raxml_num_runs" variable nil (reparse-symbol function_parameters) [6672 6686])
+                ("email" variable nil (reparse-symbol function_parameters) [6688 6693])
+                ("machines" variable nil (reparse-symbol function_parameters) [6695 6703]))              ) nil [6536 7491])
+            ("run_garli" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [7580 7591])
+                ("run_id" variable nil (reparse-symbol function_parameters) [7593 7599])
+                ("fasta_file" variable nil (reparse-symbol function_parameters) [7601 7611])
+                ("tree" variable nil (reparse-symbol function_parameters) [7613 7617])
+                ("garli_num_runs" variable nil (reparse-symbol function_parameters) [7619 7633])
+                ("garli_attachmentspertaxon" variable nil (reparse-symbol function_parameters) [7635 7660])
+                ("garli_stoptime" variable nil (reparse-symbol function_parameters) [7662 7676])
+                ("email" variable nil (reparse-symbol function_parameters) [7678 7683])
+                ("machines" variable nil (reparse-symbol function_parameters) [7685 7693]))              ) nil [7566 8287])
+            ("run_garli_multi" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [8382 8393])
+                ("run_id" variable nil (reparse-symbol function_parameters) [8395 8401])
+                ("fasta_file" variable nil (reparse-symbol function_parameters) [8403 8413])
+                ("trees" variable nil (reparse-symbol function_parameters) [8415 8420])
+                ("garli_num_runs" variable nil (reparse-symbol function_parameters) [8422 8436])
+                ("garli_attachmentspertaxon" variable nil (reparse-symbol function_parameters) [8438 8463])
+                ("garli_stoptime" variable nil (reparse-symbol function_parameters) [8465 8479])
+                ("email" variable nil (reparse-symbol function_parameters) [8481 8486])
+                ("machines" variable nil (reparse-symbol function_parameters) [8488 8496]))              ) nil [8362 9346])
+            ("make_results" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [9438 9449])
+                ("r_raxml" variable nil (reparse-symbol function_parameters) [9451 9458])
+                ("r_garli" variable nil (reparse-symbol function_parameters) [9460 9467]))              ) nil [9421 11295])
+            ("make_r_garli_start_final_scores" function (:arguments 
+              ( ("working_dir" variable nil (reparse-symbol function_parameters) [11406 11417])
+                ("results" variable nil (reparse-symbol function_parameters) [11419 11426]))              ) nil [11370 13161]))          
+      :file "make_tree.py"
+      :pointmax 13327
+      :fsize 13326
+      :lastmodtime '(22334 42784 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Raxml.py"
+      :file "Raxml.py"
+      :fsize 15374
+      :lastmodtime '(22334 63070 0 0))
+    (semanticdb-table "Garli.py"
+      :file "Garli.py"
+      :fsize 19625
+      :lastmodtime '(22334 47862 0 0))
+    (semanticdb-table "raxml.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [113 127])
+            ("pathlib" include nil nil [173 197])
+            ("datetime" include nil nil [198 263])
+            ("time" include nil nil [198 263])
+            ("operator" include nil nil [198 263])
+            ("random" include nil nil [198 263])
+            ("subprocess" include nil nil [198 263])
+            ("re" include nil nil [198 263])
+            ("tree_maker" include nil nil [271 288])
+            ("timeit" include nil nil [302 315])
+            ("RaxmlResult" type
+               (:superclasses ("tree_maker.Result")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [722 788])
+                            ("self" variable nil (reparse-symbol indented_block_body) [797 829]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [666 670])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [672 678])
+                            ("tree" variable nil (reparse-symbol function_parameters) [680 684])
+                            ("score" variable nil (reparse-symbol function_parameters) [686 691])
+                            ("start_scores" variable nil (reparse-symbol function_parameters) [693 705])
+                            ("time" variable nil (reparse-symbol function_parameters) [707 711]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [653 830])
+                    ("tabbed_report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [853 857]))                          )
+                        (reparse-symbol indented_block_body) [835 1019]))                  
+                :type "class")
+                nil [609 1019])
+            ("RaxmlResults" type
+               (:superclasses ("tree_maker.Results")
+                :members 
+                  ( ("max_start_score" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1378 1382]))                          )
+                        (reparse-symbol indented_block_body) [1358 1529])
+                    ("tabbed_report_header" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [1559 1562]))                      ) (reparse-symbol indented_block_body) [1534 1674])
+                    ("import_from" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1712 1715])
+                            ("source_dir" variable nil (reparse-symbol function_parameters) [1717 1727])
+                            ("overall_time" variable nil (reparse-symbol function_parameters) [1729 1741])
+                            ("submitted_tasks" variable nil (reparse-symbol function_parameters) [1743 1758])
+                            ("survived_tasks" variable nil (reparse-symbol function_parameters) [1760 1774]))                          )
+                        (reparse-symbol indented_block_body) [1679 2017]))                  
+                :type "class")
+                nil [1094 2017])
+            ("RaxmlTask" type
+               (:superclasses ("tree_maker.Task")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [2186 2269]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2145 2149])
+                            ("job" variable nil (reparse-symbol function_parameters) [2151 2154])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [2156 2166])
+                            ("run_ids" variable nil (reparse-symbol function_parameters) [2168 2175]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2132 2270])
+                    ("wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2284 2288])
+                            ("kill_rate" variable nil (reparse-symbol function_parameters) [2290 2299])
+                            ("wait_timeout" variable nil (reparse-symbol function_parameters) [2306 2318]))                          )
+                        (reparse-symbol indented_block_body) [2275 2804]))                  
+                :type "class")
+                nil [2092 2804])
+            ("Raxml" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2932 2950])
+                            ("self" code nil (reparse-symbol indented_block_body) [2959 2979])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2988 3004])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3013 3052])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3061 3085])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3094 3166]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2910 2914])
+                            ("email" variable nil (reparse-symbol function_parameters) [2916 2921]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2897 3167])
+                    ("submit_htcondor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3270 3274])
+                            ("source" variable nil (reparse-symbol function_parameters) [3276 3282])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [3284 3294])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [3296 3302])
+                            ("num_runs" variable nil (reparse-symbol function_parameters) [3304 3312])
+                            ("bfgs" variable nil (reparse-symbol function_parameters) [3314 3318])
+                            ("model_optimization_precision" variable nil (reparse-symbol function_parameters) [3320 3348])
+                            ("list" variable nil (reparse-symbol function_parameters) [3361 3365])
+                            ("machines" variable nil (reparse-symbol function_parameters) [3367 3375]))                          )
+                        (reparse-symbol indented_block_body) [3250 4628])
+                    ("run_locally" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4727 4731])
+                            ("source" variable nil (reparse-symbol function_parameters) [4733 4739])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [4741 4751])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [4753 4759])
+                            ("num_runs" variable nil (reparse-symbol function_parameters) [4761 4769])
+                            ("bfgs" variable nil (reparse-symbol function_parameters) [4773 4777]))                          )
+                        (reparse-symbol indented_block_body) [4711 5269])
+                    ("_find_program" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5370 5374]))                          )
+                        (reparse-symbol indented_block_body) [5352 6076])
+                    ("sInfoBestScore" variable nil (reparse-symbol indented_block_body) [6159 6244])
+                    ("sInfoExecutionTime" variable nil (reparse-symbol indented_block_body) [6249 6330])
+                    ("get_result" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [6368 6371])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [6373 6383])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [6385 6391]))                          )
+                        (reparse-symbol indented_block_body) [6336 7236])
+                    ("_random_seed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12152 12156]))                          )
+                        (reparse-symbol indented_block_body) [12135 12213]))                  
+                :type "class")
+                nil [2879 12213])
+            ("postprocess" function (:arguments 
+              ( ("target_dir" variable nil (reparse-symbol function_parameters) [12304 12314])
+                ("source_dir" variable nil (reparse-symbol function_parameters) [12316 12326]))              ) nil [12288 12734])
+            ("make_r_score_vs_time" function (:arguments 
+              ( ("target_dir" variable nil (reparse-symbol function_parameters) [12834 12844])
+                ("source_dir" variable nil (reparse-symbol function_parameters) [12846 12856])
+                ("results" variable nil (reparse-symbol function_parameters) [12858 12865]))              ) nil [12809 14840])
+            ("\"\"\"
+RAxML options http://sco.h-its.org/exelixis/resource/download/NewManual.pdf
+
+-c 4
+-f d
+--silent
+--no-seq-check
+-m GTRGAMMAI
+-T 1
+-N 1
+­p <random seed>
+--no-bfgs
+
+-e 0.001 (default) set model optimization precision in log likelihood units for final
+      optimization of tree topology
+
+\"\"\"" code nil nil [14915 15207]))          
+      :file "raxml.py"
+      :pointmax 15374
+      :fsize 15374
+      :lastmodtime '(22334 63070 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "timeit.py"
+      :file "timeit.py"
+      :fsize 633
+      :lastmodtime '(22276 45802 0 0))
+    (semanticdb-table "garli.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [40 54])
+            ("pathlib" include nil nil [100 124])
+            ("time" include nil nil [125 170])
+            ("subprocess" include nil nil [125 170])
+            ("random" include nil nil [125 170])
+            ("re" include nil nil [125 170])
+            ("tree_maker" include nil nil [178 195])
+            ("GarliResult" type
+               (:superclasses ("tree_maker.Result")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [383 449])
+                            ("self" variable nil (reparse-symbol indented_block_body) [458 488]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [328 332])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [334 340])
+                            ("tree" variable nil (reparse-symbol function_parameters) [342 346])
+                            ("score" variable nil (reparse-symbol function_parameters) [348 353])
+                            ("start_score" variable nil (reparse-symbol function_parameters) [355 366])
+                            ("time" variable nil (reparse-symbol function_parameters) [368 372]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [315 489])
+                    ("tabbed_report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [512 516]))                          )
+                        (reparse-symbol indented_block_body) [494 643]))                  
+                :type "class")
+                nil [271 643])
+            ("GarliResults" type
+               (:superclasses ("tree_maker.Results")
+                :members 
+                  ( ("tabbed_report_header" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [789 792]))                      ) (reparse-symbol indented_block_body) [764 884])
+                    ("import_from" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [922 925])
+                            ("source_dir" variable nil (reparse-symbol function_parameters) [927 937])
+                            ("overall_time" variable nil (reparse-symbol function_parameters) [939 951])
+                            ("submitted_tasks" variable nil (reparse-symbol function_parameters) [953 968])
+                            ("survived_tasks" variable nil (reparse-symbol function_parameters) [970 984]))                          )
+                        (reparse-symbol indented_block_body) [889 1714]))                  
+                :type "class")
+                nil [718 1714])
+            ("GarliTask" type
+               (:superclasses ("tree_maker.Task")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1883 1966]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1842 1846])
+                            ("job" variable nil (reparse-symbol function_parameters) [1848 1851])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [1853 1863])
+                            ("run_ids" variable nil (reparse-symbol function_parameters) [1865 1872]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1829 1967])
+                    ("wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1981 1985]))                          )
+                        (reparse-symbol indented_block_body) [1972 2276]))                  
+                :type "class")
+                nil [1789 2276])
+            ("Garli" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2404 2422])
+                            ("self" code nil (reparse-symbol indented_block_body) [2431 2451])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2460 2499]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2382 2386])
+                            ("email" variable nil (reparse-symbol function_parameters) [2388 2393]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2369 2500])
+                    ("submit_htcondor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2643 2647])
+                            ("num_runs" variable nil (reparse-symbol function_parameters) [2649 2657])
+                            ("source" variable nil (reparse-symbol function_parameters) [2659 2665])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [2667 2677])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [2679 2685])
+                            ("source_tree" variable nil (reparse-symbol function_parameters) [2687 2698])
+                            ("outgroup" variable nil (reparse-symbol function_parameters) [2705 2713])
+                            ("attachmentspertaxon" variable nil (reparse-symbol function_parameters) [2719 2738])
+                            ("genthreshfortopoterm" variable nil (reparse-symbol function_parameters) [2748 2768])
+                            ("stoptime" variable nil (reparse-symbol function_parameters) [2776 2784])
+                            ("searchreps" variable nil (reparse-symbol function_parameters) [2796 2806])
+                            ("strip_comments" variable nil (reparse-symbol function_parameters) [2810 2824])
+                            ("machines" variable nil (reparse-symbol function_parameters) [2831 2839]))                          )
+                        (reparse-symbol indented_block_body) [2623 4074])
+                    ("get_result" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [4350 4353])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [4355 4365])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [4367 4373]))                          )
+                        (reparse-symbol indented_block_body) [4318 5155])
+                    ("_make_conf" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5253 5257])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [5259 5265])
+                            ("source" variable nil (reparse-symbol function_parameters) [5267 5273])
+                            ("source_tree" variable nil (reparse-symbol function_parameters) [5275 5286])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [5288 5298])
+                            ("outgroup" variable nil (reparse-symbol function_parameters) [5300 5308])
+                            ("attachmentspertaxon" variable nil (reparse-symbol function_parameters) [5310 5329])
+                            ("randseed" variable nil (reparse-symbol function_parameters) [5331 5339])
+                            ("genthreshfortopoterm" variable nil (reparse-symbol function_parameters) [5341 5361])
+                            ("searchreps" variable nil (reparse-symbol function_parameters) [5363 5373])
+                            ("stoptime" variable nil (reparse-symbol function_parameters) [5375 5383])
+                            ("strip_comments" variable nil (reparse-symbol function_parameters) [5385 5399]))                          
+                        :documentation "Returns filename of the written conf file")
+                        (reparse-symbol indented_block_body) [5238 6680])
+                    ("_find_program" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6781 6785]))                          )
+                        (reparse-symbol indented_block_body) [6763 7487])
+                    ("_random_seed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7509 7513]))                          )
+                        (reparse-symbol indented_block_body) [7492 7612]))                  
+                :type "class")
+                nil [2351 7612])
+            ("postprocess" function (:arguments 
+              ( ("target_dir" variable nil (reparse-symbol function_parameters) [7703 7713])
+                ("source_dir" variable nil (reparse-symbol function_parameters) [7715 7725]))              ) nil [7687 8045])
+            ("GARLI_CONF" variable nil nil [8120 19417]))          
+      :file "garli.py"
+      :pointmax 19584
+      :fsize 19625
+      :lastmodtime '(22334 47862 0 0)
+      :unmatched-syntax '((FROM 2855 . 2859) (PERIOD 2860 . 2861) (FROM 171 . 175) (PERIOD 176 . 177) ($EOI 19584 . 19584) (FROM 2865 . 2869) (PERIOD 2870 . 2871) (FROM 181 . 185) (PERIOD 186 . 187) ($EOI 19594 . 19594)))
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("seqdb_backend" include nil nil [1 28])
+            ("timeit" include nil nil [42 55])
+            ("export_from_seqdb" include nil nil [68 92])
+            ("run_raxml_all_garli" include nil nil [109 188])
+            ("run_raxml_survived_best_garli" include nil nil [109 188])
+            ("run_raxml_best_garli" include nil nil [109 188])
+            ("open" function (:arguments 
+              ( ("path_to_seqdb" variable nil (reparse-symbol function_parameters) [273 286]))              ) nil [264 370]))          
+      :file "__init__.py"
+      :pointmax 444
+      :fsize 443
+      :lastmodtime '(22333 36010 0 0)
+      :unmatched-syntax '((FROM 93 . 97) (PERIOD 98 . 99) (FROM 56 . 60) (PERIOD 61 . 62) (FROM 29 . 33) (PERIOD 34 . 35) ($EOI 444 . 444) (FROM 93 . 97) (PERIOD 98 . 99) (FROM 56 . 60) (PERIOD 61 . 62) (FROM 29 . 33) (PERIOD 34 . 35)))
+    (semanticdb-table "fasta.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Functions for reading and generating fasta files.
+\"\"\"" code nil nil [40 97])
+            ("operator" include nil nil [99 135])
+            ("collections" include nil nil [99 135])
+            ("re" include nil nil [99 135])
+            ("os" include nil nil [99 135])
+            ("logging" include nil nil [136 150])
+            ("normalize" include nil nil [203 230])
+            ("open_file" include nil nil [203 230])
+            ("FastaReaderError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [346 350]))                  
+                :type "class")
+                nil [306 351])
+            ("export_from_seqdb" function (:arguments 
+              ( ("seqdb" variable nil (reparse-symbol function_parameters) [448 453])
+                ("filename" variable nil (reparse-symbol function_parameters) [455 463])
+                ("output_format" variable nil (reparse-symbol function_parameters) [465 478])
+                ("amino_acids" variable nil (reparse-symbol function_parameters) [480 491])
+                ("lab" variable nil (reparse-symbol function_parameters) [493 496])
+                ("virus_type" variable nil (reparse-symbol function_parameters) [498 508])
+                ("lineage" variable nil (reparse-symbol function_parameters) [510 517])
+                ("gene" variable nil (reparse-symbol function_parameters) [519 523])
+                ("start_date" variable nil (reparse-symbol function_parameters) [525 535])
+                ("end_date" variable nil (reparse-symbol function_parameters) [537 545])
+                ("base_seq" variable nil (reparse-symbol function_parameters) [547 555])
+                ("name_format" variable nil (reparse-symbol function_parameters) [557 568])
+                ("aligned" variable nil (reparse-symbol function_parameters) [570 577])
+                ("encode_name" variable nil (reparse-symbol function_parameters) [579 590])
+                ("wrap" variable nil (reparse-symbol function_parameters) [592 596])
+                ("truncate_to_most_common_length" variable nil (reparse-symbol function_parameters) [598 628])
+                ("hamming_distance_threshold" variable nil (reparse-symbol function_parameters) [630 656])
+                ("hamming_distance_report" variable nil (reparse-symbol function_parameters) [658 681])
+                ("sort_by" variable nil (reparse-symbol function_parameters) [683 690])
+                ("with_hi_name" variable nil (reparse-symbol function_parameters) [692 704])
+                ("name_match" variable nil (reparse-symbol function_parameters) [706 716]))              ) nil [426 5071])
+            ("most_common_length" function (:arguments 
+              ( ("sequences" variable nil (reparse-symbol function_parameters) [5169 5178]))              ) nil [5146 5289])
+            ("truncate_to_most_common" function (:arguments 
+              ( ("sequences" variable nil (reparse-symbol function_parameters) [5392 5401])
+                ("fill" variable nil (reparse-symbol function_parameters) [5403 5407]))              ) nil [5364 5765])
+            ("hamming_distance" function (:arguments 
+              ( ("s1" variable nil (reparse-symbol function_parameters) [5861 5863])
+                ("s2" variable nil (reparse-symbol function_parameters) [5865 5867]))              ) nil [5840 5960])
+            ("read_from_file" function
+               (:documentation "Yields tuple (name, sequence) for each entry in the file"
+                :arguments 
+                  ( ("filename" variable nil (reparse-symbol function_parameters) [6054 6062]))                  )
+                nil [6035 6217])
+            ("read_from_string" function
+               (:documentation "Yields tuple (name, sequence) for each entry in the string"
+                :arguments 
+                  ( ("source" variable nil (reparse-symbol function_parameters) [6313 6319])
+                    ("filename" variable nil (reparse-symbol function_parameters) [6321 6329]))                  )
+                nil [6292 7154])
+            ("sReSequence" variable nil nil [7229 7277])
+            ("_check_sequence" function (:arguments 
+              ( ("sequence" variable nil (reparse-symbol function_parameters) [7299 7307])
+                ("name" variable nil (reparse-symbol function_parameters) [7309 7313])
+                ("filename" variable nil (reparse-symbol function_parameters) [7315 7323])
+                ("line_no" variable nil (reparse-symbol function_parameters) [7325 7332]))              ) nil [7279 7704])
+            ("read_fasta_with_name_parsing" function
+               (:documentation "Returns list of dict {\"name\":, \"sequence\":, \"date\":, \"lab\":}"
+                :arguments 
+                  ( ("fasta_file" variable nil (reparse-symbol function_parameters) [7812 7822])
+                    ("lab" variable nil (reparse-symbol function_parameters) [7824 7827])
+                    ("virus_type" variable nil (reparse-symbol function_parameters) [7829 7839])
+                    ("_" variable nil (reparse-symbol function_parameters) [7841 7844]))                  )
+                nil [7779 8501])
+            ("sNameParser" variable nil nil [8576 8594])
+            ("name_parser" function nil nil [8596 8720])
+            ("NameParser" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8563 11259]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8757 8761]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8744 11469])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11484 11488])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [11490 11498])
+                            ("lab" variable nil (reparse-symbol function_parameters) [11500 11503]))                          )
+                        (reparse-symbol indented_block_body) [11474 11789])
+                    ("simple" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11805 11809])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [11811 11819])
+                            ("m" variable nil (reparse-symbol function_parameters) [11821 11822])
+                            ("_" variable nil (reparse-symbol function_parameters) [11824 11827]))                          )
+                        (reparse-symbol indented_block_body) [11794 11864])
+                    ("nimr_20090914" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12193 12197])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [12199 12207])
+                            ("m" variable nil (reparse-symbol function_parameters) [12209 12210])
+                            ("_" variable nil (reparse-symbol function_parameters) [12212 12215]))                          )
+                        (reparse-symbol indented_block_body) [12175 12267])
+                    ("mReCdcId" variable nil (reparse-symbol indented_block_body) [12272 12355])
+                    ("gisaid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12372 12376])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [12378 12386])
+                            ("m" variable nil (reparse-symbol function_parameters) [12388 12389])
+                            ("with_date" variable nil (reparse-symbol function_parameters) [12391 12400])
+                            ("lab" variable nil (reparse-symbol function_parameters) [12407 12410])
+                            ("_" variable nil (reparse-symbol function_parameters) [12417 12420]))                          )
+                        (reparse-symbol indented_block_body) [12361 13621])
+                    ("_fix_gisaid_lab" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13646 13650])
+                            ("lab" variable nil (reparse-symbol function_parameters) [13652 13655]))                          )
+                        (reparse-symbol indented_block_body) [13626 14020])
+                    ("gisaid_without_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14049 14053])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [14055 14063])
+                            ("m" variable nil (reparse-symbol function_parameters) [14065 14066])
+                            ("kw" variable nil (reparse-symbol function_parameters) [14068 14072]))                          )
+                        (reparse-symbol indented_block_body) [14025 14149])
+                    ("gisaid_melb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14170 14174])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [14176 14184])
+                            ("m" variable nil (reparse-symbol function_parameters) [14186 14187])
+                            ("_" variable nil (reparse-symbol function_parameters) [14189 14192]))                          )
+                        (reparse-symbol indented_block_body) [14154 14261])
+                    ("melb_20100823" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14284 14288])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [14290 14298])
+                            ("m" variable nil (reparse-symbol function_parameters) [14300 14301])
+                            ("_" variable nil (reparse-symbol function_parameters) [14303 14306]))                          )
+                        (reparse-symbol indented_block_body) [14266 14414])
+                    ("melb_20110921" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14437 14441])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [14443 14451])
+                            ("m" variable nil (reparse-symbol function_parameters) [14453 14454])
+                            ("_" variable nil (reparse-symbol function_parameters) [14456 14459]))                          )
+                        (reparse-symbol indented_block_body) [14419 14511])
+                    ("name_only" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14530 14534])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [14536 14544])
+                            ("m" variable nil (reparse-symbol function_parameters) [14546 14547])
+                            ("_" variable nil (reparse-symbol function_parameters) [14549 14552]))                          )
+                        (reparse-symbol indented_block_body) [14516 14604])
+                    ("cdc_20100913" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14626 14630])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [14632 14640])
+                            ("m" variable nil (reparse-symbol function_parameters) [14642 14643])
+                            ("_" variable nil (reparse-symbol function_parameters) [14645 14648]))                          )
+                        (reparse-symbol indented_block_body) [14609 14731])
+                    ("name_passage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14753 14757])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [14759 14767])
+                            ("m" variable nil (reparse-symbol function_parameters) [14769 14770])
+                            ("_" variable nil (reparse-symbol function_parameters) [14772 14775]))                          )
+                        (reparse-symbol indented_block_body) [14736 14858]))                  
+                :type "class")
+                nil [8721 14858])
+            ("fasta_encode_name" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [15232 15236]))              ) nil [15210 15357])
+            ("exporter" function (:arguments 
+              ( ("output" variable nil (reparse-symbol function_parameters) [15768 15774])
+                ("output_format" variable nil (reparse-symbol function_parameters) [15776 15789])
+                ("encode_name" variable nil (reparse-symbol function_parameters) [15791 15802])
+                ("wrap" variable nil (reparse-symbol function_parameters) [15804 15808]))              ) nil [15755 16139])
+            ("ExporterBase" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16085 16135])
+                            ("module_logger" code nil (reparse-symbol indented_block_body) [16144 16191])
+                            ("self" code nil (reparse-symbol indented_block_body) [16200 16232])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16241 16271])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16280 16296]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16252 16256])
+                            ("output" variable nil (reparse-symbol function_parameters) [16258 16264])
+                            ("encode_name" variable nil (reparse-symbol function_parameters) [16266 16277])
+                            ("wrap" variable nil (reparse-symbol function_parameters) [16279 16283]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16239 16506])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16523 16527]))                          )
+                        (reparse-symbol indented_block_body) [16511 16586])
+                    ("sequence_split" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16610 16614])
+                            ("sequence" variable nil (reparse-symbol function_parameters) [16616 16624])
+                            ("chunk_len" variable nil (reparse-symbol function_parameters) [16626 16635])
+                            ("separator" variable nil (reparse-symbol function_parameters) [16640 16649]))                          )
+                        (reparse-symbol indented_block_body) [16591 16853])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16872 16876])
+                            ("name" variable nil (reparse-symbol function_parameters) [16878 16882]))                          )
+                        (reparse-symbol indented_block_body) [16858 16985]))                  
+                :type "class")
+                nil [16214 16985])
+            ("FastaExporter" type
+               (:superclasses ("ExporterBase")
+                :members 
+                  ( ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17037 17041])
+                            ("name" variable nil (reparse-symbol function_parameters) [17043 17047])
+                            ("sequence" variable nil (reparse-symbol function_parameters) [17049 17057]))                          )
+                        (reparse-symbol indented_block_body) [17027 17207]))                  
+                :type "class")
+                nil [16986 17207])
+            ("PhylipExporter" type
+               (:superclasses ("ExporterBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [17079 17105])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17114 17129])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17138 17157]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17263 17267])
+                            ("a" variable nil (reparse-symbol function_parameters) [17269 17271])
+                            ("kw" variable nil (reparse-symbol function_parameters) [17273 17277]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17250 17367])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17384 17388]))                          )
+                        (reparse-symbol indented_block_body) [17372 17441])
+                    ("write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17456 17460])
+                            ("name" variable nil (reparse-symbol function_parameters) [17462 17466])
+                            ("sequence" variable nil (reparse-symbol function_parameters) [17468 17476]))                          )
+                        (reparse-symbol indented_block_body) [17446 17567])
+                    ("do_write" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17585 17589]))                          )
+                        (reparse-symbol indented_block_body) [17572 18149]))                  
+                :type "class")
+                nil [17208 18149])
+            ("xx" function nil nil [18370 18387]))          
+      :file "fasta.py"
+      :pointmax 37156
+      :fsize 37155
+      :lastmodtime '(22332 7392 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "normalize.py"
+      :file "normalize.py"
+      :fsize 2320
+      :lastmodtime '(22297 59053 0 0))
+    (semanticdb-table "json.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [114 125])
+            ("pathlib" include nil nil [126 150])
+            ("JSONEncoder" type
+               (:superclasses ("json.JSONEncoder")
+                :members 
+                  ( ("default" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [281 285])
+                            ("o" variable nil (reparse-symbol function_parameters) [287 288]))                          )
+                        (reparse-symbol indented_block_body) [269 494]))                  
+                :type "class")
+                nil [226 494])
+            ("dumps" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [579 583])
+                ("indent" variable nil (reparse-symbol function_parameters) [585 591])
+                ("sort_keys" variable nil (reparse-symbol function_parameters) [595 604])
+                ("cls" variable nil (reparse-symbol function_parameters) [611 614]))              ) nil [569 702])
+            ("dumpf" function (:arguments 
+              ( ("filepath" variable nil (reparse-symbol function_parameters) [787 795])
+                ("data" variable nil (reparse-symbol function_parameters) [797 801])
+                ("indent" variable nil (reparse-symbol function_parameters) [803 809])
+                ("sort_keys" variable nil (reparse-symbol function_parameters) [813 822])
+                ("cls" variable nil (reparse-symbol function_parameters) [829 832]))              ) nil [777 962])
+            ("loadf" function (:arguments 
+              ( ("filepath" variable nil (reparse-symbol function_parameters) [1047 1055]))              ) nil [1037 1096]))          
+      :file "json.py"
+      :pointmax 1262
+      :fsize 1261
+      :lastmodtime '(22331 13726 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "draw_tree.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [114 128])
+            ("pathlib" include nil nil [174 198])
+            ("seqdb" include nil nil [199 211])
+            ("draw_tree" function (:arguments 
+              ( ("tree_file" variable nil (reparse-symbol function_parameters) [301 310])
+                ("path_to_seqdb" variable nil (reparse-symbol function_parameters) [312 325])
+                ("output_file" variable nil (reparse-symbol function_parameters) [327 338])
+                ("title" variable nil (reparse-symbol function_parameters) [340 345])
+                ("pdf_width" variable nil (reparse-symbol function_parameters) [347 356])
+                ("pdf_height" variable nil (reparse-symbol function_parameters) [362 372]))              ) nil [287 1597])
+            ("format_virus_type" function (:arguments 
+              ( ("tree" variable nil (reparse-symbol function_parameters) [1694 1698]))              ) nil [1672 2015]))          
+      :file "draw_tree.py"
+      :pointmax 2181
+      :fsize 2180
+      :lastmodtime '(22332 35023 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "htcondor.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [40 54])
+            ("pprint" include nil nil [100 158])
+            ("datetime" include nil nil [100 158])
+            ("time" include nil nil [100 158])
+            ("subprocess" include nil nil [100 158])
+            ("collections" include nil nil [100 158])
+            ("re" include nil nil [100 158])
+            ("pathlib" include nil nil [159 183])
+            ("JobError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [259 292])
+            ("Job" type
+               (:members 
+                  ( ("sJobStatus" variable nil (reparse-symbol indented_block_body) [309 447])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"clusters - cluster_id to number of jobs mapping\"\"\"" code nil (reparse-symbol indented_block_body) [515 568])
+                            ("self" variable nil (reparse-symbol indented_block_body) [577 601])
+                            ("self" variable nil (reparse-symbol indented_block_body) [610 638]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [466 470])
+                            ("dict" variable nil (reparse-symbol function_parameters) [482 486])
+                            ("Path" variable nil (reparse-symbol function_parameters) [500 504]))                          
+                        :documentation "clusters - cluster_id to number of jobs mapping"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [453 639])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [656 660]))                          )
+                        (reparse-symbol indented_block_body) [644 697])
+                    ("status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [713 717]))                          )
+                        (reparse-symbol indented_block_body) [702 2080])
+                    ("wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2094 2098])
+                            ("timeout" variable nil (reparse-symbol function_parameters) [2100 2107])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [2114 2121]))                          )
+                        (reparse-symbol indented_block_body) [2085 3081]))                  
+                :type "class")
+                nil [293 3115])
+            ("sReCondorProc" variable nil nil [4051 4109])
+            ("submit" function (:arguments 
+              ( ("program" variable nil (reparse-symbol function_parameters) [4122 4129])
+                ("list" variable nil (reparse-symbol function_parameters) [4145 4149])
+                ("str" variable nil (reparse-symbol function_parameters) [4164 4167])
+                ("Path" variable nil (reparse-symbol function_parameters) [4182 4186])
+                ("capture_stdout" variable nil (reparse-symbol function_parameters) [4188 4202])
+                ("email" variable nil (reparse-symbol function_parameters) [4210 4215])
+                ("notification" variable nil (reparse-symbol function_parameters) [4222 4234])
+                ("list" variable nil (reparse-symbol function_parameters) [4254 4258]))              ) nil [4111 6618])
+            ("sMachineName" variable nil nil [6693 6817])
+            ("fix_machine_name" function (:arguments 
+              ( ("machine" variable nil (reparse-symbol function_parameters) [6839 6846]))              ) nil [6818 6895])
+            ("_run" function (:arguments 
+              ( ("program_and_args" variable nil (reparse-symbol function_parameters) [6979 6996]))              ) nil [6970 7097]))          
+      :file "htcondor.py"
+      :pointmax 7263
+      :fsize 7262
+      :lastmodtime '(22334 42975 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tree_maker.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [40 54])
+            ("pathlib" include nil nil [100 124])
+            ("operator" include nil nil [125 166])
+            ("datetime" include nil nil [125 166])
+            ("time" include nil nil [125 166])
+            ("json" include nil nil [174 185])
+            ("Error" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [290 294]))                  
+                :type "class")
+                nil [261 295])
+            ("Result" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [425 445])
+                            ("self" variable nil (reparse-symbol indented_block_body) [454 470])
+                            ("self" variable nil (reparse-symbol indented_block_body) [479 497])
+                            ("self" variable nil (reparse-symbol indented_block_body) [506 522]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [402 406])
+                            ("run_id" variable nil (reparse-symbol function_parameters) [408 414])
+                            ("tree" variable nil (reparse-symbol function_parameters) [416 420])
+                            ("score" variable nil (reparse-symbol function_parameters) [422 427])
+                            ("time" variable nil (reparse-symbol function_parameters) [429 433]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [389 542])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [560 564]))                          )
+                        (reparse-symbol indented_block_body) [547 598])
+                    ("json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [612 616]))                          )
+                        (reparse-symbol indented_block_body) [603 645])
+                    ("time_str" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [680 683])
+                            ("time" variable nil (reparse-symbol function_parameters) [685 689]))                          )
+                        (reparse-symbol indented_block_body) [650 828]))                  
+                :type "class")
+                nil [370 828])
+            ("Results" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("" code nil (reparse-symbol indented_block_body) [1089 1091])
+                            ("0" code nil (reparse-symbol indented_block_body) [1192 1193])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1202 1234])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1243 1281])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1290 1326]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [936 940])
+                            ("results" variable nil (reparse-symbol function_parameters) [942 949])
+                            ("overall_time" variable nil (reparse-symbol function_parameters) [956 968])
+                            ("submitted_tasks" variable nil (reparse-symbol function_parameters) [975 990])
+                            ("survived_tasks" variable nil (reparse-symbol function_parameters) [997 1011]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [923 1346])
+                    ("recompute" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1365 1369]))                          )
+                        (reparse-symbol indented_block_body) [1351 1516])
+                    ("longest_time_str" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1542 1546]))                          )
+                        (reparse-symbol indented_block_body) [1521 1599])
+                    ("best_tree" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1618 1622]))                          )
+                        (reparse-symbol indented_block_body) [1604 1661])
+                    ("report_best" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1682 1686]))                          )
+                        (reparse-symbol indented_block_body) [1666 1788])
+                    ("make_txt" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1806 1810])
+                            ("Path" variable nil (reparse-symbol function_parameters) [1822 1826]))                          )
+                        (reparse-symbol indented_block_body) [1793 2466])
+                    ("make_json" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2485 2489])
+                            ("Path" variable nil (reparse-symbol function_parameters) [2501 2505]))                          )
+                        (reparse-symbol indented_block_body) [2471 2549]))                  
+                :type "class")
+                nil [903 2549])
+            ("Task" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2686 2700])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2709 2737])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2746 2768])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2777 2801])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2810 2845]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2654 2658])
+                            ("job" variable nil (reparse-symbol function_parameters) [2660 2663])
+                            ("output_dir" variable nil (reparse-symbol function_parameters) [2665 2675])
+                            ("run_ids" variable nil (reparse-symbol function_parameters) [2677 2684])
+                            ("progname" variable nil (reparse-symbol function_parameters) [2686 2694]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2641 2865])
+                    ("wait_begin" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2885 2889]))                          )
+                        (reparse-symbol indented_block_body) [2870 2927])
+                    ("wait_end" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2945 2949]))                          )
+                        (reparse-symbol indented_block_body) [2932 3110]))                  
+                :type "class")
+                nil [2624 3110]))          
+      :file "tree_maker.py"
+      :pointmax 3352
+      :fsize 3351
+      :lastmodtime '(22334 47862 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!GH!seqdb!python!seqdb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

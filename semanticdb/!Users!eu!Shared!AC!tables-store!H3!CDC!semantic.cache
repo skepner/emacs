@@ -1,0 +1,18 @@
+;; Object CDC/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "CDC/"
+  :tables
+  (list
+    (semanticdb-table "a-h3n2-cdc-guinea-pig-20160511.acd1.bz2"
+      :major-mode 'python-mode
+      :tags 
+        '( ("inf" variable nil nil [156 174])
+            ("nan" variable nil nil [175 193]))          
+      :file "a-h3n2-cdc-guinea-pig-20160511.acd1.bz2"
+      :pointmax 55664
+      :fsize 4118
+      :lastmodtime '(22331 12773 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!Shared!AC!tables-store!H3!CDC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

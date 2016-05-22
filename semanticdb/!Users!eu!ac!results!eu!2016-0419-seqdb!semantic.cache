@@ -1,0 +1,26 @@
+;; Object 2016-0419-seqdb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2016-0419-seqdb/"
+  :tables
+  (list
+    (semanticdb-table "redirect"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [26 49])
+            ("os" include nil nil [26 49])
+            ("sys" include nil nil [26 49])
+            ("f" variable nil nil [140 169])
+            ("print" code nil nil [170 183])
+            ("os" code nil nil [293 315])
+            ("os" code nil nil [316 338])
+            ("print" code nil nil [383 398])
+            ("print" code nil nil [399 431])
+            ("logging" code nil nil [432 455]))          
+      :file "redirect"
+      :pointmax 456
+      :fsize 455
+      :lastmodtime '(22334 48813 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!results!eu!2016-0419-seqdb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

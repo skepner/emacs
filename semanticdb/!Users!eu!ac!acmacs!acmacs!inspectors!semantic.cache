@@ -1,0 +1,2603 @@
+;; Object inspectors/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "inspectors/"
+  :tables
+  (list
+    (semanticdb-table "routine_diagnostics.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Routine diagnostics chain inspector
+\"\"\"" code nil nil [39 82])
+            ("traceback" include nil nil [158 198])
+            ("itertools" include nil nil [158 198])
+            ("re" include nil nil [158 198])
+            ("os" include nil nil [158 198])
+            ("sys" include nil nil [158 198])
+            ("logging" include nil nil [199 213])
+            ("virus" include nil nil [274 297])
+            ("permissions" include nil nil [325 364])
+            ("mongodb_collections" include nil nil [325 364])
+            ("mongodb" include nil nil [373 387])
+            ("dispatcher" include nil nil [406 423])
+            ("messages" include nil nil [431 457])
+            ("inspector" include nil nil [431 457])
+            ("MergeIncrementally" include nil nil [465 554])
+            ("AvidityChain" include nil nil [465 554])
+            ("HemiGridChain" include nil nil [465 554])
+            ("HemiLocalChain" include nil nil [465 554])
+            ("OptimizationChain" include nil nil [465 554])
+            ("RoutineDiagnosticsChain" type
+               (:documentation "Regular optimization chain consisting of two steps:
+    OptimizationRough followed by OptimizationFinal."
+                :superclasses ("inspector.InspectorChain" "inspector.InspectorWithSourcesAndResultsBase" "inspector.InspectorWithChartReorientTo")
+                :members 
+                  ( ("sOptKeyword" variable nil (reparse-symbol indented_block_body) [894 919])
+                    ("sHemiKeyword" variable nil (reparse-symbol indented_block_body) [924 951])
+                    ("sLowAvidityKeyword" variable nil (reparse-symbol indented_block_body) [956 996])
+                    ("sHighAvidityKeyword" variable nil (reparse-symbol indented_block_body) [1001 1043])
+                    ("Results" type
+                       (:superclasses ("inspector.DictListMongodbDocumentId")
+                        :members 
+                          ( ("all_to_reorient" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [1131 1135]))                                  
+                                :documentation "Returns iterator over all results (chart ids)")
+                                (reparse-symbol indented_block_body) [1111 1294])
+                            ("all" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [1311 1315]))                                  
+                                :documentation "Returns iterator over all results (chart ids)")
+                                (reparse-symbol indented_block_body) [1303 1474]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1049 1474])
+                    ("Results" variable nil (reparse-symbol indented_block_body) [1479 1565])
+                    ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [1571 2844])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2873 2877])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [2879 2889]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [2850 3887])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3902 3906])
+                            ("session" variable nil (reparse-symbol function_parameters) [3908 3915])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3922 3930]))                          
+                        :documentation "Resets inspector.")
+                        (reparse-symbol indented_block_body) [3892 4052])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4075 4079]))                          )
+                        (reparse-symbol indented_block_body) [4057 4525])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4552 4556])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [4558 4565]))                          )
+                        (reparse-symbol indented_block_body) [4530 8539])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8572 8576])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [8578 8593]))                          )
+                        (reparse-symbol indented_block_body) [8545 9260])
+                    ("subinspector_participation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9296 9300]))                          
+                        :documentation "Returns dict of sub-inspectors keywords to their participation ratio (0.0-1.0)")
+                        (reparse-symbol indented_block_body) [9265 9984])
+                    ("result_copied_from" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10012 10016])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [10018 10030]))                          
+                        :documentation "Returns if result is already copied from the passed subinspector.
+        There could be situation when subinspector state is completed
+        but this inspector has not yet received message about it and has not yet copied result.
+        ")
+                        (reparse-symbol indented_block_body) [9989 10615]))                  
+                :type "class")
+                nil [630 10615])
+            ("IncrementalChain" type
+               (:documentation "Incremental chain: adding source charts one-by-one to the merge."
+                :superclasses ("inspector.InspectorChain" "inspector.InspectorWithSourcesAndResultsBase" "inspector.InspectorWithChartReorientTo")
+                :members 
+                  ( ("Results" type
+                       (:superclasses ("inspector.ListDictMongodbDocumentId")
+                        :members 
+                          ( ("sFields" variable nil (reparse-symbol indented_block_body) [10969 11011])
+                            ("expand" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11032 11036])
+                                    ("no" variable nil (reparse-symbol function_parameters) [11038 11040]))                                  )
+                                (reparse-symbol indented_block_body) [11021 11123])
+                            ("all_to_reorient" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11152 11156]))                                  
+                                :documentation "Returns iterator over all results (chart ids)")
+                                (reparse-symbol indented_block_body) [11132 11522])
+                            ("all" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11539 11543]))                                  
+                                :documentation "Returns iterator over all results (chart ids)")
+                                (reparse-symbol indented_block_body) [11531 11704]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [10907 11704])
+                    ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [11709 13382])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13411 13415])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [13417 13427]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [13388 14155])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14178 14182]))                          
+                        :documentation "Returns list of keywords to run corresponding subinspectors in order.
+        List element may be a string or a list of strings to run corresponding
+        subinspectors in parallel.")
+                        (reparse-symbol indented_block_body) [14160 14572])
+                    ("_make_individual_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14603 14607])
+                            ("sources" variable nil (reparse-symbol function_parameters) [14609 14616]))                          )
+                        (reparse-symbol indented_block_body) [14577 15962])
+                    ("_make_imerge_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15989 15993]))                          )
+                        (reparse-symbol indented_block_body) [15967 16166])
+                    ("_make_rd_i_s" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16188 16192])
+                            ("source" variable nil (reparse-symbol function_parameters) [16194 16200])
+                            ("source_no" variable nil (reparse-symbol function_parameters) [16202 16211]))                          )
+                        (reparse-symbol indented_block_body) [16171 16568])
+                    ("_source0_relaxed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16594 16598]))                          )
+                        (reparse-symbol indented_block_body) [16573 17026])
+                    ("message_resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17050 17054])
+                            ("message" variable nil (reparse-symbol function_parameters) [17056 17063]))                          
+                        :documentation "Resume or start execution of the inspector.")
+                        (reparse-symbol indented_block_body) [17031 17254])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17270 17274]))                          )
+                        (reparse-symbol indented_block_body) [17259 17419])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17446 17450])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [17452 17459]))                          )
+                        (reparse-symbol indented_block_body) [17424 25362])
+                    ("_imerge_master" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25386 25390])
+                            ("k_no" variable nil (reparse-symbol function_parameters) [25392 25396]))                          )
+                        (reparse-symbol indented_block_body) [25367 25697])
+                    ("_imegre_merge_in" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25723 25727])
+                            ("k_no" variable nil (reparse-symbol function_parameters) [25729 25733]))                          )
+                        (reparse-symbol indented_block_body) [25702 25889])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25921 25925])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [25927 25942]))                          )
+                        (reparse-symbol indented_block_body) [25894 27233])
+                    ("result_copied_from" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27261 27265])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [27267 27279]))                          
+                        :documentation "Returns if result is already copied from the passed subinspector.
+        There could be situation when subinspector state is completed
+        but this inspector has not yet received message about it and has not yet copied result.
+        ")
+                        (reparse-symbol indented_block_body) [27238 28500])
+                    ("_parse_subinspector_keyword" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28537 28541])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [28543 28550]))                          )
+                        (reparse-symbol indented_block_body) [28505 28940])
+                    ("choose_master" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28963 28967])
+                            ("step" variable nil (reparse-symbol function_parameters) [28969 28973])
+                            ("session" variable nil (reparse-symbol function_parameters) [28975 28982]))                          )
+                        (reparse-symbol indented_block_body) [28945 29590])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29605 29609])
+                            ("session" variable nil (reparse-symbol function_parameters) [29611 29618])
+                            ("remove_resulting_charts" variable nil (reparse-symbol function_parameters) [29625 29648])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [29656 29664]))                          
+                        :documentation "Resets inspector.")
+                        (reparse-symbol indented_block_body) [29595 30210])
+                    ("source_removed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30234 30238])
+                            ("session" variable nil (reparse-symbol function_parameters) [30240 30247])
+                            ("sources" variable nil (reparse-symbol function_parameters) [30249 30256])
+                            ("safe" variable nil (reparse-symbol function_parameters) [30258 30262])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [30264 30271]))                          )
+                        (reparse-symbol indented_block_body) [30215 30647])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30663 30667])
+                            ("resume" variable nil (reparse-symbol function_parameters) [30669 30675])
+                            ("sources" variable nil (reparse-symbol function_parameters) [30682 30689])
+                            ("description" variable nil (reparse-symbol function_parameters) [30696 30707])
+                            ("number_of_dimensions" variable nil (reparse-symbol function_parameters) [30714 30734])
+                            ("number_of_optimizations" variable nil (reparse-symbol function_parameters) [30741 30764])
+                            ("keywords" variable nil (reparse-symbol function_parameters) [30771 30779])
+                            ("minimum_column_basis" variable nil (reparse-symbol function_parameters) [30786 30806])
+                            ("chart_reorient_to" variable nil (reparse-symbol function_parameters) [30813 30830])
+                            ("merge_incremental" variable nil (reparse-symbol function_parameters) [30837 30854])
+                            ("merge_from_scratch" variable nil (reparse-symbol function_parameters) [30861 30879])
+                            ("individual" variable nil (reparse-symbol function_parameters) [30886 30896])
+                            ("individual_col_bases_from_merge" variable nil (reparse-symbol function_parameters) [30903 30934])
+                            ("low_avidity" variable nil (reparse-symbol function_parameters) [30941 30952])
+                            ("high_avidity" variable nil (reparse-symbol function_parameters) [30959 30971])
+                            ("exclude_antigens_sera_few_titers" variable nil (reparse-symbol function_parameters) [30978 31010])
+                            ("dodgy_titer_is_regular" variable nil (reparse-symbol function_parameters) [31017 31039])
+                            ("disconnect" variable nil (reparse-symbol function_parameters) [31046 31056])
+                            ("markings" variable nil (reparse-symbol function_parameters) [31063 31071])
+                            ("email" variable nil (reparse-symbol function_parameters) [31078 31083])
+                            ("readable_by" variable nil (reparse-symbol function_parameters) [31090 31101])
+                            ("lineage" variable nil (reparse-symbol function_parameters) [31108 31115])
+                            ("passage_serum_id_matching" variable nil (reparse-symbol function_parameters) [31122 31147])
+                            ("in_2d" variable nil (reparse-symbol function_parameters) [31154 31159]))                          )
+                        (reparse-symbol indented_block_body) [30652 36086])
+                    ("subinspector_participation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36122 36126]))                          
+                        :documentation "Returns dict of sub-inspectors keywords to their participation ratio (0.0-1.0)")
+                        (reparse-symbol indented_block_body) [36091 36450])
+                    ("check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36465 36469]))                          
+                        :documentation "Checks inspector and updates self.errors")
+                        (reparse-symbol indented_block_body) [36455 37637])
+                    ("_remove_resulting_charts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37671 37675])
+                            ("session" variable nil (reparse-symbol function_parameters) [37677 37684]))                          )
+                        (reparse-symbol indented_block_body) [37642 37835])
+                    ("_remove_result_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37865 37869])
+                            ("session" variable nil (reparse-symbol function_parameters) [37871 37878])
+                            ("subresult" variable nil (reparse-symbol function_parameters) [37880 37889]))                          )
+                        (reparse-symbol indented_block_body) [37840 38868])
+                    ("check_root_source_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38901 38905])
+                            ("chart_entry" variable nil (reparse-symbol function_parameters) [38907 38918])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [38920 38928]))                          )
+                        (reparse-symbol indented_block_body) [38873 39318])
+                    ("remove_last_source" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39346 39350])
+                            ("session" variable nil (reparse-symbol function_parameters) [39352 39359])
+                            ("delete_source_root" variable nil (reparse-symbol function_parameters) [39361 39379]))                          
+                        :documentation "Removes last source from the chain, removes corresponding result entry. Optionally deletes root source chart and its tree.")
+                        (reparse-symbol indented_block_body) [39323 40472])
+                    ("check_if_sources_mergeable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40508 40512]))                          )
+                        (reparse-symbol indented_block_body) [40477 41761])
+                    ("_list_sources" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41784 41788]))                          )
+                        (reparse-symbol indented_block_body) [41766 41819]))                  
+                :type "class")
+                nil [10690 41819])
+            ("IncrementalChainForked" type
+               (:superclasses ("IncrementalChain")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [41948 42074])
+                    ("_make_individual_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43153 43157])
+                            ("sources" variable nil (reparse-symbol function_parameters) [43159 43166]))                          )
+                        (reparse-symbol indented_block_body) [43127 43428])
+                    ("_imerge_master" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43452 43456])
+                            ("k_no" variable nil (reparse-symbol function_parameters) [43458 43462]))                          )
+                        (reparse-symbol indented_block_body) [43433 43841])
+                    ("_make_imerge_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43868 43872]))                          )
+                        (reparse-symbol indented_block_body) [43846 44028])
+                    ("_list_sources" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44051 44055]))                          )
+                        (reparse-symbol indented_block_body) [44033 44265]))                  
+                :type "class")
+                nil [41894 44265])
+            ("TableSubsetForLineage" type
+               (:superclasses ("inspector.Inspector" "inspector.InspectorWithSourcesAndResults")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [44438 44500])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44516 44520])
+                            ("session" variable nil (reparse-symbol function_parameters) [44522 44529])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [44536 44544]))                          
+                        :documentation "Resets inspector.")
+                        (reparse-symbol indented_block_body) [44506 44628])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44669 44673]))                          )
+                        (reparse-symbol indented_block_body) [44658 44859]))                  
+                :type "class")
+                nil [44340 44859]))          
+      :file "routine_diagnostics.py"
+      :pointmax 45100
+      :fsize 45099
+      :lastmodtime '(22144 56640 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 41663 . 41761) (NEWLINE 41662 . 41663) (COLON 41661 . 41662) (TRY 41409 . 41412) (AS 41655 . 41657) (PERIOD 41363 . 41364) (FROM 41357 . 41361) (PERIOD 41362 . 41363) (RETURN 36316 . 36322) (IF 36426 . 36428) (ELSE 36442 . 36446) (NAME 36252 . 36256) (IF 36283 . 36285) (ELSE 36299 . 36303) (NAME 15550 . 15555) (IF 15560 . 15562) (ELSE 15579 . 15583) (FROM 458 . 462) (PERIOD 463 . 464) (FROM 424 . 428) (PERIOD 429 . 430) (PERIOD 394 . 395) (FROM 388 . 392) (PERIOD 393 . 394) (PERIOD 371 . 372) (FROM 365 . 369) (PERIOD 370 . 371) (PERIOD 304 . 305) (FROM 298 . 302) (PERIOD 303 . 304) (PERIOD 265 . 266) (FROM 259 . 263) (PERIOD 264 . 265)))
+    (semanticdb-table "inspector.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Inspector base class
+\"\"\"" code nil nil [39 67])
+            ("datetime" include nil nil [143 196])
+            ("pprint" include nil nil [143 196])
+            ("tempfile" include nil nil [143 196])
+            ("traceback" include nil nil [143 196])
+            ("os" include nil nil [143 196])
+            ("sys" include nil nil [143 196])
+            ("logging" include nil nil [197 211])
+            ("exceptions" include nil nil [269 300])
+            ("chart" include nil nil [269 300])
+            ("basic" include nil nil [269 300])
+            ("hostname" include nil nil [318 352])
+            ("mail" include nil nil [318 352])
+            ("time" include nil nil [318 352])
+            ("timer" include nil nil [318 352])
+            ("mongodb" include nil nil [361 375])
+            ("document" include nil nil [403 508])
+            ("permissions" include nil nil [403 508])
+            ("mongodb_collections" include nil nil [403 508])
+            ("register" include nil nil [403 508])
+            ("MongodbDocumentNotFound" include nil nil [533 580])
+            ("MongodbDocument" include nil nil [533 580])
+            ("messages" include nil nil [588 612])
+            ("cluster" include nil nil [588 612])
+            ("Error" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("''" code nil (reparse-symbol indented_block_body) [717 719]))                  
+                :type "class")
+                nil [688 720])
+            ("ErrorStderrNotEmpty" type
+               (:documentation "Raised by InspectorSubmittingToCluster upon getting results
+    from cluster if job's stderr file is not empty."
+                :superclasses ("Error")
+                :type "class")
+                nil [721 878])
+            ("State" type
+               (:documentation "Keeps inspector state, allows keywords from the pre-defined set only."
+                :superclasses ("basic.Keyword")
+                :members 
+                  ( ("valid_values" variable nil (reparse-symbol indented_block_body) [1067 1372]))                  
+                :type "class")
+                nil [953 1373])
+            ("ListMongodbDocumentId" variable nil nil [1448 1501])
+            ("DictListMongodbDocumentId" variable nil nil [1502 1563])
+            ("ListDictMongodbDocumentId" variable nil nil [1564 1625])
+            ("Inspector" type
+               (:superclasses ("permissions.DocumentWithSession")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [2213 3840])
+                    ("indexed_fields" variable nil (reparse-symbol indented_block_body) [3846 3926])
+                    ("collection_name" variable nil (reparse-symbol indented_block_body) [3932 3962])
+                    ("__init__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3981 3985])
+                            ("args" variable nil (reparse-symbol function_parameters) [3987 3993]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3968 4371])
+                    ("check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4386 4390]))                          
+                        :documentation "Checks inspector and updates self.errors")
+                        (reparse-symbol indented_block_body) [4376 4473])
+                    ("before_save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4494 4498])
+                            ("session" variable nil (reparse-symbol function_parameters) [4500 4507])
+                            ("report_errors" variable nil (reparse-symbol function_parameters) [4509 4522]))                          
+                        :documentation "Updates percent_done before saving to database.")
+                        (reparse-symbol indented_block_body) [4478 4714])
+                    ("remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4884 4888])
+                            ("session" variable nil (reparse-symbol function_parameters) [4890 4897])
+                            ("safe" variable nil (reparse-symbol function_parameters) [4899 4903])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [4911 4918])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4926 4934]))                          
+                        :documentation "Remove document and all its dependents: sub-inspectors, logs.")
+                        (reparse-symbol indented_block_body) [4873 5214])
+                    ("message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5231 5235])
+                            ("message" variable nil (reparse-symbol function_parameters) [5237 5244]))                          
+                        :documentation "Called by dispatcher on message for this inspector reception.")
+                        (reparse-symbol indented_block_body) [5219 6004])
+                    ("message_not_handled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6033 6037])
+                            ("message" variable nil (reparse-symbol function_parameters) [6039 6046]))                          )
+                        (reparse-symbol indented_block_body) [6009 6252])
+                    ("message_restart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6277 6281])
+                            ("message" variable nil (reparse-symbol function_parameters) [6283 6290]))                          )
+                        (reparse-symbol indented_block_body) [6257 6336])
+                    ("message_stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6358 6362])
+                            ("message" variable nil (reparse-symbol function_parameters) [6364 6371]))                          
+                        :documentation "Stops (aborts) execution of the inspector.")
+                        (reparse-symbol indented_block_body) [6341 6624])
+                    ("message_suspend" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6649 6653])
+                            ("message" variable nil (reparse-symbol function_parameters) [6655 6662]))                          
+                        :documentation "Suspends execution of the inspector. Only 'resume', 'stop'
+        or 'restart' messages could be delivered to suspended
+        inspector.")
+                        (reparse-symbol indented_block_body) [6629 7011])
+                    ("message_resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7035 7039])
+                            ("message" variable nil (reparse-symbol function_parameters) [7041 7048]))                          
+                        :documentation "Resume or start execution of the inspector.")
+                        (reparse-symbol indented_block_body) [7016 7528])
+                    ("message_reorient_all_charts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7565 7569])
+                            ("message" variable nil (reparse-symbol function_parameters) [7571 7578]))                          )
+                        (reparse-symbol indented_block_body) [7533 7819])
+                    ("find_subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7847 7851])
+                            ("session" variable nil (reparse-symbol function_parameters) [7853 7860])
+                            ("fields" variable nil (reparse-symbol function_parameters) [7867 7873]))                          )
+                        (reparse-symbol indented_block_body) [7824 8003])
+                    ("send_message_to_subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8042 8046])
+                            ("message" variable nil (reparse-symbol function_parameters) [8048 8055])
+                            ("data" variable nil (reparse-symbol function_parameters) [8057 8061])
+                            ("awake_dispatcher" variable nil (reparse-symbol function_parameters) [8068 8084])
+                            ("sub_inspector_fields" variable nil (reparse-symbol function_parameters) [8091 8111])
+                            ("sub_inspector_checker" variable nil (reparse-symbol function_parameters) [8118 8139]))                          
+                        :documentation "sub_inspector_checker is a function accepting inspector and returning True to send message to that inspector.")
+                        (reparse-symbol indented_block_body) [8008 9041])
+                    ("are_subinspectors_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9078 9082]))                          
+                        :documentation "Returns if all subinspectors have completed state.")
+                        (reparse-symbol indented_block_body) [9046 9268])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9282 9286]))                          )
+                        (reparse-symbol indented_block_body) [9273 9302])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9317 9321])
+                            ("session" variable nil (reparse-symbol function_parameters) [9323 9330])
+                            ("safe" variable nil (reparse-symbol function_parameters) [9337 9341])
+                            ("remove_logs" variable nil (reparse-symbol function_parameters) [9349 9360])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9368 9376]))                          
+                        :documentation "Resets inspector.")
+                        (reparse-symbol indented_block_body) [9307 10143])
+                    ("remove_subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10173 10177])
+                            ("session" variable nil (reparse-symbol function_parameters) [10179 10186])
+                            ("safe" variable nil (reparse-symbol function_parameters) [10193 10197])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10205 10213]))                          )
+                        (reparse-symbol indented_block_body) [10148 10515])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10531 10535]))                          )
+                        (reparse-symbol indented_block_body) [10520 10756])
+                    ("reset_on_failure" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10782 10786]))                          )
+                        (reparse-symbol indented_block_body) [10761 10849])
+                    ("set_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10868 10872])
+                            ("state" variable nil (reparse-symbol function_parameters) [10874 10879])
+                            ("details" variable nil (reparse-symbol function_parameters) [10881 10888]))                          )
+                        (reparse-symbol indented_block_body) [10854 11269])
+                    ("handling" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11287 11291]))                          
+                        :documentation "Marks inspector as handling a message.")
+                        (reparse-symbol indented_block_body) [11274 11651])
+                    ("completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11741 11745]))                          
+                        :documentation "Marks inspector as completed, send message to parent.")
+                        (reparse-symbol indented_block_body) [11727 12519])
+                    ("failed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12535 12539])
+                            ("details" variable nil (reparse-symbol function_parameters) [12541 12548])
+                            ("notify_submitter" variable nil (reparse-symbol function_parameters) [12555 12571]))                          
+                        :documentation "Marks inspector as failed, send message to parent.")
+                        (reparse-symbol indented_block_body) [12524 13326])
+                    ("mail" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13340 13344]))                          )
+                        (reparse-symbol indented_block_body) [13331 15261])
+                    ("inspector_results_to_mail" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15296 15300]))                          )
+                        (reparse-symbol indented_block_body) [15266 15321])
+                    ("set_last_time_handled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15352 15356]))                          )
+                        (reparse-symbol indented_block_body) [15326 15453])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15481 15485])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [15487 15497]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [15458 15639])
+                    ("source_removed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15663 15667])
+                            ("session" variable nil (reparse-symbol function_parameters) [15669 15676])
+                            ("sources" variable nil (reparse-symbol function_parameters) [15678 15685])
+                            ("safe" variable nil (reparse-symbol function_parameters) [15687 15691])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [15693 15700]))                          )
+                        (reparse-symbol indented_block_body) [15644 15860])
+                    ("get_fields_excluded" function
+                       (:documentation "Returns list of fields to be excluded when getting document fields via get_fields()."
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [15906 15909]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [15865 16080])
+                    ("json_serializable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16107 16111]))                          )
+                        (reparse-symbol indented_block_body) [16085 16381])
+                    ("calculate_percent_done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16413 16417])
+                            ("session" variable nil (reparse-symbol function_parameters) [16419 16426]))                          
+                        :documentation "Returns part of the inspector completed, 0.0-1.0.")
+                        (reparse-symbol indented_block_body) [16386 16617]))                  
+                :type "class")
+                nil [2157 16617])
+            ("InspectorSubmittingToClusterState" type
+               (:documentation "Keeps inspector state, allows keywords from the pre-defined set only."
+                :superclasses ("basic.Keyword")
+                :members 
+                  ( ("valid_values" variable nil (reparse-symbol indented_block_body) [16834 16993]))                  
+                :type "class")
+                nil [16692 16994])
+            ("InspectorSubmittingToCluster" type
+               (:documentation "
+    Base class for inspectors submitting job(s) to cluster.
+    "
+                :superclasses ("Inspector")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [17124 17414])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [17456 17480]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17433 17437])
+                            ("args" variable nil (reparse-symbol function_parameters) [17439 17445]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17420 17619])
+                    ("message_cluster_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17654 17658])
+                            ("message" variable nil (reparse-symbol function_parameters) [17660 17667]))                          )
+                        (reparse-symbol indented_block_body) [17624 18213])
+                    ("message_cluster_failed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18245 18249])
+                            ("message" variable nil (reparse-symbol function_parameters) [18251 18258]))                          )
+                        (reparse-symbol indented_block_body) [18218 18407])
+                    ("message_cluster_job_disappeared" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18448 18452])
+                            ("message" variable nil (reparse-symbol function_parameters) [18454 18461]))                          )
+                        (reparse-symbol indented_block_body) [18412 18610])
+                    ("message_cluster_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18641 18645])
+                            ("message" variable nil (reparse-symbol function_parameters) [18647 18654]))                          )
+                        (reparse-symbol indented_block_body) [18615 18803])
+                    ("stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18817 18821]))                          )
+                        (reparse-symbol indented_block_body) [18808 18881])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18897 18901]))                          )
+                        (reparse-symbol indented_block_body) [18886 19495])
+                    ("submit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19511 19515])
+                            ("job" variable nil (reparse-symbol function_parameters) [19517 19520]))                          
+                        :documentation "Submits job to cluster.")
+                        (reparse-symbol indented_block_body) [19500 20200])
+                    ("completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20219 20223])
+                            ("a" variable nil (reparse-symbol function_parameters) [20225 20227])
+                            ("k" variable nil (reparse-symbol function_parameters) [20229 20232]))                          
+                        :documentation "Marks inspector as completed, send message to parent.")
+                        (reparse-symbol indented_block_body) [20205 20372])
+                    ("failed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20388 20392])
+                            ("a" variable nil (reparse-symbol function_parameters) [20394 20396])
+                            ("k" variable nil (reparse-symbol function_parameters) [20398 20401]))                          
+                        :documentation "Marks inspector as failed, send message to parent.")
+                        (reparse-symbol indented_block_body) [20377 20535])
+                    ("make_job_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20558 20562])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [20564 20570])
+                            ("suffix" variable nil (reparse-symbol function_parameters) [20577 20583]))                          )
+                        (reparse-symbol indented_block_body) [20540 20872])
+                    ("get_cluster_results" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20901 20905]))                          )
+                        (reparse-symbol indented_block_body) [20877 21381])
+                    ("remove_cluster_job" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21409 21413]))                          )
+                        (reparse-symbol indented_block_body) [21386 21764])
+                    ("time_test" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21783 21787])
+                            ("process" variable nil (reparse-symbol function_parameters) [21789 21796]))                          )
+                        (reparse-symbol indented_block_body) [21769 23025])
+                    ("remove_old_results" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23053 23057]))                          
+                        :documentation "Removes old results (left from previous inspector run).")
+                        (reparse-symbol indented_block_body) [23030 23398])
+                    ("calculate_percent_done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23430 23434])
+                            ("session" variable nil (reparse-symbol function_parameters) [23436 23443]))                          
+                        :documentation "Returns part of the inspector completed, 0.0-1.0.")
+                        (reparse-symbol indented_block_body) [23403 24208])
+                    ("cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24225 24229]))                          )
+                        (reparse-symbol indented_block_body) [24213 24317])
+                    ("force_local_cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24346 24350])
+                            ("chart" variable nil (reparse-symbol function_parameters) [24352 24357]))                          
+                        :documentation "Return if using local cluster should be forced.")
+                        (reparse-symbol indented_block_body) [24322 24864]))                  
+                :type "class")
+                nil [16995 24864])
+            ("InspectorChain" type
+               (:documentation "Inspector that uses (sub)inspectors for it's task."
+                :superclasses ("Inspector")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [25039 25127])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25144 25148]))                          )
+                        (reparse-symbol indented_block_body) [25133 25226])
+                    ("reset_on_failure" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25252 25256]))                          )
+                        (reparse-symbol indented_block_body) [25231 25387])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25410 25414]))                          
+                        :documentation "Returns list of keywords to run corresponding subinspectors in order.
+        List element may be a string or a list of strings to run corresponding
+        subinspectors in parallel.")
+                        (reparse-symbol indented_block_body) [25392 25707])
+                    ("reset_resume_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25742 25746])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [25748 25760]))                          )
+                        (reparse-symbol indented_block_body) [25712 26018])
+                    ("reset_resume_long_handling_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26067 26071])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [26073 26085]))                          )
+                        (reparse-symbol indented_block_body) [26023 26410])
+                    ("resume_on_completion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26440 26444])
+                            ("completed" variable nil (reparse-symbol function_parameters) [26446 26455]))                          )
+                        (reparse-symbol indented_block_body) [26415 28071])
+                    ("handle_subinspectors_stage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28107 28111])
+                            ("keywords_of_stage" variable nil (reparse-symbol function_parameters) [28113 28130])
+                            ("submit_new" variable nil (reparse-symbol function_parameters) [28132 28142])
+                            ("reset_failed" variable nil (reparse-symbol function_parameters) [28144 28156]))                          )
+                        (reparse-symbol indented_block_body) [28076 30396])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35343 35347])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [35349 35356]))                          )
+                        (reparse-symbol indented_block_body) [35321 35451])
+                    ("message_inspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35488 35492])
+                            ("message" variable nil (reparse-symbol function_parameters) [35494 35501]))                          )
+                        (reparse-symbol indented_block_body) [35456 36053])
+                    ("message_inspector_failed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36087 36091])
+                            ("message" variable nil (reparse-symbol function_parameters) [36093 36100]))                          )
+                        (reparse-symbol indented_block_body) [36058 36145])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36177 36181])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [36183 36198]))                          )
+                        (reparse-symbol indented_block_body) [36150 36214])
+                    ("find_or_create_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36251 36255])
+                            ("cls" variable nil (reparse-symbol function_parameters) [36257 36260])
+                            ("list" variable nil (reparse-symbol function_parameters) [36272 36276])
+                            ("fields" variable nil (reparse-symbol function_parameters) [36278 36286]))                          )
+                        (reparse-symbol indented_block_body) [36219 37387])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37402 37406])
+                            ("session" variable nil (reparse-symbol function_parameters) [37408 37415])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [37422 37430]))                          
+                        :documentation "Resets inspector.")
+                        (reparse-symbol indented_block_body) [37392 37563])
+                    ("child_failed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37585 37589])
+                            ("child_id" variable nil (reparse-symbol function_parameters) [37591 37599]))                          )
+                        (reparse-symbol indented_block_body) [37568 37821])
+                    ("child_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37846 37850])
+                            ("child_id" variable nil (reparse-symbol function_parameters) [37852 37860]))                          )
+                        (reparse-symbol indented_block_body) [37826 37946])
+                    ("completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37965 37969]))                          
+                        :documentation "Marks inspector as completed, send message to parent.")
+                        (reparse-symbol indented_block_body) [37951 38270])
+                    ("calculate_percent_done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38302 38306])
+                            ("session" variable nil (reparse-symbol function_parameters) [38308 38315]))                          
+                        :documentation "Returns part of the inspector completed, 0.0-1.0.")
+                        (reparse-symbol indented_block_body) [38275 39351])
+                    ("subinspector_participation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39387 39391]))                          
+                        :documentation "Returns dict of sub-inspectors keywords to their participation ratio (0.0-1.0)")
+                        (reparse-symbol indented_block_body) [39356 39917])
+                    ("result_removed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39941 39945])
+                            ("session" variable nil (reparse-symbol function_parameters) [39947 39954])
+                            ("result" variable nil (reparse-symbol function_parameters) [39956 39962])
+                            ("safe" variable nil (reparse-symbol function_parameters) [39964 39968])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [39970 39977]))                          
+                        :documentation "Update routine diagnostics chain result data, when resulting chart is removed.")
+                        (reparse-symbol indented_block_body) [39922 40175])
+                    ("result_copied_from" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40203 40207])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [40209 40221]))                          
+                        :documentation "Returns if result is already copied from the passed subinspector.
+        There could be situation when subinspector state is completed
+        but this inspector has not yet received message about it and has not yet copied result.
+        ")
+                        (reparse-symbol indented_block_body) [40180 40499])
+                    ("find_all_children_for_update_permissions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40549 40553])
+                            ("session" variable nil (reparse-symbol function_parameters) [40555 40562])
+                            ("fields" variable nil (reparse-symbol function_parameters) [40564 40570]))                          
+                        :documentation "Returns dict {id: entry} for children and dependents.")
+                        (reparse-symbol indented_block_body) [40504 41157])
+                    ("check_failed_children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41188 41192]))                          
+                        :documentation "Checks if inspector in the failed_children list are still present.")
+                        (reparse-symbol indented_block_body) [41162 41624])
+                    ("parse_subinspector_keyword" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41660 41664])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [41666 41673]))                          )
+                        (reparse-symbol indented_block_body) [41629 41809]))                  
+                :type "class")
+                nil [24939 41809])
+            ("InspectorWithSourcesAndResultsBase" type
+               (:members 
+                  ( ("collect_sources_results_roots" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41992 41996])
+                            ("session" variable nil (reparse-symbol function_parameters) [41998 42005]))                          
+                        :documentation "Returns list of ids of root charts for all sources and results.")
+                        (reparse-symbol indented_block_body) [41958 42300])
+                    ("check_sources" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42323 42327])
+                            ("session" variable nil (reparse-symbol function_parameters) [42329 42336]))                          
+                        :documentation "Check if all sources are for the same virus, rbc_species, titer_type. Updates self.errors")
+                        (reparse-symbol indented_block_body) [42305 43159])
+                    ("check_root_source_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43192 43196])
+                            ("chart_entry" variable nil (reparse-symbol function_parameters) [43198 43209])
+                            ("fields" variable nil (reparse-symbol function_parameters) [43211 43217])
+                            ("fields_data" variable nil (reparse-symbol function_parameters) [43219 43230]))                          )
+                        (reparse-symbol indented_block_body) [43164 43541])
+                    ("find_dependents_sources_results" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43582 43586])
+                            ("session" variable nil (reparse-symbol function_parameters) [43588 43595])
+                            ("fields" variable nil (reparse-symbol function_parameters) [43597 43603])
+                            ("read_only" variable nil (reparse-symbol function_parameters) [43605 43614]))                          )
+                        (reparse-symbol indented_block_body) [43546 44068])
+                    ("apply_plot_style_to_all_charts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44108 44112])
+                            ("session" variable nil (reparse-symbol function_parameters) [44114 44121])
+                            ("plot_style" variable nil (reparse-symbol function_parameters) [44123 44133]))                          )
+                        (reparse-symbol indented_block_body) [44073 44764]))                  
+                :type "class")
+                nil [41884 44764])
+            ("Results" type
+               (:superclasses ("ListMongodbDocumentId")
+                :members 
+                  ( ("all_to_reorient" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44903 44907]))                          
+                        :documentation "Returns iterator over all results (chart ids)")
+                        (reparse-symbol indented_block_body) [44883 44996])
+                    ("all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45009 45013]))                          
+                        :documentation "Returns iterator over all result")
+                        (reparse-symbol indented_block_body) [45001 45089]))                  
+                :type "class")
+                nil [44839 45089])
+            ("InspectorWithSourcesAndResults" type
+               (:superclasses ("InspectorWithSourcesAndResultsBase")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [45197 45320]))                  
+                :type "class")
+                nil [45090 45321])
+            ("InspectorWithChartReorientTo" type
+               (:members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [45437 45503])
+                    ("reorient_projection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45533 45537])
+                            ("chart" variable nil (reparse-symbol function_parameters) [45539 45544])
+                            ("projection_no" variable nil (reparse-symbol function_parameters) [45546 45559]))                          )
+                        (reparse-symbol indented_block_body) [45509 46061])
+                    ("reorient_all_charts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46090 46094])
+                            ("projections" variable nil (reparse-symbol function_parameters) [46096 46107]))                          
+                        :documentation "Re-orients all resulting charts to self.chart_reorient_to, if applicable.")
+                        (reparse-symbol indented_block_body) [46066 47242]))                  
+                :type "class")
+                nil [45396 47242])
+            ("GetSourceChart" type
+               (:members 
+                  ( ("get_source_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47365 47369])
+                            ("read_only" variable nil (reparse-symbol function_parameters) [47371 47380]))                          )
+                        (reparse-symbol indented_block_body) [47344 47491])
+                    ("get_source_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47517 47521])
+                            ("conformance" variable nil (reparse-symbol function_parameters) [47523 47534])
+                            ("postprocessing" variable nil (reparse-symbol function_parameters) [47541 47555]))                          )
+                        (reparse-symbol indented_block_body) [47496 47650])
+                    ("get_source_chart_and_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47683 47687])
+                            ("conformance" variable nil (reparse-symbol function_parameters) [47689 47700])
+                            ("postprocessing" variable nil (reparse-symbol function_parameters) [47707 47721]))                          )
+                        (reparse-symbol indented_block_body) [47655 47849]))                  
+                :type "class")
+                nil [47317 47849])
+            ("" code nil nil [47964 48012])
+            ("Inspectors" type
+               (:superclasses ("permissions.CollectionWithPermissions")
+                :members 
+                  ( ("document" variable nil (reparse-symbol indented_block_body) [48076 48096])
+                    ("set_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48116 48120])
+                            ("session" variable nil (reparse-symbol function_parameters) [48122 48129])
+                            ("inspector_id" variable nil (reparse-symbol function_parameters) [48131 48143])
+                            ("state" variable nil (reparse-symbol function_parameters) [48145 48150])
+                            ("state_details" variable nil (reparse-symbol function_parameters) [48152 48165]))                          
+                        :documentation "Sets the state field of inspector to the new value.")
+                        (reparse-symbol indented_block_body) [48102 48425])
+                    ("get_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48444 48448])
+                            ("session" variable nil (reparse-symbol function_parameters) [48450 48457])
+                            ("inspector_id" variable nil (reparse-symbol function_parameters) [48459 48471]))                          
+                        :documentation "Gets the state field of inspector.")
+                        (reparse-symbol indented_block_body) [48430 48602])
+                    ("get_state_type_modified" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48635 48639])
+                            ("session" variable nil (reparse-symbol function_parameters) [48641 48648])
+                            ("inspector_id" variable nil (reparse-symbol function_parameters) [48650 48662]))                          
+                        :documentation "Gets the state field of inspector and inspector type (class).")
+                        (reparse-symbol indented_block_body) [48607 48837])
+                    ("add_log_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48860 48864])
+                            ("session" variable nil (reparse-symbol function_parameters) [48866 48873])
+                            ("inspector_id" variable nil (reparse-symbol function_parameters) [48875 48887])
+                            ("text" variable nil (reparse-symbol function_parameters) [48889 48893]))                          
+                        :documentation "Appends text to the log_error field of inspector.")
+                        (reparse-symbol indented_block_body) [48842 49075])
+                    ("list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49089 49093])
+                            ("session" variable nil (reparse-symbol function_parameters) [49095 49102])
+                            ("sources" variable nil (reparse-symbol function_parameters) [49104 49111])
+                            ("results" variable nil (reparse-symbol function_parameters) [49118 49125])
+                            ("top_level_only" variable nil (reparse-symbol function_parameters) [49132 49146])
+                            ("only_of_type" variable nil (reparse-symbol function_parameters) [49153 49165])
+                            ("having_state" variable nil (reparse-symbol function_parameters) [49172 49184])
+                            ("missing_sources" variable nil (reparse-symbol function_parameters) [49191 49206])
+                            ("missing_results" variable nil (reparse-symbol function_parameters) [49213 49228])
+                            ("derived_from_sources" variable nil (reparse-symbol function_parameters) [49235 49255])
+                            ("keywords" variable nil (reparse-symbol function_parameters) [49263 49271])
+                            ("fields" variable nil (reparse-symbol function_parameters) [49278 49284])
+                            ("owner" variable nil (reparse-symbol function_parameters) [49291 49296])
+                            ("skip" variable nil (reparse-symbol function_parameters) [49303 49307])
+                            ("max_results" variable nil (reparse-symbol function_parameters) [49311 49322]))                          
+                        :documentation "Returns list of the inspectors.")
+                        (reparse-symbol indented_block_body) [49080 51069])
+                    ("_list_select" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51091 51095])
+                            ("sources" variable nil (reparse-symbol function_parameters) [51097 51104])
+                            ("results" variable nil (reparse-symbol function_parameters) [51106 51113])
+                            ("top_level_only" variable nil (reparse-symbol function_parameters) [51115 51129])
+                            ("only_of_type" variable nil (reparse-symbol function_parameters) [51131 51143])
+                            ("having_state" variable nil (reparse-symbol function_parameters) [51145 51157])
+                            ("words" variable nil (reparse-symbol function_parameters) [51159 51164])
+                            ("keywords" variable nil (reparse-symbol function_parameters) [51166 51174])
+                            ("owner" variable nil (reparse-symbol function_parameters) [51176 51181]))                          )
+                        (reparse-symbol indented_block_body) [51074 53109])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53125 53129])
+                            ("session" variable nil (reparse-symbol function_parameters) [53131 53138])
+                            ("sources" variable nil (reparse-symbol function_parameters) [53140 53147])
+                            ("results" variable nil (reparse-symbol function_parameters) [53149 53156])
+                            ("top_level_only" variable nil (reparse-symbol function_parameters) [53163 53177])
+                            ("only_of_type" variable nil (reparse-symbol function_parameters) [53184 53196])
+                            ("having_state" variable nil (reparse-symbol function_parameters) [53203 53215])
+                            ("words" variable nil (reparse-symbol function_parameters) [53222 53227])
+                            ("keywords" variable nil (reparse-symbol function_parameters) [53234 53242])
+                            ("skip" variable nil (reparse-symbol function_parameters) [53249 53253])
+                            ("max_results" variable nil (reparse-symbol function_parameters) [53257 53268]))                          )
+                        (reparse-symbol indented_block_body) [53114 54112])
+                    ("list_children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54135 54139])
+                            ("session" variable nil (reparse-symbol function_parameters) [54141 54148])
+                            ("parent_id" variable nil (reparse-symbol function_parameters) [54150 54159])
+                            ("fields" variable nil (reparse-symbol function_parameters) [54161 54167]))                          )
+                        (reparse-symbol indented_block_body) [54117 54499])
+                    ("remove_orphans" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54523 54527])
+                            ("session" variable nil (reparse-symbol function_parameters) [54529 54536]))                          
+                        :documentation "Removes top-level inspectors (and their subinspectors) having missing sources (orphaned by removing charts).")
+                        (reparse-symbol indented_block_body) [54504 55367])
+                    ("remove_by_source" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55393 55397])
+                            ("session" variable nil (reparse-symbol function_parameters) [55399 55406])
+                            ("sources" variable nil (reparse-symbol function_parameters) [55408 55415])
+                            ("safe" variable nil (reparse-symbol function_parameters) [55417 55421])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [55429 55436]))                          
+                        :documentation "Remove inspectors listing sources (for cleaning on chart removal).")
+                        (reparse-symbol indented_block_body) [55372 55757])
+                    ("remove_by_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55783 55787])
+                            ("session" variable nil (reparse-symbol function_parameters) [55789 55796])
+                            ("results" variable nil (reparse-symbol function_parameters) [55798 55805])
+                            ("safe" variable nil (reparse-symbol function_parameters) [55807 55811])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [55819 55826]))                          
+                        :documentation "Remove inspectors listing results (for cleaning on chart removal).")
+                        (reparse-symbol indented_block_body) [55762 56223])
+                    ("update_chain_for_removed_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56264 56268])
+                            ("session" variable nil (reparse-symbol function_parameters) [56270 56277])
+                            ("result" variable nil (reparse-symbol function_parameters) [56279 56285])
+                            ("safe" variable nil (reparse-symbol function_parameters) [56287 56291])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [56299 56306]))                          
+                        :documentation "Update routine diagnostics chain result data, when resulting chart is removed.")
+                        (reparse-symbol indented_block_body) [56228 56835])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56850 56854])
+                            ("session" variable nil (reparse-symbol function_parameters) [56856 56863])
+                            ("id" variable nil (reparse-symbol function_parameters) [56865 56867])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [56869 56877]))                          )
+                        (reparse-symbol indented_block_body) [56840 57041])
+                    ("message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57058 57062])
+                            ("session" variable nil (reparse-symbol function_parameters) [57064 57071])
+                            ("id" variable nil (reparse-symbol function_parameters) [57073 57075])
+                            ("message" variable nil (reparse-symbol function_parameters) [57077 57084])
+                            ("source" variable nil (reparse-symbol function_parameters) [57086 57092])
+                            ("data" variable nil (reparse-symbol function_parameters) [57099 57103])
+                            ("awake_dispatcher" variable nil (reparse-symbol function_parameters) [57110 57126]))                          
+                        :documentation "Send message to inspector.")
+                        (reparse-symbol indented_block_body) [57046 57412])
+                    ("_has_missing_charts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57441 57445])
+                            ("session" variable nil (reparse-symbol function_parameters) [57447 57454])
+                            ("inspector" variable nil (reparse-symbol function_parameters) [57456 57465])
+                            ("field" variable nil (reparse-symbol function_parameters) [57467 57472]))                          
+                        :documentation "Returns if inspector has missing sources/results, i.e. corresponding field refer to non-existing charts.")
+                        (reparse-symbol indented_block_body) [57417 58300])
+                    ("export_inspector_tree" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [58331 58335])
+                            ("session" variable nil (reparse-symbol function_parameters) [58337 58344])
+                            ("inspector_id" variable nil (reparse-symbol function_parameters) [58346 58358]))                          
+                        :documentation "Returns inspector tree as dict, suitable for import_inspector_tree.")
+                        (reparse-symbol indented_block_body) [58305 59002])
+                    ("import_inspector_tree" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [59033 59037])
+                            ("session" variable nil (reparse-symbol function_parameters) [59039 59046])
+                            ("data" variable nil (reparse-symbol function_parameters) [59048 59052]))                          )
+                        (reparse-symbol indented_block_body) [59007 59285])
+                    ("tree_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [59305 59309])
+                            ("session" variable nil (reparse-symbol function_parameters) [59311 59318])
+                            ("root" variable nil (reparse-symbol function_parameters) [59320 59324])
+                            ("incomplete_only" variable nil (reparse-symbol function_parameters) [59326 59341]))                          
+                        :documentation "Returns inspector tree as dict, listing just id, type, state for each sub-inspector.
+        incomplete_only means list only inspectors having no 'completed' state, top level inspector is always listed.
+        ")
+                        (reparse-symbol indented_block_body) [59290 61888]))                  
+                :type "class")
+                nil [48013 61888]))          
+      :file "inspector.py"
+      :pointmax 62054
+      :fsize 62053
+      :lastmodtime '(22137 15893 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 60345 . 60499) (NEWLINE 60344 . 60345) (COLON 60343 . 60344) (TRY 60091 . 60094) (AS 60337 . 60339) (FROM 56416 . 56420) (PERIOD 56421 . 56422) (FROM 52606 . 52610) (PERIOD 52611 . 52612) (FROM 52420 . 52424) (PERIOD 52425 . 52426) (FROM 52227 . 52231) (PERIOD 52232 . 52233) (FROM 52008 . 52012) (PERIOD 52013 . 52014) (FROM 51743 . 51747) (PERIOD 51748 . 51749) (INDENT_BLOCK 44677 . 44764) (NEWLINE 44676 . 44677) (COLON 44675 . 44676) (TRY 44546 . 44549) (AS 44669 . 44671) (NAME 36262 . 36270) (COLON 36270 . 36271) (NAME 27487 . 27507) (IF 27531 . 27533) (ELSE 27573 . 27577) (NAME 24129 . 24131) (IF 24136 . 24138) (ELSE 24168 . 24172) (INDENT_BLOCK 23929 . 24040) (NEWLINE 23859 . 23860) (COLON 23858 . 23859) (TRY 23709 . 23712) (AS 23852 . 23854) (PERIOD 23224 . 23225) (FROM 23218 . 23222) (PERIOD 23223 . 23224) (PERIOD 22089 . 22090) (FROM 22083 . 22087) (PERIOD 22088 . 22089) (INDENT_BLOCK 21666 . 21716) (NEWLINE 21665 . 21666) (COLON 21664 . 21665) (TRY 21456 . 21459) (AS 21658 . 21660) (INDENT_BLOCK 21185 . 21207) (NEWLINE 21184 . 21185) (COLON 21183 . 21184) (TRY 21003 . 21006) (AS 21177 . 21179) (INDENT_BLOCK 17567 . 17619) (NEWLINE 17566 . 17567) (COLON 17565 . 17566) (TRY 17489 . 17492) (AS 17559 . 17561) (INDENT_BLOCK 14679 . 14744) (NEWLINE 14678 . 14679) (COLON 14677 . 14678) (TRY 14363 . 14366) (AS 14671 . 14673) (PERIOD 14547 . 14548) (FROM 14541 . 14545) (PERIOD 14546 . 14547) (INDENT_BLOCK 12436 . 12519) (NEWLINE 12435 . 12436) (COLON 12434 . 12435) (TRY 11824 . 11827) (AS 12428 . 12430) (PERIOD 8940 . 8941) (FROM 8934 . 8938) (PERIOD 8939 . 8940) (INDENT_BLOCK 5748 . 6004) (NEWLINE 5747 . 5748) (COLON 5746 . 5747) (TRY 5589 . 5592) (AS 5740 . 5742) (INDENT_BLOCK 4246 . 4371) (NEWLINE 4245 . 4246) (COLON 4244 . 4245) (TRY 4004 . 4007) (AS 4238 . 4240) (FROM 581 . 585) (PERIOD 586 . 587) (PERIOD 515 . 516) (FROM 509 . 513) (PERIOD 514 . 515) (PERIOD 382 . 383) (FROM 376 . 380) (PERIOD 381 . 382) (PERIOD 359 . 360) (FROM 353 . 357) (PERIOD 358 . 359) (PERIOD 307 . 308) (FROM 301 . 305) (PERIOD 306 . 307) (PERIOD 263 . 264) (FROM 257 . 261) (PERIOD 262 . 263)))
+    (semanticdb-table "condor.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+htcondor interface
+\"\"\"" code nil nil [40 66])
+            ("pprint" include nil nil [142 229])
+            ("shutil" include nil nil [142 229])
+            ("glob" include nil nil [142 229])
+            ("collections" include nil nil [142 229])
+            ("traceback" include nil nil [142 229])
+            ("time" include nil nil [142 229])
+            ("subprocess" include nil nil [142 229])
+            ("tempfile" include nil nil [142 229])
+            ("re" include nil nil [142 229])
+            ("os" include nil nil [142 229])
+            ("datetime" include nil nil [230 251])
+            ("mmap" include nil nil [230 251])
+            ("logging" include nil nil [252 266])
+            ("permissions" include nil nil [339 378])
+            ("mongodb_collections" include nil nil [339 378])
+            ("hostname" include nil nil [396 449])
+            ("mail" include nil nil [396 449])
+            ("open_file" include nil nil [396 449])
+            ("timer" include nil nil [396 449])
+            ("CondorError" type
+               (:superclasses ("Error")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [638 663])
+                            ("module_logger" code nil (reparse-symbol indented_block_body) [672 835]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [593 597])
+                            ("message" variable nil (reparse-symbol function_parameters) [599 606])
+                            ("log_as_warning" variable nil (reparse-symbol function_parameters) [608 622]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [580 836]))                  
+                :type "class")
+                nil [548 836])
+            ("CondorErrorNoConnection" type
+               (:superclasses ("ErrorNoConnection")
+                :members 
+                  ( ("\"No connection to htcondor server, not fatal error in some circumstances.\"" code nil (reparse-symbol indented_block_body) [892 966]))                  
+                :type "class")
+                nil [837 967])
+            ("CondorCommandFailed" type
+               (:superclasses ("CondorError")
+                :members 
+                  ( ("\"htcondor command failed, perhaps terminated by user.\"" code nil (reparse-symbol indented_block_body) [1013 1067])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1118 1143])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1152 1172]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1086 1090])
+                            ("status" variable nil (reparse-symbol function_parameters) [1092 1098])
+                            ("message" variable nil (reparse-symbol function_parameters) [1100 1107]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1073 1173])
+                    ("signaled" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1191 1195]))                          
+                        :documentation "Returnx if htcondor command was terminated due to a signal.")
+                        (reparse-symbol indented_block_body) [1178 1313])
+                    ("killed_by_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1337 1341]))                          
+                        :documentation "Returns if htcondor command was terminated due to a signal most probably sent by user.")
+                        (reparse-symbol indented_block_body) [1318 1570]))                  
+                :type "class")
+                nil [968 1570])
+            ("CondorJobFailed" type
+               (:superclasses ("CondorError")
+                :members 
+                  ( ("\"htcondor reported that job failed.\"" code nil (reparse-symbol indented_block_body) [1612 1648])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1691 1738]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1667 1671])
+                            ("message" variable nil (reparse-symbol function_parameters) [1673 1680]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1654 1739]))                  
+                :type "class")
+                nil [1571 1739])
+            ("CondorInvalidJobId" type
+               (:superclasses ("CondorError")
+                :members 
+                  ( ("\"job id of another cluster (e.g. ClusterLocalJobId).\"" code nil (reparse-symbol indented_block_body) [1784 1837])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [1880 1926]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1856 1860])
+                            ("message" variable nil (reparse-symbol function_parameters) [1862 1869]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1843 1927]))                  
+                :type "class")
+                nil [1740 1927])
+            ("detect" function
+               (:documentation "Returns if htcondor could be used."
+                :arguments 
+                  ( ("session" variable nil (reparse-symbol function_parameters) [2013 2020]))                  )
+                nil [2002 3188])
+            ("CondorJobId" type
+               (:documentation "Keeps job id"
+                :superclasses ("ClusterJobId")
+                :members 
+                  ( ("clusters" variable nil (reparse-symbol indented_block_body) [3325 3340])
+                    ("results_directory" variable nil (reparse-symbol indented_block_body) [3411 3434])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [3627 3868])
+                            ("if" code nil (reparse-symbol indented_block_body) [3876 3943])
+                            ("super" code nil (reparse-symbol indented_block_body) [3951 4023]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3453 3457])
+                            ("clusters" variable nil (reparse-symbol function_parameters) [3459 3467])
+                            ("results_directory" variable nil (reparse-symbol function_parameters) [3474 3491])
+                            ("jobs" variable nil (reparse-symbol function_parameters) [3500 3504]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3440 4024])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4041 4045]))                          )
+                        (reparse-symbol indented_block_body) [4029 4083])
+                    ("number_of_tasks" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4108 4112]))                          )
+                        (reparse-symbol indented_block_body) [4088 4161])
+                    ("cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4178 4182])
+                            ("session" variable nil (reparse-symbol function_parameters) [4184 4191]))                          
+                        :documentation "Returns cluster instance for this job id")
+                        (reparse-symbol indented_block_body) [4166 4288]))                  
+                :type "class")
+                nil [3263 4288])
+            ("Condor" type
+               (:superclasses ("Cluster")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [4428 4452])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4461 4477]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4405 4409])
+                            ("args" variable nil (reparse-symbol function_parameters) [4411 4417]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4392 4478])
+                    ("supports_multiple_tasks_per_job" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4519 4523]))                          )
+                        (reparse-symbol indented_block_body) [4483 4546])
+                    ("name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4560 4564]))                          )
+                        (reparse-symbol indented_block_body) [4551 4593])
+                    ("submit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4609 4613])
+                            ("job" variable nil (reparse-symbol function_parameters) [4615 4618])
+                            ("temp_directory" variable nil (reparse-symbol function_parameters) [4620 4634]))                          
+                        :documentation "Submits job described by ClusterJob instance. Returns ClusterJobId instance.")
+                        (reparse-symbol indented_block_body) [4598 5509])
+                    ("make_event_of_job_submission" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5547 5551])
+                            ("inspector" variable nil (reparse-symbol function_parameters) [5553 5562]))                          
+                        :documentation "Makes event of submitting job to the cluster.")
+                        (reparse-symbol indented_block_body) [5514 5772])
+                    ("check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5787 5791])
+                            ("job_ids" variable nil (reparse-symbol function_parameters) [5793 5800]))                          
+                        :documentation "Checks job_ids (list/set) for completion/failure. Returns
+        dict with keys:
+        - completed - set of completed job_ids
+        - failed - set of failed job ids
+        - pending - set of pending (not yet started) job_ids
+        - running - dict of running job_ids to their completion status (float 0-1)
+        - job-disappeared - set of not found job_ids
+        - error - dict of job_ids to error message, if error occured while obtaining info for that job
+        ")
+                        (reparse-symbol indented_block_body) [5777 6742])
+                    ("check_one" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6761 6765])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [6767 6773]))                          
+                        :documentation "Checks job, returns dict(status, percent, error).")
+                        (reparse-symbol indented_block_body) [6747 8028])
+                    ("get_pecent_done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8053 8057])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [8059 8065]))                          
+                        :documentation "Returns percent done for the job (0-1). Returns None, if job is not found.")
+                        (reparse-symbol indented_block_body) [8033 8206])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8219 8223])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [8225 8231])
+                            ("temp_directory" variable nil (reparse-symbol function_parameters) [8233 8247]))                          
+                        :documentation "Returns ClusterJobResults instance for job_id, it's
+        possible to obtain results for incomplete job.")
+                        (reparse-symbol indented_block_body) [8211 8748])
+                    ("kill" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8762 8766])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [8768 8774]))                          
+                        :documentation "Remove job from the cluster, good for pending and running jobs too.")
+                        (reparse-symbol indented_block_body) [8753 9204])
+                    ("suspend" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9221 9225])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [9227 9233]))                          
+                        :documentation "Tells cluster to suspend job, good for completed jobs too (but does nothing).")
+                        (reparse-symbol indented_block_body) [9209 9558])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9574 9578])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [9580 9586]))                          
+                        :documentation "Tells cluster to resume the job. Does nothing for not suspended jobs.")
+                        (reparse-symbol indented_block_body) [9563 9904])
+                    ("wait" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9918 9922])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [9924 9930])
+                            ("interval" variable nil (reparse-symbol function_parameters) [9932 9940]))                          )
+                        (reparse-symbol indented_block_body) [9909 10548])
+                    ("job_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10566 10570]))                          
+                        :documentation "Returns list of job ids available.")
+                        (reparse-symbol indented_block_body) [10553 10688])
+                    ("history_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10768 10772]))                          
+                        :documentation "Returns history file pathname")
+                        (reparse-symbol indented_block_body) [10751 10902])
+                    ("history" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10919 10923]))                          
+                        :documentation "Returns CondorHistory instance for history file parser")
+                        (reparse-symbol indented_block_body) [10907 11105])
+                    ("sFields" variable nil (reparse-symbol indented_block_body) [11110 11367])
+                    ("condor_queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11390 11394])
+                            ("ids" variable nil (reparse-symbol function_parameters) [11396 11400]))                          
+                        :documentation "Returns list of jobs ids")
+                        (reparse-symbol indented_block_body) [11373 11520])
+                    ("_run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11781 11785])
+                            ("cmd_suffix" variable nil (reparse-symbol function_parameters) [11787 11797])
+                            ("args" variable nil (reparse-symbol function_parameters) [11799 11803])
+                            ("stdin" variable nil (reparse-symbol function_parameters) [11810 11815])
+                            ("parse_output" variable nil (reparse-symbol function_parameters) [11822 11834])
+                            ("ignore_errors" variable nil (reparse-symbol function_parameters) [11841 11854])
+                            ("warning_on_ignored_error" variable nil (reparse-symbol function_parameters) [11862 11886]))                          
+                        :documentation "Submits and parses output from the condor command line.")
+                        (reparse-symbol indented_block_body) [11772 13196])
+                    ("_parse_output" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13219 13223])
+                            ("output" variable nil (reparse-symbol function_parameters) [13225 13231]))                          )
+                        (reparse-symbol indented_block_body) [13201 13731])
+                    ("_parse__ClusterId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13758 13762])
+                            ("r" variable nil (reparse-symbol function_parameters) [13764 13765])
+                            ("field" variable nil (reparse-symbol function_parameters) [13767 13772])
+                            ("value" variable nil (reparse-symbol function_parameters) [13774 13779]))                          )
+                        (reparse-symbol indented_block_body) [13736 13847])
+                    ("_parse__ProcId" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13871 13875])
+                            ("r" variable nil (reparse-symbol function_parameters) [13877 13878])
+                            ("field" variable nil (reparse-symbol function_parameters) [13880 13885])
+                            ("value" variable nil (reparse-symbol function_parameters) [13887 13892]))                          )
+                        (reparse-symbol indented_block_body) [13852 13960])
+                    ("sJobStatus" variable nil (reparse-symbol indented_block_body) [13965 14103])
+                    ("_parse__JobStatus" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14131 14135])
+                            ("r" variable nil (reparse-symbol function_parameters) [14137 14138])
+                            ("field" variable nil (reparse-symbol function_parameters) [14140 14145])
+                            ("value" variable nil (reparse-symbol function_parameters) [14147 14152]))                          )
+                        (reparse-symbol indented_block_body) [14109 14200])
+                    ("_parse__CompletionDate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14232 14236])
+                            ("r" variable nil (reparse-symbol function_parameters) [14238 14239])
+                            ("field" variable nil (reparse-symbol function_parameters) [14241 14246])
+                            ("value" variable nil (reparse-symbol function_parameters) [14248 14253]))                          )
+                        (reparse-symbol indented_block_body) [14205 14332])
+                    ("_parse__Args" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14354 14358])
+                            ("r" variable nil (reparse-symbol function_parameters) [14360 14361])
+                            ("field" variable nil (reparse-symbol function_parameters) [14363 14368])
+                            ("value" variable nil (reparse-symbol function_parameters) [14370 14375]))                          )
+                        (reparse-symbol indented_block_body) [14337 14426])
+                    ("_parse__Arguments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14453 14457])
+                            ("r" variable nil (reparse-symbol function_parameters) [14459 14460])
+                            ("field" variable nil (reparse-symbol function_parameters) [14462 14467])
+                            ("value" variable nil (reparse-symbol function_parameters) [14469 14474]))                          )
+                        (reparse-symbol indented_block_body) [14431 14503])
+                    ("_parse__ExitCode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14529 14533])
+                            ("r" variable nil (reparse-symbol function_parameters) [14535 14536])
+                            ("field" variable nil (reparse-symbol function_parameters) [14538 14543])
+                            ("value" variable nil (reparse-symbol function_parameters) [14545 14550]))                          )
+                        (reparse-symbol indented_block_body) [14508 14589])
+                    ("_parse__ExitBySignal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14619 14623])
+                            ("r" variable nil (reparse-symbol function_parameters) [14625 14626])
+                            ("field" variable nil (reparse-symbol function_parameters) [14628 14633])
+                            ("value" variable nil (reparse-symbol function_parameters) [14635 14640]))                          )
+                        (reparse-symbol indented_block_body) [14594 14711])
+                    ("_parse__ExitSignal" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14739 14743])
+                            ("r" variable nil (reparse-symbol function_parameters) [14745 14746])
+                            ("field" variable nil (reparse-symbol function_parameters) [14748 14753])
+                            ("value" variable nil (reparse-symbol function_parameters) [14755 14760]))                          )
+                        (reparse-symbol indented_block_body) [14716 14801])
+                    ("_parse__JobDescription" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14833 14837])
+                            ("r" variable nil (reparse-symbol function_parameters) [14839 14840])
+                            ("field" variable nil (reparse-symbol function_parameters) [14842 14847])
+                            ("value" variable nil (reparse-symbol function_parameters) [14849 14854]))                          )
+                        (reparse-symbol indented_block_body) [14806 14890])
+                    ("_parse__JobStartDate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14920 14924])
+                            ("r" variable nil (reparse-symbol function_parameters) [14926 14927])
+                            ("field" variable nil (reparse-symbol function_parameters) [14929 14934])
+                            ("value" variable nil (reparse-symbol function_parameters) [14936 14941]))                          )
+                        (reparse-symbol indented_block_body) [14895 15018])
+                    ("_parse__QDate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15041 15045])
+                            ("r" variable nil (reparse-symbol function_parameters) [15047 15048])
+                            ("field" variable nil (reparse-symbol function_parameters) [15050 15055])
+                            ("value" variable nil (reparse-symbol function_parameters) [15057 15062]))                          )
+                        (reparse-symbol indented_block_body) [15023 15141])
+                    ("_get_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15160 15164])
+                            ("value" variable nil (reparse-symbol function_parameters) [15166 15171]))                          )
+                        (reparse-symbol indented_block_body) [15146 15252])
+                    ("_parse__JobPrio" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15277 15281])
+                            ("r" variable nil (reparse-symbol function_parameters) [15283 15284])
+                            ("field" variable nil (reparse-symbol function_parameters) [15286 15291])
+                            ("value" variable nil (reparse-symbol function_parameters) [15293 15298]))                          )
+                        (reparse-symbol indented_block_body) [15257 15336])
+                    ("sJobUniverse" variable nil (reparse-symbol indented_block_body) [15341 15491])
+                    ("_parse__JobUniverse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15521 15525])
+                            ("r" variable nil (reparse-symbol function_parameters) [15527 15528])
+                            ("field" variable nil (reparse-symbol function_parameters) [15530 15535])
+                            ("value" variable nil (reparse-symbol function_parameters) [15537 15542]))                          )
+                        (reparse-symbol indented_block_body) [15497 15594])
+                    ("_parse__Owner" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15617 15621])
+                            ("r" variable nil (reparse-symbol function_parameters) [15623 15624])
+                            ("field" variable nil (reparse-symbol function_parameters) [15626 15631])
+                            ("value" variable nil (reparse-symbol function_parameters) [15633 15638]))                          )
+                        (reparse-symbol indented_block_body) [15599 15668])
+                    ("_parse__CommittedTime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15699 15703])
+                            ("r" variable nil (reparse-symbol function_parameters) [15705 15706])
+                            ("field" variable nil (reparse-symbol function_parameters) [15708 15713])
+                            ("value" variable nil (reparse-symbol function_parameters) [15715 15720]))                          )
+                        (reparse-symbol indented_block_body) [15673 15768])
+                    ("_parse__CumulativeSuspensionTime" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15810 15814])
+                            ("r" variable nil (reparse-symbol function_parameters) [15816 15817])
+                            ("field" variable nil (reparse-symbol function_parameters) [15819 15824])
+                            ("value" variable nil (reparse-symbol function_parameters) [15826 15831]))                          )
+                        (reparse-symbol indented_block_body) [15773 16040]))                  
+                :type "class")
+                nil [4363 16040])
+            ("CondorJobResults" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16199 16221])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16230 16250])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16259 16397])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16406 16544])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16553 16709])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16819 16843]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16157 16161])
+                            ("cluster" variable nil (reparse-symbol function_parameters) [16163 16170])
+                            ("job_id" variable nil (reparse-symbol function_parameters) [16172 16178])
+                            ("finished" variable nil (reparse-symbol function_parameters) [16180 16188]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16144 16844])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16861 16865]))                          )
+                        (reparse-symbol indented_block_body) [16849 16937])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16955 16959]))                          )
+                        (reparse-symbol indented_block_body) [16942 17141]))                  
+                :type "class")
+                nil [16115 17141])
+            ("JobSubmitter" type
+               (:documentation "Multi-task job constructor."
+                :members 
+                  ( ("data" variable nil (reparse-symbol indented_block_body) [17279 17290])
+                    ("results_directory" variable nil (reparse-symbol indented_block_body) [17295 17318])
+                    ("input_files" variable nil (reparse-symbol indented_block_body) [17323 17341])
+                    ("previous_executable" variable nil (reparse-symbol indented_block_body) [17346 17371])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [17428 17498])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17507 17948])
+                            ("if" code nil (reparse-symbol indented_block_body) [17957 18046])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18054 18075])
+                            ("self" variable nil (reparse-symbol indented_block_body) [18084 18115]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17390 17394])
+                            ("name" variable nil (reparse-symbol function_parameters) [17396 17400])
+                            ("email" variable nil (reparse-symbol function_parameters) [17402 17407])
+                            ("priority" variable nil (reparse-symbol function_parameters) [17409 17417]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17377 18116])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18133 18137]))                          )
+                        (reparse-symbol indented_block_body) [18121 18265])
+                    ("add_file" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18283 18287])
+                            ("filepath" variable nil (reparse-symbol function_parameters) [18289 18297])
+                            ("filedata" variable nil (reparse-symbol function_parameters) [18299 18307]))                          )
+                        (reparse-symbol indented_block_body) [18270 18707])
+                    ("add_task" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18725 18729])
+                            ("command" variable nil (reparse-symbol function_parameters) [18731 18738])
+                            ("env" variable nil (reparse-symbol function_parameters) [18740 18743])
+                            ("stdin" variable nil (reparse-symbol function_parameters) [18752 18757]))                          )
+                        (reparse-symbol indented_block_body) [18712 19443])
+                    ("_detect_executable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19471 19475])
+                            ("executable" variable nil (reparse-symbol function_parameters) [19477 19487]))                          )
+                        (reparse-symbol indented_block_body) [19448 19791]))                  
+                :type "class")
+                nil [17216 19791])
+            ("CondorHistory" type
+               (:members 
+                  ( ("sFields" variable nil (reparse-symbol indented_block_body) [19892 20078])
+                    ("sJobStatus" variable nil (reparse-symbol indented_block_body) [20208 20319])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [20363 20398]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20338 20342])
+                            ("filename" variable nil (reparse-symbol function_parameters) [20344 20352]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [20325 20399])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20416 20420]))                          )
+                        (reparse-symbol indented_block_body) [20404 20473])
+                    ("open" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20487 20491])
+                            ("filename" variable nil (reparse-symbol function_parameters) [20493 20501]))                          )
+                        (reparse-symbol indented_block_body) [20478 20676])
+                    ("all_cluster_ids" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20701 20705]))                          
+                        :documentation "Returns list of all ClusterId found in the file")
+                        (reparse-symbol indented_block_body) [20681 21160])
+                    ("cluster" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21177 21181])
+                            ("cluster_id" variable nil (reparse-symbol function_parameters) [21183 21193])
+                            ("merge_status" variable nil (reparse-symbol function_parameters) [21195 21207])
+                            ("fields" variable nil (reparse-symbol function_parameters) [21215 21221]))                          
+                        :documentation "Returns information about cluster (dict) or None if ClusterId not found")
+                        (reparse-symbol indented_block_body) [21165 22431])
+                    ("_cluster_update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22456 22460])
+                            ("mm" variable nil (reparse-symbol function_parameters) [22462 22464])
+                            ("result" variable nil (reparse-symbol function_parameters) [22466 22472])
+                            ("start" variable nil (reparse-symbol function_parameters) [22474 22479])
+                            ("end" variable nil (reparse-symbol function_parameters) [22481 22484])
+                            ("fields" variable nil (reparse-symbol function_parameters) [22486 22492]))                          )
+                        (reparse-symbol indented_block_body) [22436 24579]))                  
+                :type "class")
+                nil [19866 24579]))          
+      :file "condor.py"
+      :pointmax 24745
+      :fsize 24744
+      :lastmodtime '(22086 5788 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 12823 . 13196) (NEWLINE 12822 . 12823) (COLON 12821 . 12822) (TRY 12415 . 12418) (AS 12815 . 12817) (FROM 5633 . 5637) (PERIOD 5638 . 5639) (INDENT_BLOCK 2444 . 3170) (NEWLINE 2443 . 2444) (COLON 2442 . 2443) (TRY 2133 . 2136) (AS 2436 . 2438) (IMPORT 464 . 470) (MULT 471 . 472) (FROM 450 . 454) (PERIOD 455 . 456) (PERIOD 385 . 386) (FROM 379 . 383) (PERIOD 384 . 385) (PERIOD 318 . 319) (FROM 312 . 316) (PERIOD 317 . 318)))
+    (semanticdb-table "optimization.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+Optimization inspector
+\"\"\"" code nil nil [39 69])
+            ("pprint" include nil nil [145 240])
+            ("time" include nil nil [145 240])
+            ("math" include nil nil [145 240])
+            ("resource" include nil nil [145 240])
+            ("signal" include nil nil [145 240])
+            ("multiprocessing" include nil nil [145 240])
+            ("glob" include nil nil [145 240])
+            ("tempfile" include nil nil [145 240])
+            ("traceback" include nil nil [145 240])
+            ("re" include nil nil [145 240])
+            ("os" include nil nil [145 240])
+            ("logging" include nil nil [241 255])
+            ("statistics" include nil nil [313 364])
+            ("backend" include nil nil [313 364])
+            ("chart" include nil nil [313 364])
+            ("basic" include nil nil [313 364])
+            ("mongodb_collections" include nil nil [392 418])
+            ("json" include nil nil [436 447])
+            ("mongodb" include nil nil [456 470])
+            ("cluster" include nil nil [478 503])
+            ("inspector" include nil nil [478 503])
+            ("acmacs_relaxator_filename" variable nil nil [579 625])
+            ("OptimizationChain" type
+               (:documentation "Regular optimization chain consisting of two steps:
+    OptimizationRough followed by OptimizationFinal."
+                :superclasses ("inspector.InspectorChain" "inspector.InspectorWithSourcesAndResults" "inspector.InspectorWithChartReorientTo")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [955 2120])
+                    ("sOptRoughKeyword" variable nil (reparse-symbol indented_block_body) [2126 2156])
+                    ("sOptFinalKeyword" variable nil (reparse-symbol indented_block_body) [2161 2191])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2215 2219]))                          )
+                        (reparse-symbol indented_block_body) [2197 2284])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2311 2315])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [2317 2324]))                          )
+                        (reparse-symbol indented_block_body) [2289 4988])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5020 5024])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [5026 5041]))                          )
+                        (reparse-symbol indented_block_body) [4993 5147])
+                    ("subinspector_participation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5183 5187]))                          
+                        :documentation "Returns dict of sub-inspectors keywords to their participation ratio (0.0-1.0)")
+                        (reparse-symbol indented_block_body) [5152 5396])
+                    ("number_of_dimensions_normalize" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5453 5456])
+                            ("num_dimensions" variable nil (reparse-symbol function_parameters) [5458 5472])
+                            ("dimension_annealing" variable nil (reparse-symbol function_parameters) [5474 5493]))                          )
+                        (reparse-symbol indented_block_body) [5401 6281]))                  
+                :type "class")
+                nil [701 6281])
+            ("OptimizationRough" type
+               (:superclasses ("inspector.InspectorSubmittingToCluster" "inspector.InspectorWithSourcesAndResults" "inspector.GetSourceChart")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [6495 7781])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7810 7814])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [7816 7826]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [7787 8020])
+                    ("default_parameters_update" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [8072 8075])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [8077 8087]))                          )
+                        (reparse-symbol indented_block_body) [8025 9100])
+                    ("prepare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9194 9198]))                          )
+                        (reparse-symbol indented_block_body) [9182 10572])
+                    ("cluster_job_priority" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10602 10606]))                          )
+                        (reparse-symbol indented_block_body) [10577 10626])
+                    ("postprocess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10647 10651]))                          
+                        :documentation "Called when cluster job completed.")
+                        (reparse-symbol indented_block_body) [10631 12211])
+                    ("resulting_chart_made" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12297 12301])
+                            ("chart" variable nil (reparse-symbol function_parameters) [12303 12308]))                          )
+                        (reparse-symbol indented_block_body) [12272 12387])
+                    ("time_test" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12406 12410])
+                            ("mds_data" variable nil (reparse-symbol function_parameters) [12412 12420]))                          
+                        :documentation "Test how much time is needed to perform one optimization to
+        decide how many optimizations per cluster task to use. Returns
+        number of optimizations per cluster task.")
+                        (reparse-symbol indented_block_body) [12392 13473])
+                    ("_prepare_mds_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13500 13504]))                          )
+                        (reparse-symbol indented_block_body) [13478 15373])
+                    ("_prepare_in_2d" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15397 15401])
+                            ("chart" variable nil (reparse-symbol function_parameters) [15403 15408]))                          )
+                        (reparse-symbol indented_block_body) [15378 15975])
+                    ("_set_column_bases" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16002 16006])
+                            ("chart" variable nil (reparse-symbol function_parameters) [16008 16013]))                          )
+                        (reparse-symbol indented_block_body) [15980 17177])
+                    ("_add_smart_randomization" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17211 17215])
+                            ("chart" variable nil (reparse-symbol function_parameters) [17217 17222])
+                            ("mds_data" variable nil (reparse-symbol function_parameters) [17224 17232]))                          )
+                        (reparse-symbol indented_block_body) [17182 17655])
+                    ("_make_randomizer_linear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17688 17692])
+                            ("chart" variable nil (reparse-symbol function_parameters) [17694 17699]))                          )
+                        (reparse-symbol indented_block_body) [17660 19865])
+                    ("_group_antigens_by_season" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19900 19904])
+                            ("chart" variable nil (reparse-symbol function_parameters) [19906 19911]))                          
+                        :documentation "Returns dict with seasons as keys and lists of antigens indices as values.")
+                        (reparse-symbol indented_block_body) [19870 20325])
+                    ("_group_sera_by_year" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20354 20358])
+                            ("chart" variable nil (reparse-symbol function_parameters) [20360 20365]))                          
+                        :documentation "Returns dict with years (string) as keys and lists of sera indices as values.")
+                        (reparse-symbol indented_block_body) [20330 20677])
+                    ("_make_randomizer_zigzag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20710 20714])
+                            ("chart" variable nil (reparse-symbol function_parameters) [20716 20721]))                          )
+                        (reparse-symbol indented_block_body) [20682 20799])
+                    ("_disconnected_points" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20829 20833])
+                            ("chart" variable nil (reparse-symbol function_parameters) [20835 20840]))                          )
+                        (reparse-symbol indented_block_body) [20804 21727]))                  
+                :type "class")
+                nil [6356 21727])
+            ("OptimizationExistingBase" type
+               (:superclasses ("inspector.InspectorSubmittingToCluster" "inspector.InspectorWithSourcesAndResults" "inspector.InspectorWithChartReorientTo" "inspector.GetSourceChart")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [21988 22202])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22231 22235])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [22237 22247]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [22208 22669])
+                    ("prepare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22686 22690]))                          )
+                        (reparse-symbol indented_block_body) [22674 23529])
+                    ("prepare_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23552 23556])
+                            ("chart" variable nil (reparse-symbol function_parameters) [23558 23563]))                          )
+                        (reparse-symbol indented_block_body) [23534 23612])
+                    ("postprocess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23633 23637]))                          
+                        :documentation "Called when cluster job completed.")
+                        (reparse-symbol indented_block_body) [23617 24774])
+                    ("postprocess_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24801 24805])
+                            ("chart" variable nil (reparse-symbol function_parameters) [24807 24812]))                          )
+                        (reparse-symbol indented_block_body) [24779 24828])
+                    ("make_chart_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24854 24858])
+                            ("source_entry" variable nil (reparse-symbol function_parameters) [24860 24872])
+                            ("chart" variable nil (reparse-symbol function_parameters) [24874 24879]))                          )
+                        (reparse-symbol indented_block_body) [24833 25349])
+                    ("make_job_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25372 25376])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [25378 25384])
+                            ("suffix" variable nil (reparse-symbol function_parameters) [25391 25397]))                          )
+                        (reparse-symbol indented_block_body) [25354 25496]))                  
+                :type "class")
+                nil [21802 25496])
+            ("OptimizationFinal" type
+               (:superclasses ("OptimizationExistingBase")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [25628 25709])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25738 25742])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [25744 25754]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [25715 25948])
+                    ("default_parameters_update" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [26000 26003])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [26005 26015]))                          )
+                        (reparse-symbol indented_block_body) [25953 26258])
+                    ("prepare_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26281 26285])
+                            ("chart" variable nil (reparse-symbol function_parameters) [26287 26292]))                          )
+                        (reparse-symbol indented_block_body) [26263 26376])
+                    ("projections_to_process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26408 26412])
+                            ("chart" variable nil (reparse-symbol function_parameters) [26414 26419]))                          )
+                        (reparse-symbol indented_block_body) [26381 26505])
+                    ("postprocess_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26532 26536])
+                            ("chart" variable nil (reparse-symbol function_parameters) [26538 26543])
+                            ("updated_projections" variable nil (reparse-symbol function_parameters) [26545 26564]))                          )
+                        (reparse-symbol indented_block_body) [26510 27023])
+                    ("reorient_all_charts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27052 27056])
+                            ("projections" variable nil (reparse-symbol function_parameters) [27058 27069]))                          
+                        :documentation "Re-orients all resulting charts to self.chart_reorient_to, if applicable.")
+                        (reparse-symbol indented_block_body) [27028 27259]))                  
+                :type "class")
+                nil [25571 27259])
+            ("OptimizationExisting" type
+               (:documentation "Final optimization of the existing projection (updates Projections entry in place)."
+                :superclasses ("OptimizationExistingBase")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [27488 27555])
+                    ("projections_to_process" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27588 27592])
+                            ("chart" variable nil (reparse-symbol function_parameters) [27594 27599]))                          )
+                        (reparse-symbol indented_block_body) [27561 27694])
+                    ("postprocess_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27721 27725])
+                            ("chart" variable nil (reparse-symbol function_parameters) [27727 27732])
+                            ("updated_projections" variable nil (reparse-symbol function_parameters) [27734 27753]))                          )
+                        (reparse-symbol indented_block_body) [27699 27918])
+                    ("reorient_all_charts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27947 27951])
+                            ("projections" variable nil (reparse-symbol function_parameters) [27953 27964]))                          
+                        :documentation "Re-orients all resulting charts to self.chart_reorient_to, if applicable.")
+                        (reparse-symbol indented_block_body) [27923 28126])
+                    ("make_chart_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28152 28156])
+                            ("source_entry" variable nil (reparse-symbol function_parameters) [28158 28170])
+                            ("chart" variable nil (reparse-symbol function_parameters) [28172 28177]))                          )
+                        (reparse-symbol indented_block_body) [28131 28391]))                  
+                :type "class")
+                nil [27334 28391])
+            ("QuickMapBase" type
+               (:members 
+                  ( ("Optimizer" type
+                       (:superclasses ("multiprocessing.Process")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("super" code nil (reparse-symbol indented_block_body) [28619 28646])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [28659 28673])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [28686 28714])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [28727 28743])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [28756 28775]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28556 28560])
+                                    ("mds" variable nil (reparse-symbol function_parameters) [28562 28565])
+                                    ("output_dir" variable nil (reparse-symbol function_parameters) [28567 28577])
+                                    ("name" variable nil (reparse-symbol function_parameters) [28579 28583]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [28543 28776])
+                            ("run" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28793 28797]))                                  )
+                                (reparse-symbol indented_block_body) [28785 30089])
+                            ("setup_signals" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [30116 30120]))                                  )
+                                (reparse-symbol indented_block_body) [30098 30289])
+                            ("sig_handler" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [30314 30318])
+                                    ("signum" variable nil (reparse-symbol function_parameters) [30320 30326])
+                                    ("args" variable nil (reparse-symbol function_parameters) [30328 30333]))                                  )
+                                (reparse-symbol indented_block_body) [30298 30366]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [28491 30366])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [30540 30588])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30597 30651])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30660 30732])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30741 30793])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30802 30826])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30835 30852]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30384 30388])
+                            ("number_of_dimensions" variable nil (reparse-symbol function_parameters) [30390 30410])
+                            ("number_of_optimizations" variable nil (reparse-symbol function_parameters) [30416 30439])
+                            ("exclude_antigens_sera_few_titers" variable nil (reparse-symbol function_parameters) [30446 30478])
+                            ("dodgy_titer_is_regular" variable nil (reparse-symbol function_parameters) [30486 30508])
+                            ("markings" variable nil (reparse-symbol function_parameters) [30516 30524]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [30371 30869])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30882 30886]))                          )
+                        (reparse-symbol indented_block_body) [30874 32703]))                  
+                :type "class")
+                nil [28466 32703])
+            ("QuickMap" type
+               (:superclasses ("QuickMapBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [32871 32897])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32906 32928])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32937 32959]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32827 32831])
+                            ("session" variable nil (reparse-symbol function_parameters) [32833 32840])
+                            ("chart_id" variable nil (reparse-symbol function_parameters) [32842 32850])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [32852 32860]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [32814 32960])
+                    ("get_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32979 32983]))                          )
+                        (reparse-symbol indented_block_body) [32965 33182])
+                    ("postprocess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33203 33207])
+                            ("chart" variable nil (reparse-symbol function_parameters) [33209 33214]))                          )
+                        (reparse-symbol indented_block_body) [33187 33456]))                  
+                :type "class")
+                nil [32778 33456])
+            ("QuickMapForChart" type
+               (:superclasses ("QuickMapBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [33620 33646])
+                            ("self" variable nil (reparse-symbol indented_block_body) [33655 33673]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33588 33592])
+                            ("chart" variable nil (reparse-symbol function_parameters) [33594 33599])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [33601 33609]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [33575 33674])
+                    ("get_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33693 33697]))                          )
+                        (reparse-symbol indented_block_body) [33679 33726])
+                    ("postprocess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33747 33751])
+                            ("chart" variable nil (reparse-symbol function_parameters) [33753 33758]))                          )
+                        (reparse-symbol indented_block_body) [33731 33774]))                  
+                :type "class")
+                nil [33531 33774])
+            ("OptimalMinimumColumnBasis" type
+               (:documentation "Test to find optimal minimum column basis, i.e. minimum column basis
+    value providing the lowest stress.
+    "
+                :superclasses ("inspector.InspectorChain" "inspector.GetSourceChart")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [34063 34653])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [34695 34719])
+                            ("self" variable nil (reparse-symbol indented_block_body) [34728 34758])
+                            ("self" variable nil (reparse-symbol indented_block_body) [34767 34785]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34672 34676])
+                            ("args" variable nil (reparse-symbol function_parameters) [34678 34684]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [34659 34786])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34809 34813]))                          )
+                        (reparse-symbol indented_block_body) [34791 35007])
+                    ("prepare_column_bases_to_test" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35045 35049]))                          )
+                        (reparse-symbol indented_block_body) [35012 35382])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35409 35413])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [35415 35422]))                          )
+                        (reparse-symbol indented_block_body) [35387 36478])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36510 36514])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [36516 36531]))                          )
+                        (reparse-symbol indented_block_body) [36483 37156])
+                    ("result_copied_from" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37184 37188])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [37190 37202]))                          
+                        :documentation "Returns if result is already copied from the passed subinspector.
+        There could be situation when subinspector state is completed
+        but this inspector has not yet received message about it and has not yet copied result.
+        ")
+                        (reparse-symbol indented_block_body) [37161 37879])
+                    ("completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37898 37902]))                          
+                        :documentation "Marks inspector as completed, send message to parent.")
+                        (reparse-symbol indented_block_body) [37884 38358]))                  
+                :type "class")
+                nil [33849 38358])
+            ("KMeansClustering" type
+               (:documentation "Splits antigens into clusters using kmeans."
+                :superclasses ("inspector.Inspector")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [38538 39085])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39114 39118])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [39120 39130]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [39091 39581])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39597 39601]))                          )
+                        (reparse-symbol indented_block_body) [39586 39673])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39686 39690]))                          )
+                        (reparse-symbol indented_block_body) [39678 40362])
+                    ("format_text" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40383 40387]))                          
+                        :documentation "Returns string with results data as text, each line has antigen name and cluster_no")
+                        (reparse-symbol indented_block_body) [40367 40833])
+                    ("cluster_of" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40853 40857])
+                            ("ag_no" variable nil (reparse-symbol function_parameters) [40859 40864]))                          )
+                        (reparse-symbol indented_block_body) [40838 41018]))                  
+                :type "class")
+                nil [38433 41018])
+            ("DimensionTest" type
+               (:documentation "Reports best stress for each number of dimensions from the test range (usually 1-5).
+    "
+                :superclasses ("inspector.InspectorChain" "inspector.GetSourceChart")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [41272 41765])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41794 41798])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [41800 41810]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [41771 42004])
+                    ("default_parameters_update" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [42056 42059])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [42061 42071]))                          )
+                        (reparse-symbol indented_block_body) [42009 42153])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42176 42180]))                          )
+                        (reparse-symbol indented_block_body) [42158 42292])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42319 42323])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [42325 42332]))                          )
+                        (reparse-symbol indented_block_body) [42297 43431])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43463 43467])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [43469 43484]))                          )
+                        (reparse-symbol indented_block_body) [43436 44623])
+                    ("result_copied_from" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44651 44655])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [44657 44669]))                          
+                        :documentation "Returns if result is already copied from the passed subinspector.
+        There could be situation when subinspector state is completed
+        but this inspector has not yet received message about it and has not yet copied result.
+        ")
+                        (reparse-symbol indented_block_body) [44628 45262])
+                    ("completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45281 45285]))                          
+                        :documentation "Marks inspector as completed, send message to parent.")
+                        (reparse-symbol indented_block_body) [45267 45462])
+                    ("inspector_results_to_mail" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45497 45501]))                          )
+                        (reparse-symbol indented_block_body) [45467 46799]))                  
+                :type "class")
+                nil [41093 46799])
+            ("MapResolutionDeterminationByComputationalTiterPrediction" type
+               (:documentation "map resolution test
+
+    For each proportions-to-dont-care (0.1 0.2 0.3 0.4 0.5), set
+    non-dont-care titers to dont-care (generate
+    number_of_random_replicates_for_each_proportion variants), optimize
+    resulting tables number_of_optimizations times for each number-of-dimensions from (1 2 3 4
+    5). For each resulting map take difference between original table
+    distance and \"new table distance\" where \"new table distance\" is map
+    distance if titer is dont-care.
+
+    "
+                :superclasses ("inspector.InspectorChain")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [47515 48710])
+                    ("default_parameters" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48739 48743])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [48745 48755]))                          
+                        :documentation "Updates parameters dict (passed to __init__ as arguments) with default values.")
+                        (reparse-symbol indented_block_body) [48716 48949])
+                    ("default_parameters_update" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [49001 49004])
+                            ("parameters" variable nil (reparse-symbol function_parameters) [49006 49016]))                          )
+                        (reparse-symbol indented_block_body) [48954 49388])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49411 49415]))                          )
+                        (reparse-symbol indented_block_body) [49393 49602])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49629 49633])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [49635 49642]))                          )
+                        (reparse-symbol indented_block_body) [49607 51355])
+                    ("set_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51374 51378])
+                            ("state" variable nil (reparse-symbol function_parameters) [51380 51385])
+                            ("details" variable nil (reparse-symbol function_parameters) [51387 51394]))                          )
+                        (reparse-symbol indented_block_body) [51360 51508])
+                    ("postprocess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51529 51533]))                          )
+                        (reparse-symbol indented_block_body) [51513 51620])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51652 51656])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [51658 51673]))                          )
+                        (reparse-symbol indented_block_body) [51625 52600])
+                    ("result_copied_from" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52756 52760])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [52762 52774]))                          
+                        :documentation "Returns if result is already copied from the passed subinspector.
+        There could be situation when subinspector state is completed
+        but this inspector has not yet received message about it and has not yet copied result.
+        ")
+                        (reparse-symbol indented_block_body) [52733 53265])
+                    ("inspector_results_to_mail" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53300 53304]))                          )
+                        (reparse-symbol indented_block_body) [53270 53385])
+                    ("collect_all_errors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53413 53417]))                          )
+                        (reparse-symbol indented_block_body) [53390 54760]))                  
+                :type "class")
+                nil [46924 54760])
+            ("OptimizationWithProportionOfTitersDontCared" type
+               (:superclasses ("inspector.InspectorChain")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [54918 56083])
+                    ("subinspectors" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56107 56111]))                          )
+                        (reparse-symbol indented_block_body) [56089 56279])
+                    ("find_subinspector" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56306 56310])
+                            ("keyword" variable nil (reparse-symbol function_parameters) [56312 56319]))                          )
+                        (reparse-symbol indented_block_body) [56284 59079])
+                    ("set_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [59098 59102])
+                            ("state" variable nil (reparse-symbol function_parameters) [59104 59109])
+                            ("details" variable nil (reparse-symbol function_parameters) [59111 59118]))                          )
+                        (reparse-symbol indented_block_body) [59084 59232])
+                    ("postprocess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [59253 59257]))                          )
+                        (reparse-symbol indented_block_body) [59237 60758])
+                    ("subinspector_completed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [60790 60794])
+                            ("completed_entry" variable nil (reparse-symbol function_parameters) [60796 60811]))                          )
+                        (reparse-symbol indented_block_body) [60763 61220])
+                    ("result_copied_from" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [61248 61252])
+                            ("subinspector" variable nil (reparse-symbol function_parameters) [61254 61266]))                          
+                        :documentation "Returns if result is already copied from the passed subinspector.
+        There could be situation when subinspector state is completed
+        but this inspector has not yet received message about it and has not yet copied result.
+        ")
+                        (reparse-symbol indented_block_body) [61225 61819]))                  
+                :type "class")
+                nil [54835 61819])
+            ("OptimizationRoughWithProportionOfTitersDontCared" type
+               (:superclasses ("OptimizationRough")
+                :members 
+                  ( ("mongodb_fields" variable nil (reparse-symbol indented_block_body) [61975 62437])
+                    ("cluster_job_priority" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [62468 62472]))                          )
+                        (reparse-symbol indented_block_body) [62443 62494])
+                    ("get_source_chart_and_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [62527 62531])
+                            ("conformance" variable nil (reparse-symbol function_parameters) [62533 62544])
+                            ("postprocessing" variable nil (reparse-symbol function_parameters) [62551 62565]))                          
+                        :documentation "For preprocessing get real source chart, set proportion of titers to
+        dont-care, save it as the resulting chart (without projections).
+        if relax_from_full_table is True, then take the best projection
+        from the source chart as well, mark it with a comment, relax it
+        from existing layout (without cluster).
+        For postprocessing get resulting chart root entry.
+        ")
+                        (reparse-symbol indented_block_body) [62499 65111])
+                    ("get_source_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65137 65141])
+                            ("conformance" variable nil (reparse-symbol function_parameters) [65143 65154])
+                            ("postprocessing" variable nil (reparse-symbol function_parameters) [65161 65175]))                          
+                        :documentation "For preprocessing get real source chart, set proportion of titers to
+        dont-care, save it as the resulting chart (without projections).
+        For postprocessing get resulting chart root entry.
+        ")
+                        (reparse-symbol indented_block_body) [65116 65541])
+                    ("resulting_chart_made" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [65571 65575])
+                            ("chart" variable nil (reparse-symbol function_parameters) [65577 65582]))                          )
+                        (reparse-symbol indented_block_body) [65546 67860])
+                    ("collect_all_errors" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [67905 67908])
+                            ("master_chart" variable nil (reparse-symbol function_parameters) [67910 67922])
+                            ("prediction_chart" variable nil (reparse-symbol function_parameters) [67924 67940]))                          )
+                        (reparse-symbol indented_block_body) [67865 69785]))                  
+                :type "class")
+                nil [61894 69785]))          
+      :file "optimization.py"
+      :pointmax 69951
+      :fsize 69950
+      :lastmodtime '(22172 50491 0 0)
+      :unmatched-syntax '((NAME 64439 . 64448) (IF 64473 . 64475) (ELSE 64494 . 64498) (NAME 63124 . 63143) (IF 63202 . 63204) (ELSE 63235 . 63239) (PERIOD 32566 . 32567) (FROM 32560 . 32564) (PERIOD 32565 . 32566) (PERIOD 11370 . 11371) (FROM 11364 . 11368) (PERIOD 11369 . 11370) (FROM 471 . 475) (PERIOD 476 . 477) (PERIOD 454 . 455) (FROM 448 . 452) (PERIOD 453 . 454) (PERIOD 425 . 426) (FROM 419 . 423) (PERIOD 424 . 425) (PERIOD 371 . 372) (FROM 365 . 369) (PERIOD 370 . 371) (PERIOD 307 . 308) (FROM 301 . 305) (PERIOD 306 . 307)))
+    (semanticdb-table "dispatcher.py"
+      :file "dispatcher.py"
+      :fsize 15771
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "messages.py"
+      :file "messages.py"
+      :fsize 5805
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "cluster.py"
+      :file "cluster.py"
+      :fsize 13532
+      :lastmodtime '(22086 5788 0 0)))
+  :file "!Users!eu!ac!acmacs!acmacs!inspectors!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

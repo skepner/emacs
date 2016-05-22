@@ -1,0 +1,38 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "e_open"
+      :major-mode 'python-mode
+      :tags nil
+      :file "e_open"
+      :pointmax 6136
+      :fsize 6138
+      :lastmodtime '(22296 26718 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ea"
+      :major-mode 'python-mode
+      :tags 
+        '( ("socket" include nil nil [25 63])
+            ("re" include nil nil [25 63])
+            ("subprocess" include nil nil [25 63])
+            ("os" include nil nil [25 63])
+            ("sys" include nil nil [25 63])
+            ("use" function (:arguments 
+              ( ("cmd" variable nil (reparse-symbol function_parameters) [147 150])
+                ("pathname" variable nil (reparse-symbol function_parameters) [152 160]))              ) nil [139 326])
+            ("tramp" function (:arguments 
+              ( ("pathname" variable nil (reparse-symbol function_parameters) [893 901]))              ) nil [883 1230])
+            ("filename" variable nil nil [2346 2358])
+            ("if" code nil nil [2359 2408])
+            ("pathname" variable nil nil [2409 2445])
+            ("tramp" code nil nil [2446 2461]))          
+      :file "ea"
+      :pointmax 2501
+      :fsize 2500
+      :lastmodtime '(22266 4803 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!Shared!scripts!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

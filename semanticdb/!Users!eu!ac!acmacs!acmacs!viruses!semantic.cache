@@ -1,0 +1,2304 @@
+;; Object viruses/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "viruses/"
+  :tables
+  (list
+    (semanticdb-table "chart_info.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("traceback" include nil nil [113 156])
+            ("datetime" include nil nil [113 156])
+            ("collections" include nil nil [113 156])
+            ("re" include nil nil [113 156])
+            ("logging" include nil nil [157 171])
+            ("backend" include nil nil [229 280])
+            ("conformance" include nil nil [229 280])
+            ("basic" include nil nil [229 280])
+            ("timer" include nil nil [298 310])
+            ("Assay" include nil nil [323 347])
+            ("Lab" include nil nil [323 347])
+            ("Virus" include nil nil [323 347])
+            ("TableDate" type
+               (:superclasses ("basic.Date")
+                :members 
+                  ( ("__new__" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [470 473])
+                        ("args" variable nil (reparse-symbol function_parameters) [475 480])
+                        ("kwargs" variable nil (reparse-symbol function_parameters) [482 490]))                      ) (reparse-symbol indented_block_body) [458 798])
+                    ("elicit" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [831 834])
+                            ("parse_from" variable nil (reparse-symbol function_parameters) [836 846]))                          )
+                        (reparse-symbol indented_block_body) [803 1822])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1839 1843]))                          )
+                        (reparse-symbol indented_block_body) [1827 1878])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2053 2057])
+                            ("separator" variable nil (reparse-symbol function_parameters) [2059 2068])
+                            ("short" variable nil (reparse-symbol function_parameters) [2073 2078]))                          )
+                        (reparse-symbol indented_block_body) [2039 2356])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2374 2378]))                          )
+                        (reparse-symbol indented_block_body) [2361 2547])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2563 2567])
+                            ("other" variable nil (reparse-symbol function_parameters) [2569 2574]))                          )
+                        (reparse-symbol indented_block_body) [2552 2644])
+                    ("mongodb_to_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2667 2671]))                          )
+                        (reparse-symbol indented_block_body) [2649 2706])
+                    ("json_serializable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2733 2737]))                          )
+                        (reparse-symbol indented_block_body) [2711 2772])
+                    ("__getstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2813 2817]))                          )
+                        (reparse-symbol indented_block_body) [2796 2924])
+                    ("__setstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2965 2969])
+                            ("state" variable nil (reparse-symbol function_parameters) [2971 2976]))                          )
+                        (reparse-symbol indented_block_body) [2948 3082]))                  
+                :type "class")
+                nil [423 3082])
+            ("ChartInfoBase" type
+               (:superclasses ("basic.Base")
+                :members 
+                  ( ("assay" variable nil (reparse-symbol indented_block_body) [3196 3209])
+                    ("lab" variable nil (reparse-symbol indented_block_body) [3267 3276])
+                    ("virus" variable nil (reparse-symbol indented_block_body) [3281 3294])
+                    ("date" variable nil (reparse-symbol indented_block_body) [3338 3354])
+                    ("name" variable nil (reparse-symbol indented_block_body) [3359 3369])
+                    ("author" variable nil (reparse-symbol indented_block_body) [3418 3430])
+                    ("comment" variable nil (reparse-symbol indented_block_body) [3475 3488])
+                    ("excluded" variable nil (reparse-symbol indented_block_body) [3493 3507])
+                    ("assessment_of_table_quality" variable nil (reparse-symbol indented_block_body) [3552 3585])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3628 3632])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [3634 3643]))                          )
+                        (reparse-symbol indented_block_body) [3614 3709])
+                    ("make_name_base" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3733 3737])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [3739 3748]))                          )
+                        (reparse-symbol indented_block_body) [3714 4014])
+                    ("make_filename" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4037 4041])
+                            ("filename_type" variable nil (reparse-symbol function_parameters) [4043 4056]))                          )
+                        (reparse-symbol indented_block_body) [4019 4139])
+                    ("make_name_postprocess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4170 4174])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [4176 4185])
+                            ("name" variable nil (reparse-symbol function_parameters) [4187 4191]))                          )
+                        (reparse-symbol indented_block_body) [4144 4338])
+                    ("make_virus" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4358 4362]))                          )
+                        (reparse-symbol indented_block_body) [4343 4391])
+                    ("make_virus_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4416 4420])
+                            ("include_subset" variable nil (reparse-symbol function_parameters) [4422 4436]))                          )
+                        (reparse-symbol indented_block_body) [4396 4535])
+                    ("make_lab" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4553 4557])
+                            ("fix_lab_name" variable nil (reparse-symbol function_parameters) [4559 4571]))                          )
+                        (reparse-symbol indented_block_body) [4540 4786])
+                    ("make_labs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4805 4809]))                          )
+                        (reparse-symbol indented_block_body) [4791 4968])
+                    ("make_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4987 4991]))                          )
+                        (reparse-symbol indented_block_body) [4973 5090])
+                    ("make_rbc_species" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5116 5120]))                          )
+                        (reparse-symbol indented_block_body) [5095 5143])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5160 5164]))                          )
+                        (reparse-symbol indented_block_body) [5148 5199])
+                    ("conformance_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5226 5230])
+                            ("conformance_data" variable nil (reparse-symbol function_parameters) [5232 5248]))                          )
+                        (reparse-symbol indented_block_body) [5204 5264])
+                    ("sFieldHashes" variable nil (reparse-symbol indented_block_body) [5269 5302])
+                    ("_fields" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5319 5323])
+                            ("excluded" variable nil (reparse-symbol function_parameters) [5325 5333]))                          )
+                        (reparse-symbol indented_block_body) [5307 5719])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5734 5738]))                          )
+                        (reparse-symbol indented_block_body) [5724 5782])
+                    ("allow_merging_with" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5810 5814])
+                            ("chart_info" variable nil (reparse-symbol function_parameters) [5816 5826]))                          
+                        :documentation "Raise RuntimeError if merging of this and chart_info is not allowed.")
+                        (reparse-symbol indented_block_body) [5787 6541])
+                    ("combine" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6558 6562])
+                            ("ci1" variable nil (reparse-symbol function_parameters) [6564 6567])
+                            ("ci2" variable nil (reparse-symbol function_parameters) [6569 6572]))                          
+                        :documentation "Combine chart_info for two charts being merged.")
+                        (reparse-symbol indented_block_body) [6546 6921]))                  
+                :type "class")
+                nil [3157 6921])
+            ("SourceTable" type
+               (:documentation "Keeps reference to the source table of the chart, e.g. seqt object id, table name."
+                :superclasses ("ChartInfoBase")
+                :members 
+                  ( ("__getstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7515 7519]))                          )
+                        (reparse-symbol indented_block_body) [7498 7765])
+                    ("__setstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7806 7810])
+                            ("state" variable nil (reparse-symbol function_parameters) [7812 7817]))                          )
+                        (reparse-symbol indented_block_body) [7789 7971]))                  
+                :type "class")
+                nil [7223 7971])
+            ("SourceTablesList" type
+               (:documentation "List of SourceTable instances."
+                :superclasses ("list")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [8151 8184])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8193 8218])
+                            ("self" code nil (reparse-symbol indented_block_body) [8227 8244]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8136 8140])
+                            ("args" variable nil (reparse-symbol function_parameters) [8142 8147])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8149 8157]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8123 8262])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8281 8285])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [8287 8296]))                          )
+                        (reparse-symbol indented_block_body) [8267 8389])
+                    ("lab" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8402 8406]))                          )
+                        (reparse-symbol indented_block_body) [8394 8557])
+                    ("labs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8571 8575])
+                            ("fix_lab_name" variable nil (reparse-symbol function_parameters) [8577 8589]))                          )
+                        (reparse-symbol indented_block_body) [8562 8670])
+                    ("date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8684 8688]))                          )
+                        (reparse-symbol indented_block_body) [8675 8973])
+                    ("_make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8993 8997]))                          )
+                        (reparse-symbol indented_block_body) [8978 9120])
+                    ("_fields" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9137 9141]))                          )
+                        (reparse-symbol indented_block_body) [9125 9585])
+                    ("_combine" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9603 9607])
+                            ("field_name" variable nil (reparse-symbol function_parameters) [9609 9619]))                          )
+                        (reparse-symbol indented_block_body) [9590 9801]))                  
+                :type "class")
+                nil [8046 9801])
+            ("ChartInfo" type
+               (:documentation "Keeps various chart information fields."
+                :superclasses ("ChartInfoBase")
+                :members 
+                  ( ("sources" variable nil (reparse-symbol indented_block_body) [9964 9990])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10083 10087])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [10089 10098]))                          )
+                        (reparse-symbol indented_block_body) [10069 10417])
+                    ("make_virus_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10442 10446])
+                            ("options" variable nil (reparse-symbol function_parameters) [10448 10457]))                          )
+                        (reparse-symbol indented_block_body) [10422 10518])
+                    ("description" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10539 10543]))                          )
+                        (reparse-symbol indented_block_body) [10523 10902])
+                    ("conformance_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10929 10933])
+                            ("conformance_data" variable nil (reparse-symbol function_parameters) [10935 10951]))                          )
+                        (reparse-symbol indented_block_body) [10907 11130])
+                    ("make_sources_info" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11157 11161]))                          )
+                        (reparse-symbol indented_block_body) [11135 11313])
+                    ("combine" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11330 11334])
+                            ("ci1" variable nil (reparse-symbol function_parameters) [11336 11339])
+                            ("ci2" variable nil (reparse-symbol function_parameters) [11341 11344]))                          
+                        :documentation "Combine chart_info for two charts being merged.")
+                        (reparse-symbol indented_block_body) [11318 11891])
+                    ("is_merge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11909 11913]))                          )
+                        (reparse-symbol indented_block_body) [11896 11950])
+                    ("most_recent_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11976 11980]))                          
+                        :documentation "Returns date for an individual table and the most recent source date for a merge.")
+                        (reparse-symbol indented_block_body) [11955 12363])
+                    ("source_tables_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12391 12395]))                          )
+                        (reparse-symbol indented_block_body) [12368 12432])
+                    ("guess_minimum_column_basis" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12468 12472]))                          )
+                        (reparse-symbol indented_block_body) [12437 12497])
+                    ("__getattribute__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12523 12527])
+                            ("name" variable nil (reparse-symbol function_parameters) [12529 12533]))                          )
+                        (reparse-symbol indented_block_body) [12502 12900])
+                    ("_fields" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12917 12921])
+                            ("excluded" variable nil (reparse-symbol function_parameters) [12923 12931]))                          )
+                        (reparse-symbol indented_block_body) [12905 12993]))                  
+                :type "class")
+                nil [9876 12993])
+            ("ChartInfoReaderBase" type
+               (:documentation "Base class for chart infor readers."
+                :members 
+                  ( ("read" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13155 13159])
+                            ("source" variable nil (reparse-symbol function_parameters) [13161 13167])
+                            ("chart_info" variable nil (reparse-symbol function_parameters) [13169 13179])
+                            ("validation_data" variable nil (reparse-symbol function_parameters) [13181 13196]))                          )
+                        (reparse-symbol indented_block_body) [13146 13667])
+                    ("read_fields" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13688 13692])
+                            ("source_chart_info" variable nil (reparse-symbol function_parameters) [13694 13711])
+                            ("target_chart_info" variable nil (reparse-symbol function_parameters) [13713 13730])
+                            ("validation_data" variable nil (reparse-symbol function_parameters) [13732 13747]))                          )
+                        (reparse-symbol indented_block_body) [13672 15030])
+                    ("source_tables_list_class" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15064 15068]))                          )
+                        (reparse-symbol indented_block_body) [15035 15103])
+                    ("normalize_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15127 15131])
+                            ("date" variable nil (reparse-symbol function_parameters) [15133 15137])
+                            ("validation_data" variable nil (reparse-symbol function_parameters) [15139 15154]))                          )
+                        (reparse-symbol indented_block_body) [15108 15229]))                  
+                :type "class")
+                nil [13068 15229]))          
+      :file "chart_info.py"
+      :pointmax 15395
+      :fsize 15394
+      :lastmodtime '(22297 54457 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "passage.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("traceback" include nil nil [113 133])
+            ("re" include nil nil [113 133])
+            ("logging" include nil nil [134 148])
+            ("basic" include nil nil [206 218])
+            ("timer" include nil nil [236 248])
+            ("Passage" type
+               (:superclasses ("basic.Base")
+                :members 
+                  ( ("\"Keeps antigen passage history and optional passage date.\"" code nil (reparse-symbol indented_block_body) [356 414])
+                    ("_name_sorting" variable nil (reparse-symbol indented_block_body) [420 437])
+                    ("passage" variable nil (reparse-symbol indented_block_body) [443 468])
+                    ("date" variable nil (reparse-symbol indented_block_body) [473 490])
+                    ("recognized" variable nil (reparse-symbol indented_block_body) [495 512])
+                    ("sReEgg" variable nil (reparse-symbol indented_block_body) [518 611])
+                    ("sReSiat" variable nil (reparse-symbol indented_block_body) [616 703])
+                    ("sReEggUnrecognized" variable nil (reparse-symbol indented_block_body) [708 795])
+                    ("sReUnknown" variable nil (reparse-symbol indented_block_body) [800 846])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [972 976])
+                            ("mark_unrecognized" variable nil (reparse-symbol function_parameters) [978 995]))                          )
+                        (reparse-symbol indented_block_body) [958 1172])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1189 1193]))                          )
+                        (reparse-symbol indented_block_body) [1177 1251])
+                    ("egg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1264 1268]))                          
+                        :documentation "Returns if antigen is egg isolate.")
+                        (reparse-symbol indented_block_body) [1256 1488])
+                    ("siat" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1502 1506]))                          
+                        :documentation "Returns if antigen is siat isolate.")
+                        (reparse-symbol indented_block_body) [1493 1633])
+                    ("cell" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1647 1651]))                          
+                        :documentation "Returns if antigen is cell isolate.")
+                        (reparse-symbol indented_block_body) [1638 1757])
+                    ("egg_cell_suffix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1782 1786]))                          
+                        :documentation "Returns suffix to use in abbreviated_egg name type")
+                        (reparse-symbol indented_block_body) [1762 1980])
+                    ("unknown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1997 2001]))                          
+                        :documentation "Returns if last passage in unknown.")
+                        (reparse-symbol indented_block_body) [1985 2111])
+                    ("last_passage_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2397 2401]))                          
+                        :documentation "Returns last passage type as string.")
+                        (reparse-symbol indented_block_body) [2375 2609])
+                    ("number_of_labs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2633 2637]))                          )
+                        (reparse-symbol indented_block_body) [2614 2683])
+                    ("last_number_of_passages" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2716 2720]))                          )
+                        (reparse-symbol indented_block_body) [2688 2866])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2882 2886])
+                            ("other" variable nil (reparse-symbol function_parameters) [2888 2893]))                          )
+                        (reparse-symbol indented_block_body) [2871 2999])
+                    ("__lt__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3015 3019])
+                            ("other" variable nil (reparse-symbol function_parameters) [3021 3026]))                          )
+                        (reparse-symbol indented_block_body) [3004 3168])
+                    ("__bool__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3186 3190]))                          )
+                        (reparse-symbol indented_block_body) [3173 3227])
+                    ("elicit" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3260 3263])
+                            ("data" variable nil (reparse-symbol function_parameters) [3265 3269])
+                            ("lab" variable nil (reparse-symbol function_parameters) [3271 3274])
+                            ("normalize" variable nil (reparse-symbol function_parameters) [3281 3290])
+                            ("fields" variable nil (reparse-symbol function_parameters) [3298 3304])
+                            ("validation_data" variable nil (reparse-symbol function_parameters) [3311 3326])
+                            ("validation_message_args" variable nil (reparse-symbol function_parameters) [3333 3358]))                          )
+                        (reparse-symbol indented_block_body) [3232 5561])
+                    ("mongodb_to_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5584 5588]))                          )
+                        (reparse-symbol indented_block_body) [5566 5723])
+                    ("mongodb_from_db" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5765 5768])
+                            ("data" variable nil (reparse-symbol function_parameters) [5770 5774]))                          )
+                        (reparse-symbol indented_block_body) [5728 5956])
+                    ("virus_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5976 5980]))                          
+                        :documentation "Returns data to be scanned for viruses collection tags field.
+        We do not use passage date in search.
+        ")
+                        (reparse-symbol indented_block_body) [5961 6142])
+                    ("_designation_matcher" function
+                       (:documentation "Matches if passage is 'ignore' (i.e. not used to match
+        antigens/sera).  If passage is 'strict' or 'relaxed' and it is
+        not for checking if there are duplicates withn a table, then
+        if a and b lack passages, they do not match.
+        in relaxed mode two X? passages match.
+        flags['passage_match_unknown'] allows matching two X? passages (needed for ref antigens for CNIC)
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [6189 6192])
+                            ("a" variable nil (reparse-symbol function_parameters) [6194 6195])
+                            ("b" variable nil (reparse-symbol function_parameters) [6197 6198])
+                            ("passage" variable nil (reparse-symbol function_parameters) [6200 6207])
+                            ("duplicates_checking" variable nil (reparse-symbol function_parameters) [6209 6228])
+                            ("flags" variable nil (reparse-symbol function_parameters) [6230 6237]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [6147 7914]))                  
+                :type "class")
+                nil [324 7914])
+            ("normalize" function (:arguments 
+              ( ("antigen_serum" variable nil (reparse-symbol function_parameters) [8003 8016])
+                ("fields" variable nil (reparse-symbol function_parameters) [8018 8024])
+                ("validation_data" variable nil (reparse-symbol function_parameters) [8026 8041])
+                ("ignore_absent" variable nil (reparse-symbol function_parameters) [8043 8056])
+                ("validation_message_args" variable nil (reparse-symbol function_parameters) [8064 8089]))              ) nil [7989 8503]))          
+      :file "passage.py"
+      :pointmax 8669
+      :fsize 8668
+      :lastmodtime '(22296 38578 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "serum_id.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("traceback" include nil nil [113 133])
+            ("re" include nil nil [113 133])
+            ("logging" include nil nil [134 148])
+            ("basic" include nil nil [206 218])
+            ("timer" include nil nil [236 248])
+            ("SerumSpecies" type
+               (:superclasses ("basic.Uppercase")
+                :members 
+                  ( ("_name_sorting" variable nil (reparse-symbol indented_block_body) [367 385])
+                    ("_designation_matcher" function
+                       (:documentation "Matches if serum_species is 'ignore' (i.e. not used to match sera).
+        If serum_species is 'strict' and it is not for checking if there are duplicates within a table,
+        then if a and b lack serum_ids, they do not match.
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [433 436])
+                            ("a" variable nil (reparse-symbol function_parameters) [438 439])
+                            ("b" variable nil (reparse-symbol function_parameters) [441 442])
+                            ("serum_species" variable nil (reparse-symbol function_parameters) [444 457])
+                            ("duplicates_checking" variable nil (reparse-symbol function_parameters) [459 478])
+                            ("flags" variable nil (reparse-symbol function_parameters) [480 487]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [391 1114]))                  
+                :type "class")
+                nil [324 1114])
+            ("SerumId" type
+               (:superclasses ("basic.UppercaseStripped")
+                :members 
+                  ( ("_name_sorting" variable nil (reparse-symbol indented_block_body) [1235 1253])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1273 1277])
+                            ("mark_unrecognized" variable nil (reparse-symbol function_parameters) [1279 1296]))                          )
+                        (reparse-symbol indented_block_body) [1259 1324])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1341 1345]))                          )
+                        (reparse-symbol indented_block_body) [1329 1403])
+                    ("name_suffix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1424 1428]))                          
+                        :documentation "Returns suffix to use in abbreviated_egg name type")
+                        (reparse-symbol indented_block_body) [1408 1569])
+                    ("egg_cell_suffix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1594 1598]))                          )
+                        (reparse-symbol indented_block_body) [1574 1832])
+                    ("recognized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1852 1856]))                          )
+                        (reparse-symbol indented_block_body) [1837 1879])
+                    ("_designation_matcher" function
+                       (:documentation "Matches if serum_id is 'ignore' (i.e. not used to match sera).
+        If serum_id is 'strict' and it is not for checking if there are duplicates within a table,
+        then if a and b lack serum_ids, they do not match.
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1926 1929])
+                            ("a" variable nil (reparse-symbol function_parameters) [1931 1932])
+                            ("b" variable nil (reparse-symbol function_parameters) [1934 1935])
+                            ("serum_id" variable nil (reparse-symbol function_parameters) [1937 1945])
+                            ("duplicates_checking" variable nil (reparse-symbol function_parameters) [1947 1966])
+                            ("flags" variable nil (reparse-symbol function_parameters) [1968 1975]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1884 2577])
+                    ("elicit" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2610 2613])
+                            ("source" variable nil (reparse-symbol function_parameters) [2615 2621]))                          )
+                        (reparse-symbol indented_block_body) [2582 3241]))                  
+                :type "class")
+                nil [1189 3241])
+            ("SerumIdUnrecognized" type
+               (:superclasses ("SerumId")
+                :members 
+                  ( ("recognized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3373 3377]))                          )
+                        (reparse-symbol indented_block_body) [3358 3401])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3420 3424])
+                            ("mark_unrecognized" variable nil (reparse-symbol function_parameters) [3426 3443]))                          )
+                        (reparse-symbol indented_block_body) [3406 3641]))                  
+                :type "class")
+                nil [3316 3641])
+            ("normalize" function (:arguments 
+              ( ("antigen_serum" variable nil (reparse-symbol function_parameters) [3730 3743])
+                ("fields" variable nil (reparse-symbol function_parameters) [3745 3751])
+                ("serum_id" variable nil (reparse-symbol function_parameters) [3753 3761])
+                ("validation_data" variable nil (reparse-symbol function_parameters) [3763 3778])
+                ("validation_message_args" variable nil (reparse-symbol function_parameters) [3780 3805]))              ) nil [3716 5614])
+            ("normalize_source" function
+               (:documentation "Returns tuple (serum_id, extra, passage)"
+                :arguments 
+                  ( ("source" variable nil (reparse-symbol function_parameters) [5710 5716]))                  )
+                nil [5689 6467]))          
+      :file "serum_id.py"
+      :pointmax 6633
+      :fsize 6632
+      :lastmodtime '(22222 41626 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 6353 . 6435) (NEWLINE 6352 . 6353) (COLON 6351 . 6352) (AS 6345 . 6347) (EXCEPT 6328 . 6334) (INDENT_BLOCK 6200 . 6324) (NEWLINE 6199 . 6200) (COLON 6198 . 6199) (TRY 5805 . 5808) (AS 6192 . 6194) (PERIOD 5780 . 5781) (FROM 5774 . 5778) (PERIOD 5779 . 5780) (INDENT_BLOCK 5530 . 5614) (NEWLINE 5529 . 5530) (COLON 5528 . 5529) (AS 5522 . 5524) (EXCEPT 5505 . 5511) (INDENT_BLOCK 5211 . 5501) (NEWLINE 5129 . 5130) (COLON 5128 . 5129) (TRY 3916 . 3919) (AS 5122 . 5124) (PERIOD 3818 . 3819) (FROM 3812 . 3816) (PERIOD 3817 . 3818) (PERIOD 225 . 226) (FROM 219 . 223) (PERIOD 224 . 225) (PERIOD 200 . 201) (FROM 194 . 198) (PERIOD 199 . 200)))
+    (semanticdb-table "antigens_sera.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+\"\"\"" code nil nil [39 46])
+            ("functools" include nil nil [48 123])
+            ("operator" include nil nil [48 123])
+            ("copy" include nil nil [48 123])
+            ("pprint" include nil nil [48 123])
+            ("traceback" include nil nil [48 123])
+            ("collections" include nil nil [48 123])
+            ("types" include nil nil [48 123])
+            ("re" include nil nil [48 123])
+            ("logging" include nil nil [124 138])
+            ("exceptions" include nil nil [196 220])
+            ("basic" include nil nil [196 220])
+            ("timer" include nil nil [238 250])
+            ("amino_acid_mutation" include nil nil [258 284])
+            ("Annotations" include nil nil [368 386])
+            ("Reassortant" include nil nil [405 423])
+            ("AminoAcidMutations" include nil nil [450 475])
+            ("SerumSpecies" include nil nil [491 519])
+            ("SerumId" include nil nil [491 519])
+            ("lab_id" include nil nil [527 552])
+            ("sNameMakerInfluenza" include nil nil [631 669])
+            ("sNameMaker" include nil nil [631 669])
+            ("Name" type
+               (:superclasses ("basic.Uppercase")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [779 797]))                  
+                :type "class")
+                nil [745 798])
+            ("Comment" type
+               (:superclasses ("str")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [824 842]))                  
+                :type "class")
+                nil [799 843])
+            ("IgnoredInDesignationMatching" type
+               (:members 
+                  ( ("_designation_matcher" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1001 1004])
+                            ("a" variable nil (reparse-symbol function_parameters) [1006 1007])
+                            ("b" variable nil (reparse-symbol function_parameters) [1009 1010])
+                            ("flags" variable nil (reparse-symbol function_parameters) [1012 1019]))                          )
+                        (reparse-symbol indented_block_body) [959 1097]))                  
+                :type "class")
+                nil [918 1097])
+            ("Extra" type
+               (:superclasses ("basic.UppercaseStripped")
+                :members 
+                  ( ("_name_sorting" variable nil (reparse-symbol indented_block_body) [1141 1160]))                  
+                :type "class")
+                nil [1098 1161])
+            ("Date" type
+               (:superclasses ("basic.Date" "IgnoredInDesignationMatching")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [1221 1239]))                  
+                :type "class")
+                nil [1162 1240])
+            ("Reference" type
+               (:superclasses ("basic.Bool" "IgnoredInDesignationMatching")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [1305 1323]))                  
+                :type "class")
+                nil [1241 1324])
+            ("FewTiters" type
+               (:superclasses ("basic.Bool" "IgnoredInDesignationMatching")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [1389 1407]))                  
+                :type "class")
+                nil [1325 1408])
+            ("Hemisphering" type
+               (:superclasses ("basic.Bool" "IgnoredInDesignationMatching")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [1476 1494]))                  
+                :type "class")
+                nil [1409 1495])
+            ("StrIgnored" type
+               (:superclasses ("str" "IgnoredInDesignationMatching")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [1554 1572]))                  
+                :type "class")
+                nil [1496 1573])
+            ("IntIgnored" type
+               (:superclasses ("int" "IgnoredInDesignationMatching")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [1632 1650]))                  
+                :type "class")
+                nil [1574 1651])
+            ("Distinct" type
+               (:superclasses ("basic.Bool")
+                :members 
+                  ( ("_name_sorting" variable nil (reparse-symbol indented_block_body) [1686 1705])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1723 1727]))                          )
+                        (reparse-symbol indented_block_body) [1711 1774])
+                    ("_designation_matcher" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1821 1824])
+                            ("a" variable nil (reparse-symbol function_parameters) [1826 1827])
+                            ("b" variable nil (reparse-symbol function_parameters) [1829 1830])
+                            ("flags" variable nil (reparse-symbol function_parameters) [1832 1839]))                          )
+                        (reparse-symbol indented_block_body) [1779 1940]))                  
+                :type "class")
+                nil [1652 1940])
+            ("LabIdEntry" variable nil nil [2015 2047])
+            ("LabId" type
+               (:documentation "Map of lab name (uppercase) to lab id. If lab provides no id for this antigen/serum, None is used."
+                :superclasses ("lab_id_m.LabId" "IgnoredInDesignationMatching")
+                :members 
+                  ( ("_name_sorting" variable nil (reparse-symbol indented_block_body) [2222 2241]))                  
+                :type "class")
+                nil [2048 2242])
+            ("Location" type
+               (:superclasses ("basic.Base")
+                :members 
+                  ( ("_name_sorting" code nil (reparse-symbol indented_block_body) [2351 2369])
+                    ("name" variable nil (reparse-symbol indented_block_body) [2375 2405])
+                    ("original" variable nil (reparse-symbol indented_block_body) [2410 2444])
+                    ("country" variable nil (reparse-symbol indented_block_body) [2563 2588])
+                    ("continent" variable nil (reparse-symbol indented_block_body) [2593 2620])
+                    ("latitude" variable nil (reparse-symbol indented_block_body) [2625 2641])
+                    ("longitude" variable nil (reparse-symbol indented_block_body) [2646 2663])
+                    ("_designation_matcher" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2711 2714])
+                            ("a" variable nil (reparse-symbol function_parameters) [2716 2717])
+                            ("b" variable nil (reparse-symbol function_parameters) [2719 2720])
+                            ("flags" variable nil (reparse-symbol function_parameters) [2722 2729]))                          )
+                        (reparse-symbol indented_block_body) [2669 2769])
+                    ("abbreviated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2790 2794]))                          )
+                        (reparse-symbol indented_block_body) [2774 3560])
+                    ("get_cdc_abbreviation" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3590 3594]))                          )
+                        (reparse-symbol indented_block_body) [3565 3950])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3966 3970])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3972 3980]))                          )
+                        (reparse-symbol indented_block_body) [3955 4700])
+                    ("chinese_province" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4726 4730]))                          )
+                        (reparse-symbol indented_block_body) [4705 4893]))                  
+                :type "class")
+                nil [2317 4893])
+            ("AntigensSeraDuplicates" type
+               (:superclasses ("exceptions.AutoRaise")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [5054 5072])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5081 5103])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5112 5130])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5139 5153]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5039 5043]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5026 5154])
+                    ("add_antigens" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5176 5180])
+                            ("duplicate_indices" variable nil (reparse-symbol function_parameters) [5182 5200]))                          )
+                        (reparse-symbol indented_block_body) [5159 5257])
+                    ("add_sera" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5275 5279])
+                            ("duplicate_indices" variable nil (reparse-symbol function_parameters) [5281 5299]))                          )
+                        (reparse-symbol indented_block_body) [5262 5352])
+                    ("add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5365 5369])
+                            ("duplicates" variable nil (reparse-symbol function_parameters) [5371 5381]))                          )
+                        (reparse-symbol indented_block_body) [5357 5476])
+                    ("raise_me" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5494 5498]))                          )
+                        (reparse-symbol indented_block_body) [5481 5555])
+                    ("set_table_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5579 5583])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [5585 5595]))                          )
+                        (reparse-symbol indented_block_body) [5560 5655])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5672 5676]))                          )
+                        (reparse-symbol indented_block_body) [5660 6053]))                  
+                :type "class")
+                nil [4968 6053])
+            ("AntigenSerum" type
+               (:superclasses ("basic.Base")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [6946 6957])
+                    ("mutations" variable nil (reparse-symbol indented_block_body) [7236 7286])
+                    ("extra" variable nil (reparse-symbol indented_block_body) [7292 7305])
+                    ("distinct" variable nil (reparse-symbol indented_block_body) [7402 7421])
+                    ("lab_id" variable nil (reparse-symbol indented_block_body) [7579 7593])
+                    ("comment" variable nil (reparse-symbol indented_block_body) [7817 7834])
+                    ("N" variable nil (reparse-symbol indented_block_body) [7872 7886])
+                    ("few_titers" variable nil (reparse-symbol indented_block_body) [7983 8005])
+                    ("hemisphering" variable nil (reparse-symbol indented_block_body) [8075 8102])
+                    ("sReYearFromName" variable nil (reparse-symbol indented_block_body) [8164 8220])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8238 8242]))                          )
+                        (reparse-symbol indented_block_body) [8226 8277])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8296 8300])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [8302 8311])
+                            ("mark_unrecognized" variable nil (reparse-symbol function_parameters) [8320 8337])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8344 8352]))                          )
+                        (reparse-symbol indented_block_body) [8282 8472])
+                    ("name_maker" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8492 8496]))                          )
+                        (reparse-symbol indented_block_body) [8477 8525])
+                    ("match" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8540 8544])
+                            ("other" variable nil (reparse-symbol function_parameters) [8546 8551])
+                            ("report" variable nil (reparse-symbol function_parameters) [8553 8559])
+                            ("args" variable nil (reparse-symbol function_parameters) [8566 8572]))                          
+                        :documentation "Returns if self and other are matching antigens/sera, i.e. they could be merged.
+        Returns 0 if not matched, otherwise returns matching level, the higher the better is match.
+        report may be a dict, two fields of which are filled: level and mismatch with field name that failed matching
+        ")
+                        (reparse-symbol indented_block_body) [8530 9931])
+                    ("_match_field" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9953 9957])
+                            ("field" variable nil (reparse-symbol function_parameters) [9959 9964])
+                            ("other" variable nil (reparse-symbol function_parameters) [9966 9971])
+                            ("args" variable nil (reparse-symbol function_parameters) [9973 9979]))                          )
+                        (reparse-symbol indented_block_body) [9936 10587])
+                    ("ignore_in_merge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10612 10616]))                          
+                        :documentation "Returns if this antigen/serum must be avoided in merges.")
+                        (reparse-symbol indented_block_body) [10592 10711])
+                    ("isolation_year" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10735 10739]))                          
+                        :documentation "Returns antigen/serum isolation year extracted from name
+        (if virus naming convention supports it) or None (if no year
+        is provided or supported).")
+                        (reparse-symbol indented_block_body) [10716 11187])
+                    ("set_raw_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11209 11213])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [11215 11223]))                          
+                        :documentation "Resets all name related fields and sets name.")
+                        (reparse-symbol indented_block_body) [11192 11454])
+                    ("has_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11472 11476]))                          )
+                        (reparse-symbol indented_block_body) [11459 11510])
+                    ("conformance_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11537 11541])
+                            ("conformance_data" variable nil (reparse-symbol function_parameters) [11543 11559])
+                            ("index" variable nil (reparse-symbol function_parameters) [11561 11566]))                          )
+                        (reparse-symbol indented_block_body) [11515 11735])
+                    ("passage_match_unknown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11766 11770])
+                            ("other" variable nil (reparse-symbol function_parameters) [11772 11777]))                          )
+                        (reparse-symbol indented_block_body) [11740 11801])
+                    ("is_lab" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11817 11821])
+                            ("lab" variable nil (reparse-symbol function_parameters) [11823 11826]))                          )
+                        (reparse-symbol indented_block_body) [11806 11932]))                  
+                :type "class")
+                nil [6128 11932])
+            ("Antigen" type
+               (:superclasses ("AntigenSerum")
+                :members 
+                  ( ("date" variable nil (reparse-symbol indented_block_body) [12042 12053])
+                    ("reference" variable nil (reparse-symbol indented_block_body) [12108 12129])
+                    ("season" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12200 12204])
+                            ("force_sh_for_no_date" variable nil (reparse-symbol function_parameters) [12206 12226]))                          
+                        :documentation "Returns season (a string, 'year-0' or 'year-1') determined
+        by the antigen isolation date. '2007-1' means NH winter
+        2007-2008, '2007-0' means SH winter 2007. If antigen has no
+        isolation date and force_sh_for_no_date, put antigen in SH
+        season for the year of antigen, otherwise retruin None.")
+                        (reparse-symbol indented_block_body) [12189 13027])
+                    ("sorted_by_date_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13055 13059]))                          
+                        :documentation "Returns negative number of days since anno domini (to allow
+        having most recent dates first when sorting). If antigen has
+        no date, returns positive number.")
+                        (reparse-symbol indented_block_body) [13032 13310])
+                    ("type_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13329 13333])
+                            ("short" variable nil (reparse-symbol function_parameters) [13335 13340]))                          )
+                        (reparse-symbol indented_block_body) [13315 13393])
+                    ("passage_match_unknown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13424 13428])
+                            ("other" variable nil (reparse-symbol function_parameters) [13430 13435]))                          )
+                        (reparse-symbol indented_block_body) [13398 13548])
+                    ("__getstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13589 13593]))                          )
+                        (reparse-symbol indented_block_body) [13572 13784])
+                    ("__setstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13825 13829])
+                            ("state" variable nil (reparse-symbol function_parameters) [13831 13836]))                          )
+                        (reparse-symbol indented_block_body) [13808 13996]))                  
+                :type "class")
+                nil [12007 13996])
+            ("Serum" type
+               (:superclasses ("AntigenSerum")
+                :members 
+                  ( ("homologous_antigen" variable nil (reparse-symbol indented_block_body) [14137 14168])
+                    ("homologous_titer" variable nil (reparse-symbol indented_block_body) [14173 14202])
+                    ("maximal_titer" variable nil (reparse-symbol indented_block_body) [14207 14233])
+                    ("type_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14253 14257])
+                            ("short" variable nil (reparse-symbol function_parameters) [14259 14264]))                          )
+                        (reparse-symbol indented_block_body) [14239 14315])
+                    ("calculate_homologous_titer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14351 14355])
+                            ("chart" variable nil (reparse-symbol function_parameters) [14357 14362])
+                            ("serum_no" variable nil (reparse-symbol function_parameters) [14364 14372])
+                            ("report_problems" variable nil (reparse-symbol function_parameters) [14374 14389]))                          )
+                        (reparse-symbol indented_block_body) [14320 14917]))                  
+                :type "class")
+                nil [14071 14917])
+            ("AntigensSeraSelector" type
+               (:superclasses ("basic.Base")
+                :members 
+                  ( ("text" variable nil (reparse-symbol indented_block_body) [15038 15051])
+                    ("index" variable nil (reparse-symbol indented_block_body) [15056 15067])
+                    ("words" variable nil (reparse-symbol indented_block_body) [15072 15084]))                  
+                :type "class")
+                nil [14992 15085])
+            ("MatchReport" type
+               (:members 
+                  ( ("ReportUpdater" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [15266 15288])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [15301 15327])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [15340 15359]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15227 15231])
+                                    ("primary" variable nil (reparse-symbol function_parameters) [15233 15240])
+                                    ("secondary" variable nil (reparse-symbol function_parameters) [15242 15251]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [15214 15360])
+                            ("matches" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15381 15385])
+                                    ("level" variable nil (reparse-symbol function_parameters) [15387 15392]))                                  )
+                                (reparse-symbol indented_block_body) [15369 15487])
+                            ("mismatches" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15511 15515])
+                                    ("field" variable nil (reparse-symbol function_parameters) [15517 15522]))                                  )
+                                (reparse-symbol indented_block_body) [15496 15587])
+                            ("__repr__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15609 15613]))                                  )
+                                (reparse-symbol indented_block_body) [15596 15654]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [15184 15654])
+                    ("Report" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [15714 15730]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15695 15699]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [15682 15787])
+                            ("add" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15804 15808])
+                                    ("updater" variable nil (reparse-symbol function_parameters) [15810 15817]))                                  )
+                                (reparse-symbol indented_block_body) [15796 15890])
+                            ("matches" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15911 15915]))                                  )
+                                (reparse-symbol indented_block_body) [15899 15958])
+                            ("best" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [15976 15980]))                                  )
+                                (reparse-symbol indented_block_body) [15967 16035])
+                            ("best_list" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [16058 16062]))                                  )
+                                (reparse-symbol indented_block_body) [16044 16114])
+                            ("sorted_by_secondary" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [16147 16151])
+                                    ("level" variable nil (reparse-symbol function_parameters) [16153 16158]))                                  )
+                                (reparse-symbol indented_block_body) [16123 16236])
+                            ("__repr__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [16258 16262]))                                  )
+                                (reparse-symbol indented_block_body) [16245 16302]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [15659 16302])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16393 16411])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16420 16436])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16497 16513])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16574 16598]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16378 16382]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16365 16651])
+                    ("number_of_matches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16678 16682]))                          )
+                        (reparse-symbol indented_block_body) [16656 16804])
+                    ("number_of_mismatches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16834 16838]))                          )
+                        (reparse-symbol indented_block_body) [16809 16880])
+                    ("make_updater" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16902 16906])
+                            ("primary" variable nil (reparse-symbol function_parameters) [16908 16915])
+                            ("secondary" variable nil (reparse-symbol function_parameters) [16917 16926]))                          )
+                        (reparse-symbol indented_block_body) [16885 17065])
+                    ("updating_complete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17092 17096]))                          )
+                        (reparse-symbol indented_block_body) [17070 17229])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17247 17251]))                          )
+                        (reparse-symbol indented_block_body) [17234 17287])
+                    ("has_mismatches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17311 17315]))                          
+                        :documentation "Returns if there are mismatches.")
+                        (reparse-symbol indented_block_body) [17292 17412])
+                    ("report_common" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17435 17439])
+                            ("primary" variable nil (reparse-symbol function_parameters) [17441 17448])
+                            ("secondary" variable nil (reparse-symbol function_parameters) [17450 17459])
+                            ("indent" variable nil (reparse-symbol function_parameters) [17461 17467])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [17472 17481]))                          )
+                        (reparse-symbol indented_block_body) [17417 17769])
+                    ("report_mismatches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17796 17800])
+                            ("primary" variable nil (reparse-symbol function_parameters) [17802 17809])
+                            ("secondary" variable nil (reparse-symbol function_parameters) [17811 17820])
+                            ("indent" variable nil (reparse-symbol function_parameters) [17822 17828])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [17833 17842])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [17863 17869]))                          )
+                        (reparse-symbol indented_block_body) [17774 18327])
+                    ("matched_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18350 18354])
+                            ("primary" variable nil (reparse-symbol function_parameters) [18356 18363])
+                            ("secondary" variable nil (reparse-symbol function_parameters) [18365 18374])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [18376 18385]))                          
+                        :documentation "Returns list of tuples with names of matched entries.")
+                        (reparse-symbol indented_block_body) [18332 18601])
+                    ("mismatched_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18627 18631])
+                            ("primary" variable nil (reparse-symbol function_parameters) [18633 18640])
+                            ("secondary" variable nil (reparse-symbol function_parameters) [18642 18651])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [18653 18662]))                          
+                        :documentation "Returns list of tuples with names of matched entries and field that failed matching.")
+                        (reparse-symbol indented_block_body) [18606 18912])
+                    ("set_common" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18932 18936])
+                            ("common" variable nil (reparse-symbol function_parameters) [18938 18944]))                          )
+                        (reparse-symbol indented_block_body) [18917 19230])
+                    ("_matched" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19495 19499])
+                            ("primary" variable nil (reparse-symbol function_parameters) [19501 19508])
+                            ("secondary" variable nil (reparse-symbol function_parameters) [19510 19519])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [19521 19530]))                          )
+                        (reparse-symbol indented_block_body) [19482 19994])
+                    ("_mismatched" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20556 20560])
+                            ("primary" variable nil (reparse-symbol function_parameters) [20562 20569])
+                            ("secondary" variable nil (reparse-symbol function_parameters) [20571 20580])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [20582 20591]))                          )
+                        (reparse-symbol indented_block_body) [20540 21096])
+                    ("_mismatches" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21117 21121]))                          )
+                        (reparse-symbol indented_block_body) [21101 21292]))                  
+                :type "class")
+                nil [15160 21292])
+            ("AntigensSeraNotFound" type
+               (:superclasses ("RuntimeError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [21414 21418]))                  
+                :type "class")
+                nil [21367 21419])
+            ("NameMatcher" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [21561 21595])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21604 21629])
+                            ("self" code nil (reparse-symbol indented_block_body) [21638 21655]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21531 21535])
+                            ("antigens_sera" variable nil (reparse-symbol function_parameters) [21537 21550]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [21518 21656])
+                    ("make_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21676 21680]))                          )
+                        (reparse-symbol indented_block_body) [21661 22214])
+                    ("find_using_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22395 22399])
+                            ("name" variable nil (reparse-symbol function_parameters) [22401 22405]))                          )
+                        (reparse-symbol indented_block_body) [22374 23056])
+                    ("sSubnameKeywords" variable nil (reparse-symbol indented_block_body) [23061 23159])
+                    ("find_words_using_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23192 23196])
+                            ("name" variable nil (reparse-symbol function_parameters) [23198 23202]))                          )
+                        (reparse-symbol indented_block_body) [23165 24610])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24624 24628])
+                            ("name" variable nil (reparse-symbol function_parameters) [24630 24634])
+                            ("words" variable nil (reparse-symbol function_parameters) [24636 24641]))                          )
+                        (reparse-symbol indented_block_body) [24615 25029])
+                    ("preprocess_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25054 25058])
+                            ("name" variable nil (reparse-symbol function_parameters) [25060 25064]))                          )
+                        (reparse-symbol indented_block_body) [25034 25095])
+                    ("match" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25110 25114])
+                            ("name_or_antigen_serum" variable nil (reparse-symbol function_parameters) [25116 25137])
+                            ("other_index" variable nil (reparse-symbol function_parameters) [25139 25150])
+                            ("report" variable nil (reparse-symbol function_parameters) [25157 25163])
+                            ("index" variable nil (reparse-symbol function_parameters) [25170 25175])
+                            ("words" variable nil (reparse-symbol function_parameters) [25182 25187])
+                            ("raise_if_not_found" variable nil (reparse-symbol function_parameters) [25194 25212])
+                            ("options" variable nil (reparse-symbol function_parameters) [25220 25229]))                          
+                        :documentation "See AntigensSera.find for doc.")
+                        (reparse-symbol indented_block_body) [25100 28170]))                  
+                :type "class")
+                nil [21494 28170])
+            ("AntigensSera" type
+               (:documentation "Base class for antigens and sera ordered lists"
+                :superclasses ("list")
+                :members 
+                  ( ("clone" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28344 28348]))                          )
+                        (reparse-symbol indented_block_body) [28334 28406])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28423 28427]))                          )
+                        (reparse-symbol indented_block_body) [28411 28507])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28521 28525])
+                            ("name_or_antigen_serum" variable nil (reparse-symbol function_parameters) [28527 28548])
+                            ("index" variable nil (reparse-symbol function_parameters) [28550 28555])
+                            ("words" variable nil (reparse-symbol function_parameters) [28562 28567])
+                            ("raise_if_not_found" variable nil (reparse-symbol function_parameters) [28574 28592])
+                            ("options" variable nil (reparse-symbol function_parameters) [28600 28609]))                          
+                        :documentation "Returns set of indices of antigens/sera matched by name.
+        Returns empty set if nothing found.
+        The following applies only if name_or_antigen_serum is str:
+        If index is not None (int), returns single antigen/serum index
+        (not set), if index=0, returns the first element of the sorted
+        list, if index=-1, returns the last element.
+        If words is None, first search with words=False and if nothing
+        found, search with words=True.
+        ")
+                        (reparse-symbol indented_block_body) [28512 29345])
+                    ("name_matcher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29367 29371]))                          )
+                        (reparse-symbol indented_block_body) [29350 29512])
+                    ("find_by_labid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29535 29539])
+                            ("lab_id" variable nil (reparse-symbol function_parameters) [29541 29547]))                          
+                        :documentation "Returns set of indices of antigens/sera having this
+        lab_id. lab_id must be instance of lab_id_m.LabIdEntry.")
+                        (reparse-symbol indented_block_body) [29517 29925])
+                    ("common" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29941 29945])
+                            ("other" variable nil (reparse-symbol function_parameters) [29947 29952])
+                            ("report" variable nil (reparse-symbol function_parameters) [29954 29960])
+                            ("options" variable nil (reparse-symbol function_parameters) [29967 29976]))                          
+                        :documentation "Returns dict of antigens/sera indices in this set to the
+        corresponding antigens/sera indices in other set. Derived
+        classes check the type of other. If mutiple matches in either
+        self or other found, best match is chosen.
+        report must be an instance of MatchReport.
+        options:
+        - passage (default: 'strict' for antigens, depends on serum_id for sera)
+        - serum_id (default: 'strict' for sera, 'none' for antigens)
+        - serum_species (default: 'strict' for sera, 'none' for antigens)
+        ")
+                        (reparse-symbol indented_block_body) [29930 33418])
+                    ("check_for_duplicates" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33448 33452])
+                            ("options" variable nil (reparse-symbol function_parameters) [33454 33463]))                          
+                        :documentation "Checks for duplicates within antigens/sera set, i.e. finds
+        if there are two antigens/sera matching. Raises
+        AntigensSeraDuplicates if found. If options['find_all'], finds
+        all duplicates before rasing. If options['find_control_duplicates'] sets control_duplicate flag for antigen, if necessary.")
+                        (reparse-symbol indented_block_body) [33423 35431])
+                    ("mark_control_duplicate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35463 35467])
+                            ("a_i" variable nil (reparse-symbol function_parameters) [35469 35472])
+                            ("b_i" variable nil (reparse-symbol function_parameters) [35474 35477])
+                            ("table_name" variable nil (reparse-symbol function_parameters) [35479 35489]))                          )
+                        (reparse-symbol indented_block_body) [35436 35558])
+                    ("is_antigens" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35579 35583]))                          
+                        :documentation "Returns if this list contains antigens.")
+                        (reparse-symbol indented_block_body) [35563 35676])
+                    ("remove_by_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35703 35707])
+                            ("indices" variable nil (reparse-symbol function_parameters) [35709 35716]))                          
+                        :documentation "Removes entries by indices. Indices must be in ascending
+        order (not checked).")
+                        (reparse-symbol indented_block_body) [35681 35879])
+                    ("ignored_in_merge_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35913 35917]))                          
+                        :documentation "Returns generator of indices of antigens/sera which must be ignored for merge.")
+                        (reparse-symbol indented_block_body) [35884 36091])
+                    ("having_few_titers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36118 36122]))                          
+                        :documentation "Returns generator listing antigens/sera having few_titers flag set.")
+                        (reparse-symbol indented_block_body) [36096 36278])
+                    ("have_mutations" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36302 36306]))                          
+                        :documentation "Returns if any of antigens/sera have mutations data.")
+                        (reparse-symbol indented_block_body) [36283 36436])
+                    ("reset_few_titers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36462 36466]))                          
+                        :documentation "Resets few_titers flags")
+                        (reparse-symbol indented_block_body) [36441 36570])
+                    ("having_hemisphering" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36599 36603]))                          
+                        :documentation "Returns generator listing antigens/sera having hemisphering flag set.")
+                        (reparse-symbol indented_block_body) [36575 36763])
+                    ("reset_hemisphering" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36791 36795]))                          
+                        :documentation "Resets hemisphering flags")
+                        (reparse-symbol indented_block_body) [36768 36903])
+                    ("elicit_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36927 36931])
+                            ("data_list" variable nil (reparse-symbol function_parameters) [36933 36942])
+                            ("ignore_errors" variable nil (reparse-symbol function_parameters) [36944 36957])
+                            ("return_not_found" variable nil (reparse-symbol function_parameters) [36965 36981])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [36989 36996]))                          
+                        :documentation "Accepts either list (could mix indices and names) or
+        callable returning if antigen/serum is good for list (by
+        antigen/serum passed), returns list of indices. For each name
+        in data_list index is substituted, for each index in data_list
+        it is checked and substituted. If data_list is 'none' or None,
+        returns empty list, if data_list is 'all' returns list of all
+        indices.  If return_not_found is True returns tuple of two
+        elements: found indices list and not found names list.")
+                        (reparse-symbol indented_block_body) [36908 39415])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39431 39435])
+                            ("other" variable nil (reparse-symbol function_parameters) [39437 39442]))                          )
+                        (reparse-symbol indented_block_body) [39420 39483])
+                    ("conformance_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39510 39514])
+                            ("conformance_data" variable nil (reparse-symbol function_parameters) [39516 39532]))                          )
+                        (reparse-symbol indented_block_body) [39488 39664])
+                    ("not_found" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39683 39687])
+                            ("other" variable nil (reparse-symbol function_parameters) [39689 39694])
+                            ("ignore_reference" variable nil (reparse-symbol function_parameters) [39696 39712])
+                            ("passage" variable nil (reparse-symbol function_parameters) [39719 39726])
+                            ("serum_id" variable nil (reparse-symbol function_parameters) [39737 39745]))                          
+                        :documentation "Returns set of antigens/sera indices in this set not found in other set.")
+                        (reparse-symbol indented_block_body) [39669 40169]))                  
+                :type "class")
+                nil [28245 40169])
+            ("Antigens" type
+               (:documentation "Ordered set of antigens objects"
+                :superclasses ("AntigensSera")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [40361 40588]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40335 40339])
+                            ("data" variable nil (reparse-symbol function_parameters) [40341 40345]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [40322 40588])
+                    ("is_antigens" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40609 40613]))                          
+                        :documentation "Returns if this list contains antigens.")
+                        (reparse-symbol indented_block_body) [40593 40690])
+                    ("reference" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40709 40713]))                          
+                        :documentation "Returns generator of reference antigens.")
+                        (reparse-symbol indented_block_body) [40695 40837])
+                    ("reference_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40864 40868]))                          
+                        :documentation "Returns generator of reference antigens indices.")
+                        (reparse-symbol indented_block_body) [40842 41016])
+                    ("non_reference" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41039 41043]))                          
+                        :documentation "Returns generator of non-reference antigens.")
+                        (reparse-symbol indented_block_body) [41021 41175])
+                    ("non_reference_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41206 41210]))                          
+                        :documentation "Returns generator of non-reference antigens indices.")
+                        (reparse-symbol indented_block_body) [41180 41366])
+                    ("test_indices" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41388 41392]))                          
+                        :documentation "Returns generator of non-reference antigens indices.")
+                        (reparse-symbol indented_block_body) [41371 41506])
+                    ("number_of_reference" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41535 41539]))                          
+                        :documentation "Returns number of reference antigens")
+                        (reparse-symbol indented_block_body) [41511 41641])
+                    ("number_of_non_reference" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41674 41678]))                          
+                        :documentation "Returns number of reference antigens")
+                        (reparse-symbol indented_block_body) [41646 41784])
+                    ("select_by_date_range" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41814 41818])
+                            ("start_date" variable nil (reparse-symbol function_parameters) [41820 41830])
+                            ("end_date" variable nil (reparse-symbol function_parameters) [41832 41840])
+                            ("include_reference" variable nil (reparse-symbol function_parameters) [41847 41864]))                          
+                        :documentation "Returns generator of antigens indices having date within
+        the specified range, start_date inclusive, end_date
+        exclusive. If either start_date or end_date is None, selection
+        is not bound by that date.")
+                        (reparse-symbol indented_block_body) [41789 42454])
+                    ("select_no_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42478 42482])
+                            ("include_reference" variable nil (reparse-symbol function_parameters) [42484 42501]))                          
+                        :documentation "Returns generator of antigens indices having no date.")
+                        (reparse-symbol indented_block_body) [42459 42689])
+                    ("sorted_by_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42713 42717])
+                            ("non_reference_only" variable nil (reparse-symbol function_parameters) [42719 42737]))                          
+                        :documentation "Returns list of antigens (all or just non-reference) sorted
+        by antigen isolation date, most recent antigens first,
+        antigens without isolation dates last.")
+                        (reparse-symbol indented_block_body) [42694 43038])
+                    ("have_dates" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43058 43062]))                          
+                        :documentation "Returns if any of antigens have isolation date.")
+                        (reparse-symbol indented_block_body) [43043 43186])
+                    ("have_years" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43206 43210]))                          
+                        :documentation "Returns if any of antigens have year.")
+                        (reparse-symbol indented_block_body) [43191 43336])
+                    ("years" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43351 43355])
+                            ("omit_none" variable nil (reparse-symbol function_parameters) [43357 43366]))                          
+                        :documentation "Returns mapping from years (str of 4 digits) to the list of antigen indices")
+                        (reparse-symbol indented_block_body) [43341 43736])
+                    ("conformance_level" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43763 43767])
+                            ("conformance_data" variable nil (reparse-symbol function_parameters) [43769 43785]))                          )
+                        (reparse-symbol indented_block_body) [43741 44030])
+                    ("find_homologous" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44055 44059])
+                            ("serum" variable nil (reparse-symbol function_parameters) [44061 44066])
+                            ("serum_no" variable nil (reparse-symbol function_parameters) [44068 44076])
+                            ("chart" variable nil (reparse-symbol function_parameters) [44078 44083]))                          
+                        :documentation "Returns index of the homologous antigen or None")
+                        (reparse-symbol indented_block_body) [44035 46076]))                  
+                :type "class")
+                nil [40244 46076])
+            ("Sera" type
+               (:documentation "Ordered set of sera objects"
+                :superclasses ("AntigensSera")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [46260 46485]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46234 46238])
+                            ("data" variable nil (reparse-symbol function_parameters) [46240 46244]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [46221 46485])
+                    ("is_antigens" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46506 46510]))                          
+                        :documentation "Returns if this list contains antigens.")
+                        (reparse-symbol indented_block_body) [46490 46588])
+                    ("calculate_homologous_and_maximal_titers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [46637 46641])
+                            ("chart" variable nil (reparse-symbol function_parameters) [46643 46648])
+                            ("report_problems" variable nil (reparse-symbol function_parameters) [46650 46665]))                          )
+                        (reparse-symbol indented_block_body) [46593 47045]))                  
+                :type "class")
+                nil [46151 47045]))          
+      :file "antigens_sera.py"
+      :pointmax 47212
+      :fsize 47211
+      :lastmodtime '(22242 50167 0 0)
+      :unmatched-syntax '((RETURN 46041 . 46047) (IF 46061 . 46063) (ELSE 46066 . 46070) (NAME 44537 . 44545) (IF 44562 . 44564) (ELSE 44587 . 44591) (NAME 44186 . 44193) (IF 44205 . 44207) (ELSE 44228 . 44232) (NAME 33882 . 33887) (IF 33907 . 33909) (ELSE 33929 . 33933) (NAME 30919 . 30924) (IF 30937 . 30939) (ELSE 30959 . 30963) (RETURN 14281 . 14287) (IF 14293 . 14295) (ELSE 14302 . 14306) (RETURN 13357 . 13363) (IF 13369 . 13371) (ELSE 13378 . 13382) (RETURN 13255 . 13261) (IF 13290 . 13292) (ELSE 13303 . 13307) (PERIOD 3611 . 3612) (FROM 3605 . 3609) (PERIOD 3610 . 3611) (PERIOD 2870 . 2871) (FROM 2864 . 2868) (PERIOD 2869 . 2870) (RETURN 1738 . 1744) (IF 1756 . 1758) (ELSE 1764 . 1768) (FROM 614 . 618) (PERIOD 619 . 620) (FROM 520 . 524) (PERIOD 525 . 526) (FROM 476 . 480) (PERIOD 481 . 482) (FROM 424 . 428) (PERIOD 429 . 430) (FROM 387 . 391) (PERIOD 392 . 393) (FROM 350 . 354) (PERIOD 355 . 356) (FROM 251 . 255) (PERIOD 256 . 257) (PERIOD 227 . 228) (FROM 221 . 225) (PERIOD 226 . 227) (PERIOD 190 . 191) (FROM 184 . 188) (PERIOD 189 . 190)))
+    (semanticdb-table "lab_id.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+\"\"\"" code nil nil [39 46])
+            ("collections" include nil nil [48 70])
+            ("re" include nil nil [48 70])
+            ("logging" include nil nil [71 85])
+            ("LabIdEntry" type
+               (:documentation "lab_id entry has lab name (uppercase) and id for that
+    lab. Different antigens expected to have different lab_id (but
+    there are lab's mistakes)."
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [440 454])
+                    ("__new__" function (:arguments 
+                      ( ("cls" variable nil (reparse-symbol function_parameters) [791 794])
+                        ("kwargs" variable nil (reparse-symbol function_parameters) [796 804]))                      ) (reparse-symbol indented_block_body) [779 1096])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1113 1117]))                          )
+                        (reparse-symbol indented_block_body) [1101 1150]))                  
+                :type "class")
+                nil [206 1150])
+            ("LabId" type
+               (:documentation "Set of LabIdEntry."
+                :superclasses ("set")
+                :members 
+                  ( ("sReCdcId" variable nil (reparse-symbol indented_block_body) [1278 1314])
+                    ("sReCnicId" variable nil (reparse-symbol indented_block_body) [1319 1366])
+                    ("sReMelbId" variable nil (reparse-symbol indented_block_body) [1371 1408])
+                    ("sReNiidId" variable nil (reparse-symbol indented_block_body) [1413 1461])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1479 1483]))                          )
+                        (reparse-symbol indented_block_body) [1467 1540])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1556 1560])
+                            ("other" variable nil (reparse-symbol function_parameters) [1562 1567]))                          )
+                        (reparse-symbol indented_block_body) [1545 1853])
+                    ("elicit" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1886 1889])
+                            ("data" variable nil (reparse-symbol function_parameters) [1891 1895])
+                            ("lab" variable nil (reparse-symbol function_parameters) [1897 1900]))                          )
+                        (reparse-symbol indented_block_body) [1858 2608])
+                    ("elicit_fast" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2646 2649])
+                            ("data" variable nil (reparse-symbol function_parameters) [2651 2655]))                          )
+                        (reparse-symbol indented_block_body) [2613 2734])
+                    ("match" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2749 2753])
+                            ("lab_id_entry" variable nil (reparse-symbol function_parameters) [2755 2767]))                          )
+                        (reparse-symbol indented_block_body) [2739 2971])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2985 2989])
+                            ("lab" variable nil (reparse-symbol function_parameters) [2991 2994]))                          )
+                        (reparse-symbol indented_block_body) [2976 3136])
+                    ("to_basic_types" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3160 3164]))                          
+                        :documentation "Returns value of self converted to built-in types to store in acd1 or mongodb.")
+                        (reparse-symbol indented_block_body) [3141 3303])
+                    ("join" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3317 3321])
+                            ("separator" variable nil (reparse-symbol function_parameters) [3323 3332]))                          
+                        :documentation "Returns string containing all ids joined by separator.")
+                        (reparse-symbol indented_block_body) [3308 3466])
+                    ("mongodb_to_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3489 3493]))                          )
+                        (reparse-symbol indented_block_body) [3471 3533])
+                    ("mongodb_from_db" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3575 3578])
+                            ("data" variable nil (reparse-symbol function_parameters) [3580 3584]))                          )
+                        (reparse-symbol indented_block_body) [3538 3856])
+                    ("validate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3874 3878]))                          
+                        :documentation "Returns None if validated, otherwise returns error message.")
+                        (reparse-symbol indented_block_body) [3861 4305])
+                    ("_validate_CDC" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4328 4332])
+                            ("entry" variable nil (reparse-symbol function_parameters) [4334 4339])
+                            ("err" variable nil (reparse-symbol function_parameters) [4341 4344]))                          )
+                        (reparse-symbol indented_block_body) [4310 4455])
+                    ("_validate_CNIC" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4479 4483])
+                            ("entry" variable nil (reparse-symbol function_parameters) [4485 4490])
+                            ("err" variable nil (reparse-symbol function_parameters) [4492 4495]))                          )
+                        (reparse-symbol indented_block_body) [4460 4608])
+                    ("_validate_MELB" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4632 4636])
+                            ("entry" variable nil (reparse-symbol function_parameters) [4638 4643])
+                            ("err" variable nil (reparse-symbol function_parameters) [4645 4648]))                          )
+                        (reparse-symbol indented_block_body) [4613 4761])
+                    ("_validate_NIID" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4785 4789])
+                            ("entry" variable nil (reparse-symbol function_parameters) [4791 4796])
+                            ("err" variable nil (reparse-symbol function_parameters) [4798 4801]))                          )
+                        (reparse-symbol indented_block_body) [4766 4986]))                  
+                :type "class")
+                nil [1225 4986]))          
+      :file "lab_id.py"
+      :pointmax 5153
+      :fsize 5152
+      :lastmodtime '(22137 3912 0 0)
+      :unmatched-syntax '((NAME 224 . 235) (PAREN_BLOCK 246 . 270)))
+    (semanticdb-table "api.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pprint" include nil nil [113 154])
+            ("glob" include nil nil [113 154])
+            ("collections" include nil nil [113 154])
+            ("os" include nil nil [113 154])
+            ("sys" include nil nil [113 154])
+            ("logging" include nil nil [155 169])
+            ("parsers" include nil nil [227 241])
+            ("open_file" include nil nil [259 275])
+            ("VirusesAPI" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [448 524])
+                            ("self" variable nil (reparse-symbol indented_block_body) [533 602]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [387 391])
+                            ("virus" variable nil (reparse-symbol function_parameters) [393 398])
+                            ("lab" variable nil (reparse-symbol function_parameters) [412 415])
+                            ("virus_type" variable nil (reparse-symbol function_parameters) [422 432]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [374 603])
+                    ("normalize_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [627 631])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [633 641])
+                            ("lab" variable nil (reparse-symbol function_parameters) [643 646])
+                            ("virus_type" variable nil (reparse-symbol function_parameters) [653 663])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [670 679])
+                            ("return_report" variable nil (reparse-symbol function_parameters) [698 711]))                          )
+                        (reparse-symbol indented_block_body) [608 877])
+                    ("normalize_name_and_split" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [911 915])
+                            ("raw_name" variable nil (reparse-symbol function_parameters) [917 925])
+                            ("lab" variable nil (reparse-symbol function_parameters) [927 930])
+                            ("virus_type" variable nil (reparse-symbol function_parameters) [937 947]))                          )
+                        (reparse-symbol indented_block_body) [882 1082])
+                    ("find_by_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1104 1108])
+                            ("name" variable nil (reparse-symbol function_parameters) [1110 1114])
+                            ("lab" variable nil (reparse-symbol function_parameters) [1116 1119])
+                            ("virus_type" variable nil (reparse-symbol function_parameters) [1126 1136]))                          
+                        :documentation "name must be normalized with normalize_name()")
+                        (reparse-symbol indented_block_body) [1087 1732])
+                    ("Validator" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("factory" include nil (reparse-symbol indented_block_body) [1930 1944])
+                                    ("acd1" include nil (reparse-symbol indented_block_body) [1973 1996])
+                                    ("validation" include nil (reparse-symbol indented_block_body) [1973 1996])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [2009 2044])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [2057 2071])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [2084 2112])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [2125 2198])
+                                    ("self" code nil (reparse-symbol indented_block_body) [2211 2331])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [2344 2529]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [1858 1862])
+                                    ("virus" variable nil (reparse-symbol function_parameters) [1864 1869])
+                                    ("lab" variable nil (reparse-symbol function_parameters) [1883 1886])
+                                    ("virus_type" variable nil (reparse-symbol function_parameters) [1893 1903]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [1845 2586])
+                            ("update" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [2606 2610])
+                                    ("lab" variable nil (reparse-symbol function_parameters) [2612 2615])
+                                    ("virus_type" variable nil (reparse-symbol function_parameters) [2617 2627]))                                  )
+                                (reparse-symbol indented_block_body) [2595 3122])
+                            ("normalize_name" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [3150 3154])
+                                    ("raw_name" variable nil (reparse-symbol function_parameters) [3156 3164])
+                                    ("name_type" variable nil (reparse-symbol function_parameters) [3166 3175])
+                                    ("return_report" variable nil (reparse-symbol function_parameters) [3177 3190]))                                  )
+                                (reparse-symbol indented_block_body) [3131 3664])
+                            ("normalize_name_and_split" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [3702 3706])
+                                    ("raw_name" variable nil (reparse-symbol function_parameters) [3708 3716]))                                  )
+                                (reparse-symbol indented_block_body) [3673 4305])
+                            ("_make_antigen" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [4332 4336])
+                                    ("raw_name" variable nil (reparse-symbol function_parameters) [4338 4346]))                                  )
+                                (reparse-symbol indented_block_body) [4314 4585]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1819 4585])
+                    ("VirusDatabase" type
+                       (:members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [4744 4768])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [4781 4827]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [4715 4719])
+                                    ("name_dir" variable nil (reparse-symbol function_parameters) [4721 4729]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [4702 4920])
+                            ("find_by_name" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [4946 4950])
+                                    ("name" variable nil (reparse-symbol function_parameters) [4952 4956])
+                                    ("lab" variable nil (reparse-symbol function_parameters) [4958 4961])
+                                    ("virus_type" variable nil (reparse-symbol function_parameters) [4963 4973]))                                  
+                                :documentation "name must be normalized before via Validator")
+                                (reparse-symbol indented_block_body) [4929 5248])
+                            ("load" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [5266 5270])
+                                    ("lab" variable nil (reparse-symbol function_parameters) [5272 5275])
+                                    ("virus_type" variable nil (reparse-symbol function_parameters) [5277 5287]))                                  )
+                                (reparse-symbol indented_block_body) [5257 5416])
+                            ("load_for" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [5438 5442])
+                                    ("lab" variable nil (reparse-symbol function_parameters) [5444 5447])
+                                    ("virus_type" variable nil (reparse-symbol function_parameters) [5449 5459]))                                  )
+                                (reparse-symbol indented_block_body) [5425 5840])
+                            ("normalize_passages" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [5872 5876])
+                                    ("data" variable nil (reparse-symbol function_parameters) [5878 5882])
+                                    ("lab" variable nil (reparse-symbol function_parameters) [5884 5887]))                                  )
+                                (reparse-symbol indented_block_body) [5849 6217])
+                            ("make_index" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [6241 6245])
+                                    ("data" variable nil (reparse-symbol function_parameters) [6247 6251])
+                                    ("lab" variable nil (reparse-symbol function_parameters) [6253 6256]))                                  )
+                                (reparse-symbol indented_block_body) [6226 8207])
+                            ("format_date" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [8232 8236])
+                                    ("data" variable nil (reparse-symbol function_parameters) [8238 8242]))                                  )
+                                (reparse-symbol indented_block_body) [8216 8473])
+                            ("available_labs" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [8501 8505]))                                  )
+                                (reparse-symbol indented_block_body) [8482 8774])
+                            ("available_virus_types" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [8809 8813]))                                  )
+                                (reparse-symbol indented_block_body) [8783 9117]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [4672 9117]))                  
+                :type "class")
+                nil [351 9117]))          
+      :file "api.py"
+      :pointmax 9283
+      :fsize 9282
+      :lastmodtime '(22294 19891 0 0)
+      :unmatched-syntax '((PERIOD 6336 . 6337) (FROM 6330 . 6334) (PERIOD 6335 . 6336) (PERIOD 1963 . 1964) (FROM 1957 . 1961) (PERIOD 1962 . 1963) (FROM 1923 . 1927) (PERIOD 1928 . 1929) (PERIOD 248 . 249) (FROM 242 . 246) (PERIOD 247 . 248) (PERIOD 221 . 222) (FROM 215 . 219) (PERIOD 220 . 221)))
+    (semanticdb-table "Virus.py"
+      :file "Virus.py"
+      :fsize 2420
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "amino_acid_mutation.py"
+      :file "amino_acid_mutation.py"
+      :fsize 3371
+      :lastmodtime '(22086 5788 0 0))
+    (semanticdb-table "Annotations.py"
+      :file "Annotations.py"
+      :fsize 5340
+      :lastmodtime '(22188 24864 0 0))
+    (semanticdb-table "Reassortant.py"
+      :file "Reassortant.py"
+      :fsize 21348
+      :lastmodtime '(22294 7415 0 0))
+    (semanticdb-table "reassortant.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("traceback" include nil nil [113 133])
+            ("re" include nil nil [113 133])
+            ("logging" include nil nil [134 148])
+            ("basic" include nil nil [206 218])
+            ("timer" include nil nil [236 248])
+            ("annotations" include nil nil [256 274])
+            ("Reassortant" type
+               (:superclasses ("basic.Base")
+                :members 
+                  ( ("_name_sorting" variable nil (reparse-symbol indented_block_body) [387 404])
+                    ("complete" variable nil (reparse-symbol indented_block_body) [410 424])
+                    ("incomplete" variable nil (reparse-symbol indented_block_body) [429 445])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [489 582]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [464 468])
+                            ("fields" variable nil (reparse-symbol function_parameters) [470 478]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [451 583])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [600 604]))                          )
+                        (reparse-symbol indented_block_body) [588 660])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [679 683])
+                            ("mark_incomplete" variable nil (reparse-symbol function_parameters) [685 700]))                          )
+                        (reparse-symbol indented_block_body) [665 859])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [878 882])
+                            ("mark_incomplete" variable nil (reparse-symbol function_parameters) [884 899])
+                            ("mark_unrecognized" variable nil (reparse-symbol function_parameters) [907 924]))                          )
+                        (reparse-symbol indented_block_body) [864 1017])
+                    ("name_suffix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1038 1042]))                          )
+                        (reparse-symbol indented_block_body) [1022 1098])
+                    ("recognized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1118 1122]))                          
+                        :documentation "Returns if reassortant does not have incomplete parts.")
+                        (reparse-symbol indented_block_body) [1103 1229])
+                    ("__bool__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1247 1251]))                          )
+                        (reparse-symbol indented_block_body) [1234 1314])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1330 1334])
+                            ("other" variable nil (reparse-symbol function_parameters) [1336 1341]))                          )
+                        (reparse-symbol indented_block_body) [1319 2127])
+                    ("elicit" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2160 2163])
+                            ("data" variable nil (reparse-symbol function_parameters) [2165 2169]))                          )
+                        (reparse-symbol indented_block_body) [2132 2836])
+                    ("_make_complete_incomplete" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2888 2891])
+                            ("source" variable nil (reparse-symbol function_parameters) [2893 2899]))                          )
+                        (reparse-symbol indented_block_body) [2841 3282])
+                    ("mongodb_to_db" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3305 3309]))                          )
+                        (reparse-symbol indented_block_body) [3287 3487])
+                    ("mongodb_from_db" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3529 3532])
+                            ("data" variable nil (reparse-symbol function_parameters) [3534 3538]))                          )
+                        (reparse-symbol indented_block_body) [3492 3720]))                  
+                :type "class")
+                nil [350 3720])
+            ("normalize" function (:arguments 
+              ( ("antigen_serum" variable nil (reparse-symbol function_parameters) [3809 3822])
+                ("fields" variable nil (reparse-symbol function_parameters) [3824 3830])
+                ("reassortant" variable nil (reparse-symbol function_parameters) [3832 3843])
+                ("validation_data" variable nil (reparse-symbol function_parameters) [3845 3860])
+                ("validation_message_args" variable nil (reparse-symbol function_parameters) [3862 3887]))              ) nil [3795 5077]))          
+      :file "reassortant.py"
+      :pointmax 21349
+      :fsize 21348
+      :lastmodtime '(22294 7415 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 4793 . 4987) (NEWLINE 4792 . 4793) (COLON 4791 . 4792) (TRY 4170 . 4173) (AS 4785 . 4787) (PERIOD 4193 . 4194) (FROM 4187 . 4191) (PERIOD 4192 . 4193) (INDENT_BLOCK 2726 . 2814) (NEWLINE 2725 . 2726) (COLON 2724 . 2725) (TRY 2180 . 2183) (AS 2718 . 2720) (FROM 249 . 253) (PERIOD 254 . 255) (PERIOD 225 . 226) (FROM 219 . 223) (PERIOD 224 . 225) (PERIOD 200 . 201) (FROM 194 . 198) (PERIOD 199 . 200)))
+    (semanticdb-table "annotations.py"
+      :file "annotations.py"
+      :fsize 5340
+      :lastmodtime '(22188 24864 0 0))
+    (semanticdb-table "name_maker.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [131 140])
+            ("logging" include nil nil [141 155])
+            ("NameMaker" type
+               (:members 
+                  ( ("NAME_FIELDS" variable nil (reparse-symbol indented_block_body) [996 1080])
+                    ("FIELDS_IGNORE" code nil (reparse-symbol indented_block_body) [1085 1279])
+                    ("FIELDS_IGNORE_IN_FULL" code nil (reparse-symbol indented_block_body) [1284 1381])
+                    ("FIELDS_IGNORE_IN_FULL_AND_LINEAGE" code nil (reparse-symbol indented_block_body) [1386 1457])
+                    ("FIELDS_IGNORE_IN_FULL_NAME_ONLY" code nil (reparse-symbol indented_block_body) [1462 1554])
+                    ("FIELDS_IGNORE_IN_LISPMDS" variable nil (reparse-symbol indented_block_body) [1559 1688])
+                    ("FIELDS_ORDER" variable nil (reparse-symbol indented_block_body) [1724 1945])
+                    ("sReLispmdsSub" variable nil (reparse-symbol indented_block_body) [1951 2121])
+                    ("sReWords" variable nil (reparse-symbol indented_block_body) [2127 2178])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2290 8152]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2275 2279]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2262 8153])
+                    ("make_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8172 8176])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [8178 8191])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [8193 8202])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8211 8219]))                          
+                        :documentation "
+        args:
+          cdc_name_join: \"-\" or \" \" (default)
+        ")
+                        (reparse-symbol indented_block_body) [8158 9068])
+                    ("name_types" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9088 9092]))                          )
+                        (reparse-symbol indented_block_body) [9073 9128])
+                    ("_name_long" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9226 9230])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [9232 9245])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9247 9255]))                          )
+                        (reparse-symbol indented_block_body) [9211 9620])
+                    ("_name_short" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9641 9645])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [9647 9660])
+                            ("cdcid" variable nil (reparse-symbol function_parameters) [9662 9667])
+                            ("lab_id" variable nil (reparse-symbol function_parameters) [9675 9681])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9689 9697]))                          )
+                        (reparse-symbol indented_block_body) [9625 10135])
+                    ("_name_abbreviated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10162 10166])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10168 10181])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10183 10191]))                          )
+                        (reparse-symbol indented_block_body) [10140 10405])
+                    ("_name_abbreviated_location_year" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10446 10450])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10452 10465])
+                            ("join_name" variable nil (reparse-symbol function_parameters) [10467 10476])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10478 10486]))                          )
+                        (reparse-symbol indented_block_body) [10410 10790])
+                    ("_fields_with_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10818 10822])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10824 10837])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10839 10847]))                          )
+                        (reparse-symbol indented_block_body) [10795 10974])
+                    ("_all_fields_with_names" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11006 11010])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11012 11025])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11027 11035]))                          )
+                        (reparse-symbol indented_block_body) [10979 11400])
+                    ("_fields_full" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11422 11426])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11428 11441])
+                            ("join_parts" variable nil (reparse-symbol function_parameters) [11443 11453])
+                            ("lineage" variable nil (reparse-symbol function_parameters) [11459 11466])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11473 11481]))                          )
+                        (reparse-symbol indented_block_body) [11405 11659])
+                    ("_fields_full_name_only" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11691 11695])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11697 11710])
+                            ("join_parts" variable nil (reparse-symbol function_parameters) [11712 11722])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11728 11736]))                          )
+                        (reparse-symbol indented_block_body) [11664 11869])
+                    ("_fields_lispmds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11894 11898])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11900 11913])
+                            ("is_antigen" variable nil (reparse-symbol function_parameters) [11915 11925])
+                            ("join_parts" variable nil (reparse-symbol function_parameters) [11927 11937])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11943 11951]))                          )
+                        (reparse-symbol indented_block_body) [11874 12089])
+                    ("_passage_egg_serum_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12120 12124])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12126 12139])
+                            ("is_antigen" variable nil (reparse-symbol function_parameters) [12141 12151])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12153 12161]))                          )
+                        (reparse-symbol indented_block_body) [12094 12369])
+                    ("_name_long_standard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12398 12402])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12404 12417])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12419 12427]))                          )
+                        (reparse-symbol indented_block_body) [12374 12799])
+                    ("_name_short_standard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12829 12833])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12835 12848])
+                            ("virus_type_include" variable nil (reparse-symbol function_parameters) [12850 12868])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12875 12883]))                          )
+                        (reparse-symbol indented_block_body) [12804 13315])
+                    ("_name_abbreviated_standard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13351 13355])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [13357 13370])
+                            ("location_truncate" variable nil (reparse-symbol function_parameters) [13372 13389])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13396 13404]))                          )
+                        (reparse-symbol indented_block_body) [13320 13906])
+                    ("_name_long_cdc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13930 13934])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [13936 13949])
+                            ("cdc_abbreviation_for_cdc_names" variable nil (reparse-symbol function_parameters) [13951 13981])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13988 13996]))                          )
+                        (reparse-symbol indented_block_body) [13911 14214])
+                    ("_name" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14229 14233])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [14235 14248])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14250 14258]))                          )
+                        (reparse-symbol indented_block_body) [14219 14295])
+                    ("_hom_max" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14313 14317])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [14319 14332])
+                            ("is_antigen" variable nil (reparse-symbol function_parameters) [14334 14344])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14346 14354]))                          )
+                        (reparse-symbol indented_block_body) [14300 15135])
+                    ("_postprocess_default" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15243 15247])
+                            ("name" variable nil (reparse-symbol function_parameters) [15249 15253])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15255 15268])
+                            ("replace_spaces" variable nil (reparse-symbol function_parameters) [15270 15284])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15291 15299]))                          )
+                        (reparse-symbol indented_block_body) [15218 15414])
+                    ("_postprocess_lispmds" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15444 15448])
+                            ("name" variable nil (reparse-symbol function_parameters) [15450 15454])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15456 15469])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15471 15479]))                          )
+                        (reparse-symbol indented_block_body) [15419 15660])
+                    ("_postprocess_acmacs_web_edit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15698 15702])
+                            ("name" variable nil (reparse-symbol function_parameters) [15704 15708])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15710 15723])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15725 15733]))                          )
+                        (reparse-symbol indented_block_body) [15665 15986])
+                    ("_postprocess_truncate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16017 16021])
+                            ("name" variable nil (reparse-symbol function_parameters) [16023 16027])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16029 16042])
+                            ("truncate_at" variable nil (reparse-symbol function_parameters) [16044 16055])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16057 16065]))                          )
+                        (reparse-symbol indented_block_body) [15991 16194])
+                    ("_postprocess_capitalized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16228 16232])
+                            ("name" variable nil (reparse-symbol function_parameters) [16234 16238])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16240 16253])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16255 16263]))                          )
+                        (reparse-symbol indented_block_body) [16199 16440])
+                    ("_year" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16533 16537])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16539 16552])
+                            ("year_short" variable nil (reparse-symbol function_parameters) [16554 16564])
+                            ("omit_year" variable nil (reparse-symbol function_parameters) [16572 16581])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16589 16597]))                          )
+                        (reparse-symbol indented_block_body) [16523 16792])
+                    ("_get_fields" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16813 16817])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16819 16832])
+                            ("ignore" variable nil (reparse-symbol function_parameters) [16834 16840])
+                            ("no_passage" variable nil (reparse-symbol function_parameters) [16842 16852])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16860 16868]))                          )
+                        (reparse-symbol indented_block_body) [16797 17260]))                  
+                :type "class")
+                nil [974 17260])
+            ("NameMakerInfluenza" type
+               (:superclasses ("NameMaker")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [17377 17381]))                  
+                :type "class")
+                nil [17335 17382])
+            ("sNameMaker" variable nil nil [17471 17495])
+            ("sNameMakerInfluenza" variable nil nil [17496 17538])
+            ("name_types" function nil nil [17540 17602]))          
+      :file "name_maker.py"
+      :pointmax 17768
+      :fsize 17767
+      :lastmodtime '(22329 54890 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!acmacs!acmacs!viruses!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

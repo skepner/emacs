@@ -1,0 +1,174 @@
+;; Object example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "example/"
+  :tables
+  (list
+    (semanticdb-table "example6.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("example.h" include nil nil [281 301])
+            ("pybind11/operators.h" include (:system-flag t) nil [302 333])
+            ("pybind11/stl.h" include (:system-flag t) nil [334 359])
+            ("Sequence" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [378 385])
+                    ("Sequence" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [399 411]))                          
+                        :type ("Sequence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [390 623])
+                    ("Sequence" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [638 670]))                          
+                        :type ("Sequence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [629 902])
+                    ("Sequence" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sequence" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [917 935]))                          
+                        :type ("Sequence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [908 1159])
+                    ("Sequence" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Sequence" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1174 1185])
+                            ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1185 1187]))                          
+                        :type ("Sequence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1165 1387])
+                    ("Sequence" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1393 1523])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sequence" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1549 1567]))                          
+                        :type ("Sequence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1529 1851])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Sequence" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1877 1888])
+                            ("" variable (:type ("s" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1888 1890]))                          
+                        :type ("Sequence" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1857 2220])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sequence" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2242 2260]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2226 2458])
+                    ("!=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Sequence" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2480 2498]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2464 2543])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2566 2579]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [2549 2623])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2647 2660]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [2629 2698])
+                    ("contains" function
+                       (:arguments 
+                          ( ("v" variable (:type "float") (reparse-symbol arg-sub-list) [2718 2726]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2704 2863])
+                    ("reversed" function (:type ("Sequence" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2869 3042])
+                    ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3048 3086])
+                    ("private" label nil (reparse-symbol classsubparts) [3088 3096])
+                    ("m_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3101 3115])
+                    ("m_data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [3120 3134]))                  
+                :type "class")
+                nil [361 3137])
+            ("unnamed" type
+               (:members 
+                  ( ("PySequenceIterator" type
+                       (:members 
+                          ( ("PySequenceIterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Sequence" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3260 3280])
+                                    ("ref" variable (:type ("py::object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3281 3296]))                                  
+                                :type ("PySequenceIterator" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3241 3321])
+                            ("next" function (:type "float") (reparse-symbol classsubparts) [3331 3469])
+                            ("seq" variable
+                               (:constant-flag t
+                                :type ("Sequence" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3479 3499])
+                            ("ref" variable (:type ("py::object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3508 3523])
+                            ("index" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3552 3569]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3205 3576]))                  
+                :type "namespace")
+                nil [3139 3578])
+            ("init_ex6" function
+               (:arguments 
+                  ( ("m" variable
+                       (:reference 1
+                        :type ("py::module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3595 3609]))                  
+                :type "void")
+                nil [3581 5903]))          
+      :file "example6.cpp"
+      :pointmax 5904
+      :fsize 5903
+      :lastmodtime '(22275 37521 0 0)
+      :unmatched-syntax '((punctuation 3578 . 3579) (punctuation 1887 . 1888) (punctuation 1184 . 1185)))
+    (semanticdb-table "example.h"
+      :file "example.h"
+      :fsize 112
+      :lastmodtime '(22275 37521 0 0)))
+  :file "!Users!eu!Shared!AC!Projects!seqdb!modules!pybind11!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

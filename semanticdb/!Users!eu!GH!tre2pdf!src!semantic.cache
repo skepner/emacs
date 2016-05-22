@@ -1,0 +1,2774 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "newick.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [38 57])
+            ("sstream" include (:system-flag t) nil [58 76])
+            ("stack" include (:system-flag t) nil [77 93])
+            ("regex" include (:system-flag t) nil [94 110])
+            ("axe/axe.h" include nil nil [112 132])
+            ("tree.hh" include nil nil [134 152])
+            ("NodeStack" type
+               (:typedef ("std::stack" type
+                     (:template-specifier 
+                        ( ("Node::Subtree" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [229 274])
+            ("ParsingError" type
+               (:superclasses 
+                  ( ("std::runtime_error" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [501 508])
+                    ("std::runtime_error::runtime_error" variable (:type "int") (reparse-symbol classsubparts) [515 549]))                  
+                :type "class")
+                nil [451 552])
+            ("parse_newick" function
+               (:template 
+                  ( ("I" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("tree" variable
+                       (:reference 1
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [621 632])
+                    ("begin" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [633 641])
+                    ("end" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [642 648]))                  )
+                nil [581 5245]))          
+      :file "newick.hh"
+      :pointmax 5321
+      :fsize 5320
+      :lastmodtime '(22259 37490 0 0)
+      :unmatched-syntax '((symbol 576 . 579) (symbol 565 . 575) (symbol 561 . 564) (symbol 554 . 560) (punctuation 553 . 554) (USING 509 . 514) (string 427 . 443) (symbol 419 . 426) (symbol 408 . 418) (symbol 404 . 407) (symbol 397 . 403) (punctuation 396 . 397) (symbol 374 . 378) (symbol 363 . 373) (symbol 359 . 362) (symbol 352 . 358) (punctuation 351 . 352) (symbol 32 . 36) (symbol 25 . 31) (punctuation 24 . 25)))
+    (semanticdb-table "tree-image.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cstdio" include (:system-flag t) nil [21 38])
+            ("cmath" include (:system-flag t) nil [39 55])
+            ("cassert" include (:system-flag t) nil [56 74])
+            ("map" include (:system-flag t) nil [75 89])
+            ("tree-image.hh" include nil nil [91 115])
+            ("tree.hh" include nil nil [116 134])
+            ("make_pdf" function
+               (:parent "TreeImage"
+                :arguments 
+                  ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [236 258])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [259 276])
+                    ("aColoring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [277 303])
+                    ("aNumberStrainsThreshold" variable (:type "int") (reparse-symbol arg-sub-list) [304 332])
+                    ("aShowBranchIds" variable (:type "bool") (reparse-symbol arg-sub-list) [333 353])
+                    ("aShowSubtreesTopBottom" variable (:type "bool") (reparse-symbol arg-sub-list) [354 382])
+                    ("aCanvasSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [383 407]))                  
+                :type "void")
+                nil [211 749])
+            ("setup" function
+               (:parent "TreeImage"
+                :arguments 
+                  ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [871 893])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [894 911])
+                    ("aCanvasSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [912 936]))                  
+                :type "void")
+                nil [849 3147])
+            ("draw_title" function
+               (:parent "TreeImage"
+                :type "void")
+                nil [3244 3442])
+            ("draw_legend" function
+               (:parent "TreeImage"
+                :arguments 
+                  ( ("aColoring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3572 3598]))                  
+                :type "void")
+                nil [3544 3752])
+            ("ColoringByContinent" type
+               (:superclasses 
+                  ( ("Coloring" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3902 3909])
+                    ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("aNode" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3946 3964]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3914 4046])
+                    ("draw_legend" function
+                       (:typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("aSurface" variable
+                               (:reference 1
+                                :type ("Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4084 4102])
+                            ("aLocation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4103 4129])
+                            ("aSettings" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ColoringSettings" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4130 4164]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4052 5206]))                  
+                :type "class")
+                nil [3855 5209])
+            ("coloring_by_continent" function
+               (:pointer 1
+                :parent "TreeImage"
+                :type ("Coloring" type (:type "class") nil nil))
+                nil [5211 5298])
+            ("ColoringByPos" type
+               (:superclasses 
+                  ( ("Coloring" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5452 5459])
+                    ("ColoringByPos" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aPos" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5485 5502])
+                            ("aTree" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5503 5521]))                          
+                        :type ("ColoringByPos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5464 5645])
+                    ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNode" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5675 5693]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5651 6015])
+                    ("draw_legend" function
+                       (:typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("aSurface" variable
+                               (:reference 1
+                                :type ("Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6054 6072])
+                            ("aLocation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6073 6099])
+                            ("aSettings" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ColoringSettings" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6100 6134]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6022 7132])
+                    ("private" label nil (reparse-symbol classsubparts) [7135 7143])
+                    ("mPos" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7148 7165])
+                    ("mAllAA" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7170 7189]))                  
+                :type "class")
+                nil [5411 7192])
+            ("coloring_by_pos" function
+               (:pointer 1
+                :parent "TreeImage"
+                :arguments 
+                  ( ("aPos" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7231 7248])
+                    ("aTree" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7249 7267]))                  
+                :type ("Coloring" type (:type "class") nil nil))
+                nil [7194 7315])
+            ("dump_to_json" function
+               (:parent "TreeImage"
+                :type ("json" type (:type "class") nil nil))
+                nil [7422 7708])
+            ("load_from_json" function
+               (:parent "TreeImage"
+                :arguments 
+                  ( ("j" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7843 7857]))                  
+                :type "void")
+                nil [7812 8245])
+            ("setup" function
+               (:parent "Surface"
+                :arguments 
+                  ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8371 8393])
+                    ("aCanvasSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8394 8418]))                  
+                :type "void")
+                nil [8351 8866])
+            ("line" function
+               (:parent "Surface"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8980 8998])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8999 9017])
+                    ("aColor" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9018 9038])
+                    ("aWidth" variable (:type "double") (reparse-symbol arg-sub-list) [9039 9053])
+                    ("aLineCap" variable (:type ("cairo_line_cap_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9054 9080]))                  
+                :type "void")
+                nil [8961 9372])
+            ("double_arrow" function
+               (:parent "Surface"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9493 9511])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9512 9530])
+                    ("aColor" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9531 9551])
+                    ("aLineWidth" variable (:type "double") (reparse-symbol arg-sub-list) [9552 9570])
+                    ("aArrowWidth" variable (:type "double") (reparse-symbol arg-sub-list) [9571 9590]))                  
+                :type "void")
+                nil [9466 9996])
+            ("arrow_head" function
+               (:parent "Surface"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10127 10145])
+                    ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [10146 10159])
+                    ("sign" variable (:type "double") (reparse-symbol arg-sub-list) [10160 10172])
+                    ("aColor" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10173 10193])
+                    ("aArrowWidth" variable (:type "double") (reparse-symbol arg-sub-list) [10194 10213]))                  
+                :type ("Location" type (:type "class") nil nil))
+                nil [10098 11084])
+            ("text" function
+               (:parent "Surface"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11203 11221])
+                    ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11222 11240])
+                    ("aColor" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11241 11261])
+                    ("aSize" variable (:type "double") (reparse-symbol arg-sub-list) [11262 11275])
+                    ("aFontStyle" variable (:type ("FontStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11276 11297])
+                    ("aSlant" variable (:type ("cairo_font_slant_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11298 11324])
+                    ("aWeight" variable (:type ("cairo_font_weight_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11325 11353])
+                    ("aRotation" variable (:type "double") (reparse-symbol arg-sub-list) [11354 11371]))                  
+                :type "void")
+                nil [11184 11659])
+            ("text_size" function
+               (:parent "Surface"
+                :arguments 
+                  ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11777 11795])
+                    ("aSize" variable (:type "double") (reparse-symbol arg-sub-list) [11796 11809])
+                    ("aFontStyle" variable (:type ("FontStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11810 11831])
+                    ("aSlant" variable (:type ("cairo_font_slant_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11832 11858])
+                    ("aWeight" variable (:type ("cairo_font_weight_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11859 11887])
+                    ("x_bearing" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11888 11906]))                  
+                :type ("Size" type (:type "class") nil nil))
+                nil [11753 12273])
+            ("context_prepare_for_text" function
+               (:parent "Surface"
+                :arguments 
+                  ( ("aSize" variable (:type "double") (reparse-symbol arg-sub-list) [12411 12424])
+                    ("aFontStyle" variable (:type ("FontStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12425 12446])
+                    ("aSlant" variable (:type ("cairo_font_slant_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12447 12473])
+                    ("aWeight" variable (:type ("cairo_font_weight_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12474 12502]))                  
+                :type "void")
+                nil [12372 12816])
+            ("test" function
+               (:parent "Surface"
+                :type "void")
+                nil [12930 13588])
+            ("setup" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13703 13720])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13721 13738]))                  
+                :type "void")
+                nil [13682 14125])
+            ("draw" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14241 14258])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14259 14276])
+                    ("aColoring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14277 14303])
+                    ("aNumberStrainsThreshold" variable (:type "int") (reparse-symbol arg-sub-list) [14304 14332])
+                    ("aShowBranchIds" variable (:type "bool") (reparse-symbol arg-sub-list) [14333 14353]))                  
+                :type "void")
+                nil [14221 14461])
+            ("draw_node" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14581 14598])
+                    ("aNode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14599 14617])
+                    ("aLeft" variable (:type "double") (reparse-symbol arg-sub-list) [14618 14631])
+                    ("aColoring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14632 14658])
+                    ("aNumberStrainsThreshold" variable (:type "int") (reparse-symbol arg-sub-list) [14659 14687])
+                    ("aShowBranchIds" variable (:type "bool") (reparse-symbol arg-sub-list) [14688 14708])
+                    ("aEdgeLength" variable (:type "double") (reparse-symbol arg-sub-list) [14709 14728]))                  
+                :type "void")
+                nil [14556 16242])
+            ("show_branch_annotation" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("surface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16380 16397])
+                    ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16398 16420])
+                    ("branch_annotation" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16421 16451])
+                    ("branch_left" variable (:type "double") (reparse-symbol arg-sub-list) [16452 16471])
+                    ("branch_right" variable (:type "double") (reparse-symbol arg-sub-list) [16472 16492])
+                    ("branch_y" variable (:type "double") (reparse-symbol arg-sub-list) [16493 16509]))                  
+                :type "void")
+                nil [16342 18208])
+            ("show_branch_id" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("surface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18351 18368])
+                    ("id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18369 18384])
+                    ("branch_left" variable (:type "double") (reparse-symbol arg-sub-list) [18385 18404])
+                    ("branch_y" variable (:type "double") (reparse-symbol arg-sub-list) [18405 18421]))                  
+                :type "void")
+                nil [18321 18727])
+            ("adjust_label_scale" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18866 18883])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18884 18901])
+                    ("tree_right_margin" variable (:type "double") (reparse-symbol arg-sub-list) [18902 18927]))                  
+                :type "void")
+                nil [18832 19736])
+            ("adjust_horizontal_step" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19883 19900])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19901 19918])
+                    ("tree_right_margin" variable (:type "double") (reparse-symbol arg-sub-list) [19919 19944]))                  
+                :type "void")
+                nil [19845 20316])
+            ("tree_width" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20457 20474])
+                    ("aNode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20475 20493])
+                    ("aEdgeLength" variable (:type "double") (reparse-symbol arg-sub-list) [20494 20513]))                  
+                :type "double")
+                nil [20429 21185])
+            ("find_branch_annotation" function
+               (:parent "TreePart"
+                :constant-flag t
+                :arguments 
+                  ( ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21353 21375]))                  
+                :type ("TreePart::BranchAnnotation" type (:type "class") nil nil))
+                nil [21286 21602])
+            ("dump_to_json" function
+               (:parent "TreePart"
+                :type ("json" type (:type "class") nil nil))
+                nil [21715 22674])
+            ("load_from_json" function
+               (:parent "TreePart"
+                :arguments 
+                  ( ("j" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22807 22821]))                  
+                :type "void")
+                nil [22777 23540])
+            ("setup" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23668 23689])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23690 23707]))                  
+                :type "void")
+                nil [23645 24599])
+            ("draw" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24719 24736])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24737 24754])
+                    ("aColoring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24755 24781])
+                    ("aShowSubtreesTopBottom" variable (:type "bool") (reparse-symbol arg-sub-list) [24782 24810]))                  
+                :type "void")
+                nil [24697 25049])
+            ("draw_labels" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25175 25192]))                  
+                :type "void")
+                nil [25146 26014])
+            ("draw_labels_at_side" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("surface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26155 26172])
+                    ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26173 26191])
+                    ("label_font_size" variable (:type "double") (reparse-symbol arg-sub-list) [26192 26215])
+                    ("month_max_width" variable (:type "double") (reparse-symbol arg-sub-list) [26216 26239]))                  
+                :type "void")
+                nil [26118 26800])
+            ("draw_month_separators" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26943 26960]))                  
+                :type "void")
+                nil [26904 27306])
+            ("draw_dashes" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27449 27466])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27467 27484])
+                    ("aColoring" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27485 27511]))                  
+                :type "void")
+                nil [27420 28161])
+            ("draw_subtree_top_bottom" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28306 28323])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28324 28341]))                  
+                :type "void")
+                nil [28265 29329])
+            ("dump_to_json" function
+               (:parent "TimeSeries"
+                :type ("json" type (:type "class") nil nil))
+                nil [29445 30397])
+            ("load_from_json" function
+               (:parent "TimeSeries"
+                :arguments 
+                  ( ("j" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30534 30548]))                  
+                :type "void")
+                nil [30502 31376])
+            ("setup" function
+               (:parent "Clades"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31502 31519])
+                    ("aTre" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31520 31537]))                  
+                :type "void")
+                nil [31483 32364])
+            ("draw" function
+               (:parent "Clades"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32476 32493])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32494 32515]))                  
+                :type "void")
+                nil [32458 32658])
+            ("draw_clade" function
+               (:parent "Clades"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32775 32792])
+                    ("aClade" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CladeArrow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32793 32818]))                  
+                :type "void")
+                nil [32751 34541])
+            ("assign_slots" function
+               (:parent "Clades"
+                :arguments 
+                  ( ("aMain" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34666 34683]))                  
+                :type "void")
+                nil [34640 35434])
+            ("dump_to_json" function
+               (:parent "Clades"
+                :type ("json" type (:type "class") nil nil))
+                nil [35535 36762])
+            ("load_from_json" function
+               (:parent "Clades"
+                :arguments 
+                  ( ("j" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36891 36905]))                  
+                :type "void")
+                nil [36863 37853]))          
+      :file "tree-image.cc"
+      :pointmax 37955
+      :fsize 37954
+      :lastmodtime '(22250 24116 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tree.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("fstream" include (:system-flag t) nil [21 39])
+            ("cctype" include (:system-flag t) nil [40 57])
+            ("ctime" include (:system-flag t) nil [58 74])
+            ("cstdlib" include (:system-flag t) nil [75 93])
+            ("map" include (:system-flag t) nil [94 108])
+            ("list" include (:system-flag t) nil [109 124])
+            ("algorithm" include (:system-flag t) nil [125 145])
+            ("fcntl.h" include (:system-flag t) nil [146 164])
+            ("unistd.h" include (:system-flag t) nil [165 184])
+            ("cstring" include (:system-flag t) nil [185 203])
+            ("tree.hh" include nil nil [205 223])
+            ("tree-image.hh" include nil nil [224 248])
+            ("xz.hh" include nil nil [249 265])
+            ("width_height" function
+               (:parent "Node"
+                :type ("std::pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("size_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [342 798])
+            ("months_from" function
+               (:parent "Node"
+                :arguments 
+                  ( ("aStart" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [919 938]))                  
+                :type "int")
+                nil [897 1016])
+            ("ladderize" function
+               (:parent "Node"
+                :type "void")
+                nil [1111 3232])
+            ("analyse" function
+               (:parent "Tree"
+                :type "void")
+                nil [3328 3819])
+            ("min_max_date" function
+               (:parent "Tree"
+                :type ("std::pair" type
+                     (:template-specifier 
+                        ( ("Date" type nil nil nil)
+                          ("Date" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3913 4413])
+            ("min_max_edge" function
+               (:parent "Tree"
+                :type ("std::pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4512 5037])
+            ("top_bottom_nodes_of_subtree" function
+               (:parent "Tree"
+                :arguments 
+                  ( ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5206 5228]))                  
+                :type ("std::pair" type
+                     (:template-specifier 
+                        ( ("Node" type
+                             (:pointer 1
+                              :constant-flag t)
+                              nil nil)
+                          ("Node" type
+                             (:pointer 1
+                              :constant-flag t)
+                              nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5136 5493])
+            ("print" function
+               (:parent "Tree"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5624 5642]))                  
+                :type "void")
+                nil [5607 6452])
+            ("print_edges" function
+               (:parent "Tree"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6567 6585]))                  
+                :type "void")
+                nil [6544 7224])
+            ("fix_labels" function
+               (:parent "Tree"
+                :type "void")
+                nil [7322 7993])
+            ("load_from_json" function
+               (:arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8110 8122])
+                    ("j" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8123 8137]))                  
+                :type "void")
+                nil [8090 9197])
+            ("dump_to_json" function
+               (:arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9310 9328]))                  
+                :type ("json" type (:type "class") nil nil))
+                nil [9292 10136])
+            ("tree_from_json" function
+               (:arguments 
+                  ( ("aTree" variable
+                       (:reference 1
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10233 10245])
+                    ("aSource" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10246 10266])
+                    ("aTreeImage" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10267 10289]))                  
+                :type "void")
+                nil [10213 10756])
+            ("tree_to_json" function
+               (:arguments 
+                  ( ("aTree" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10869 10887])
+                    ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10888 10910])
+                    ("aCreator" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10911 10932])
+                    ("aTreeImage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10933 10961]))                  
+                :type "void")
+                nil [10851 11939]))          
+      :file "tree.cc"
+      :pointmax 12031
+      :fsize 12030
+      :lastmodtime '(22256 9950 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tre2pdf.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("command-line-arguments.hh" include nil nil [40 76])
+            ("tree.hh" include nil nil [78 96])
+            ("tree-image.hh" include nil nil [97 121])
+            ("tree-import.hh" include nil nil [122 147])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [233 242])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [243 262]))                  
+                :type "int")
+                nil [224 3921]))          
+      :file "tre2pdf.cc"
+      :pointmax 3997
+      :fsize 3996
+      :lastmodtime '(22256 8707 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tree.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("vector" include (:system-flag t) nil [33 50])
+            ("json.hh" include nil nil [52 70])
+            ("date.hh" include nil nil [71 89])
+            ("Node" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [180 187])
+                    ("Subtree" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("Node" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [192 226])
+                    ("Node" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [232 296])
+                    ("Node" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [597 615])
+                            ("aEdgeLength" variable (:type "double") (reparse-symbol arg-sub-list) [616 635])
+                            ("aDate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "Date()"
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [636 662]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [585 750])
+                    ("edge_length" variable (:type "double") (reparse-symbol classsubparts) [837 856])
+                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [903 920])
+                    ("date" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [994 1004])
+                    ("line_no" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1009 1024])
+                    ("continent" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1099 1121])
+                    ("clades" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1126 1158])
+                    ("aa_at" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1163 1174])
+                    ("subtree" variable (:type ("Subtree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1202 1218])
+                    ("top" variable (:type "double") (reparse-symbol classsubparts) [1223 1242])
+                    ("bottom" variable (:type "double") (reparse-symbol classsubparts) [1223 1242])
+                    ("number_strains" variable (:type "int") (reparse-symbol classsubparts) [1277 1296])
+                    ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1372 1394])
+                    ("ladderize_max_edge_length" variable (:type "double") (reparse-symbol classsubparts) [1456 1489])
+                    ("ladderize_max_date" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1494 1518])
+                    ("ladderize_max_name_alphabetically" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1523 1569])
+                    ("is_leaf" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1575 1647])
+                    ("middle" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [1652 1758])
+                    ("width_height" function
+                       (:prototype-flag t
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil)
+                                  ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1763 1810])
+                    ("months_from" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aStart" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1831 1850]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1815 1857])
+                    ("ladderize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1925 1942])
+                    ("display_name" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1948 2335])
+                    ("private" label nil (reparse-symbol classsubparts) [2338 2346]))                  
+                :type "class")
+                nil [166 2390])
+            ("Tree" type
+               (:superclasses 
+                  ( ("Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2509 2516])
+                    ("analyse" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2521 2536])
+                    ("print" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2552 2570]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2541 2577])
+                    ("print_edges" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2599 2617]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2582 2624])
+                    ("fix_labels" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2629 2647])
+                    ("min_max_date" function
+                       (:prototype-flag t
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("Date" type nil nil nil)
+                                  ("Date" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2652 2695])
+                    ("min_max_edge" function
+                       (:prototype-flag t
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil)
+                                  ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2700 2747])
+                    ("top_bottom_nodes_of_subtree" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2816 2838]))                          
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("Node" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil)
+                                  ("Node" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2752 2845])
+                    ("previously_updated" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aUpdated" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2882 2896]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2851 2931])
+                    ("previously_updated" function
+                       (:typemodifiers ("inline")
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2936 3005])
+                    ("private" label nil (reparse-symbol classsubparts) [3008 3016])
+                    ("mPreviouslyUpdated" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3021 3045]))                  
+                :type "class")
+                nil [2481 3049])
+            ("nope" function
+               (:template 
+                  ( ("N" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("N" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3179 3182]))                  
+                :typemodifiers ("inline"))
+                nil [3140 3185])
+            ("iterate" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :type ("N" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3389 3398])
+                    ("f_name" variable (:type ("F1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3399 3409])
+                    ("f_subtree_pre" variable
+                       (:default-value "nope"
+                        :type ("F2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3410 3433])
+                    ("f_subtree_post" variable
+                       (:default-value "nope"
+                        :type ("F3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3435 3459]))                  
+                :type "void")
+                nil [3369 3762])
+            ("find_node" function
+               (:template 
+                  ( ("P" type (:type "class") nil nil))                  
+                :type ("Node" type (:type "class") nil nil)
+                :arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3890 3908])
+                    ("predicate" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3909 3921]))                  
+                :constant-flag t
+                :typemodifiers ("inline")
+                :pointer 1)
+                nil [3839 4220])
+            ("find_first_leaf" function
+               (:typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4332 4350]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [4297 4431])
+            ("find_last_leaf" function
+               (:typemodifiers ("inline")
+                :constant-flag t
+                :arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4467 4485]))                  
+                :type ("Node" type (:type "class") nil nil))
+                nil [4433 4564])
+            ("TreeImage" type
+               (:prototype t
+                :type "class")
+                nil [4641 4657])
+            ("TREE_JSON_DUMP_VERSION" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"phylogenetic-tree-v1\""
+                :type "char")
+                nil [4669 4729])
+            ("dump_to_json" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4749 4767]))                  
+                :type ("json" type (:type "class") nil nil))
+                nil [4731 4768])
+            ("load_from_json" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aNode" variable
+                       (:reference 1
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4789 4801])
+                    ("j" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4802 4816]))                  
+                :type "void")
+                nil [4769 4817])
+            ("tree_from_json" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aTree" variable
+                       (:reference 1
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4838 4850])
+                    ("aSource" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4851 4871])
+                    ("aTreeImage" variable
+                       (:reference 1
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4872 4894]))                  
+                :type "void")
+                nil [4818 4895])
+            ("tree_to_json" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aTree" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Tree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4914 4932])
+                    ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4933 4955])
+                    ("aCreator" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4956 4977])
+                    ("aTreeImage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4978 5006]))                  
+                :type "void")
+                nil [4896 5007]))          
+      :file "tree.hh"
+      :pointmax 5083
+      :fsize 5082
+      :lastmodtime '(22256 9950 0 0)
+      :unmatched-syntax '((symbol 4659 . 4668) (punctuation 3367 . 3368) (semantic-list 3363 . 3367) (semantic-list 3360 . 3363) (VOID 3356 . 3360) (punctuation 3354 . 3355) (symbol 3351 . 3353) (TYPENAME 3342 . 3350) (punctuation 3340 . 3341) (semantic-list 3336 . 3340) (semantic-list 3333 . 3336) (VOID 3329 . 3333) (punctuation 3327 . 3328) (symbol 3324 . 3326) (TYPENAME 3315 . 3323) (punctuation 3313 . 3314) (semantic-list 3309 . 3313) (semantic-list 3306 . 3309) (VOID 3302 . 3306) (punctuation 3300 . 3301) (symbol 3297 . 3299) (TYPENAME 3288 . 3296) (punctuation 3286 . 3287) (symbol 3285 . 3286) (TYPENAME 3276 . 3284) (punctuation 3275 . 3276) (TEMPLATE 3266 . 3274) (punctuation 2385 . 2386) (DEFAULT 2378 . 2385) (punctuation 2376 . 2377) (semantic-list 2362 . 2375) (symbol 2358 . 2362) (INLINE 2351 . 2357) (punctuation 795 . 796) (DEFAULT 788 . 795) (punctuation 786 . 787) (semantic-list 777 . 785) (punctuation 776 . 777) (OPERATOR 768 . 776) (punctuation 783 . 784) (punctuation 766 . 767) (symbol 762 . 766) (punctuation 783 . 784) (INLINE 755 . 761) (punctuation 783 . 784) (punctuation 330 . 331) (DEFAULT 323 . 330) (punctuation 321 . 322) (semantic-list 312 . 320) (symbol 308 . 312) (punctuation 318 . 319) (INLINE 301 . 307) (punctuation 318 . 319) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "tree-image.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("stdexcept" include (:system-flag t) nil [33 53])
+            ("functional" include (:system-flag t) nil [54 75])
+            ("cairo.hh" include nil nil [77 96])
+            ("date.hh" include nil nil [97 115])
+            ("color.hh" include nil nil [116 135])
+            ("json.hh" include nil nil [136 154])
+            ("Tree" type
+               (:prototype t
+                :type "class")
+                nil [304 315])
+            ("Node" type
+               (:prototype t
+                :type "class")
+                nil [316 327])
+            ("TreeImage" type
+               (:prototype t
+                :type "class")
+                nil [328 344])
+            ("TreeImageError" type
+               (:superclasses 
+                  ( ("std::runtime_error" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [473 480])
+                    ("std::runtime_error::runtime_error" variable (:type "int") (reparse-symbol classsubparts) [487 521]))                  
+                :type "class")
+                nil [421 524])
+            ("Location" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [619 626])
+                    ("Location" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [631 664])
+                    ("Location" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aX" variable (:type "double") (reparse-symbol arg-sub-list) [685 695])
+                            ("aY" variable (:type "double") (reparse-symbol arg-sub-list) [696 706]))                          
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [669 724])
+                    ("x" variable (:type "double") (reparse-symbol classsubparts) [729 741])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [729 741]))                  
+                :type "class")
+                nil [601 745])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [799 817])
+                    ("aLocation" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [818 844]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [765 901])
+            ("Size" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [993 1000])
+                    ("Size" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1005 1043])
+                    ("Size" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aWidth" variable (:type "double") (reparse-symbol arg-sub-list) [1060 1074])
+                            ("aHeight" variable (:type "double") (reparse-symbol arg-sub-list) [1075 1090]))                          
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1048 1126])
+                    ("width" variable (:type "double") (reparse-symbol classsubparts) [1131 1152])
+                    ("height" variable (:type "double") (reparse-symbol classsubparts) [1131 1152]))                  
+                :type "class")
+                nil [979 1156])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1206 1224])
+                    ("aSize" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1225 1243]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1172 1301])
+            ("+" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1331 1349])
+                    ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1350 1364]))                  
+                :type ("Location" type (:type "class") nil nil))
+                nil [1303 1412])
+            ("-" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1561 1579])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1580 1598]))                  
+                :type ("Size" type (:type "class") nil nil))
+                nil [1537 1637])
+            ("-" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1663 1677])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1678 1696]))                  
+                :type ("Size" type (:type "class") nil nil))
+                nil [1639 1744])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1770 1784])
+                    ("v" variable (:type "double") (reparse-symbol arg-sub-list) [1785 1794]))                  
+                :type ("Size" type (:type "class") nil nil))
+                nil [1746 1838])
+            ("Viewport" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1933 1940])
+                    ("Viewport" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Viewport" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1945 1965])
+                    ("Viewport" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1986 2004])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2005 2019]))                          
+                        :type ("Viewport" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1970 2043])
+                    ("Viewport" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2064 2082])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2083 2101]))                          
+                        :type ("Viewport" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2048 2129])
+                    ("opposite" function
+                       (:typemodifiers ("inline")
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2134 2192])
+                    ("origin" variable (:type ("Location" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2197 2213])
+                    ("size" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2218 2228]))                  
+                :type "class")
+                nil [1915 2232])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2286 2304])
+                    ("aViewport" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Viewport" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2305 2331]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [2252 2416])
+            ("Surface" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2511 2518])
+                    ("FontStyle" type
+                       (:members 
+                          ( ("FONT_DEFAULT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2540 2553])
+                            ("FONT_MONOSPACE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2554 2570]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2523 2571])
+                    ("Surface" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2577 2616])
+                    ("Surface" function
+                       (:destructor-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2622 2737])
+                    ("setup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2754 2776])
+                            ("aCanvasSize" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2777 2801]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2743 2802])
+                    ("canvas_size" function
+                       (:constant-flag t
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2808 2863])
+                    ("line" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2879 2897])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2898 2916])
+                            ("aColor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2917 2937])
+                            ("aWidth" variable (:type "double") (reparse-symbol arg-sub-list) [2938 2952])
+                            ("aLineCap" variable
+                               (:default-value "CAIRO_LINE_CAP_BUTT"
+                                :type ("cairo_line_cap_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2953 3000]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2869 3002])
+                    ("double_arrow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3025 3043])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3044 3062])
+                            ("aColor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3063 3083])
+                            ("aLineWidth" variable (:type "double") (reparse-symbol arg-sub-list) [3084 3102])
+                            ("aArrowWidth" variable (:type "double") (reparse-symbol arg-sub-list) [3103 3122]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3007 3123])
+                    ("text" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3138 3156])
+                            ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3157 3175])
+                            ("aColor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3176 3196])
+                            ("aSize" variable (:type "double") (reparse-symbol arg-sub-list) [3197 3210])
+                            ("aFontStyle" variable
+                               (:default-value "FONT_DEFAULT"
+                                :type ("FontStyle" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3211 3246])
+                            ("aSlant" variable
+                               (:default-value "CAIRO_FONT_SLANT_NORMAL"
+                                :type ("cairo_font_slant_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3248 3299])
+                            ("aWeight" variable
+                               (:default-value "CAIRO_FONT_WEIGHT_NORMAL"
+                                :type ("cairo_font_weight_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3301 3355])
+                            ("aRotation" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [3357 3377]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3128 3379])
+                    ("text_size" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3400 3418])
+                            ("aSize" variable (:type "double") (reparse-symbol arg-sub-list) [3419 3432])
+                            ("aFontStyle" variable (:type ("FontStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3433 3454])
+                            ("aSlant" variable (:type ("cairo_font_slant_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3455 3481])
+                            ("aWeight" variable (:type ("cairo_font_weight_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3482 3510])
+                            ("x_bearing" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [3511 3538]))                          
+                        :type ("Size" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3385 3540])
+                    ("test" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3546 3558])
+                    ("private" label nil (reparse-symbol classsubparts) [3561 3569])
+                    ("mContext" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3574 3592])
+                    ("mCanvasSize" variable (:type ("Size" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3597 3614])
+                    ("arrow_head" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3640 3658])
+                            ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [3659 3672])
+                            ("sign" variable (:type "double") (reparse-symbol arg-sub-list) [3673 3685])
+                            ("aColor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3686 3706])
+                            ("aArrowWidth" variable (:type "double") (reparse-symbol arg-sub-list) [3707 3726]))                          
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3620 3727])
+                    ("context_prepare_for_text" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aSize" variable (:type "double") (reparse-symbol arg-sub-list) [3762 3775])
+                            ("aFontStyle" variable (:type ("FontStyle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3776 3797])
+                            ("aSlant" variable (:type ("cairo_font_slant_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3798 3824])
+                            ("aWeight" variable (:type ("cairo_font_weight_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3825 3853]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3732 3854]))                  
+                :type "class")
+                nil [2494 3858])
+            ("ColoringSettings" type
+               (:members 
+                  ( ("legend_show" variable (:type "bool") (reparse-symbol classsubparts) [3982 3999])
+                    ("legend_font_size" variable (:type "double") (reparse-symbol classsubparts) [4004 4028])
+                    ("legend_font_style" variable (:type ("Surface::FontStyle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4033 4070])
+                    ("legend_font_slant" variable (:type ("cairo_font_slant_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4075 4112])
+                    ("legend_font_weight" variable (:type ("cairo_font_weight_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4117 4156])
+                    ("legend_offset_x" variable (:type "double") (reparse-symbol classsubparts) [4161 4184])
+                    ("legend_offset_y" variable (:type "double") (reparse-symbol classsubparts) [4189 4212])
+                    ("legend_interline" variable (:type "double") (reparse-symbol classsubparts) [4217 4241])
+                    ("ColoringSettings" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("ColoringSettings" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [4247 4303])
+                    ("load_from_json" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("j" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("json" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4336 4350]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4309 5662])
+                    ("json" function (:type "int") (reparse-symbol classsubparts) [5684 7114]))                  
+                :type "struct")
+                nil [3952 7117])
+            ("Coloring" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7212 7219])
+                    ("()" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7351 7363]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7326 7374])
+                    ("draw_legend" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aSurface" variable
+                               (:reference 1
+                                :type ("Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7404 7422])
+                            ("aLocation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7423 7449])
+                            ("aSettings" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ColoringSettings" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7450 7484]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7379 7495]))                  
+                :type "class")
+                nil [7194 7498])
+            ("ColoringBlack" type
+               (:superclasses 
+                  ( ("Coloring" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7541 7548])
+                    ("()" function
+                       (:operator-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7585 7597]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7553 7617])
+                    ("draw_legend" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7647 7656])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7657 7673])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ColoringSettings" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7674 7698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7622 7707]))                  
+                :type "class")
+                nil [7500 7710])
+            ("TimeSeries" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7807 7814])
+                    ("TimeSeries" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("TimeSeries" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7819 8031])
+                    ("width" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [8037 8120])
+                    ("show" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8125 8167])
+                    ("setup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8184 8201])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8202 8219]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8173 8220])
+                    ("draw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8235 8252])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8253 8270])
+                            ("aColoring" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Coloring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8271 8297])
+                            ("aShowSubtreesTopBottom" variable (:type "bool") (reparse-symbol arg-sub-list) [8298 8326]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8225 8327])
+                    ("origin" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8333 8390])
+                    ("origin" function
+                       (:typemodifiers ("inline")
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8395 8440])
+                    ("origin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aOrigin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8464 8488]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8445 8511])
+                    ("dump_to_json" function
+                       (:prototype-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8517 8543])
+                    ("load_from_json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("j" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("json" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8568 8582]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8548 8583])
+                    ("private" label nil (reparse-symbol classsubparts) [8586 8594])
+                    ("SubtreeTopBottom" type
+                       (:members 
+                          ( ("show" variable (:type "bool") (reparse-symbol classsubparts) [8637 8647])
+                            ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8656 8678])
+                            ("line_color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8687 8704])
+                            ("line_width" variable (:type "double") (reparse-symbol classsubparts) [8713 8731])
+                            ("draw_top" variable (:type "bool") (reparse-symbol classsubparts) [8740 8754])
+                            ("draw_bottom" variable (:type "bool") (reparse-symbol classsubparts) [8763 8780])
+                            ("SubtreeTopBottom" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("json" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8860 8874]))                                  
+                                :type ("SubtreeTopBottom" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [8836 9262])
+                            ("json" function (:type "int") (reparse-symbol classsubparts) [9288 9649]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [8599 9656])
+                    ("mShow" variable (:type "bool") (reparse-symbol classsubparts) [9662 9673])
+                    ("mBegin" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9678 9696])
+                    ("mEnd" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9678 9696])
+                    ("mMonthWidth" variable (:type "double") (reparse-symbol classsubparts) [9701 9720])
+                    ("mDashWidth" variable (:type "double") (reparse-symbol classsubparts) [9725 9743])
+                    ("mDashLineWidth" variable (:type "double") (reparse-symbol classsubparts) [9789 9811])
+                    ("mMonthLabelScale" variable (:type "double") (reparse-symbol classsubparts) [9835 9859])
+                    ("mMaxNumberOfMonths" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9864 9890])
+                    ("mMonthSeparatorColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9895 9922])
+                    ("mMonthSeparatorWidth" variable (:type "double") (reparse-symbol classsubparts) [9927 9955])
+                    ("mSubtreeTopBottom" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("SubtreeTopBottom" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9960 10008])
+                    ("mNumberOfMonths" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10014 10037])
+                    ("mOrigin" variable (:type ("Location" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10042 10059])
+                    ("draw_labels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10082 10099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10065 10100])
+                    ("draw_labels_at_side" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("surface" variable
+                               (:reference 1
+                                :type ("Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10130 10147])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10148 10166])
+                            ("label_font_size" variable (:type "double") (reparse-symbol arg-sub-list) [10167 10190])
+                            ("month_max_width" variable (:type "double") (reparse-symbol arg-sub-list) [10191 10214]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10105 10215])
+                    ("draw_month_separators" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10247 10264]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10220 10265])
+                    ("draw_dashes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10287 10304])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10305 10322])
+                            ("aColoring" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Coloring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10323 10349]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10270 10350])
+                    ("draw_subtree_top_bottom" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10384 10401])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10402 10419]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10355 10420]))                  
+                :type "class")
+                nil [7787 10423])
+            ("Clades" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10516 10523])
+                    ("Clades" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Clades" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10528 10856])
+                    ("width" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [10862 10922])
+                    ("show" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10927 10969])
+                    ("show" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aShow" variable (:type "bool") (reparse-symbol arg-sub-list) [10991 11002]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10974 11021])
+                    ("setup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11038 11055])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11056 11073]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11027 11074])
+                    ("draw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11089 11106])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11107 11124]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11079 11125])
+                    ("origin" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11131 11188])
+                    ("origin" function
+                       (:typemodifiers ("inline")
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11193 11238])
+                    ("origin" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aOrigin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11262 11286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11243 11309])
+                    ("dump_to_json" function
+                       (:prototype-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11315 11341])
+                    ("load_from_json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("j" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("json" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11366 11380]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11346 11381])
+                    ("private" label nil (reparse-symbol classsubparts) [11384 11392])
+                    ("mShow" variable (:type "bool") (reparse-symbol classsubparts) [11397 11408])
+                    ("mSlotWidth" variable (:type "double") (reparse-symbol classsubparts) [11413 11431])
+                    ("mLineWidth" variable (:type "double") (reparse-symbol classsubparts) [11436 11454])
+                    ("mArrowWidth" variable (:type "double") (reparse-symbol classsubparts) [11459 11478])
+                    ("mArrowColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11483 11501])
+                    ("mArrowExtra" variable (:type "double") (reparse-symbol classsubparts) [11506 11525])
+                    ("mLabelColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11568 11586])
+                    ("mLabelFontSize" variable (:type "double") (reparse-symbol classsubparts) [11591 11613])
+                    ("mSeparatorColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11618 11640])
+                    ("mSeparatorWidth" variable (:type "double") (reparse-symbol classsubparts) [11645 11668])
+                    ("mSeparatorJustInTree" variable (:type "bool") (reparse-symbol classsubparts) [11673 11699])
+                    ("mSeparatorJustInTimeSeries" variable (:type "bool") (reparse-symbol classsubparts) [11796 11828])
+                    ("mOrigin" variable (:type ("Location" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11925 11942])
+                    ("mWidth" variable (:type "double") (reparse-symbol classsubparts) [11947 11961])
+                    ("CladeArrow" type
+                       (:members 
+                          ( ("show" variable (:type "bool") (reparse-symbol classsubparts) [11999 12009])
+                            ("begin" variable (:type "int") (reparse-symbol classsubparts) [12018 12028])
+                            ("end" variable (:type "int") (reparse-symbol classsubparts) [12037 12045])
+                            ("label" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12054 12072])
+                            ("id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12081 12096])
+                            ("slot" variable (:type "int") (reparse-symbol classsubparts) [12105 12114])
+                            ("label_position" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12123 12150])
+                            ("label_position_offset" variable (:type "double") (reparse-symbol classsubparts) [12188 12217])
+                            ("label_rotation" variable (:type "double") (reparse-symbol classsubparts) [12226 12248])
+                            ("label_offset" variable (:type "double") (reparse-symbol classsubparts) [12257 12277])
+                            ("CladeArrow" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("aBegin" variable (:type "int") (reparse-symbol arg-sub-list) [12344 12355])
+                                    ("aEnd" variable (:type "int") (reparse-symbol arg-sub-list) [12356 12365])
+                                    ("aLabel" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12366 12385])
+                                    ("aId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12386 12402]))                                  
+                                :type ("CladeArrow" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [12326 12598])
+                            ("CladeArrow" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("json" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12626 12640]))                                  
+                                :type ("CladeArrow" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [12608 13282])
+                            ("json" function (:type "int") (reparse-symbol classsubparts) [13308 13845]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [11967 13852])
+                    ("mClades" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("CladeArrow" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13858 13890])
+                    ("mPerClade" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("CladeArrow" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13895 13939])
+                    ("add_clade" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aBegin" variable (:type "int") (reparse-symbol arg-sub-list) [13967 13978])
+                            ("aEnd" variable (:type "int") (reparse-symbol arg-sub-list) [13979 13988])
+                            ("aLabel" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13989 14008])
+                            ("aId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14009 14025]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13945 14854])
+                    ("assign_slots" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14878 14895]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14860 14896])
+                    ("draw_clade" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14917 14934])
+                            ("aClade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CladeArrow" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14935 14960]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14901 14961]))                  
+                :type "class")
+                nil [10500 14965])
+            ("TreePart" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [15076 15083])
+                    ("TreePart" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("TreePart" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15088 15256])
+                    ("origin" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Location" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15262 15319])
+                    ("width" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [15324 15370])
+                    ("name_offset" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [15375 15432])
+                    ("vertical_step" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [15437 15498])
+                    ("number_of_lines" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15503 15567])
+                    ("setup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15584 15601])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15602 15619]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15573 15620])
+                    ("adjust_label_scale" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15649 15666])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15667 15684])
+                            ("tree_right_margin" variable (:type "double") (reparse-symbol arg-sub-list) [15685 15710]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15625 15711])
+                    ("adjust_horizontal_step" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15744 15761])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15762 15779])
+                            ("tree_right_margin" variable (:type "double") (reparse-symbol arg-sub-list) [15780 15805]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15716 15806])
+                    ("draw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15821 15838])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15839 15856])
+                            ("aColoring" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Coloring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15857 15883])
+                            ("aNumberStrainsThreshold" variable (:type "int") (reparse-symbol arg-sub-list) [15884 15912])
+                            ("aShowBranchIds" variable (:type "bool") (reparse-symbol arg-sub-list) [15913 15933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15811 15934])
+                    ("dump_to_json" function
+                       (:prototype-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15940 15966])
+                    ("load_from_json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("j" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("json" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15991 16005]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [15971 16006])
+                    ("private" label nil (reparse-symbol classsubparts) [16009 16017])
+                    ("BranchAnnotation" type
+                       (:members 
+                          ( ("show" variable (:type "bool") (reparse-symbol classsubparts) [16060 16070])
+                            ("id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16079 16094])
+                            ("label" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16124 16142])
+                            ("color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16151 16163])
+                            ("font_size" variable (:type "double") (reparse-symbol classsubparts) [16172 16189])
+                            ("label_offset_x" variable (:type "double") (reparse-symbol classsubparts) [16198 16220])
+                            ("label_offset_y" variable (:type "double") (reparse-symbol classsubparts) [16229 16251])
+                            ("label_interleave" variable (:type "double") (reparse-symbol classsubparts) [16260 16284])
+                            ("show_line" variable (:type "bool") (reparse-symbol classsubparts) [16293 16308])
+                            ("line_color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16317 16334])
+                            ("line_width" variable (:type "double") (reparse-symbol classsubparts) [16343 16361])
+                            ("line_x" variable (:type "double") (reparse-symbol classsubparts) [16370 16384])
+                            ("line_y" variable (:type "double") (reparse-symbol classsubparts) [16393 16407])
+                            ("branch_id_color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16416 16438])
+                            ("branch_id_font_size" variable (:type "double") (reparse-symbol classsubparts) [16447 16474])
+                            ("branch_id_offset_x" variable (:type "double") (reparse-symbol classsubparts) [16483 16509])
+                            ("branch_id_offset_y" variable (:type "double") (reparse-symbol classsubparts) [16518 16544])
+                            ("BranchAnnotation" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("aId" variable
+                                       (:default-value "\"\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16578 16598]))                                  
+                                :type ("BranchAnnotation" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [16554 16625])
+                            ("BranchAnnotation" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("json" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16659 16673]))                                  
+                                :type ("BranchAnnotation" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [16635 17708])
+                            ("json" function (:type "int") (reparse-symbol classsubparts) [17734 18665])
+                            ("make_json_for_branch_annotations_all" function
+                               (:typemodifiers ("inline")
+                                :type ("json" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18675 18883])
+                            ("defaults" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [18893 19507]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [16022 19514])
+                    ("mHorizontalStep" variable (:type "double") (reparse-symbol classsubparts) [19520 19543])
+                    ("mLineWidth" variable (:type "double") (reparse-symbol classsubparts) [19548 19566])
+                    ("mLabelScale" variable (:type "double") (reparse-symbol classsubparts) [19612 19631])
+                    ("mLineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19636 19653])
+                    ("mNameOffset" variable (:type "double") (reparse-symbol classsubparts) [19658 19677])
+                    ("mRootEdge" variable (:type "double") (reparse-symbol classsubparts) [19682 19699])
+                    ("mWidth" variable (:type "double") (reparse-symbol classsubparts) [19705 19719])
+                    ("mNumberOfLines" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19724 19746])
+                    ("mVerticalStep" variable (:type "double") (reparse-symbol classsubparts) [19751 19772])
+                    ("mOrigin" variable (:type ("Location" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19819 19836])
+                    ("mBranchAnnotationsAll" variable (:type ("BranchAnnotation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19841 19880])
+                    ("mBranchAnnotations" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("BranchAnnotation" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [19885 19934])
+                    ("draw_node" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19978 19995])
+                            ("aNode" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19996 20014])
+                            ("aLeft" variable (:type "double") (reparse-symbol arg-sub-list) [20015 20028])
+                            ("aColoring" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Coloring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20029 20055])
+                            ("aNumberStrainsThreshold" variable (:type "int") (reparse-symbol arg-sub-list) [20056 20084])
+                            ("aShowBranchIds" variable (:type "bool") (reparse-symbol arg-sub-list) [20085 20105])
+                            ("aEdgeLength" variable
+                               (:default-value "-1.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [20106 20131]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19963 20133])
+                    ("tree_width" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aMain" variable
+                               (:reference 1
+                                :type ("TreeImage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20156 20173])
+                            ("aNode" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20174 20192])
+                            ("aEdgeLength" variable
+                               (:default-value "-1.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [20193 20218]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [20138 20226])
+                    ("find_branch_annotation" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20278 20300]))                          
+                        :type ("BranchAnnotation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20231 20307])
+                    ("show_branch_annotation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("surface" variable
+                               (:reference 1
+                                :type ("Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20340 20357])
+                            ("branch_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20358 20380])
+                            ("branch_annotation" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20381 20411])
+                            ("branch_left" variable (:type "double") (reparse-symbol arg-sub-list) [20412 20431])
+                            ("branch_right" variable (:type "double") (reparse-symbol arg-sub-list) [20432 20452])
+                            ("branch_y" variable (:type "double") (reparse-symbol arg-sub-list) [20453 20469]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20312 20470])
+                    ("show_branch_id" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("surface" variable
+                               (:reference 1
+                                :type ("Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20495 20512])
+                            ("id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20513 20528])
+                            ("branch_left" variable (:type "double") (reparse-symbol arg-sub-list) [20529 20548])
+                            ("branch_y" variable (:type "double") (reparse-symbol arg-sub-list) [20549 20565]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20475 20566]))                  
+                :type "class")
+                nil [15058 20570])
+            ("TreeImage" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [20684 20691])
+                    ("TreeImage" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("TreeImage" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20696 20797])
+                    ("make_pdf" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20817 20839])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20840 20857])
+                            ("aColoring" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Coloring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20858 20884])
+                            ("aNumberStrainsThreshold" variable (:type "int") (reparse-symbol arg-sub-list) [20885 20913])
+                            ("aShowBranchIds" variable (:type "bool") (reparse-symbol arg-sub-list) [20914 20934])
+                            ("aShowSubtreesTopBottom" variable (:type "bool") (reparse-symbol arg-sub-list) [20935 20963])
+                            ("aCanvasSize" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "{72 * 8.5, 72 * 11.0}"
+                                :type ("Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20964 21011]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20803 21013])
+                    ("time_series" function
+                       (:typemodifiers ("inline")
+                        :type ("TimeSeries" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21019 21075])
+                    ("time_series" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("TimeSeries" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21080 21148])
+                    ("clades" function
+                       (:typemodifiers ("inline")
+                        :type ("Clades" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21153 21196])
+                    ("clades" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Clades" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21201 21256])
+                    ("surface" function
+                       (:typemodifiers ("inline")
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21261 21307])
+                    ("surface" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21312 21370])
+                    ("tree" function
+                       (:typemodifiers ("inline")
+                        :type ("TreePart" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21375 21416])
+                    ("tree" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("TreePart" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21421 21474])
+                    ("viewport" function
+                       (:typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Viewport" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21480 21541])
+                    ("space_tree_ts" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [21546 21606])
+                    ("space_ts_clades" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [21611 21675])
+                    ("coloring_by_continent" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21715 21756])
+                    ("coloring_by_pos" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("aPos" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21794 21811])
+                            ("aTree" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21812 21830]))                          
+                        :type ("Coloring" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21761 21831])
+                    ("dump_to_json" function
+                       (:prototype-flag t
+                        :type ("json" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22027 22053])
+                    ("load_from_json" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("j" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("json" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22078 22092]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [22058 22093])
+                    ("private" label nil (reparse-symbol classsubparts) [22096 22104])
+                    ("Title" type
+                       (:members 
+                          ( ("show" variable (:type "bool") (reparse-symbol classsubparts) [22136 22146])
+                            ("label" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22155 22173])
+                            ("label_color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22182 22200])
+                            ("font_size" variable (:type "double") (reparse-symbol classsubparts) [22209 22226])
+                            ("label_x" variable (:type "double") (reparse-symbol classsubparts) [22235 22250])
+                            ("label_y" variable (:type "double") (reparse-symbol classsubparts) [22259 22274])
+                            ("load_from_json" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("j" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("json" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22346 22360]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [22319 22724])
+                            ("json" function (:type "int") (reparse-symbol classsubparts) [22750 23093]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [22109 23100])
+                    ("mBorder" variable (:type "double") (reparse-symbol classsubparts) [23106 23121])
+                    ("mViewport" variable (:type ("Viewport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23188 23207])
+                    ("mSpaceTreeTs" variable (:type "double") (reparse-symbol classsubparts) [23212 23232])
+                    ("mSpaceTsClades" variable (:type "double") (reparse-symbol classsubparts) [23237 23259])
+                    ("mSurface" variable (:type ("Surface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23265 23282])
+                    ("mTree" variable (:type ("TreePart" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23287 23302])
+                    ("mTimeSeries" variable (:type ("TimeSeries" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23307 23330])
+                    ("mClades" variable (:type ("Clades" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23335 23350])
+                    ("mTitle" variable (:type ("Title" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23355 23368])
+                    ("mColoringSettings" variable (:type ("ColoringSettings" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23373 23408])
+                    ("setup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23425 23447])
+                            ("aTre" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23448 23465])
+                            ("aCanvasSize" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Size" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23466 23490]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23414 23491])
+                    ("draw_title" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [23496 23514])
+                    ("draw_legend" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aColoring" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Coloring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23536 23562]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23519 23563]))                  
+                :type "class")
+                nil [20665 23566]))          
+      :file "tree-image.hh"
+      :pointmax 23642
+      :fsize 23641
+      :lastmodtime '(22256 8989 0 0)
+      :unmatched-syntax '((OPERATOR 22741 . 22749) (INLINE 22734 . 22740) (punctuation 22308 . 22309) (DEFAULT 22301 . 22308) (punctuation 22299 . 22300) (semantic-list 22296 . 22298) (symbol 22291 . 22296) (INLINE 22284 . 22290) (OPERATOR 22741 . 22749) (INLINE 22734 . 22740) (punctuation 22308 . 22309) (DEFAULT 22301 . 22308) (punctuation 22299 . 22300) (semantic-list 22296 . 22298) (symbol 22291 . 22296) (INLINE 22284 . 22290) (OPERATOR 17725 . 17733) (INLINE 17718 . 17724) (OPERATOR 17725 . 17733) (INLINE 17718 . 17724) (OPERATOR 13299 . 13307) (INLINE 13292 . 13298) (punctuation 12316 . 12317) (DEFAULT 12309 . 12316) (punctuation 12307 . 12308) (semantic-list 12304 . 12306) (symbol 12294 . 12304) (INLINE 12287 . 12293) (OPERATOR 13299 . 13307) (INLINE 13292 . 13298) (punctuation 12316 . 12317) (DEFAULT 12309 . 12316) (punctuation 12307 . 12308) (semantic-list 12304 . 12306) (symbol 12294 . 12304) (INLINE 12287 . 12293) (OPERATOR 9279 . 9287) (INLINE 9272 . 9278) (punctuation 8825 . 8826) (DEFAULT 8818 . 8825) (punctuation 8816 . 8817) (semantic-list 8813 . 8815) (symbol 8797 . 8813) (INLINE 8790 . 8796) (OPERATOR 9279 . 9287) (INLINE 9272 . 9278) (punctuation 8825 . 8826) (DEFAULT 8818 . 8825) (punctuation 8816 . 8817) (semantic-list 8813 . 8815) (symbol 8797 . 8813) (INLINE 8790 . 8796) (punctuation 7320 . 7321) (DEFAULT 7313 . 7320) (punctuation 7311 . 7312) (semantic-list 7308 . 7310) (symbol 7300 . 7308) (punctuation 7299 . 7300) (VIRTUAL 7291 . 7298) (punctuation 7285 . 7286) (DEFAULT 7278 . 7285) (punctuation 7276 . 7277) (semantic-list 7258 . 7275) (symbol 7250 . 7258) (punctuation 7244 . 7245) (DEFAULT 7237 . 7244) (punctuation 7235 . 7236) (semantic-list 7232 . 7234) (symbol 7224 . 7232) (OPERATOR 5675 . 5683) (INLINE 5668 . 5674) (punctuation 2416 . 2417) (punctuation 901 . 902) (USING 481 . 486) (string 204 . 220) (symbol 196 . 203) (symbol 185 . 195) (symbol 181 . 184) (symbol 174 . 180) (punctuation 173 . 174) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "tree-import.hh"
+      :file "tree-import.hh"
+      :fsize 361
+      :lastmodtime '(22256 9843 0 0))
+    (semanticdb-table "xz.hh"
+      :file "xz.hh"
+      :fsize 312
+      :lastmodtime '(22239 54338 0 0))
+    (semanticdb-table "color.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34])
+            ("sstream" include (:system-flag t) nil [35 53])
+            ("iomanip" include (:system-flag t) nil [54 72])
+            ("stdexcept" include (:system-flag t) nil [73 93])
+            ("cairo.hh" include nil nil [95 114])
+            ("json.hh" include nil nil [115 133])
+            ("Color" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [225 232])
+                    ("Color" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aColor" variable
+                               (:default-value "0xFF00FF"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [250 272]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [237 324])
+                    ("=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aColor" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [526 540]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [502 638])
+                    ("=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("j" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("json" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [668 682]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [644 1617])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aColor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1648 1668]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1623 1710])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aColor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1740 1760]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1715 1799])
+                    ("alpha" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [1805 1891])
+                    ("red" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [1896 1971])
+                    ("green" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [1976 2052])
+                    ("blue" function
+                       (:typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [2057 2125])
+                    ("alphaI" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2131 2214])
+                    ("alphaI" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2238 2249]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2219 2304])
+                    ("rgbI" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2309 2386])
+                    ("set_source_rgba" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("context" variable
+                               (:pointer 1
+                                :type ("cairo_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2420 2437]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2392 2540])
+                    ("json" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2747 2760])
+                    ("private" label nil (reparse-symbol classsubparts) [2763 2771])
+                    ("mColor" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2776 2792]))                  
+                :type "class")
+                nil [210 2918])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3044 3062])
+                    ("aColor" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3063 3083]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [3010 3286])
+            ("json" function (:type "int") nil [3311 3388])
+            ("Colors" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3481 3488])
+                    ("Colors" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Colors" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3493 3502])
+                    ("continent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aContinent" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3524 3547]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3508 3554])
+                    ("distinct_by_index" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3583 3597]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3559 3604])
+                    ("private" label nil (reparse-symbol classsubparts) [3607 3615])
+                    ("mDatabase" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3620 3635]))                  
+                :type "class")
+                nil [3465 3676])
+            ("colors" function
+               (:prototype-flag t
+                :type ("Colors" type (:type "class") nil nil))
+                nil [3694 3711]))          
+      :file "color.hh"
+      :pointmax 3787
+      :fsize 3786
+      :lastmodtime '(22240 11279 0 0)
+      :unmatched-syntax '((punctuation 3671 . 3672) (DEFAULT 3664 . 3671) (punctuation 3662 . 3663) (semantic-list 3646 . 3661) (symbol 3640 . 3646) (OPERATOR 3302 . 3310) (punctuation 3301 . 3302) (punctuation 3300 . 3301) (symbol 3295 . 3300) (INLINE 3288 . 3294) (OPERATOR 2738 . 2746) (punctuation 496 . 497) (DEFAULT 489 . 496) (punctuation 487 . 488) (semantic-list 467 . 486) (punctuation 466 . 467) (OPERATOR 458 . 466) (punctuation 456 . 457) (symbol 451 . 456) (INLINE 444 . 450) (punctuation 365 . 366) (DEFAULT 358 . 365) (punctuation 356 . 357) (semantic-list 341 . 355) (symbol 336 . 341) (INLINE 329 . 335) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "cairo.hh"
+      :file "cairo.hh"
+      :fsize 230
+      :lastmodtime '(22157 1125 0 0))
+    (semanticdb-table "json.hh"
+      :file "json.hh"
+      :fsize 1902
+      :lastmodtime '(22164 63238 0 0))
+    (semanticdb-table "date.hh"
+      :file "date.hh"
+      :fsize 3895
+      :lastmodtime '(22157 9796 0 0))
+    (semanticdb-table "color.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("color.hh" include nil nil [1 20])
+            ("sDefaultDatabase" variable
+               (:constant-flag t
+                :default-value "{
+    {\"continents\", {
+            {\"EUROPE\",            0x00FF00},
+            {\"CENTRAL-AMERICA\",   0xAAF9FF},
+            {\"MIDDLE-EAST\",       0x8000FF},
+            {\"NORTH-AMERICA\",     0x00008B},
+            {\"AFRICA\",            0xFF8000},
+            {\"ASIA\",              0xFF0000},
+            {\"RUSSIA\",            0xB03060},
+            {\"AUSTRALIA-OCEANIA\", 0xFF69B4},
+            {\"SOUTH-AMERICA\",     0x40E0D0},
+            {\"ANTARCTICA\",        0x808080},
+            {\"CHINA-SOUTH\",       0xFF0000},
+            {\"CHINA-NORTH\",       0x6495ED},
+            {\"CHINA-UNKNOWN\",     0x808080},
+            {\"UNKNOWN\",           0x808080},
+        }}
+}"
+                :type ("json" type (:type "class") nil nil))
+                nil [262 958])
+            ("sDistinctColors" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+    0xA6BDD7, //Very Light Blue
+    0xC10020, //Vivid Red
+    0xFFB300, //Vivid Yellow
+    0x803E75, //Strong Purple
+    0xFF6800, //Vivid Orange
+    0xCEA262, //Grayish Yellow
+      //0x817066, //Medium Gray
+
+    //The following will not be good for people with defective color vision
+    0x007D34, //Vivid Green
+    0xF6768E, //Strong Purplish Pink
+    0x00538A, //Strong Blue
+    0xFF7A5C, //Strong Yellowish Pink
+    0x53377A, //Strong Violet
+    0xFF8E00, //Vivid Orange Yellow
+    0xB32851, //Strong Purplish Red
+    0xF4C800, //Vivid Greenish Yellow
+    0x7F180D, //Strong Reddish Brown
+    0x93AA00, //Vivid Yellowish Green
+    0x593315, //Deep Yellowish Brown
+    0xF13A13, //Vivid Reddish Orange
+    0x232C16, //Dark Olive Green
+}"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1115 1891])
+            ("sColors" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "nullptr"
+                :type ("Colors" type (:type "class") nil nil))
+                nil [1968 2001])
+            ("colors" function (:type ("Colors" type (:type "class") nil nil)) nil [2003 2105])
+            ("Colors" function
+               (:constructor-flag t
+                :parent "Colors"
+                :type ("Colors" type (:type "class") nil nil))
+                nil [2192 2246])
+            ("continent" function
+               (:parent "Colors"
+                :arguments 
+                  ( ("aContinent" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2347 2370]))                  
+                :type ("Color" type (:type "class") nil nil))
+                nil [2323 2553])
+            ("distinct_by_index" function
+               (:parent "Colors"
+                :arguments 
+                  ( ("aIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2683 2697]))                  
+                :type ("Color" type (:type "class") nil nil))
+                nil [2651 2821]))          
+      :file "color.cc"
+      :pointmax 2926
+      :fsize 2925
+      :lastmodtime '(22241 9366 0 0)
+      :unmatched-syntax '((symbol 983 . 986) (symbol 972 . 982) (symbol 968 . 971) (symbol 961 . 967) (punctuation 960 . 961) (string 228 . 253) (symbol 220 . 227) (symbol 209 . 219) (symbol 205 . 208) (symbol 198 . 204) (punctuation 197 . 198) (string 173 . 196) (symbol 165 . 172) (symbol 154 . 164) (symbol 150 . 153) (symbol 143 . 149) (punctuation 142 . 143) (symbol 120 . 124) (symbol 109 . 119) (symbol 105 . 108) (symbol 98 . 104) (punctuation 97 . 98))))
+  :file "!Users!eu!GH!tre2pdf!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
