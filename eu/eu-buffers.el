@@ -78,6 +78,7 @@
     ((and (eq major-mode 'lisp-mode) 'multi) 251 "Lisp (%d)")
 
     ((and buffer-file-name (string-match "\\.log$" buffer-file-name) 'multi) 300 "Log (%d)")
+    ((and buffer-file-name (string-match "^e-output" buffer-file-name) 'multi) 300 "e-output (%d)")
 
     ((and buffer-file-name (string-match "^/.*odette:" buffer-file-name) 'multi) 400 "Odette ssh (%d)")
     ((and buffer-file-name (string-match "^/.*gilberte:" buffer-file-name) 'multi) 400 "Gilberte ssh (%d)")
