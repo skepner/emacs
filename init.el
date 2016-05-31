@@ -14,6 +14,7 @@
                       haskell-mode
                       helm
                       ; helm-dash
+                      jq-mode
                       js2-mode
                       json-mode
                       less-css-mode
