@@ -73,30 +73,30 @@
 
 (define-key typescript-mode-map [?\A-\M-:] 'eu-typescript_to-remove-comment)
 
-; tide (https://github.com/ananthakumaran/tide)
-(defun setup-tide-mode ()
-  (interactive)
-  (tide-setup)
-  (flycheck-mode +1)
-  (setq flycheck-check-syntax-automatically '(save mode-enabled))
-  (eldoc-mode +1)
-  ;; company is an optional dependency. You have to
-  ;; install it separately via package-install
-  (company-mode +1))
+;; ; tide (https://github.com/ananthakumaran/tide)
+;; (defun setup-tide-mode ()
+;;   (interactive)
+;;   (tide-setup)
+;;   (flycheck-mode +1)
+;;   (setq flycheck-check-syntax-automatically '(save mode-enabled))
+;;   (eldoc-mode +1)
+;;   ;; company is an optional dependency. You have to
+;;   ;; install it separately via package-install
+;;   (company-mode +1))
 
-(add-hook 'before-save-hook 'tide-format-before-save)
+;; (add-hook 'before-save-hook 'tide-format-before-save)
 
-(setq tide-format-options
-      '(:insertSpaceAfterCommaDelimiter t
-        :insertSpaceAfterCommaDelimiter t
-        :insertSpaceBeforeAndAfterBinaryOperators t
-        :insertSpaceAfterKeywordsInControlFlowStatements t
-        :insertSpaceAfterFunctionKeywordForAnonymousFunctions t
-        :placeOpenBraceOnNewLineForFunctions nil))
-;; see https://github.com/Microsoft/TypeScript/blob/cc58e2d7eb144f0b2ff89e6a6685fb4deaa24fde/src/server/protocol.d.ts#L421-473 for the full list available options
+;; (setq tide-format-options
+;;       '(:insertSpaceAfterCommaDelimiter t
+;;         :insertSpaceAfterCommaDelimiter t
+;;         :insertSpaceBeforeAndAfterBinaryOperators t
+;;         :insertSpaceAfterKeywordsInControlFlowStatements t
+;;         :insertSpaceAfterFunctionKeywordForAnonymousFunctions t
+;;         :placeOpenBraceOnNewLineForFunctions nil))
+;; ;; see https://github.com/Microsoft/TypeScript/blob/cc58e2d7eb144f0b2ff89e6a6685fb4deaa24fde/src/server/protocol.d.ts#L421-473 for the full list available options
 
-(add-hook 'typescript-mode-hook #'setup-tide-mode)
-(add-hook 'js2-mode-hook #'setup-tide-mode)
+;; (add-hook 'typescript-mode-hook #'setup-tide-mode)
+;; (add-hook 'js2-mode-hook #'setup-tide-mode)
 
 ;----------------------------------------------------------------------
 ; JSON

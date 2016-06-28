@@ -74,6 +74,18 @@
 
 ;; ----------------------------------------------------------------------
 
+(defun eu-project-amview ()
+  (interactive)
+  (setq eu--project-root-dir "~/Shared/AC/Projects/amview")
+  (global-set-key (kbd "A-s")   (eu--project-find-file (eu--project-make-filename "surface.ts")))
+  (global-set-key (kbd "A-m")   (eu--project-find-file (eu--project-make-filename "model.ts")))
+  (global-set-key (kbd "A-v")   (eu--project-find-file (eu--project-make-filename "view.ts")))
+  (global-set-key (kbd "A-c")   (eu--project-find-file (eu--project-make-filename "controller.ts")))
+  (global-set-key (kbd "A-t")   (eu--project-find-file (eu--project-make-filename "model-random.ts")))
+  )
+
+;; ----------------------------------------------------------------------
+
 (provide 'eu-projects)
 
 ;----------------------------------------------------------------------
