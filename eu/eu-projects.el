@@ -82,6 +82,7 @@
   (global-set-key (kbd "A-v")   (eu--project-find-file (eu--project-make-filename "view.ts")))
   (global-set-key (kbd "A-c")   (eu--project-find-file (eu--project-make-filename "controller.ts")))
   (global-set-key (kbd "A-t")   (eu--project-find-file (eu--project-make-filename "model-random.ts")))
+  (global-set-key (kbd "A-d")   (eu--project-find-file (eu--project-make-filename "model-sdb.ts")))
   )
 
 ;; ----------------------------------------------------------------------
