@@ -80,9 +80,18 @@
   (global-set-key (kbd "A-s")   (eu--project-find-file (eu--project-make-filename "surface.ts")))
   (global-set-key (kbd "A-m")   (eu--project-find-file (eu--project-make-filename "model.ts")))
   (global-set-key (kbd "A-v")   (eu--project-find-file (eu--project-make-filename "view.ts")))
+  (global-set-key (kbd "A-b")   (eu--project-find-file (eu--project-make-filename "view-optimization_movie.ts")))
   (global-set-key (kbd "A-c")   (eu--project-find-file (eu--project-make-filename "controller.ts")))
   (global-set-key (kbd "A-t")   (eu--project-find-file (eu--project-make-filename "model-random.ts")))
   (global-set-key (kbd "A-d")   (eu--project-find-file (eu--project-make-filename "model-sdb.ts")))
+  )
+
+;; ----------------------------------------------------------------------
+
+(defun eu-project-acmacs ()
+  (interactive)
+  (setq eu--project-root-dir "~/ac/acmacs")
+  (global-set-key (kbd "A-c")   (eu--project-find-file (eu--project-make-filename "acmacs/core/chart.py")))
   )
 
 ;; ----------------------------------------------------------------------
