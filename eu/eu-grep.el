@@ -10,8 +10,8 @@
 ;; (defvar gr-command "grr"
 ;;   "The command to be run by the gr function.")
 
-(defvar gr-template "/Users/eu/bin/gr <R> <D>")
-(defvar gr-template-c "/Users/eu/bin/gr -C <R> <D>")
+(defvar gr-template "/Users/eu/bin/grr <R> <D>")
+(defvar gr-template-c "/Users/eu/bin/grr -C <R> <D>")
 ;; (defvar gr-template "gr <R> <D>")
 ;; (defvar gr-template-c "gr -c <R> <D>")
 
@@ -63,7 +63,7 @@
     (let ((command regexp)
           (template (if case-insensitive gr-template-c gr-template)))
       ;(setq dir (file-name-as-directory (expand-file-name dir)))
-      (setq dir (expand-file-name dir))
+      (setq dir (directory-file-name (expand-file-name dir)))
       (setq command (grep-expand-template
                        template
                        regexp
