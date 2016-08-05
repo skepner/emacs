@@ -37,14 +37,13 @@
 ;; ----------------------------------------------------------------------
 
 (defun eu-rename-buffer ()
-  (let* ((dirs (split-string (buffer-file-name) "/"))
-         (under-acmacs (cdr (member "acmacs" dirs)))
-         (under-gh (cdr (member "GH" dirs))))
-    (if under-acmacs
-        (rename-buffer (mapconcat 'identity (reverse under-acmacs) " "))
-      (if under-gh
-          (rename-buffer (mapconcat 'identity (reverse under-gh) " "))
-        ))))
+  (interactive)
+  (let ((dirs (split-string (buffer-file-name) "/")))
+    (catch 'eu-buffer-renamed
+      (dolist (kdir '("acmacs" "python" "GH"))
+        (let ((subl (cdr (member kdir dirs))))
+          (if subl
+              (and (rename-buffer (mapconcat 'identity (reverse subl) " ")) (throw 'eu-buffer-renamed 1))))))))
 
 ;----------------------------------------------------------------------
 

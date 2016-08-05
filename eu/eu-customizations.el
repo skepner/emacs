@@ -50,6 +50,7 @@
  '(mouse-drag-copy-region t)
  '(mouse-wheel-mode nil)
  '(msb-display-invisible-buffers-p t)
+ '(msb-display-most-recently-used 0)
  '(msb-max-menu-items 100)
  '(msb-mode t)
  '(ns-alternate-modifier (quote alt))
