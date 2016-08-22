@@ -24,12 +24,13 @@
 (setq msb-menu-cond
   '(
     ((and buffer-file-name (string-match "/GH/ssm-report" buffer-file-name) 'multi) 21 "GH/ssm-report (%d)")
+    ((and buffer-file-name (string-match "/GH/seqdb" buffer-file-name) 'multi) 21 "GH/seqdb (%d)")
 
                                         ; ----------------------------------------------------------------------
 
-    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "ac/acmacs/" buffer-file-name) 'multi) 1001 "Acmacs Py (%d)")
-    ((and (eq major-mode 'c++-mode) buffer-file-name (not (string-match "\\.sip$" buffer-file-name)) (string-match "acmacs/" buffer-file-name) 'multi) 1002 "Acmacs C++ (%d)")
-    ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "\\.sip$" buffer-file-name) (string-match "acmacs/" buffer-file-name) 'multi) 1003 "Acmacs Sip (%d)")
+    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "ac/acmacs/" buffer-file-name) 'multi) 102 "Acmacs Py (%d)")
+    ((and (eq major-mode 'c++-mode) buffer-file-name (not (string-match "\\.sip$" buffer-file-name)) (string-match "acmacs/" buffer-file-name) 'multi) 103 "Acmacs C++ (%d)")
+    ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "\\.sip$" buffer-file-name) (string-match "acmacs/" buffer-file-name) 'multi) 104 "Acmacs Sip (%d)")
 
                                         ; ----------------------------------------------------------------------
 
