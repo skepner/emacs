@@ -30,6 +30,7 @@
 
 (global-set-key [f10] 'what-line)
 (global-set-key [C-f10] 'goto-line)
+(global-set-key [A-f10] 'goto-char)
 (global-set-key [M-f10] 'what-cursor-position)
 
 (global-set-key [f12] 'call-last-kbd-macro)
