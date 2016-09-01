@@ -79,6 +79,9 @@
   (global-set-key (kbd "A-k") (eu--project-find-file (eu--project-make-filename "python/ssm_report/map_maker.py")))
   (global-set-key (kbd "A-s") (eu--project-find-file (eu--project-make-filename "python/ssm_report/settings.py")))
 
+  (global-set-key (kbd "A-C-a") (eu--project-find-file "~/ac/results/ssm/2016-0816-ssm-report/settings.json"))
+  (global-set-key (kbd "A-a") (eu--project-find-file "~/ac/results/ssm/2016-0907-ssm-report/settings.json"))
+
   ;; (global-set-key (kbd "A-M-u") '(lambda nil (interactive) (async-shell-command "ssm-put")))
   ;; (global-set-key (kbd "A-M-v") '(lambda nil (interactive) (eu-compile-autoclose (concat "cd " eu--project-root-dir " && c2 ./B-report.py -vt"))))
   ;; (global-set-key (kbd "A-M-m") '(lambda nil (interactive) (eu-compile-autoclose "cd ~/ac/acmacs && c2 make -w -j$(nproc) acmacs")))
