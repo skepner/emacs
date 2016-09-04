@@ -68,7 +68,7 @@
   (setq eu--project-root-dir "~/GH/ssm-report")
   (global-set-key (kbd "A-C-r") (eu--project-find-file (eu--project-make-filename "README.md")))
   (global-set-key (kbd "A-m") (eu--project-find-file (eu--project-make-filename "python/ssm_report/maps.py")))
-  ;; (global-set-key (kbd "A-p") (eu--project-find-file (eu--project-make-filename "make-maps-prepare")))
+  (global-set-key (kbd "A-q") (eu--project-find-file (eu--project-make-filename "make-report")))
   (global-set-key (kbd "A-p") (eu--project-find-file (eu--project-make-filename "python/ssm_report/report.py")))
   (global-set-key (kbd "A-1") (eu--project-find-file (eu--project-make-filename "python/ssm_report/h1.py")))
   (global-set-key (kbd "A-3") (eu--project-find-file (eu--project-make-filename "python/ssm_report/h3.py")))
