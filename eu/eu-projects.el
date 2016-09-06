@@ -79,6 +79,7 @@
   (global-set-key (kbd "A-k") (eu--project-find-file (eu--project-make-filename "python/ssm_report/map_maker.py")))
   (global-set-key (kbd "A-s") (eu--project-find-file (eu--project-make-filename "python/ssm_report/settings.py")))
   (global-set-key (kbd "A-t") (eu--project-find-file (eu--project-make-filename "python/ssm_report/tree_maker.py")))
+  (global-set-key (kbd "A-d") (eu--project-find-file (eu--project-make-filename "python/ssm_report/signature_page.py")))
 
   (global-set-key (kbd "A-C-a") (eu--project-find-file "~/ac/results/ssm/2016-0816-ssm-report/settings.json"))
   (global-set-key (kbd "A-a") (eu--project-find-file "~/ac/results/ssm/2016-0907-ssm-report/settings.json"))
