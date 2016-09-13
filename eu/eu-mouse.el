@@ -24,8 +24,8 @@
 ; disable wheel for magic mouse
 (global-set-key [wheel-up] 'eu-nope)
 (global-set-key [wheel-down] 'eu-nope)
-(global-set-key [wheel-left] 'eu-nope)
-(global-set-key [wheel-right] 'eu-nope)
+(global-set-key [wheel-left] 'forward-sexp)
+(global-set-key [wheel-right] 'backward-sexp)
 
 (global-set-key [mouse-2] 'mouse-yank-at-click)
 
