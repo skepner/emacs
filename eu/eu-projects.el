@@ -81,8 +81,8 @@
   (global-set-key (kbd "A-t") (eu--project-find-file (eu--project-make-filename "python/ssm_report/tree_maker.py")))
   (global-set-key (kbd "A-d") (eu--project-find-file (eu--project-make-filename "python/ssm_report/signature_page.py")))
 
-  (global-set-key (kbd "A-C-a") (eu--project-find-file "~/ac/results/ssm/2016-0816-ssm-report/settings.json"))
-  (global-set-key (kbd "A-a") (eu--project-find-file "~/ac/results/ssm/2016-0907-ssm-report/settings.json"))
+  (global-set-key (kbd "A-a") (eu--project-find-file "~/ac/results/ssm/2016-0926-ssm-sh-2016/settings.json"))
+  (global-set-key (kbd "A-C-a") (eu--project-find-file "~/ac/results/ssm/2016-0907-ssm-report/settings.json"))
 
   ;; (global-set-key (kbd "A-M-u") '(lambda nil (interactive) (async-shell-command "ssm-put")))
   ;; (global-set-key (kbd "A-M-v") '(lambda nil (interactive) (eu-compile-autoclose (concat "cd " eu--project-root-dir " && c2 ./B-report.py -vt"))))
