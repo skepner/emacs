@@ -70,10 +70,7 @@
   (global-set-key (kbd "A-m") (eu--project-find-file (eu--project-make-filename "python/ssm_report/maps.py")))
   (global-set-key (kbd "A-q") (eu--project-find-file (eu--project-make-filename "make-report")))
   (global-set-key (kbd "A-p") (eu--project-find-file (eu--project-make-filename "python/ssm_report/report.py")))
-  (global-set-key (kbd "A-1") (eu--project-find-file (eu--project-make-filename "python/ssm_report/h1.py")))
-  (global-set-key (kbd "A-3") (eu--project-find-file (eu--project-make-filename "python/ssm_report/h3.py")))
-  (global-set-key (kbd "A-v") (eu--project-find-file (eu--project-make-filename "python/ssm_report/bvic.py")))
-  (global-set-key (kbd "A-y") (eu--project-find-file (eu--project-make-filename "python/ssm_report/byam.py")))
+  (global-set-key (kbd "A-0") (eu--project-find-file (eu--project-make-filename "python/ssm_report/antigenic_maps.py")))
   (global-set-key (kbd "A-o") (eu--project-find-file (eu--project-make-filename "python/ssm_report/presentation.py")))
   (global-set-key (kbd "A-g") (eu--project-find-file (eu--project-make-filename "python/ssm_report/geographic.py")))
   (global-set-key (kbd "A-k") (eu--project-find-file (eu--project-make-filename "python/ssm_report/map_maker.py")))
@@ -84,6 +81,11 @@
   (global-set-key (kbd "A-a") (eu--project-find-file "~/ac/results/ssm/2016-0926-ssm-sh-2016/settings.json"))
   (global-set-key (kbd "A-C-a") (eu--project-find-file "~/ac/results/ssm/2016-0907-ssm-sh-2016-tc2/settings.json"))
 
+  (global-set-key (kbd "A-1") (eu--project-find-file (eu--project-make-filename "python/ssm_report/h1.py")))
+  (global-set-key (kbd "A-3") (eu--project-find-file (eu--project-make-filename "python/ssm_report/h3.py")))
+  (global-set-key (kbd "A-v") (eu--project-find-file (eu--project-make-filename "python/ssm_report/bvic.py")))
+  (global-set-key (kbd "A-y") (eu--project-find-file (eu--project-make-filename "python/ssm_report/byam.py")))
+  
   ;; (global-set-key (kbd "A-M-u") '(lambda nil (interactive) (async-shell-command "ssm-put")))
   ;; (global-set-key (kbd "A-M-v") '(lambda nil (interactive) (eu-compile-autoclose (concat "cd " eu--project-root-dir " && c2 ./B-report.py -vt"))))
   ;; (global-set-key (kbd "A-M-m") '(lambda nil (interactive) (eu-compile-autoclose "cd ~/ac/acmacs && c2 make -w -j$(nproc) acmacs")))
