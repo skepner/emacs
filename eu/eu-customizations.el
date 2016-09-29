@@ -44,6 +44,7 @@
  '(kept-old-versions 4)
  '(large-file-warning-threshold 1000000000)
  '(line-move-visual nil)
+ '(line-spacing 0.2)
  '(mail-host-address "skepner.eu")
  '(message-auto-save-directory "~/.emacs.d/auto-save-message")
  '(minibuffer-complete-cycle t nil (minibuffer-complete-cycle))
