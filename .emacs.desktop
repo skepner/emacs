@@ -1,0 +1,35 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Oct  4 12:05:26 2016
+;; Desktop file format version 208
+;; Emacs version 25.1.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22515 32486 745269 0) (desktop . "208") "eu@jagd" nil nil ((((font-backend mac-ct) (fontsize . 12) (font . "-*-Anonymous Pro-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "Black") (background-color . "White") (line-spacing) (left-fringe . 8) (right-fringe . 8) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (frameset--id . "46DD-37EA-0F63-7CFB") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "jagd") (explicit-name) (tool-bar-position . top) (height . 106) (width . 200) (left . 1) (top . 0)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 7) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 48) (min-pixel-width . 70) (min-pixel-height-ignore . 24) (min-pixel-width-ignore . 49) (min-pixel-height-safe . 12) (min-pixel-width-safe . 14)) leaf (pixel-width . 1431) (pixel-height . 1260) (total-width . 204) (total-height . 105) (normal-height . 1.0) (normal-width . 1.0) (buffer "*scratch*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 3 t nil 0 nil) (vscroll . 0) (dedicated) (point . 146) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history nil)
+(setq compile-history nil)
+(setq command-history '((find-library "eu-customizations") (switch-to-buffer "*Messages*" nil 'force-same-window)))
+(setq grep-history nil)
+(setq query-replace-history nil)
+(setq shell-command-history nil)
+(setq kill-ring nil)
+(setq comint-input-ring nil)
+(setq file-name-history nil)
+(setq desktop-locals-to-save '(desktop-locals-to-save truncate-lines case-fold-search case-replace fill-column overwrite-mode change-log-default-name line-number-mode column-number-mode size-indication-mode buffer-file-coding-system indent-tabs-mode tab-width indicate-buffer-boundaries indicate-empty-lines show-trailing-whitespace))
+(setq truncate-lines t)
+(setq case-fold-search t)
+(setq case-replace t)
+(setq line-number-mode t)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq kill-ring-yank-pointer (nthcdr 0 kill-ring))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
