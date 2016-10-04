@@ -67,7 +67,7 @@
   (setq eu--project-root-dir "~/GH/ssm-report")
   (setq eu--project-ssm-root-dir "~/ac/results/ssm/2016-0926-ssm-sh-2016")
   (setq eu--project-previous-ssm-root-dir "~/ac/results/ssm/2016-0907-ssm-sh-2016-tc2")
-  
+
   (global-set-key (kbd "A-C-r") (eu--project-find-file (eu--project-make-filename "README.md")))
   (global-set-key (kbd "A-m") (eu--project-find-file (eu--project-make-filename "python/ssm_report/maps.py")))
   (global-set-key (kbd "A-q") (eu--project-find-file (eu--project-make-filename "make-report")))
@@ -87,7 +87,7 @@
   (global-set-key (kbd "A-3") (eu--project-find-file (concat (file-name-as-directory eu--project-ssm-root-dir) "maps/trees/h3.json")))
   (global-set-key (kbd "A-v") (eu--project-find-file (concat (file-name-as-directory eu--project-ssm-root-dir) "maps/trees/bvic.json")))
   (global-set-key (kbd "A-y") (eu--project-find-file (concat (file-name-as-directory eu--project-ssm-root-dir) "maps/trees/byam.json")))
-  
+
   ;; (global-set-key (kbd "A-M-u") '(lambda nil (interactive) (async-shell-command "ssm-put")))
   ;; (global-set-key (kbd "A-M-v") '(lambda nil (interactive) (eu-compile-autoclose (concat "cd " eu--project-root-dir " && c2 ./B-report.py -vt"))))
   ;; (global-set-key (kbd "A-M-m") '(lambda nil (interactive) (eu-compile-autoclose "cd ~/ac/acmacs && c2 make -w -j$(nproc) acmacs")))
