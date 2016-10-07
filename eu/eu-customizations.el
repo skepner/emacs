@@ -42,6 +42,7 @@
  '(json-reformat:indent-width 2)
  '(kept-new-versions 4)
  '(kept-old-versions 4)
+ '(kill-ring-max 500)
  '(large-file-warning-threshold 1000000000)
  '(line-move-visual nil)
  '(line-spacing 0.2)
