@@ -1,10 +1,10 @@
-(global-set-key [?\A-\C-\M-c] '(lambda nil (interactive) (find-file "~/Shared/AC/ceirs.org")))
-(global-set-key [?\A-\C-\M-z] '(lambda nil (interactive) (find-file "~/Shared/AC/todo.org")))
+(global-set-key [?\A-\C-\S-c] '(lambda nil (interactive) (find-file "~/Shared/AC/ceirs.org")))
+(global-set-key [?\A-\C-\S-z] '(lambda nil (interactive) (find-file "~/Shared/AC/todo.org")))
 ; (global-set-key [?\A-\M-z] '(lambda nil (interactive) (find-file "/Users/eu/Shared/AC/todo.txt")))
 
-(global-set-key [?\A-\C-\M-r] '(lambda nil (interactive) (find-file "~/ac/acmacs/docs/template")))
+(global-set-key [?\A-\C-\S-r] '(lambda nil (interactive) (find-file "~/ac/acmacs/docs/template")))
 
-(global-set-key [?\A-\C-\M-w] '(lambda nil (interactive) (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc")))
+(global-set-key [?\A-\C-\S-w] '(lambda nil (interactive) (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc")))
 
 ;; ----------------------------------------------------------------------
 
