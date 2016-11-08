@@ -47,6 +47,7 @@
 (define-key minibuffer-local-completion-map [C-tab] 'hippie-expand)
 (define-key minibuffer-local-map [C-tab] 'hippie-expand)
 (define-key minibuffer-local-must-match-map [C-tab] 'hippie-expand)
+(define-key global-map [A-tab] 'completion-at-point)
 
 (global-set-key [f8] 'next-error)
 
