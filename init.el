@@ -21,6 +21,7 @@
                       less-css-mode
                       markdown-mode
                       minibuffer-complete-cycle
+                      polymode          ; .ux obsolete?
                       python-mode
                       real-auto-save
                       smartparens
@@ -62,6 +63,7 @@
 ;; ----------------------------------------------------------------------
 
 (require 'eu-ac)
+(require 'eu-andrios)
 (require 'eu-buffers)
 (require 'eu-cc-mode)
 (require 'eu-compile)
