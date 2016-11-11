@@ -9,6 +9,7 @@
                       apache-mode
                       applescript-mode
                       coffee-mode
+                      csharp-mode       ; for Uno
                       dash-at-point
                       elm-mode
                       haskell-mode
