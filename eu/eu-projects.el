@@ -62,6 +62,24 @@
 
 ;; ----------------------------------------------------------------------
 
+(defun eu-project-hidb ()
+  (interactive)
+  (setq eu--project-root-dir "~/GH/hidb")
+
+  (global-set-key (kbd "A-l")   (eu--project-find-file "~/GH/locationdb/cc/locdb.hh"))
+  (global-set-key (kbd "A-C-l") (eu--project-find-file "~/GH/locationdb/cc/locdb.cc"))
+  (global-set-key (kbd "A-C-l") (eu--project-find-file "~/GH/locationdb/cc/locdb.cc"))
+  (global-set-key (kbd "M-C-l") (eu--project-find-file "~/GH/locationdb/cc/py.cc"))
+  (global-set-key (kbd "A-C-o") (eu--project-find-file "~/GH/locationdb/cc/export.cc"))
+
+  (global-set-key (kbd "A-h")   (eu--project-find-file (eu--project-make-filename "src/hidb.hh")))
+  (global-set-key (kbd "A-C-h") (eu--project-find-file (eu--project-make-filename "src/hidb.cc")))
+  (global-set-key (kbd "M-C-h") (eu--project-find-file (eu--project-make-filename "src/hidb-py.cc")))
+  (global-set-key (kbd "A-C-e") (eu--project-find-file (eu--project-make-filename "src/hidb-export.cc")))
+  )
+
+;; ----------------------------------------------------------------------
+
 (defun eu-project-ssm ()
   (interactive)
   (setq eu--project-root-dir "~/GH/ssm-report")
