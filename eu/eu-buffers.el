@@ -26,6 +26,7 @@
     ((and buffer-file-name (string-match "/GH/ssm-report" buffer-file-name) 'multi) 21 "GH/ssm-report (%d)")
     ((and buffer-file-name (string-match "/GH/seqdb" buffer-file-name) 'multi) 21 "GH/seqdb (%d)")
     ((and buffer-file-name (string-match "/GH/hidb" buffer-file-name) 'multi) 21 "GH/hidb (%d)")
+    ((and buffer-file-name (string-match "/GH/locationdb" buffer-file-name) 'multi) 21 "GH/locationdb (%d)")
 
                                         ; ----------------------------------------------------------------------
 
