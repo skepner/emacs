@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -57,7 +56,6 @@
 (autoload 'apache-mode "apache-mode" nil t)
 (autoload 'applescript-mode "applescript-mode" "Major mode for editing AppleScript source." t)
 (require 'coffee-mode)
-(require 'csharp-mode)
 (require 'dash-at-point)
 (require 'js2-mode)
 (require 'json)
@@ -70,6 +68,10 @@
 (require 'smartparens-config)
 (require 'typescript-mode)
 (require 'yasnippet)
+
+(when (equal system-name "jagd")
+  (require 'csharp-mode)
+  )
 
 ;; ----------------------------------------------------------------------
 
@@ -94,5 +96,4 @@
 (load custom-file)
 
 ;; ----------------------------------------------------------------------
-					; no byte-compile-this-file!
-
+                                        ; no byte-compile-this-file!
