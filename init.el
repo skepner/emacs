@@ -1,7 +1,30 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (defvar eu-emacs-package-dir-root
   (file-name-directory (file-truename user-init-file)))
 (add-to-list 'load-path eu-emacs-package-dir-root)
 (add-to-list 'load-path (concat eu-emacs-package-dir-root "eu"))
+
+;; ----------------------------------------------------------------------
+
+(require 'ansi-color)
+(require 'cc-mode)
+(require 'css-mode)
+(require 'compile)
+(require 'desktop)
+(require 'easymenu)
+; (require 'elm-mode)
+(require 'grep)
+(require 'imenu)
+(require 'msb)
+(require 'pulse)
+(require 'recentf)
+(require 'tex-mode)
 
 ;; ----------------------------------------------------------------------
 
@@ -11,7 +34,7 @@
                       coffee-mode
                       csharp-mode       ; for Uno
                       dash-at-point
-                      elm-mode
+                      ; elm-mode
                       haskell-mode
                       helm
                       ; helm-dash
@@ -21,43 +44,31 @@
                       less-css-mode
                       markdown-mode
                       minibuffer-complete-cycle
-                      polymode          ; .ux obsolete?
+                      ; polymode          ; .ux obsolete?
                       python-mode
                       real-auto-save
                       smartparens
+                      typescript-mode
                       yasnippet
                       )
   "A list of packages to ensure are installed at launch.")
 (require 'eu-package)
 
-;; ----------------------------------------------------------------------
-
-(require 'ansi-color)
 (autoload 'apache-mode "apache-mode" nil t)
 (autoload 'applescript-mode "applescript-mode" "Major mode for editing AppleScript source." t)
-(require 'cc-mode)
-(require 'css-mode)
 (require 'coffee-mode)
-(require 'compile)
+(require 'csharp-mode)
 (require 'dash-at-point)
-(require 'desktop)
-(require 'easymenu)
-(require 'elm-mode)
-(require 'grep)
-(require 'haskell-mode)
-(require 'imenu)
 (require 'js2-mode)
 (require 'json)
 (require 'less-css-mode)
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (require 'minibuffer-complete-cycle)
-(require 'msb)
-(require 'smartparens-config)
-(require 'pulse)
+(require 'haskell-mode)
 (require 'python-mode)
 (require 'real-auto-save)
-(require 'tex-mode)
-(require 'typescript)
+(require 'smartparens-config)
+(require 'typescript-mode)
 (require 'yasnippet)
 
 ;; ----------------------------------------------------------------------
@@ -83,7 +94,5 @@
 (load custom-file)
 
 ;; ----------------------------------------------------------------------
+					; no byte-compile-this-file!
 
-;;; Local Variables:
-;;; eval: (add-hook 'after-save-hook 'byte-compile-this-file nil t)
-;;; End:

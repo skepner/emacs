@@ -2,26 +2,27 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu Nov 10 16:02:08 2016
-;; Desktop file format version 206
-;; Emacs version 24.3.1
+;; Created Mon Nov 21 11:35:54 2016
+;; Desktop file format version 208
+;; Emacs version 25.1.1
 
 ;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22578 52746 611219 0) (desktop . "208") "eu@jagd" nil nil ((((font-backend mac-ct) (fontsize . 0) (font . "-*-Go Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "Black") (background-color . "White") (line-spacing) (left-fringe . 8) (right-fringe . 8) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (frameset--id . "4395-4085-B7F3-C203") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "jagd") (explicit-name) (tool-bar-position . top) (height . 99) (width . 200) (left . 1) (top . 23)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 7) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 56) (min-pixel-width . 70) (min-pixel-height-ignore . 28) (min-pixel-width-ignore . 49) (min-pixel-height-safe . 14) (min-pixel-width-safe . 14)) leaf (pixel-width . 1431) (pixel-height . 1372) (total-width . 204) (total-height . 98) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 3 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1) (start . 1))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history nil)
+(setq file-name-history '("~/.emacs.d"))
 (setq compile-history nil)
-(setq command-history '((find-library "eu-customizations") (switch-to-buffer "*Messages*" nil (quote force-same-window))))
+(setq command-history '((find-file "~/.emacs.d" t) (find-library "eu-javascript") (find-library "eu-customizations") (switch-to-buffer "*Messages*" nil 'force-same-window)))
 (setq grep-history nil)
 (setq query-replace-history nil)
 (setq shell-command-history nil)
 (setq kill-ring nil)
 (setq comint-input-ring nil)
-(setq file-name-history nil)
+(setq file-name-history '("~/.emacs.d"))
 (setq desktop-locals-to-save '(desktop-locals-to-save truncate-lines case-fold-search case-replace fill-column overwrite-mode change-log-default-name line-number-mode column-number-mode size-indication-mode buffer-file-coding-system indent-tabs-mode tab-width indicate-buffer-boundaries indicate-empty-lines show-trailing-whitespace))
 (setq truncate-lines t)
 (setq case-fold-search t)
@@ -32,14 +33,3 @@
 (setq kill-ring-yank-pointer (nthcdr 0 kill-ring))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
-(desktop-create-buffer 206
-  "/home/eu/GH/hidb/.git/MERGE_MSG"
-  "MERGE_MSG"
-  'fundamental-mode
-  '(yas-minor-mode global-whitespace-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-

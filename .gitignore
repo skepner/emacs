@@ -1,12 +1,13 @@
 # Compiled
 *.elc
+.emacs.desktop*
+recentf
 
 # Packaging
 .cask
 
 auto-save-list
 server
-recentf
 elpa
 
 .DS_Store
