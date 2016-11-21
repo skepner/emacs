@@ -1,6 +1,7 @@
 ;; ----------------------------------------------------------------------
 
 (require 'polymode)
+(require 'csharp-mode)
 
 (defcustom pm-host/nxml
   (pm-bchunkmode "nxml" :mode 'nxml-mode)

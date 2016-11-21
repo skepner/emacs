@@ -69,14 +69,9 @@
 (require 'typescript-mode)
 (require 'yasnippet)
 
-(when (equal system-name "jagd")
-  (require 'csharp-mode)
-  )
-
 ;; ----------------------------------------------------------------------
 
 (require 'eu-ac)
-(require 'eu-andrios)
 (require 'eu-buffers)
 (require 'eu-cc-mode)
 (require 'eu-compile)
@@ -90,6 +85,11 @@
 (require 'eu-menu)
 (require 'eu-projects)
 
+;; ----------------------------------------------------------------------
+
+(when (equal system-name "jagd")
+  (require 'eu-andrios)
+  )
 ;; ----------------------------------------------------------------------
 
 (setq custom-file (concat eu-emacs-package-dir-root "eu/eu-customizations.el"))
