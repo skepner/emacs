@@ -2,12 +2,12 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Nov 21 11:10:47 2016
+;; Created Wed Nov 23 13:04:21 2016
 ;; Desktop file format version 208
 ;; Emacs version 25.1.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (22578 54839 418500 820000) (desktop . "208") "eu@i19" nil nil ((((tty-type . "screen-256color") (tty . "/dev/tty") (display-type . color) (background-mode . light) (foreground-color . "Black") (cursor-color . "black") (tool-bar-lines . 0) (background-color . "White") (font . "tty") (height . 53) (width . 147) (modeline . t) (unsplittable) (menu-bar-lines . 1) (frameset--id . "441E-9A9F-C012-D897") (frameset--mini t) (minibuffer . t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 147) (pixel-height . 52) (total-width . 147) (total-height . 52) (normal-height . 1.0) (normal-width . 1.0) (buffer "*scratch*" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 146) (start . 1))))])
+(setq desktop-saved-frameset [frameset 1 (22581 37845 843061 724000) (desktop . "208") "eu@i19" nil nil ((((tty-type . "screen-256color") (tty . "/dev/tty") (display-type . color) (background-mode . light) (foreground-color . "Black") (cursor-color . "black") (tool-bar-lines . 0) (background-color . "White") (font . "tty") (height . 53) (width . 147) (modeline . t) (unsplittable) (menu-bar-lines . 1) (frameset--id . "2A63-4E5F-855E-3DCC") (frameset--mini t) (minibuffer . t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 147) (pixel-height . 52) (total-width . 147) (total-height . 52) (normal-height . 1.0) (normal-width . 1.0) (buffer "crontab" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1143) (start . 1))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
@@ -20,7 +20,7 @@
 (setq grep-history nil)
 (setq query-replace-history nil)
 (setq shell-command-history nil)
-(setq kill-ring nil)
+(setq kill-ring '("$HOME/GH/hidb/bin/night-build" "~/AD/bin/hidb-night-build"))
 (setq comint-input-ring nil)
 (setq file-name-history '("~/.emacs.d"))
 (setq desktop-locals-to-save '(desktop-locals-to-save truncate-lines case-fold-search case-replace fill-column overwrite-mode change-log-default-name line-number-mode column-number-mode size-indication-mode buffer-file-coding-system indent-tabs-mode tab-width indicate-buffer-boundaries indicate-empty-lines show-trailing-whitespace))
@@ -33,3 +33,15 @@
 (setq kill-ring-yank-pointer (nthcdr 0 kill-ring))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/tmp/crontab.YNJn9f/crontab"
+  "crontab"
+  'fundamental-mode
+  '(yas-minor-mode global-whitespace-mode)
+  1143
+  '(1150 t)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
