@@ -40,7 +40,7 @@
   (interactive)
   (let ((dirs (split-string (buffer-file-name) "/")))
     (catch 'eu-buffer-renamed
-      (dolist (kdir '("acmacs" "python" "GH"))
+      (dolist (kdir '("acmacs" "python" "GH" "AD"))
         (let ((subl (cdr (member kdir dirs))))
           (if subl
               (and (rename-buffer (mapconcat 'identity subl "/")) (throw 'eu-buffer-renamed 1))))))))
@@ -49,7 +49,7 @@
   (interactive)
   (let ((dirs (split-string (buffer-file-name) "/")))
     (catch 'eu-buffer-renamed
-      (dolist (kdir '("acmacs" "python" "GH"))
+      (dolist (kdir '("acmacs" "python" "GH" "AD"))
         (let ((subl (cdr (member kdir dirs))))
           (if subl
               (and (rename-buffer (mapconcat 'identity (reverse subl) " ")) (throw 'eu-buffer-renamed 1))))))))
