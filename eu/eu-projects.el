@@ -74,8 +74,12 @@
 
   (global-set-key (kbd "A-h")   (eu--project-find-file (eu--project-make-filename "src/hidb.hh")))
   (global-set-key (kbd "A-C-h") (eu--project-find-file (eu--project-make-filename "src/hidb.cc")))
-  (global-set-key (kbd "M-C-h") (eu--project-find-file (eu--project-make-filename "src/hidb-py.cc")))
+  (global-set-key (kbd "M-A-h") (eu--project-find-file (eu--project-make-filename "src/hidb-py.cc")))
   (global-set-key (kbd "A-C-e") (eu--project-find-file (eu--project-make-filename "src/hidb-export.cc")))
+  (global-set-key (kbd "A-c")   (eu--project-find-file (eu--project-make-filename "src/chart.hh")))
+  (global-set-key (kbd "A-C-c") (eu--project-find-file (eu--project-make-filename "src/chart.cc")))
+
+  (global-set-key (kbd "A-f")   (eu--project-find-file (eu--project-make-filename "bin/hidb-find")))
   )
 
 ;; ----------------------------------------------------------------------
