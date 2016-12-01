@@ -41,6 +41,8 @@
 
   (global-set-key (kbd "A-h")   (eu--project-find-file "~/AD/sources/hidb/cc/hidb.hh"))
   (global-set-key (kbd "A-C-h") (eu--project-find-file "~/AD/sources/hidb/cc/hidb.cc"))
+  (global-set-key (kbd "A-c")   (eu--project-find-file "~/AD/sources/hidb/cc/chart.hh"))
+  (global-set-key (kbd "A-C-c") (eu--project-find-file "~/AD/sources/hidb/cc/chart.cc"))
   )
 
 ;; ----------------------------------------------------------------------
