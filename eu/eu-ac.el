@@ -1,3 +1,8 @@
+(let ((home (getenv "HOME")))
+  (setenv "ACMACSD_ROOT" (concat home "/AD")))
+
+;; ----------------------------------------------------------------------
+
 (global-set-key [?\A-\C-\S-c] '(lambda nil (interactive) (find-file "~/Shared/AC/ceirs.org")))
 (global-set-key [?\A-\C-\S-z] '(lambda nil (interactive) (find-file "~/Shared/AC/todo.org")))
 ; (global-set-key [?\A-\M-z] '(lambda nil (interactive) (find-file "/Users/eu/Shared/AC/todo.txt")))

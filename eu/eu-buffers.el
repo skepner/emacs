@@ -23,10 +23,10 @@
 
 (setq msb-menu-cond
   '(
-    ((and buffer-file-name (string-match "/GH/ssm-report" buffer-file-name) 'multi) 21 "GH/ssm-report (%d)")
-    ((and buffer-file-name (string-match "/GH/seqdb" buffer-file-name) 'multi) 21 "GH/seqdb (%d)")
-    ((and buffer-file-name (string-match "/GH/hidb" buffer-file-name) 'multi) 21 "GH/hidb (%d)")
-    ((and buffer-file-name (string-match "/GH/locationdb" buffer-file-name) 'multi) 21 "GH/locationdb (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name) 'multi) 21 "AD/ssm-report (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/seqdb" buffer-file-name) 'multi) 21 "AD/seqdb (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/hidb" buffer-file-name) 'multi) 21 "AD/hidb (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/locationdb" buffer-file-name) 'multi) 21 "AD/locationdb (%d)")
 
                                         ; ----------------------------------------------------------------------
 
