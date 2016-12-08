@@ -24,6 +24,7 @@
 (setq msb-menu-cond
   '(
     ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name) 'multi) 21 "AD/ssm-report (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name) 'multi) 21 "AD/signature-page (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-tree-maker" buffer-file-name) 'multi) 21 "AD/tree-maker (%d)")
     ((and buffer-file-name (string-match "/AD/sources/seqdb" buffer-file-name) 'multi) 21 "AD/seqdb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/hidb" buffer-file-name) 'multi) 21 "AD/hidb (%d)")
