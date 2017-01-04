@@ -185,6 +185,15 @@ Antigenic Cartography
   (setq mode-name "whocc-scan2"))
 
 ;; ----------------------------------------------------------------------
+;; Kb macros
+
+(fset 'ac-json-object-key
+   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([60 60 32 75 backspace 74 115 111 110 79 98 106 101 99 116 75 101 121 40 34 f1 C-right 134217847 34 41 32 60 60 32 97 83 101 116 116 105 110 103 115 46 25 1 down C-right C-left] 0 "%d")) arg)))
+
+(fset 'ac-key-mapper
+   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([123 34 f1 C-right 134217847 34 44 32 75 101 121 115 58 58 25 125 right return] 0 "%d")) arg)))
+
+;; ----------------------------------------------------------------------
 
 (provide 'eu-ac)
 
