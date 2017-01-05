@@ -185,6 +185,20 @@ Antigenic Cartography
   (setq mode-name "whocc-scan2"))
 
 ;; ----------------------------------------------------------------------
+;; Compilation mode acmacs log highlighting
+;; ----------------------------------------------------------------------
+
+(require 'compile)
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-debug "^ *\\(\\(D\\)EBUG 201.*\\)$" 2 2 2 2 2 (1 font-lock-doc-face)))
+(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-debug)
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-info "^ *\\(\\(I\\)NFO 201.*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
+(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-info)
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-warning "^ *\\(\\(W\\)ARNING 201.*\\)$" 2 2 2 2 2 (1 compilation-warning-face)))
+(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-warning)
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-error "^ *\\(\\(E\\)RROR 201.*\\)$" 2 2 2 2 2 (1 compilation-error-face)))
+(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-error)
+
+;; ----------------------------------------------------------------------
 ;; Kb macros
 
 (fset 'ac-json-object-key
