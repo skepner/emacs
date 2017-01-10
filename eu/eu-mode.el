@@ -72,15 +72,33 @@
 ; func delimiter
 ;----------------------------------------------------------------------
 
-(defun eu-func-delimiter ()
-  (interactive)
+(defun eu-func-delimiter-char (c)
   (beginning-of-line)
   (let ((start (point)))
-    (insert "----------------------------------------------------------------------\n")
+    (insert (concat (make-string 70 c) "\n"))
     (comment-region start (point))))
 
+(defun eu-func-delimiter ()
+  (interactive)
+  (eu-func-delimiter-char ?-))
+
+(defun eu-func-delimiter2 ()
+  (interactive)
+  (eu-func-delimiter-char ?=))
+
+(defun eu-func-delimiter3 ()
+  (interactive)
+  (eu-func-delimiter-char ?*))
+
+(defun eu-func-delimiter4 ()
+  (interactive)
+  (eu-func-delimiter-char ?x))
+
 (defun eu-func-delimiter-set-hook ()
-  (define-key (current-local-map) "\M-=" 'eu-func-delimiter))
+  (define-key (current-local-map) [?\M-=] 'eu-func-delimiter)
+  (define-key (current-local-map) [?\M-+] 'eu-func-delimiter2)
+  (define-key (current-local-map) [?\A-\M-=] 'eu-func-delimiter3)
+  (define-key (current-local-map) [?\A-\M-+] 'eu-func-delimiter4))
 
 (add-hook 'c++-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'c-mode-hook 'eu-func-delimiter-set-hook)
