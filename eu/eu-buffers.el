@@ -31,23 +31,27 @@
     ((and buffer-file-name (string-match "/AD/sources/hidb" buffer-file-name) 'multi) 21 "AD/hidb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/locationdb" buffer-file-name) 'multi) 21 "AD/locationdb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-base/" buffer-file-name) 'multi) 21 "AD/acmacs-base (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/seqdb-make-tree-signature-page" buffer-file-name) 'multi) 21 "AD/seqdb-make-tree-signature-page (%d)")
+
+    ((and buffer-file-name (string-match "/AD/sources/seqdb-make-tree-signature-page" buffer-file-name) 'multi) 32 "AD/seqdb-make-tree-signature-page (%d)")
+
+    ((and buffer-file-name (string-match "/Shared/AC/Projects/old/ssm-report" buffer-file-name) 'multi) 51 "old/ssm-report (%d)")
+    ((and buffer-file-name (string-match "/Shared/AC/Projects/old/seqdb" buffer-file-name) 'multi) 52 "old/seqdb (%d)")
 
                                         ; ----------------------------------------------------------------------
 
-    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "ac/acmacs/" buffer-file-name) 'multi) 102 "Acmacs Py (%d)")
-    ((and (eq major-mode 'c++-mode) buffer-file-name (not (string-match "\\.sip$" buffer-file-name)) (string-match "acmacs/" buffer-file-name) 'multi) 103 "Acmacs C++ (%d)")
-    ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "\\.sip$" buffer-file-name) (string-match "acmacs/" buffer-file-name) 'multi) 104 "Acmacs Sip (%d)")
+    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "ac/acmacs/" buffer-file-name) 'multi) 70 "Acmacs Py (%d)")
+    ((and (eq major-mode 'c++-mode) buffer-file-name (not (string-match "\\.sip$" buffer-file-name)) (string-match "acmacs/" buffer-file-name) 'multi) 70 "Acmacs C++ (%d)")
+    ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "\\.sip$" buffer-file-name) (string-match "acmacs/" buffer-file-name) 'multi) 70 "Acmacs Sip (%d)")
 
                                         ; ----------------------------------------------------------------------
 
-    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "/ac/results/" buffer-file-name) 'multi) 2001 "Results (%d)")
-    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "/tmp/" buffer-file-name) 'multi) 2002 "/tmp (%d)")
+    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "/ac/results/" buffer-file-name) 'multi) 81 "Results (%d)")
+    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "/tmp/" buffer-file-name) 'multi) 81 "/tmp (%d)")
 
                                         ; ----------------------------------------------------------------------
 
-    ((and buffer-file-name (string-match "/GH/" buffer-file-name) 'multi) 12001 "GH (%d)")
-    ((and (eq major-mode 'python-mode) 'multi) 12002 "Python (%d)")
+    ((and buffer-file-name (string-match "/GH/" buffer-file-name) 'multi) 101 "GH (%d)")
+    ((and (eq major-mode 'python-mode) 'multi) 102 "Python (%d)")
 
     ;; ((and (eq major-mode 'python-mode) buffer-file-name (string-match "acmacs-b/b3" buffer-file-name) 'multi) 11040 "Acmacs B3 (%d)")
     ;; ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "acmacs-b/b3" buffer-file-name) 'multi) 11040 "Acmacs B3 C++ (%d)")
