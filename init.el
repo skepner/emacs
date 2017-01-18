@@ -43,7 +43,6 @@
                       less-css-mode
                       markdown-mode
                       minibuffer-complete-cycle
-                      ; polymode          ; .ux obsolete?
                       python-mode
                       real-auto-save
                       smartparens
@@ -87,9 +86,10 @@
 
 ;; ----------------------------------------------------------------------
 
-(when (equal system-name "jagd")
-  (require 'eu-andrios)
-  )
+; (when (equal system-name "jagd")
+;   (require 'eu-andrios)
+;   )
+
 ;; ----------------------------------------------------------------------
 
 (setq custom-file (concat eu-emacs-package-dir-root "eu/eu-customizations.el"))

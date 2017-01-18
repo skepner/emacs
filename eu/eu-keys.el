@@ -122,6 +122,8 @@
 (global-set-key [A-down] 'scroll-up-command)
 (global-set-key [A-up] 'scroll-down-command)
 
+(global-set-key (kbd "M-v") 'yank)
+
 ;----------------------------------------------------------------------
 ; helm
 
