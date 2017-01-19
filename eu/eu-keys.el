@@ -171,7 +171,7 @@
 
 (global-set-key [f9] 'eu-compile)
 (global-set-key [C-f9] 'eu-compile-no-ask)
-(global-set-key [A-C-M-kp-8] 'eu-compile-no-ask)
+(global-set-key [kp-8] 'eu-compile-no-ask)
 (global-set-key [A-f9] 'eu-compile-cd-pwd)
 
 ;----------------------------------------------------------------------
