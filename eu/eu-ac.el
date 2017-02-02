@@ -197,6 +197,8 @@ Antigenic Cartography
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-warning)
 (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-error "^ *\\(\\(E\\)RROR 201.*\\)$" 2 2 2 2 2 (1 compilation-error-face)))
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-error)
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-cpp-message "^ *\\(\\(\\[\\)[A-Za-z0-9\\-_ ]+\\].*\\)$" 2 2 2 2 2 (1 compilation-line-face)))
+(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-error)
 
 ;; ----------------------------------------------------------------------
 ;; Kb macros
