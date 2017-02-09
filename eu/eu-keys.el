@@ -54,7 +54,7 @@
 (global-set-key [insert] 'delete-temp-buffers)
 ;(global-set-key [f15] 'next-buffer)
 (global-set-key [f15] 'mode-line-other-buffer)
-;(global-set-key [C-f15] 'bury-buffer)
+(global-set-key [C-f15] 'bury-buffer)
 (global-set-key [A-f15] 'bury-buffer)
 (global-set-key [f7] 'mode-line-other-buffer)
 (global-set-key [C-f7] 'bury-buffer)
