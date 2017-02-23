@@ -83,6 +83,7 @@
 (require 'eu-mouse)
 (require 'eu-menu)
 (require 'eu-projects)
+(require 'eu-mail)
 
 ;; ----------------------------------------------------------------------
 
