@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-mode
+      :tags 
+        '( ("MAKEFLAGS" variable (:default-value ("-w")) nil [116 131])
+            ("SIGNATURE_PAGE_SOURCES" variable (:default-value ("tree.cc" "tree-export.cc" "sdb-chart.cc" "sdb.cc" "signature-page.cc" "tree-draw.cc" "time-series-draw.cc" "clades-draw.cc" "mapped-antigens-draw.cc" "antigenic-maps-draw.cc" "title-draw.cc" "coloring.cc" "settings.cc")) nil [206 449])
+            ("SIGNATURE_PAGE_PY_SOURCES" variable (:default-value ("py.cc" "$(SIGNATURE_PAGE_SOURCES)")) nil [449 509])
+            ("SIGP_SOURCES" variable (:default-value ("sigp.cc" "$(SIGNATURE_PAGE_SOURCES)")) nil [509 558])
+            ("SETTINGS_CREATE_SOURCES" variable (:default-value ("settings-create.cc" "settings.cc")) nil [558 615])
+            ("TEST_SETTINGS_COPY_SOURCES" variable (:default-value ("test-settings-copy.cc" "settings.cc")) nil [615 678])
+            ("TEST_DRAW_CHART_SOURCES" variable (:default-value ("test-draw-chart.cc" "$(SIGNATURE_PAGE_SOURCES)")) nil [678 749])
+            ("CLANG" variable (:default-value ("$(shell if g++ --version 2>&1 | grep -i llvm >/dev/null; then echo Y; else echo N; fi)")) nil [824 919])
+            ("OPTIMIZATION" variable (:default-value ("-O3")) nil [1248 1294])
+            ("PROFILE" variable nil nil [1294 1310])
+            ("CXXFLAGS" variable (:default-value ("-MMD" "-g" "$(OPTIMIZATION)" "$(PROFILE)" "-fPIC" "-std=$(STD)" "$(WEVERYTHING)" "$(WARNINGS)" "-Icc" "-I$(BUILD)/include" "-I$(ACMACSD_ROOT)/include" "$(PKG_INCLUDES)")) nil [1310 1467])
+            ("LDFLAGS" variable (:default-value ("$(OPTIMIZATION)" "$(PROFILE)")) nil [1467 1504])
+            ("PYTHON_VERSION" variable (:default-value ("$(shell python3 -c 'import sys; print(\"{0.major}.{0.minor}\".format(sys.version_info))')")) nil [1505 1610])
+            ("PYTHON_CONFIG" variable (:default-value ("python$(PYTHON_VERSION)-config")) nil [1610 1657])
+            ("PYTHON_MODULE_SUFFIX" variable (:default-value ("$(shell $(PYTHON_CONFIG) --extension-suffix)")) nil [1657 1725])
+            ("PYTHON_LD_LIB" variable (:default-value ("$$($(PYTHON_CONFIG) --ldflags | sed -E 's/-Wl,-stack_size,[0-9]+//')")) nil [1725 1810])
+            ("PKG_INCLUDES" variable (:default-value ("$$(pkg-config --cflags cairo)" "$$(pkg-config --cflags liblzma)" "$$($(PYTHON_CONFIG) --includes)")) nil [1811 1920])
+            ("LIB_DIR" variable (:default-value ("$(ACMACSD_ROOT)/lib")) nil [1921 1951])
+            ("ACMACSD_LIBS" variable (:default-value ("-L$(LIB_DIR)" "-lacmacsbase" "-lacmacschart" "-lacmacsdraw" "-lseqdb" "-lhidb" "-llocationdb" "-lboost_program_options" "-lboost_filesystem" "-lboost_system")) nil [1951 2105])
+            ("SETTINGS_CREATE_LDLIBS" variable (:default-value ("$(ACMACSD_LIBS)" "$$(pkg-config --libs liblzma)")) nil [2105 2176])
+            ("SIGP_LDLIBS" variable (:default-value ("$(ACMACSD_LIBS)" "$$(pkg-config --libs cairo)" "$$(pkg-config --libs liblzma)")) nil [2176 2264])
+            ("TEST_DRAW_CHART__LDLIBS" variable (:default-value ("-L$(LIB_DIR)" "-lacmacsbase" "-lacmacschart" "-lacmacsdraw" "-lseqdb" "-lhidb" "-llocationdb" "-lboost_program_options" "-lboost_filesystem" "-lboost_system" "$$(pkg-config --libs cairo)" "$$(pkg-config --libs liblzma)")) nil [2264 2487])
+            ("BUILD" variable (:default-value ("build")) nil [2562 2576])
+            ("DIST" variable (:default-value ("$(abspath dist)")) nil [2576 2599])
+            ("all" function (:arguments ("check-python" "$(DIST)/signature_page_backend$(PYTHON_MODULE_SUFFIX)" "$(DIST)/sigp-settings-create" "$(DIST)/test-settings-copy" "$(DIST)/sigp" "$(DIST)/test-draw-chart")) nil [2674 2839])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(SIGNATURE_PAGE_PY_SOURCES))" "|" "$(DIST)" "check-acmacsd-root")) nil [3024 3233])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(SETTINGS_CREATE_SOURCES))" "|" "$(DIST)")) nil [3234 3382])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(TEST_SETTINGS_COPY_SOURCES))" "|" "$(DIST)")) nil [3383 3532])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(TEST_DRAW_CHART_SOURCES))" "|" "$(DIST)")) nil [3533 3677])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(SIGP_SOURCES))" "|" "$(DIST)")) nil [3678 3788])
+            ("install" function (:arguments ("$(DIST)/signature_page_backend$(PYTHON_MODULE_SUFFIX)" "$(DIST)/sigp" "|" "check-acmacsd-root")) nil [3863 4177])
+            ("clean" function nil nil [4178 4227])
+            ("distclean" function (:arguments ("clean")) nil [4228 4262])
+            ("test" function (:arguments ("install" "$(DIST)/sigp")) nil [4263 4301])
+            ("$(BUILD)" function (:arguments ("cc/%.cc" "|" "$(BUILD)")) nil [4473 4546])
+            ("check-acmacsd-root" function nil nil [4621 4641])
+            ("check-python" function nil nil [4702 4823])
+            ("$(DIST)" function nil nil [4824 4851])
+            ("$(BUILD)" function nil nil [4852 4881])
+            (".PHONY" function (:arguments ("check-acmacsd-root" "check-python")) nil [4882 4922]))          
+      :file "Makefile"
+      :pointmax 5088
+      :fsize 5087
+      :lastmodtime '(22704 25666 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!AD!sources!signature-page!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

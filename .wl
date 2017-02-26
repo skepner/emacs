@@ -28,3 +28,26 @@
          (wl-smtp-posting-server . "localhost")
          (wl-local-domain . "skepner.eu"))
          ("From" . wl-from)))
+
+;; ----------------------------------------------------------------------
+
+(add-hook
+ 'mime-view-mode-hook
+ '(lambda ()
+    ;; Key bindings
+    (local-set-key [?v] 'mime-preview-toggle-content)
+    ))
+
+;; ----------------------------------------------------------------------
+
+(global-set-key [A-M-return] '(lambda () (interactive) (switch-to-buffer "Summary")))
+
+; "%n%T%P%M/%D(%W)%h:%m %t%[%17(%c %f%) %] %s"
+(setq wl-folder-summary-line-format-alist
+      '(("^%" . "%T%P %M/%D(%W) %h:%m %t %[%17(%f %c%) %] %-5S %s")
+        ))
+
+(setq wl-summary-width nil)
+(setq wl-auto-save-drafts-interval 10)
+
+;; ----------------------------------------------------------------------

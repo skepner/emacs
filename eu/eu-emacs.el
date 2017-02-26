@@ -4,7 +4,7 @@
 (let* ((b-system-name (string-match "^\\([^\\.]+\\)\\." system-name))
        (e-system-name (match-end 1))
        (hostname (if b-system-name (downcase (substring system-name b-system-name e-system-name))
-                   (downcase system-name))))
+                   (downcase (system-name)))))
   (cond
    ((equal hostname "vaat")
     (setq initial-frame-alist (quote ((top . 0) (left . 1) (width . 200) (height . 119)))))
@@ -202,6 +202,15 @@
   ; the next replacement must be the last one!
   (eu-replace-string-in-current-buffer "=3D" "=")
   )
+
+;; ----------------------------------------------------------------------
+;; projectile
+;; ----------------------------------------------------------------------
+
+(require 'projectile)
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
 
 ;; ----------------------------------------------------------------------
 

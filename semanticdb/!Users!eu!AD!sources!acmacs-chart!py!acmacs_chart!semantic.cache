@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [113 122])
+            ("pathlib" include nil nil [123 147])
+            ("acmacs_base.timeit" include nil nil [148 185])
+            ("acmacs_chart_backend" include nil nil [186 224])
+            ("get_locdb" function (:arguments 
+              ( ("Path" variable nil (reparse-symbol function_parameters) [326 330]))              ) nil [300 601])
+            ("sLocDb" variable nil nil [676 689]))          
+      :file "locdb_access.py"
+      :pointmax 856
+      :fsize 855
+      :lastmodtime '(22672 46263 0 0)
+      :unmatched-syntax '((NAME 314 . 324) (COLON 325 . 326))))
+  :file "!Users!eu!AD!sources!acmacs-chart!py!acmacs_chart!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

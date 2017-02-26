@@ -1,4 +1,3 @@
-;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
@@ -36,6 +35,9 @@
                       ; elm-mode
                       haskell-mode
                       helm
+                      helm-descbinds
+                      helm-describe-modes
+                      helm-projectile
                       ; helm-dash
                       jq-mode
                       js2-mode
@@ -43,10 +45,12 @@
                       less-css-mode
                       markdown-mode
                       minibuffer-complete-cycle
+                      projectile
                       python-mode
                       real-auto-save
                       smartparens
                       typescript-mode
+                      wanderlust
                       yasnippet
                       )
   "A list of packages to ensure are installed at launch.")

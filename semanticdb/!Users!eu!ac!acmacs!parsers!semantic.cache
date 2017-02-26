@@ -1,10 +1,10 @@
-;; Object parsers/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "parsers/"
+(semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "test-parsers.cc"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("iostream" include (:system-flag t) nil [120 139])
             ("sstream" include (:system-flag t) nil [140 158])
@@ -103,43 +103,43 @@
       :file "test-parsers.cc"
       :pointmax 40345
       :fsize 40344
-      :lastmodtime '(22204 31228 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((semantic-list 21437 . 21474) (semantic-list 21426 . 21428) (punctuation 21424 . 21425) (CHAR 21420 . 21424) (OPERATOR 21411 . 21419) (INLINE 21404 . 21410)))
-    (semanticdb-table "passage.l"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags nil
       :file "passage.l"
-      :pointmax 25983
-      :fsize 25982
-      :lastmodtime '(22279 50661 0 0)
+      :pointmax 26259
+      :fsize 26258
+      :lastmodtime '(22703 57471 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "passage.hh"
+    (semanticdb-table "semanticdb-table"
       :file "passage.hh"
       :fsize 1408
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "serumid.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "serumid.hh"
       :fsize 1065
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "reassortant.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "reassortant.hh"
       :fsize 2002
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "virus-name.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "virus-name.hh"
       :fsize 1817
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "date.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "date.hh"
       :fsize 2029
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "reassortant.l"
-      :major-mode 'c++-mode
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags nil
       :file "reassortant.l"
       :pointmax 13218
       :fsize 13331
-      :lastmodtime '(22295 43130 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax nil))
   :file "!Users!eu!ac!acmacs!parsers!semantic.cache"
   :semantic-tag-version "2.0"

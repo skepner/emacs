@@ -1,0 +1,19 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("inf" variable nil nil [143 161])
+            ("nan" variable nil nil [162 180])
+            ("data" variable nil nil [181 32827]))          
+      :file "foo5.acd1.xz"
+      :pointmax 32828
+      :fsize 3324
+      :lastmodtime '(22706 35942 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!results!ssm!2017-0227-ssm-nh-2017!cdc-fra!foo5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,282 +1,11 @@
-;; Object utilities/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "utilities/"
+(semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "ssm_latex_report.py"
-      :major-mode 'python-mode
-      :tags 
-        '( ("glob" include nil nil [113 191])
-            ("collections" include nil nil [113 191])
-            ("subprocess" include nil nil [113 191])
-            ("pprint" include nil nil [113 191])
-            ("datetime" include nil nil [113 191])
-            ("traceback" include nil nil [113 191])
-            ("re" include nil nil [113 191])
-            ("os" include nil nil [113 191])
-            ("sys" include nil nil [113 191])
-            ("logging" include nil nil [192 206])
-            ("open_file" include nil nil [259 275])
-            ("sLabsOrder" variable nil nil [351 395])
-            ("sLabDisplayName" variable nil nil [396 478])
-            ("SsmLatexReportError" type
-               (:superclasses ("Exception")
-                :members 
-                  ( ("pass" code nil (reparse-symbol indented_block_body) [597 601]))                  
-                :type "class")
-                nil [554 602])
-            ("SsmLatexReport" type
-               (:members 
-                  ( ("sSubtypeToTitle" variable nil (reparse-symbol indented_block_body) [704 810])
-                    ("__init__" function
-                       (:suite 
-                          ( ("self" variable nil (reparse-symbol indented_block_body) [863 900])
-                            ("self" variable nil (reparse-symbol indented_block_body) [909 939])
-                            ("self" code nil (reparse-symbol indented_block_body) [948 976])
-                            ("self" code nil (reparse-symbol indented_block_body) [985 1005])
-                            ("self" variable nil (reparse-symbol indented_block_body) [1014 1028])
-                            ("self" variable nil (reparse-symbol indented_block_body) [1037 1063]))                          
-                        :parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [829 833])
-                            ("filename" variable nil (reparse-symbol function_parameters) [835 843])
-                            ("options" variable nil (reparse-symbol function_parameters) [845 852]))                          
-                        :constructor-flag t)
-                        (reparse-symbol indented_block_body) [816 1064])
-                    ("make" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [1078 1082]))                          )
-                        (reparse-symbol indented_block_body) [1069 2011])
-                    ("section" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2028 2032])
-                            ("subtype" variable nil (reparse-symbol function_parameters) [2034 2041]))                          )
-                        (reparse-symbol indented_block_body) [2016 2165])
-                    ("subsection" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2185 2189])
-                            ("maker" variable nil (reparse-symbol function_parameters) [2191 2196]))                          )
-                        (reparse-symbol indented_block_body) [2170 2449])
-                    ("write" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2464 2468]))                          )
-                        (reparse-symbol indented_block_body) [2454 2905])
-                    ("compile" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2922 2926])
-                            ("update_toc" variable nil (reparse-symbol function_parameters) [2928 2938]))                          )
-                        (reparse-symbol indented_block_body) [2910 3190])
-                    ("view" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [3204 3208]))                          )
-                        (reparse-symbol indented_block_body) [3195 3404])
-                    ("substitute" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [3424 3428])
-                            ("text" variable nil (reparse-symbol function_parameters) [3430 3434]))                          )
-                        (reparse-symbol indented_block_body) [3409 3678])
-                    ("defaults" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [3696 3700]))                          )
-                        (reparse-symbol indented_block_body) [3683 4920])
-                    ("check_options" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [4943 4947]))                          )
-                        (reparse-symbol indented_block_body) [4925 5222]))                  
-                :type "class")
-                nil [677 5222])
-            ("OptionRequired" type
-               (:members 
-                  ( ("__init__" function
-                       (:suite 
-                          ( ("self" code nil (reparse-symbol indented_block_body) [5381 5424])
-                            ("self" variable nil (reparse-symbol indented_block_body) [5433 5457]))                          
-                        :parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5337 5341])
-                            ("message" variable nil (reparse-symbol function_parameters) [5343 5350])
-                            ("variants" variable nil (reparse-symbol function_parameters) [5357 5365]))                          
-                        :constructor-flag t)
-                        (reparse-symbol indented_block_body) [5324 5458])
-                    ("report" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5474 5478])
-                            ("name" variable nil (reparse-symbol function_parameters) [5480 5484]))                          )
-                        (reparse-symbol indented_block_body) [5463 5727]))                  
-                :type "class")
-                nil [5297 5727])
-            ("Sections" type
-               (:members 
-                  ( ("section" function
-                       (:decorators 
-                          ( ("classmethod" function (:type "decorator") nil nil))                          
-                        :arguments 
-                          ( ("cls" variable nil (reparse-symbol function_parameters) [5852 5855])
-                            ("desc" variable nil (reparse-symbol function_parameters) [5857 5861])
-                            ("generator" variable nil (reparse-symbol function_parameters) [5863 5872])
-                            ("options" variable nil (reparse-symbol function_parameters) [5874 5881]))                          )
-                        (reparse-symbol indented_block_body) [5823 6778])
-                    ("SectionBase" type
-                       (:members 
-                          ( ("__init__" function
-                               (:suite 
-                                  ( ("self" variable nil (reparse-symbol indented_block_body) [6955 6981])
-                                    ("self" variable nil (reparse-symbol indented_block_body) [6994 7035])
-                                    ("self" variable nil (reparse-symbol indented_block_body) [7048 7070])
-                                    ("self" variable nil (reparse-symbol indented_block_body) [7083 7097]))                                  
-                                :parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [6902 6906])
-                                    ("subtype" variable nil (reparse-symbol function_parameters) [6908 6915])
-                                    ("lab" variable nil (reparse-symbol function_parameters) [6917 6920])
-                                    ("generator" variable nil (reparse-symbol function_parameters) [6922 6931])
-                                    ("options" variable nil (reparse-symbol function_parameters) [6933 6940]))                                  
-                                :constructor-flag t)
-                                (reparse-symbol indented_block_body) [6889 7098])
-                            ("make_options" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [7124 7128])
-                                    ("options" variable nil (reparse-symbol function_parameters) [7130 7137]))                                  )
-                                (reparse-symbol indented_block_body) [7107 7267])
-                            ("title" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [7286 7290])
-                                    ("title" variable nil (reparse-symbol function_parameters) [7292 7297])
-                                    ("subsection" variable nil (reparse-symbol function_parameters) [7304 7314]))                                  )
-                                (reparse-symbol indented_block_body) [7276 7741])
-                            ("description" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [7766 7770]))                                  )
-                                (reparse-symbol indented_block_body) [7750 8409])
-                            ("text_subst_values" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [8440 8444]))                                  )
-                                (reparse-symbol indented_block_body) [8418 8660])
-                            ("make_lab" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [8682 8686]))                                  )
-                                (reparse-symbol indented_block_body) [8669 8931])
-                            ("make" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [8949 8953]))                                  )
-                                (reparse-symbol indented_block_body) [8940 9116])
-                            ("data_present" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [9142 9146]))                                  )
-                                (reparse-symbol indented_block_body) [9125 9173]))                          
-                        :type "class")
-                        (reparse-symbol indented_block_body) [6861 9173])
-                    ("Newpage" type
-                       (:superclasses ("SectionBase")
-                        :members 
-                          ( ("default_options" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [9314 9318]))                                  )
-                                (reparse-symbol indented_block_body) [9294 9343])
-                            ("parts" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [9362 9366]))                                  )
-                                (reparse-symbol indented_block_body) [9352 9402]))                          
-                        :type "class")
-                        (reparse-symbol indented_block_body) [9256 9402])
-                    ("AntigenicTsHead" type
-                       (:superclasses ("SectionBase")
-                        :members 
-                          ( ("default_options" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [9551 9555]))                                  )
-                                (reparse-symbol indented_block_body) [9531 9716])
-                            ("description" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [9741 9745]))                                  )
-                                (reparse-symbol indented_block_body) [9725 10417])
-                            ("parts" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [10436 10440]))                                  )
-                                (reparse-symbol indented_block_body) [10426 10548]))                          
-                        :type "class")
-                        (reparse-symbol indented_block_body) [9485 10548])
-                    ("AntigenicOverviewHead" type
-                       (:superclasses ("AntigenicTsHead")
-                        :members 
-                          ( ("description" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [10703 10707]))                                  )
-                                (reparse-symbol indented_block_body) [10687 11127]))                          
-                        :type "class")
-                        (reparse-symbol indented_block_body) [10631 11127])
-                    ("AntigenicTsStatistics" type
-                       (:superclasses ("SectionBase")
-                        :members 
-                          ( ("default_options" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [11282 11286]))                                  )
-                                (reparse-symbol indented_block_body) [11262 11324])
-                            ("parts" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [11343 11347]))                                  )
-                                (reparse-symbol indented_block_body) [11333 11389])
-                            ("statistics" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [11413 11417]))                                  )
-                                (reparse-symbol indented_block_body) [11398 12029]))                          
-                        :type "class")
-                        (reparse-symbol indented_block_body) [11210 12029])
-                    ("AntigenicTs" type
-                       (:superclasses ("SectionBase")
-                        :members 
-                          ( ("default_options" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [12174 12178]))                                  )
-                                (reparse-symbol indented_block_body) [12154 12349])
-                            ("parts" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [12368 12372]))                                  )
-                                (reparse-symbol indented_block_body) [12358 12450])
-                            ("time_series" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [12475 12479]))                                  )
-                                (reparse-symbol indented_block_body) [12459 57468]))                          
-                        :type "class")
-                        (reparse-symbol indented_block_body) [12112 57468]))                  
-                :type "class")
-                nil [5802 57468]))          
-      :file "ssm_latex_report.py"
-      :pointmax 57634
-      :fsize 57633
-      :lastmodtime '(22283 38466 0 0)
-      :unmatched-syntax '((FROM 252 . 256) (PERIOD 257 . 258)))
-    (semanticdb-table "whocc.py"
-      :major-mode 'python-mode
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 Helper functions for whocc data, e.g. made by whocc-scan.py
@@ -627,11 +356,11 @@ Helper functions for whocc data, e.g. made by whocc-scan.py
                 nil [12759 15274]))          
       :file "whocc.py"
       :pointmax 15440
-      :fsize 15439
-      :lastmodtime '(22228 31267 0 0)
+      :fsize 15276
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((FROM 184 . 188) (PERIOD 189 . 190) (FROM 184 . 188) (PERIOD 189 . 190)))
-    (semanticdb-table "json.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 \"\"\"" code nil nil [39 46])
@@ -684,11 +413,11 @@ Helper functions for whocc data, e.g. made by whocc-scan.py
                 nil [4332 4886]))          
       :file "json.py"
       :pointmax 5053
-      :fsize 5052
-      :lastmodtime '(22224 29614 0 0)
+      :fsize 7644
+      :lastmodtime '(22682 59970 0 0)
       :unmatched-syntax '((NAME 2414 . 2419) (IF 2426 . 2428) (ELSE 2444 . 2448) (NAME 2048 . 2053) (IF 2060 . 2062) (ELSE 2078 . 2082)))
-    (semanticdb-table "open_file.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 Files opening and reading/writing functions.
@@ -857,15 +586,15 @@ Files opening and reading/writing functions.
                 nil [7317 7648]))          
       :file "open_file.py"
       :pointmax 7814
-      :fsize 7813
-      :lastmodtime '(22289 54353 0 0)
+      :fsize 8080
+      :lastmodtime '(22682 59922 0 0)
       :unmatched-syntax '((INDENT_BLOCK 5430 . 5540) (NEWLINE 5429 . 5430) (COLON 5428 . 5429) (TRY 5351 . 5354) (AS 5422 . 5424) (INDENT_BLOCK 1505 . 1608) (NEWLINE 1504 . 1505) (COLON 1503 . 1504) (AS 1497 . 1499) (INDENT_BLOCK 1328 . 1396) (NEWLINE 1327 . 1328) (COLON 1326 . 1327) (TRY 1176 . 1179) (AS 1320 . 1322) (FROM 207 . 211) (PERIOD 212 . 213)))
-    (semanticdb-table "registrator.py"
+    (semanticdb-table "semanticdb-table"
       :file "registrator.py"
       :fsize 2432
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "scripting.py"
-      :major-mode 'python-mode
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 Functions to support writing scripts
@@ -994,423 +723,146 @@ Functions to support writing scripts
       :file "scripting.py"
       :pointmax 19417
       :fsize 19416
-      :lastmodtime '(22110 39207 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 18790 . 19063) (NEWLINE 18789 . 18790) (COLON 18788 . 18789) (TRY 18668 . 18671) (AS 18782 . 18784) (INDENT_BLOCK 16912 . 17012) (NEWLINE 16911 . 16912) (COLON 16910 . 16911) (TRY 16334 . 16337) (AS 16904 . 16906) (INDENT_BLOCK 14242 . 14355) (NEWLINE 14241 . 14242) (COLON 14240 . 14241) (TRY 12618 . 12621) (AS 14234 . 14236) (INDENT_BLOCK 13774 . 14048) (NEWLINE 13705 . 13706) (COLON 13704 . 13705) (TRY 13383 . 13386) (AS 13698 . 13700) (FROM 6796 . 6800) (PERIOD 6801 . 6802) (INDENT_BLOCK 3088 . 3236) (NEWLINE 3087 . 3088) (COLON 3086 . 3087) (AS 3080 . 3082) (EXCEPT 3063 . 3069) (INDENT_BLOCK 3004 . 3059) (NEWLINE 2947 . 2948) (COLON 2946 . 2947) (AS 2940 . 2942) (EXCEPT 2913 . 2919) (INDENT_BLOCK 2835 . 2909) (NEWLINE 2799 . 2800) (COLON 2798 . 2799) (AS 2792 . 2794) (EXCEPT 2747 . 2753) (INDENT_BLOCK 2621 . 2743) (NEWLINE 2586 . 2587) (COLON 2585 . 2586) (TRY 1849 . 1852) (AS 2579 . 2581) (PERIOD 254 . 255) (FROM 248 . 252) (PERIOD 253 . 254) (FROM 195 . 199) (PERIOD 200 . 201)))
-    (semanticdb-table "time.py"
+    (semanticdb-table "semanticdb-table"
       :file "time.py"
       :fsize 2127
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "logging_setup.py"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "logging_setup.py"
       :fsize 11920
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "ssm_report.py"
-      :major-mode 'python-mode
-      :tags 
-        '( ("collections" include nil nil [113 214])
-            ("functools" include nil nil [113 214])
-            ("glob" include nil nil [113 214])
-            ("collections" include nil nil [113 214])
-            ("csv" include nil nil [113 214])
-            ("copy" include nil nil [113 214])
-            ("pprint" include nil nil [113 214])
-            ("datetime" include nil nil [113 214])
-            ("traceback" include nil nil [113 214])
-            ("re" include nil nil [113 214])
-            ("os" include nil nil [113 214])
-            ("sys" include nil nil [113 214])
-            ("logging" include nil nil [215 229])
-            ("basic" include nil nil [287 326])
-            ("backend" include nil nil [287 326])
-            ("chart" include nil nil [287 326])
-            ("information_lists" include nil nil [354 378])
-            ("markings" include nil nil [391 492])
-            ("map_data_geographic" include nil nil [391 492])
-            ("map_data" include nil nil [391 492])
-            ("media" include nil nil [391 492])
-            ("PlotAPI" include nil nil [391 492])
-            ("color" include nil nil [519 531])
-            ("whocc" include nil nil [539 573])
-            ("open_file" include nil nil [539 573])
-            ("typecheck" include nil nil [539 573])
-            ("hidb" include nil nil [587 608])
-            ("ChartsKeeper" type
-               (:superclasses ("dict")
-                :members 
-                  ( ("__new__" function
-                       (:decorators 
-                          ( ("typecheck.arguments" function (:type "decorator") nil nil))                          
-                        :arguments 
-                          ( ("cls" variable nil (reparse-symbol function_parameters) [765 768])
-                            ("dict_not_empty" variable nil (reparse-symbol function_parameters) [788 802]))                          )
-                        (reparse-symbol indented_block_body) [728 846])
-                    ("get" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [859 863])
-                            ("tag" variable nil (reparse-symbol function_parameters) [865 868])
-                            ("check_conformance" variable nil (reparse-symbol function_parameters) [870 887]))                          )
-                        (reparse-symbol indented_block_body) [851 1287])
-                    ("load" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [1301 1305])
-                            ("tag" variable nil (reparse-symbol function_parameters) [1307 1310])
-                            ("check_conformance" variable nil (reparse-symbol function_parameters) [1312 1329]))                          )
-                        (reparse-symbol indented_block_body) [1292 1779]))                  
-                :type "class")
-                nil [696 1779])
-            ("sChartsKeeper" variable nil nil [1780 1800])
-            ("typecheck_list_of_chart_tags" function (:arguments 
-              ( ("value" variable nil (reparse-symbol function_parameters) [1909 1914]))              ) nil [1876 2231])
-            ("make" function
-               (:decorators 
-                  ( ("typecheck.arguments" function (:type "decorator") nil nil))                  
-                :arguments 
-                  ( ("list_of_instances" variable nil (reparse-symbol function_parameters) [2353 2370])
-                    ("dict_not_empty" variable nil (reparse-symbol function_parameters) [2397 2411])
-                    ("is_set" variable nil (reparse-symbol function_parameters) [2440 2446]))                  )
-                nil [2306 2762])
-            ("virus_type_for_filename" function (:arguments 
-              ( ("virus_type" variable nil (reparse-symbol function_parameters) [2865 2875])
-                ("lineage" variable nil (reparse-symbol function_parameters) [2877 2884]))              ) nil [2837 3181])
-            ("Vaccines" variable nil nil [3256 3286])
-            ("Serology" variable nil nil [3287 3317])
-            ("Continents" variable nil nil [3318 3353])
-            ("ByContinent" variable nil nil [3354 3390])
-            ("ChinaNorthSouth" variable nil nil [3391 3437])
-            ("ByChinaNorthSouth" variable nil nil [3438 3486])
-            ("Lineage" variable nil nil [3487 3517])
-            ("ByLineage" variable nil nil [3518 3550])
-            ("ByComparingWithPreviousChart" variable nil nil [3551 3621])
-            ("AllGrey" variable nil nil [3622 3650])
-            ("Egg" variable nil nil [3651 3671])
-            ("SerumCircles" variable nil nil [3672 3710])
-            ("DrawingOrderRandomize" variable nil nil [3711 3767])
-            ("LowerReferenceAntigensAndSera" variable nil nil [3768 3840])
-            ("ReferenceAntigensAndSeraColor" variable nil nil [3841 3913])
-            ("AntigensByName" variable nil nil [3969 4011])
-            ("AntigensWithin4foldFromHomologousTiter" variable nil nil [4012 4102])
-            ("SeraByName" variable nil nil [4103 4137])
-            ("ByIsolationDateRange" variable nil nil [4138 4192])
-            ("CladeFile" variable nil nil [4193 4225])
-            ("Clade" variable nil nil [4226 4250])
-            ("SSM_Maps" type
-               (:members 
-                  ( ("__init__" function
-                       (:suite 
-                          ( ("self" variable nil (reparse-symbol indented_block_body) [7686 7702])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7711 7735])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7744 7786])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7795 7815])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7824 7858])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7867 7897])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7906 7932])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7941 7983])
-                            ("self" variable nil (reparse-symbol indented_block_body) [7992 8010])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8019 8033])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8042 8062])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8071 8101])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8110 8138])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8147 8171])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8180 8212])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8221 8303])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8312 8368])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8377 8417])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8426 8466])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8475 8503])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8512 8552])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8561 8581])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8590 8620])
-                            ("self" variable nil (reparse-symbol indented_block_body) [8629 9979])
-                            ("self" variable nil (reparse-symbol indented_block_body) [9988 10012]))                          
-                        :parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [4385 4389])
-                            ("set_of_strings_not_empty" variable nil (reparse-symbol function_parameters) [4424 4448])
-                            ("is_str" variable nil (reparse-symbol function_parameters) [4485 4491])
-                            ("is_str" variable nil (reparse-symbol function_parameters) [4618 4624])
-                            ("output_size" variable nil (reparse-symbol function_parameters) [4683 4694])
-                            ("typecheck_list_of_chart_tags" variable nil (reparse-symbol function_parameters) [4772 4800])
-                            ("is_str" variable nil (reparse-symbol function_parameters) [4914 4920])
-                            ("is_bool" variable nil (reparse-symbol function_parameters) [5091 5098])
-                            ("date_or_none" variable nil (reparse-symbol function_parameters) [5159 5171])
-                            ("date_or_none" variable nil (reparse-symbol function_parameters) [5252 5264])
-                            ("is_str" variable nil (reparse-symbol function_parameters) [5350 5356])
-                            ("title_style" variable nil (reparse-symbol function_parameters) [5411 5422])
-                            ("show_title" variable nil (reparse-symbol function_parameters) [5525 5535])
-                            ("list_of_instances" variable nil (reparse-symbol function_parameters) [5581 5598])
-                            ("markings" variable nil (reparse-symbol function_parameters) [6052 6060])
-                            ("list_of_instances" variable nil (reparse-symbol function_parameters) [6108 6125])
-                            ("refernece_antigens_sera_outline_color" variable nil (reparse-symbol function_parameters) [6211 6248])
-                            ("all_points_outline_width" variable nil (reparse-symbol function_parameters) [6276 6300])
-                            ("antigen_new_size" variable nil (reparse-symbol function_parameters) [6323 6339])
-                            ("is_float" variable nil (reparse-symbol function_parameters) [6465 6473])
-                            ("is_float" variable nil (reparse-symbol function_parameters) [6524 6532])
-                            ("is_float" variable nil (reparse-symbol function_parameters) [6583 6591])
-                            ("border_space" variable nil (reparse-symbol function_parameters) [6614 6626])
-                            ("background_color" variable nil (reparse-symbol function_parameters) [6647 6663])
-                            ("borderline_color" variable nil (reparse-symbol function_parameters) [6691 6707])
-                            ("viewport_origin" variable nil (reparse-symbol function_parameters) [6795 6810])
-                            ("viewport_size" variable nil (reparse-symbol function_parameters) [6860 6873])
-                            ("title" variable nil (reparse-symbol function_parameters) [6925 6930])
-                            ("title_offset" variable nil (reparse-symbol function_parameters) [7005 7017])
-                            ("is_str" variable nil (reparse-symbol function_parameters) [7083 7089])
-                            ("show_labels" variable nil (reparse-symbol function_parameters) [7158 7169])
-                            ("point_outline_width" variable nil (reparse-symbol function_parameters) [7193 7212])
-                            ("point_size" variable nil (reparse-symbol function_parameters) [7236 7246])
-                            ("distribute_points_density" variable nil (reparse-symbol function_parameters) [7306 7331])
-                            ("filename_pattern" variable nil (reparse-symbol function_parameters) [7376 7392])
-                            ("save_chart" variable nil (reparse-symbol function_parameters) [7447 7457])
-                            ("reset_plot_style" variable nil (reparse-symbol function_parameters) [7527 7543])
-                            ("backup" variable nil (reparse-symbol function_parameters) [7611 7617])
-                            ("args_by_lab" variable nil (reparse-symbol function_parameters) [7642 7653]))                          
-                        :decorators 
-                          ( ("typecheck.arguments" function (:type "decorator") nil nil))                          
-                        :constructor-flag t)
-                        (reparse-symbol indented_block_body) [4347 10013])
-                    ("run" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10026 10030]))                          )
-                        (reparse-symbol indented_block_body) [10018 10080])
-                    ("prepare" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10097 10101]))                          )
-                        (reparse-symbol indented_block_body) [10085 10199])
-                    ("load_charts" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10220 10224]))                          )
-                        (reparse-symbol indented_block_body) [10204 10382])
-                    ("load_chart" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10402 10406])
-                            ("chart" variable nil (reparse-symbol function_parameters) [10408 10413]))                          )
-                        (reparse-symbol indented_block_body) [10387 11136])
-                    ("reference_antigens_and_sera" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11173 11177])
-                            ("chart" variable nil (reparse-symbol function_parameters) [11179 11184]))                          )
-                        (reparse-symbol indented_block_body) [11141 11383])
-                    ("update_plot_style" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11410 11414]))                          )
-                        (reparse-symbol indented_block_body) [11388 11725])
-                    ("update_plot_style_for_chart" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11762 11766])
-                            ("chart" variable nil (reparse-symbol function_parameters) [11768 11773])
-                            ("plot_style" variable nil (reparse-symbol function_parameters) [11775 11785])
-                            ("previous" variable nil (reparse-symbol function_parameters) [11787 11795])
-                            ("additional_image_args" variable nil (reparse-symbol function_parameters) [11797 11818]))                          )
-                        (reparse-symbol indented_block_body) [11730 12981])
-                    ("update_user_objects" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [13010 13014]))                          )
-                        (reparse-symbol indented_block_body) [12986 13322])
-                    ("generate" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [13340 13344]))                          )
-                        (reparse-symbol indented_block_body) [13327 13405])
-                    ("fix_title" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [13424 13428])
-                            ("chart_entry" variable nil (reparse-symbol function_parameters) [13430 13441])
-                            ("image_args" variable nil (reparse-symbol function_parameters) [13443 13453]))                          )
-                        (reparse-symbol indented_block_body) [13410 14011]))                  
-                :type "class")
-                nil [4326 14011])
-            ("TimeSeries" type
-               (:superclasses ("SSM_Maps")
-                :members 
-                  ( ("make_time_series" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [14141 14145])
-                            ("charts" variable nil (reparse-symbol function_parameters) [14147 14153]))                          )
-                        (reparse-symbol indented_block_body) [14120 14605]))                  
-                :type "class")
-                nil [14086 14605])
-            ("TimeSeriesAntigenic" type
-               (:superclasses ("TimeSeries")
-                :members 
-                  ( ("update_plot_style" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [14747 14751]))                          )
-                        (reparse-symbol indented_block_body) [14725 14912])
-                    ("generate" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [14993 14997]))                          )
-                        (reparse-symbol indented_block_body) [14980 16103])
-                    ("viewport" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [16217 16221]))                          )
-                        (reparse-symbol indented_block_body) [16204 16361]))                  
-                :type "class")
-                nil [14680 16361])
-            ("TimeSeriesAntigenicCombined" type
-               (:members 
-                  ( ("__init__" function
-                       (:suite 
-                          ( ("maker" function (:arguments 
-                              ( ("chart_entry" variable nil (reparse-symbol function_parameters) [16684 16695])
-                                ("lab" variable nil (reparse-symbol function_parameters) [16697 16700])
-                                ("virus_type" variable nil (reparse-symbol function_parameters) [16702 16712]))                              ) (reparse-symbol indented_block_body) [16674 17436])
-                            ("self" variable nil (reparse-symbol indented_block_body) [17445 17461])
-                            ("self" variable nil (reparse-symbol indented_block_body) [17470 17597]))                          
-                        :parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [16489 16493])
-                            ("tags" variable nil (reparse-symbol function_parameters) [16495 16499])
-                            ("charts" variable nil (reparse-symbol function_parameters) [16501 16507])
-                            ("virus_type" variable nil (reparse-symbol function_parameters) [16509 16519])
-                            ("output" variable nil (reparse-symbol function_parameters) [16526 16532])
-                            ("output_template" variable nil (reparse-symbol function_parameters) [16539 16554])
-                            ("output_format" variable nil (reparse-symbol function_parameters) [16561 16574])
-                            ("args_by_lab" variable nil (reparse-symbol function_parameters) [16582 16593])
-                            ("args" variable nil (reparse-symbol function_parameters) [16598 16604]))                          
-                        :constructor-flag t)
-                        (reparse-symbol indented_block_body) [16476 17539])
-                    ("run" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [17552 17556]))                          )
-                        (reparse-symbol indented_block_body) [17544 17607])
-                    ("lab_of_chart" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [17629 17633])
-                            ("chart_entry" variable nil (reparse-symbol function_parameters) [17635 17646]))                          )
-                        (reparse-symbol indented_block_body) [17612 17944]))                  
-                :type "class")
-                nil [16436 17944])
-            ("TimeSeriesGeographic" type
-               (:superclasses ("TimeSeries")
-                :members 
-                  ( ("generate" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [18078 18082]))                          )
-                        (reparse-symbol indented_block_body) [18065 19400]))                  
-                :type "class")
-                nil [18019 19400])
-            ("TimeSeriesGeographicFromNames" type
-               (:superclasses ("TimeSeries")
-                :members 
-                  ( ("__init__" function
-                       (:suite 
-                          ( ("super" code nil (reparse-symbol indented_block_body) [19670 19694])
-                            ("self" variable nil (reparse-symbol indented_block_body) [19703 19754])
-                            ("self" variable nil (reparse-symbol indented_block_body) [19763 19785])
-                            ("self" variable nil (reparse-symbol indented_block_body) [19794 19832])
-                            ("self" variable nil (reparse-symbol indented_block_body) [19841 19871]))                          
-                        :parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [19543 19547])
-                            ("virus_types" variable nil (reparse-symbol function_parameters) [19549 19560])
-                            ("lineage" variable nil (reparse-symbol function_parameters) [19562 19569])
-                            ("page_layout" variable nil (reparse-symbol function_parameters) [19576 19587])
-                            ("args" variable nil (reparse-symbol function_parameters) [19594 19600]))                          
-                        :constructor-flag t)
-                        (reparse-symbol indented_block_body) [19530 19835])
-                    ("generate" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [19853 19857]))                          )
-                        (reparse-symbol indented_block_body) [19840 20498])
-                    ("load_names" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [20518 20522])
-                            ("period" variable nil (reparse-symbol function_parameters) [20524 20530]))                          )
-                        (reparse-symbol indented_block_body) [20503 21867])
-                    ("color_for_entry" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [23421 23425])
-                            ("entry" variable nil (reparse-symbol function_parameters) [23427 23432]))                          )
-                        (reparse-symbol indented_block_body) [23401 23641])
-                    ("MapData" type
-                       (:superclasses ("map_data_geographic.MapDataGeographicTimeSeriesFromData")
-                        :members 
-                          ( ("__init__" function
-                               (:suite 
-                                  ( ("self" variable nil (reparse-symbol indented_block_body) [23835 23858])
-                                    ("super" code nil (reparse-symbol indented_block_body) [23871 23895]))                                  
-                                :parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [23741 23745])
-                                    ("points" variable nil (reparse-symbol function_parameters) [23747 23753])
-                                    ("args" variable nil (reparse-symbol function_parameters) [23755 23761]))                                  
-                                :constructor-flag t)
-                                (reparse-symbol indented_block_body) [23728 23837])
-                            ("make_points" function
-                               (:parent "dummy"
-                                :arguments 
-                                  ( ("self" variable nil (reparse-symbol function_parameters) [23862 23866]))                                  )
-                                (reparse-symbol indented_block_body) [23846 23903]))                          
-                        :type "class")
-                        (reparse-symbol indented_block_body) [23646 23903])
-                    ("plot" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [23917 23921])
-                            ("filename_pattern" variable nil (reparse-symbol function_parameters) [23923 23939])
-                            ("period" variable nil (reparse-symbol function_parameters) [23941 23947])
-                            ("points" variable nil (reparse-symbol function_parameters) [23949 23955])
-                            ("virus_type" variable nil (reparse-symbol function_parameters) [23957 23967]))                          )
-                        (reparse-symbol indented_block_body) [23908 25104]))                  
-                :type "class")
-                nil [19475 25104])
-            ("Overview" type
-               (:superclasses ("SSM_Maps")
-                :members 
-                  ( ("generate" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [25224 25228]))                          )
-                        (reparse-symbol indented_block_body) [25211 26642]))                  
-                :type "class")
-                nil [25179 26642])
-            ("GeographicMap" type
-               (:superclasses ("SSM_Maps")
-                :members 
-                  ( ("generate" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [26767 26771]))                          )
-                        (reparse-symbol indented_block_body) [26754 27398]))                  
-                :type "class")
-                nil [26717 27398]))          
-      :file "ssm_report.py"
-      :pointmax 54515
-      :fsize 54514
-      :lastmodtime '(22297 54492 0 0)
-      :unmatched-syntax nil)
-    (semanticdb-table "typecheck.py"
+      :lastmodtime '(22655 31758 0 0))
+
+    (semanticdb-table "semanticdb-table"
       :file "typecheck.py"
       :fsize 2718
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "presentation_time_series.py"
-      :major-mode 'python-mode
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags nil
       :file "presentation_time_series.py"
       :pointmax 13484
       :fsize 13483
-      :lastmodtime '(22297 54012 0 0)
-      :unmatched-syntax nil))
+      :lastmodtime '(22655 31758 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("copy" include nil nil [113 136])
+            ("pprint" include nil nil [113 136])
+            ("os" include nil nil [113 136])
+            ("pathlib" include nil nil [137 161])
+            ("logging" include nil nil [162 176])
+            ("open_file" include nil nil [229 245])
+            ("SettingsBase" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [473 778])
+                            ("self" variable nil (reparse-symbol indented_block_body) [786 804]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [359 363])
+                            ("data" variable nil (reparse-symbol function_parameters) [365 369]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [346 805])
+                    ("data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [819 823])
+                            ("deepcopy" variable nil (reparse-symbol function_parameters) [825 833]))                          )
+                        (reparse-symbol indented_block_body) [810 939])
+                    ("_import" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [956 960])
+                            ("data" variable nil (reparse-symbol function_parameters) [962 966]))                          )
+                        (reparse-symbol indented_block_body) [944 1717])
+                    ("full_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1737 1741]))                          )
+                        (reparse-symbol indented_block_body) [1722 2130])
+                    ("_extract" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2148 2152])
+                            ("keys" variable nil (reparse-symbol function_parameters) [2154 2158]))                          )
+                        (reparse-symbol indented_block_body) [2135 2249])
+                    ("index_pp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2267 2271])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2273 2281]))                          )
+                        (reparse-symbol indented_block_body) [2254 2518]))                  
+                :type "class")
+                nil [321 2518])
+            ("SettingsProxy" type
+               (:superclasses ("SettingsBase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [3143 3170])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3179 3204]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3101 3105])
+                            ("data" variable nil (reparse-symbol function_parameters) [3107 3111])
+                            ("priority" variable nil (reparse-symbol function_parameters) [3118 3126]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3088 3205])
+                    ("find" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3219 3223])
+                            ("mandatory" variable nil (reparse-symbol function_parameters) [3225 3234])
+                            ("priority" variable nil (reparse-symbol function_parameters) [3242 3250]))                          )
+                        (reparse-symbol indented_block_body) [3210 3680])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3701 3705])
+                            ("key" variable nil (reparse-symbol function_parameters) [3707 3710]))                          )
+                        (reparse-symbol indented_block_body) [3685 4023])
+                    ("index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4038 4042]))                          )
+                        (reparse-symbol indented_block_body) [4028 4236])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4250 4254])
+                            ("filename" variable nil (reparse-symbol function_parameters) [4256 4264])
+                            ("backup" variable nil (reparse-symbol function_parameters) [4266 4272]))                          )
+                        (reparse-symbol indented_block_body) [4241 4443])
+                    ("_make_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4464 4468])
+                            ("parent_index" variable nil (reparse-symbol function_parameters) [4470 4482])
+                            ("mandatory" variable nil (reparse-symbol function_parameters) [4484 4493]))                          )
+                        (reparse-symbol indented_block_body) [4448 5217]))                  
+                :type "class")
+                nil [3047 5217])
+            ("Settings" type
+               (:superclasses ("SettingsProxy")
+                :members 
+                  ( ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5345 5349])
+                            ("key" variable nil (reparse-symbol function_parameters) [5351 5354])
+                            ("value" variable nil (reparse-symbol function_parameters) [5356 5361]))                          )
+                        (reparse-symbol indented_block_body) [5329 5596]))                  
+                :type "class")
+                nil [5292 5596]))          
+      :file "settings.py"
+      :pointmax 5762
+      :fsize 5761
+      :lastmodtime '(22655 31758 0 0)
+      :unmatched-syntax '((FROM 222 . 226) (PERIOD 227 . 228))))
   :file "!Users!eu!ac!acmacs!acmacs!utilities!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

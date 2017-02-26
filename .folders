@@ -1,1 +1,3 @@
 # -*- conf-unix -*-
+%/
+%INBOX:"eu.skepner@skepner.eu"/clear@imap.gmail.com:993!         "In"

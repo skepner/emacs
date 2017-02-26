@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+\"\"\"" code nil nil [43 50])
+            ("pprint" include nil nil [52 85])
+            ("traceback" include nil nil [52 85])
+            ("os" include nil nil [52 85])
+            ("sys" include nil nil [52 85])
+            ("if" code nil nil [86 164])
+            ("pathlib" include nil nil [164 188])
+            ("sys" variable nil nil [189 268])
+            ("logging" include nil nil [269 283])
+            ("acmacs_map_draw" include nil nil [330 352])
+            ("acmacs_base.timeit" include nil nil [353 390])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [475 479]))              ) nil [466 1153])
+            ("exit" code nil nil [6383 6398]))          
+      :file "acmacs-map-draw"
+      :pointmax 6565
+      :fsize 6564
+      :lastmodtime '(22706 36518 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!AD!sources!acmacs-map-draw!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("inf" variable nil nil [114 132])
+            ("nan" variable nil nil [133 151]))          
+      :file "a-h3n2-cdc-focus-reduction-20161004-20170207.acd1.xz"
+      :pointmax 249223
+      :fsize 9880
+      :lastmodtime '(22705 20998 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("inf" variable nil nil [114 132])
+            ("nan" variable nil nil [133 151]))          
+      :file "a-h3n2-cdc-focus-reduction-20161004-20170207.no-forced-column-bases.acd1.xz"
+      :pointmax 249042
+      :fsize 9812
+      :lastmodtime '(22705 21166 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!results!ssm!2017-0227-ssm-nh-2017!cdc-fra!merge-without-20170209-20170222!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,782 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("pprint" include nil nil [1 24])
+            ("datetime" include nil nil [1 24])
+            ("pathlib" include nil nil [25 49])
+            ("logging" include nil nil [50 64])
+            ("make_map" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [266 270])
+                ("merges" variable nil (reparse-symbol function_parameters) [272 278])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [280 292])
+                ("settings" variable nil (reparse-symbol function_parameters) [294 302])
+                ("output_dir" variable nil (reparse-symbol function_parameters) [304 314]))              ) nil [253 1839])
+            ("make_time_series" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1935 1939])
+                ("merges" variable nil (reparse-symbol function_parameters) [1941 1947])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [1949 1961])
+                ("settings" variable nil (reparse-symbol function_parameters) [1963 1971])
+                ("output_dir" variable nil (reparse-symbol function_parameters) [1973 1983]))              ) nil [1914 2947])
+            ("make_map_information" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [3047 3051])
+                ("merges" variable nil (reparse-symbol function_parameters) [3053 3059])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [3061 3073])
+                ("settings" variable nil (reparse-symbol function_parameters) [3075 3083]))              ) nil [3022 3743])
+            ("make_map_presentation" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [3844 3848])
+                ("merges" variable nil (reparse-symbol function_parameters) [3850 3856])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [3858 3870])
+                ("settings" variable nil (reparse-symbol function_parameters) [3872 3880]))              ) nil [3818 4843])
+            ("_prepare" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [4931 4935])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [4937 4949])
+                ("settings" variable nil (reparse-symbol function_parameters) [4951 4959])
+                ("output_dir" variable nil (reparse-symbol function_parameters) [4961 4971]))              ) nil [4918 5721])
+            ("make_index" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [5811 5819]))              ) nil [5796 6266])
+            ("sIndexStyle" variable nil nil [6341 6575])
+            ("make_index_in" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [6595 6603])
+                ("output_dir" variable nil (reparse-symbol function_parameters) [6605 6615])
+                ("title" variable nil (reparse-symbol function_parameters) [6617 6622]))              ) nil [6577 8757]))          
+      :file "antigenic_maps.py"
+      :pointmax 8923
+      :fsize 8922
+      :lastmodtime '(22702 38935 0 0)
+      :unmatched-syntax '((FROM 4604 . 4608) (PERIOD 4609 . 4610) (FROM 4109 . 4113) (PERIOD 4114 . 4115)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("pprint" include nil nil [1 62])
+            ("datetime" include nil nil [1 62])
+            ("subprocess" include nil nil [1 62])
+            ("collections" include nil nil [1 62])
+            ("re" include nil nil [1 62])
+            ("os" include nil nil [1 62])
+            ("sys" include nil nil [1 62])
+            ("pathlib" include nil nil [63 87])
+            ("logging" include nil nil [88 102])
+            ("labs" include nil nil [155 185])
+            ("utility" include nil nil [155 185])
+            ("make_report" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [298 302])
+                ("merges" variable nil (reparse-symbol function_parameters) [304 310])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [312 324])
+                ("settings" variable nil (reparse-symbol function_parameters) [326 334]))              ) nil [282 513])
+            ("LatexReportError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [628 632]))                  
+                :type "class")
+                nil [588 633])
+            ("make_index" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [29364 29372]))              ) nil [29349 29384]))          
+      :file "report.py"
+      :pointmax 29550
+      :fsize 29549
+      :lastmodtime '(22701 55223 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 21266 . 29274) (COLON 21263 . 21264) (IMPORT 198 . 204) (MULT 205 . 206) (FROM 186 . 190) (PERIOD 191 . 192) (FROM 148 . 152) (PERIOD 153 . 154)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("pprint" include nil nil [1 20])
+            ("copy" include nil nil [1 20])
+            ("pathlib" include nil nil [21 45])
+            ("logging" include nil nil [46 60])
+            ("settings" function (:arguments 
+              ( ("local_settings_file" variable nil (reparse-symbol function_parameters) [225 244]))              ) nil [212 360])
+            ("make_settings" function (:arguments 
+              ( ("acmacs_dir" variable nil (reparse-symbol function_parameters) [453 463])
+                ("acmacs_url" variable nil (reparse-symbol function_parameters) [465 475])
+                ("hidb_dir" variable nil (reparse-symbol function_parameters) [477 485])
+                ("seqdb_dir" variable nil (reparse-symbol function_parameters) [487 496])
+                ("previous" variable nil (reparse-symbol function_parameters) [498 506])
+                ("email" variable nil (reparse-symbol function_parameters) [508 513]))              ) nil [435 861])
+            ("_make_maps_data" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [956 964]))              ) nil [936 1556])
+            ("_vt_for_vaccine_data" function (:arguments 
+              ( ("vt" variable nil (reparse-symbol function_parameters) [1656 1658]))              ) nil [1631 1983])
+            ("global_settings" function nil nil [2058 2224])
+            ("SETTINGS_DEFAULT" variable nil nil [2299 78359]))          
+      :file "settings.py"
+      :pointmax 78526
+      :fsize 78525
+      :lastmodtime '(22700 3463 0 0)
+      :unmatched-syntax '((NAME 742 . 750) (IF 784 . 786) (ELSE 796 . 800)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("pprint" include nil nil [1 38])
+            ("collections" include nil nil [1 38])
+            ("json" include nil nil [1 38])
+            ("sys" include nil nil [1 38])
+            ("pathlib" include nil nil [39 63])
+            ("logging" include nil nil [64 78])
+            ("access" include nil nil [131 144])
+            ("make_geographic" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [240 244])
+                ("merges" variable nil (reparse-symbol function_parameters) [246 252])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [254 266])
+                ("settings" variable nil (reparse-symbol function_parameters) [268 276]))              ) nil [220 396])
+            ("make_index" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [486 494]))              ) nil [471 573])
+            ("geographic_timeseries" function (:arguments 
+              ( ("output_dir" variable nil (reparse-symbol function_parameters) [674 684])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [686 698])
+                ("settings" variable nil (reparse-symbol function_parameters) [700 708])
+                ("virus_types" variable nil (reparse-symbol function_parameters) [710 721])
+                ("filename_pattern" variable nil (reparse-symbol function_parameters) [728 744])
+                ("make_index" variable nil (reparse-symbol function_parameters) [751 761]))              ) nil [648 1726])
+            ("hidb_virus_type" function (:arguments 
+              ( ("vt" variable nil (reparse-symbol function_parameters) [1821 1823]))              ) nil [1801 2015])
+            ("get_hidb" function (:arguments 
+              ( ("vt" variable nil (reparse-symbol function_parameters) [2103 2105])
+                ("settings" variable nil (reparse-symbol function_parameters) [2107 2115]))              ) nil [2090 2329])
+            ("load_names" function (:arguments 
+              ( ("hidb" variable nil (reparse-symbol function_parameters) [2419 2423])
+                ("vt" variable nil (reparse-symbol function_parameters) [2425 2427])
+                ("period" variable nil (reparse-symbol function_parameters) [2429 2435])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [2437 2449])
+                ("settings" variable nil (reparse-symbol function_parameters) [2451 2459])
+                ("coloring" variable nil (reparse-symbol function_parameters) [2461 2469]))              ) nil [2404 2926])
+            ("load_names_for" function (:arguments 
+              ( ("hidb" variable nil (reparse-symbol function_parameters) [3020 3024])
+                ("lineage" variable nil (reparse-symbol function_parameters) [3026 3033])
+                ("period" variable nil (reparse-symbol function_parameters) [3035 3041])
+                ("coloring" variable nil (reparse-symbol function_parameters) [3043 3051]))              ) nil [3001 3591])
+            ("update_color" function (:arguments 
+              ( ("entry" variable nil (reparse-symbol function_parameters) [3683 3688])
+                ("coloring" variable nil (reparse-symbol function_parameters) [3690 3698]))              ) nil [3666 4793])
+            ("plot" function (:arguments 
+              ( ("filename_pattern" variable nil (reparse-symbol function_parameters) [4877 4893])
+                ("period" variable nil (reparse-symbol function_parameters) [4895 4901])
+                ("points" variable nil (reparse-symbol function_parameters) [4903 4909])
+                ("settings_map" variable nil (reparse-symbol function_parameters) [4911 4923])
+                ("settings" variable nil (reparse-symbol function_parameters) [4925 4933]))              ) nil [4868 7011])
+            ("make_index_html" function (:arguments 
+              ( ("output_file" variable nil (reparse-symbol function_parameters) [7106 7117])
+                ("filenames" variable nil (reparse-symbol function_parameters) [7119 7128]))              ) nil [7086 7587]))          
+      :file "geographic.py"
+      :pointmax 7753
+      :fsize 7752
+      :lastmodtime '(22700 604 0 0)
+      :unmatched-syntax '((NAME 6032 . 6039) (IF 6088 . 6090) (ELSE 6148 . 6152) (FROM 4268 . 4272) (PERIOD 4273 . 4274) (FROM 124 . 128) (PERIOD 129 . 130)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 79])
+            ("importlib" include nil nil [1 79])
+            ("time" include nil nil [1 79])
+            ("pprint" include nil nil [1 79])
+            ("subprocess" include nil nil [1 79])
+            ("getpass" include nil nil [1 79])
+            ("socket" include nil nil [1 79])
+            ("os" include nil nil [1 79])
+            ("sys" include nil nil [1 79])
+            ("pathlib" include nil nil [80 104])
+            ("logging" include nil nil [105 119])
+            ("make_maps" function (:arguments 
+              ( ("maps_to_make" variable nil (reparse-symbol function_parameters) [254 266])
+                ("labs" variable nil (reparse-symbol function_parameters) [268 272])
+                ("settings" variable nil (reparse-symbol function_parameters) [274 282]))              ) nil [240 1713])
+            ("make_merges" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [3039 3047]))              ) nil [3023 4127])
+            ("make_h1pdm_overlay" function (:arguments 
+              ( ("recent_merges_dir" variable nil (reparse-symbol function_parameters) [4225 4242])
+                ("settings" variable nil (reparse-symbol function_parameters) [4244 4252]))              ) nil [4202 6467])
+            ("make_stat" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [6556 6564]))              ) nil [6542 7684])
+            ("Merges" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7856 7870])
+                            ("self" code nil (reparse-symbol indented_block_body) [7971 8021])
+                            ("if" code nil (reparse-symbol indented_block_body) [8030 8121]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7791 7795])
+                            ("recent_merges_dir" variable nil (reparse-symbol function_parameters) [7797 7814])
+                            ("previous_merges_dir" variable nil (reparse-symbol function_parameters) [7816 7835])
+                            ("settings" variable nil (reparse-symbol function_parameters) [7837 7845]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7778 8121])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8235 8239])
+                            ("lab" variable nil (reparse-symbol function_parameters) [8241 8244])
+                            ("virus_type" variable nil (reparse-symbol function_parameters) [8246 8256])
+                            ("tag" variable nil (reparse-symbol function_parameters) [8258 8261])
+                            ("ignore_error" variable nil (reparse-symbol function_parameters) [8272 8284]))                          )
+                        (reparse-symbol indented_block_body) [8227 8797])
+                    ("get_sdb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8814 8818])
+                            ("lab" variable nil (reparse-symbol function_parameters) [8820 8823])
+                            ("virus_type" variable nil (reparse-symbol function_parameters) [8825 8835])
+                            ("ignore_error" variable nil (reparse-symbol function_parameters) [8837 8849]))                          )
+                        (reparse-symbol indented_block_body) [8802 9164])
+                    ("_collect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9182 9186])
+                            ("dir" variable nil (reparse-symbol function_parameters) [9188 9191])
+                            ("tag" variable nil (reparse-symbol function_parameters) [9193 9196]))                          )
+                        (reparse-symbol indented_block_body) [9169 10161])
+                    ("_convert_to_acd2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10187 10191])
+                            ("fn1" variable nil (reparse-symbol function_parameters) [10193 10196]))                          )
+                        (reparse-symbol indented_block_body) [10166 10879])
+                    ("_convert_to_sdb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10904 10908])
+                            ("fn1" variable nil (reparse-symbol function_parameters) [10910 10913]))                          )
+                        (reparse-symbol indented_block_body) [10884 11282])
+                    ("report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11298 11302]))                          )
+                        (reparse-symbol indented_block_body) [11287 11381]))                  
+                :type "class")
+                nil [7759 11381]))          
+      :file "maps.py"
+      :pointmax 11547
+      :fsize 11546
+      :lastmodtime '(22694 53126 0 0)
+      :unmatched-syntax '((NAME 9524 . 9527) (MULT 9529 . 9530) (FROM 3054 . 3058) (PERIOD 3059 . 3060) (FROM 289 . 293) (PERIOD 294 . 295)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "presentation.py"
+      :pointmax 14422
+      :fsize 14421
+      :lastmodtime '(22700 2831 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("Legacy" variable nil nil [1 149])
+            ("DisplayName" variable nil nil [225 413])
+            ("Order" variable nil nil [489 528]))          
+      :file "labs.py"
+      :pointmax 695
+      :fsize 694
+      :lastmodtime '(22700 2694 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("raise" code nil nil [1 31])
+            ("datetime" include nil nil [33 67])
+            ("copy" include nil nil [33 67])
+            ("pprint" include nil nil [33 67])
+            ("sys" include nil nil [33 67])
+            ("pathlib" include nil nil [68 92])
+            ("logging" include nil nil [93 107])
+            ("signature_page" include nil nil [160 218])
+            ("presentation" include nil nil [160 218])
+            ("tree_maker" include nil nil [160 218])
+            ("map_maker" include nil nil [160 218])
+            ("sVirusType" variable nil nil [294 311])
+            ("make_h3_159" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [403 407])
+                ("merges" variable nil (reparse-symbol function_parameters) [409 415])
+                ("settings" variable nil (reparse-symbol function_parameters) [417 425]))              ) nil [387 494])
+            ("make_h3_159_6months" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [593 597])
+                ("merges" variable nil (reparse-symbol function_parameters) [599 605])
+                ("settings" variable nil (reparse-symbol function_parameters) [607 615]))              ) nil [569 692])
+            ("make_h3_159_12months" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [792 796])
+                ("merges" variable nil (reparse-symbol function_parameters) [798 804])
+                ("settings" variable nil (reparse-symbol function_parameters) [806 814]))              ) nil [767 892])
+            ("make_h3_ts" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [982 986])
+                ("merges" variable nil (reparse-symbol function_parameters) [988 994])
+                ("settings" variable nil (reparse-symbol function_parameters) [996 1004]))              ) nil [967 1072])
+            ("make_h3_geography" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1169 1173])
+                ("merges" variable nil (reparse-symbol function_parameters) [1175 1181])
+                ("settings" variable nil (reparse-symbol function_parameters) [1183 1191]))              ) nil [1147 1266])
+            ("make_h3_year" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1358 1362])
+                ("merges" variable nil (reparse-symbol function_parameters) [1364 1370])
+                ("settings" variable nil (reparse-symbol function_parameters) [1372 1380]))              ) nil [1341 1450])
+            ("make_h3_serology" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1546 1550])
+                ("merges" variable nil (reparse-symbol function_parameters) [1552 1558])
+                ("settings" variable nil (reparse-symbol function_parameters) [1560 1568]))              ) nil [1525 1642])
+            ("make_h3_serum_circles" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1743 1747])
+                ("merges" variable nil (reparse-symbol function_parameters) [1749 1755])
+                ("settings" variable nil (reparse-symbol function_parameters) [1757 1765]))              ) nil [1717 1843])
+            ("make_h3_serum_sectors" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1944 1948])
+                ("merges" variable nil (reparse-symbol function_parameters) [1950 1956])
+                ("settings" variable nil (reparse-symbol function_parameters) [1958 1966]))              ) nil [1918 2044])
+            ("make_h3_serum_coverage" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [2146 2150])
+                ("merges" variable nil (reparse-symbol function_parameters) [2152 2158])
+                ("settings" variable nil (reparse-symbol function_parameters) [2160 2168]))              ) nil [2119 2247])
+            ("make_h3_tree" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [2339 2343])
+                ("merges" variable nil (reparse-symbol function_parameters) [2345 2351])
+                ("settings" variable nil (reparse-symbol function_parameters) [2353 2361]))              ) nil [2322 2404])
+            ("make_h3_presentation" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [2504 2508])
+                ("merges" variable nil (reparse-symbol function_parameters) [2510 2516])
+                ("settings" variable nil (reparse-symbol function_parameters) [2518 2526]))              ) nil [2479 2604])
+            ("make_h3_information" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [2703 2707])
+                ("merges" variable nil (reparse-symbol function_parameters) [2709 2715])
+                ("settings" variable nil (reparse-symbol function_parameters) [2717 2725]))              ) nil [2679 2802])
+            ("make_h3fr_ts" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [2894 2898])
+                ("merges" variable nil (reparse-symbol function_parameters) [2900 2906])
+                ("settings" variable nil (reparse-symbol function_parameters) [2908 2916]))              ) nil [2877 3003])
+            ("make_h3fr_159" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [3096 3100])
+                ("merges" variable nil (reparse-symbol function_parameters) [3102 3108])
+                ("settings" variable nil (reparse-symbol function_parameters) [3110 3118]))              ) nil [3078 3206])
+            ("make_h3fr_geography" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [3305 3309])
+                ("merges" variable nil (reparse-symbol function_parameters) [3311 3317])
+                ("settings" variable nil (reparse-symbol function_parameters) [3319 3327]))              ) nil [3281 3421])
+            ("make_h3fr_year" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [3515 3519])
+                ("merges" variable nil (reparse-symbol function_parameters) [3521 3527])
+                ("settings" variable nil (reparse-symbol function_parameters) [3529 3537]))              ) nil [3496 3626])
+            ("make_h3fr_serology" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [3724 3728])
+                ("merges" variable nil (reparse-symbol function_parameters) [3730 3736])
+                ("settings" variable nil (reparse-symbol function_parameters) [3738 3746]))              ) nil [3701 3839])
+            ("make_h3fr_serum_sectors" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [3942 3946])
+                ("merges" variable nil (reparse-symbol function_parameters) [3948 3954])
+                ("settings" variable nil (reparse-symbol function_parameters) [3956 3964]))              ) nil [3914 4061])
+            ("make_h3fr_serum_coverage" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [4165 4169])
+                ("merges" variable nil (reparse-symbol function_parameters) [4171 4177])
+                ("settings" variable nil (reparse-symbol function_parameters) [4179 4187]))              ) nil [4136 4285])
+            ("make_h3_signature_page" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [4387 4391])
+                ("merges" variable nil (reparse-symbol function_parameters) [4393 4399])
+                ("settings" variable nil (reparse-symbol function_parameters) [4401 4409]))              ) nil [4360 4481])
+            ("make_index" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [4571 4579]))              ) nil [4556 4912])
+            ("MapMaker159" type
+               (:superclasses ("map_maker.MapMakerClade")
+                :members 
+                  ( ("clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5047 5051])
+                            ("for_filename" variable nil (reparse-symbol function_parameters) [5053 5065]))                          )
+                        (reparse-symbol indented_block_body) [5037 5089]))                  
+                :type "class")
+                nil [4987 5089])
+            ("MapMaker159_6months" type
+               (:superclasses ("MapMaker159")
+                :members 
+                  ( ("clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5220 5224])
+                            ("for_filename" variable nil (reparse-symbol function_parameters) [5226 5238]))                          )
+                        (reparse-symbol indented_block_body) [5210 5292])
+                    ("start_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5312 5316]))                          )
+                        (reparse-symbol indented_block_body) [5297 5389]))                  
+                :type "class")
+                nil [5164 5389])
+            ("MapMaker159_12months" type
+               (:superclasses ("MapMaker159")
+                :members 
+                  ( ("clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5521 5525])
+                            ("for_filename" variable nil (reparse-symbol function_parameters) [5527 5539]))                          )
+                        (reparse-symbol indented_block_body) [5511 5594])
+                    ("start_date" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5614 5618]))                          )
+                        (reparse-symbol indented_block_body) [5599 5691]))                  
+                :type "class")
+                nil [5464 5691])
+            ("MapMakerTS" type
+               (:superclasses ("map_maker.MapMakerTS")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [5812 5816]))                  
+                :type "class")
+                nil [5766 5817])
+            ("MapMakerGeography" type
+               (:superclasses ("map_maker.MapMakerGeography")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [5952 5956]))                  
+                :type "class")
+                nil [5892 5957])
+            ("MapMakerYear" type
+               (:superclasses ("map_maker.MapMakerYear")
+                :members 
+                  ( ("legend" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6093 6097]))                          )
+                        (reparse-symbol indented_block_body) [6082 6601]))                  
+                :type "class")
+                nil [6032 6601])
+            ("MapMakerSerology" type
+               (:superclasses ("map_maker.MapMakerSerology")
+                :members 
+                  ( ("mark_by_clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6752 6756])
+                            ("antigenic_map" variable nil (reparse-symbol function_parameters) [6758 6771])
+                            ("settings" variable nil (reparse-symbol function_parameters) [6773 6781])
+                            ("chart" variable nil (reparse-symbol function_parameters) [6783 6788]))                          )
+                        (reparse-symbol indented_block_body) [6734 6890]))                  
+                :type "class")
+                nil [6676 6890])
+            ("MapMakerSerumCircles" type
+               (:superclasses ("map_maker.MapMakerSerumCircles")
+                :members 
+                  ( ("mark_by_clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7049 7053])
+                            ("antigenic_map" variable nil (reparse-symbol function_parameters) [7055 7068])
+                            ("settings" variable nil (reparse-symbol function_parameters) [7070 7078])
+                            ("chart" variable nil (reparse-symbol function_parameters) [7080 7085]))                          )
+                        (reparse-symbol indented_block_body) [7031 7181]))                  
+                :type "class")
+                nil [6965 7181])
+            ("MapMakerSerumSectors" type
+               (:superclasses ("map_maker.MapMakerSerumSectors")
+                :members 
+                  ( ("mark_by_clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7340 7344])
+                            ("antigenic_map" variable nil (reparse-symbol function_parameters) [7346 7359])
+                            ("settings" variable nil (reparse-symbol function_parameters) [7361 7369])
+                            ("chart" variable nil (reparse-symbol function_parameters) [7371 7376]))                          )
+                        (reparse-symbol indented_block_body) [7322 7472]))                  
+                :type "class")
+                nil [7256 7472])
+            ("MapMakerSerumCoverage" type
+               (:superclasses ("map_maker.MapMakerSerumCoverage")
+                :members 
+                  ( ("mark_by_clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7633 7637])
+                            ("antigenic_map" variable nil (reparse-symbol function_parameters) [7639 7652])
+                            ("settings" variable nil (reparse-symbol function_parameters) [7654 7662])
+                            ("chart" variable nil (reparse-symbol function_parameters) [7664 7669]))                          )
+                        (reparse-symbol indented_block_body) [7615 7765]))                  
+                :type "class")
+                nil [7547 7765])
+            ("TreeMaker" type
+               (:superclasses ("tree_maker.TreeMaker")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [7885 7889]))                  
+                :type "class")
+                nil [7840 7890])
+            ("SignaturePages" type
+               (:superclasses ("signature_page.SignaturePages")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [8024 8028]))                  
+                :type "class")
+                nil [7965 8029])
+            ("MapMakerPresentation" type
+               (:superclasses ("presentation.MapMakerPresentation")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [8173 8177]))                  
+                :type "class")
+                nil [8104 8178])
+            ("MapMakerInformation" type
+               (:superclasses ("map_maker.MapMakerInformation")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [8317 8321]))                  
+                :type "class")
+                nil [8253 8322]))          
+      :file "h3.py"
+      :pointmax 8488
+      :fsize 8487
+      :lastmodtime '(22655 16568 0 0)
+      :unmatched-syntax '((RETURN 5550 . 5556) (IF 5567 . 5569) (ELSE 5583 . 5587) (RETURN 5249 . 5255) (IF 5265 . 5267) (ELSE 5281 . 5285) (FROM 153 . 157) (PERIOD 158 . 159)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("raise" code nil nil [1 31])
+            ("copy" include nil nil [33 57])
+            ("pprint" include nil nil [33 57])
+            ("sys" include nil nil [33 57])
+            ("pathlib" include nil nil [58 82])
+            ("logging" include nil nil [83 97])
+            ("signature_page" include nil nil [150 208])
+            ("presentation" include nil nil [150 208])
+            ("tree_maker" include nil nil [150 208])
+            ("map_maker" include nil nil [150 208])
+            ("sVirusType" variable nil nil [284 301])
+            ("make_h1_ts" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [392 396])
+                ("merges" variable nil (reparse-symbol function_parameters) [398 404])
+                ("settings" variable nil (reparse-symbol function_parameters) [406 414]))              ) nil [377 482])
+            ("make_h1_tree" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [574 578])
+                ("merges" variable nil (reparse-symbol function_parameters) [580 586])
+                ("settings" variable nil (reparse-symbol function_parameters) [588 596]))              ) nil [557 639])
+            ("make_h1_geography" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [736 740])
+                ("merges" variable nil (reparse-symbol function_parameters) [742 748])
+                ("settings" variable nil (reparse-symbol function_parameters) [750 758]))              ) nil [714 833])
+            ("make_h1_year" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [925 929])
+                ("merges" variable nil (reparse-symbol function_parameters) [931 937])
+                ("settings" variable nil (reparse-symbol function_parameters) [939 947]))              ) nil [908 1017])
+            ("make_h1_clade" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1110 1114])
+                ("merges" variable nil (reparse-symbol function_parameters) [1116 1122])
+                ("settings" variable nil (reparse-symbol function_parameters) [1124 1132]))              ) nil [1092 1203])
+            ("make_h1_serum_sectors" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1304 1308])
+                ("merges" variable nil (reparse-symbol function_parameters) [1310 1316])
+                ("settings" variable nil (reparse-symbol function_parameters) [1318 1326]))              ) nil [1278 1404])
+            ("make_h1_serology" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1500 1504])
+                ("merges" variable nil (reparse-symbol function_parameters) [1506 1512])
+                ("settings" variable nil (reparse-symbol function_parameters) [1514 1522]))              ) nil [1479 1596])
+            ("make_h1_presentation" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1696 1700])
+                ("merges" variable nil (reparse-symbol function_parameters) [1702 1708])
+                ("settings" variable nil (reparse-symbol function_parameters) [1710 1718]))              ) nil [1671 1865])
+            ("make_h1_information" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [1964 1968])
+                ("merges" variable nil (reparse-symbol function_parameters) [1970 1976])
+                ("settings" variable nil (reparse-symbol function_parameters) [1978 1986]))              ) nil [1940 2063])
+            ("make_h1_signature_page" function (:arguments 
+              ( ("labs" variable nil (reparse-symbol function_parameters) [2165 2169])
+                ("merges" variable nil (reparse-symbol function_parameters) [2171 2177])
+                ("settings" variable nil (reparse-symbol function_parameters) [2179 2187]))              ) nil [2138 2259])
+            ("make_index" function (:arguments 
+              ( ("settings" variable nil (reparse-symbol function_parameters) [2349 2357]))              ) nil [2334 2503])
+            ("MapMakerTS" type
+               (:superclasses ("map_maker.MapMakerTS")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2633 2637])
+                            ("labs" variable nil (reparse-symbol function_parameters) [2639 2643]))                          )
+                        (reparse-symbol indented_block_body) [2624 2958])
+                    ("title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2973 2977])
+                            ("settings" variable nil (reparse-symbol function_parameters) [2979 2987])
+                            ("lab" variable nil (reparse-symbol function_parameters) [2989 2992]))                          )
+                        (reparse-symbol indented_block_body) [2963 3101]))                  
+                :type "class")
+                nil [2578 3101])
+            ("MapMakerGeography" type
+               (:superclasses ("map_maker.MapMakerGeography")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3245 3249])
+                            ("labs" variable nil (reparse-symbol function_parameters) [3251 3255]))                          )
+                        (reparse-symbol indented_block_body) [3236 3288])
+                    ("title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3303 3307])
+                            ("settings" variable nil (reparse-symbol function_parameters) [3309 3317])
+                            ("lab" variable nil (reparse-symbol function_parameters) [3319 3322]))                          )
+                        (reparse-symbol indented_block_body) [3293 3418]))                  
+                :type "class")
+                nil [3176 3418])
+            ("MapMakerYear" type
+               (:superclasses ("map_maker.MapMakerYear")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3552 3556])
+                            ("labs" variable nil (reparse-symbol function_parameters) [3558 3562]))                          )
+                        (reparse-symbol indented_block_body) [3543 3595])
+                    ("title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3610 3614])
+                            ("settings" variable nil (reparse-symbol function_parameters) [3616 3624])
+                            ("lab" variable nil (reparse-symbol function_parameters) [3626 3629]))                          )
+                        (reparse-symbol indented_block_body) [3600 3725])
+                    ("legend" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3741 3745]))                          )
+                        (reparse-symbol indented_block_body) [3730 4252]))                  
+                :type "class")
+                nil [3493 4252])
+            ("MapMakerClade" type
+               (:superclasses ("map_maker.MapMakerClade")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4388 4392])
+                            ("labs" variable nil (reparse-symbol function_parameters) [4394 4398]))                          )
+                        (reparse-symbol indented_block_body) [4379 4431])
+                    ("title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4446 4450])
+                            ("settings" variable nil (reparse-symbol function_parameters) [4452 4460])
+                            ("lab" variable nil (reparse-symbol function_parameters) [4462 4465]))                          )
+                        (reparse-symbol indented_block_body) [4436 4561]))                  
+                :type "class")
+                nil [4327 4561])
+            ("MapMakerSerumSectors" type
+               (:superclasses ("map_maker.MapMakerSerumSectors")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4711 4715])
+                            ("labs" variable nil (reparse-symbol function_parameters) [4717 4721]))                          )
+                        (reparse-symbol indented_block_body) [4702 4754])
+                    ("title" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4769 4773])
+                            ("settings" variable nil (reparse-symbol function_parameters) [4775 4783])
+                            ("lab" variable nil (reparse-symbol function_parameters) [4785 4788]))                          )
+                        (reparse-symbol indented_block_body) [4759 4884])
+                    ("mark_by_clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4907 4911])
+                            ("antigenic_map" variable nil (reparse-symbol function_parameters) [4913 4926])
+                            ("settings" variable nil (reparse-symbol function_parameters) [4928 4936])
+                            ("chart" variable nil (reparse-symbol function_parameters) [4938 4943]))                          )
+                        (reparse-symbol indented_block_body) [4889 5043]))                  
+                :type "class")
+                nil [4636 5043])
+            ("MapMakerSerology" type
+               (:superclasses ("map_maker.MapMakerSerology")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5185 5189])
+                            ("labs" variable nil (reparse-symbol function_parameters) [5191 5195]))                          )
+                        (reparse-symbol indented_block_body) [5176 5228])
+                    ("mark_by_clade" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5251 5255])
+                            ("antigenic_map" variable nil (reparse-symbol function_parameters) [5257 5270])
+                            ("settings" variable nil (reparse-symbol function_parameters) [5272 5280])
+                            ("chart" variable nil (reparse-symbol function_parameters) [5282 5287]))                          )
+                        (reparse-symbol indented_block_body) [5233 5393]))                  
+                :type "class")
+                nil [5118 5393])
+            ("TreeMaker" type
+               (:superclasses ("tree_maker.TreeMaker")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [5513 5517]))                  
+                :type "class")
+                nil [5468 5518])
+            ("SignaturePages" type
+               (:superclasses ("signature_page.SignaturePages")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [5652 5656]))                  
+                :type "class")
+                nil [5593 5657])
+            ("MapMakerPresentation" type
+               (:superclasses ("presentation.MapMakerPresentation")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [5801 5805]))                  
+                :type "class")
+                nil [5732 5806])
+            ("MapMakerPresentationAll" type
+               (:superclasses ("presentation.MapMakerPresentation")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5962 5966]))                          )
+                        (reparse-symbol indented_block_body) [5953 6004])
+                    ("index_maker_cls" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6029 6033]))                          )
+                        (reparse-symbol indented_block_body) [6009 6065]))                  
+                :type "class")
+                nil [5881 6065])
+            ("IndexMakerAll" type
+               (:superclasses ("presentation.IndexMaker")
+                :members 
+                  ( ("make" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6201 6205])
+                            ("labs" variable nil (reparse-symbol function_parameters) [6207 6211]))                          )
+                        (reparse-symbol indented_block_body) [6192 7153]))                  
+                :type "class")
+                nil [6140 7153])
+            ("MapMakerInformation" type
+               (:superclasses ("map_maker.MapMakerInformation")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [7292 7296]))                  
+                :type "class")
+                nil [7228 7297]))          
+      :file "h1.py"
+      :pointmax 7463
+      :fsize 7462
+      :lastmodtime '(22655 16568 0 0)
+      :unmatched-syntax '((FROM 143 . 147) (PERIOD 148 . 149)))
+    (semanticdb-table "semanticdb-table"
+      :file "logging.py"
+      :fsize 7015
+      :lastmodtime '(22655 16568 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "utility.py"
+      :fsize 3707
+      :lastmodtime '(22655 16568 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "access.py"
+      :fsize 1614
+      :lastmodtime '(22655 16568 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "signature_page.py"
+      :fsize 12991
+      :lastmodtime '(22655 16568 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "tree_maker.py"
+      :fsize 9838
+      :lastmodtime '(22655 16568 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "map_maker.py"
+      :fsize 26729
+      :lastmodtime '(22655 16568 0 0)))
+  :file "!Users!eu!Shared!AC!Projects!old!ssm-report!python!ssm_report!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

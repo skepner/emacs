@@ -1,10 +1,10 @@
-;; Object bin/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "bin/"
+(semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "whocc-scan3.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 Scan antigens and sera found in the WHO CC tables.
@@ -328,11 +328,11 @@ Scan antigens and sera found in the WHO CC tables.
             ("exit" code nil nil [26812 26827]))          
       :file "whocc-scan3.py"
       :pointmax 26994
-      :fsize 26993
-      :lastmodtime '(22291 19115 0 0)
+      :fsize 27133
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 26709 . 26812) (COLON 26707 . 26708) (TRY 25757 . 25760) (AS 26701 . 26703) (INDENT_BLOCK 1490 . 1584) (NEWLINE 1489 . 1490) (COLON 1488 . 1489) (AS 1482 . 1484) (EXCEPT 1465 . 1471) (INDENT_BLOCK 1351 . 1457) (NEWLINE 1350 . 1351) (COLON 1349 . 1350) (TRY 980 . 983) (AS 1343 . 1345) (NAME 583 . 587) (IF 630 . 632) (ELSE 651 . 655)))
-    (semanticdb-table "whocc-scan.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 Scan antigens and sera found in the WHO CC tables.
@@ -622,10 +622,10 @@ Scan antigens and sera found in the WHO CC tables.
       :file "whocc-scan.py"
       :pointmax 25974
       :fsize 25973
-      :lastmodtime '(22200 20035 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 5750 . 5844) (NEWLINE 5749 . 5750) (COLON 5748 . 5749) (AS 5742 . 5744) (EXCEPT 5725 . 5731) (INDENT_BLOCK 5629 . 5717) (NEWLINE 5628 . 5629) (COLON 5627 . 5628) (TRY 4150 . 4153) (AS 5621 . 5623) (INDENT_BLOCK 5008 . 5130) (NEWLINE 5007 . 5008) (COLON 5006 . 5007) (TRY 4748 . 4751) (AS 5000 . 5002) (NAME 2202 . 2206) (IF 2231 . 2233) (ELSE 2246 . 2250) (NAME 2116 . 2127) (IF 2159 . 2161) (ELSE 2181 . 2185)))
-    (semanticdb-table "im"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("tempfile" include nil nil [76 96])
             ("sys" include nil nil [76 96])
@@ -637,11 +637,11 @@ Scan antigens and sera found in the WHO CC tables.
             ("acmacs.utilities.scripting" include nil nil [7255 7288]))          
       :file "im"
       :pointmax 14480
-      :fsize 14479
-      :lastmodtime '(22296 44824 0 0)
+      :fsize 15739
+      :lastmodtime '(22683 1064 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "color-by-aa-at-all-positions.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 Generates set of maps for a chart for all aa positions, each map is colored by AA at some position.
@@ -673,10 +673,10 @@ Fasta file must contain aligned AA sequences with HI names, e.g. exported by
       :file "color-by-aa-at-all-positions.py"
       :pointmax 5002
       :fsize 5001
-      :lastmodtime '(22220 8011 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "coloring-by-aa.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("re" include nil nil [65 97])
             ("pprint" include nil nil [65 97])
@@ -729,10 +729,10 @@ Fasta file must contain aligned AA sequences with HI names, e.g. exported by
       :file "coloring-by-aa.py"
       :pointmax 11721
       :fsize 11720
-      :lastmodtime '(22183 12785 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 7666 . 7739) (NEWLINE 7665 . 7666) (COLON 7664 . 7665) (TRY 7500 . 7503) (AS 7658 . 7660) (INDENT_BLOCK 7305 . 7378) (NEWLINE 7304 . 7305) (COLON 7303 . 7304) (TRY 7227 . 7230) (AS 7297 . 7299) (INDENT_BLOCK 4208 . 4261) (NEWLINE 4207 . 4208) (COLON 4206 . 4207) (TRY 641 . 644) (AS 4200 . 4202)))
-    (semanticdb-table "fasta-align-to-start.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"Reads sequences from a fasta file, trims them to start positon, writes fasta file.\"\"\"" code nil nil [149 237])
             ("traceback" include nil nil [239 264])
@@ -747,10 +747,10 @@ Fasta file must contain aligned AA sequences with HI names, e.g. exported by
       :file "fasta-align-to-start.py"
       :pointmax 1984
       :fsize 1983
-      :lastmodtime '(22192 37919 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 1720 . 1802) (COLON 1718 . 1719) (TRY 907 . 910) (AS 1712 . 1714)))
-    (semanticdb-table "api2.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"
 acmacs-c2 API access for python2, see docs/api2.txt for usage description
@@ -1011,10 +1011,10 @@ acmacs-c2 API access for python2, see docs/api2.txt for usage description
       :file "api2.py"
       :pointmax 23716
       :fsize 23715
-      :lastmodtime '(22233 41342 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 23446 . 23534) (COLON 23444 . 23445) (AS 23438 . 23440) (EXCEPT 23421 . 23427) (INDENT_BLOCK 23363 . 23421) (COLON 23331 . 23332) (TRY 20932 . 20935) (AS 23325 . 23327) (INDENT_BLOCK 16491 . 16583) (NEWLINE 16490 . 16491) (COLON 16489 . 16490) (TRY 16383 . 16386) (AS 16483 . 16485) (INDENT_BLOCK 15841 . 15940) (NEWLINE 15840 . 15841) (COLON 15839 . 15840) (AS 15833 . 15835) (EXCEPT 15816 . 15822) (INDENT_BLOCK 15761 . 15812) (NEWLINE 15760 . 15761) (COLON 15759 . 15760) (TRY 14321 . 14324) (AS 15753 . 15755)))
-    (semanticdb-table "aw-chart.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("traceback" include nil nil [137 180])
             ("pprint" include nil nil [137 180])
@@ -1069,37 +1069,57 @@ acmacs-c2 API access for python2, see docs/api2.txt for usage description
                     ("args" variable nil (reparse-symbol function_parameters) [4636 4640])
                     ("get_log" variable nil (reparse-symbol function_parameters) [4642 4649]))                  )
                 nil [4612 5490])
+            ("command_export_for_viewing" function
+               (:documentation "Export chart
+    export_for_viewing id= format=json
+    format: json, lisp, python, text, print
+    use table_update upon fixing
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [5596 5599])
+                    ("args" variable nil (reparse-symbol function_parameters) [5601 5605])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [5607 5614]))                  )
+                nil [5565 6204])
+            ("command_table_update" function
+               (:documentation "Updates table data upon editing.
+    table_update id= data=<filename.json>
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [6304 6307])
+                    ("args" variable nil (reparse-symbol function_parameters) [6309 6313])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [6315 6322]))                  )
+                nil [6279 6676])
             ("command_chart_info" function (:arguments 
-              ( ("api" variable nil (reparse-symbol function_parameters) [5588 5591])
-                ("args" variable nil (reparse-symbol function_parameters) [5593 5597])
-                ("get_log" variable nil (reparse-symbol function_parameters) [5599 5606]))              ) nil [5565 5932])
+              ( ("api" variable nil (reparse-symbol function_parameters) [6774 6777])
+                ("args" variable nil (reparse-symbol function_parameters) [6779 6783])
+                ("get_log" variable nil (reparse-symbol function_parameters) [6785 6792]))              ) nil [6751 7118])
             ("command_export_entry" function
                (:documentation "Export chart entry (alpha only)
     export_entry id=
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [6032 6035])
-                    ("args" variable nil (reparse-symbol function_parameters) [6037 6041])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [6043 6050]))                  )
-                nil [6007 6329])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [7218 7221])
+                    ("args" variable nil (reparse-symbol function_parameters) [7223 7227])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [7229 7236]))                  )
+                nil [7193 7515])
             ("command_export_archive" function
                (:documentation "Export chart and its children as an archive which could be later imported into another server.
     export_archive id= output=filename.awa
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [6431 6434])
-                    ("args" variable nil (reparse-symbol function_parameters) [6436 6440])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [6442 6449]))                  )
-                nil [6404 6983])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [7617 7620])
+                    ("args" variable nil (reparse-symbol function_parameters) [7622 7626])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [7628 7635]))                  )
+                nil [7590 8169])
             ("command_import_archive" function
                (:documentation "Import chart archive (exported by export_archive).
     import_archive filename=filename.awa
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [7085 7088])
-                    ("args" variable nil (reparse-symbol function_parameters) [7090 7094])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [7096 7103]))                  )
-                nil [7058 7507])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [8271 8274])
+                    ("args" variable nil (reparse-symbol function_parameters) [8276 8280])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [8282 8289]))                  )
+                nil [8244 8693])
             ("command_import" function
                (:documentation "Imports charts
     import <filename> ... groups='[\"read-access-group-name\"]' keywords='[\"reorient\", \"b1\"]'
@@ -1107,101 +1127,101 @@ acmacs-c2 API access for python2, see docs/api2.txt for usage description
                           add_passages_serum_ids=true
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [7601 7604])
-                    ("args" variable nil (reparse-symbol function_parameters) [7606 7610])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [7612 7619]))                  )
-                nil [7582 9276])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [8787 8790])
+                    ("args" variable nil (reparse-symbol function_parameters) [8792 8796])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [8798 8805]))                  )
+                nil [8768 10462])
             ("command_remove" function
                (:documentation "Remove charts (also removes inspectors listing the chart and its children among sources and results)
     remove id= keywords= words=
     id is either page id or a list of ids
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [9370 9373])
-                    ("args" variable nil (reparse-symbol function_parameters) [9375 9379])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [9381 9388]))                  )
-                nil [9351 11382])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [10556 10559])
+                    ("args" variable nil (reparse-symbol function_parameters) [10561 10565])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [10567 10574]))                  )
+                nil [10537 12568])
             ("command_remove_all" function
                (:documentation "Remove all charts
     remove_all
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [11480 11483])
-                    ("args" variable nil (reparse-symbol function_parameters) [11485 11489])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [11491 11498]))                  )
-                nil [11457 11905])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [12666 12669])
+                    ("args" variable nil (reparse-symbol function_parameters) [12671 12675])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [12677 12684]))                  )
+                nil [12643 13091])
             ("command_info" function
                (:documentation "Obtains info about chart or root chart
     info id= root=false
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [11997 12000])
-                    ("args" variable nil (reparse-symbol function_parameters) [12002 12006])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [12008 12015]))                  )
-                nil [11980 12645])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [13183 13186])
+                    ("args" variable nil (reparse-symbol function_parameters) [13188 13192])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [13194 13201]))                  )
+                nil [13166 13831])
             ("command_readable_by" function
                (:documentation "Grant user/group read permission for the chart
     readable_by name= chart_id=
     chart_id is either chart id or list of chart ids
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [12744 12747])
-                    ("args" variable nil (reparse-symbol function_parameters) [12749 12753])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [12755 12762]))                  )
-                nil [12720 13503])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [13930 13933])
+                    ("args" variable nil (reparse-symbol function_parameters) [13935 13939])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [13941 13948]))                  )
+                nil [13906 14689])
             ("command_table_as_excel" function
                (:documentation "Returns table_as_excel representation
     table_as_excel id=
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [13605 13608])
-                    ("args" variable nil (reparse-symbol function_parameters) [13610 13614])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [13616 13623]))                  )
-                nil [13578 13977])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [14791 14794])
+                    ("args" variable nil (reparse-symbol function_parameters) [14796 14800])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [14802 14809]))                  )
+                nil [14764 15163])
             ("command_keywords" function
                (:documentation "Set chart keywords
     keywords id= keywords='[\"merge\", \"table\", \"b1\"]' root=false
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [14073 14076])
-                    ("args" variable nil (reparse-symbol function_parameters) [14078 14082])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [14084 14091]))                  )
-                nil [14052 14568])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [15259 15262])
+                    ("args" variable nil (reparse-symbol function_parameters) [15264 15268])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [15270 15277]))                  )
+                nil [15238 15754])
             ("command_plot" function
                (:documentation "Plots chart
     plot chart_id= secondary_chart_id= size=600 show_title=true media=pdf
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [14660 14663])
-                    ("args" variable nil (reparse-symbol function_parameters) [14665 14669])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [14671 14678]))                  )
-                nil [14643 15366])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [15846 15849])
+                    ("args" variable nil (reparse-symbol function_parameters) [15851 15855])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [15857 15864]))                  )
+                nil [15829 16552])
             ("command_export_for_editing" function
                (:documentation "Export table for editing
     export_for_editing id=
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [15472 15475])
-                    ("args" variable nil (reparse-symbol function_parameters) [15477 15481])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [15483 15490]))                  )
-                nil [15441 15881])
+                  ( ("api" variable nil (reparse-symbol function_parameters) [16658 16661])
+                    ("args" variable nil (reparse-symbol function_parameters) [16663 16667])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [16669 16676]))                  )
+                nil [16627 17067])
             ("command_import_after_editing" function
                (:documentation "Update table after editing
     import_after_editing id= filename=
     "
                 :arguments 
-                  ( ("api" variable nil (reparse-symbol function_parameters) [15989 15992])
-                    ("args" variable nil (reparse-symbol function_parameters) [15994 15998])
-                    ("get_log" variable nil (reparse-symbol function_parameters) [16000 16007]))                  )
-                nil [15956 16391])
-            ("aw_main" code nil nil [16466 16475]))          
+                  ( ("api" variable nil (reparse-symbol function_parameters) [17175 17178])
+                    ("args" variable nil (reparse-symbol function_parameters) [17180 17184])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [17186 17193]))                  )
+                nil [17142 17577])
+            ("aw_main" code nil nil [17652 17661]))          
       :file "aw-chart.py"
-      :pointmax 16642
-      :fsize 16641
-      :lastmodtime '(22135 41023 0 0)
-      :unmatched-syntax '((INDENT_BLOCK 9203 . 9230) (NEWLINE 9202 . 9203) (COLON 9201 . 9202) (TRY 8391 . 8394) (AS 9195 . 9197) (NAME 8924 . 8931) (IF 8942 . 8944) (ELSE 8966 . 8970)))
-    (semanticdb-table "api.py"
-      :major-mode 'python-mode
+      :pointmax 17828
+      :fsize 17827
+      :lastmodtime '(22655 31758 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 10389 . 10416) (NEWLINE 10388 . 10389) (COLON 10387 . 10388) (TRY 9577 . 9580) (AS 10381 . 10383) (NAME 10110 . 10117) (IF 10128 . 10130) (ELSE 10152 . 10156)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("traceback" include nil nil [137 181])
             ("pprint" include nil nil [137 181])
@@ -1238,11 +1258,11 @@ acmacs-c2 API access for python2, see docs/api2.txt for usage description
             ("exit" code nil nil [5447 7610]))          
       :file "api.py"
       :pointmax 7777
-      :fsize 7776
-      :lastmodtime '(22158 25321 0 0)
+      :fsize 7972
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 3018 . 3207) (NEWLINE 3017 . 3018) (COLON 3016 . 3017) (TRY 2910 . 2913) (AS 3010 . 3012) (INDENT_BLOCK 2359 . 2458) (NEWLINE 2358 . 2359) (COLON 2357 . 2358) (AS 2351 . 2353) (EXCEPT 2334 . 2340) (INDENT_BLOCK 2279 . 2330) (NEWLINE 2278 . 2279) (COLON 2277 . 2278) (TRY 507 . 510) (AS 2271 . 2273)))
-    (semanticdb-table "chart-info.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"Prints information about chart(s).\"\"\"" code nil nil [149 189])
             ("traceback" include nil nil [191 230])
@@ -1261,11 +1281,11 @@ acmacs-c2 API access for python2, see docs/api2.txt for usage description
             ("exit" code nil nil [9445 13943]))          
       :file "chart-info.py"
       :pointmax 14110
-      :fsize 14109
-      :lastmodtime '(22182 2032 0 0)
+      :fsize 14130
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 3640 . 3723) (NEWLINE 3639 . 3640) (COLON 3638 . 3639) (TRY 3472 . 3475) (AS 3632 . 3634) (INDENT_BLOCK 3333 . 3460) (NEWLINE 3332 . 3333) (COLON 3331 . 3332) (TRY 3214 . 3217) (AS 3325 . 3327) (INDENT_BLOCK 2618 . 2714) (NEWLINE 2617 . 2618) (COLON 2616 . 2617) (AS 2610 . 2612) (EXCEPT 2561 . 2567) (INDENT_BLOCK 2479 . 2549) (NEWLINE 2478 . 2479) (COLON 2477 . 2478) (TRY 1029 . 1032) (AS 2471 . 2473)))
-    (semanticdb-table "chart-plot.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("\"\"\"Plots projection of a chart (by chart_id) into pdf or png or json,
 format is autodetected by the filename suffix. Supported suffice are:
@@ -1290,10 +1310,10 @@ png, pdf, json.\"\"\"" code nil nil [137 295])
       :file "chart-plot.py"
       :pointmax 7376
       :fsize 7375
-      :lastmodtime '(22086 5788 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((INDENT_BLOCK 2690 . 2797) (NEWLINE 2689 . 2690) (COLON 2688 . 2689) (TRY 538 . 541) (AS 2682 . 2684) (NAME 958 . 962) (IF 984 . 986) (ELSE 1003 . 1007)))
-    (semanticdb-table "convert.py"
-      :major-mode 'python-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
       :tags 
         '( ("traceback" include nil nil [149 174])
             ("os" include nil nil [149 174])
@@ -1311,9 +1331,427 @@ png, pdf, json.\"\"\"" code nil nil [137 295])
             ("exit" code nil nil [4829 10346]))          
       :file "convert.py"
       :pointmax 10581
-      :fsize 10580
-      :lastmodtime '(22122 51986 0 0)
-      :unmatched-syntax '((INDENT_BLOCK 3038 . 3119) (NEWLINE 3037 . 3038) (COLON 3036 . 3037) (TRY 2927 . 2930) (AS 3030 . 3032))))
+      :fsize 10905
+      :lastmodtime '(22655 31758 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 3038 . 3119) (NEWLINE 3037 . 3038) (COLON 3036 . 3037) (TRY 2927 . 2930) (AS 3030 . 3032)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Plots chart.\"\"\"" code nil nil [76 94])
+            ("traceback" include nil nil [96 143])
+            ("subprocess" include nil nil [96 143])
+            ("tempfile" include nil nil [96 143])
+            ("sys" include nil nil [96 143])
+            ("os" include nil nil [96 143])
+            ("logging" include nil nil [144 158])
+            ("acmacs.plot.ims" include nil nil [204 282])
+            ("acmacs.core.chart" include nil nil [283 350])
+            ("acmacs.utilities.settings" include nil nil [351 397])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [482 486]))              ) nil [473 2199])
+            ("open_image" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [2289 2297]))              ) nil [2274 2888])
+            ("argparse" include nil nil [2963 2978])
+            ("SettingsAction" type
+               (:superclasses ("argparse.Action")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3252 3256])
+                            ("parser" variable nil (reparse-symbol function_parameters) [3258 3264])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [3266 3275])
+                            ("values" variable nil (reparse-symbol function_parameters) [3277 3283])
+                            ("option_string" variable nil (reparse-symbol function_parameters) [3285 3298]))                          )
+                        (reparse-symbol indented_block_body) [3239 3481])
+                    ("default_setter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3584 3588])
+                            ("values" variable nil (reparse-symbol function_parameters) [3590 3596])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [3598 3607])
+                            ("dest" variable nil (reparse-symbol function_parameters) [3609 3613]))                          )
+                        (reparse-symbol indented_block_body) [3565 3658])
+                    ("projection" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3678 3682])
+                            ("values" variable nil (reparse-symbol function_parameters) [3684 3690])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [3692 3701])
+                            ("dest" variable nil (reparse-symbol function_parameters) [3703 3707]))                          )
+                        (reparse-symbol indented_block_body) [3663 3856])
+                    ("mods" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3870 3874])
+                            ("values" variable nil (reparse-symbol function_parameters) [3876 3882])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [3884 3893])
+                            ("dest" variable nil (reparse-symbol function_parameters) [3895 3899]))                          )
+                        (reparse-symbol indented_block_body) [3861 3957]))                  
+                :type "class")
+                nil [2980 3957])
+            ("SettingsActionConst" type
+               (:superclasses ("SettingsAction")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [4051 4105]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4019 4023])
+                            ("args" variable nil (reparse-symbol function_parameters) [4025 4030])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4032 4040]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4006 4106]))                  
+                :type "class")
+                nil [3958 4106])
+            ("SettingsActionTrue" type
+               (:superclasses ("SettingsActionConst")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4172 4176])
+                            ("parser" variable nil (reparse-symbol function_parameters) [4178 4184])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [4186 4195])
+                            ("values" variable nil (reparse-symbol function_parameters) [4197 4203])
+                            ("option_string" variable nil (reparse-symbol function_parameters) [4205 4218]))                          )
+                        (reparse-symbol indented_block_body) [4159 4329]))                  
+                :type "class")
+                nil [4107 4329])
+            ("SettingsActionFalse" type
+               (:superclasses ("SettingsActionConst")
+                :members 
+                  ( ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4396 4400])
+                            ("parser" variable nil (reparse-symbol function_parameters) [4402 4408])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [4410 4419])
+                            ("values" variable nil (reparse-symbol function_parameters) [4421 4427])
+                            ("option_string" variable nil (reparse-symbol function_parameters) [4429 4442]))                          )
+                        (reparse-symbol indented_block_body) [4383 4554]))                  
+                :type "class")
+                nil [4330 4554])
+            ("exit" code nil nil [7112 7127]))          
+      :file "ims"
+      :pointmax 12928
+      :fsize 12927
+      :lastmodtime '(22701 41355 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 7030 . 7112) (COLON 7028 . 7029) (TRY 4555 . 4558) (AS 7022 . 7024) (INDENT_BLOCK 1865 . 2199) (NEWLINE 1864 . 1865) (COLON 1863 . 1864) (FINALLY 1856 . 1863) (INDENT_BLOCK 1801 . 1852) (NEWLINE 1800 . 1801) (COLON 1799 . 1800) (AS 1793 . 1795) (EXCEPT 1776 . 1782) (INDENT_BLOCK 1617 . 1772) (NEWLINE 1616 . 1617) (COLON 1615 . 1616) (EXCEPT 1571 . 1577) (INDENT_BLOCK 1498 . 1567) (NEWLINE 1497 . 1498) (COLON 1496 . 1497) (TRY 553 . 556) (AS 1490 . 1492)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("traceback" include nil nil [137 184])
+            ("pprint" include nil nil [137 184])
+            ("operator" include nil nil [137 184])
+            ("re" include nil nil [137 184])
+            ("os" include nil nil [137 184])
+            ("sys" include nil nil [137 184])
+            ("logging" include nil nil [185 199])
+            ("acmacs.utilities.scripting" include nil nil [245 331])
+            ("acmacs.utilities.open_file" include nil nil [332 378])
+            ("sVirusTypes" variable nil nil [454 527])
+            ("command_list" function
+               (:documentation "List available chains
+    list state=FAILED|completed words='search by name' only_of_type=any|incremental_chain|routine_diagnostics|optimal_minimum_column_basis|dimension_test|map_resolution_test
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [620 623])
+                    ("args" variable nil (reparse-symbol function_parameters) [625 629])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [631 638]))                  )
+                nil [603 1959])
+            ("command_list_whocc" function
+               (:documentation "List available WHOCC chains
+    list state=FAILED|completed words='search by name'
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [2057 2060])
+                    ("args" variable nil (reparse-symbol function_parameters) [2062 2066])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [2068 2075]))                  )
+                nil [2034 3839])
+            ("command_whocc_list" variable nil nil [3840 3879])
+            ("command_handling" function
+               (:documentation "List inspectors in the handling state
+    handling
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [3976 3979])
+                    ("args" variable nil (reparse-symbol function_parameters) [3981 3985])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [3987 3994]))                  )
+                nil [3955 4566])
+            ("command_set_state" function
+               (:documentation "Set inspector's state
+    set_state chain_id= state= state_details=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [4663 4666])
+                    ("args" variable nil (reparse-symbol function_parameters) [4668 4672])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [4674 4681]))                  )
+                nil [4641 4985])
+            ("command_create" function
+               (:documentation "Create new chain
+    create description|name='' number_of_dimensions=2 number_of_optimizations=500 submit=false keywords='[\"whocc\"]' disconnect='{\"antigens\": [list of names], \"sera\": [list of names]}' markings='[\"continents\", \"vaccines\", {\"name\": \"antigens_by_name\", \"data\": [{\"name\": [\"A(H1N1)/CHRISTCHURCH/16/2010\"], \"fill_color\": \"blue\", \"outline_color\": \"red\", \"size\": 3.0, \"raise_\": 1}]}]' merge_incremental=true merge_from_scratch=true individual=true minimum_column_basis=auto low_avidity=true high_avidity=false exclude_antigens_sera_few_titers=true dodgy_titer_is_regular=false email=false individual_col_bases_from_merge=false readable_by='[\"name_or_group\", \"name_or_group\"]' lineage='victoria' chart_reorient_to= sources='[\"id\", \"id\"]' forked_id= forked_step= in_2d='{\"antigens\": [list of names or indices], \"sera\": [list of names or indices]}'
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [5079 5082])
+                    ("args" variable nil (reparse-symbol function_parameters) [5084 5088])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [5090 5097]))                  )
+                nil [5060 6828])
+            ("command_modify" function
+               (:documentation "Modifies chain parameters
+    modify chain_id= name='' number_of_dimensions=2 number_of_optimizations=500 sources_add='[\"id\", \"id\"]' sources='[\"id\", \"id\"]' submit=false disconnect='{\"antigens\": [list of names], \"sera\": [list of names]}' markings='[\"continents\", \"vaccines\", {\"name\": \"antigens_by_name\", \"data\": [{\"name\": [\"A(H1N1)/CHRISTCHURCH/16/2010\"], \"fill_color\": \"blue\", \"outline_color\": \"red\", \"size\": 3.0, \"raise_\": 1}]}]' merge_incremental=true merge_from_scratch=true individual=true minimum_column_basis=auto low_avidity=true high_avidity=false exclude_antigens_sera_few_titers=true dodgy_titer_is_regular=false individual_col_bases_from_merge=false email=false readable_by='[\"name_or_group\", \"name_or_group\"]' lineage='victoria' chart_reorient_to= in_2d='{\"antigens\": [list of names or indices], \"sera\": [list of names or indices]}'
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [6922 6925])
+                    ("args" variable nil (reparse-symbol function_parameters) [6927 6931])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [6933 6940]))                  )
+                nil [6903 8838])
+            ("command_delete" function
+               (:documentation "Deletes chain
+    remove|delete id=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [8932 8935])
+                    ("args" variable nil (reparse-symbol function_parameters) [8937 8941])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [8943 8950]))                  )
+                nil [8913 9214])
+            ("command_remove" variable nil nil [9215 9246])
+            ("command_info" function
+               (:documentation "Obtains info about chain or chart or root chart
+    info chain_id= root=false
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [9339 9342])
+                    ("args" variable nil (reparse-symbol function_parameters) [9344 9348])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [9350 9357]))                  )
+                nil [9322 9904])
+            ("command_tables_suitable_for_chain" function
+               (:documentation "List tables suitable for chain but not yet added to it.
+    If chain id is not provided or chain has no sources yet,
+    all tables are listed.
+    tables_suitable_for_chain chain_id=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [10017 10020])
+                    ("args" variable nil (reparse-symbol function_parameters) [10022 10026])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [10028 10035]))                  )
+                nil [9979 10974])
+            ("command_add_table" function
+               (:documentation "Adds table to the end of the chain, optionally submits the chain
+    add_table chain_id=<chain-id> table=<filename|table-id> groups='[\"allow-reading-imported-table\"]' submit=false
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [11071 11074])
+                    ("args" variable nil (reparse-symbol function_parameters) [11076 11080])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [11082 11089]))                  )
+                nil [11049 12708])
+            ("command_tables_of_chain" function
+               (:documentation "List tables that are sources of a chain.
+    tables_of_chain chain_id=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [12811 12814])
+                    ("args" variable nil (reparse-symbol function_parameters) [12816 12820])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [12822 12829]))                  )
+                nil [12783 14764])
+            ("command_tables_of" variable nil nil [14765 14808])
+            ("command_fork" function
+               (:documentation "Forks the chain.
+    fork chain_id= step= [name=] [keywords='[\"whocc\"]'] [readable_by='[\"whocc-access\"]']
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [14901 14904])
+                    ("args" variable nil (reparse-symbol function_parameters) [14906 14910])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [14912 14919]))                  )
+                nil [14884 15753])
+            ("command_submit" function
+               (:documentation "Submits the incremental chain
+    submit chain_id=<chain-id>
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [15847 15850])
+                    ("args" variable nil (reparse-symbol function_parameters) [15852 15856])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [15858 15865]))                  )
+                nil [15828 16262])
+            ("command_resume" function
+               (:documentation "Resumes the chain
+    resume chain_id=<chain-id>
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [16356 16359])
+                    ("args" variable nil (reparse-symbol function_parameters) [16361 16365])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [16367 16374]))                  )
+                nil [16337 16767])
+            ("command_restart" function
+               (:documentation "Restarts the chain/inspector
+    restart chain_id=<chain-id>
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [16862 16865])
+                    ("args" variable nil (reparse-symbol function_parameters) [16867 16871])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [16873 16880]))                  )
+                nil [16842 17287])
+            ("command_message" function
+               (:documentation "Sends message to the chain
+    message chain_id=<chain-id> message=<message-name: cluster-completed>
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [17382 17385])
+                    ("args" variable nil (reparse-symbol function_parameters) [17387 17391])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [17393 17400]))                  )
+                nil [17362 17912])
+            ("command_log" function
+               (:documentation "Obtains log of the chain
+    log chain_id= format=text include_subinspectors=false start_time=None level=debug (error, warning, debug, info)
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [18003 18006])
+                    ("args" variable nil (reparse-symbol function_parameters) [18008 18012])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [18014 18021]))                  )
+                nil [17987 18717])
+            ("command_reset" function
+               (:documentation "Resets the chain
+    reset chain_id= remove_resulting_charts=false remove_logs=false
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [18810 18813])
+                    ("args" variable nil (reparse-symbol function_parameters) [18815 18819])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [18821 18828]))                  )
+                nil [18792 19220])
+            ("command_remove_last_source" function
+               (:documentation "Removes last source(s) from the incremental chain inspector. CAREFUL: it may remove other chains which list removed charts as sources.
+    remove_last_source chain_id= number_of_sources=1 delete_source_root=false
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [19326 19329])
+                    ("args" variable nil (reparse-symbol function_parameters) [19331 19335])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [19337 19344]))                  )
+                nil [19295 19888])
+            ("command_suspend" function
+               (:documentation "Resets the chain
+    suspend chain_id=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [19983 19986])
+                    ("args" variable nil (reparse-symbol function_parameters) [19988 19992])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [19994 20001]))                  )
+                nil [19963 20339])
+            ("command_state" function
+               (:documentation "Prints inspector tree and states
+    state chain_id= incomplete_only=true all=false
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [20465 20468])
+                    ("args" variable nil (reparse-symbol function_parameters) [20470 20474])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [20476 20483]))                  )
+                nil [20447 21421])
+            ("command_tree" variable nil nil [21422 21450])
+            ("command_keywords" function
+               (:documentation "Adds/removes/reports inspector keywords
+    keywords chain_id= [add=k1] [add=k2] [remove=k1] [remove=k2]
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [21547 21550])
+                    ("args" variable nil (reparse-symbol function_parameters) [21552 21556])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [21558 21565]))                  )
+                nil [21526 21915])
+            ("command_rename" function
+               (:documentation "Renames inspector
+    keywords chain_id= name=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [22009 22012])
+                    ("args" variable nil (reparse-symbol function_parameters) [22014 22018])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [22020 22027]))                  )
+                nil [21990 22453])
+            ("command_whocc_list_tables" function
+               (:documentation "List WHO CC tables
+    whocc_list [virus_type=] [lab=]
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [22558 22561])
+                    ("args" variable nil (reparse-symbol function_parameters) [22563 22567])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [22569 22576]))                  )
+                nil [22528 22992])
+            ("command_readable_by" function
+               (:documentation "Grant user/group read permission for the chain
+    readable_by name= chain_id=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [23091 23094])
+                    ("args" variable nil (reparse-symbol function_parameters) [23096 23100])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [23102 23109]))                  )
+                nil [23067 23797])
+            ("command_add_reorient" function
+               (:documentation "Optionally imports new chart from a file and use it as re-orient-to for a chain
+    add_reorient chain_id= chart=<filename|chart-id> [groups='[\"whocc-access\"]'] [keywords='[\"reorient\", \"b1\"]']
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [23897 23900])
+                    ("args" variable nil (reparse-symbol function_parameters) [23902 23906])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [23908 23915]))                  )
+                nil [23872 26068])
+            ("command_degraded" function
+               (:documentation "Mark chain and step as degraded
+    degraded chain_id= step=
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [26164 26167])
+                    ("args" variable nil (reparse-symbol function_parameters) [26169 26173])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [26175 26182]))                  )
+                nil [26143 27553])
+            ("command_whocc_recent" function
+               (:documentation "Lists recent merges for SSM
+    whocc-recent [lab=] [virus_type=]
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [27653 27656])
+                    ("args" variable nil (reparse-symbol function_parameters) [27658 27662])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [27664 27671]))                  )
+                nil [27628 29295])
+            ("command_plot_style" function
+               (:documentation "Import plot style description and apply it to the all charts (individual and merges) of the chain
+    plot-style chain_id= import=<filename>
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [29393 29396])
+                    ("args" variable nil (reparse-symbol function_parameters) [29398 29402])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [29404 29411]))                  )
+                nil [29370 29942])
+            ("command_dimension_test" function
+               (:documentation "Create new chain
+    dimension_test chart_id= number_of_optimizations=500 minimum_column_basis=auto submit=true number_of_dimensions_to_test='[1, 2, 3, 4, 5]' exclude_antigens_sera_few_titers=true dodgy_titer_is_regular=false email=false
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [30044 30047])
+                    ("args" variable nil (reparse-symbol function_parameters) [30049 30053])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [30055 30062]))                  )
+                nil [30017 31193])
+            ("command_map_resolution_test" function
+               (:documentation "Create new chain
+    map_resolution_test chart_id= proportions_to_dont_care='[0.1, 0.2, 0.3, 0.4, 0.5]' number_of_random_replicates_for_each_proportion=25 number_of_dimensions_to_test='[1, 2, 3, 4, 5]' number_of_optimizations=100 minimum_column_basis=auto submit=true dodgy_titer_is_regular=false email=false
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [31300 31303])
+                    ("args" variable nil (reparse-symbol function_parameters) [31305 31309])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [31311 31318]))                  )
+                nil [31268 32989])
+            ("command_optimization" function
+               (:documentation "Create optimization chain
+    optimization chart_id= number_of_optimizations=500 minimum_column_basis=auto submit=true number_of_dimensions='[5, 2]' in_2d='{\"antigens\": [list of names or indices], \"sera\": [list of names or indices]}' markings='[\"continents\", \"vaccines\", {\"name\": \"antigens_by_name\", \"data\": [{\"name\": [\"A(H1N1)/CHRISTCHURCH/16/2010\"], \"fill_color\": \"blue\", \"outline_color\": \"red\", \"size\": 3.0, \"raise_\": 1}]}]' exclude_antigens_sera_few_titers=true dodgy_titer_is_regular=false email=false in_2d='{\"antigens\": [list of names or indices], \"sera\": [list of names or indices]}'
+    "
+                :arguments 
+                  ( ("api" variable nil (reparse-symbol function_parameters) [33089 33092])
+                    ("args" variable nil (reparse-symbol function_parameters) [33094 33098])
+                    ("get_log" variable nil (reparse-symbol function_parameters) [33100 33107]))                  )
+                nil [33064 34551])
+            ("aw_main" code nil nil [34626 34635]))          
+      :file "aw-chain.py"
+      :pointmax 34802
+      :fsize 34801
+      :lastmodtime '(22655 31758 0 0)
+      :unmatched-syntax '((NAME 25346 . 25353) (IF 25364 . 25366) (ELSE 25388 . 25392) (INDENT_BLOCK 13947 . 14055) (NEWLINE 13946 . 13947) (COLON 13945 . 13946) (TRY 13731 . 13734) (AS 13939 . 13941) (NAME 12124 . 12131) (IF 12142 . 12144) (ELSE 12166 . 12170))))
   :file "!Users!eu!ac!acmacs!bin!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

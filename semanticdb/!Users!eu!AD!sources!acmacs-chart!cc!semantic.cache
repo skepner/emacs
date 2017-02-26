@@ -1,0 +1,2955 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34])
+            ("string" include (:system-flag t) nil [35 52])
+            ("vector" include (:system-flag t) nil [53 70])
+            ("map" include (:system-flag t) nil [71 85])
+            ("acmacs-base/virus-name.hh" include nil nil [111 147])
+            ("acmacs-base/string.hh" include nil nil [148 180])
+            ("acmacs-base/range.hh" include nil nil [181 212])
+            ("acmacs-base/passage.hh" include nil nil [213 246])
+            ("acmacs-chart/antigen-serum-match.hh" include nil nil [248 294])
+            ("acmacs-chart/layout.hh" include nil nil [295 328])
+            ("acmacs-chart/chart-plot-spec.hh" include nil nil [329 371])
+            ("LocDb" type
+               (:prototype t
+                :type "class")
+                nil [373 385])
+            ("Annotations" type
+               (:superclasses 
+                  ( ("std::vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [517 524])
+                    ("has" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("anno" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [582 599]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [566 658])
+                    ("distinct" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [663 719])
+                    ("sort" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [725 774])
+                    ("sort" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [779 847])
+                    ("join" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [853 930])
+                    ("==" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Annotations" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1037 1064]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1012 1349]))                  
+                :type "class")
+                nil [462 1353])
+            ("AntigenSerum" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1476 1483])
+                    ("AntigenSerum" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1581 1605])
+                    ("full_name" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1679 1721])
+                    ("full_name_without_passage" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1726 1784])
+                    ("abbreviated_name" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1826 1846]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1789 1857])
+                    ("name" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1863 1918])
+                    ("name" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1923 1967])
+                    ("name" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1989 2005])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2006 2020]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1972 2051])
+                    ("lineage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2056 2117])
+                    ("lineage" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2122 2172])
+                    ("lineage" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2197 2213])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2214 2228]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2177 2262])
+                    ("passage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2267 2328])
+                    ("passage" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2333 2383])
+                    ("passage" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2408 2424])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2425 2439]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2388 2473])
+                    ("has_passage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2478 2539])
+                    ("passage_without_date" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2544 2635])
+                    ("reassortant" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2640 2709])
+                    ("reassortant" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2714 2772])
+                    ("reassortant" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2801 2817])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2818 2832]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2777 2870])
+                    ("is_egg" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2875 2959])
+                    ("is_reassortant" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3006 3074])
+                    ("distinct" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3079 3143])
+                    ("annotations" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Annotations" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3148 3218])
+                    ("annotations" function
+                       (:typemodifiers ("inline")
+                        :type ("Annotations" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3223 3281])
+                    ("has_semantic" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [3311 3318]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3286 3385])
+                    ("semantic" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3390 3463])
+                    ("semantic" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3489 3505])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3506 3520]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3468 3565])
+                    ("passage_type" function
+                       (:methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3570 3640])
+                    ("name_abbreviated" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3674 3694]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3645 3701])
+                    ("location_abbreviated" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3739 3759]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3706 3766])
+                    ("match" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AntigenSerum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3804 3832]))                          
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3772 3839])
+                    ("protected" label nil (reparse-symbol classsubparts) [4417 4427])
+                    ("match_passage" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AntigenSerum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4472 4500]))                          
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4432 4507])
+                    ("private" label nil (reparse-symbol classsubparts) [4510 4518])
+                    ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4550 4568])
+                    ("mLineage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4655 4676])
+                    ("mPassage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4688 4709])
+                    ("mReassortant" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4721 4746])
+                    ("mAnnotations" variable (:type ("Annotations" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4758 4783])
+                    ("mSemanticAttributes" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4795 4827]))                  
+                :type "class")
+                nil [1454 4973])
+            ("Serum" type
+               (:prototype t
+                :type "class")
+                nil [5075 5087])
+            ("Antigen" type
+               (:superclasses 
+                  ( ("AntigenSerum" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [5128 5135])
+                    ("full_name" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5172 5299])
+                    ("full_name_without_passage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5304 5436])
+                    ("full_name_for_seqdb_matching" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5441 5587])
+                    ("abbreviated_name" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5701 5721]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5657 5817])
+                    ("abbreviated_name_with_passage_type" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5884 5904]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5822 6021])
+                    ("date" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6121 6176])
+                    ("date" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6198 6214])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6215 6229]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6181 6260])
+                    ("reference" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6265 6324])
+                    ("lab_id" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6329 6401])
+                    ("lab_id" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6406 6466])
+                    ("has_lab_id" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aLabId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6494 6513]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6471 6595])
+                    ("clades" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6600 6673])
+                    ("clades" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6678 6739])
+                    ("AntigenSerum::match" variable (:type "int") (reparse-symbol classsubparts) [6751 6771])
+                    ("match" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aAntigen" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Antigen" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6808 6832]))                          
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6776 6839])
+                    ("match" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aSerum" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Serum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6876 6896]))                          
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6844 6903])
+                    ("private" label nil (reparse-symbol classsubparts) [6906 6914])
+                    ("mDate" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6919 6937])
+                    ("mLabId" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6949 6981])
+                    ("mClades" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6993 7026]))                  
+                :type "class")
+                nil [5089 7037])
+            ("Serum" type
+               (:superclasses 
+                  ( ("AntigenSerum" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7168 7175])
+                    ("full_name" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7210 7338])
+                    ("full_name_without_passage" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7417 7501])
+                    ("abbreviated_name" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7550 7570]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7506 7666])
+                    ("serum_id" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7672 7734])
+                    ("serum_id" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7739 7790])
+                    ("serum_id" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7816 7832])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7833 7847]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7795 7881])
+                    ("serum_species" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7886 7958])
+                    ("serum_species" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7963 8024])
+                    ("serum_species" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8055 8071])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8072 8086]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8029 8125])
+                    ("add_homologous" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ag_no" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8158 8171]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8131 8364])
+                    ("add_homologous" function
+                       (:template 
+                          ( ("No" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("ag_no" variable (:type ("No" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8420 8429]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol classsubparts) [8370 8477])
+                    ("has_homologous" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8482 8549])
+                    ("homologous" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8554 8630])
+                    ("homologous" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8635 8699])
+                    ("AntigenSerum::match" variable (:type "int") (reparse-symbol classsubparts) [8711 8731])
+                    ("match" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aSerum" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Serum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8768 8788]))                          
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8736 8795])
+                    ("match" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aAntigen" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Antigen" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8832 8856]))                          
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8800 8863])
+                    ("protected" label nil (reparse-symbol classsubparts) [8866 8876])
+                    ("match_passage" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AntigenSerum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8921 8949]))                          
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8881 8956])
+                    ("private" label nil (reparse-symbol classsubparts) [8959 8967])
+                    ("mSerumId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8972 8993])
+                    ("mHomologous" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [9005 9037])
+                    ("mSerumSpecies" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9049 9075]))                  
+                :type "class")
+                nil [7131 9086])
+            ("Antigens" type
+               (:superclasses 
+                  ( ("std::vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [9279 9286])
+                    ("std::map" variable (:type "int") (reparse-symbol classsubparts) [9313 9356])
+                    ("std::map" variable (:type "int") (reparse-symbol classsubparts) [9430 9473])
+                    ("std::map" variable (:type "int") (reparse-symbol classsubparts) [9543 9586])
+                    ("Antigens" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Antigens" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9637 9657])
+                    ("find_by_name" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9681 9699])
+                            ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9700 9737]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9663 9744])
+                    ("find_by_name_matching" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9776 9794])
+                            ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9795 9832]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9749 9839])
+                    ("continents" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aContinentData" variable
+                               (:reference 1
+                                :type ("ContinentData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9860 9890])
+                            ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9891 9911]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9844 9918])
+                    ("countries" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aCountries" variable
+                               (:reference 1
+                                :type ("CountryData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9938 9962])
+                            ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9963 9983]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9923 9990])
+                    ("country" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aCountry" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10008 10029])
+                            ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10030 10067])
+                            ("aLocDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10068 10088]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9995 10095])
+                    ("reference_indices" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10123 10160]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10100 10167])
+                    ("test_indices" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10190 10227]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10172 10234])
+                    ("date_range_indices" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("first_date" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10263 10286])
+                            ("after_last_date" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10287 10315])
+                            ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10316 10353]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10239 10360])
+                    ("egg_indices" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10382 10419]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10365 10426])
+                    ("cell_indices" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10449 10486]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10431 10493])
+                    ("reassortant_indices" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aAntigenIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10523 10560]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10498 10567]))                  
+                :type "class")
+                nil [9231 10571])
+            ("Sera" type
+               (:superclasses 
+                  ( ("std::vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10708 10715])
+                    ("Sera" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Sera" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10720 10736])
+                    ("find_by_name_for_exact_matching" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aFullName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10814 10836]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10775 10843])
+                    ("find_by_name_matching" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10875 10893])
+                            ("aSeraIndices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10894 10928]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10848 10935]))                  
+                :type "class")
+                nil [10666 10939])
+            ("Projection" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11050 11057])
+                    ("Projection" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Projection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11062 11153])
+                    ("comment" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11179 11195])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11196 11210]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11159 11244])
+                    ("comment" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11249 11304])
+                    ("layout" function
+                       (:typemodifiers ("inline")
+                        :type ("Layout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11310 11353])
+                    ("layout" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Layout" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11358 11413])
+                    ("stress" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aStress" variable (:type "double") (reparse-symbol arg-sub-list) [11438 11453]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11419 11476])
+                    ("stress" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [11481 11529])
+                    ("minimum_column_basis" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11568 11584])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11585 11599]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11535 11644])
+                    ("minimum_column_basis" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11649 11728])
+                    ("column_bases" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11734 11801])
+                    ("column_bases" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11806 11885])
+                    ("transformation" function
+                       (:typemodifiers ("inline")
+                        :type ("Transformation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11891 11958])
+                    ("transformation" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Transformation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11963 12042])
+                    ("gradient_multipliers" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12048 12131])
+                    ("gradient_multipliers" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12136 12231])
+                    ("titer_multipliers" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12237 12314])
+                    ("titer_multipliers" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12319 12408])
+                    ("dodgy_titer_is_regular" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aDodgyTiterIsRegular" variable (:type "bool") (reparse-symbol arg-sub-list) [12449 12475]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12414 12524])
+                    ("dodgy_titer_is_regular" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12529 12604])
+                    ("stress_diff_to_stop" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aStressDiffToStop" variable (:type "double") (reparse-symbol arg-sub-list) [12642 12667]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12610 12710])
+                    ("stress_diff_to_stop" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "double")
+                        (reparse-symbol classsubparts) [12715 12786])
+                    ("unmovable" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12792 12854])
+                    ("unmovable" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12859 12933])
+                    ("disconnected" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12939 13007])
+                    ("disconnected" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13012 13092])
+                    ("unmovable_in_last_dimension" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13098 13193])
+                    ("unmovable_in_last_dimension" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13198 13305])
+                    ("private" label nil (reparse-symbol classsubparts) [13308 13316])
+                    ("mComment" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13321 13342])
+                    ("mLayout" variable (:type ("Layout" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13380 13395])
+                    ("mStress" variable (:type "double") (reparse-symbol classsubparts) [13564 13579])
+                    ("mMinimumColumnBasis" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13623 13655])
+                    ("mColumnBases" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13708 13741])
+                    ("mTransformation" variable (:type ("Transformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13767 13798])
+                    ("mGradientMultipliers" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13848 13889])
+                    ("mTiterMultipliers" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13933 13971])
+                    ("mDodgyTiterIsRegular" variable (:type "bool") (reparse-symbol classsubparts) [14054 14080])
+                    ("mStressDiffToStop" variable (:type "double") (reparse-symbol classsubparts) [14120 14145])
+                    ("mUnmovable" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14210 14241])
+                    ("mDisconnected" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14357 14391])
+                    ("mUnmovableInLastDimension" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14507 14553]))                  
+                :type "class")
+                nil [11030 14675])
+            ("ChartInfo" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14786 14793])
+                    ("TableType" type
+                       (:members 
+                          ( ("Antigenic" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14814 14824])
+                            ("Genetic" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [14825 14833]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [14798 14834])
+                    ("ChartInfo" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("ChartInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14839 14879])
+                    ("virus" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14941 15029])
+                    ("virus_type" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15034 15131])
+                    ("assay" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15136 15224])
+                    ("date" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15229 15260])
+                    ("lab" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15265 15349])
+                    ("rbc" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15354 15516])
+                    ("name" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15521 15607])
+                    ("subset" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15612 15702])
+                    ("type" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("TableType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15707 15754])
+                    ("type_as_string" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15759 16033])
+                    ("make_name" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16039 16075])
+                    ("virus" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16099 16115])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16116 16130]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16081 16162])
+                    ("virus_type" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16190 16206])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16207 16221]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16167 16257])
+                    ("assay" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16280 16296])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16297 16311]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16262 16343])
+                    ("date" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16365 16381])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16382 16396]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16348 16427])
+                    ("lab" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16448 16464])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16465 16479]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16432 16509])
+                    ("rbc" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16530 16546])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16547 16561]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16514 16591])
+                    ("name" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16613 16629])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16630 16644]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16596 16675])
+                    ("subset" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16699 16715])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16716 16730]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16680 16763])
+                    ("type" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16785 16801])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16802 16816]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [16768 17341])
+                    ("virus" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17347 17393])
+                    ("virus_type" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17398 17453])
+                    ("assay" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17458 17504])
+                    ("date" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17509 17553])
+                    ("lab" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17558 17600])
+                    ("rbc" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17605 17647])
+                    ("name" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17652 17696])
+                    ("subset" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17701 17749])
+                    ("sources" function
+                       (:typemodifiers ("inline")
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17755 17798])
+                    ("sources" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17803 17858])
+                    ("private" label nil (reparse-symbol classsubparts) [17861 17869])
+                    ("mVirus" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17874 17893])
+                    ("mVirusType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17918 17941])
+                    ("mAssay" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17962 17981])
+                    ("mDate" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18006 18024])
+                    ("mLab" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18050 18067])
+                    ("mRbc" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18094 18111])
+                    ("mName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18138 18156])
+                    ("mSubset" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18182 18202])
+                    ("mType" variable (:type ("TableType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18226 18242])
+                    ("mSources" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("ChartInfo" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [18270 18302])
+                    ("merge_text_fields" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("ChartInfo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18345 18367])
+                            ("" variable (:type ("aMember" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18370 18378]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18315 18385]))                  
+                :type "class")
+                nil [14767 18389])
+            ("ChartTiters" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [18509 18516])
+                    ("std::vector" variable (:type "int") (reparse-symbol classsubparts) [18534 18572])
+                    ("std::vector" variable (:type "int") (reparse-symbol classsubparts) [18590 18652])
+                    ("std::vector" variable (:type "int") (reparse-symbol classsubparts) [18672 18690])
+                    ("ChartTiters" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("ChartTiters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18696 18719])
+                    ("list" function
+                       (:typemodifiers ("inline")
+                        :type ("List" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18725 18762])
+                    ("dict" function
+                       (:typemodifiers ("inline")
+                        :type ("Dict" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18767 18804])
+                    ("layers" function
+                       (:typemodifiers ("inline")
+                        :type ("Layers" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18809 18852])
+                    ("list" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("List" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18858 18907])
+                    ("dict" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Dict" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18912 18961])
+                    ("layers" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Layers" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18966 19021])
+                    ("private" label nil (reparse-symbol classsubparts) [19024 19032])
+                    ("mList" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19037 19048])
+                    ("mDict" variable (:type ("Dict" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19076 19087])
+                    ("mLayers" variable (:type ("Layers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19115 19130]))                  
+                :type "class")
+                nil [18488 19153])
+            ("Chart" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [19266 19273])
+                    ("Chart" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Chart" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19278 19295])
+                    ("Chart" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [19395 19404])
+                    ("number_of_antigens" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19487 19556])
+                    ("number_of_sera" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19561 19622])
+                    ("number_of_points" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19627 19717])
+                    ("lineage" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19722 19750])
+                    ("make_name" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19755 19791])
+                    ("chart_info" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ChartInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19797 19857])
+                    ("chart_info" function
+                       (:typemodifiers ("inline")
+                        :type ("ChartInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19862 19910])
+                    ("antigens" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Antigens" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19916 19977])
+                    ("antigens" function
+                       (:typemodifiers ("inline")
+                        :type ("Antigens" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19982 20031])
+                    ("antigen" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ag_no" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20060 20073]))                          
+                        :type ("Antigen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20036 20102])
+                    ("sera" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Sera" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20108 20157])
+                    ("sera" function
+                       (:typemodifiers ("inline")
+                        :type ("Sera" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20162 20199])
+                    ("serum" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("sr_no" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20224 20237]))                          
+                        :type ("Serum" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20204 20262])
+                    ("titers" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ChartTiters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20268 20328])
+                    ("titers" function
+                       (:typemodifiers ("inline")
+                        :type ("ChartTiters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20333 20381])
+                    ("column_bases" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20387 20451])
+                    ("column_bases" function
+                       (:typemodifiers ("inline")
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20456 20508])
+                    ("projections" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Projection" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [20514 20584])
+                    ("projections" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Projection" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [20589 20671])
+                    ("projection" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aProjectionNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20706 20727]))                          
+                        :type ("Projection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20676 20767])
+                    ("plot_spec" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ChartPlotSpec" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20773 20840])
+                    ("plot_spec" function
+                       (:typemodifiers ("inline")
+                        :type ("ChartPlotSpec" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20845 20900])
+                    ("antigen_indices" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("IndexGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20906 21016])
+                    ("reference_antigen_indices" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("IndexGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21021 21175])
+                    ("test_antigen_indices" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("IndexGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21180 21330])
+                    ("egg_antigen_indices" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("IndexGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21335 21480])
+                    ("reassortant_antigen_indices" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("IndexGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21485 21646])
+                    ("serum_indices" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("IndexGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21651 21779])
+                    ("find_homologous_antigen_for_sera" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [21785 21825])
+                    ("find_homologous_antigen_for_sera_const" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [21830 21954])
+                    ("private" label nil (reparse-symbol classsubparts) [22061 22069])
+                    ("mInfo" variable (:type ("ChartInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22074 22090])
+                    ("mAntigens" variable (:type ("Antigens" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22124 22143])
+                    ("mSera" variable (:type ("Sera" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22174 22185])
+                    ("mTiters" variable (:type ("ChartTiters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22224 22244])
+                    ("mColumnBases" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [22274 22308])
+                    ("mProjections" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Projection" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [22324 22361])
+                    ("mPlotSpec" variable (:type ("ChartPlotSpec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22374 22398]))                  
+                :type "class")
+                nil [19251 22423]))          
+      :file "chart.hh"
+      :pointmax 22681
+      :fsize 22680
+      :lastmodtime '(22704 7580 0 0)
+      :unmatched-syntax '((punctuation 19389 . 19390) (DEFAULT 19382 . 19389) (punctuation 19380 . 19381) (semantic-list 19365 . 19379) (punctuation 19364 . 19365) (OPERATOR 19356 . 19364) (punctuation 19354 . 19355) (symbol 19349 . 19354) (INLINE 19342 . 19348) (punctuation 19336 . 19337) (DEFAULT 19329 . 19336) (punctuation 19327 . 19328) (semantic-list 19312 . 19326) (symbol 19307 . 19312) (INLINE 19300 . 19306) (punctuation 18670 . 18671) (symbol 18663 . 18669) (USING 18657 . 18662) (punctuation 18588 . 18589) (symbol 18583 . 18587) (USING 18577 . 18582) (punctuation 18532 . 18533) (symbol 18527 . 18531) (USING 18521 . 18526) (punctuation 18368 . 18369) (punctuation 18367 . 18368) (punctuation 18366 . 18367) (punctuation 9541 . 9542) (symbol 9531 . 9540) (USING 9525 . 9530) (punctuation 9428 . 9429) (symbol 9416 . 9427) (USING 9410 . 9415) (punctuation 9311 . 9312) (symbol 9297 . 9310) (USING 9291 . 9296) (USING 8705 . 8710) (punctuation 7204 . 7205) (DEFAULT 7197 . 7204) (punctuation 7195 . 7196) (semantic-list 7192 . 7194) (symbol 7187 . 7192) (INLINE 7180 . 7186) (USING 6745 . 6750) (punctuation 5166 . 5167) (DEFAULT 5159 . 5166) (punctuation 5157 . 5158) (semantic-list 5154 . 5156) (symbol 5147 . 5154) (INLINE 5140 . 5146) (punctuation 1672 . 1673) (DEFAULT 1665 . 1672) (punctuation 1663 . 1664) (semantic-list 1641 . 1662) (punctuation 1640 . 1641) (OPERATOR 1632 . 1640) (punctuation 1630 . 1631) (symbol 1618 . 1630) (INLINE 1611 . 1617) (punctuation 1575 . 1576) (DEFAULT 1568 . 1575) (punctuation 1566 . 1567) (semantic-list 1544 . 1565) (symbol 1532 . 1544) (INLINE 1525 . 1531) (punctuation 1519 . 1520) (DEFAULT 1512 . 1519) (punctuation 1510 . 1511) (semantic-list 1507 . 1509) (symbol 1495 . 1507) (INLINE 1488 . 1494) (punctuation 559 . 560) (DEFAULT 552 . 559) (punctuation 550 . 551) (semantic-list 547 . 549) (symbol 536 . 547) (INLINE 529 . 535) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ace.hh" include nil nil [1 18])
+            ("acmacs-base/read-file.hh" include nil nil [19 54])
+            ("acmacs-base/xz.hh" include nil nil [55 83])
+            ("acmacs-base/json-importer.hh" include nil nil [85 124])
+            ("jsi" type
+               (:kind alias
+                :members 
+                  ( ("json_importer" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [125 155])
+            ("ACE_DUMP_VERSION" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"acmacs-ace-v1\""
+                :type "char")
+                nil [342 396])
+            ("Ace" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [486 493])
+                    ("Ace" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aChar" variable
+                               (:reference 1
+                                :type ("Chart" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [509 522]))                          
+                        :type ("Ace" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [498 541])
+                    ("indentation" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [571 587])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 602]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [547 744])
+                    ("indentation" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [749 812])
+                    ("version" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [837 853])
+                            ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [854 868]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [817 1068])
+                    ("version" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1073 1128])
+                    ("chart" function
+                       (:typemodifiers ("inline")
+                        :type ("Chart" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1134 1174])
+                    ("private" label nil (reparse-symbol classsubparts) [1177 1185])
+                    ("mIndentation" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1190 1215])
+                    ("mVersion" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1220 1241])
+                    ("mChart" variable (:type ("Chart" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1246 1260]))                  
+                :type "class")
+                nil [473 1263])
+            ("antigen_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"N\", jsi::field<Antigen>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Antigen::name))},
+    {\"D\", jsi::field(&Antigen::date)},
+    {\"L\", jsi::field<Antigen>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Antigen::lineage))},
+    {\"P\", jsi::field<Antigen>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Antigen::passage))},
+    {\"R\", jsi::field<Antigen>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Antigen::reassortant))},
+    {\"l\", jsi::field(&Antigen::lab_id)},
+    {\"S\", jsi::field<Antigen>(&Antigen::semantic)},
+    {\"a\", jsi::field<std::string, Antigen>(&Antigen::annotations)},
+    {\"c\", jsi::field(&Antigen::clades)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("Antigen" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1505 2228])
+            ("serum_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"N\", jsi::field<Serum>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Serum::name))},
+    {\"L\", jsi::field<Serum>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Serum::lineage))},
+    {\"P\", jsi::field<Serum>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Serum::passage))},
+    {\"R\", jsi::field<Serum>(static_cast<void (AntigenSerum::*)(const char*, size_t)>(&Serum::reassortant))},
+    {\"I\", jsi::field(static_cast<void (Serum::*)(const char*, size_t)>(&Serum::serum_id))},
+    {\"S\", jsi::field<Serum>(&Serum::semantic)},
+    {\"h\", jsi::field(&Serum::homologous)},
+    {\"a\", jsi::field<std::string, Serum>(&Serum::annotations)},
+    {\"s\", jsi::field(static_cast<void (Serum::*)(const char*, size_t)>(&Serum::serum_species))},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("Serum" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2230 3036])
+            ("chart_info_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"v\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::virus))},
+    {\"V\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::virus_type))},
+    {\"A\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::assay))},
+    {\"D\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::date))},
+    {\"N\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::name))},
+    {\"l\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::lab))},
+    {\"r\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::rbc))},
+    {\"s\", jsi::field(static_cast<void (ChartInfo::*)(const char*, size_t)>(&ChartInfo::subset))},
+    {\"T\", jsi::field(&ChartInfo::type)},
+    {\"S\", jsi::field(&ChartInfo::sources, chart_info_data)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("ChartInfo" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3038 3966])
+            ("projection_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"C\", jsi::field(&Projection::column_bases)},
+    {\"D\", jsi::field(&Projection::disconnected)},
+    {\"c\", jsi::field(&Projection::comment)},
+    {\"e\", jsi::field(&Projection::stress_diff_to_stop)},
+    {\"f\", jsi::field(&Projection::titer_multipliers)},
+    {\"g\", jsi::field(&Projection::gradient_multipliers)},
+    {\"l\", jsi::field(&Projection::layout)},
+    {\"m\", jsi::field(&Projection::minimum_column_basis)},
+    {\"s\", jsi::field(&Projection::stress)},
+    {\"t\", jsi::field<double, Projection, Projection, Transformation>(&Projection::transformation)},
+    {\"U\", jsi::field(&Projection::unmovable)},
+    {\"u\", jsi::field(&Projection::unmovable_in_last_dimension)},
+    {\"d\", jsi::field(&Projection::dodgy_titer_is_regular)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("Projection" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4043 4827])
+            ("label_style_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"+\", jsi::field(&LabelStyle::shown)},
+    {\"p\", jsi::field(&LabelStyle::position)},
+    {\"t\", jsi::field(&LabelStyle::text)},
+    {\"f\", jsi::field(&LabelStyle::face)},
+    {\"S\", jsi::field(&LabelStyle::slant)},
+    {\"W\", jsi::field(&LabelStyle::weight)},
+    {\"s\", jsi::field(&LabelStyle::size)},
+    {\"c\", jsi::field(&LabelStyle::color)},
+    {\"r\", jsi::field(&LabelStyle::rotation)},
+    {\"i\", jsi::field(&LabelStyle::interline)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("LabelStyle" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4829 5319])
+            ("plot_spec_style_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"+\", jsi::field(&ChartPlotSpecStyle::shown)},
+    {\"F\", jsi::field(&ChartPlotSpecStyle::fill_color)},
+    {\"O\", jsi::field(&ChartPlotSpecStyle::outline_color)},
+    {\"o\", jsi::field(&ChartPlotSpecStyle::outline_width)},
+    {\"S\", jsi::field(&ChartPlotSpecStyle::shape)},
+    {\"s\", jsi::field(&ChartPlotSpecStyle::size)},
+    {\"r\", jsi::field(&ChartPlotSpecStyle::rotation)},
+    {\"a\", jsi::field(&ChartPlotSpecStyle::aspect)},
+    {\"l\", jsi::field(&ChartPlotSpecStyle::label, label_style_data)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("ChartPlotSpecStyle" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5321 5886])
+            ("plot_spec_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"d\", jsi::field(&ChartPlotSpec::drawing_order)},
+    // {\"E\", jsi::field(&ChartPlotSpec::error_lines_positive)},
+    // {\"e\", jsi::field(&ChartPlotSpec::error_lines_negative)},
+    // {\"g\", jsi::field(&ChartPlotSpec::grid)},
+    {\"p\", jsi::field(&ChartPlotSpec::style_for_point)},
+    {\"P\", jsi::field(&ChartPlotSpec::styles, plot_spec_style_data)},
+    // {\"l\", jsi::field(&ChartPlotSpec::style_for_procrustes_line)},
+    // {\"L\", jsi::field(&ChartPlotSpec::procrustes_line_styles, procrustes_line_styles_data)},
+    {\"s\", jsi::field(&ChartPlotSpec::shown_on_all)},
+      // {\"t\", jsi::field(&ChartPlotSpec::title_style, title_style_data)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("ChartPlotSpec" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5888 6588])
+            ("TiterDictStorer" type
+               (:superclasses 
+                  ( ("jsi::StorerBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6842 6849])
+                    ("jsi::StorerBase" variable (:type "int") (reparse-symbol classsubparts) [6867 6883])
+                    ("TiterDictStorer" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aTarget" variable
+                               (:reference 1
+                                :type ("ChartTiters::Dict" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6912 6939])
+                            ("aStarted" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6940 6961]))                          
+                        :type ("TiterDictStorer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6889 7004])
+                    ("StartArray" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7010 7307])
+                    ("EndArray" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7313 7395])
+                    ("StartObject" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7401 7664])
+                    ("EndObject" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7670 7750])
+                    ("Key" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [7781 7797])
+                            ("length" variable (:type ("rapidjson::SizeType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7798 7825]))                          
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7756 7985])
+                    ("String" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [8019 8035])
+                            ("length" variable (:type ("rapidjson::SizeType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8036 8063]))                          
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7991 8379])
+                    ("private" label nil (reparse-symbol classsubparts) [8382 8390])
+                    ("mTarget" variable (:type ("ChartTiters::Dict" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8395 8422])
+                    ("mStarted" variable (:type "bool") (reparse-symbol classsubparts) [8427 8441]))                  
+                :type "class")
+                nil [6792 8445])
+            ("TiterLayersStorer" type
+               (:superclasses 
+                  ( ("jsi::StorerBase" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [8677 8684])
+                    ("jsi::StorerBase" variable (:type "int") (reparse-symbol classsubparts) [8702 8718])
+                    ("TiterLayersStorer" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aTarget" variable
+                               (:reference 1
+                                :type ("ChartTiters::Layers" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8749 8778]))                          
+                        :type ("TiterLayersStorer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8724 8817])
+                    ("StartArray" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8823 9228])
+                    ("EndArray" function
+                       (:pointer 1
+                        :typemodifiers ("inline" "virtual")
+                        :type ("Base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9234 9316])
+                    ("private" label nil (reparse-symbol classsubparts) [9319 9327])
+                    ("mTarget" variable (:type ("ChartTiters::Layers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9332 9361])
+                    ("mStarted" variable (:type "bool") (reparse-symbol classsubparts) [9366 9380]))                  
+                :type "class")
+                nil [8625 9384])
+            ("titers_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"L\", jsi::field<TiterLayersStorer, ChartTiters, ChartTiters::Layers>(&ChartTiters::layers)},
+    {\"l\", jsi::field(&ChartTiters::list)},
+    {\"d\", jsi::field<TiterDictStorer, ChartTiters, ChartTiters::Dict>(&ChartTiters::dict)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("ChartTiters" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9414 9695])
+            ("field" function
+               (:typemodifiers ("inline")
+                :arguments ((nil variable (:reference 1 :type ("Antigens" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9836 9867]) ("aData" variable (:reference 1 :type ("jsi::data" type (:template-specifier (("Antigen" type nil nil nil)) :type "class") nil nil)) (reparse-symbol arg-sub-list) #<overlay from 9868 to 9894 in sources/acmacs-chart/cc/ace.cc>))
+                :type ("std::shared_ptr" type
+                     (:template-specifier 
+                        ( ("jsi::readers::makers::Base" type (:template-specifier 
+                            ( ("Chart" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9772 10026])
+            ("field" function
+               (:typemodifiers ("inline")
+                :arguments ((nil variable (:reference 1 :type ("Sera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10092 10119]) ("aData" variable (:reference 1 :type ("jsi::data" type (:template-specifier (("Serum" type nil nil nil)) :type "class") nil nil)) (reparse-symbol arg-sub-list) #<overlay from 10120 to 10144 in sources/acmacs-chart/cc/ace.cc>))
+                :type ("std::shared_ptr" type
+                     (:template-specifier 
+                        ( ("jsi::readers::makers::Base" type (:template-specifier 
+                            ( ("Chart" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10028 10274])
+            ("chart_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"C\", jsi::field(&Chart::column_bases)},
+    {\"P\", jsi::field(&Chart::projections, projection_data)},
+    {\"a\", field(&Chart::antigens, antigen_data)},
+    {\"i\", jsi::field(&Chart::chart_info, chart_info_data)},
+    {\"p\", jsi::field(&Chart::plot_spec, plot_spec_data)},
+    {\"s\", field(&Chart::sera, serum_data)},
+    {\"t\", jsi::field(&Chart::titers, titers_data)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("Chart" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10276 10687])
+            ("ace_data" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    {\"_\", jsi::field(&Ace::indentation)},
+    {\"  version\", jsi::field(&Ace::version)},
+    {\"c\", jsi::field(&Ace::chart, chart_data)},
+}"
+                :type ("jsi::data" type
+                     (:template-specifier 
+                        ( ("Ace" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10689 10862])
+            ("import_chart" function
+               (:pointer 1
+                :arguments 
+                  ( ("buffer" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10987 11006]))                  
+                :type ("Chart" type (:type "class") nil nil))
+                nil [10967 11430])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11656 11680])
+                    ("aAntigen" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Antigen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11681 11705]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [11597 12356])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12417 12441])
+                    ("aSerum" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Serum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12442 12462]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [12358 13110])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13171 13195])
+                    ("aChartInfo" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ChartInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13196 13224]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [13112 13967])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14028 14052])
+                    ("aProjection" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Projection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14053 14083]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [13969 15114])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15175 15199])
+                    ("aLabelStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LabelStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15200 15230]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [15116 16024])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16085 16109])
+                    ("aChartPlotSpecStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ChartPlotSpecStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16110 16156]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [16026 16889])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16950 16974])
+                    ("aChartPlotSpec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ChartPlotSpec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16975 17011]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [16891 17779])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17840 17864])
+                    ("aChartTiters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ChartTiters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17865 17897]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [17781 18175])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18236 18260])
+                    ("aChart" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Chart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18261 18281]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [18177 18935])
+            ("export_chart" function
+               (:arguments 
+                  ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19030 19052])
+                    ("aChart" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Chart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19053 19073]))                  
+                :type "void")
+                nil [19012 19210]))          
+      :file "ace.cc"
+      :pointmax 19394
+      :fsize 19393
+      :lastmodtime '(22704 7522 0 0)
+      :unmatched-syntax '((symbol 10887 . 10890) (symbol 10876 . 10886) (symbol 10872 . 10875) (symbol 10865 . 10871) (punctuation 10864 . 10865) (punctuation 8700 . 8701) (symbol 8695 . 8699) (USING 8689 . 8694) (punctuation 6865 . 6866) (symbol 6860 . 6864) (USING 6854 . 6859) (string 1473 . 1496) (symbol 1465 . 1472) (symbol 1454 . 1464) (symbol 1450 . 1453) (symbol 1443 . 1449) (punctuation 1442 . 1443) (string 1416 . 1441) (symbol 1408 . 1415) (symbol 1397 . 1407) (symbol 1393 . 1396) (symbol 1386 . 1392) (punctuation 1385 . 1386) (symbol 1363 . 1367) (symbol 1352 . 1362) (symbol 1348 . 1351) (symbol 1341 . 1347) (punctuation 1340 . 1341)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("vector" include (:system-flag t) nil [33 50])
+            ("json_writer" type
+               (:members 
+                  ( ("writer" type
+                       (:template 
+                          ( ("RW" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [80 116]))                  
+                :type "namespace")
+                nil [52 118])
+            ("jsw" type
+               (:kind alias
+                :members 
+                  ( ("json_writer" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [119 147])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [201 218])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type (:template-specifier 
+                                    ( ("std::string" type nil nil nil)
+                                      ("std::string" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [219 275]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [149 276])
+            ("acmacs-base/json-writer.hh" include nil nil [278 315])
+            ("acmacs-chart/chart.hh" include nil nil [317 349])
+            ("import_chart" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("data" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [446 463]))                  
+                :type ("Chart" type (:type "class") nil nil))
+                nil [426 464])
+            ("export_chart" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [483 505])
+                    ("aChart" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Chart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [506 526]))                  
+                :type "void")
+                nil [465 527])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("jsw::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("writer" variable
+                       (:reference 1
+                        :type ("jsw::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [663 687])
+                    ("aVectorOfStringPairs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type (:template-specifier 
+                                    ( ("std::string" type nil nil nil)
+                                      ("std::string" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [688 765]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [604 947]))          
+      :file "ace.hh"
+      :pointmax 1115
+      :fsize 1114
+      :lastmodtime '(22682 58699 0 0)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("set" include (:system-flag t) nil [1 15])
+            ("acmacs-base/virus-name.hh" include nil nil [17 53])
+            ("locationdb/locdb.hh" include nil nil [54 84])
+            ("chart.hh" include nil nil [86 105])
+            ("Chart" function
+               (:destructor-flag t
+                :parent "Chart"
+                :type "void")
+                nil [182 201])
+            ("AntigenSerum" function
+               (:destructor-flag t
+                :parent "AntigenSerum"
+                :type "void")
+                nil [278 311])
+            ("name_abbreviated" function
+               (:methodconst-flag t
+                :parent "AntigenSerum"
+                :arguments 
+                  ( ("aLocDb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LocDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [431 451]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [388 804])
+            ("location_abbreviated" function
+               (:methodconst-flag t
+                :parent "AntigenSerum"
+                :arguments 
+                  ( ("aLocDb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LocDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [962 982]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [915 1055])
+            ("match" function
+               (:methodconst-flag t
+                :parent "AntigenSerum"
+                :arguments 
+                  ( ("aNother" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenSerum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1208 1236]))                  
+                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                nil [1170 1732])
+            ("match_passage" function
+               (:methodconst-flag t
+                :parent "AntigenSerum"
+                :arguments 
+                  ( ("aNother" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenSerum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1878 1906]))                  
+                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                nil [1832 2709])
+            ("match" function
+               (:methodconst-flag t
+                :parent "Antigen"
+                :arguments 
+                  ( ("aNother" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Antigen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2850 2873]))                  
+                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                nil [2817 3133])
+            ("match" function
+               (:methodconst-flag t
+                :parent "Antigen"
+                :arguments 
+                  ( ("aNother" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Serum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3261 3282]))                  
+                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                nil [3228 3326])
+            ("match" function
+               (:methodconst-flag t
+                :parent "Serum"
+                :arguments 
+                  ( ("aNother" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Serum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3452 3473]))                  
+                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                nil [3421 4042])
+            ("match" function
+               (:methodconst-flag t
+                :parent "Serum"
+                :arguments 
+                  ( ("aNother" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Antigen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4276 4299]))                  
+                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                nil [4245 4955])
+            ("match_passage" function
+               (:methodconst-flag t
+                :parent "Serum"
+                :arguments 
+                  ( ("aNother" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenSerum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5115 5143]))                  
+                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                nil [5076 5442])
+            ("find_by_name" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5571 5589])
+                    ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5590 5627]))                  
+                :type "void")
+                nil [5543 5824])
+            ("find_by_name_for_exact_matching" function
+               (:methodconst-flag t
+                :parent "Sera"
+                :arguments 
+                  ( ("aFullName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5972 5994]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [5927 6220])
+            ("find_by_name_matching_ag_sr" function
+               (:template 
+                  ( ("AgSr" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("aAgSr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("AgSr" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6403 6434])
+                    ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6435 6453])
+                    ("aIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6454 6484]))                  
+                :typemodifiers ("static"))
+                nil [6338 7270])
+            ("find_by_name_matching" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7309 7327])
+                    ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7328 7365]))                  
+                :type "void")
+                nil [7272 7440])
+            ("find_by_name_matching" function
+               (:methodconst-flag t
+                :parent "Sera"
+                :arguments 
+                  ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7585 7603])
+                    ("aSeraIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7604 7638]))                  
+                :type "void")
+                nil [7552 7710])
+            ("continents" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aContinentData" variable
+                       (:reference 1
+                        :type ("ContinentData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7844 7874])
+                    ("aLocDb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LocDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7875 7895]))                  
+                :type "void")
+                nil [7818 8178])
+            ("countries" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aCountries" variable
+                       (:reference 1
+                        :type ("CountryData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8304 8328])
+                    ("aLocDb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LocDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8329 8349]))                  
+                :type "void")
+                nil [8279 8622])
+            ("country" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aCountry" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8745 8766])
+                    ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8767 8804])
+                    ("aLocDb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LocDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8805 8825]))                  
+                :type "void")
+                nil [8722 9131])
+            ("reference_indices" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9262 9299]))                  
+                :type "void")
+                nil [9229 9463])
+            ("test_indices" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9599 9636]))                  
+                :type "void")
+                nil [9571 9801])
+            ("date_range_indices" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("first_date" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9938 9961])
+                    ("after_last_date" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9962 9990])
+                    ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9991 10028]))                  
+                :type "void")
+                nil [9904 10336])
+            ("egg_indices" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10472 10509]))                  
+                :type "void")
+                nil [10445 10670])
+            ("cell_indices" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10800 10837]))                  
+                :type "void")
+                nil [10772 10999])
+            ("reassortant_indices" function
+               (:methodconst-flag t
+                :parent "Antigens"
+                :arguments 
+                  ( ("aAntigenIndices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11137 11174]))                  
+                :type "void")
+                nil [11102 11343])
+            ("merge_text_fields" function
+               (:methodconst-flag t
+                :parent "ChartInfo"
+                :arguments 
+                  ( ("ChartInfo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11494 11516])
+                    ("" variable (:type ("aMember" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11519 11527]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [11453 11906])
+            ("date" function
+               (:methodconst-flag t
+                :parent "ChartInfo"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [12015 12379])
+            ("make_name" function
+               (:methodconst-flag t
+                :parent "ChartInfo"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [12475 12660])
+            ("make_name" function
+               (:methodconst-flag t
+                :parent "Chart"
+                :constant-flag t
+                :type ("std::string" type (:type "class") nil nil))
+                nil [12761 13025])
+            ("lineage" function
+               (:methodconst-flag t
+                :parent "Chart"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [13122 13374])
+            ("find_homologous_antigen_for_sera" function
+               (:parent "Chart"
+                :type "void")
+                nil [13469 17098]))          
+      :file "chart.cc"
+      :pointmax 17309
+      :fsize 17308
+      :lastmodtime '(22704 6961 0 0)
+      :unmatched-syntax '((punctuation 11517 . 11518) (punctuation 11516 . 11517) (punctuation 11515 . 11516) (symbol 4996 . 4999) (symbol 4985 . 4995) (symbol 4981 . 4984) (symbol 4974 . 4980) (punctuation 4973 . 4974) (string 4211 . 4236) (symbol 4203 . 4210) (symbol 4192 . 4202) (symbol 4188 . 4191) (symbol 4181 . 4187) (punctuation 4180 . 4181) (symbol 4158 . 4162) (symbol 4147 . 4157) (symbol 4143 . 4146) (symbol 4136 . 4142) (punctuation 4135 . 4136)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34])
+            ("string" include (:system-flag t) nil [35 52])
+            ("functional" include (:system-flag t) nil [53 74])
+            ("acmacs-base/string-matcher.hh" include nil nil [76 116])
+            ("AntigenSerumMatch" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [220 227])
+                    ("size_t" variable (:type "int") (reparse-symbol classsubparts) [245 522])
+                    ("<" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("m" variable (:type ("AntigenSerumMatch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [552 572]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [528 608])
+                    ("<" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("l" variable (:type ("Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [637 645]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [613 674])
+                    ("==" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("m" variable (:type ("AntigenSerumMatch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [704 724]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [679 761])
+                    ("!=" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("m" variable (:type ("AntigenSerumMatch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [791 811]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [766 845])
+                    ("add" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("toAdd" variable (:type ("Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [867 879]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [851 900])
+                    ("add" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("toAdd" variable (:type ("AntigenSerumMatch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [921 945]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [905 973])
+                    ("mismatch" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [978 1036])
+                    ("name_match" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1041 1105])
+                    ("reassortant_match" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1110 1188])
+                    ("homologous_match" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1193 1266])
+                    ("perfect" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1271 1328])
+                    ("private" label nil (reparse-symbol classsubparts) [1331 1339])
+                    ("mLevel" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1344 1358])
+                    ("AntigenSerumMatch" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1363 1410])
+                    ("AntigenSerum" friend nil (reparse-symbol classsubparts) [1416 1441])
+                    ("Serum" friend nil (reparse-symbol classsubparts) [1447 1465])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("friend" "inline")
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1513 1531])
+                            ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AntigenSerumMatch" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1532 1559]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1472 1619]))                  
+                :type "class")
+                nil [193 1623])
+            ("AntigenSerumMatchScore" type
+               (:template 
+                  ( ("Data" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1784 1792])
+                    ("keyword_in_lookup" variable
+                       (:constant-flag t
+                        :default-value "1"
+                        :type ("string_match::score_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1814 1864])
+                    ("public" label nil (reparse-symbol classsubparts) [1867 1874])
+                    ("AntigenSerumMatchScore" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1909 1926])
+                            ("aAntigen" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1927 1948])
+                            ("aNameScoreThreshold" variable (:type ("string_match::score_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1949 1991]))                          
+                        :type ("AntigenSerumMatchScore" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1879 2112])
+                    ("AntigenSerumMatchScore" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2148 2165])
+                            ("aAntigen" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Data" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2166 2187])
+                            ("aNameScoreThreshold" variable (:type ("string_match::score_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2188 2230]))                          
+                        :type ("AntigenSerumMatchScore" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2118 2350])
+                    ("<" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AntigenSerumMatchScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2380 2418]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2356 2881])
+                    ("==" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aNother" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AntigenSerumMatchScore" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2912 2950]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2887 2991])
+                    ("name_score" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("string_match::score_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3236 3301])
+                    ("full_name_score" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("string_match::score_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3306 3376])
+                    ("score" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("Data" type
+                                     (:pointer 1
+                                      :constant-flag t)
+                                      nil nil)
+                                  ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3381 3476])
+                    ("private" label nil (reparse-symbol classsubparts) [3479 3487])
+                    ("mAntigen" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3492 3513])
+                    ("mName" variable (:type ("string_match::score_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3518 3553])
+                    ("mFull" variable (:type ("string_match::score_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3518 3553])
+                    ("preprocess" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3582 3599])
+                            ("aNameScoreThreshold" variable (:type ("string_match::score_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3600 3642]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3559 4716])
+                    ("for_subst" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("full_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4761 4783])
+                            ("name_part_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4784 4806])
+                            ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4807 4824])
+                            ("keyword" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4825 4845])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::initializer_list" type
+                                     (:template-specifier 
+                                        ( ("char" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4846 4882])
+                            ("" variable (:type ("subst_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4883 4894])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::initializer_list" type
+                                     (:template-specifier 
+                                        ( ("char" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4895 4931])
+                            ("" variable (:type ("negative_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4932 4946]))                          
+                        :type ("string_match::score_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4722 6129]))                  )
+                nil [1727 6132]))          
+      :file "antigen-serum-match.hh"
+      :pointmax 6300
+      :fsize 6299
+      :lastmodtime '(22696 20923 0 0)
+      :unmatched-syntax '((punctuation 4930 . 4931) (punctuation 4881 . 4882) (semantic-list 3210 . 3231) (CONST 3204 . 3209) (semantic-list 3201 . 3203) (BOOL 3197 . 3201) (OPERATOR 3188 . 3196) (INLINE 3181 . 3187) (semantic-list 3093 . 3114) (CONST 3087 . 3092) (semantic-list 3084 . 3086) (punctuation 3083 . 3084) (symbol 3079 . 3083) (CONST 3073 . 3078) (OPERATOR 3064 . 3072) (INLINE 3057 . 3063) (semantic-list 3032 . 3052) (CONST 3026 . 3031) (semantic-list 3023 . 3025) (punctuation 3022 . 3023) (symbol 3018 . 3022) (CONST 3012 . 3017) (OPERATOR 3003 . 3011) (INLINE 2996 . 3002) (symbol 1804 . 1813) (STATIC 1797 . 1803) (punctuation 1465 . 1466) (punctuation 1441 . 1442) (punctuation 243 . 244) (symbol 237 . 242) (ENUM 232 . 236) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("acmacs-base/pybind11.hh" include nil nil [1 35])
+            ("locationdb/locdb.hh" include nil nil [36 66])
+            ("chart.hh" include nil nil [68 87])
+            ("ace.hh" include nil nil [88 105])
+            ("PYBIND11_PLUGIN" function
+               (:arguments 
+                  ( ("" variable (:type ("acmacs_chart_backend" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1468 1489]))                  
+                :type "int")
+                nil [1452 8665]))          
+      :file "py.cc"
+      :pointmax 8833
+      :fsize 8832
+      :lastmodtime '(22704 306 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "layout.hh"
+      :fsize 3782
+      :lastmodtime '(22683 16299 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "chart-plot-spec.hh"
+      :fsize 8501
+      :lastmodtime '(22680 40706 0 0)))
+  :file "!Users!eu!AD!sources!acmacs-chart!cc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

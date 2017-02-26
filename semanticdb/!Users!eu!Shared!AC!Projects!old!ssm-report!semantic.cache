@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("traceback" include nil nil [26 61])
+            ("datetime" include nil nil [26 61])
+            ("os" include nil nil [26 61])
+            ("sys" include nil nil [26 61])
+            ("if" code nil nil [62 140])
+            ("pathlib" include nil nil [140 164])
+            ("sys" variable nil nil [165 244])
+            ("logging" include nil nil [245 259])
+            ("ssm_report" include nil nil [305 402])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [487 491]))              ) nil [478 1770])
+            ("MapsToMake" variable nil nil [1845 7773])
+            ("MapsToMake" code nil nil [7775 7923])
+            ("process_keywords" function (:arguments 
+              ( ("keywords" variable nil (reparse-symbol function_parameters) [7946 7954]))              ) nil [7925 8887])
+            ("exit" code nil nil [10393 10408]))          
+      :file "make-report"
+      :pointmax 10575
+      :fsize 10574
+      :lastmodtime '(22700 2984 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 10348 . 10393) (COLON 10346 . 10347) (AS 10340 . 10342) (EXCEPT 10323 . 10329) (INDENT_BLOCK 10282 . 10323) (COLON 10280 . 10281) (TRY 8962 . 8965) (AS 10274 . 10276) (INDENT_BLOCK 1479 . 1637) (NEWLINE 1478 . 1479) (COLON 1477 . 1478) (TRY 498 . 501) (AS 1471 . 1473))))
+  :file "!Users!eu!Shared!AC!Projects!old!ssm-report!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
