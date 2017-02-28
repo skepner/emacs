@@ -376,7 +376,1577 @@
     (semanticdb-table "semanticdb-table"
       :file "stream.hh"
       :fsize 3258
-      :lastmodtime '(22672 46462 0 0)))
+      :lastmodtime '(22672 46462 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("vector" include (:system-flag t) nil [33 50])
+            ("map" include (:system-flag t) nil [51 65])
+            ("rapidjson/writer.h" include nil nil [67 96])
+            ("rapidjson/prettywriter.h" include nil nil [97 132])
+            ("rapidjson/error/en.h" include nil nil [133 164])
+            ("rapidjson/stringbuffer.h" include nil nil [165 200])
+            ("acmacs-base/read-file.hh" include nil nil [202 237])
+            ("acmacs-base/float.hh" include nil nil [238 269])
+            ("json_writer" type
+               (:members 
+                  ( ("writer" type
+                       (:template 
+                          ( ("RW" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [472 508])
+                    ("key" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [513 523]))                  
+                :type "namespace")
+                nil [444 525])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil)
+                    ("T" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [599 624])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [625 647]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [527 648])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [709 734])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [735 747]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [649 748])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [809 834])
+                    ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [835 847]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [749 848])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [909 934])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [935 942]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [849 943])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1004 1029])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1030 1034]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [944 1035])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1096 1121])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1122 1129]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [1036 1130])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1191 1216])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1217 1222]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [1131 1223])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1284 1309])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("std::vector" type (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1310 1365]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [1224 1366])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1427 1452])
+                    ("" variable (:type ("json_writer::key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1453 1470]))                  
+                :operator-flag t
+                :prototype-flag t)
+                nil [1367 1471])
+            ("json_writer" type
+               (:members 
+                  ( ("writer" type
+                       (:template 
+                          ( ("RW" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1650 1657])
+                            ("writer" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("aKeyword" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1680 1701]))                                  
+                                :type ("writer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1666 1738])
+                            ("string" function
+                               (:methodconst-flag t
+                                :parent "std"
+                                :type "int")
+                                (reparse-symbol classsubparts) [1763 1814])
+                            ("keyword" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1823 1878])
+                            ("private" label nil (reparse-symbol classsubparts) [1885 1893])
+                            ("mBuffer" variable (:type ("rapidjson::StringBuffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1902 1934])
+                            ("mKeyword" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1943 1964]))                          
+                        :superclasses 
+                          ( ("RW" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1576 1971])
+                    ("_StartArray" type
+                       (:members 
+                          ( ("start_array" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2340 2353]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2321 2354])
+                    ("_EndArray" type
+                       (:members 
+                          ( ("end_array" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2376 2387]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2359 2388])
+                    ("_StartObject" type
+                       (:members 
+                          ( ("start_object" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2413 2427]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2393 2428])
+                    ("_EndObject" type
+                       (:members 
+                          ( ("end_object" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2451 2463]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2433 2464])
+                    ("key" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2491 2498])
+                            ("key" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("v" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2518 2532]))                                  
+                                :type ("key" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2507 2546])
+                            ("key" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("v" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2566 2580]))                                  
+                                :type ("key" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2555 2594])
+                            ("key" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("v" variable (:type "char") (reparse-symbol arg-sub-list) [2614 2621]))                                  
+                                :type ("key" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2603 2638])
+                            ("private" label nil (reparse-symbol classsubparts) [2715 2723])
+                            ("value" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2732 2750]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2470 2757])
+                    ("_internal" type
+                       (:members 
+                          ( ("castable_to_char" type
+                               (:superclasses 
+                                  ( ("std::false_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3152 3204])
+                            ("std::true_type" variable (:type "int") (reparse-symbol namespacesubparts) [3327 3345]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2914 3351])
+                    ("_if_not_empty" type
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3577 3584])
+                            ("_if_not_empty" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Key" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3614 3619])
+                                    ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3620 3625])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3626 3633])
+                                    ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3634 3641]))                                  
+                                :type ("_if_not_empty" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3593 3673])
+                            ("<<" function
+                               (:template 
+                                  ( ("RW" type (:type "class") nil nil))                                  
+                                :type ("writer" type
+                                     (:template-specifier 
+                                        ( ("RW" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("aWriter" variable
+                                       (:reference 1
+                                        :type ("writer" type
+                                             (:template-specifier 
+                                                ( ("RW" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3744 3764])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("_if_not_empty" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Value" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3765 3803]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [3683 3962])
+                            ("private" label nil (reparse-symbol classsubparts) [3969 3977])
+                            ("mKey" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3986 3995])
+                            ("mValue" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4004 4017]))                          )
+                        (reparse-symbol namespacesubparts) [3506 4024])
+                    ("if_not_empty" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4095 4100])
+                            ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4101 4106])
+                            ("" variable
+                               (:reference 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4107 4114])
+                            ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4115 4122]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [4030 4214])
+                    ("if_not_empty" function
+                       (:template 
+                          ( ("Value" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("aKey" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4270 4287])
+                            ("" variable
+                               (:reference 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4288 4295])
+                            ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4296 4303]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [4219 4381])
+                    ("_if_non_negative" type
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4536 4543])
+                            ("_if_non_negative" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Key" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4576 4581])
+                                    ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4582 4587])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4588 4595])
+                                    ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4596 4603]))                                  
+                                :type ("_if_non_negative" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4552 4635])
+                            ("<<" function
+                               (:template 
+                                  ( ("RW" type (:type "class") nil nil))                                  
+                                :type ("writer" type
+                                     (:template-specifier 
+                                        ( ("RW" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("aWriter" variable
+                                       (:reference 1
+                                        :type ("writer" type
+                                             (:template-specifier 
+                                                ( ("RW" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4706 4726])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("_if_non_negative" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Value" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4727 4768]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [4645 4925])
+                            ("private" label nil (reparse-symbol classsubparts) [4932 4940])
+                            ("mKey" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4949 4958])
+                            ("mValue" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4967 4980]))                          )
+                        (reparse-symbol namespacesubparts) [4462 4987])
+                    ("if_non_negative" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5061 5066])
+                            ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5067 5072])
+                            ("" variable
+                               (:reference 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5073 5080])
+                            ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5081 5088]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [4993 5183])
+                    ("if_non_negative" function
+                       (:template 
+                          ( ("Value" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("aKey" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5242 5259])
+                            ("" variable
+                               (:reference 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5260 5267])
+                            ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5268 5275]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [5188 5356])
+                    ("_if_not" type
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5502 5509])
+                            ("_if_not" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Key" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5533 5538])
+                                    ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5539 5544])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5545 5552])
+                                    ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5553 5560])
+                                    ("aPred" variable (:type "bool") (reparse-symbol arg-sub-list) [5561 5572]))                                  
+                                :type ("_if_not" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5518 5618])
+                            ("_if_not" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Key" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5642 5647])
+                                    ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5648 5653])
+                                    ("aValue" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5654 5667])
+                                    ("aPred" variable (:type "bool") (reparse-symbol arg-sub-list) [5668 5679]))                                  
+                                :type ("_if_not" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5627 5725])
+                            ("<<" function
+                               (:template 
+                                  ( ("RW" type (:type "class") nil nil))                                  
+                                :type ("writer" type
+                                     (:template-specifier 
+                                        ( ("RW" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("aWriter" variable
+                                       (:reference 1
+                                        :type ("writer" type
+                                             (:template-specifier 
+                                                ( ("RW" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5796 5816])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("_if_not" type
+                                             (:template-specifier 
+                                                ( ("Key" type nil nil nil)
+                                                  ("Value" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5817 5849]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [5735 5999])
+                            ("private" label nil (reparse-symbol classsubparts) [6006 6014])
+                            ("mKey" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6023 6032])
+                            ("mValue" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6041 6054])
+                            ("mPred" variable (:type "bool") (reparse-symbol classsubparts) [6063 6074]))                          )
+                        (reparse-symbol namespacesubparts) [5437 6081])
+                    ("if_not_zero" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6135 6140])
+                            ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6141 6146])
+                            ("aValue" variable (:type "double") (reparse-symbol arg-sub-list) [6147 6161]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6087 6247])
+                    ("if_not_zero" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aKey" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6276 6293])
+                            ("aValue" variable (:type "double") (reparse-symbol arg-sub-list) [6294 6308]))                          
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6252 6380])
+                    ("if_not_one" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6433 6438])
+                            ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6439 6444])
+                            ("aValue" variable (:type "double") (reparse-symbol arg-sub-list) [6445 6459]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6386 6551])
+                    ("if_not_one" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aKey" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6579 6596])
+                            ("aValue" variable (:type "double") (reparse-symbol arg-sub-list) [6597 6611]))                          
+                        :type ("auto" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6556 6689])
+                    ("if_not_equal" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6760 6765])
+                            ("" variable (:type ("aKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6766 6771])
+                            ("" variable
+                               (:reference 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6772 6779])
+                            ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6780 6787])
+                            ("aEq" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6788 6798]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6695 6878])
+                    ("if_not_equal" function
+                       (:template 
+                          ( ("Value" type (:type "class") nil nil))                          
+                        :type ("auto" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("aKey" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6934 6951])
+                            ("" variable
+                               (:reference 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6952 6959])
+                            ("" variable (:type ("aValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6960 6967])
+                            ("aEq" variable (:type ("Value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6968 6978]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6883 7044]))                  
+                :type "namespace")
+                nil [1548 7047])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7357 7390])
+                    ("" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7391 7416]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [7290 7436])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7505 7538])
+                    ("" variable (:type ("json_writer::_StartArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7539 7564]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [7438 7606])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7674 7707])
+                    ("" variable (:type ("json_writer::_EndArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7708 7731]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [7607 7771])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7839 7872])
+                    ("" variable (:type ("json_writer::_StartObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7873 7899]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [7772 7942])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8010 8043])
+                    ("" variable (:type ("json_writer::_EndObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8044 8068]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [7943 8109])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8178 8211])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8212 8226]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [8111 8299])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8367 8400])
+                    ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8401 8415]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [8300 8495])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8563 8596])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [8597 8607]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [8496 8647])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8715 8748])
+                    ("value" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8749 8762]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [8648 8805])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8873 8906])
+                    ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [8907 8918]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [8806 8959])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9027 9060])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [9061 9074]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [8960 9117])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9186 9219])
+                    ("value" variable (:type ("json_writer::key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9220 9243]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [9119 9283])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil)
+                    ("T" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9364 9397])
+                    ("aList" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9398 9426]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [9285 9570])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9639 9672])
+                    ("list_list_strings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9673 9736]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [9572 9892])
+            ("<<" function
+               (:template 
+                  ( ("RW" type (:type "class") nil nil))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9961 9994])
+                    ("map_list_strings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("std::vector" type (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9995 10067]))                  
+                :typemodifiers ("inline")
+                :operator-flag t)
+                nil [9894 10260])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("json_writer::writer" type
+                             (:template-specifier 
+                                ( ("RW" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10456 10489])
+                    ("aKey" variable (:type ("Key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10490 10499]))                  
+                :type ("json_writer::writer" type
+                     (:template-specifier 
+                        ( ("RW" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10412 10598])
+            ("json_writer" type
+               (:members 
+                  ( ("pretty_json" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("V" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10830 10845])
+                            ("keyword" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10846 10866])
+                            ("indent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10867 10881])
+                            ("insert_emacs_indent_hint" variable (:type "bool") (reparse-symbol arg-sub-list) [10882 10912]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [10777 11390])
+                    ("compact_json" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("aValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("V" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11450 11466])
+                            ("keyword" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11467 11487]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [11396 11610])
+                    ("json" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("V" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11662 11677])
+                            ("keyword" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11678 11698])
+                            ("indent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11699 11713])
+                            ("insert_emacs_indent_hint" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11714 11750]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [11616 11927])
+                    ("export_to_json" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("V" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12063 12078])
+                            ("keyword" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12079 12099])
+                            ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12100 12121])
+                            ("indent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12122 12136])
+                            ("insert_emacs_indent_hint" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12137 12173])
+                            ("force_compression" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12175 12205]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [12014 12336]))                  
+                :type "namespace")
+                nil [10749 12339]))          
+      :file "json-writer.hh"
+      :pointmax 12532
+      :fsize 12531
+      :lastmodtime '(22682 57722 0 0)
+      :unmatched-syntax '((punctuation 10388 . 10389) (symbol 10381 . 10388) (punctuation 10379 . 10380) (punctuation 10377 . 10378) (symbol 10373 . 10377) (punctuation 10372 . 10373) (punctuation 10371 . 10372) (punctuation 10370 . 10371) (semantic-list 10368 . 10370) (punctuation 10367 . 10368) (symbol 10364 . 10367) (punctuation 10363 . 10364) (symbol 10347 . 10363) (punctuation 10346 . 10347) (punctuation 10345 . 10346) (symbol 10336 . 10345) (punctuation 10335 . 10336) (punctuation 10334 . 10335) (symbol 10323 . 10334) (punctuation 10322 . 10323) (symbol 10313 . 10322) (punctuation 10312 . 10313) (punctuation 10311 . 10312) (symbol 10308 . 10311) (TYPENAME 10299 . 10307) (punctuation 10297 . 10298) (symbol 10294 . 10297) (TYPENAME 10285 . 10293) (punctuation 10283 . 10284) (symbol 10281 . 10283) (TYPENAME 10272 . 10280) (punctuation 10271 . 10272) (TEMPLATE 10262 . 10270) (punctuation 6958 . 6959) (punctuation 6778 . 6779) (punctuation 6764 . 6765) (punctuation 6437 . 6438) (punctuation 6139 . 6140) (punctuation 5646 . 5647) (punctuation 5551 . 5552) (punctuation 5537 . 5538) (punctuation 5266 . 5267) (punctuation 5079 . 5080) (punctuation 5065 . 5066) (punctuation 4594 . 4595) (punctuation 4580 . 4581) (punctuation 4294 . 4295) (punctuation 4113 . 4114) (punctuation 4099 . 4100) (punctuation 3632 . 3633) (punctuation 3618 . 3619) (PUBLIC 3320 . 3326) (punctuation 3318 . 3319) (punctuation 3316 . 3317) (punctuation 3315 . 3316) (semantic-list 3277 . 3315) (symbol 3269 . 3277) (semantic-list 3295 . 3314) (punctuation 3268 . 3269) (symbol 3262 . 3268) (punctuation 3260 . 3261) (symbol 3259 . 3260) (punctuation 3258 . 3259) (symbol 3242 . 3258) (STRUCT 3235 . 3241) (punctuation 3233 . 3234) (symbol 3232 . 3233) (TYPENAME 3223 . 3231) (punctuation 3222 . 3223) (TEMPLATE 3213 . 3221) (punctuation 3150 . 3151) (VOID 3146 . 3150) (punctuation 3144 . 3145) (TYPENAME 3135 . 3143) (punctuation 3133 . 3134) (symbol 3132 . 3133) (TYPENAME 3123 . 3131) (punctuation 3122 . 3123) (TEMPLATE 3113 . 3121) (punctuation 3026 . 3027) (VOID 3022 . 3026) (punctuation 3020 . 3021) (symbol 3013 . 3019) (USING 3007 . 3012) (punctuation 3005 . 3006) (punctuation 3004 . 3005) (punctuation 3003 . 3004) (punctuation 3002 . 3003) (CLASS 2996 . 3001) (punctuation 2995 . 2996) (TEMPLATE 2987 . 2995) (semantic-list 2683 . 2708) (CONST 2677 . 2682) (semantic-list 2674 . 2676) (punctuation 2673 . 2674) (CHAR 2669 . 2673) (CONST 2663 . 2668) (OPERATOR 2654 . 2662) (INLINE 2647 . 2653) (OPERATOR 1754 . 1762) (INLINE 1747 . 1753) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("iostream" include (:system-flag t) nil [33 52])
+            ("stdexcept" include (:system-flag t) nil [53 73])
+            ("fcntl.h" include (:system-flag t) nil [74 92])
+            ("cerrno" include (:system-flag t) nil [93 110])
+            ("cstring" include (:system-flag t) nil [111 129])
+            ("cstdio" include (:system-flag t) nil [130 147])
+            ("acmacs-base/boost-diagnostics.hh" include nil nil [177 220])
+            ("boost/filesystem.hpp" include nil nil [221 252])
+            ("acmacs-base/xz.hh" include nil nil [281 309])
+            ("acmacs_base" type
+               (:members 
+                  ( ("file_exists" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [438 460]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [414 525])
+                    ("read_file" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [641 663]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [612 1490])
+                    ("read_from_file_descriptor" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1622 1629])
+                            ("chunk_size" variable
+                               (:default-value "1024"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1630 1654]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1577 2408])
+                    ("read_stdin" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2495 2583])
+                    ("backup_file" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2694 2716]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2670 3430])
+                    ("write_file" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3540 3562])
+                            ("aData" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3563 3581])
+                            ("aForceCompression" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3582 3612]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3517 4399])
+                    ("TempFile" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4512 4519])
+                            ("TempFile" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("TempFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4528 4798])
+                            ("string" function
+                               (:methodconst-flag t
+                                :parent "std"
+                                :type "int")
+                                (reparse-symbol classsubparts) [4824 4860])
+                            ("TempFile" function
+                               (:destructor-flag t
+                                :typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4921 4997])
+                            ("private" label nil (reparse-symbol classsubparts) [5004 5012])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [5021 5035])
+                            ("fd" variable (:type "int") (reparse-symbol classsubparts) [5044 5051]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4486 5059]))                  
+                :type "namespace")
+                nil [386 5161]))          
+      :file "read-file.hh"
+      :pointmax 5329
+      :fsize 5328
+      :lastmodtime '(22655 29531 0 0)
+      :unmatched-syntax '((semantic-list 4897 . 4911) (CONST 4891 . 4896) (semantic-list 4888 . 4890) (INT 4885 . 4888) (OPERATOR 4876 . 4884) (INLINE 4869 . 4875) (OPERATOR 4815 . 4823) (INLINE 4808 . 4814) (symbol 276 . 279) (symbol 265 . 275) (symbol 261 . 264) (symbol 254 . 260) (punctuation 253 . 254) (symbol 172 . 176) (symbol 161 . 171) (symbol 157 . 160) (symbol 150 . 156) (punctuation 149 . 150) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cmath" include (:system-flag t) nil [15 31])
+            ("limits" include (:system-flag t) nil [32 49])
+            ("type_traits" include (:system-flag t) nil [50 72])
+            ("algorithm" include (:system-flag t) nil [73 93])
+            ("float_equal" function
+               (:arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [348 352])
+                    ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 357])
+                    ("ulp" variable
+                       (:default-value "1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [358 367]))                  
+                :type ("type" type (:type "class") nil nil))
+                nil [324 731])
+            ("float_zero" function
+               (:arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [920 924])
+                    ("ulp" variable
+                       (:default-value "1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [925 934]))                  
+                :type ("type" type (:type "class") nil nil))
+                nil [897 977])
+            ("double_to_string" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("value" variable (:type "double") (reparse-symbol arg-sub-list) [1090 1103]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1054 1446]))          
+      :file "float.hh"
+      :pointmax 1522
+      :fsize 1521
+      :lastmodtime '(22708 19852 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "boost-diagnostics.hh"
+      :fsize 1074
+      :lastmodtime '(22655 29531 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "xz.hh"
+      :fsize 3051
+      :lastmodtime '(22655 29531 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ctime" include (:system-flag t) nil [15 31])
+            ("string" include (:system-flag t) nil [32 49])
+            ("stdexcept" include (:system-flag t) nil [50 70])
+            ("iostream" include (:system-flag t) nil [71 90])
+            ("vector" include (:system-flag t) nil [91 108])
+            ("Date" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [199 206])
+                    ("Date" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [211 237])
+                    ("Date" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [254 272]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [242 299])
+                    ("=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [385 403]))                          
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [361 455])
+                    ("<" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("d" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [485 499]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [461 621])
+                    ("==" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("d" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [651 665]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [626 746])
+                    (">=" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("d" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [776 790]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [751 839])
+                    ("empty" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [845 901])
+                    ("year" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [971 1020])
+                    ("month" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1025 1074])
+                    ("day" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1079 1127])
+                    ("reset" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1133 1310])
+                    ("parse" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1334 1352]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1316 1763])
+                    ("display" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1769 1938])
+                    ("string" function
+                       (:methodconst-flag t
+                        :parent "std"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1960 2001])
+                    ("month_3" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2252 2414])
+                    ("year_2" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2420 2581])
+                    ("assign_and_remove_day" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("d" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2621 2635]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2587 2709])
+                    ("remove_day" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2715 2851])
+                    ("assign_and_subtract_months" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("d" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2896 2910])
+                            ("months" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2911 2925]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2857 3256])
+                    ("increment_month" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3262 3494])
+                    ("decrement_month" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3500 3732])
+                    ("private" label nil (reparse-symbol classsubparts) [3735 3743])
+                    ("mTime" variable (:type ("std::tm" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3748 3762]))                  
+                :type "class")
+                nil [185 3766])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3891 3909])
+                    ("aDate" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3910 3928]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [3857 3967])
+            ("months_between_dates" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4119 4133])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Date" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4134 4148]))                  
+                :type "int")
+                nil [4087 4475])
+            ("months_between_dates" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("aDates" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("Date" type nil nil nil)
+                                  ("Date" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4509 4545]))                  
+                :type "int")
+                nil [4477 4611])
+            ("time_format" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("aFormat" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4719 4739])
+                    ("aTime" variable (:type ("std::time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4740 4758]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [4688 5084])
+            ("time_format" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("aFormat" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5117 5137]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [5086 5194]))          
+      :file "date.hh"
+      :pointmax 5362
+      :fsize 5361
+      :lastmodtime '(22708 16326 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [15 34])
+            ("vector" include (:system-flag t) nil [35 52])
+            ("cmath" include (:system-flag t) nil [53 69])
+            ("Transformation" type
+               (:superclasses 
+                  ( ("std::vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [200 207])
+                    ("Transformation" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Transformation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [212 272])
+                    ("Transformation" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("a11" variable (:type "double") (reparse-symbol arg-sub-list) [359 370])
+                            ("a12" variable (:type "double") (reparse-symbol arg-sub-list) [371 382])
+                            ("a21" variable (:type "double") (reparse-symbol arg-sub-list) [383 394])
+                            ("a22" variable (:type "double") (reparse-symbol arg-sub-list) [395 406]))                          
+                        :type ("Transformation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [337 451])
+                    ("rotate" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aAngle" variable (:type "double") (reparse-symbol arg-sub-list) [549 563]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [530 1011])
+                    ("flip" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aX" variable (:type "double") (reparse-symbol arg-sub-list) [1095 1105])
+                            ("aY" variable (:type "double") (reparse-symbol arg-sub-list) [1106 1116]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1078 1736])
+                    ("multiply_by" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Transformation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1766 1790]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1742 2154]))                  
+                :type "class")
+                nil [146 2157])
+            ("<<" function
+               (:operator-flag t
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2268 2286])
+                    ("t" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Transformation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2287 2311]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [2234 2405]))          
+      :file "transformation.hh"
+      :pointmax 2573
+      :fsize 2572
+      :lastmodtime '(22683 15969 0 0)
+      :unmatched-syntax '((punctuation 523 . 524) (DEFAULT 516 . 523) (punctuation 514 . 515) (semantic-list 488 . 513) (punctuation 487 . 488) (OPERATOR 479 . 487) (punctuation 477 . 478) (symbol 463 . 477) (INLINE 456 . 462) (punctuation 331 . 332) (DEFAULT 324 . 331) (punctuation 322 . 323) (semantic-list 298 . 321) (symbol 284 . 298) (INLINE 277 . 283) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
   :file "!Users!eu!AD!sources!acmacs-base!cc!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -1,10 +1,10 @@
-;; Object backend/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "backend/"
+(semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "style.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_STYLE_HH" variable (:constant-flag t) nil [152 167])
             ("cairo.h" include (:system-flag t) nil [169 187])
@@ -1838,15 +1838,15 @@
                 nil [459 36830]))          
       :file "style.hh"
       :pointmax 37024
-      :fsize 37023
-      :lastmodtime '(22284 62907 0 0)
+      :fsize 37074
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 36830 . 36831))
       :lexical-table 
         '(("ACMACS_STYLE_HH")
           )
 )
-    (semanticdb-table "style.cc"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("style.hh" include nil nil [144 163])
             ("draw.hh" include nil nil [195 213])
@@ -2219,10 +2219,10 @@
       :file "style.cc"
       :pointmax 25509
       :fsize 25508
-      :lastmodtime '(22324 18764 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "draw.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_DRAW_HH" variable (:constant-flag t) nil [199 213])
             ("stdexcept" include (:system-flag t) nil [215 235])
@@ -3436,15 +3436,15 @@
                 nil [628 21540]))          
       :file "draw.hh"
       :pointmax 21752
-      :fsize 21751
-      :lastmodtime '(22284 51131 0 0)
+      :fsize 23139
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 21540 . 21541))
       :lexical-table 
         '(("ACMACS_DRAW_HH")
           )
 )
-    (semanticdb-table "plot.cc"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("algorithm" include (:system-flag t) nil [152 172])
             ("plot.hh" include nil nil [197 215])
@@ -3741,11 +3741,11 @@
                 nil [25873 27510]))          
       :file "plot.cc"
       :pointmax 27720
-      :fsize 27719
-      :lastmodtime '(22160 45083 0 0)
+      :fsize 33273
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 2876 . 2877)))
-    (semanticdb-table "plot.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_PLOT_HH" variable (:constant-flag t) nil [183 197])
             ("map" include (:system-flag t) nil [199 213])
@@ -4975,15 +4975,15 @@
                 nil [467 24390]))          
       :file "plot.hh"
       :pointmax 24602
-      :fsize 24601
-      :lastmodtime '(22160 45083 0 0)
+      :fsize 28779
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 24390 . 24391) (punctuation 14831 . 14832) (punctuation 10901 . 10902) (punctuation 10571 . 10572) (punctuation 10570 . 10571) (punctuation 10569 . 10570) (symbol 10564 . 10569) (punctuation 10563 . 10564) (symbol 10552 . 10563) (punctuation 10516 . 10517) (punctuation 10515 . 10516) (punctuation 10514 . 10515) (punctuation 10512 . 10513) (symbol 10507 . 10512) (punctuation 10506 . 10507) (symbol 10495 . 10506) (punctuation 10494 . 10495) (symbol 10489 . 10494) (punctuation 10455 . 10456) (punctuation 10454 . 10455) (punctuation 10453 . 10454) (symbol 10448 . 10453) (punctuation 10447 . 10448) (symbol 10436 . 10447) (CONST 10430 . 10435) (punctuation 10901 . 10902) (punctuation 10571 . 10572) (punctuation 10570 . 10571) (punctuation 10569 . 10570) (symbol 10564 . 10569) (punctuation 10563 . 10564) (symbol 10552 . 10563) (punctuation 10516 . 10517) (punctuation 10515 . 10516) (punctuation 10514 . 10515) (punctuation 10512 . 10513) (symbol 10507 . 10512) (punctuation 10506 . 10507) (symbol 10495 . 10506) (punctuation 10494 . 10495) (symbol 10489 . 10494) (punctuation 10455 . 10456) (punctuation 10454 . 10455) (punctuation 10453 . 10454) (symbol 10448 . 10453) (punctuation 10447 . 10448) (symbol 10436 . 10447) (CONST 10430 . 10435))
       :lexical-table 
         '(("ACMACS_PLOT_HH")
           )
 )
-    (semanticdb-table "color.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_COLOR_HH" variable (:constant-flag t) nil [152 167])
             ("iostream" include (:system-flag t) nil [169 188])
@@ -5177,15 +5177,15 @@
                 nil [359 4457]))          
       :file "color.hh"
       :pointmax 4651
-      :fsize 4650
-      :lastmodtime '(22086 5788 0 0)
+      :fsize 4773
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 4457 . 4458) (semantic-list 2192 . 2210) (CONST 2186 . 2191) (semantic-list 2183 . 2185) (UNSIGNED 2174 . 2182) (OPERATOR 2165 . 2173) (INLINE 2158 . 2164))
       :lexical-table 
         '(("ACMACS_COLOR_HH")
           )
 )
-    (semanticdb-table "binding-stress.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_BINDING_STRESS_HH" variable (:constant-flag t) nil [161 185])
             ("binding-table.hh" include nil nil [219 246])
@@ -6502,14 +6502,14 @@
       :file "binding-stress.hh"
       :pointmax 49570
       :fsize 49569
-      :lastmodtime '(22242 29958 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("ACMACS_BINDING_STRESS_HH")
           )
 )
-    (semanticdb-table "helper-functions.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_HELPER_FUNCTIONS_HH" variable (:constant-flag t) nil [195 221])
             ("iostream" include (:system-flag t) nil [223 242])
@@ -6642,14 +6642,14 @@
       :file "helper-functions.hh"
       :pointmax 4613
       :fsize 4612
-      :lastmodtime '(22086 5788 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 4409 . 4410))
       :lexical-table 
         '(("ACMACS_HELPER_FUNCTIONS_HH")
           )
 )
-    (semanticdb-table "mds.cc"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("mds.hh" include nil nil [142 159])
             ("matrix_operations.hh" include nil nil [204 235])
@@ -6736,37 +6736,38 @@
                 :arguments 
                   ( ("aDebug" variable (:type "bool") (reparse-symbol arg-sub-list) [6242 6254]))                  
                 :type ("acmacs::IntegerType" type (:type "class") nil nil))
-                nil [6205 8002])
+                nil [6205 8006])
             ("optimize" function
                (:parent "acmacs::Mds"
                 :arguments 
-                  ( ("aDebug" variable (:type "bool") (reparse-symbol arg-sub-list) [8125 8137]))                  
+                  ( ("aDebug" variable (:type "bool") (reparse-symbol arg-sub-list) [8129 8141]))                  
                 :type "void")
-                nil [8098 9184])
+                nil [8102 9188])
             ("applyMdsParameters" function
                (:parent "acmacs::Mds"
                 :arguments 
-                  ( ("aDebug" variable (:type "bool") (reparse-symbol arg-sub-list) [9322 9334]))                  
+                  ( ("aDebug" variable (:type "bool") (reparse-symbol arg-sub-list) [9326 9338]))                  
                 :type "void")
-                nil [9285 10208])
+                nil [9289 10212])
             ("store" function
-               (:parent "acmacs::Mds"
+               (:methodconst-flag t
+                :parent "acmacs::Mds"
                 :arguments 
                   ( ("aWriter" variable
                        (:reference 1
                         :type ("StorageOut" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [10785 10805]))                  
+                        (reparse-symbol arg-sub-list) [10789 10809]))                  
                 :type "void")
-                nil [10761 11057])
+                nil [10765 11061])
             ("restore" function
                (:parent "acmacs::Mds"
                 :arguments 
                   ( ("aReader" variable
                        (:reference 1
                         :type ("StorageIn" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11181 11200]))                  
+                        (reparse-symbol arg-sub-list) [11185 11204]))                  
                 :type "void")
-                nil [11155 11861])
+                nil [11159 11865])
             ("importFromFile" function
                (:pointer 1
                 :parent "acmacs::Mds"
@@ -6775,9 +6776,9 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12002 12031]))                  
+                        (reparse-symbol arg-sub-list) [12006 12035]))                  
                 :type ("acmacs::Mds" type (:type "class") nil nil))
-                nil [11961 12264])
+                nil [11965 12268])
             ("importFromData" function
                (:pointer 1
                 :parent "acmacs::Mds"
@@ -6786,9 +6787,9 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12412 12437]))                  
+                        (reparse-symbol arg-sub-list) [12416 12441]))                  
                 :type ("acmacs::Mds" type (:type "class") nil nil))
-                nil [12371 12640])
+                nil [12375 12644])
             ("MdsResults" function
                (:constructor-flag t
                 :parent "acmacs::MdsResults"
@@ -6797,16 +6798,16 @@
                        (:reference 1
                         :constant-flag t
                         :type ("Mds" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12778 12794])
-                    ("aTimeSpent" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12795 12813])
-                    ("aCloneLayout" variable (:type "bool") (reparse-symbol arg-sub-list) [12814 12832]))                  
+                        (reparse-symbol arg-sub-list) [12782 12798])
+                    ("aTimeSpent" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12799 12817])
+                    ("aCloneLayout" variable (:type "bool") (reparse-symbol arg-sub-list) [12818 12836]))                  
                 :type ("MdsResults" type (:type "class") nil nil))
-                nil [12747 13397])
+                nil [12751 13401])
             ("MdsResults" function
                (:destructor-flag t
                 :parent "acmacs::MdsResults"
                 :type "void")
-                nil [13507 13615])
+                nil [13511 13619])
             ("markDisconnectedPoints" function
                (:parent "acmacs::MdsResults"
                 :arguments 
@@ -6814,9 +6815,9 @@
                        (:reference 1
                         :constant-flag t
                         :type ("Mds" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13854 13870]))                  
+                        (reparse-symbol arg-sub-list) [13858 13874]))                  
                 :type "void")
-                nil [13806 14512])
+                nil [13810 14516])
             ("fill" function
                (:parent "acmacs::MdsResults"
                 :arguments 
@@ -6824,28 +6825,29 @@
                        (:reference 1
                         :constant-flag t
                         :type ("Mds" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14664 14680])
-                    ("aTimeSpent" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14681 14699]))                  
+                        (reparse-symbol arg-sub-list) [14668 14684])
+                    ("aTimeSpent" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14685 14703]))                  
                 :type "void")
-                nil [14634 15176])
+                nil [14638 15180])
             ("store" function
-               (:parent "acmacs::MdsResults"
+               (:methodconst-flag t
+                :parent "acmacs::MdsResults"
                 :arguments 
                   ( ("aWriter" variable
                        (:reference 1
                         :type ("StorageOut" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15311 15331]))                  
+                        (reparse-symbol arg-sub-list) [15315 15335]))                  
                 :type "void")
-                nil [15280 15645])
+                nil [15284 15649])
             ("restore" function
                (:parent "acmacs::MdsResults"
                 :arguments 
                   ( ("aReader" variable
                        (:reference 1
                         :type ("StorageIn" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [15783 15802]))                  
+                        (reparse-symbol arg-sub-list) [15787 15806]))                  
                 :type "void")
-                nil [15750 16278])
+                nil [15754 16282])
             ("importFromFile" function
                (:pointer 1
                 :parent "acmacs::MdsResults"
@@ -6854,9 +6856,9 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16440 16469]))                  
+                        (reparse-symbol arg-sub-list) [16444 16473]))                  
                 :type ("acmacs::MdsResults" type (:type "class") nil nil))
-                nil [16385 16747])
+                nil [16389 16751])
             ("importFromData" function
                (:pointer 1
                 :parent "acmacs::MdsResults"
@@ -6865,9 +6867,9 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [16916 16941]))                  
+                        (reparse-symbol arg-sub-list) [16920 16945]))                  
                 :type ("acmacs::MdsResults" type (:type "class") nil nil))
-                nil [16861 17189])
+                nil [16865 17193])
             ("importFromFile" function
                (:pointer 1
                 :parent "acmacs::MdsResultsArray"
@@ -6876,9 +6878,9 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17368 17397]))                  
+                        (reparse-symbol arg-sub-list) [17372 17401]))                  
                 :type ("acmacs::MdsResultsArray" type (:type "class") nil nil))
-                nil [17303 17708])
+                nil [17307 17712])
             ("importFromData" function
                (:pointer 1
                 :parent "acmacs::MdsResultsArray"
@@ -6887,16 +6889,16 @@
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [17887 17912]))                  
+                        (reparse-symbol arg-sub-list) [17891 17916]))                  
                 :type ("acmacs::MdsResultsArray" type (:type "class") nil nil))
-                nil [17822 18193]))          
+                nil [17826 18197]))          
       :file "mds.cc"
-      :pointmax 18396
-      :fsize 18395
-      :lastmodtime '(22086 5788 0 0)
+      :pointmax 18400
+      :fsize 18399
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "antigenic-table.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_ANTIGENIC_TABLE_HH" variable (:constant-flag t) nil [162 187])
             ("cstdlib" include (:system-flag t) nil [568 586])
@@ -6940,13 +6942,18 @@
                                   ( ("aMinimum" variable (:type ("FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1153 1172]))                                  
                                 :type ("ColumnBaseMinimum" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [1128 1196])
-                            ("FloatType" function (:type "int") (reparse-symbol classsubparts) [1221 1260])
+                            ("FloatType" function
+                               (:methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1221 1260])
                             ("isNone" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type "bool")
                                 (reparse-symbol classsubparts) [1269 1324])
                             ("value" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type ("FloatType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [1333 1384])
                             ("adjust" function
@@ -6956,7 +6963,8 @@
                                 :type ("FloatType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [1394 1614])
                             ("store" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :arguments 
                                   ( ("aWriter" variable
                                        (:reference 1
@@ -6974,7 +6982,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [1807 1979])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [1989 2065])
                             ("private" label nil (reparse-symbol classsubparts) [2072 2080])
@@ -7069,7 +7078,8 @@
                                 :type ("AntigenicTiter" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [4029 4178])
                             ("==" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aTiter" variable
@@ -7080,7 +7090,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [4187 4342])
                             ("!=" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aTiter" variable
@@ -7091,7 +7102,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [4351 4442])
                             ("<" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aTiter" variable
@@ -7102,7 +7114,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [4451 5052])
                             ("<=" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aTiter" variable
@@ -7113,7 +7126,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [5062 5224])
                             (">" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("" variable
@@ -7124,7 +7138,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [5234 5400])
                             (">=" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("" variable
@@ -7135,27 +7150,33 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [5410 5576])
                             ("valueType" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type ("ValueType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [5701 5793])
                             ("value" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type ("IntegerType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [5902 5977])
                             ("isDontCare" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type "bool")
                                 (reparse-symbol classsubparts) [6038 6179])
                             ("isDodgy" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type "bool")
                                 (reparse-symbol classsubparts) [6188 6326])
                             ("isThresholded" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type "bool")
                                 (reparse-symbol classsubparts) [6335 6499])
                             ("isRegular" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aDodgyTiterIsRegular" variable (:type "bool") (reparse-symbol arg-sub-list) [6531 6557])
                                     ("aThresholdedIsRegular" variable (:type "bool") (reparse-symbol arg-sub-list) [6558 6585]))                                  
@@ -7200,15 +7221,18 @@
                                 :type ("IntegerType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [7896 8350])
                             ("asString" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [9067 9901])
                             ("asStringLogged" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [9935 10859])
                             ("distance" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :arguments 
                                   ( ("aColumnBase" variable (:type ("FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10985 11007])
                                     ("aTiterMultiplier" variable (:type ("FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11008 11035])
@@ -7216,7 +7240,8 @@
                                 :type ("FloatType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [10951 11324])
                             ("similarity" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :arguments 
                                   ( ("aTiterMultiplier" variable
                                        (:default-value "1.0"
@@ -7237,11 +7262,13 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [12003 12183])
                             ("similarityForColumnBase" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("FloatType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [12420 12816])
                             ("store" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :arguments 
                                   ( ("aWriter" variable
                                        (:reference 1
@@ -7259,7 +7286,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [12992 13120])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [13130 13197])
                             ("sSignature" variable
@@ -7300,7 +7328,10 @@
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [14620 15000])
                             ("protected" label nil (reparse-symbol classsubparts) [15007 15017])
-                            ("titerAndThreshold" function (:type ("IntegerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15026 15094])
+                            ("titerAndThreshold" function
+                               (:methodconst-flag t
+                                :type ("IntegerType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15026 15094])
                             ("titerAndThreshold" function (:type ("IntegerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15103 15166])
                             ("private" label nil (reparse-symbol classsubparts) [15173 15181])
                             ("mTiterAndThreshold" variable (:type ("IntegerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15190 15221]))                          
@@ -7340,7 +7371,8 @@
                                 :type ("AntigenicTiterSmall" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [15669 15779])
                             ("similarity" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :arguments 
                                   ( ("aTiterMultiplier" variable
                                        (:default-value "1.0"
@@ -7355,7 +7387,8 @@
                                 :type ("IntegerType" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [16198 16365])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [16375 16442])
                             ("sSignature" variable
@@ -7403,7 +7436,8 @@
                                 :type ("AntigenicColumnBases" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [22343 22485])
                             ("clone" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("virtual" "inline")
                                 :type ("AntigenicColumnBases" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [22495 22629])
@@ -7414,7 +7448,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [22639 22895])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [22905 22972])
                             ("sSignature" variable
@@ -7434,7 +7469,8 @@
                                 :type ("AntigenicColumnBases" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [23020 23270])
                             ("==" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aNother" variable
@@ -7445,7 +7481,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [23280 23395])
                             ("!=" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aNother" variable
@@ -7506,7 +7543,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [25025 25142])
                             ("clone" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("virtual" "inline")
                                 :type ("AntigenicStressEvaluatorParameters" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [25152 25314])
@@ -7534,7 +7572,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [25405 25740])
                             ("==" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aNother" variable
@@ -7545,7 +7584,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [25750 26271])
                             ("!=" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aNother" variable
@@ -7556,7 +7596,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [26281 26436])
                             ("columnBases" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("inline")
                                 :constant-flag t
                                 :type ("AntigenicColumnBases" type (:type "class") nil nil))
@@ -7576,7 +7617,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [26610 27040])
                             ("columnBaseMinimum" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type ("ColumnBaseMinimum" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [27050 27131])
                             ("columnBaseMinimum" function
@@ -7586,7 +7628,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [27140 27406])
                             ("dodgyTiterIsRegular" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :type "bool")
                                 (reparse-symbol classsubparts) [27416 27488])
                             ("dodgyTiterIsRegular" function
@@ -7597,6 +7640,7 @@
                                 (reparse-symbol classsubparts) [27497 27604])
                             ("store" function
                                (:prototype-flag t
+                                :methodconst-flag t
                                 :typemodifiers ("virtual")
                                 :arguments 
                                   ( ("aWriter" variable
@@ -7616,7 +7660,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [27845 27886])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [27895 27962])
                             ("sSignature" variable
@@ -7676,7 +7721,8 @@
                                 :type ("AntigenicTableMdsCell" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [29944 30198])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [30208 30275])
                             ("sSignature" variable
@@ -7718,7 +7764,8 @@
                                 :constructor-flag t)
                                 (reparse-symbol classsubparts) [30532 32856])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [32866 32933])
                             ("sSignature" variable
@@ -7773,13 +7820,15 @@
                                 :type ("AntigenicStress" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [33656 33924])
                             ("stressEvaluatorParameters" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("virtual" "inline")
                                 :constant-flag t
                                 :type ("AntigenicStressEvaluatorParameters" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [33934 34199])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [34209 34276])
                             ("sSignature" variable
@@ -7873,7 +7922,8 @@
                                 :type "void")
                                 (reparse-symbol classsubparts) [35734 35882])
                             ("==" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aAntigenicTable" variable
@@ -7884,7 +7934,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [35892 36064])
                             ("!=" function
-                               (:operator-flag t
+                               (:methodconst-flag t
+                                :operator-flag t
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aAntigenicTable" variable
@@ -7899,7 +7950,8 @@
                                 :type "bool")
                                 (reparse-symbol classsubparts) [36074 36234])
                             ("stressEvaluator" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("inline" "virtual")
                                 :arguments 
                                   ( ("aParameters" variable
@@ -7910,15 +7962,18 @@
                                 :type ("AntigenicStress" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [36501 36976])
                             ("hasMoreThanThresholdedTiters" function
-                               (:typemodifiers ("inline" "virtual")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline" "virtual")
                                 :type "bool")
                                 (reparse-symbol classsubparts) [37208 37660])
                             ("hasMoreThanThresholdedTitersInLayers" function
-                               (:typemodifiers ("inline" "virtual")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline" "virtual")
                                 :type "bool")
                                 (reparse-symbol classsubparts) [37670 38272])
                             ("numberOfTitersFor_" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aIterator" variable
                                        (:pointer 1
@@ -7933,7 +7988,8 @@
                                 :type ("Index" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [38282 38755])
                             ("numberOfTitersForAntigen" function
-                               (:typemodifiers ("inline" "virtual")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline" "virtual")
                                 :arguments 
                                   ( ("aAntigenNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38811 38828])
                                     ("aNonThresholdedOnly" variable (:type "bool") (reparse-symbol arg-sub-list) [38829 38854])
@@ -7941,7 +7997,8 @@
                                 :type ("Index" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [38765 40080])
                             ("numberOfTitersForSerum" function
-                               (:typemodifiers ("inline" "virtual")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline" "virtual")
                                 :arguments 
                                   ( ("aSerumNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40134 40149])
                                     ("aNonThresholdedOnly" variable (:type "bool") (reparse-symbol arg-sub-list) [40150 40175])
@@ -7949,7 +8006,8 @@
                                 :type ("Index" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [40090 41401])
                             ("maximumTitersForSera" function
-                               (:typemodifiers ("inline" "virtual")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline" "virtual")
                                 :arguments 
                                   ( ("aTiters" variable
                                        (:reference 1
@@ -7968,11 +8026,11 @@
                                     ("aStandardDeviationThreshold" variable (:type ("FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42720 42758])
                                     ("aVerbose" variable (:type "bool") (reparse-symbol arg-sub-list) [42759 42773]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [42631 45672])
+                                (reparse-symbol classsubparts) [42631 45702])
                             ("titersFromLayer" function
                                (:typemodifiers ("inline" "virtual")
                                 :arguments 
-                                  ( ("aLayerNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45811 45826])
+                                  ( ("aLayerNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45841 45856])
                                     ("aAntigensWithoutTiters" variable
                                        (:reference 1
                                         :type ("Array" type
@@ -7980,7 +8038,7 @@
                                                 ( ("Index" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [45827 45864])
+                                        (reparse-symbol arg-sub-list) [45857 45894])
                                     ("aSeraWithoutTiters" variable
                                        (:reference 1
                                         :type ("Array" type
@@ -7988,55 +8046,59 @@
                                                 ( ("Index" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [45865 45898]))                                  
+                                        (reparse-symbol arg-sub-list) [45895 45928]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [45775 47307])
+                                (reparse-symbol classsubparts) [45805 47337])
                             ("computeColumnBases" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("inline")
                                 :arguments 
-                                  ( ("aColumnBaseMinimum" variable (:type ("ColumnBaseMinimum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47365 47402]))                                  
+                                  ( ("aColumnBaseMinimum" variable (:type ("ColumnBaseMinimum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47395 47432]))                                  
                                 :type ("AntigenicColumnBases" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [47317 48352])
+                                (reparse-symbol classsubparts) [47347 48382])
                             ("computeColumnBases" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("inline")
                                 :arguments 
-                                  ( ("aColumnBaseMinimum" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48410 48441]))                                  
+                                  ( ("aColumnBaseMinimum" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48440 48471]))                                  
                                 :type ("AntigenicColumnBases" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [48362 48573])
+                                (reparse-symbol classsubparts) [48392 48603])
                             ("setProportionToDontCare" function
                                (:typemodifiers ("inline")
                                 :arguments 
-                                  ( ("proportion" variable (:type ("acmacs::FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48619 48648]))                                  
+                                  ( ("proportion" variable (:type ("acmacs::FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48649 48678]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [48583 50566])
+                                (reparse-symbol classsubparts) [48613 50596])
                             ("store" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :arguments 
                                   ( ("aWriter" variable
                                        (:reference 1
                                         :type ("StorageOut" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [50602 50622]))                                  
+                                        (reparse-symbol arg-sub-list) [50632 50652]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [50576 50765])
+                                (reparse-symbol classsubparts) [50606 50795])
                             ("restore" function
                                (:typemodifiers ("virtual" "inline")
                                 :arguments 
                                   ( ("aReader" variable
                                        (:reference 1
                                         :type ("StorageIn" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [50803 50822]))                                  
+                                        (reparse-symbol arg-sub-list) [50833 50852]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [50775 51127])
+                                (reparse-symbol classsubparts) [50805 51157])
                             ("signature" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [51137 51206])
+                                (reparse-symbol classsubparts) [51167 51236])
                             ("sSignature" function
                                (:typemodifiers ("inline" "static")
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [51215 51320])
+                                (reparse-symbol classsubparts) [51245 51350])
                             ("construct" function
                                (:pointer 1
                                 :typemodifiers ("static" "inline")
@@ -8044,91 +8106,96 @@
                                   ( ("aReader" variable
                                        (:reference 1
                                         :type ("StorageIn" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [51381 51400]))                                  
+                                        (reparse-symbol arg-sub-list) [51411 51430]))                                  
                                 :type ("AntigenicTable" type
                                      (:template-specifier 
                                         ( ("TiterType" type nil nil nil))                                        
                                       :type "class")
                                       nil nil))
-                                (reparse-symbol classsubparts) [51330 51572])
+                                (reparse-symbol classsubparts) [51360 51602])
                             ("clone" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("virtual" "inline")
                                 :type ("AntigenicTable" type
                                      (:template-specifier 
                                         ( ("TiterType" type nil nil nil))                                        
                                       :type "class")
                                       nil nil))
-                                (reparse-symbol classsubparts) [51582 51726])
+                                (reparse-symbol classsubparts) [51612 51756])
                             ("tableDistances" function
-                               (:pointer 1
+                               (:methodconst-flag t
+                                :pointer 1
                                 :typemodifiers ("inline")
                                 :arguments 
                                   ( ("aColumnBases" variable
                                        (:pointer 1
                                         :constant-flag t
                                         :type ("AntigenicColumnBases" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [51777 51818])
+                                        (reparse-symbol arg-sub-list) [51807 51848])
                                     ("aAntigenicStressEvaluatorParameters" variable
                                        (:reference 1
                                         :constant-flag t
                                         :type ("AntigenicStressEvaluatorParameters" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [51819 51897])
-                                    ("aIgnoreThresholded" variable (:type "bool") (reparse-symbol arg-sub-list) [51898 51922]))                                  
+                                        (reparse-symbol arg-sub-list) [51849 51927])
+                                    ("aIgnoreThresholded" variable (:type "bool") (reparse-symbol arg-sub-list) [51928 51952]))                                  
                                 :type ("Matrix" type
                                      (:template-specifier 
                                         ( ("FloatType" type nil nil nil))                                        
                                       :type "class")
                                       nil nil))
-                                (reparse-symbol classsubparts) [51736 53394])
-                            ("protected" label nil (reparse-symbol classsubparts) [53401 53411])
+                                (reparse-symbol classsubparts) [51766 53424])
+                            ("protected" label nil (reparse-symbol classsubparts) [53431 53441])
                             ("meanTiter" function
-                               (:typemodifiers ("virtual" "inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual" "inline")
                                 :arguments 
-                                  ( ("aAntigenNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54517 54534])
-                                    ("aSerumNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54535 54550])
-                                    ("aMoreThanThresholdedHandling" variable (:type ("MoreThanThresholdedHandling" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54551 54608])
-                                    ("aStandardDeviationThreshold" variable (:type ("FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54609 54647]))                                  
+                                  ( ("aAntigenNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54547 54564])
+                                    ("aSerumNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54565 54580])
+                                    ("aMoreThanThresholdedHandling" variable (:type ("MoreThanThresholdedHandling" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54581 54638])
+                                    ("aStandardDeviationThreshold" variable (:type ("FloatType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54639 54677]))                                  
                                 :type ("TiterType" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [54482 60865])
+                                (reparse-symbol classsubparts) [54512 60895])
                             ("titersAtAllLayers" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :arguments 
-                                  ( ("aAntigenNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71141 71158])
-                                    ("aSerumNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71159 71174]))                                  
+                                  ( ("aAntigenNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71171 71188])
+                                    ("aSerumNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71189 71204]))                                  
                                 :type ("Array" type
                                      (:template-specifier 
                                         ( ("TiterType" type nil nil nil))                                        
                                       :type "class")
                                       nil nil))
-                                (reparse-symbol classsubparts) [71099 71437])
+                                (reparse-symbol classsubparts) [71129 71467])
                             ("minimalLessThanThresholdedTiter" function
-                               (:typemodifiers ("inline")
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
                                 :arguments 
-                                  ( ("aAntigenNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71835 71852])
-                                    ("aSerumNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71853 71868])
-                                    ("aIgnoreMoreThanThresholded" variable (:type "bool") (reparse-symbol arg-sub-list) [71869 71901]))                                  
+                                  ( ("aAntigenNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71865 71882])
+                                    ("aSerumNo" variable (:type ("Index" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71883 71898])
+                                    ("aIgnoreMoreThanThresholded" variable (:type "bool") (reparse-symbol arg-sub-list) [71899 71931]))                                  
                                 :type ("TiterType" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [71786 73024]))                          
+                                (reparse-symbol classsubparts) [71816 73054]))                          
                         :superclasses 
                           ( ("BindingTable" type
                                (:protection "public"
                                 :type "class")
                                 nil nil))                          )
-                        (reparse-symbol namespacesubparts) [34956 73032]))                  
+                        (reparse-symbol namespacesubparts) [34956 73062]))                  
                 :type "namespace")
-                nil [769 73133]))          
+                nil [769 73163]))          
       :file "antigenic-table.hh"
-      :pointmax 73355
-      :fsize 73354
-      :lastmodtime '(22135 48190 0 0)
+      :pointmax 73385
+      :fsize 73384
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 35328 . 35329) (punctuation 35327 . 35328) (punctuation 35326 . 35327) (punctuation 35316 . 35317) (punctuation 35284 . 35285) (punctuation 35283 . 35284) (semantic-list 3504 . 3536) (punctuation 3502 . 3503) (punctuation 3501 . 3502) (semantic-list 3410 . 3442) (punctuation 3408 . 3409) (punctuation 3407 . 3408) (semantic-list 3191 . 3223) (punctuation 3189 . 3190) (punctuation 3188 . 3189) (semantic-list 3504 . 3536) (punctuation 3502 . 3503) (punctuation 3501 . 3502) (semantic-list 3410 . 3442) (punctuation 3408 . 3409) (punctuation 3407 . 3408) (semantic-list 3191 . 3223) (punctuation 3189 . 3190) (punctuation 3188 . 3189) (OPERATOR 1212 . 1220) (INLINE 1205 . 1211))
       :lexical-table 
         '(("ACMACS_ANTIGENIC_TABLE_HH")
           )
 )
-    (semanticdb-table "graphic.hh"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("ACMACS_GRAPHIC_HH" variable (:constant-flag t) nil [224 241])
             ("draw.hh" include nil nil [266 284])
@@ -9139,14 +9206,14 @@
       :file "graphic.hh"
       :pointmax 13197
       :fsize 13196
-      :lastmodtime '(22086 5788 0 0)
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax '((punctuation 13077 . 13078))
       :lexical-table 
         '(("ACMACS_GRAPHIC_HH")
           )
 )
-    (semanticdb-table "draw.cc"
-      :major-mode 'c++-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
       :tags 
         '( ("draw.hh" include nil nil [191 209])
             ("geographic.hh" include nil nil [247 271])
@@ -9487,53 +9554,197 @@
                 nil [17881 18924]))          
       :file "draw.cc"
       :pointmax 19119
-      :fsize 19118
-      :lastmodtime '(22284 51263 0 0)
+      :fsize 21758
+      :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "serializable.hh"
+    (semanticdb-table "semanticdb-table"
       :file "serializable.hh"
       :fsize 20438
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "viewport.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "viewport.hh"
       :fsize 7126
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "types-py.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "types-py.hh"
-      :fsize 4086
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "geographic.hh"
+      :fsize 4244
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "geographic.hh"
       :fsize 3654
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "binding-table.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "binding-table.hh"
       :fsize 43938
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "loess.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "loess.hh"
       :fsize 2036
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "rectangle.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "rectangle.hh"
       :fsize 6436
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "mds.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "mds.hh"
       :fsize 23112
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "matrix_operations.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "matrix_operations.hh"
       :fsize 12462
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "types.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "types.hh"
       :fsize 1545
-      :lastmodtime '(22086 5788 0 0))
-    (semanticdb-table "array-py.hh"
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
       :file "array-py.hh"
-      :fsize 1929
-      :lastmodtime '(22086 5788 0 0)))
+      :fsize 3467
+      :lastmodtime '(22655 31758 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("antigenic-table.hh" include nil nil [154 183])
+            ("acmacs::AntigenSerumTitersMultiplier::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenSerumTitersMultiplier\""
+                :type "char")
+                nil [313 407])
+            ("acmacs::AntigensSeraTitersMultipliers::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigensSeraTitersMultipliers\""
+                :type "char")
+                nil [408 504])
+            ("acmacs::AntigenSerumGradientMultiplier::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenSerumGradientMultiplier\""
+                :type "char")
+                nil [505 603])
+            ("acmacs::AntigensSeraGradientMultipliers::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigensSeraGradientMultipliers\""
+                :type "char")
+                nil [604 704])
+            ("acmacs::AntigenSerumAttributes::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenSerumAttributes\""
+                :type "char")
+                nil [705 787])
+            ("acmacs::AntigensSeraAttributes::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigensSeraAttributes\""
+                :type "char")
+                nil [788 870])
+            ("acmacs::AntigenicTiter::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenicTiter\""
+                :type "char")
+                nil [872 938])
+            ("acmacs::AntigenicTiterSmall::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenicTiterSmall\""
+                :type "char")
+                nil [939 1015])
+            ("acmacs::AntigenicStressEvaluatorParameters::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenicStressEvaluatorParameters\""
+                :type "char")
+                nil [1016 1122])
+            ("acmacs::AntigenicStress::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenicStress\""
+                :type "char")
+                nil [1123 1191])
+            ("acmacs::AntigenicTableMdsCell::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenicTableMdsCell\""
+                :type "char")
+                nil [1192 1272])
+            ("acmacs::AntigenicTableMds::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenicTableMds\""
+                :type "char")
+                nil [1273 1345])
+            ("acmacs::AntigenicColumnBases::sSignature" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"AntigenicColumnBases\""
+                :type "char")
+                nil [1346 1424])
+            ("acmacs::ColumnBaseMinimum::None" variable
+               (:constant-flag t
+                :default-value "0.0"
+                :type ("acmacs::FloatType" type (:type "class") nil nil))
+                nil [1426 1488])
+            ("ColumnBaseMinimumOld" type
+               (:members 
+                  ( ("cbmNone" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1596 1604])
+                    ("cbm1280" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1657 1665])
+                    ("cbm2560" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1670 1678])
+                    ("cbm5120" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1683 1691])
+                    ("cbm10240" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1696 1705]))                  
+                :type "enum")
+                nil [1564 1708])
+            ("restoreColumnBaseMinimumV2" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("aReader" variable
+                       (:reference 1
+                        :type ("acmacs::StorageIn" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1770 1797]))                  
+                :type ("acmacs::ColumnBaseMinimum" type (:type "class") nil nil))
+                nil [1710 2314])
+            ("store" function
+               (:methodconst-flag t
+                :parent "acmacs::AntigenicStressEvaluatorParameters"
+                :arguments 
+                  ( ("aWriter" variable
+                       (:reference 1
+                        :type ("StorageOut" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2445 2465]))                  
+                :type "void")
+                nil [2390 2683])
+            ("restore" function
+               (:parent "acmacs::AntigenicStressEvaluatorParameters"
+                :arguments 
+                  ( ("aReader" variable
+                       (:reference 1
+                        :type ("StorageIn" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2869 2888]))                  
+                :type "void")
+                nil [2812 3335]))          
+      :file "antigenic-table.cc"
+      :pointmax 3555
+      :fsize 3554
+      :lastmodtime '(22655 31758 0 0)
+      :unmatched-syntax nil))
   :file "!Users!eu!ac!acmacs!backend!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

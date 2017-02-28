@@ -18,14 +18,14 @@
             ("logging" include nil nil [269 283])
             ("acmacs_map_draw" include nil nil [330 352])
             ("acmacs_base.timeit" include nil nil [353 390])
+            ("acmacs_base.json" include nil nil [391 441])
             ("main" function (:arguments 
-              ( ("args" variable nil (reparse-symbol function_parameters) [475 479]))              ) nil [466 1153])
-            ("sSettings" variable nil nil [1228 5317])
-            ("exit" code nil nil [6385 6400]))          
+              ( ("args" variable nil (reparse-symbol function_parameters) [526 530]))              ) nil [517 1462])
+            ("exit" code nil nil [6846 6861]))          
       :file "acmacs-map-draw"
-      :pointmax 6567
-      :fsize 6566
-      :lastmodtime '(22707 10169 0 0)
+      :pointmax 7028
+      :fsize 7027
+      :lastmodtime '(22708 3658 0 0)
       :unmatched-syntax nil))
   :file "!Users!eu!AD!sources!acmacs-map-draw!bin!semantic.cache"
   :semantic-tag-version "2.0"

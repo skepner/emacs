@@ -17,7 +17,6 @@
             ("get_hidb" include nil nil [266 281])
             ("get_locdb" include nil nil [301 317])
             ("vaccines" include nil nil [333 348])
-            ("acmacs_map_draw_backend" include nil nil [349 454])
             ("UnrecognizedMod" type
                (:superclasses ("ValueError")
                 :members 
@@ -29,12 +28,12 @@
                 ("chart" variable nil (reparse-symbol function_parameters) [674 679])
                 ("settings" variable nil (reparse-symbol function_parameters) [681 689])
                 ("output_width" variable nil (reparse-symbol function_parameters) [691 703])
-                ("verbose" variable nil (reparse-symbol function_parameters) [705 712]))              ) nil [646 1341])
+                ("verbose" variable nil (reparse-symbol function_parameters) [705 712]))              ) nil [646 1363])
             ("ModApplicator" type
                (:members 
-                  ( ("sStyleByContinent" variable nil (reparse-symbol indented_block_body) [2531 3107])
-                    ("sStyleByVaccineType" variable nil (reparse-symbol indented_block_body) [3113 3940])
-                    ("sStyleByClade" variable nil (reparse-symbol indented_block_body) [3946 4932])
+                  ( ("sStyleByContinent" variable nil (reparse-symbol indented_block_body) [2553 3129])
+                    ("sStyleByVaccineType" variable nil (reparse-symbol indented_block_body) [3135 3962])
+                    ("sStyleByClade" variable nil (reparse-symbol indented_block_body) [3968 4954])
                     ("__init__" function
                        (:suite 
                           ( ("self" variable nil (reparse-symbol indented_block_body) [5078 5107])
@@ -42,194 +41,194 @@
                             ("self" variable nil (reparse-symbol indented_block_body) [5144 5167]))                          
                         :parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5029 5033])
-                            ("chart_draw" variable nil (reparse-symbol function_parameters) [5035 5045])
-                            ("chart" variable nil (reparse-symbol function_parameters) [5047 5052])
-                            ("verbose" variable nil (reparse-symbol function_parameters) [5054 5061]))                          
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5051 5055])
+                            ("chart_draw" variable nil (reparse-symbol function_parameters) [5057 5067])
+                            ("chart" variable nil (reparse-symbol function_parameters) [5069 5074])
+                            ("verbose" variable nil (reparse-symbol function_parameters) [5076 5083]))                          
                         :constructor-flag t)
-                        (reparse-symbol indented_block_body) [5016 5168])
+                        (reparse-symbol indented_block_body) [5038 5190])
                     ("flip_ns" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5185 5189])
-                            ("args" variable nil (reparse-symbol function_parameters) [5191 5197]))                          )
-                        (reparse-symbol indented_block_body) [5173 5235])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5207 5211])
+                            ("args" variable nil (reparse-symbol function_parameters) [5213 5219]))                          )
+                        (reparse-symbol indented_block_body) [5195 5257])
                     ("flip_ew" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5252 5256])
-                            ("args" variable nil (reparse-symbol function_parameters) [5258 5264]))                          )
-                        (reparse-symbol indented_block_body) [5240 5302])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5274 5278])
+                            ("args" variable nil (reparse-symbol function_parameters) [5280 5286]))                          )
+                        (reparse-symbol indented_block_body) [5262 5324])
                     ("flip" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5316 5320])
-                            ("value" variable nil (reparse-symbol function_parameters) [5322 5327])
-                            ("args" variable nil (reparse-symbol function_parameters) [5329 5335]))                          )
-                        (reparse-symbol indented_block_body) [5307 5481])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5338 5342])
+                            ("value" variable nil (reparse-symbol function_parameters) [5344 5349])
+                            ("args" variable nil (reparse-symbol function_parameters) [5351 5357]))                          )
+                        (reparse-symbol indented_block_body) [5329 5503])
                     ("rotate_degrees" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5505 5509])
-                            ("angle" variable nil (reparse-symbol function_parameters) [5511 5516])
-                            ("args" variable nil (reparse-symbol function_parameters) [5518 5524]))                          )
-                        (reparse-symbol indented_block_body) [5486 5584])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5527 5531])
+                            ("angle" variable nil (reparse-symbol function_parameters) [5533 5538])
+                            ("args" variable nil (reparse-symbol function_parameters) [5540 5546]))                          )
+                        (reparse-symbol indented_block_body) [5508 5606])
                     ("rotate_radians" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5608 5612])
-                            ("angle" variable nil (reparse-symbol function_parameters) [5614 5619])
-                            ("args" variable nil (reparse-symbol function_parameters) [5621 5627]))                          )
-                        (reparse-symbol indented_block_body) [5589 5669])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5630 5634])
+                            ("angle" variable nil (reparse-symbol function_parameters) [5636 5641])
+                            ("args" variable nil (reparse-symbol function_parameters) [5643 5649]))                          )
+                        (reparse-symbol indented_block_body) [5611 5691])
                     ("viewport" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5687 5691])
-                            ("value" variable nil (reparse-symbol function_parameters) [5693 5698])
-                            ("args" variable nil (reparse-symbol function_parameters) [5700 5706]))                          )
-                        (reparse-symbol indented_block_body) [5674 5855])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5709 5713])
+                            ("value" variable nil (reparse-symbol function_parameters) [5715 5720])
+                            ("args" variable nil (reparse-symbol function_parameters) [5722 5728]))                          )
+                        (reparse-symbol indented_block_body) [5696 5877])
                     ("egg" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5868 5872])
-                            ("args" variable nil (reparse-symbol function_parameters) [5874 5880]))                          )
-                        (reparse-symbol indented_block_body) [5860 5928])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5890 5894])
+                            ("args" variable nil (reparse-symbol function_parameters) [5896 5902]))                          )
+                        (reparse-symbol indented_block_body) [5882 5950])
                     ("reassortant" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [5949 5953])
-                            ("args" variable nil (reparse-symbol function_parameters) [5955 5961]))                          )
-                        (reparse-symbol indented_block_body) [5933 6017])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5971 5975])
+                            ("args" variable nil (reparse-symbol function_parameters) [5977 5983]))                          )
+                        (reparse-symbol indented_block_body) [5955 6039])
                     ("all_grey" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [6035 6039])
-                            ("args" variable nil (reparse-symbol function_parameters) [6041 6047]))                          )
-                        (reparse-symbol indented_block_body) [6022 6086])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6057 6061])
+                            ("args" variable nil (reparse-symbol function_parameters) [6063 6069]))                          )
+                        (reparse-symbol indented_block_body) [6044 6108])
                     ("background" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [6106 6110])
-                            ("color" variable nil (reparse-symbol function_parameters) [6112 6117])
-                            ("args" variable nil (reparse-symbol function_parameters) [6119 6125]))                          )
-                        (reparse-symbol indented_block_body) [6091 6183])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6128 6132])
+                            ("color" variable nil (reparse-symbol function_parameters) [6134 6139])
+                            ("args" variable nil (reparse-symbol function_parameters) [6141 6147]))                          )
+                        (reparse-symbol indented_block_body) [6113 6205])
                     ("grid" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [6197 6201])
-                            ("color" variable nil (reparse-symbol function_parameters) [6203 6208])
-                            ("line_width" variable nil (reparse-symbol function_parameters) [6219 6229])
-                            ("args" variable nil (reparse-symbol function_parameters) [6233 6239]))                          )
-                        (reparse-symbol indented_block_body) [6188 6308])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6219 6223])
+                            ("color" variable nil (reparse-symbol function_parameters) [6225 6230])
+                            ("line_width" variable nil (reparse-symbol function_parameters) [6241 6251])
+                            ("args" variable nil (reparse-symbol function_parameters) [6255 6261]))                          )
+                        (reparse-symbol indented_block_body) [6210 6330])
                     ("border" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [6324 6328])
-                            ("color" variable nil (reparse-symbol function_parameters) [6330 6335])
-                            ("line_width" variable nil (reparse-symbol function_parameters) [6346 6356])
-                            ("args" variable nil (reparse-symbol function_parameters) [6360 6366]))                          )
-                        (reparse-symbol indented_block_body) [6313 6437])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6346 6350])
+                            ("color" variable nil (reparse-symbol function_parameters) [6352 6357])
+                            ("line_width" variable nil (reparse-symbol function_parameters) [6368 6378])
+                            ("args" variable nil (reparse-symbol function_parameters) [6382 6388]))                          )
+                        (reparse-symbol indented_block_body) [6335 6459])
                     ("point_scale" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [6458 6462])
-                            ("scale" variable nil (reparse-symbol function_parameters) [6464 6469])
-                            ("outline_scale" variable nil (reparse-symbol function_parameters) [6473 6486])
-                            ("args" variable nil (reparse-symbol function_parameters) [6490 6496]))                          )
-                        (reparse-symbol indented_block_body) [6442 6579])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6480 6484])
+                            ("scale" variable nil (reparse-symbol function_parameters) [6486 6491])
+                            ("outline_scale" variable nil (reparse-symbol function_parameters) [6495 6508])
+                            ("args" variable nil (reparse-symbol function_parameters) [6512 6518]))                          )
+                        (reparse-symbol indented_block_body) [6464 6601])
                     ("antigens" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [6597 6601])
-                            ("N" variable nil (reparse-symbol function_parameters) [6603 6604])
-                            ("select" variable nil (reparse-symbol function_parameters) [6606 6612])
-                            ("report_names_threshold" variable nil (reparse-symbol function_parameters) [6614 6636])
-                            ("args" variable nil (reparse-symbol function_parameters) [6641 6647]))                          )
-                        (reparse-symbol indented_block_body) [6584 9501])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6619 6623])
+                            ("N" variable nil (reparse-symbol function_parameters) [6625 6626])
+                            ("select" variable nil (reparse-symbol function_parameters) [6628 6634])
+                            ("report_names_threshold" variable nil (reparse-symbol function_parameters) [6636 6658])
+                            ("args" variable nil (reparse-symbol function_parameters) [6663 6669]))                          )
+                        (reparse-symbol indented_block_body) [6606 9523])
                     ("sera" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [9515 9519])
-                            ("N" variable nil (reparse-symbol function_parameters) [9521 9522])
-                            ("select" variable nil (reparse-symbol function_parameters) [9524 9530])
-                            ("report_names_threshold" variable nil (reparse-symbol function_parameters) [9532 9554])
-                            ("args" variable nil (reparse-symbol function_parameters) [9559 9565]))                          )
-                        (reparse-symbol indented_block_body) [9506 10747])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9537 9541])
+                            ("N" variable nil (reparse-symbol function_parameters) [9543 9544])
+                            ("select" variable nil (reparse-symbol function_parameters) [9546 9552])
+                            ("report_names_threshold" variable nil (reparse-symbol function_parameters) [9554 9576])
+                            ("args" variable nil (reparse-symbol function_parameters) [9581 9587]))                          )
+                        (reparse-symbol indented_block_body) [9528 10769])
                     ("style" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10762 10766])
-                            ("index" variable nil (reparse-symbol function_parameters) [10768 10773])
-                            ("indices" variable nil (reparse-symbol function_parameters) [10780 10787])
-                            ("raise_" variable nil (reparse-symbol function_parameters) [10794 10800])
-                            ("lower" variable nil (reparse-symbol function_parameters) [10807 10812])
-                            ("args" variable nil (reparse-symbol function_parameters) [10819 10825]))                          )
-                        (reparse-symbol indented_block_body) [10752 11479])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10784 10788])
+                            ("index" variable nil (reparse-symbol function_parameters) [10790 10795])
+                            ("indices" variable nil (reparse-symbol function_parameters) [10802 10809])
+                            ("raise_" variable nil (reparse-symbol function_parameters) [10816 10822])
+                            ("lower" variable nil (reparse-symbol function_parameters) [10829 10834])
+                            ("args" variable nil (reparse-symbol function_parameters) [10841 10847]))                          )
+                        (reparse-symbol indented_block_body) [10774 11501])
                     ("continents" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11499 11503])
-                            ("legend" variable nil (reparse-symbol function_parameters) [11505 11511])
-                            ("args" variable nil (reparse-symbol function_parameters) [11518 11524]))                          )
-                        (reparse-symbol indented_block_body) [11484 12037])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11521 11525])
+                            ("legend" variable nil (reparse-symbol function_parameters) [11527 11533])
+                            ("args" variable nil (reparse-symbol function_parameters) [11540 11546]))                          )
+                        (reparse-symbol indented_block_body) [11506 12059])
                     ("clades" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [12053 12057])
-                            ("legend" variable nil (reparse-symbol function_parameters) [12059 12065])
-                            ("args" variable nil (reparse-symbol function_parameters) [12072 12078]))                          )
-                        (reparse-symbol indented_block_body) [12042 13301])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12075 12079])
+                            ("legend" variable nil (reparse-symbol function_parameters) [12081 12087])
+                            ("args" variable nil (reparse-symbol function_parameters) [12094 12100]))                          )
+                        (reparse-symbol indented_block_body) [12064 13323])
                     ("aa_substitutions" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [13327 13331])
-                            ("positions" variable nil (reparse-symbol function_parameters) [13333 13342])
-                            ("legend" variable nil (reparse-symbol function_parameters) [13344 13350])
-                            ("args" variable nil (reparse-symbol function_parameters) [13357 13363]))                          )
-                        (reparse-symbol indented_block_body) [13306 14222])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13349 13353])
+                            ("positions" variable nil (reparse-symbol function_parameters) [13355 13364])
+                            ("legend" variable nil (reparse-symbol function_parameters) [13366 13372])
+                            ("args" variable nil (reparse-symbol function_parameters) [13379 13385]))                          )
+                        (reparse-symbol indented_block_body) [13328 14244])
                     ("vaccines" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [14240 14244])
-                            ("raise_" variable nil (reparse-symbol function_parameters) [14246 14252])
-                            ("label" variable nil (reparse-symbol function_parameters) [14259 14264])
-                            ("args" variable nil (reparse-symbol function_parameters) [14271 14277]))                          )
-                        (reparse-symbol indented_block_body) [14227 15545])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14262 14266])
+                            ("raise_" variable nil (reparse-symbol function_parameters) [14268 14274])
+                            ("label" variable nil (reparse-symbol function_parameters) [14281 14286])
+                            ("args" variable nil (reparse-symbol function_parameters) [14293 14299]))                          )
+                        (reparse-symbol indented_block_body) [14249 15567])
                     ("label" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [15560 15564])
-                            ("index" variable nil (reparse-symbol function_parameters) [15566 15571])
-                            ("name_type" variable nil (reparse-symbol function_parameters) [15573 15582])
-                            ("args" variable nil (reparse-symbol function_parameters) [15591 15597]))                          )
-                        (reparse-symbol indented_block_body) [15550 16694])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15582 15586])
+                            ("index" variable nil (reparse-symbol function_parameters) [15588 15593])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [15595 15604])
+                            ("args" variable nil (reparse-symbol function_parameters) [15613 15619]))                          )
+                        (reparse-symbol indented_block_body) [15572 16716])
                     ("title" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [16709 16713])
-                            ("display_name" variable nil (reparse-symbol function_parameters) [16715 16727])
-                            ("args" variable nil (reparse-symbol function_parameters) [16734 16740]))                          )
-                        (reparse-symbol indented_block_body) [16699 17165])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16731 16735])
+                            ("display_name" variable nil (reparse-symbol function_parameters) [16737 16749])
+                            ("args" variable nil (reparse-symbol function_parameters) [16756 16762]))                          )
+                        (reparse-symbol indented_block_body) [16721 17187])
                     ("_make_point_style" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [17192 17196])
-                            ("data" variable nil (reparse-symbol function_parameters) [17198 17202]))                          )
-                        (reparse-symbol indented_block_body) [17170 17383])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17214 17218])
+                            ("data" variable nil (reparse-symbol function_parameters) [17220 17224]))                          )
+                        (reparse-symbol indented_block_body) [17192 17405])
                     ("_make_legend" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [17405 17409])
-                            ("legend_data" variable nil (reparse-symbol function_parameters) [17411 17422])
-                            ("legend_settings" variable nil (reparse-symbol function_parameters) [17424 17439]))                          )
-                        (reparse-symbol indented_block_body) [17388 17965]))                  
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17427 17431])
+                            ("legend_data" variable nil (reparse-symbol function_parameters) [17433 17444])
+                            ("legend_settings" variable nil (reparse-symbol function_parameters) [17446 17461]))                          )
+                        (reparse-symbol indented_block_body) [17410 17987]))                  
                 :type "class")
-                nil [2505 17965]))          
+                nil [2527 17987]))          
       :file "draw.py"
-      :pointmax 18131
-      :fsize 18130
-      :lastmodtime '(22703 65275 0 0)
-      :unmatched-syntax '((FROM 13374 . 13378) (PERIOD 13379 . 13380) (FROM 12089 . 12093) (PERIOD 12094 . 12095) (FROM 318 . 322) (PERIOD 323 . 324) (FROM 282 . 286) (PERIOD 287 . 288) (FROM 248 . 252) (PERIOD 253 . 254)))
+      :pointmax 18153
+      :fsize 18152
+      :lastmodtime '(22709 15437 0 0)
+      :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode python-mode
       :tags 

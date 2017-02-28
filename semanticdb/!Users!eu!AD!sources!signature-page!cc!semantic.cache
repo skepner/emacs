@@ -2109,7 +2109,313 @@
     (semanticdb-table "semanticdb-table"
       :file "time-series-draw.hh"
       :fsize 2126
-      :lastmodtime '(22668 20085 0 0)))
+      :lastmodtime '(22668 20085 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("antigenic-maps-draw.hh" include nil nil [1 34])
+            ("tree-draw.hh" include nil nil [35 58])
+            ("mapped-antigens-draw.hh" include nil nil [59 93])
+            ("tree-iterate.hh" include nil nil [94 120])
+            ("signature-page.hh" include nil nil [121 149])
+            ("init_settings" function
+               (:parent "AntigenicMapsDraw"
+                :type "void")
+                nil [226 1369])
+            ("prepare" function
+               (:parent "AntigenicMapsDraw"
+                :type "void")
+                nil [1482 1764])
+            ("draw" function
+               (:parent "AntigenicMapsDraw"
+                :type "void")
+                nil [1871 1927])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawSerum"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2052 2070])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2071 2096])
+                    ("aStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2097 2127])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2128 2171]))                  
+                :type "void")
+                nil [2031 2574])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawReferenceAntigen"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2702 2720])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2721 2746])
+                    ("aStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2747 2777])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2778 2821]))                  
+                :type "void")
+                nil [2670 3294])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawTestAntigen"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3428 3446])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3447 3472])
+                    ("aStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3473 3503])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3504 3547]))                  
+                :type "void")
+                nil [3401 4025])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawSequencedAntigen"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4159 4177])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4178 4203])
+                    ("aStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4204 4234])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4235 4278]))                  
+                :type "void")
+                nil [4127 4771])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawTrackedAntigen"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4908 4926])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4927 4952])
+                    ("aStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4953 4983])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4984 5027]))                  
+                :type "void")
+                nil [4878 5487])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawTrackedSerum"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5620 5638])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5639 5664])
+                    ("aStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5665 5695])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5696 5739]))                  
+                :type "void")
+                nil [5592 6232])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawVaccineAntigen"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6365 6383])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6384 6409])
+                    ("aStyle" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6410 6440])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6441 6484]))                  
+                :type "void")
+                nil [6335 7204])
+            ("draw" function
+               (:methodconst-flag t
+                :parent "DrawMarkedAntigen"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7338 7356])
+                    ("aPoint" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7357 7382])
+                    ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sdb::PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7383 7417])
+                    ("aSettings" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7418 7461]))                  
+                :type "void")
+                nil [7309 8620])
+            ("AntigenicMapsLayout" function
+               (:destructor-flag t
+                :parent "AntigenicMapsLayout"
+                :type "void")
+                nil [8724 8772])
+            ("prepare" function
+               (:parent "AntigenicMapsLayout"
+                :type "void")
+                nil [8894 9456])
+            ("find_sequenced_antigens" function
+               (:parent "AntigenicMapsLayout"
+                :type "void")
+                nil [9565 10121])
+            ("draw_points_reset" function
+               (:parent "AntigenicMapsLayout"
+                :type "void")
+                nil [10246 11280])
+            ("mark_marked_antigens" function
+               (:parent "AntigenicMapsLayout"
+                :type "void")
+                nil [11399 12085])
+            ("draw_chart" function
+               (:parent "AntigenicMapsLayout"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12244 12262])
+                    ("aSectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12263 12284]))                  
+                :type "void")
+                nil [12207 13460])
+            ("mark_tracked_sera" function
+               (:parent "AntigenicMapsLayout"
+                :arguments 
+                  ( ("aSectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13616 13637]))                  
+                :type "void")
+                nil [13572 15437])
+            ("draw_map_title" function
+               (:parent "AntigenicMapsLayout"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15597 15615])
+                    ("aSectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15616 15637]))                  
+                :type "void")
+                nil [15556 16439])
+            ("mark_tracked_antigens" function
+               (:parent "AntigenicMapsLayout"
+                :arguments 
+                  ( ("aSectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16603 16624]))                  
+                :type "void")
+                nil [16555 17208])
+            ("prepare" function
+               (:parent "LabelledGrid"
+                :type "void")
+                nil [17331 17400])
+            ("draw" function
+               (:parent "LabelledGrid"
+                :type "void")
+                nil [17502 19499])
+            ("draw_chart" function
+               (:parent "LabelledGrid"
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19628 19646])
+                    ("aSectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19647 19668]))                  
+                :type "void")
+                nil [19598 19735])
+            ("draw_mapped_antigens_section" function
+               (:parent "LabelledGrid"
+                :arguments 
+                  ( ("aSectionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19888 19909]))                  
+                :type "void")
+                nil [19840 20836]))          
+      :file "antigenic-maps-draw.cc"
+      :pointmax 21050
+      :fsize 21049
+      :lastmodtime '(22685 34524 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "mapped-antigens-draw.hh"
+      :fsize 1397
+      :lastmodtime '(22685 33721 0 0)))
   :file "!Users!eu!AD!sources!signature-page!cc!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

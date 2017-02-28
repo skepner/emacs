@@ -2080,233 +2080,250 @@
                     ("FIELDS_IGNORE_IN_FULL" code nil (reparse-symbol indented_block_body) [1284 1381])
                     ("FIELDS_IGNORE_IN_FULL_AND_LINEAGE" code nil (reparse-symbol indented_block_body) [1386 1457])
                     ("FIELDS_IGNORE_IN_FULL_NAME_ONLY" code nil (reparse-symbol indented_block_body) [1462 1554])
-                    ("FIELDS_IGNORE_IN_LISPMDS" variable nil (reparse-symbol indented_block_body) [1559 1688])
-                    ("FIELDS_ORDER" variable nil (reparse-symbol indented_block_body) [1724 1945])
-                    ("sReLispmdsSub" variable nil (reparse-symbol indented_block_body) [1951 2121])
-                    ("sReWords" variable nil (reparse-symbol indented_block_body) [2127 2178])
+                    ("FIELDS_IGNORE_IN_FULL_NAME_ONLY_WITHOUT_ANNOTATIONS" code nil (reparse-symbol indented_block_body) [1559 1662])
+                    ("FIELDS_IGNORE_IN_LISPMDS" variable nil (reparse-symbol indented_block_body) [1667 1796])
+                    ("FIELDS_ORDER" variable nil (reparse-symbol indented_block_body) [1832 2053])
+                    ("sReLispmdsSub" variable nil (reparse-symbol indented_block_body) [2059 2229])
+                    ("sReWords" variable nil (reparse-symbol indented_block_body) [2235 2286])
                     ("__init__" function
                        (:suite 
-                          ( ("self" variable nil (reparse-symbol indented_block_body) [2290 8152]))                          
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2398 8863]))                          
                         :parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2275 2279]))                          
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2383 2387]))                          
                         :constructor-flag t)
-                        (reparse-symbol indented_block_body) [2262 8153])
+                        (reparse-symbol indented_block_body) [2370 8864])
                     ("make_name" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [8172 8176])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [8178 8191])
-                            ("name_type" variable nil (reparse-symbol function_parameters) [8193 8202])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [8211 8219]))                          
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8883 8887])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [8889 8902])
+                            ("name_type" variable nil (reparse-symbol function_parameters) [8904 8913])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8922 8930]))                          
                         :documentation "
         args:
           cdc_name_join: \"-\" or \" \" (default)
         ")
-                        (reparse-symbol indented_block_body) [8158 9068])
+                        (reparse-symbol indented_block_body) [8869 9779])
                     ("name_types" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [9088 9092]))                          )
-                        (reparse-symbol indented_block_body) [9073 9128])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9799 9803]))                          )
+                        (reparse-symbol indented_block_body) [9784 9839])
                     ("_name_long" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [9226 9230])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [9232 9245])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [9247 9255]))                          )
-                        (reparse-symbol indented_block_body) [9211 9620])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9937 9941])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [9943 9956])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9958 9966]))                          )
+                        (reparse-symbol indented_block_body) [9922 10331])
                     ("_name_short" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [9641 9645])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [9647 9660])
-                            ("cdcid" variable nil (reparse-symbol function_parameters) [9662 9667])
-                            ("lab_id" variable nil (reparse-symbol function_parameters) [9675 9681])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [9689 9697]))                          )
-                        (reparse-symbol indented_block_body) [9625 10135])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10352 10356])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10358 10371])
+                            ("cdcid" variable nil (reparse-symbol function_parameters) [10373 10378])
+                            ("lab_id" variable nil (reparse-symbol function_parameters) [10386 10392])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10400 10408]))                          )
+                        (reparse-symbol indented_block_body) [10336 10846])
                     ("_name_abbreviated" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10162 10166])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10168 10181])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [10183 10191]))                          )
-                        (reparse-symbol indented_block_body) [10140 10405])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10873 10877])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10879 10892])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10894 10902]))                          )
+                        (reparse-symbol indented_block_body) [10851 11116])
                     ("_name_abbreviated_location_year" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10446 10450])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10452 10465])
-                            ("join_name" variable nil (reparse-symbol function_parameters) [10467 10476])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [10478 10486]))                          )
-                        (reparse-symbol indented_block_body) [10410 10790])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11157 11161])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11163 11176])
+                            ("join_name" variable nil (reparse-symbol function_parameters) [11178 11187])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11189 11197]))                          )
+                        (reparse-symbol indented_block_body) [11121 11501])
                     ("_fields_with_names" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [10818 10822])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [10824 10837])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [10839 10847]))                          )
-                        (reparse-symbol indented_block_body) [10795 10974])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11529 11533])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11535 11548])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11550 11558]))                          )
+                        (reparse-symbol indented_block_body) [11506 11685])
                     ("_all_fields_with_names" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11006 11010])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11012 11025])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [11027 11035]))                          )
-                        (reparse-symbol indented_block_body) [10979 11400])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11717 11721])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11723 11736])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11738 11746]))                          )
+                        (reparse-symbol indented_block_body) [11690 12111])
                     ("_fields_full" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11422 11426])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11428 11441])
-                            ("join_parts" variable nil (reparse-symbol function_parameters) [11443 11453])
-                            ("lineage" variable nil (reparse-symbol function_parameters) [11459 11466])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [11473 11481]))                          )
-                        (reparse-symbol indented_block_body) [11405 11659])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12133 12137])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12139 12152])
+                            ("join_parts" variable nil (reparse-symbol function_parameters) [12154 12164])
+                            ("lineage" variable nil (reparse-symbol function_parameters) [12170 12177])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12184 12192]))                          )
+                        (reparse-symbol indented_block_body) [12116 12370])
                     ("_fields_full_name_only" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11691 11695])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11697 11710])
-                            ("join_parts" variable nil (reparse-symbol function_parameters) [11712 11722])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [11728 11736]))                          )
-                        (reparse-symbol indented_block_body) [11664 11869])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12402 12406])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12408 12421])
+                            ("join_parts" variable nil (reparse-symbol function_parameters) [12423 12433])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12439 12447]))                          )
+                        (reparse-symbol indented_block_body) [12375 12580])
+                    ("_fields_full_name_only_without_annotations" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12632 12636])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12638 12651])
+                            ("join_parts" variable nil (reparse-symbol function_parameters) [12653 12663])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12669 12677]))                          )
+                        (reparse-symbol indented_block_body) [12585 12830])
                     ("_fields_lispmds" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [11894 11898])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [11900 11913])
-                            ("is_antigen" variable nil (reparse-symbol function_parameters) [11915 11925])
-                            ("join_parts" variable nil (reparse-symbol function_parameters) [11927 11937])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [11943 11951]))                          )
-                        (reparse-symbol indented_block_body) [11874 12089])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12855 12859])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12861 12874])
+                            ("is_antigen" variable nil (reparse-symbol function_parameters) [12876 12886])
+                            ("join_parts" variable nil (reparse-symbol function_parameters) [12888 12898])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12904 12912]))                          )
+                        (reparse-symbol indented_block_body) [12835 13050])
                     ("_passage_egg_serum_id" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [12120 12124])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12126 12139])
-                            ("is_antigen" variable nil (reparse-symbol function_parameters) [12141 12151])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [12153 12161]))                          )
-                        (reparse-symbol indented_block_body) [12094 12369])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13081 13085])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [13087 13100])
+                            ("is_antigen" variable nil (reparse-symbol function_parameters) [13102 13112])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13114 13122]))                          )
+                        (reparse-symbol indented_block_body) [13055 13330])
+                    ("_serum_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13349 13353])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [13355 13368])
+                            ("is_antigen" variable nil (reparse-symbol function_parameters) [13370 13380])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13382 13390]))                          )
+                        (reparse-symbol indented_block_body) [13335 13537])
                     ("_name_long_standard" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [12398 12402])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12404 12417])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [12419 12427]))                          )
-                        (reparse-symbol indented_block_body) [12374 12799])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13566 13570])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [13572 13585])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13587 13595]))                          )
+                        (reparse-symbol indented_block_body) [13542 13967])
                     ("_name_short_standard" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [12829 12833])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [12835 12848])
-                            ("virus_type_include" variable nil (reparse-symbol function_parameters) [12850 12868])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [12875 12883]))                          )
-                        (reparse-symbol indented_block_body) [12804 13315])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13997 14001])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [14003 14016])
+                            ("virus_type_include" variable nil (reparse-symbol function_parameters) [14018 14036])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14043 14051]))                          )
+                        (reparse-symbol indented_block_body) [13972 14483])
                     ("_name_abbreviated_standard" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [13351 13355])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [13357 13370])
-                            ("location_truncate" variable nil (reparse-symbol function_parameters) [13372 13389])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [13396 13404]))                          )
-                        (reparse-symbol indented_block_body) [13320 13906])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14519 14523])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [14525 14538])
+                            ("location_truncate" variable nil (reparse-symbol function_parameters) [14540 14557])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14564 14572]))                          )
+                        (reparse-symbol indented_block_body) [14488 15074])
                     ("_name_long_cdc" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [13930 13934])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [13936 13949])
-                            ("cdc_abbreviation_for_cdc_names" variable nil (reparse-symbol function_parameters) [13951 13981])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [13988 13996]))                          )
-                        (reparse-symbol indented_block_body) [13911 14214])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15098 15102])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15104 15117])
+                            ("cdc_abbreviation_for_cdc_names" variable nil (reparse-symbol function_parameters) [15119 15149])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15156 15164]))                          )
+                        (reparse-symbol indented_block_body) [15079 15382])
                     ("_name" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [14229 14233])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [14235 14248])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [14250 14258]))                          )
-                        (reparse-symbol indented_block_body) [14219 14295])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15397 15401])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15403 15416])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15418 15426]))                          )
+                        (reparse-symbol indented_block_body) [15387 15463])
                     ("_hom_max" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [14313 14317])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [14319 14332])
-                            ("is_antigen" variable nil (reparse-symbol function_parameters) [14334 14344])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [14346 14354]))                          )
-                        (reparse-symbol indented_block_body) [14300 15135])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15481 15485])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15487 15500])
+                            ("is_antigen" variable nil (reparse-symbol function_parameters) [15502 15512])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15514 15522]))                          )
+                        (reparse-symbol indented_block_body) [15468 16303])
                     ("_postprocess_default" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [15243 15247])
-                            ("name" variable nil (reparse-symbol function_parameters) [15249 15253])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15255 15268])
-                            ("replace_spaces" variable nil (reparse-symbol function_parameters) [15270 15284])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [15291 15299]))                          )
-                        (reparse-symbol indented_block_body) [15218 15414])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16411 16415])
+                            ("name" variable nil (reparse-symbol function_parameters) [16417 16421])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16423 16436])
+                            ("replace_spaces" variable nil (reparse-symbol function_parameters) [16438 16452])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16459 16467]))                          )
+                        (reparse-symbol indented_block_body) [16386 16582])
                     ("_postprocess_lispmds" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [15444 15448])
-                            ("name" variable nil (reparse-symbol function_parameters) [15450 15454])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15456 15469])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [15471 15479]))                          )
-                        (reparse-symbol indented_block_body) [15419 15660])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16612 16616])
+                            ("name" variable nil (reparse-symbol function_parameters) [16618 16622])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16624 16637])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16639 16647]))                          )
+                        (reparse-symbol indented_block_body) [16587 16828])
                     ("_postprocess_acmacs_web_edit" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [15698 15702])
-                            ("name" variable nil (reparse-symbol function_parameters) [15704 15708])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [15710 15723])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [15725 15733]))                          )
-                        (reparse-symbol indented_block_body) [15665 15986])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16866 16870])
+                            ("name" variable nil (reparse-symbol function_parameters) [16872 16876])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16878 16891])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16893 16901]))                          )
+                        (reparse-symbol indented_block_body) [16833 17154])
                     ("_postprocess_truncate" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [16017 16021])
-                            ("name" variable nil (reparse-symbol function_parameters) [16023 16027])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16029 16042])
-                            ("truncate_at" variable nil (reparse-symbol function_parameters) [16044 16055])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [16057 16065]))                          )
-                        (reparse-symbol indented_block_body) [15991 16194])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17185 17189])
+                            ("name" variable nil (reparse-symbol function_parameters) [17191 17195])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [17197 17210])
+                            ("truncate_at" variable nil (reparse-symbol function_parameters) [17212 17223])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17225 17233]))                          )
+                        (reparse-symbol indented_block_body) [17159 17362])
                     ("_postprocess_capitalized" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [16228 16232])
-                            ("name" variable nil (reparse-symbol function_parameters) [16234 16238])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16240 16253])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [16255 16263]))                          )
-                        (reparse-symbol indented_block_body) [16199 16440])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17396 17400])
+                            ("name" variable nil (reparse-symbol function_parameters) [17402 17406])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [17408 17421])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17423 17431]))                          )
+                        (reparse-symbol indented_block_body) [17367 17608])
                     ("_year" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [16533 16537])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16539 16552])
-                            ("year_short" variable nil (reparse-symbol function_parameters) [16554 16564])
-                            ("omit_year" variable nil (reparse-symbol function_parameters) [16572 16581])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [16589 16597]))                          )
-                        (reparse-symbol indented_block_body) [16523 16792])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17701 17705])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [17707 17720])
+                            ("year_short" variable nil (reparse-symbol function_parameters) [17722 17732])
+                            ("omit_year" variable nil (reparse-symbol function_parameters) [17740 17749])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17757 17765]))                          )
+                        (reparse-symbol indented_block_body) [17691 17960])
                     ("_get_fields" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [16813 16817])
-                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [16819 16832])
-                            ("ignore" variable nil (reparse-symbol function_parameters) [16834 16840])
-                            ("no_passage" variable nil (reparse-symbol function_parameters) [16842 16852])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [16860 16868]))                          )
-                        (reparse-symbol indented_block_body) [16797 17260]))                  
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17981 17985])
+                            ("antigen_serum" variable nil (reparse-symbol function_parameters) [17987 18000])
+                            ("ignore" variable nil (reparse-symbol function_parameters) [18002 18008])
+                            ("no_passage" variable nil (reparse-symbol function_parameters) [18010 18020])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [18028 18036]))                          )
+                        (reparse-symbol indented_block_body) [17965 18428]))                  
                 :type "class")
-                nil [974 17260])
+                nil [974 18428])
             ("NameMakerInfluenza" type
                (:superclasses ("NameMaker")
                 :members 
-                  ( ("pass" code nil (reparse-symbol indented_block_body) [17377 17381]))                  
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [18545 18549]))                  
                 :type "class")
-                nil [17335 17382])
-            ("sNameMaker" variable nil nil [17471 17495])
-            ("sNameMakerInfluenza" variable nil nil [17496 17538])
-            ("name_types" function nil nil [17540 17602]))          
+                nil [18503 18550])
+            ("sNameMaker" variable nil nil [18639 18663])
+            ("sNameMakerInfluenza" variable nil nil [18664 18706])
+            ("name_types" function nil nil [18708 18770]))          
       :file "name_maker.py"
-      :pointmax 17768
+      :pointmax 18936
       :fsize 18935
       :lastmodtime '(22655 31758 0 0)
       :unmatched-syntax nil))

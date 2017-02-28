@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("logging" include nil nil [113 127])
+            ("pathlib" include nil nil [173 197])
+            ("json" include nil nil [198 209])
+            ("_json_simple" function (:arguments 
+              ( ("d" variable nil (reparse-symbol function_parameters) [302 303]))              ) nil [285 568])
+            ("dumps" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [653 657])
+                ("separators" variable nil (reparse-symbol function_parameters) [659 669])
+                ("indent" variable nil (reparse-symbol function_parameters) [682 688])
+                ("compact" variable nil (reparse-symbol function_parameters) [695 702])
+                ("sort_keys" variable nil (reparse-symbol function_parameters) [709 718])
+                ("simple" variable nil (reparse-symbol function_parameters) [726 732]))              ) nil [643 1050])
+            ("JSONEncoder" type
+               (:superclasses ("json.JSONEncoder")
+                :members 
+                  ( ("default" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1180 1184])
+                            ("o" variable nil (reparse-symbol function_parameters) [1186 1187]))                          )
+                        (reparse-symbol indented_block_body) [1168 1397]))                  
+                :type "class")
+                nil [1125 1397])
+            ("_json_dumps" function
+               (:documentation "More compact dumper with wide lines."
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [1488 1492])
+                    ("indent" variable nil (reparse-symbol function_parameters) [1494 1500])
+                    ("indent_increment" variable nil (reparse-symbol function_parameters) [1504 1520])
+                    ("simple" variable nil (reparse-symbol function_parameters) [1527 1533])
+                    ("toplevel" variable nil (reparse-symbol function_parameters) [1548 1556]))                  )
+                nil [1472 3444])
+            ("loads" variable nil nil [3519 3537])
+            ("read_json" function (:arguments 
+              ( ("Path" variable nil (reparse-symbol function_parameters) [3633 3637]))              ) nil [3613 3707])
+            ("write_json" function (:arguments 
+              ( ("Path" variable nil (reparse-symbol function_parameters) [3803 3807])
+                ("data" variable nil (reparse-symbol function_parameters) [3809 3813])
+                ("indent" variable nil (reparse-symbol function_parameters) [3815 3821])
+                ("compact" variable nil (reparse-symbol function_parameters) [3825 3832]))              ) nil [3782 4011]))          
+      :file "json.py"
+      :pointmax 4177
+      :fsize 4176
+      :lastmodtime '(22707 63007 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!AD!sources!acmacs-base!py!acmacs_base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

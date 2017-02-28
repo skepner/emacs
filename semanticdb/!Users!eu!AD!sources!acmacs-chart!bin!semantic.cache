@@ -48,7 +48,36 @@
       :pointmax 7201
       :fsize 7200
       :lastmodtime '(22704 11225 0 0)
-      :unmatched-syntax '((INDENT_BLOCK 6937 . 7019) (COLON 6935 . 6936) (TRY 5670 . 5673) (AS 6929 . 6931))))
+      :unmatched-syntax '((INDENT_BLOCK 6937 . 7019) (COLON 6935 . 6936) (TRY 5670 . 5673) (AS 6929 . 6931)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+\"\"\"" code nil nil [43 50])
+            ("pprint" include nil nil [52 85])
+            ("traceback" include nil nil [52 85])
+            ("os" include nil nil [52 85])
+            ("sys" include nil nil [52 85])
+            ("if" code nil nil [86 164])
+            ("pathlib" include nil nil [164 188])
+            ("sys" variable nil nil [189 268])
+            ("logging" include nil nil [269 283])
+            ("acmacs_chart" include nil nil [330 349])
+            ("acmacs_base.timeit" include nil nil [350 387])
+            ("main" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [472 476]))              ) nil [463 987])
+            ("CommandLineError" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil nil nil))                  
+                :type "class")
+                nil [1062 1103])
+            ("exit" code nil nil [1800 1815]))          
+      :file "acmacs-chart-convert"
+      :pointmax 1982
+      :fsize 1981
+      :lastmodtime '(22708 15566 0 0)
+      :unmatched-syntax nil))
   :file "!Users!eu!AD!sources!acmacs-chart!bin!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
