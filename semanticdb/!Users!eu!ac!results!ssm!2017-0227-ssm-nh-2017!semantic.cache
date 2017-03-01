@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("WHO VCM 2017-2018 Northern Hemisphere" section nil nil [124 410])
+            ("2017-02-27, WHO VCM 2017-2018 Northern Hemisphere" section (:members 
+              ( ("2017-02-27, WHO VCM 2017-2018 Northern Hemisphere" section (:members 
+                  ( ("Report" section (:members 
+                      ( ("Report" anchor nil nil [519 522]))                      ) nil [484 577])
+                    ("Phylogenetic Trees" section (:members 
+                      ( ("H3, H1, B/Vic, B/Yam" anchor nil nil [624 627]))                      ) nil [577 695])
+                    ("Antigenic maps" section (:members 
+                      ( ("H3" anchor nil nil [738 741])
+                        ("H1" anchor nil nil [789 792])
+                        ("B/Vic" anchor nil nil [840 843])
+                        ("B/Yam" anchor nil nil [896 899]))                      ) nil [695 956])
+                    ("Signature pages" section (:members 
+                      ( ("H3, H3 neut, H1, B/Vic, B/Yam" anchor nil nil [1000 1003]))                      ) nil [956 1077])
+                    ("During SSM" section (:members 
+                      ( ("H3 10 NIID groups" anchor nil nil [1116 1119])
+                        ("Information meeting" anchor nil nil [1190 1193]))                      ) nil [1077 1280]))                  ) nil [421 1280]))              ) nil [410 1280]))          
+      :file "index.html"
+      :pointmax 1280
+      :fsize 1279
+      :lastmodtime '(22710 44898 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!ac!results!ssm!2017-0227-ssm-nh-2017!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

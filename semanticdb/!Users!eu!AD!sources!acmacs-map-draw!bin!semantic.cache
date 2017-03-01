@@ -21,11 +21,12 @@
             ("acmacs_base.json" include nil nil [391 441])
             ("main" function (:arguments 
               ( ("args" variable nil (reparse-symbol function_parameters) [526 530]))              ) nil [517 1462])
-            ("exit" code nil nil [7871 7886]))          
+            ("sSettings" variable nil nil [1537 6710])
+            ("exit" code nil nil [7918 7933]))          
       :file "acmacs-map-draw"
-      :pointmax 8053
-      :fsize 8052
-      :lastmodtime '(22709 41150 0 0)
+      :pointmax 8100
+      :fsize 8099
+      :lastmodtime '(22710 33173 0 0)
       :unmatched-syntax nil))
   :file "!Users!eu!AD!sources!acmacs-map-draw!bin!semantic.cache"
   :semantic-tag-version "2.0"

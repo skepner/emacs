@@ -6,13 +6,30 @@
     (semanticdb-table "semanticdb-table"
       :major-mode python-mode
       :tags 
-        '( ("sTemplate" variable nil nil [29 902])
-            ("sLabDistplay" variable nil nil [978 1057])
-            ("for" code nil nil [1133 1626]))          
+        '( ("json" include nil nil [26 54])
+            ("subprocess" include nil nil [26 54])
+            ("sys" include nil nil [26 54])
+            ("sTemplate" variable nil nil [130 1597])
+            ("sViewport" variable nil nil [1673 2163])
+            ("sVaccines" variable nil nil [2239 8953])
+            ("sLabDistplay" variable nil nil [9029 9108])
+            ("for" code nil nil [9184 10439]))          
       :file "gen-settings"
-      :pointmax 1626
-      :fsize 1625
-      :lastmodtime '(22709 43702 0 0)
+      :pointmax 10439
+      :fsize 10438
+      :lastmodtime '(22710 38399 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("subprocess" include nil nil [26 43])
+            ("pdfs" variable nil nil [45 54])
+            ("for" code nil nil [55 545])
+            ("subprocess" code nil nil [546 646]))          
+      :file "combine"
+      :pointmax 647
+      :fsize 646
+      :lastmodtime '(22710 37368 0 0)
       :unmatched-syntax nil))
   :file "!Users!eu!ac!results!ssm!2017-0227-ssm-nh-2017!h3-10-groups!semantic.cache"
   :semantic-tag-version "2.0"
