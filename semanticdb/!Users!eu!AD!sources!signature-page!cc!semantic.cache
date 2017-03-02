@@ -1915,9 +1915,173 @@
       :fsize 917
       :lastmodtime '(22680 23706 0 0))
     (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("map" include (:system-flag t) nil [15 29])
+            ("acmacs-base/color.hh" include nil nil [31 62])
+            ("Node" type
+               (:prototype t
+                :type "class")
+                nil [139 150])
+            ("Legend" type
+               (:prototype t
+                :type "class")
+                nil [151 164])
+            ("SettingsLegend" type
+               (:prototype t
+                :type "class")
+                nil [165 186])
+            ("Coloring" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [281 288])
+                    ("color" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [348 360]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [328 371])
+                    ("legend" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Legend" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [376 411])
+                    ("report" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [416 453]))                  
+                :type "class")
+                nil [263 456])
+            ("ColoringBlack" type
+               (:superclasses 
+                  ( ("Coloring" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [574 581])
+                    ("color" function
+                       (:methodconst-flag t
+                        :typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [613 625]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [586 645])
+                    ("legend" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Legend" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [650 700]))                  
+                :type "class")
+                nil [533 703])
+            ("ColoringByContinent" type
+               (:superclasses 
+                  ( ("Coloring" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [827 834])
+                    ("color" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aNode" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [859 877]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [839 884])
+                    ("legend" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Legend" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [889 920]))                  
+                :type "class")
+                nil [780 924])
+            ("ColoringByPos" type
+               (:superclasses 
+                  ( ("Coloring" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1072 1079])
+                    ("std::map" variable (:type "int") (reparse-symbol classsubparts) [1103 1144])
+                    ("ColoringByPos" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aPos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1171 1183]))                          
+                        :type ("ColoringByPos" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1150 1203])
+                    ("color" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aNode" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1229 1247]))                          
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1209 1254])
+                    ("legend" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Legend" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1259 1290])
+                    ("pos" function
+                       (:methodconst-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1295 1330])
+                    ("used_colors" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("UsedColors" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1335 1397])
+                    ("report" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1403 1431])
+                    ("private" label nil (reparse-symbol classsubparts) [1434 1442])
+                    ("mPos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1447 1459])
+                    ("mUsed" variable
+                       (:typemodifiers ("mutable")
+                        :type ("UsedColors" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1464 1489]))                  
+                :type "class")
+                nil [1031 1492]))          
       :file "coloring.hh"
+      :pointmax 1660
       :fsize 1659
-      :lastmodtime '(22672 50202 0 0))
+      :lastmodtime '(22711 804 0 0)
+      :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :file "signature-page.hh"
       :fsize 3145
@@ -1991,9 +2155,367 @@
       :lastmodtime '(22685 34524 0 0)
       :unmatched-syntax '((symbol 194 . 197) (symbol 183 . 193) (symbol 179 . 182) (symbol 172 . 178) (punctuation 171 . 172) (symbol 85 . 89) (symbol 74 . 84) (symbol 70 . 73) (symbol 63 . 69) (punctuation 62 . 63)))
     (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("vector" include (:system-flag t) nil [33 50])
+            ("map" include (:system-flag t) nil [51 65])
+            ("set" include (:system-flag t) nil [66 80])
+            ("acmacs-base/transformation.hh" include nil nil [82 122])
+            ("acmacs-base/color.hh" include nil nil [123 154])
+            ("acmacs-draw/viewport.hh" include nil nil [155 189])
+            ("AntigenicMapsDrawSettings" type
+               (:prototype t
+                :type "class")
+                nil [266 298])
+            ("sdb" type
+               (:members 
+                  ( ("PointAttributes" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [747 754])
+                            ("PointAttributes" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("PointAttributes" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [763 921])
+                            ("antigen" variable (:type "bool") (reparse-symbol classsubparts) [931 944])
+                            ("egg" variable (:type "bool") (reparse-symbol classsubparts) [953 962])
+                            ("reassortant" variable (:type "bool") (reparse-symbol classsubparts) [971 988])
+                            ("reference" variable (:type "bool") (reparse-symbol classsubparts) [997 1012])
+                            ("vaccine" variable (:type "bool") (reparse-symbol classsubparts) [1058 1071])
+                            ("homologous_antigen" variable (:type "int") (reparse-symbol classsubparts) [1080 1103])
+                            ("homologous_titer" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1112 1141])
+                            ("serum_circle_radius" variable (:type "double") (reparse-symbol classsubparts) [1150 1177]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [714 1184])
+                    ("Point" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1288 1295])
+                            ("Point" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1304 1352])
+                            ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1362 1379])
+                            ("coordinates" variable (:type ("Location" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1388 1409])
+                            ("lab_id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1418 1437])
+                            ("attributes" variable (:type ("PointAttributes" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1446 1473])
+                            ("section_for_serum_circle" variable (:type "int") (reparse-symbol classsubparts) [1482 1511]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1265 1536])
+                    ("PointStyle" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1660 1667])
+                            ("PointStyle" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("PointStyle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1676 1795])
+                            ("fill_color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1805 1822])
+                            ("outline_color" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1831 1851])
+                            ("aspect" variable (:type "double") (reparse-symbol classsubparts) [1860 1874])
+                            ("shape" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1883 1901])
+                            ("size" variable (:type "double") (reparse-symbol classsubparts) [1910 1922])
+                            ("rotation" variable (:type "double") (reparse-symbol classsubparts) [1931 1947]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1632 1955])
+                    ("PlotStyle" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2083 2090])
+                            ("PlotStyle" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("PlotStyle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2099 2120])
+                            ("points" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("size_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2130 2157])
+                            ("styles" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("PointStyle" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2166 2197])
+                            ("style" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("aPointNo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2238 2254]))                                  
+                                :type ("PointStyle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2207 2297]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2056 2305])
+                    ("ChartInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2432 2439])
+                            ("ChartInfo" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("ChartInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2448 2469])
+                            ("date" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2479 2496])
+                            ("lab" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2505 2521])
+                            ("virus_type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2530 2553])
+                            ("lineage" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2562 2582])
+                            ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2591 2608])
+                            ("rbc_species" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2617 2641]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2405 2649])
+                    ("Chart" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2772 2779])
+                            ("Chart" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :type ("Chart" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2788 2819])
+                            ("Chart" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2828 2837])
+                            ("init_settings" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2847 2868])
+                            ("prepare" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("aSettings" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AntigenicMapsDrawSettings" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2890 2933]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2877 2934])
+                            ("AntigenNotFound" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "static_cast<size_t>(-1)"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3108 3170])
+                            ("find_antigen" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3256 3274]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3229 3597])
+                            ("points" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Point" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4667 4734])
+                            ("points" function
+                               (:typemodifiers ("inline")
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Point" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4743 4798])
+                            ("drawing_order" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4807 4888])
+                            ("drawing_order" function
+                               (:typemodifiers ("inline")
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4897 4966])
+                            ("chart_info" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("ChartInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4975 5035])
+                            ("chart_info" function
+                               (:typemodifiers ("inline")
+                                :type ("ChartInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5044 5092])
+                            ("minimum_column_basis" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5101 5186])
+                            ("minimum_column_basis" function
+                               (:typemodifiers ("inline")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5195 5269])
+                            ("plot_style" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("PlotStyle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5278 5338])
+                            ("plot_style" function
+                               (:typemodifiers ("inline")
+                                :type ("PlotStyle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5347 5395])
+                            ("stress" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :type "double")
+                                (reparse-symbol classsubparts) [5404 5452])
+                            ("stress" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("aStress" variable (:type "double") (reparse-symbol arg-sub-list) [5480 5495]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5461 5518])
+                            ("transformation" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("Transformation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5527 5606])
+                            ("transformation" function
+                               (:typemodifiers ("inline")
+                                :type ("Transformation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5615 5682])
+                            ("column_bases" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5691 5770])
+                            ("column_bases" function
+                               (:typemodifiers ("inline")
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5779 5846])
+                            ("viewport" function
+                               (:typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("aSettingsTransformation" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Transformation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5888 5934]))                                  
+                                :type ("Viewport" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5856 6001])
+                            ("viewport" function
+                               (:methodconst-flag t
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("aSettingsTransformation" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Transformation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6042 6088]))                                  
+                                :type ("Viewport" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6010 6166])
+                            ("private" label nil (reparse-symbol classsubparts) [6173 6181])
+                            ("mStress" variable (:type "double") (reparse-symbol classsubparts) [6190 6205])
+                            ("mInfo" variable (:type ("ChartInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6214 6230])
+                            ("mPoints" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Point" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6239 6266])
+                            ("mMinimumColumnBasis" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6275 6307])
+                            ("mColumnBases" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6316 6349])
+                            ("mTransformation" variable (:type ("Transformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6358 6389])
+                            ("mDrawingOrder" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("size_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6398 6432])
+                            ("mPlot" variable (:type ("PlotStyle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6441 6457])
+                            ("mPointByName" variable
+                               (:typemodifiers ("mutable")
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [6467 6518])
+                            ("mViewport" variable (:type ("Viewport" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6527 6546])
+                            ("make_point_by_name" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6556 6588])
+                            ("apply_transformation" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("aSettingsTransformation" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Transformation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6623 6669]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6597 6670])
+                            ("calculate_viewport" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("aSettingsTransformation" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Transformation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6703 6749]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6679 6750])
+                            ("bounding_rectangle" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("aViewport" variable
+                                       (:reference 1
+                                        :type ("Viewport" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6783 6803]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6759 6810]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2749 7733])
+                    ("read_chart_from_sdb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aChart" variable
+                               (:reference 1
+                                :type ("Chart" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7854 7868])
+                            ("aFilename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7869 7891]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7829 7892]))                  
+                :type "namespace")
+                nil [375 7895]))          
       :file "sdb-chart.hh"
+      :pointmax 8080
       :fsize 8079
-      :lastmodtime '(22685 34091 0 0))
+      :lastmodtime '(22711 813 0 0)
+      :unmatched-syntax '((symbol 3098 . 3107) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
     (semanticdb-table "semanticdb-table"
       :file "antigenic-maps-draw.hh"
       :fsize 11046

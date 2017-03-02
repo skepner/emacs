@@ -2017,7 +2017,7 @@
       :file "py.cc"
       :pointmax 9064
       :fsize 9063
-      :lastmodtime '(22709 16145 0 0)
+      :lastmodtime '(22710 62252 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
@@ -4006,44 +4006,44 @@
                               nil nil))
                         (reparse-symbol arg-sub-list) [7216 7260]))                  
                 :type ("std::string" type (:type "class") nil nil))
-                nil [7173 7688])
+                nil [7173 8236])
             ("transformation" function
                (:arguments 
                   ( ("aChart" variable
                        (:reference 1
                         :constant-flag t
                         :type ("Chart" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [7805 7825]))                  
+                        (reparse-symbol arg-sub-list) [8353 8373]))                  
                 :type ("std::string" type (:type "class") nil nil))
-                nil [7778 9055])
+                nil [8326 9603])
             ("acmacs_b1_data" function
                (:arguments 
                   ( ("aChart" variable
                        (:reference 1
                         :constant-flag t
                         :type ("Chart" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [9177 9197]))                  
+                        (reparse-symbol arg-sub-list) [9725 9745]))                  
                 :type ("std::string" type (:type "class") nil nil))
-                nil [9150 11332])
+                nil [9698 11880])
             ("encode" function
                (:arguments 
-                  ( ("aSource" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11446 11466]))                  
+                  ( ("aSource" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11994 12014]))                  
                 :type ("std::string" type (:type "class") nil nil))
-                nil [11427 12157])
+                nil [11975 12705])
             ("convert_titer" function
                (:arguments 
-                  ( ("aSource" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12270 12290]))                  
+                  ( ("aSource" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12818 12838]))                  
                 :type ("std::string" type (:type "class") nil nil))
-                nil [12244 12771])
+                nil [12792 13319])
             ("double_to_string_lisp" function
                (:arguments 
-                  ( ("aValue" variable (:type "double") (reparse-symbol arg-sub-list) [12899 12913]))                  
+                  ( ("aValue" variable (:type "double") (reparse-symbol arg-sub-list) [13447 13461]))                  
                 :type ("std::string" type (:type "class") nil nil))
-                nil [12865 13121]))          
+                nil [13413 13669]))          
       :file "lispmds.cc"
-      :pointmax 13390
-      :fsize 13389
-      :lastmodtime '(22709 16089 0 0)
+      :pointmax 13938
+      :fsize 13937
+      :lastmodtime '(22711 179 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :file "vector.hh"
@@ -4054,61 +4054,64 @@
       :tags 
         '( ("string" include (:system-flag t) nil [15 32])
             ("limits" include (:system-flag t) nil [33 50])
-            ("acmacs-draw/surface.hh" include nil nil [52 85])
-            ("acmacs-chart/layout.hh" include nil nil [86 119])
+            ("acmacs-base/size-scale.hh" include nil nil [52 88])
+            ("acmacs-base/color.hh" include nil nil [89 120])
+            ("acmacs-chart/layout.hh" include nil nil [121 154])
             ("Surface" type
                (:prototype t
                 :type "class")
-                nil [196 210])
-            ("acmacs-base/global-constructors-push.hh" include nil nil [212 262])
+                nil [231 245])
+            ("acmacs-base/global-constructors-push.hh" include nil nil [247 297])
             ("AspectRegular" variable
                (:constant-flag t
                 :type ("Aspect" type (:type "class") nil nil))
-                nil [264 296])
+                nil [299 331])
             ("AspectEgg" variable
                (:constant-flag t
                 :type ("Aspect" type (:type "class") nil nil))
-                nil [297 326])
+                nil [332 361])
             ("AspectNoChange" variable
                (:constant-flag t
                 :type ("Aspect" type (:type "class") nil nil))
-                nil [327 397])
+                nil [362 432])
             ("RotationRegular" variable
                (:constant-flag t
                 :type ("Rotation" type (:type "class") nil nil))
-                nil [399 435])
+                nil [434 470])
             ("RotationReassortant" variable
                (:constant-flag t
                 :type ("Rotation" type (:type "class") nil nil))
-                nil [436 476])
+                nil [471 511])
             ("RotationNoChange" variable
                (:constant-flag t
                 :type ("Rotation" type (:type "class") nil nil))
-                nil [477 551])
-            ("acmacs-base/diagnostics-pop.hh" include nil nil [553 594])
+                nil [512 586])
+            ("acmacs-base/diagnostics-pop.hh" include nil nil [588 629])
             ("PointStyle" type
                (:members 
-                  ( ("public" label nil (reparse-symbol classsubparts) [691 698])
-                    ("Shown" type (:type "class") (reparse-symbol classsubparts) [708 748])
-                    ("Shape" type (:type "class") (reparse-symbol classsubparts) [758 806])
+                  ( ("public" label nil (reparse-symbol classsubparts) [726 733])
+                    ("Shown" type (:type "class") (reparse-symbol classsubparts) [743 783])
+                    ("Shape" type (:type "class") (reparse-symbol classsubparts) [793 841])
                     ("Empty" type
                        (:members 
                           ( ("Empty" variable
                                (:constant-flag t
                                 :type "int")
-                                (reparse-symbol enumsubparts) [824 831]))                          
+                                (reparse-symbol enumsubparts) [859 866]))                          
                         :type "enum")
-                        (reparse-symbol classsubparts) [811 832])
+                        (reparse-symbol classsubparts) [846 867])
                     ("PointStyle" function
                        (:constructor-flag t
                         :typemodifiers ("inline")
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [838 1039])
-                    ("mRotation" function
-                       (:arguments 
-                          ( ("" variable (:type ("RotationNoChange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1292 1309]))                          
-                        :type "int")
-                        (reparse-symbol classsubparts) [1282 1312])
+                        (reparse-symbol classsubparts) [873 1074])
+                    ("PointStyle" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable (:type ("Empty" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1097 1108]))                          
+                        :type ("PointStyle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1079 1347])
                     ("=" function
                        (:operator-flag t
                         :typemodifiers ("inline")
@@ -4117,175 +4120,185 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("PointStyle" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1349 1371]))                          
+                                (reparse-symbol arg-sub-list) [1384 1406]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1318 2062])
+                        (reparse-symbol classsubparts) [1353 2097])
                     ("draw" function
                        (:prototype-flag t
                         :arguments 
                           ( ("aSurface" variable
                                (:reference 1
                                 :type ("Surface" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2078 2096])
+                                (reparse-symbol arg-sub-list) [2113 2131])
                             ("aCoord" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Coordinates" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2097 2123]))                          
+                                (reparse-symbol arg-sub-list) [2132 2158]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2068 2124])
+                        (reparse-symbol classsubparts) [2103 2159])
                     ("show" function
                        (:typemodifiers ("inline")
                         :arguments 
                           ( ("aShown" variable
                                (:default-value "Shown"
                                 :type ("Shown" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2154 2174])
-                            ("" variable (:type ("Shown" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2176 2182]))                          
+                                (reparse-symbol arg-sub-list) [2189 2209])
+                            ("" variable (:type ("Shown" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2211 2217]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2130 2217])
+                        (reparse-symbol classsubparts) [2165 2252])
                     ("hide" function
                        (:typemodifiers ("inline")
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2222 2289])
+                        (reparse-symbol classsubparts) [2257 2324])
                     ("shape" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aShape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2319 2332]))                          
+                          ( ("aShape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2354 2367]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2294 2367])
+                        (reparse-symbol classsubparts) [2329 2402])
                     ("fill" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("c" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2396 2404]))                          
+                          ( ("c" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2431 2439]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2372 2433])
+                        (reparse-symbol classsubparts) [2407 2468])
                     ("outline" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("c" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2465 2473]))                          
+                          ( ("c" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2500 2508]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2438 2505])
+                        (reparse-symbol classsubparts) [2473 2540])
                     ("size" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2534 2547]))                          
+                          ( ("aSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2569 2582]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2510 2580])
+                        (reparse-symbol classsubparts) [2545 2615])
                     ("outline_width" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2618 2639]))                          
+                          ( ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2653 2674]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2585 2688])
+                        (reparse-symbol classsubparts) [2620 2723])
                     ("aspect" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2719 2734]))                          
+                          ( ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2754 2769]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2693 2771])
+                        (reparse-symbol classsubparts) [2728 2806])
                     ("aspect" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aAspect" variable (:type "double") (reparse-symbol arg-sub-list) [2802 2817]))                          
+                          ( ("aAspect" variable (:type "double") (reparse-symbol arg-sub-list) [2837 2852]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2776 2854])
+                        (reparse-symbol classsubparts) [2811 2889])
                     ("rotation" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aRotation" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2887 2906]))                          
+                          ( ("aRotation" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2922 2941]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2859 2947])
+                        (reparse-symbol classsubparts) [2894 2982])
                     ("rotation" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aRotation" variable (:type "double") (reparse-symbol arg-sub-list) [2980 2997]))                          
+                          ( ("aRotation" variable (:type "double") (reparse-symbol arg-sub-list) [3015 3032]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2952 3038])
+                        (reparse-symbol classsubparts) [2987 3073])
                     ("scale" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aScale" variable (:type "double") (reparse-symbol arg-sub-list) [3069 3083]))                          
+                          ( ("aScale" variable (:type "double") (reparse-symbol arg-sub-list) [3104 3118]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3044 3118])
+                        (reparse-symbol classsubparts) [3079 3153])
                     ("scale_outline" function
                        (:typemodifiers ("inline")
                         :arguments 
-                          ( ("aScale" variable (:type "double") (reparse-symbol arg-sub-list) [3156 3170]))                          
+                          ( ("aScale" variable (:type "double") (reparse-symbol arg-sub-list) [3191 3205]))                          
                         :type ("PointStyle" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3123 3213])
+                        (reparse-symbol classsubparts) [3158 3248])
                     ("shown" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type "bool")
-                        (reparse-symbol classsubparts) [3219 3279])
+                        (reparse-symbol classsubparts) [3254 3314])
                     ("shape" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Shape" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3284 3329])
+                        (reparse-symbol classsubparts) [3319 3364])
                     ("size" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Pixels" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3334 3378])
+                        (reparse-symbol classsubparts) [3369 3413])
                     ("fill" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3383 3444])
+                        (reparse-symbol classsubparts) [3418 3479])
                     ("outline" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3449 3516])
+                        (reparse-symbol classsubparts) [3484 3551])
+                    ("fill_hex" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3556 3625])
+                    ("outline_hex" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3630 3705])
                     ("outline_width" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Pixels" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3521 3582])
+                        (reparse-symbol classsubparts) [3710 3771])
                     ("aspect" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Aspect" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3587 3635])
+                        (reparse-symbol classsubparts) [3776 3824])
                     ("rotation" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Rotation" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3640 3694])
-                    ("protected" label nil (reparse-symbol classsubparts) [3697 3707])
+                        (reparse-symbol classsubparts) [3829 3883])
                     ("shown_raw" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Shown" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3712 3761])
+                        (reparse-symbol classsubparts) [3889 3938])
                     ("fill_raw" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Color" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3766 3813])
+                        (reparse-symbol classsubparts) [3943 3990])
                     ("outline_raw" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type ("Color" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [3818 3871])
-                    ("private" label nil (reparse-symbol classsubparts) [3874 3882])
-                    ("mShown" variable (:type ("Shown" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3887 3900])
-                    ("mShape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3905 3918])
-                    ("mFill" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3923 3935])
-                    ("mOutline" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3940 3955])
-                    ("mSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3960 3973])
-                    ("mOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3978 3999])
-                    ("mAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4004 4019])
-                    ("mRotation" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4024 4043]))                  
+                        (reparse-symbol classsubparts) [3995 4048])
+                    ("private" label nil (reparse-symbol classsubparts) [4051 4059])
+                    ("mShown" variable (:type ("Shown" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4064 4077])
+                    ("mShape" variable (:type ("Shape" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4082 4095])
+                    ("mFill" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4100 4112])
+                    ("mOutline" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4117 4132])
+                    ("mSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4137 4150])
+                    ("mOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4155 4176])
+                    ("mAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4181 4196])
+                    ("mRotation" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4201 4220]))                  
                 :type "class")
-                nil [671 4047]))          
+                nil [706 4224]))          
       :file "point-style.hh"
-      :pointmax 4235
-      :fsize 4234
-      :lastmodtime '(22709 14840 0 0)
-      :unmatched-syntax nil))
+      :pointmax 4412
+      :fsize 4411
+      :lastmodtime '(22711 57359 0 0)
+      :unmatched-syntax '((punctuation 2210 . 2211) (punctuation 2209 . 2210) (symbol 830 . 838) (punctuation 828 . 829) (symbol 825 . 828) (punctuation 823 . 824) (symbol 817 . 823) (punctuation 815 . 816) (symbol 807 . 815) (symbol 830 . 838) (punctuation 828 . 829) (symbol 825 . 828) (punctuation 823 . 824) (symbol 817 . 823) (punctuation 815 . 816) (symbol 807 . 815) (ENUM 788 . 792) (symbol 772 . 780) (punctuation 770 . 771) (symbol 765 . 770) (punctuation 763 . 764) (symbol 757 . 763) (symbol 772 . 780) (punctuation 770 . 771) (symbol 765 . 770) (punctuation 763 . 764) (symbol 757 . 763) (ENUM 738 . 742) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+)
   :file "!Users!eu!AD!sources!acmacs-chart!cc!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -456,21 +456,22 @@
         '( ("acmacs-base/pybind11.hh" include nil nil [1 35])
             ("acmacs-chart/ace.hh" include nil nil [36 66])
             ("variant-id.hh" include nil nil [67 91])
-            ("hidb.hh" include nil nil [92 110])
-            ("hidb-export.hh" include nil nil [111 136])
+            ("vaccines.hh" include nil nil [92 114])
+            ("hidb.hh" include nil nil [115 133])
+            ("hidb-export.hh" include nil nil [134 159])
             ("hidb" using (:type ("hidb" type
                  (:prototype t
                   :type "namespace")
-                  nil nil)) nil [138 159])
+                  nil nil)) nil [161 182])
             ("PYBIND11_PLUGIN" function
                (:arguments 
-                  ( ("" variable (:type ("hidb_backend" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [252 265]))                  
+                  ( ("" variable (:type ("hidb_backend" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [275 288]))                  
                 :type "int")
-                nil [236 10356]))          
+                nil [259 12050]))          
       :file "py.cc"
-      :pointmax 10524
-      :fsize 10523
-      :lastmodtime '(22704 10877 0 0)
+      :pointmax 12218
+      :fsize 12217
+      :lastmodtime '(22710 62925 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
@@ -1762,7 +1763,424 @@
     (semanticdb-table "semanticdb-table"
       :file "hidb-import.hh"
       :fsize 355
-      :lastmodtime '(22655 31729 0 0)))
+      :lastmodtime '(22655 31729 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("acmacs-chart/chart.hh" include nil nil [1 33])
+            ("hidb.hh" include nil nil [34 52])
+            ("variant-id.hh" include nil nil [53 77])
+            ("vaccines.hh" include nil nil [78 100])
+            ("<" function
+               (:methodconst-flag t
+                :operator-flag t
+                :parent "Vaccines::Entry"
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vaccines::Entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [218 243]))                  
+                :type "bool")
+                nil [177 443])
+            ("<" function
+               (:methodconst-flag t
+                :operator-flag t
+                :parent "Vaccines::HomologousSerum"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vaccines::HomologousSerum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [564 599]))                  
+                :type "bool")
+                nil [520 989])
+            ("number_of_tables" function
+               (:methodconst-flag t
+                :parent "Vaccines::HomologousSerum"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1107 1213])
+            ("add" function
+               (:parent "Vaccines"
+                :arguments 
+                  ( ("aAntigenIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1356 1377])
+                    ("aAntigen" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Antigen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1378 1402])
+                    ("aAntigenData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("hidb::AntigenSerumData" type
+                             (:template-specifier 
+                                ( ("Antigen" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1403 1455])
+                    ("" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("HomologousSerum" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1456 1486])
+                    ("" variable (:type ("aSera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1487 1493])
+                    ("aMostRecentTableDate" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1494 1527]))                  
+                :type "void")
+                nil [1337 1938])
+            ("sort" function
+               (:parent "Vaccines"
+                :type "void")
+                nil [2032 2199])
+            ("report" function
+               (:methodconst-flag t
+                :parent "Vaccines"
+                :arguments 
+                  ( ("aIndent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2338]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2294 3518])
+            ("find_vaccines_in_chart" function
+               (:pointer 1
+                :arguments 
+                  ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3648 3666])
+                    ("aChart" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Chart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3667 3687])
+                    ("aHiDb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("hidb::HiDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3688 3712]))                  
+                :type ("Vaccines" type (:type "class") nil nil))
+                nil [3615 4950]))          
+      :file "vaccines.cc"
+      :pointmax 5144
+      :fsize 5143
+      :lastmodtime '(22710 63234 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("vector" include (:system-flag t) nil [33 50])
+            ("algorithm" include (:system-flag t) nil [51 71])
+            ("hidb" type
+               (:members 
+                  ( ("HiDb" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [169 180])
+                    ("AntigenSerumData" type
+                       (:template 
+                          ( ("AS" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [185 231]))                  
+                :type "namespace")
+                nil [148 233])
+            ("Antigen" type
+               (:prototype t
+                :type "class")
+                nil [235 249])
+            ("Serum" type
+               (:prototype t
+                :type "class")
+                nil [250 262])
+            ("Vaccines" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [357 364])
+                    ("HomologousSerum" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [402 409])
+                            ("HomologousSerum" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("aSerumIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [441 460])
+                                    ("aSerum" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Serum" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [461 481])
+                                    ("aSerumData" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("hidb::AntigenSerumData" type
+                                             (:template-specifier 
+                                                ( ("Serum" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [482 530])
+                                    ("aMostRecentTableDate" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [531 564]))                                  
+                                :type ("HomologousSerum" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [418 691])
+                            ("<" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("HomologousSerum" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [717 742]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [700 749])
+                            ("number_of_tables" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [758 790])
+                            ("serum" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Serum" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [800 819])
+                            ("serum_index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [828 847])
+                            ("serum_data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("hidb::AntigenSerumData" type
+                                     (:template-specifier 
+                                        ( ("Serum" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [856 904])
+                            ("most_recent_table_date" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [913 948]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [369 955])
+                    ("Entry" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [984 991])
+                            ("Entry" function
+                               (:constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("aAntigenIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1034])
+                                    ("aAntigen" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Antigen" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1035 1059])
+                                    ("aAntigenData" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("hidb::AntigenSerumData" type
+                                             (:template-specifier 
+                                                ( ("Antigen" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1060 1112])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("HomologousSerum" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1113 1143])
+                                    ("" variable (:type ("aSera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1144 1150])
+                                    ("aMostRecentTableDate" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1151 1184]))                                  
+                                :type ("Entry" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1000 1419])
+                            ("<" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Entry" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1445 1460]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1428 1467])
+                            ("antigen" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Antigen" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1477 1500])
+                            ("antigen_index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1509 1530])
+                            ("antigen_data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("hidb::AntigenSerumData" type
+                                     (:template-specifier 
+                                        ( ("Antigen" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1539 1591])
+                            ("homologous_sera" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("HomologousSerum" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1600 1645])
+                            ("most_recent_table_date" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1710 1745]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [961 1752])
+                    ("Vaccines" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vaccines" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1758 1778])
+                    ("number_of_eggs" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1784 1844])
+                    ("number_of_cells" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1849 1911])
+                    ("number_of_reassortants" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1916 1992])
+                    ("egg" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("aNo" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2022 2036]))                          
+                        :type ("Entry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1998 2096])
+                    ("cell" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("aNo" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2126 2140]))                          
+                        :type ("Entry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2101 2202])
+                    ("reassortant" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("aNo" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2239 2253]))                          
+                        :type ("Entry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2207 2329])
+                    ("report" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("aIndent" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2354 2372]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2335 2380])
+                    ("private" label nil (reparse-symbol classsubparts) [2383 2391])
+                    ("mEgg" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Entry" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2396 2420])
+                    ("mCell" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Entry" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2425 2450])
+                    ("mReassortant" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Entry" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2455 2487])
+                    ("find_vaccines_in_chart" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2533 2551])
+                            ("aChart" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Chart" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2552 2572])
+                            ("aHiDb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("hidb::HiDb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2573 2597]))                          
+                        :type ("Vaccines" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2493 2598])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("aAntigenIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2613 2634])
+                            ("aAntigen" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Antigen" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2635 2659])
+                            ("aAntigenData" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("hidb::AntigenSerumData" type
+                                     (:template-specifier 
+                                        ( ("Antigen" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2660 2712])
+                            ("" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("HomologousSerum" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2713 2743])
+                            ("" variable (:type ("aSera" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2750])
+                            ("aMostRecentTableDate" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2751 2784]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2604 2785])
+                    ("sort" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2790 2802]))                  
+                :type "class")
+                nil [339 2806])
+            ("find_vaccines_in_chart" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("aName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2934 2952])
+                    ("aChart" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Chart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2953 2973])
+                    ("aHiDb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("hidb::HiDb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2974 2998]))                  
+                :type ("Vaccines" type (:type "class") nil nil))
+                nil [2901 2999]))          
+      :file "vaccines.hh"
+      :pointmax 3167
+      :fsize 3166
+      :lastmodtime '(22710 62925 0 0)
+      :unmatched-syntax nil))
   :file "!Users!eu!AD!sources!hidb!cc!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

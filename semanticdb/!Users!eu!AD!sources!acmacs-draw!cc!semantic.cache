@@ -232,878 +232,21 @@
       :fsize 3418
       :lastmodtime '(22700 11124 0 0)
       :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
-    (semanticdb-table "semanticdb-table"
-      :major-mode c++-mode
-      :tags 
-        '( ("sstream" include (:system-flag t) nil [1 19])
-            ("iomanip" include (:system-flag t) nil [20 38])
-            ("map" include (:system-flag t) nil [39 53])
-            ("color.hh" include nil nil [55 74])
-            ("acmacs-base/string.hh" include nil nil [75 107])
-            ("_internal" type
-               (:members 
-                  ( ("sNameToColor" variable
-                       (:typemodifiers ("extern")
-                        :constant-flag t
-                        :type ("std::map" type
-                             (:template-specifier 
-                                ( ("std::string" type nil nil nil)
-                                  ("Color::value_type" type nil nil nil))                                
-                              :type "class")
-                              nil nil))
-                        (reparse-symbol namespacesubparts) [210 277]))                  
-                :type "namespace")
-                nil [184 279])
-            ("to_string" function
-               (:methodconst-flag t
-                :parent "Color"
-                :type ("std::string" type (:type "class") nil nil))
-                nil [356 828])
-            ("from_string" function
-               (:parent "Color"
-                :arguments 
-                  ( ("aColor" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [949 968]))                  
-                :type "void")
-                nil [925 1826])
-            ("Color::DistinctColors" variable
-               (:dereference 1
-                :constant-flag t
-                :default-value "{
-    0xA6BDD7, //Very Light Blue
-    0xC10020, //Vivid Red
-    0xFFB300, //Vivid Yellow
-    0x803E75, //Strong Purple
-    0xFF6800, //Vivid Orange
-    0xCEA262, //Grayish Yellow
-      //0x817066, //Medium Gray
 
-      //The following will not be good for people with defective color vision
-    0x007D34, //Vivid Green
-    0xF6768E, //Strong Purplish Pink
-    0x00538A, //Strong Blue
-    0xFF7A5C, //Strong Yellowish Pink
-    0x53377A, //Strong Violet
-    0xFF8E00, //Vivid Orange Yellow
-    0xB32851, //Strong Purplish Red
-    0xF4C800, //Vivid Greenish Yellow
-    0x7F180D, //Strong Reddish Brown
-    0x93AA00, //Vivid Yellowish Green
-    0x593315, //Deep Yellowish Brown
-    0xF13A13, //Vivid Reddish Orange
-    0x232C16, //Dark Olive Green
-}"
-                :type ("Color::value_type" type (:type "class") nil nil))
-                nil [2054 2849])
-            ("distinct_colors" function
-               (:parent "Color"
-                :type ("std::vector" type
-                     (:template-specifier 
-                        ( ("std::string" type nil nil nil))                        
-                      :type "class")
-                      nil nil))
-                nil [2851 3150])
-            ("_internal" type
-               (:members 
-                  ( ("sNameToColor" variable
-                       (:constant-flag t
-                        :default-value "{
-        {\"transparent\", 0xFF000000},
-          // /usr/X11/share/X11/rgb.txt
-        {\"alice blue\", 0xF0F8FF},
-        {\"aliceblue\", 0xF0F8FF},
-        {\"antique white\", 0xFAEBD7},
-        {\"antiquewhite\", 0xFAEBD7},
-        {\"antiquewhite1\", 0xFFEFDB},
-        {\"antiquewhite2\", 0xEEDFCC},
-        {\"antiquewhite3\", 0xCDC0B0},
-        {\"antiquewhite4\", 0x8B8378},
-        {\"aquamarine\", 0x7FFFD4},
-        {\"aquamarine1\", 0x7FFFD4},
-        {\"aquamarine2\", 0x76EEC6},
-        {\"aquamarine3\", 0x66CDAA},
-        {\"aquamarine4\", 0x458B74},
-        {\"azure\", 0xF0FFFF},
-        {\"azure1\", 0xF0FFFF},
-        {\"azure2\", 0xE0EEEE},
-        {\"azure3\", 0xC1CDCD},
-        {\"azure4\", 0x838B8B},
-        {\"beige\", 0xF5F5DC},
-        {\"bisque\", 0xFFE4C4},
-        {\"bisque1\", 0xFFE4C4},
-        {\"bisque2\", 0xEED5B7},
-        {\"bisque3\", 0xCDB79E},
-        {\"bisque4\", 0x8B7D6B},
-        {\"black\", 0x000000},
-        {\"blanched almond\", 0xFFEBCD},
-        {\"blanchedalmond\", 0xFFEBCD},
-        {\"blue\", 0x0000FF},
-        {\"blue violet\", 0x8A2BE2},
-        {\"blue1\", 0x0000FF},
-        {\"blue2\", 0x0000EE},
-        {\"blue3\", 0x0000CD},
-        {\"blue4\", 0x00008B},
-        {\"blueviolet\", 0x8A2BE2},
-        {\"brown\", 0xA52A2A},
-        {\"brown1\", 0xFF4040},
-        {\"brown2\", 0xEE3B3B},
-        {\"brown3\", 0xCD3333},
-        {\"brown4\", 0x8B2323},
-        {\"burlywood\", 0xDEB887},
-        {\"burlywood1\", 0xFFD39B},
-        {\"burlywood2\", 0xEEC591},
-        {\"burlywood3\", 0xCDAA7D},
-        {\"burlywood4\", 0x8B7355},
-        {\"cadet blue\", 0x5F9EA0},
-        {\"cadetblue\", 0x5F9EA0},
-        {\"cadetblue1\", 0x98F5FF},
-        {\"cadetblue2\", 0x8EE5EE},
-        {\"cadetblue3\", 0x7AC5CD},
-        {\"cadetblue4\", 0x53868B},
-        {\"chartreuse\", 0x7FFF00},
-        {\"chartreuse1\", 0x7FFF00},
-        {\"chartreuse2\", 0x76EE00},
-        {\"chartreuse3\", 0x66CD00},
-        {\"chartreuse4\", 0x458B00},
-        {\"chocolate\", 0xD2691E},
-        {\"chocolate1\", 0xFF7F24},
-        {\"chocolate2\", 0xEE7621},
-        {\"chocolate3\", 0xCD661D},
-        {\"chocolate4\", 0x8B4513},
-        {\"coral\", 0xFF7F50},
-        {\"coral1\", 0xFF7256},
-        {\"coral2\", 0xEE6A50},
-        {\"coral3\", 0xCD5B45},
-        {\"coral4\", 0x8B3E2F},
-        {\"cornflower blue\", 0x6495ED},
-        {\"cornflowerblue\", 0x6495ED},
-        {\"cornflowerbluelight\", 0xAAC5F5},
-        {\"cornsilk\", 0xFFF8DC},
-        {\"cornsilk1\", 0xFFF8DC},
-        {\"cornsilk2\", 0xEEE8CD},
-        {\"cornsilk3\", 0xCDC8B1},
-        {\"cornsilk4\", 0x8B8878},
-        {\"cyan\", 0x00FFFF},
-        {\"cyan1\", 0x00FFFF},
-        {\"cyan2\", 0x00EEEE},
-        {\"cyan3\", 0x00CDCD},
-        {\"cyan4\", 0x008B8B},
-        {\"dark blue\", 0x00008B},
-        {\"dark cyan\", 0x008B8B},
-        {\"dark goldenrod\", 0xB8860B},
-        {\"dark gray\", 0xA9A9A9},
-        {\"dark green\", 0x006400},
-        {\"dark grey\", 0xA9A9A9},
-        {\"dark khaki\", 0xBDB76B},
-        {\"dark magenta\", 0x8B008B},
-        {\"dark olive green\", 0x556B2F},
-        {\"dark orange\", 0xFF8C00},
-        {\"dark orchid\", 0x9932CC},
-        {\"dark red\", 0x8B0000},
-        {\"dark salmon\", 0xE9967A},
-        {\"dark sea green\", 0x8FBC8F},
-        {\"dark slate blue\", 0x483D8B},
-        {\"dark slate gray\", 0x2F4F4F},
-        {\"dark slate grey\", 0x2F4F4F},
-        {\"dark turquoise\", 0x00CED1},
-        {\"dark violet\", 0x9400D3},
-        {\"darkblue\", 0x00008B},
-        {\"darkcyan\", 0x008B8B},
-        {\"darkgoldenrod\", 0xB8860B},
-        {\"darkgoldenrod1\", 0xFFB90F},
-        {\"darkgoldenrod2\", 0xEEAD0E},
-        {\"darkgoldenrod3\", 0xCD950C},
-        {\"darkgoldenrod4\", 0x8B6508},
-        {\"darkgray\", 0xA9A9A9},
-        {\"darkgreen\", 0x006400},
-        {\"darkgrey\", 0xA9A9A9},
-        {\"darkkhaki\", 0xBDB76B},
-        {\"darkmagenta\", 0x8B008B},
-        {\"darkolivegreen\", 0x556B2F},
-        {\"darkolivegreen1\", 0xCAFF70},
-        {\"darkolivegreen2\", 0xBCEE68},
-        {\"darkolivegreen3\", 0xA2CD5A},
-        {\"darkolivegreen4\", 0x6E8B3D},
-        {\"darkorange\", 0xFF8C00},
-        {\"darkorange1\", 0xFF7F00},
-        {\"darkorange2\", 0xEE7600},
-        {\"darkorange3\", 0xCD6600},
-        {\"darkorange4\", 0x8B4500},
-        {\"darkorchid\", 0x9932CC},
-        {\"darkorchid1\", 0xBF3EFF},
-        {\"darkorchid2\", 0xB23AEE},
-        {\"darkorchid3\", 0x9A32CD},
-        {\"darkorchid4\", 0x68228B},
-        {\"darkred\", 0x8B0000},
-        {\"darksalmon\", 0xE9967A},
-        {\"darkseagreen\", 0x8FBC8F},
-        {\"darkseagreen1\", 0xC1FFC1},
-        {\"darkseagreen2\", 0xB4EEB4},
-        {\"darkseagreen3\", 0x9BCD9B},
-        {\"darkseagreen4\", 0x698B69},
-        {\"darkslateblue\", 0x483D8B},
-        {\"darkslategray\", 0x2F4F4F},
-        {\"darkslategray1\", 0x97FFFF},
-        {\"darkslategray2\", 0x8DEEEE},
-        {\"darkslategray3\", 0x79CDCD},
-        {\"darkslategray4\", 0x528B8B},
-        {\"darkslategrey\", 0x2F4F4F},
-        {\"darkturquoise\", 0x00CED1},
-        {\"darkviolet\", 0x9400D3},
-        {\"deep pink\", 0xFF1493},
-        {\"deep sky blue\", 0x00BFFF},
-        {\"deeppink\", 0xFF1493},
-        {\"deeppink1\", 0xFF1493},
-        {\"deeppink2\", 0xEE1289},
-        {\"deeppink3\", 0xCD1076},
-        {\"deeppink4\", 0x8B0A50},
-        {\"deepskyblue\", 0x00BFFF},
-        {\"deepskyblue1\", 0x00BFFF},
-        {\"deepskyblue2\", 0x00B2EE},
-        {\"deepskyblue3\", 0x009ACD},
-        {\"deepskyblue4\", 0x00688B},
-        {\"dim gray\", 0x696969},
-        {\"dim grey\", 0x696969},
-        {\"dimgray\", 0x696969},
-        {\"dimgrey\", 0x696969},
-        {\"dodger blue\", 0x1E90FF},
-        {\"dodgerblue\", 0x1E90FF},
-        {\"dodgerblue1\", 0x1E90FF},
-        {\"dodgerblue2\", 0x1C86EE},
-        {\"dodgerblue3\", 0x1874CD},
-        {\"dodgerblue4\", 0x104E8B},
-        {\"firebrick\", 0xB22222},
-        {\"firebrick1\", 0xFF3030},
-        {\"firebrick2\", 0xEE2C2C},
-        {\"firebrick3\", 0xCD2626},
-        {\"firebrick4\", 0x8B1A1A},
-        {\"floral white\", 0xFFFAF0},
-        {\"floralwhite\", 0xFFFAF0},
-        {\"forest green\", 0x228B22},
-        {\"forestgreen\", 0x228B22},
-        {\"gainsboro\", 0xDCDCDC},
-        {\"ghost white\", 0xF8F8FF},
-        {\"ghostwhite\", 0xF8F8FF},
-        {\"gold\", 0xFFD700},
-        {\"gold1\", 0xFFD700},
-        {\"gold2\", 0xEEC900},
-        {\"gold3\", 0xCDAD00},
-        {\"gold4\", 0x8B7500},
-        {\"goldenrod\", 0xDAA520},
-        {\"goldenrod1\", 0xFFC125},
-        {\"goldenrod2\", 0xEEB422},
-        {\"goldenrod3\", 0xCD9B1D},
-        {\"goldenrod4\", 0x8B6914},
-        {\"gray\", 0xBEBEBE},
-        {\"gray0\", 0x000000},
-        {\"gray1\", 0x030303},
-        {\"gray10\", 0x1A1A1A},
-        {\"gray100\", 0xFFFFFF},
-        {\"gray11\", 0x1C1C1C},
-        {\"gray12\", 0x1F1F1F},
-        {\"gray13\", 0x212121},
-        {\"gray14\", 0x242424},
-        {\"gray15\", 0x262626},
-        {\"gray16\", 0x292929},
-        {\"gray17\", 0x2B2B2B},
-        {\"gray18\", 0x2E2E2E},
-        {\"gray19\", 0x303030},
-        {\"gray2\", 0x050505},
-        {\"gray20\", 0x333333},
-        {\"gray21\", 0x363636},
-        {\"gray22\", 0x383838},
-        {\"gray23\", 0x3B3B3B},
-        {\"gray24\", 0x3D3D3D},
-        {\"gray25\", 0x404040},
-        {\"gray26\", 0x424242},
-        {\"gray27\", 0x454545},
-        {\"gray28\", 0x474747},
-        {\"gray29\", 0x4A4A4A},
-        {\"gray3\", 0x080808},
-        {\"gray30\", 0x4D4D4D},
-        {\"gray31\", 0x4F4F4F},
-        {\"gray32\", 0x525252},
-        {\"gray33\", 0x545454},
-        {\"gray34\", 0x575757},
-        {\"gray35\", 0x595959},
-        {\"gray36\", 0x5C5C5C},
-        {\"gray37\", 0x5E5E5E},
-        {\"gray38\", 0x616161},
-        {\"gray39\", 0x636363},
-        {\"gray4\", 0x0A0A0A},
-        {\"gray40\", 0x666666},
-        {\"gray41\", 0x696969},
-        {\"gray42\", 0x6B6B6B},
-        {\"gray43\", 0x6E6E6E},
-        {\"gray44\", 0x707070},
-        {\"gray45\", 0x737373},
-        {\"gray46\", 0x757575},
-        {\"gray47\", 0x787878},
-        {\"gray48\", 0x7A7A7A},
-        {\"gray49\", 0x7D7D7D},
-        {\"gray5\", 0x0D0D0D},
-        {\"gray50\", 0x7F7F7F},
-        {\"gray51\", 0x828282},
-        {\"gray52\", 0x858585},
-        {\"gray53\", 0x878787},
-        {\"gray54\", 0x8A8A8A},
-        {\"gray55\", 0x8C8C8C},
-        {\"gray56\", 0x8F8F8F},
-        {\"gray57\", 0x919191},
-        {\"gray58\", 0x949494},
-        {\"gray59\", 0x969696},
-        {\"gray6\", 0x0F0F0F},
-        {\"gray60\", 0x999999},
-        {\"gray61\", 0x9C9C9C},
-        {\"gray62\", 0x9E9E9E},
-        {\"gray63\", 0xA1A1A1},
-        {\"gray64\", 0xA3A3A3},
-        {\"gray65\", 0xA6A6A6},
-        {\"gray66\", 0xA8A8A8},
-        {\"gray67\", 0xABABAB},
-        {\"gray68\", 0xADADAD},
-        {\"gray69\", 0xB0B0B0},
-        {\"gray7\", 0x121212},
-        {\"gray70\", 0xB3B3B3},
-        {\"gray71\", 0xB5B5B5},
-        {\"gray72\", 0xB8B8B8},
-        {\"gray73\", 0xBABABA},
-        {\"gray74\", 0xBDBDBD},
-        {\"gray75\", 0xBFBFBF},
-        {\"gray76\", 0xC2C2C2},
-        {\"gray77\", 0xC4C4C4},
-        {\"gray78\", 0xC7C7C7},
-        {\"gray79\", 0xC9C9C9},
-        {\"gray8\", 0x141414},
-        {\"gray80\", 0xCCCCCC},
-        {\"gray81\", 0xCFCFCF},
-        {\"gray82\", 0xD1D1D1},
-        {\"gray83\", 0xD4D4D4},
-        {\"gray84\", 0xD6D6D6},
-        {\"gray85\", 0xD9D9D9},
-        {\"gray86\", 0xDBDBDB},
-        {\"gray87\", 0xDEDEDE},
-        {\"gray88\", 0xE0E0E0},
-        {\"gray89\", 0xE3E3E3},
-        {\"gray9\", 0x171717},
-        {\"gray90\", 0xE5E5E5},
-        {\"gray91\", 0xE8E8E8},
-        {\"gray92\", 0xEBEBEB},
-        {\"gray93\", 0xEDEDED},
-        {\"gray94\", 0xF0F0F0},
-        {\"gray95\", 0xF2F2F2},
-        {\"gray96\", 0xF5F5F5},
-        {\"gray97\", 0xF7F7F7},
-        {\"gray98\", 0xFAFAFA},
-        {\"gray99\", 0xFCFCFC},
-        {\"green\", 0x00FF00},
-        {\"green yellow\", 0xADFF2F},
-        {\"green1\", 0x00FF00},
-        {\"green2\", 0x00EE00},
-        {\"green3\", 0x00CD00},
-        {\"green4\", 0x008B00},
-        {\"greenyellow\", 0xADFF2F},
-        {\"grey\", 0xBEBEBE},
-        {\"grey0\", 0x000000},
-        {\"grey1\", 0x030303},
-        {\"grey10\", 0x1A1A1A},
-        {\"grey100\", 0xFFFFFF},
-        {\"grey11\", 0x1C1C1C},
-        {\"grey12\", 0x1F1F1F},
-        {\"grey13\", 0x212121},
-        {\"grey14\", 0x242424},
-        {\"grey15\", 0x262626},
-        {\"grey16\", 0x292929},
-        {\"grey17\", 0x2B2B2B},
-        {\"grey18\", 0x2E2E2E},
-        {\"grey19\", 0x303030},
-        {\"grey2\", 0x050505},
-        {\"grey20\", 0x333333},
-        {\"grey21\", 0x363636},
-        {\"grey22\", 0x383838},
-        {\"grey23\", 0x3B3B3B},
-        {\"grey24\", 0x3D3D3D},
-        {\"grey25\", 0x404040},
-        {\"grey26\", 0x424242},
-        {\"grey27\", 0x454545},
-        {\"grey28\", 0x474747},
-        {\"grey29\", 0x4A4A4A},
-        {\"grey3\", 0x080808},
-        {\"grey30\", 0x4D4D4D},
-        {\"grey31\", 0x4F4F4F},
-        {\"grey32\", 0x525252},
-        {\"grey33\", 0x545454},
-        {\"grey34\", 0x575757},
-        {\"grey35\", 0x595959},
-        {\"grey36\", 0x5C5C5C},
-        {\"grey37\", 0x5E5E5E},
-        {\"grey38\", 0x616161},
-        {\"grey39\", 0x636363},
-        {\"grey4\", 0x0A0A0A},
-        {\"grey40\", 0x666666},
-        {\"grey41\", 0x696969},
-        {\"grey42\", 0x6B6B6B},
-        {\"grey43\", 0x6E6E6E},
-        {\"grey44\", 0x707070},
-        {\"grey45\", 0x737373},
-        {\"grey46\", 0x757575},
-        {\"grey47\", 0x787878},
-        {\"grey48\", 0x7A7A7A},
-        {\"grey49\", 0x7D7D7D},
-        {\"grey5\", 0x0D0D0D},
-        {\"grey50\", 0x7F7F7F},
-        {\"grey51\", 0x828282},
-        {\"grey52\", 0x858585},
-        {\"grey53\", 0x878787},
-        {\"grey54\", 0x8A8A8A},
-        {\"grey55\", 0x8C8C8C},
-        {\"grey56\", 0x8F8F8F},
-        {\"grey57\", 0x919191},
-        {\"grey58\", 0x949494},
-        {\"grey59\", 0x969696},
-        {\"grey6\", 0x0F0F0F},
-        {\"grey60\", 0x999999},
-        {\"grey61\", 0x9C9C9C},
-        {\"grey62\", 0x9E9E9E},
-        {\"grey63\", 0xA1A1A1},
-        {\"grey64\", 0xA3A3A3},
-        {\"grey65\", 0xA6A6A6},
-        {\"grey66\", 0xA8A8A8},
-        {\"grey67\", 0xABABAB},
-        {\"grey68\", 0xADADAD},
-        {\"grey69\", 0xB0B0B0},
-        {\"grey7\", 0x121212},
-        {\"grey70\", 0xB3B3B3},
-        {\"grey71\", 0xB5B5B5},
-        {\"grey72\", 0xB8B8B8},
-        {\"grey73\", 0xBABABA},
-        {\"grey74\", 0xBDBDBD},
-        {\"grey75\", 0xBFBFBF},
-        {\"grey76\", 0xC2C2C2},
-        {\"grey77\", 0xC4C4C4},
-        {\"grey78\", 0xC7C7C7},
-        {\"grey79\", 0xC9C9C9},
-        {\"grey8\", 0x141414},
-        {\"grey80\", 0xCCCCCC},
-        {\"grey81\", 0xCFCFCF},
-        {\"grey82\", 0xD1D1D1},
-        {\"grey83\", 0xD4D4D4},
-        {\"grey84\", 0xD6D6D6},
-        {\"grey85\", 0xD9D9D9},
-        {\"grey86\", 0xDBDBDB},
-        {\"grey87\", 0xDEDEDE},
-        {\"grey88\", 0xE0E0E0},
-        {\"grey89\", 0xE3E3E3},
-        {\"grey9\", 0x171717},
-        {\"grey90\", 0xE5E5E5},
-        {\"grey91\", 0xE8E8E8},
-        {\"grey92\", 0xEBEBEB},
-        {\"grey93\", 0xEDEDED},
-        {\"grey94\", 0xF0F0F0},
-        {\"grey95\", 0xF2F2F2},
-        {\"grey96\", 0xF5F5F5},
-        {\"grey97\", 0xF7F7F7},
-        {\"grey98\", 0xFAFAFA},
-        {\"grey99\", 0xFCFCFC},
-        {\"grid_default_color\", 0xC0000000},
-        {\"honeydew\", 0xF0FFF0},
-        {\"honeydew1\", 0xF0FFF0},
-        {\"honeydew2\", 0xE0EEE0},
-        {\"honeydew3\", 0xC1CDC1},
-        {\"honeydew4\", 0x838B83},
-        {\"hot pink\", 0xFF69B4},
-        {\"hotpink\", 0xFF69B4},
-        {\"hotpink1\", 0xFF6EB4},
-        {\"hotpink2\", 0xEE6AA7},
-        {\"hotpink3\", 0xCD6090},
-        {\"hotpink4\", 0x8B3A62},
-        {\"indian red\", 0xCD5C5C},
-        {\"indianred\", 0xCD5C5C},
-        {\"indianred1\", 0xFF6A6A},
-        {\"indianred2\", 0xEE6363},
-        {\"indianred3\", 0xCD5555},
-        {\"indianred4\", 0x8B3A3A},
-        {\"ivory\", 0xFFFFF0},
-        {\"ivory1\", 0xFFFFF0},
-        {\"ivory2\", 0xEEEEE0},
-        {\"ivory3\", 0xCDCDC1},
-        {\"ivory4\", 0x8B8B83},
-        {\"khaki\", 0xF0E68C},
-        {\"khaki1\", 0xFFF68F},
-        {\"khaki2\", 0xEEE685},
-        {\"khaki3\", 0xCDC673},
-        {\"khaki4\", 0x8B864E},
-        {\"lavender\", 0xE6E6FA},
-        {\"lavender blush\", 0xFFF0F5},
-        {\"lavenderblush\", 0xFFF0F5},
-        {\"lavenderblush1\", 0xFFF0F5},
-        {\"lavenderblush2\", 0xEEE0E5},
-        {\"lavenderblush3\", 0xCDC1C5},
-        {\"lavenderblush4\", 0x8B8386},
-        {\"lawn green\", 0x7CFC00},
-        {\"lawngreen\", 0x7CFC00},
-        {\"lemon chiffon\", 0xFFFACD},
-        {\"lemonchiffon\", 0xFFFACD},
-        {\"lemonchiffon1\", 0xFFFACD},
-        {\"lemonchiffon2\", 0xEEE9BF},
-        {\"lemonchiffon3\", 0xCDC9A5},
-        {\"lemonchiffon4\", 0x8B8970},
-        {\"light blue\", 0xADD8E6},
-        {\"light coral\", 0xF08080},
-        {\"light cyan\", 0xE0FFFF},
-        {\"light goldenrod\", 0xEEDD82},
-        {\"light goldenrod yellow\", 0xFAFAD2},
-        {\"light gray\", 0xD3D3D3},
-        {\"light green\", 0x90EE90},
-        {\"light grey\", 0xD3D3D3},
-        {\"light pink\", 0xFFB6C1},
-        {\"light salmon\", 0xFFA07A},
-        {\"light sea green\", 0x20B2AA},
-        {\"light sky blue\", 0x87CEFA},
-        {\"light slate blue\", 0x8470FF},
-        {\"light slate gray\", 0x778899},
-        {\"light slate grey\", 0x778899},
-        {\"light steel blue\", 0xB0C4DE},
-        {\"light yellow\", 0xFFFFE0},
-        {\"lightblue\", 0xADD8E6},
-        {\"lightblue1\", 0xBFEFFF},
-        {\"lightblue2\", 0xB2DFEE},
-        {\"lightblue3\", 0x9AC0CD},
-        {\"lightblue4\", 0x68838B},
-        {\"lightcoral\", 0xF08080},
-        {\"lightcyan\", 0xE0FFFF},
-        {\"lightcyan1\", 0xE0FFFF},
-        {\"lightcyan2\", 0xD1EEEE},
-        {\"lightcyan3\", 0xB4CDCD},
-        {\"lightcyan4\", 0x7A8B8B},
-        {\"lightgoldenrod\", 0xEEDD82},
-        {\"lightgoldenrod1\", 0xFFEC8B},
-        {\"lightgoldenrod2\", 0xEEDC82},
-        {\"lightgoldenrod3\", 0xCDBE70},
-        {\"lightgoldenrod4\", 0x8B814C},
-        {\"lightgoldenrodyellow\", 0xFAFAD2},
-        {\"lightgray\", 0xD3D3D3},
-        {\"lightgreen\", 0x90EE90},
-        {\"lightgrey\", 0xD3D3D3},
-        {\"lightpink\", 0xFFB6C1},
-        {\"lightpink1\", 0xFFAEB9},
-        {\"lightpink2\", 0xEEA2AD},
-        {\"lightpink3\", 0xCD8C95},
-        {\"lightpink4\", 0x8B5F65},
-        {\"lightsalmon\", 0xFFA07A},
-        {\"lightsalmon1\", 0xFFA07A},
-        {\"lightsalmon2\", 0xEE9572},
-        {\"lightsalmon3\", 0xCD8162},
-        {\"lightsalmon4\", 0x8B5742},
-        {\"lightseagreen\", 0x20B2AA},
-        {\"lightskyblue\", 0x87CEFA},
-        {\"lightskyblue1\", 0xB0E2FF},
-        {\"lightskyblue2\", 0xA4D3EE},
-        {\"lightskyblue3\", 0x8DB6CD},
-        {\"lightskyblue4\", 0x607B8B},
-        {\"lightslateblue\", 0x8470FF},
-        {\"lightslategray\", 0x778899},
-        {\"lightslategrey\", 0x778899},
-        {\"lightsteelblue\", 0xB0C4DE},
-        {\"lightsteelblue1\", 0xCAE1FF},
-        {\"lightsteelblue2\", 0xBCD2EE},
-        {\"lightsteelblue3\", 0xA2B5CD},
-        {\"lightsteelblue4\", 0x6E7B8B},
-        {\"lightyellow\", 0xFFFFE0},
-        {\"lightyellow1\", 0xFFFFE0},
-        {\"lightyellow2\", 0xEEEED1},
-        {\"lightyellow3\", 0xCDCDB4},
-        {\"lightyellow4\", 0x8B8B7A},
-        {\"lime green\", 0x32CD32},
-        {\"limegreen\", 0x32CD32},
-        {\"linen\", 0xFAF0E6},
-        {\"magenta\", 0xFF00FF},
-        {\"magenta1\", 0xFF00FF},
-        {\"magenta2\", 0xEE00EE},
-        {\"magenta3\", 0xCD00CD},
-        {\"magenta4\", 0x8B008B},
-        {\"maroon\", 0xB03060},
-        {\"maroon1\", 0xFF34B3},
-        {\"maroon2\", 0xEE30A7},
-        {\"maroon3\", 0xCD2990},
-        {\"maroon4\", 0x8B1C62},
-        {\"medium aquamarine\", 0x66CDAA},
-        {\"medium blue\", 0x0000CD},
-        {\"medium orchid\", 0xBA55D3},
-        {\"medium purple\", 0x9370DB},
-        {\"medium sea green\", 0x3CB371},
-        {\"medium slate blue\", 0x7B68EE},
-        {\"medium spring green\", 0x00FA9A},
-        {\"medium turquoise\", 0x48D1CC},
-        {\"medium violet red\", 0xC71585},
-        {\"mediumaquamarine\", 0x66CDAA},
-        {\"mediumblue\", 0x0000CD},
-        {\"mediumorchid\", 0xBA55D3},
-        {\"mediumorchid1\", 0xE066FF},
-        {\"mediumorchid2\", 0xD15FEE},
-        {\"mediumorchid3\", 0xB452CD},
-        {\"mediumorchid4\", 0x7A378B},
-        {\"mediumpurple\", 0x9370DB},
-        {\"mediumpurple1\", 0xAB82FF},
-        {\"mediumpurple2\", 0x9F79EE},
-        {\"mediumpurple3\", 0x8968CD},
-        {\"mediumpurple4\", 0x5D478B},
-        {\"mediumseagreen\", 0x3CB371},
-        {\"mediumslateblue\", 0x7B68EE},
-        {\"mediumspringgreen\", 0x00FA9A},
-        {\"mediumturquoise\", 0x48D1CC},
-        {\"mediumvioletred\", 0xC71585},
-        {\"midnight blue\", 0x191970},
-        {\"midnightblue\", 0x191970},
-        {\"mint cream\", 0xF5FFFA},
-        {\"mintcream\", 0xF5FFFA},
-        {\"misty rose\", 0xFFE4E1},
-        {\"mistyrose\", 0xFFE4E1},
-        {\"mistyrose1\", 0xFFE4E1},
-        {\"mistyrose2\", 0xEED5D2},
-        {\"mistyrose3\", 0xCDB7B5},
-        {\"mistyrose4\", 0x8B7D7B},
-        {\"moccasin\", 0xFFE4B5},
-        {\"navajo white\", 0xFFDEAD},
-        {\"navajowhite\", 0xFFDEAD},
-        {\"navajowhite1\", 0xFFDEAD},
-        {\"navajowhite2\", 0xEECFA1},
-        {\"navajowhite3\", 0xCDB38B},
-        {\"navajowhite4\", 0x8B795E},
-        {\"navy\", 0x000080},
-        {\"navy blue\", 0x000080},
-        {\"navyblue\", 0x000080},
-        {\"old lace\", 0xFDF5E6},
-        {\"oldlace\", 0xFDF5E6},
-        {\"olive drab\", 0x6B8E23},
-        {\"olivedrab\", 0x6B8E23},
-        {\"olivedrab1\", 0xC0FF3E},
-        {\"olivedrab2\", 0xB3EE3A},
-        {\"olivedrab3\", 0x9ACD32},
-        {\"olivedrab4\", 0x698B22},
-        {\"orange\", 0xFFA500},
-        {\"orange red\", 0xFF4500},
-        {\"orange1\", 0xFFA500},
-        {\"orange2\", 0xEE9A00},
-        {\"orange3\", 0xCD8500},
-        {\"orange4\", 0x8B5A00},
-        {\"orangered\", 0xFF4500},
-        {\"orangered1\", 0xFF4500},
-        {\"orangered2\", 0xEE4000},
-        {\"orangered3\", 0xCD3700},
-        {\"orangered4\", 0x8B2500},
-        {\"orchid\", 0xDA70D6},
-        {\"orchid1\", 0xFF83FA},
-        {\"orchid2\", 0xEE7AE9},
-        {\"orchid3\", 0xCD69C9},
-        {\"orchid4\", 0x8B4789},
-        {\"pale goldenrod\", 0xEEE8AA},
-        {\"pale green\", 0x98FB98},
-        {\"pale turquoise\", 0xAFEEEE},
-        {\"pale violet red\", 0xDB7093},
-        {\"palegoldenrod\", 0xEEE8AA},
-        {\"palegreen\", 0x98FB98},
-        {\"palegreen1\", 0x9AFF9A},
-        {\"palegreen2\", 0x90EE90},
-        {\"palegreen3\", 0x7CCD7C},
-        {\"palegreen4\", 0x548B54},
-        {\"paleturquoise\", 0xAFEEEE},
-        {\"paleturquoise1\", 0xBBFFFF},
-        {\"paleturquoise2\", 0xAEEEEE},
-        {\"paleturquoise3\", 0x96CDCD},
-        {\"paleturquoise4\", 0x668B8B},
-        {\"palevioletred\", 0xDB7093},
-        {\"palevioletred1\", 0xFF82AB},
-        {\"palevioletred2\", 0xEE799F},
-        {\"palevioletred3\", 0xCD6889},
-        {\"palevioletred4\", 0x8B475D},
-        {\"papaya whip\", 0xFFEFD5},
-        {\"papayawhip\", 0xFFEFD5},
-        {\"peach puff\", 0xFFDAB9},
-        {\"peachpuff\", 0xFFDAB9},
-        {\"peachpuff1\", 0xFFDAB9},
-        {\"peachpuff2\", 0xEECBAD},
-        {\"peachpuff3\", 0xCDAF95},
-        {\"peachpuff4\", 0x8B7765},
-        {\"peru\", 0xCD853F},
-        {\"pink\", 0xFFC0CB},
-        {\"pink1\", 0xFFB5C5},
-        {\"pink2\", 0xEEA9B8},
-        {\"pink3\", 0xCD919E},
-        {\"pink4\", 0x8B636C},
-        {\"plum\", 0xDDA0DD},
-        {\"plum1\", 0xFFBBFF},
-        {\"plum2\", 0xEEAEEE},
-        {\"plum3\", 0xCD96CD},
-        {\"plum4\", 0x8B668B},
-        {\"powder blue\", 0xB0E0E6},
-        {\"powderblue\", 0xB0E0E6},
-        {\"purple\", 0xA020F0},
-        {\"purple1\", 0x9B30FF},
-        {\"purple2\", 0x912CEE},
-        {\"purple3\", 0x7D26CD},
-        {\"purple4\", 0x551A8B},
-        {\"red\", 0xFF0000},
-        {\"red1\", 0xFF0000},
-        {\"red2\", 0xEE0000},
-        {\"red3\", 0xCD0000},
-        {\"red4\", 0x8B0000},
-        {\"rosy brown\", 0xBC8F8F},
-        {\"rosybrown\", 0xBC8F8F},
-        {\"rosybrown1\", 0xFFC1C1},
-        {\"rosybrown2\", 0xEEB4B4},
-        {\"rosybrown3\", 0xCD9B9B},
-        {\"rosybrown4\", 0x8B6969},
-        {\"royal blue\", 0x4169E1},
-        {\"royalblue\", 0x4169E1},
-        {\"royalblue1\", 0x4876FF},
-        {\"royalblue2\", 0x436EEE},
-        {\"royalblue3\", 0x3A5FCD},
-        {\"royalblue4\", 0x27408B},
-        {\"saddle brown\", 0x8B4513},
-        {\"saddlebrown\", 0x8B4513},
-        {\"salmon\", 0xFA8072},
-        {\"salmon1\", 0xFF8C69},
-        {\"salmon2\", 0xEE8262},
-        {\"salmon3\", 0xCD7054},
-        {\"salmon4\", 0x8B4C39},
-        {\"sandy brown\", 0xF4A460},
-        {\"sandybrown\", 0xF4A460},
-        {\"sea green\", 0x2E8B57},
-        {\"seagreen\", 0x2E8B57},
-        {\"seagreen1\", 0x54FF9F},
-        {\"seagreen2\", 0x4EEE94},
-        {\"seagreen3\", 0x43CD80},
-        {\"seagreen4\", 0x2E8B57},
-        {\"seashell\", 0xFFF5EE},
-        {\"seashell1\", 0xFFF5EE},
-        {\"seashell2\", 0xEEE5DE},
-        {\"seashell3\", 0xCDC5BF},
-        {\"seashell4\", 0x8B8682},
-        {\"sienna\", 0xA0522D},
-        {\"sienna1\", 0xFF8247},
-        {\"sienna2\", 0xEE7942},
-        {\"sienna3\", 0xCD6839},
-        {\"sienna4\", 0x8B4726},
-        {\"sky blue\", 0x87CEEB},
-        {\"skyblue\", 0x87CEEB},
-        {\"skyblue1\", 0x87CEFF},
-        {\"skyblue2\", 0x7EC0EE},
-        {\"skyblue3\", 0x6CA6CD},
-        {\"skyblue4\", 0x4A708B},
-        {\"slate blue\", 0x6A5ACD},
-        {\"slate gray\", 0x708090},
-        {\"slate grey\", 0x708090},
-        {\"slateblue\", 0x6A5ACD},
-        {\"slateblue1\", 0x836FFF},
-        {\"slateblue2\", 0x7A67EE},
-        {\"slateblue3\", 0x6959CD},
-        {\"slateblue4\", 0x473C8B},
-        {\"slategray\", 0x708090},
-        {\"slategray1\", 0xC6E2FF},
-        {\"slategray2\", 0xB9D3EE},
-        {\"slategray3\", 0x9FB6CD},
-        {\"slategray4\", 0x6C7B8B},
-        {\"slategrey\", 0x708090},
-        {\"snow\", 0xFFFAFA},
-        {\"snow1\", 0xFFFAFA},
-        {\"snow2\", 0xEEE9E9},
-        {\"snow3\", 0xCDC9C9},
-        {\"snow4\", 0x8B8989},
-        {\"spring green\", 0x00FF7F},
-        {\"springgreen\", 0x00FF7F},
-        {\"springgreen1\", 0x00FF7F},
-        {\"springgreen2\", 0x00EE76},
-        {\"springgreen3\", 0x00CD66},
-        {\"springgreen4\", 0x008B45},
-        {\"steel blue\", 0x4682B4},
-        {\"steelblue\", 0x4682B4},
-        {\"steelblue1\", 0x63B8FF},
-        {\"steelblue2\", 0x5CACEE},
-        {\"steelblue3\", 0x4F94CD},
-        {\"steelblue4\", 0x36648B},
-        {\"tan\", 0xD2B48C},
-        {\"tan1\", 0xFFA54F},
-        {\"tan2\", 0xEE9A49},
-        {\"tan3\", 0xCD853F},
-        {\"tan4\", 0x8B5A2B},
-        {\"thistle\", 0xD8BFD8},
-        {\"thistle1\", 0xFFE1FF},
-        {\"thistle2\", 0xEED2EE},
-        {\"thistle3\", 0xCDB5CD},
-        {\"thistle4\", 0x8B7B8B},
-        {\"tomato\", 0xFF6347},
-        {\"tomato1\", 0xFF6347},
-        {\"tomato2\", 0xEE5C42},
-        {\"tomato3\", 0xCD4F39},
-        {\"tomato4\", 0x8B3626},
-        {\"turquoise\", 0x40E0D0},
-        {\"turquoise1\", 0x00F5FF},
-        {\"turquoise2\", 0x00E5EE},
-        {\"turquoise3\", 0x00C5CD},
-        {\"turquoise4\", 0x00868B},
-        {\"violet\", 0xEE82EE},
-        {\"violet red\", 0xD02090},
-        {\"violetred\", 0xD02090},
-        {\"violetred1\", 0xFF3E96},
-        {\"violetred2\", 0xEE3A8C},
-        {\"violetred3\", 0xCD3278},
-        {\"violetred4\", 0x8B2252},
-        {\"wheat\", 0xF5DEB3},
-        {\"wheat1\", 0xFFE7BA},
-        {\"wheat2\", 0xEED8AE},
-        {\"wheat3\", 0xCDBA96},
-        {\"wheat4\", 0x8B7E66},
-        {\"white\", 0xFFFFFF},
-        {\"white smoke\", 0xF5F5F5},
-        {\"whitesmoke\", 0xF5F5F5},
-        {\"yellow\", 0xFFFF00},
-        {\"yellow green\", 0x9ACD32},
-        {\"yellow1\", 0xFFFF00},
-        {\"yellow2\", 0xEEEE00},
-        {\"yellow3\", 0xCDCD00},
-        {\"yellow4\", 0x8B8B00},
-        {\"yellowgreen\", 0x9ACD32}
-    }"
-                        :type ("std::map" type
-                             (:template-specifier 
-                                ( ("std::string" type nil nil nil)
-                                  ("Color::value_type" type nil nil nil))                                
-                              :type "class")
-                              nil nil))
-                        (reparse-symbol namespacesubparts) [3417 28290]))                  
-                :type "namespace")
-                nil [3227 28319]))          
-      :file "color.cc"
-      :pointmax 28510
-      :fsize 28509
-      :lastmodtime '(22698 58404 0 0)
-      :unmatched-syntax '((symbol 28314 . 28317) (symbol 28303 . 28313) (symbol 28299 . 28302) (symbol 28292 . 28298) (punctuation 28291 . 28292) (string 3382 . 3405) (symbol 3374 . 3381) (symbol 3363 . 3373) (symbol 3359 . 3362) (symbol 3352 . 3358) (punctuation 3351 . 3352) (string 3325 . 3350) (symbol 3317 . 3324) (symbol 3306 . 3316) (symbol 3302 . 3305) (symbol 3295 . 3301) (punctuation 3294 . 3295) (symbol 3272 . 3276) (symbol 3261 . 3271) (symbol 3257 . 3260) (symbol 3250 . 3256) (punctuation 3249 . 3250)))
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
       :tags 
         '( ("vector" include (:system-flag t) nil [15 32])
             ("memory" include (:system-flag t) nil [33 50])
-            ("acmacs-draw/text-style.hh" include nil nil [52 88])
-            ("acmacs-draw/viewport.hh" include nil nil [89 123])
-            ("acmacs-draw/color.hh" include nil nil [124 155])
-            ("acmacs-draw/size-scale.hh" include nil nil [156 192])
-            ("_acmacs_draw_internal::SizeScale" variable (:type "int") nil [284 322])
-            ("_acmacs_draw_internal::SizeScale" variable (:type "int") nil [340 378])
-            ("acmacs-base/global-constructors-push.hh" include nil nil [380 430])
-            ("NoRotation" variable
-               (:constant-flag t
-                :type ("Rotation" type (:type "class") nil nil))
-                nil [432 463])
-            ("AspectNormal" variable
-               (:constant-flag t
-                :type ("Aspect" type (:type "class") nil nil))
-                nil [464 495])
-            ("acmacs-base/diagnostics-pop.hh" include nil nil [497 538])
+            ("acmacs-base/color.hh" include nil nil [52 83])
+            ("acmacs-base/size-scale.hh" include nil nil [84 120])
+            ("acmacs-draw/text-style.hh" include nil nil [121 157])
+            ("acmacs-draw/viewport.hh" include nil nil [158 192])
             ("Surface" type
                (:members 
-                  ( ("public" label nil (reparse-symbol classsubparts) [632 639])
-                    ("LineCap" type (:type "class") (reparse-symbol classsubparts) [649 687])
-                    ("LineJoin" type (:type "class") (reparse-symbol classsubparts) [697 736])
+                  ( ("public" label nil (reparse-symbol classsubparts) [286 293])
+                    ("LineCap" type (:type "class") (reparse-symbol classsubparts) [303 341])
+                    ("LineJoin" type (:type "class") (reparse-symbol classsubparts) [351 390])
                     ("Surface" function
                        (:constructor-flag t
                         :typemodifiers ("inline")
@@ -1112,20 +255,20 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Surface" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [770 785]))                          
+                                (reparse-symbol arg-sub-list) [424 439]))                          
                         :type ("Surface" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [755 845])
+                        (reparse-symbol classsubparts) [409 499])
                     ("Surface" function
                        (:destructor-flag t
                         :typemodifiers ("virtual")
                         :type "void")
-                        (reparse-symbol classsubparts) [915 936])
+                        (reparse-symbol classsubparts) [569 590])
                     ("default_canvas_width" variable
                        (:typemodifiers ("static")
                         :constant-flag t
                         :default-value "1000.0"
                         :type "double")
-                        (reparse-symbol classsubparts) [952 1002])
+                        (reparse-symbol classsubparts) [606 656])
                     ("viewport" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1133,7 +276,7 @@
                         :typemodifiers ("virtual")
                         :constant-flag t
                         :type ("Viewport" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1008 1053])
+                        (reparse-symbol classsubparts) [662 707])
                     ("origin_in_parent" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1141,24 +284,24 @@
                         :typemodifiers ("virtual")
                         :constant-flag t
                         :type ("Location" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1058 1111])
+                        (reparse-symbol classsubparts) [712 765])
                     ("width_in_parent" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :methodconst-flag t
                         :typemodifiers ("virtual")
                         :type "double")
-                        (reparse-symbol classsubparts) [1116 1159])
+                        (reparse-symbol classsubparts) [770 813])
                     ("width_in_pixels" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type "double")
-                        (reparse-symbol classsubparts) [1164 1245])
+                        (reparse-symbol classsubparts) [818 899])
                     ("height_in_pixels" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type "double")
-                        (reparse-symbol classsubparts) [1250 1333])
+                        (reparse-symbol classsubparts) [904 987])
                     ("viewport" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1168,9 +311,9 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Viewport" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1361 1387]))                          
+                                (reparse-symbol arg-sub-list) [1015 1041]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [1339 1392])
+                        (reparse-symbol classsubparts) [993 1046])
                     ("move" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1180,9 +323,9 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1415 1447]))                          
+                                (reparse-symbol arg-sub-list) [1069 1101]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [1397 1452])
+                        (reparse-symbol classsubparts) [1051 1106])
                     ("move_resize" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1192,10 +335,10 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1482 1514])
-                            ("aWidthInParent" variable (:type "double") (reparse-symbol arg-sub-list) [1515 1537]))                          
+                                (reparse-symbol arg-sub-list) [1136 1168])
+                            ("aWidthInParent" variable (:type "double") (reparse-symbol arg-sub-list) [1169 1191]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [1457 1542])
+                        (reparse-symbol classsubparts) [1111 1196])
                     ("move_resize_viewport" function
                        (:typemodifiers ("inline")
                         :arguments 
@@ -1203,20 +346,20 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1580 1612])
-                            ("aWidthInParent" variable (:type "double") (reparse-symbol arg-sub-list) [1613 1635])
+                                (reparse-symbol arg-sub-list) [1234 1266])
+                            ("aWidthInParent" variable (:type "double") (reparse-symbol arg-sub-list) [1267 1289])
                             ("aViewport" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Viewport" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1636 1662]))                          
+                                (reparse-symbol arg-sub-list) [1290 1316]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [1547 1733])
+                        (reparse-symbol classsubparts) [1201 1387])
                     ("aspect" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :type "double")
-                        (reparse-symbol classsubparts) [1739 1799])
+                        (reparse-symbol classsubparts) [1393 1453])
                     ("subsurface" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1226,24 +369,24 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1833 1865])
-                            ("aWidthInParent" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1866 1888])
+                                (reparse-symbol arg-sub-list) [1487 1519])
+                            ("aWidthInParent" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1520 1542])
                             ("aViewport" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Viewport" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1889 1915])
-                            ("aClip" variable (:type "bool") (reparse-symbol arg-sub-list) [1916 1927]))                          
+                                (reparse-symbol arg-sub-list) [1543 1569])
+                            ("aClip" variable (:type "bool") (reparse-symbol arg-sub-list) [1570 1581]))                          
                         :type ("Surface" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1805 1932])
+                        (reparse-symbol classsubparts) [1459 1586])
                     ("subsurface" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("aClip" variable (:type "bool") (reparse-symbol arg-sub-list) [1965 1976]))                          
+                          ( ("aClip" variable (:type "bool") (reparse-symbol arg-sub-list) [1619 1630]))                          
                         :type ("Surface" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1937 1981])
+                        (reparse-symbol classsubparts) [1591 1635])
                     ("subsurface" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1253,16 +396,16 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2014 2046])
-                            ("aWidthInParent" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2047 2069])
+                                (reparse-symbol arg-sub-list) [1668 1700])
+                            ("aWidthInParent" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1701 1723])
                             ("aViewport" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Viewport" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2070 2096])
-                            ("aClip" variable (:type "bool") (reparse-symbol arg-sub-list) [2097 2108]))                          
+                                (reparse-symbol arg-sub-list) [1724 1750])
+                            ("aClip" variable (:type "bool") (reparse-symbol arg-sub-list) [1751 1762]))                          
                         :type ("Surface" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1986 2113])
+                        (reparse-symbol classsubparts) [1640 1767])
                     ("line" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1272,21 +415,21 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2160 2178])
+                                (reparse-symbol arg-sub-list) [1814 1832])
                             ("b" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2179 2197])
-                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2198 2211])
-                            ("aWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2212 2226])
+                                (reparse-symbol arg-sub-list) [1833 1851])
+                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1852 1865])
+                            ("aWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1866 1880])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2227 2253])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2255 2260]))                          
+                                (reparse-symbol arg-sub-list) [1881 1907])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1909 1914]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2142 2265])
+                        (reparse-symbol classsubparts) [1796 1919])
                     ("line" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1296,21 +439,21 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2288 2306])
+                                (reparse-symbol arg-sub-list) [1942 1960])
                             ("b" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2307 2325])
-                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2326 2339])
-                            ("aWidth" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2340 2354])
+                                (reparse-symbol arg-sub-list) [1961 1979])
+                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1980 1993])
+                            ("aWidth" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1994 2008])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2355 2381])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2383 2388]))                          
+                                (reparse-symbol arg-sub-list) [2009 2035])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2037 2042]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2270 2393])
+                        (reparse-symbol classsubparts) [1924 2047])
                     ("rectangle" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1320,21 +463,21 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2421 2439])
+                                (reparse-symbol arg-sub-list) [2075 2093])
                             ("s" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Size" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2440 2454])
-                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2455 2468])
-                            ("aWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2469 2483])
+                                (reparse-symbol arg-sub-list) [2094 2108])
+                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2109 2122])
+                            ("aWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2123 2137])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2484 2510])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2517]))                          
+                                (reparse-symbol arg-sub-list) [2138 2164])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2166 2171]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2398 2522])
+                        (reparse-symbol classsubparts) [2052 2176])
                     ("rectangle_filled" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1344,22 +487,22 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2557 2575])
+                                (reparse-symbol arg-sub-list) [2211 2229])
                             ("s" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Size" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2576 2590])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2591 2611])
-                            ("aWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2612 2626])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2627 2644])
+                                (reparse-symbol arg-sub-list) [2230 2244])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2245 2265])
+                            ("aWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2266 2280])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2281 2298])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2645 2671])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2673 2678]))                          
+                                (reparse-symbol arg-sub-list) [2299 2325])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2327 2332]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2527 2683])
+                        (reparse-symbol classsubparts) [2181 2337])
                     ("circle" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1369,14 +512,14 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2709 2733])
-                            ("aDiameter" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2734 2751])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2752 2767])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2768 2784])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2785 2805])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2806 2827]))                          
+                                (reparse-symbol arg-sub-list) [2363 2387])
+                            ("aDiameter" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2388 2405])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2406 2421])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2422 2438])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2439 2459])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2460 2481]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2689 2832])
+                        (reparse-symbol classsubparts) [2343 2486])
                     ("circle" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1386,14 +529,14 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2857 2881])
-                            ("aDiameter" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2882 2899])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2900 2915])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2916 2932])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2933 2953])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2954 2975]))                          
+                                (reparse-symbol arg-sub-list) [2511 2535])
+                            ("aDiameter" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2536 2553])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2554 2569])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2570 2586])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2587 2607])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2608 2629]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2837 2980])
+                        (reparse-symbol classsubparts) [2491 2634])
                     ("circle" function
                        (:typemodifiers ("inline")
                         :arguments 
@@ -1401,12 +544,12 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [3004 3028])
-                            ("aDiameter" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3029 3046])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3047 3067])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3068 3089]))                          
+                                (reparse-symbol arg-sub-list) [2658 2682])
+                            ("aDiameter" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2683 2700])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2701 2721])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2722 2743]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [2985 3175])
+                        (reparse-symbol classsubparts) [2639 2829])
                     ("circle" function
                        (:typemodifiers ("inline")
                         :arguments 
@@ -1414,13 +557,49 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [3199 3223])
-                            ("aDiameter" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3224 3241])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3242 3262])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3263 3284]))                          
+                                (reparse-symbol arg-sub-list) [2853 2877])
+                            ("aDiameter" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2878 2895])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2896 2916])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2917 2938]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [3180 3370])
+                        (reparse-symbol classsubparts) [2834 3024])
                     ("circle_filled" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aCenter" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3056 3080])
+                            ("aDiameter" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3081 3098])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3099 3114])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3115 3131])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3132 3152])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3153 3174])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3175 3192]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3029 3197])
+                    ("circle_filled" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("aCenter" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Location" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3229 3253])
+                            ("aDiameter" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3254 3271])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3272 3287])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3288 3304])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3305 3325])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3326 3347])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3348 3365]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3202 3370])
+                    ("square_filled" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
@@ -1430,32 +609,19 @@
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
                                 (reparse-symbol arg-sub-list) [3402 3426])
-                            ("aDiameter" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3427 3444])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3445 3460])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3461 3477])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3478 3498])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3499 3520])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3521 3538]))                          
+                            ("aSide" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3427 3440])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3441 3456])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3457 3473])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3474 3494])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3495 3516])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3517 3534])
+                            ("aLineCap" variable
+                               (:default-value "LineCap"
+                                :type ("LineCap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3535 3561])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3563 3568]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [3375 3543])
-                    ("circle_filled" function
-                       (:pure-virtual-flag t
-                        :prototype-flag t
-                        :typemodifiers ("virtual")
-                        :arguments 
-                          ( ("aCenter" variable
-                               (:reference 1
-                                :constant-flag t
-                                :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [3575 3599])
-                            ("aDiameter" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3600 3617])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3618 3633])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3634 3650])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3651 3671])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3672 3693])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3694 3711]))                          
-                        :type "void")
-                        (reparse-symbol classsubparts) [3548 3716])
+                        (reparse-symbol classsubparts) [3375 3573])
                     ("square_filled" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1465,43 +631,20 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [3748 3772])
-                            ("aSide" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3773 3786])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3787 3802])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3803 3819])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3820 3840])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3841 3862])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3863 3880])
+                                (reparse-symbol arg-sub-list) [3605 3629])
+                            ("aSide" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3630 3643])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3644 3659])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3660 3676])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3677 3697])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3698 3719])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3720 3737])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [3881 3907])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3909 3914]))                          
+                                (reparse-symbol arg-sub-list) [3738 3764])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3766 3771]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [3721 3919])
-                    ("square_filled" function
-                       (:pure-virtual-flag t
-                        :prototype-flag t
-                        :typemodifiers ("virtual")
-                        :arguments 
-                          ( ("aCenter" variable
-                               (:reference 1
-                                :constant-flag t
-                                :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [3951 3975])
-                            ("aSide" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3976 3989])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3990 4005])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4006 4022])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4023 4043])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4044 4065])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4066 4083])
-                            ("aLineCap" variable
-                               (:default-value "LineCap"
-                                :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [4084 4110])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4112 4117]))                          
-                        :type "void")
-                        (reparse-symbol classsubparts) [3924 4122])
+                        (reparse-symbol classsubparts) [3578 3776])
                     ("triangle_filled" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1511,20 +654,20 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [4156 4180])
-                            ("aSide" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4181 4194])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4195 4210])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4211 4227])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4228 4248])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4249 4270])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4271 4288])
+                                (reparse-symbol arg-sub-list) [3810 3834])
+                            ("aSide" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3835 3848])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3849 3864])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3865 3881])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3882 3902])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3903 3924])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3925 3942])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [4289 4315])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4317 4322]))                          
+                                (reparse-symbol arg-sub-list) [3943 3969])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3971 3976]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [4127 4327])
+                        (reparse-symbol classsubparts) [3781 3981])
                     ("triangle_filled" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1534,40 +677,40 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [4361 4385])
-                            ("aSide" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4386 4399])
-                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4400 4415])
-                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4416 4432])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4433 4453])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4454 4475])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4476 4493])
+                                (reparse-symbol arg-sub-list) [4015 4039])
+                            ("aSide" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4040 4053])
+                            ("aAspect" variable (:type ("Aspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4054 4069])
+                            ("aAngle" variable (:type ("Rotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4070 4086])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4087 4107])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4108 4129])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4130 4147])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [4494 4520])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4522 4527]))                          
+                                (reparse-symbol arg-sub-list) [4148 4174])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4176 4181]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [4332 4532])
+                        (reparse-symbol classsubparts) [3986 4186])
                     ("path_outline" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("first" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4564 4608])
-                            ("last" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4609 4652])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4653 4673])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4674 4695])
+                          ( ("first" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4218 4262])
+                            ("last" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4263 4306])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4307 4327])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4328 4349])
                             ("aClose" variable
                                (:default-value "false"
                                 :type "bool")
-                                (reparse-symbol arg-sub-list) [4696 4715])
+                                (reparse-symbol arg-sub-list) [4350 4369])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [4717 4743])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4745 4750]))                          
+                                (reparse-symbol arg-sub-list) [4371 4397])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4399 4404]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [4538 4755])
+                        (reparse-symbol classsubparts) [4192 4409])
                     ("path_outline" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1577,35 +720,35 @@
                                (:pointer 1
                                 :constant-flag t
                                 :type "double")
-                                (reparse-symbol arg-sub-list) [4786 4806])
+                                (reparse-symbol arg-sub-list) [4440 4460])
                             ("last" variable
                                (:pointer 1
                                 :constant-flag t
                                 :type "double")
-                                (reparse-symbol arg-sub-list) [4807 4826])
-                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4827 4847])
-                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4848 4869])
+                                (reparse-symbol arg-sub-list) [4461 4480])
+                            ("aOutlineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4481 4501])
+                            ("aOutlineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4502 4523])
                             ("aClose" variable
                                (:default-value "false"
                                 :type "bool")
-                                (reparse-symbol arg-sub-list) [4870 4889])
+                                (reparse-symbol arg-sub-list) [4524 4543])
                             ("aLineCap" variable
                                (:default-value "LineCap"
                                 :type ("LineCap" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [4891 4917])
-                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4919 4924]))                          
+                                (reparse-symbol arg-sub-list) [4545 4571])
+                            ("" variable (:type ("Butt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4573 4578]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [4760 4929])
+                        (reparse-symbol classsubparts) [4414 4583])
                     ("path_fill" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("first" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4957 5001])
-                            ("last" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5002 5045])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5046 5063]))                          
+                          ( ("first" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4611 4655])
+                            ("last" variable (:type ("std::vector::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4656 4699])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4700 4717]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [4934 5068])
+                        (reparse-symbol classsubparts) [4588 4722])
                     ("path_fill" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1615,15 +758,15 @@
                                (:pointer 1
                                 :constant-flag t
                                 :type "double")
-                                (reparse-symbol arg-sub-list) [5096 5116])
+                                (reparse-symbol arg-sub-list) [4750 4770])
                             ("last" variable
                                (:pointer 1
                                 :constant-flag t
                                 :type "double")
-                                (reparse-symbol arg-sub-list) [5117 5136])
-                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5137 5154]))                          
+                                (reparse-symbol arg-sub-list) [4771 4790])
+                            ("aFillColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4791 4808]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [5073 5159])
+                        (reparse-symbol classsubparts) [4727 4813])
                     ("double_arrow" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1633,44 +776,44 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5191 5209])
+                                (reparse-symbol arg-sub-list) [4845 4863])
                             ("b" variable
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5210 5228])
-                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5229 5242])
-                            ("aLineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5243 5261])
-                            ("aArrowWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5262 5281]))                          
+                                (reparse-symbol arg-sub-list) [4864 4882])
+                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4883 4896])
+                            ("aLineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4897 4915])
+                            ("aArrowWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4916 4935]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [5165 5286])
+                        (reparse-symbol classsubparts) [4819 4940])
                     ("grid" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("aStep" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5309 5322])
-                            ("aLineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5323 5340])
-                            ("aLineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5341 5359]))                          
+                          ( ("aStep" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4963 4976])
+                            ("aLineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4977 4994])
+                            ("aLineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4995 5013]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [5291 5364])
+                        (reparse-symbol classsubparts) [4945 5018])
                     ("border" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("aLineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5389 5406])
-                            ("aLineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5407 5425]))                          
+                          ( ("aLineColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5043 5060])
+                            ("aLineWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5061 5079]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [5369 5430])
+                        (reparse-symbol classsubparts) [5023 5084])
                     ("background" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5459 5472]))                          
+                          ( ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5113 5126]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [5435 5477])
+                        (reparse-symbol classsubparts) [5089 5131])
                     ("text" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1680,22 +823,22 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5501 5519])
-                            ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5520 5538])
-                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5539 5552])
-                            ("aSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5553 5566])
+                                (reparse-symbol arg-sub-list) [5155 5173])
+                            ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5174 5192])
+                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5193 5206])
+                            ("aSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5207 5220])
                             ("aTextStyle" variable
                                (:reference 1
                                 :constant-flag t
                                 :default-value "TextStyle()"
                                 :type ("TextStyle" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5567 5608])
+                                (reparse-symbol arg-sub-list) [5221 5262])
                             ("aRotation" variable
                                (:default-value "Rotation"
                                 :type ("Rotation" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5610 5639]))                          
+                                (reparse-symbol arg-sub-list) [5264 5293]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [5483 5648])
+                        (reparse-symbol classsubparts) [5137 5302])
                     ("text" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1705,84 +848,84 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5671 5689])
-                            ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5690 5708])
-                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5709 5722])
-                            ("aSize" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5723 5736])
+                                (reparse-symbol arg-sub-list) [5325 5343])
+                            ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5344 5362])
+                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5363 5376])
+                            ("aSize" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5377 5390])
                             ("aTextStyle" variable
                                (:reference 1
                                 :constant-flag t
                                 :default-value "TextStyle()"
                                 :type ("TextStyle" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5737 5778])
+                                (reparse-symbol arg-sub-list) [5391 5432])
                             ("aRotation" variable
                                (:default-value "Rotation"
                                 :type ("Rotation" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5780 5809]))                          
+                                (reparse-symbol arg-sub-list) [5434 5463]))                          
                         :type "void")
-                        (reparse-symbol classsubparts) [5653 5818])
+                        (reparse-symbol classsubparts) [5307 5472])
                     ("text_size" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5846 5864])
-                            ("aSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5865 5878])
+                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5500 5518])
+                            ("aSize" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5519 5532])
                             ("aTextStyle" variable
                                (:reference 1
                                 :constant-flag t
                                 :default-value "TextStyle()"
                                 :type ("TextStyle" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [5879 5920])
+                                (reparse-symbol arg-sub-list) [5533 5574])
                             ("x_bearing" variable
                                (:pointer 1
                                 :default-value "nullptr"
                                 :type "double")
-                                (reparse-symbol arg-sub-list) [5922 5949]))                          
+                                (reparse-symbol arg-sub-list) [5576 5603]))                          
                         :type ("Size" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [5823 5955])
+                        (reparse-symbol classsubparts) [5477 5609])
                     ("text_size" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :typemodifiers ("virtual")
                         :arguments 
-                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5983 6001])
-                            ("aSize" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6002 6015])
+                          ( ("aText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5637 5655])
+                            ("aSize" variable (:type ("Scaled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5656 5669])
                             ("aTextStyle" variable
                                (:reference 1
                                 :constant-flag t
                                 :default-value "TextStyle()"
                                 :type ("TextStyle" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [6016 6057])
+                                (reparse-symbol arg-sub-list) [5670 5711])
                             ("x_bearing" variable
                                (:pointer 1
                                 :default-value "nullptr"
                                 :type "double")
-                                (reparse-symbol arg-sub-list) [6059 6086]))                          
+                                (reparse-symbol arg-sub-list) [5713 5740]))                          
                         :type ("Size" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [5960 6092])
+                        (reparse-symbol classsubparts) [5614 5746])
                     ("convert" function
                        (:methodconst-flag t
                         :typemodifiers ("inline")
                         :arguments 
-                          ( ("a" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6120 6129]))                          
+                          ( ("a" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5774 5783]))                          
                         :type ("Scaled" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [6098 6175])
+                        (reparse-symbol classsubparts) [5752 5829])
                     ("scale" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :methodconst-flag t
                         :typemodifiers ("virtual")
                         :type "double")
-                        (reparse-symbol classsubparts) [6181 6214])
+                        (reparse-symbol classsubparts) [5835 5868])
                     ("origin_offset" function
                        (:pure-virtual-flag t
                         :prototype-flag t
                         :methodconst-flag t
                         :typemodifiers ("virtual")
                         :type ("Location" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [6219 6262])
-                    ("protected" label nil (reparse-symbol classsubparts) [6265 6275])
+                        (reparse-symbol classsubparts) [5873 5916])
+                    ("protected" label nil (reparse-symbol classsubparts) [5919 5929])
                     ("arrow_head" function
                        (:pure-virtual-flag t
                         :prototype-flag t
@@ -1792,15 +935,15 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("Location" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [6341 6359])
-                            ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [6360 6373])
-                            ("sign" variable (:type "double") (reparse-symbol arg-sub-list) [6374 6386])
-                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6387 6400])
-                            ("aArrowWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6401 6420]))                          
+                                (reparse-symbol arg-sub-list) [5995 6013])
+                            ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [6014 6027])
+                            ("sign" variable (:type "double") (reparse-symbol arg-sub-list) [6028 6040])
+                            ("aColor" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6041 6054])
+                            ("aArrowWidth" variable (:type ("Pixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6055 6074]))                          
                         :type ("Location" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [6313 6425]))                  
+                        (reparse-symbol classsubparts) [5967 6079]))                  
                 :type "class")
-                nil [615 6429])
+                nil [269 6083])
             ("<<" function
                (:operator-flag t
                 :typemodifiers ("inline")
@@ -1808,19 +951,19 @@
                   ( ("out" variable
                        (:reference 1
                         :type ("std::ostream" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [6482 6500])
+                        (reparse-symbol arg-sub-list) [6136 6154])
                     ("aSurface" variable
                        (:reference 1
                         :constant-flag t
                         :type ("Surface" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [6501 6525]))                  
+                        (reparse-symbol arg-sub-list) [6155 6179]))                  
                 :type ("std::ostream" type (:type "class") nil nil))
-                nil [6448 6678]))          
+                nil [6102 6332]))          
       :file "surface.hh"
-      :pointmax 6846
-      :fsize 6845
-      :lastmodtime '(22673 46825 0 0)
-      :unmatched-syntax '((punctuation 6306 . 6307) (DEFAULT 6299 . 6306) (punctuation 6297 . 6298) (semantic-list 6294 . 6296) (symbol 6287 . 6294) (INLINE 6280 . 6286) (semantic-list 5809 . 5812) (semantic-list 5639 . 5642) (punctuation 4918 . 4919) (punctuation 4917 . 4918) (punctuation 4744 . 4745) (punctuation 4743 . 4744) (punctuation 4521 . 4522) (punctuation 4520 . 4521) (punctuation 4316 . 4317) (punctuation 4315 . 4316) (punctuation 4111 . 4112) (punctuation 4110 . 4111) (punctuation 3908 . 3909) (punctuation 3907 . 3908) (punctuation 2672 . 2673) (punctuation 2671 . 2672) (punctuation 2511 . 2512) (punctuation 2510 . 2511) (punctuation 2382 . 2383) (punctuation 2381 . 2382) (punctuation 2254 . 2255) (punctuation 2253 . 2254) (symbol 942 . 951) (semantic-list 742 . 754) (symbol 728 . 733) (punctuation 726 . 727) (symbol 721 . 726) (punctuation 719 . 720) (symbol 714 . 719) (symbol 728 . 733) (punctuation 726 . 727) (symbol 721 . 726) (punctuation 719 . 720) (symbol 714 . 719) (ENUM 692 . 696) (symbol 678 . 684) (punctuation 676 . 677) (symbol 671 . 676) (punctuation 669 . 670) (symbol 665 . 669) (symbol 678 . 684) (punctuation 676 . 677) (symbol 671 . 676) (punctuation 669 . 670) (symbol 665 . 669) (ENUM 644 . 648) (USING 323 . 328) (USING 269 . 274) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+      :pointmax 6500
+      :fsize 6499
+      :lastmodtime '(22711 56982 0 0)
+      :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
       :tags 
@@ -2331,200 +1474,7 @@
       :fsize 4739
       :lastmodtime '(22693 43409 0 0)
       :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
-    (semanticdb-table "semanticdb-table"
-      :major-mode c++-mode
-      :tags 
-        '( ("iostream" include (:system-flag t) nil [15 34])
-            ("string" include (:system-flag t) nil [35 52])
-            ("vector" include (:system-flag t) nil [53 70])
-            ("cstdint" include (:system-flag t) nil [71 89])
-            ("Color" type
-               (:members 
-                  ( ("public" label nil (reparse-symbol classsubparts) [181 188])
-                    ("value_type" variable
-                       (:default-value "uint32_t"
-                        :type "int")
-                        (reparse-symbol classsubparts) [199 221])
-                    ("NoChange" variable
-                       (:typemodifiers ("static")
-                        :constant-flag t
-                        :default-value "0xFFFFFFFE"
-                        :type ("value_type" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [236 282])
-                    ("Color" function
-                       (:constructor-flag t
-                        :typemodifiers ("inline")
-                        :type ("Color" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [288 324])
-                    ("Color" function
-                       (:constructor-flag t
-                        :arguments 
-                          ( ("aColor" variable (:type ("Uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [450 462]))                          
-                        :type ("constexpr" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [427 505])
-                    ("Color" function
-                       (:constructor-flag t
-                        :typemodifiers ("inline")
-                        :arguments 
-                          ( ("aColor" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [523 542]))                          
-                        :type ("Color" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [510 567])
-                    ("Color" function
-                       (:constructor-flag t
-                        :typemodifiers ("inline")
-                        :arguments 
-                          ( ("aColor" variable
-                               (:pointer 1
-                                :constant-flag t
-                                :type "char")
-                                (reparse-symbol arg-sub-list) [585 604]))                          
-                        :type ("Color" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [572 629])
-                    ("=" function
-                       (:operator-flag t
-                        :typemodifiers ("inline")
-                        :arguments 
-                          ( ("aColor" variable (:type ("Uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [866 878]))                          
-                        :type ("Color" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [842 936])
-                    ("=" function
-                       (:operator-flag t
-                        :typemodifiers ("inline")
-                        :arguments 
-                          ( ("aColor" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [965 984]))                          
-                        :type ("Color" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [941 1023])
-                    ("==" function
-                       (:methodconst-flag t
-                        :operator-flag t
-                        :typemodifiers ("inline")
-                        :arguments 
-                          ( ("aColor" variable
-                               (:reference 1
-                                :constant-flag t
-                                :type ("Color" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1054 1074]))                          
-                        :type "bool")
-                        (reparse-symbol classsubparts) [1029 1116])
-                    ("!=" function
-                       (:methodconst-flag t
-                        :operator-flag t
-                        :typemodifiers ("inline")
-                        :arguments 
-                          ( ("aColor" variable
-                               (:reference 1
-                                :constant-flag t
-                                :type ("Color" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [1146 1166]))                          
-                        :type "bool")
-                        (reparse-symbol classsubparts) [1121 1205])
-                    ("alpha" function
-                       (:methodconst-flag t
-                        :typemodifiers ("inline")
-                        :type "double")
-                        (reparse-symbol classsubparts) [1211 1297])
-                    ("red" function
-                       (:methodconst-flag t
-                        :typemodifiers ("inline")
-                        :type "double")
-                        (reparse-symbol classsubparts) [1302 1377])
-                    ("green" function
-                       (:methodconst-flag t
-                        :typemodifiers ("inline")
-                        :type "double")
-                        (reparse-symbol classsubparts) [1382 1458])
-                    ("blue" function
-                       (:methodconst-flag t
-                        :typemodifiers ("inline")
-                        :type "double")
-                        (reparse-symbol classsubparts) [1463 1531])
-                    ("alphaI" function
-                       (:methodconst-flag t
-                        :typemodifiers ("inline")
-                        :type ("size_t" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1537 1620])
-                    ("alphaI" function
-                       (:typemodifiers ("inline")
-                        :arguments 
-                          ( ("v" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1644 1657]))                          
-                        :type "void")
-                        (reparse-symbol classsubparts) [1625 1712])
-                    ("rgbI" function
-                       (:methodconst-flag t
-                        :typemodifiers ("inline")
-                        :type ("size_t" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [1717 1794])
-                    ("empty" function
-                       (:methodconst-flag t
-                        :typemodifiers ("inline")
-                        :type "bool")
-                        (reparse-symbol classsubparts) [1800 1856])
-                    ("string" function
-                       (:methodconst-flag t
-                        :parent "std"
-                        :type "int")
-                        (reparse-symbol classsubparts) [2019 2062])
-                    ("to_string" function
-                       (:prototype-flag t
-                        :methodconst-flag t
-                        :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2068 2098])
-                    ("from_string" function
-                       (:prototype-flag t
-                        :arguments 
-                          ( ("aColor" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2120 2139]))                          
-                        :type "void")
-                        (reparse-symbol classsubparts) [2103 2140])
-                    ("from_string" function
-                       (:typemodifiers ("inline")
-                        :arguments 
-                          ( ("s" variable
-                               (:pointer 1
-                                :constant-flag t
-                                :type "char")
-                                (reparse-symbol arg-sub-list) [2169 2183])
-                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2184 2195]))                          
-                        :type "void")
-                        (reparse-symbol classsubparts) [2145 2233])
-                    ("DistinctColors" variable
-                       (:dereference 1
-                        :typemodifiers ("static")
-                        :constant-flag t
-                        :type ("value_type" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [2239 2280])
-                    ("distinct_colors" function
-                       (:prototype-flag t
-                        :typemodifiers ("static")
-                        :type ("std::vector" type
-                             (:template-specifier 
-                                ( ("std::string" type nil nil nil))                                
-                              :type "class")
-                              nil nil))
-                        (reparse-symbol classsubparts) [2285 2335])
-                    ("private" label nil (reparse-symbol classsubparts) [2338 2346])
-                    ("mColor" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2351 2369]))                  
-                :type "class")
-                nil [166 2495])
-            ("ColorNoChange" variable
-               (:constant-flag t
-                :type ("Color" type (:type "class") nil nil))
-                nil [2512 2555])
-            ("<<" function
-               (:operator-flag t
-                :typemodifiers ("inline")
-                :arguments 
-                  ( ("out" variable
-                       (:reference 1
-                        :type ("std::ostream" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [2589 2607])
-                    ("c" variable (:type ("Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2608 2616]))                  
-                :type ("std::ostream" type (:type "class") nil nil))
-                nil [2557 2653]))          
-      :file "color.hh"
-      :pointmax 2821
-      :fsize 2820
-      :lastmodtime '(22698 58224 0 0)
-      :unmatched-syntax '((OPERATOR 2010 . 2018) (INLINE 2003 . 2009) (punctuation 840 . 841) (symbol 833 . 840) (punctuation 831 . 832) (punctuation 829 . 830) (symbol 825 . 829) (punctuation 824 . 825) (punctuation 823 . 824) (punctuation 822 . 823) (symbol 817 . 822) (punctuation 816 . 817) (punctuation 815 . 816) (punctuation 814 . 815) (symbol 810 . 814) (punctuation 809 . 810) (symbol 798 . 809) (punctuation 797 . 798) (punctuation 796 . 797) (symbol 793 . 796) (punctuation 792 . 793) (symbol 783 . 792) (punctuation 782 . 783) (punctuation 781 . 782) (symbol 778 . 781) (TYPENAME 769 . 777) (punctuation 767 . 768) (symbol 763 . 767) (TYPENAME 754 . 762) (punctuation 753 . 754) (TEMPLATE 744 . 752) (punctuation 425 . 426) (symbol 418 . 425) (punctuation 416 . 417) (punctuation 414 . 415) (symbol 410 . 414) (punctuation 409 . 410) (punctuation 408 . 409) (punctuation 407 . 408) (symbol 402 . 407) (punctuation 401 . 402) (punctuation 400 . 401) (punctuation 399 . 400) (symbol 395 . 399) (punctuation 394 . 395) (symbol 383 . 394) (punctuation 382 . 383) (punctuation 381 . 382) (symbol 378 . 381) (punctuation 377 . 378) (symbol 368 . 377) (punctuation 367 . 368) (punctuation 366 . 367) (symbol 363 . 366) (TYPENAME 354 . 362) (punctuation 352 . 353) (symbol 348 . 352) (TYPENAME 339 . 347) (punctuation 338 . 339) (TEMPLATE 329 . 337) (symbol 226 . 235) (USING 193 . 198) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
       :tags 
@@ -3480,13 +2430,185 @@
       :fsize 7983
       :lastmodtime '(22673 44715 0 0))
     (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [15 32])
+            ("TextStyle" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [128 135])
+                    ("Slant" type (:type "class") (reparse-symbol classsubparts) [145 176])
+                    ("Weight" type (:type "class") (reparse-symbol classsubparts) [186 216])
+                    ("TextStyle" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :type ("TextStyle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [222 292])
+                    ("TextStyle" function
+                       (:constructor-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("aFontFamily" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [314 338])
+                            ("aSlant" variable
+                               (:default-value "Slant"
+                                :type ("Slant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [339 359])
+                            ("" variable (:type ("Normal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [361 368])
+                            ("aWeight" variable
+                               (:default-value "Weight"
+                                :type ("Weight" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [369 392])
+                            ("" variable (:type ("Normal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [394 401]))                          
+                        :type ("TextStyle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [297 465])
+                    ("font_family" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [471 533])
+                    ("slant" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Slant" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [538 583])
+                    ("weight" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Weight" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [588 636])
+                    ("slant_as_stirng" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [642 915])
+                    ("weight_as_stirng" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [921 1194])
+                    ("font_family" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1200 1257])
+                    ("font_family" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1286 1300]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1262 1321])
+                    ("font_family" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1350 1364])
+                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1365 1376]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1326 1408])
+                    ("slant" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aSlant" variable (:type ("Slant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1432 1445]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1414 1466])
+                    ("slant" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aSlant" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1489 1508]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1471 1787])
+                    ("slant" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1810 1824])
+                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1825 1836]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1792 1868])
+                    ("weight" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aWeight" variable (:type ("Weight" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1893 1908]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1874 1931])
+                    ("weight" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("aWeight" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1955 1975]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1936 2258])
+                    ("weight" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2282 2296])
+                            ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2297 2308]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2263 2341])
+                    ("private" label nil (reparse-symbol classsubparts) [2344 2352])
+                    ("mFontFamily" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2357 2381])
+                    ("mSlant" variable (:type ("Slant" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2386 2399])
+                    ("mWeight" variable (:type ("Weight" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2404 2419]))                  
+                :type "class")
+                nil [109 2423]))          
       :file "text-style.hh"
+      :pointmax 2611
       :fsize 2610
-      :lastmodtime '(22666 3994 0 0))
+      :lastmodtime '(22666 3994 0 0)
+      :unmatched-syntax '((punctuation 393 . 394) (punctuation 392 . 393) (punctuation 360 . 361) (punctuation 359 . 360) (symbol 209 . 213) (punctuation 207 . 208) (symbol 201 . 207) (symbol 209 . 213) (punctuation 207 . 208) (symbol 201 . 207) (ENUM 181 . 185) (symbol 167 . 173) (punctuation 165 . 166) (symbol 159 . 165) (symbol 167 . 173) (punctuation 165 . 166) (symbol 159 . 165) (ENUM 140 . 144) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+
     (semanticdb-table "semanticdb-table"
-      :file "size-scale.hh"
-      :fsize 1478
-      :lastmodtime '(22671 23684 0 0)))
+      :major-mode c++-mode
+      :tags 
+        '( ("map" include (:system-flag t) nil [15 29])
+            ("acmacs-base/color.hh" include nil nil [31 62])
+            ("acmacs-draw/size.hh" include nil nil [63 93])
+            ("Surface" type
+               (:prototype t
+                :type "class")
+                nil [95 109])
+            ("ContinentLabels" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [186 230])
+            ("continent_color" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aContinent" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [254 277]))                  
+                :type ("Color" type (:type "class") nil nil))
+                nil [232 278])
+            ("continent_map_draw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("aSurface" variable
+                       (:reference 1
+                        :type ("Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [303 321]))                  
+                :type "void")
+                nil [279 322])
+            ("continent_map_size" function
+               (:prototype-flag t
+                :type ("Size" type (:type "class") nil nil))
+                nil [323 349])
+            ("continent_map_aspect" function
+               (:prototype-flag t
+                :type "double")
+                nil [350 380]))          
+      :file "continent-map.hh"
+      :pointmax 548
+      :fsize 547
+      :lastmodtime '(22711 408 0 0)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
   :file "!Users!eu!AD!sources!acmacs-draw!cc!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

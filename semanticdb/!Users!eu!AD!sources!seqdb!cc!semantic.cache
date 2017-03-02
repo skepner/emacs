@@ -304,7 +304,7 @@
                         (reparse-symbol arg-sub-list) [27903 27943])
                     ("aVerbose" variable (:type "bool") (reparse-symbol arg-sub-list) [27944 27958]))                  
                 :type ("size_t" type (:type "class") nil nil))
-                nil [27856 28679])
+                nil [27856 28685])
             ("aa_at_positions_for_antigens" function
                (:methodconst-flag t
                 :parent "Seqdb"
@@ -313,7 +313,7 @@
                        (:reference 1
                         :constant-flag t
                         :type ("Antigens" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [28813 28839])
+                        (reparse-symbol arg-sub-list) [28819 28845])
                     ("aPositions" variable
                        (:reference 1
                         :constant-flag t
@@ -322,7 +322,7 @@
                                 ( ("size_t" type nil nil nil))                                
                               :type "class")
                               nil nil))
-                        (reparse-symbol arg-sub-list) [28840 28878])
+                        (reparse-symbol arg-sub-list) [28846 28884])
                     ("aa_indices" variable
                        (:reference 1
                         :type ("std::map" type
@@ -332,28 +332,28 @@
                                     ( ("size_t" type nil nil nil))                                    ) nil nil))                                
                               :type "class")
                               nil nil))
-                        (reparse-symbol arg-sub-list) [28879 28934])
-                    ("aVerbose" variable (:type "bool") (reparse-symbol arg-sub-list) [28935 28949]))                  
+                        (reparse-symbol arg-sub-list) [28885 28940])
+                    ("aVerbose" variable (:type "bool") (reparse-symbol arg-sub-list) [28941 28955]))                  
                 :type "void")
-                nil [28772 29673])
+                nil [28778 29679])
             ("load" function
                (:parent "Seqdb"
                 :arguments 
-                  ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29806 29827]))                  
+                  ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29812 29833]))                  
                 :type "void")
-                nil [29789 29867])
+                nil [29795 29873])
             ("save" function
                (:methodconst-flag t
                 :parent "Seqdb"
                 :arguments 
-                  ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29986 30007])
-                    ("indent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30008 30022]))                  
+                  ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29992 30013])
+                    ("indent" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30014 30028]))                  
                 :type "void")
-                nil [29969 30076]))          
+                nil [29975 30082]))          
       :file "seqdb.cc"
-      :pointmax 30259
-      :fsize 30258
-      :lastmodtime '(22698 60177 0 0)
+      :pointmax 30265
+      :fsize 30264
+      :lastmodtime '(22710 61650 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode

@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-mode
+      :tags 
+        '( ("MAKEFLAGS" variable (:default-value ("-w")) nil [192 207])
+            ("HIDB_SOURCES" variable (:default-value ("hidb.cc" "hidb-export.cc" "hidb-import.cc" "variant-id.cc" "vaccines.cc")) nil [282 361])
+            ("HIDB_PY_SOURCES" variable (:default-value ("py.cc" "$(HIDB_SOURCES)")) nil [361 401])
+            ("CLANG" variable (:default-value ("$(shell if g++ --version 2>&1 | grep -i llvm >/dev/null; then echo Y; else echo N; fi)")) nil [476 571])
+            ("PYTHON_VERSION" variable (:default-value ("$(shell python3 -c 'import sys; print(\"{0.major}.{0.minor}\".format(sys.version_info))')")) nil [803 908])
+            ("PYTHON_CONFIG" variable (:default-value ("python$(PYTHON_VERSION)-config")) nil [908 955])
+            ("PYTHON_MODULE_SUFFIX" variable (:default-value ("$(shell $(PYTHON_CONFIG) --extension-suffix)")) nil [955 1023])
+            ("LIB_DIR" variable (:default-value ("$(ACMACSD_ROOT)/lib")) nil [1024 1054])
+            ("LOCATION_DB_LIB" variable (:default-value ("$(LIB_DIR)/liblocationdb.so")) nil [1054 1100])
+            ("HIDB_LIB" variable (:default-value ("$(DIST)/libhidb.so")) nil [1100 1130])
+            ("OPTIMIZATION" variable (:default-value ("-O3")) nil [1228 1274])
+            ("PROFILE" variable nil nil [1274 1290])
+            ("CXXFLAGS" variable (:default-value ("-MMD" "-g" "$(OPTIMIZATION)" "$(PROFILE)" "-fPIC" "-std=$(STD)" "$(WEVERYTHING)" "$(WARNINGS)" "-Icc" "-I$(BUILD)/include" "-I$(ACMACSD_ROOT)/include" "$(PKG_INCLUDES)")) nil [1290 1447])
+            ("LDFLAGS" variable (:default-value ("$(OPTIMIZATION)" "$(PROFILE)")) nil [1447 1484])
+            ("HIDB_LDLIBS" variable (:default-value ("-L$(LIB_DIR)" "-llocationdb" "-lacmacsbase" "-lacmacschart" "-lboost_filesystem" "-lboost_system" "$$(pkg-config --libs liblzma)" "$$($(PYTHON_CONFIG) --ldflags | sed -E 's/-Wl,-stack_size,[0-9]+//')")) nil [1484 1684])
+            ("PKG_INCLUDES" variable (:default-value ("$$(pkg-config --cflags liblzma)" "$$($(PYTHON_CONFIG) --includes)")) nil [1685 1764])
+            ("BUILD" variable (:default-value ("build")) nil [1839 1853])
+            ("DIST" variable (:default-value ("$(abspath dist)")) nil [1853 1876])
+            ("all" function (:arguments ("check-acmacsd-root" "$(DIST)/hidb_backend$(PYTHON_MODULE_SUFFIX)" "$(HIDB_LIB)")) nil [1877 1957])
+            ("install" function (:arguments ("check-acmacsd-root" "install-headers" "$(DIST)/hidb_backend$(PYTHON_MODULE_SUFFIX)" "$(HIDB_LIB)")) nil [1958 2416])
+            ("install-headers" function nil nil [2417 2577])
+            ("test" function (:arguments ("install")) nil [2578 2603])
+            ("$(DIST)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(HIDB_PY_SOURCES))" "|" "$(DIST)" "$(LOCATION_DB_LIB)")) nil [2775 2958])
+            ("$(HIDB_LIB)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(HIDB_SOURCES))" "|" "$(DIST)" "$(LOCATION_DB_LIB)")) nil [2959 3095])
+            ("clean" function nil nil [3302 3351])
+            ("distclean" function (:arguments ("clean")) nil [3352 3386])
+            ("$(BUILD)" function (:arguments ("cc/%.cc" "|" "$(BUILD)" "install-headers")) nil [3461 3550])
+            ("check-acmacsd-root" function nil nil [3810 3830])
+            ("$(DIST)" function nil nil [3891 3918])
+            ("$(BUILD)" function nil nil [3919 3948])
+            (".PHONY" function (:arguments ("check-acmacsd-root")) nil [3949 3976]))          
+      :file "Makefile"
+      :pointmax 4142
+      :fsize 4141
+      :lastmodtime '(22710 62274 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!AD!sources!hidb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

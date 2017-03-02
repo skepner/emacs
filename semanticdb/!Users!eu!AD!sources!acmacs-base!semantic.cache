@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-mode
+      :tags 
+        '( ("MAKEFLAGS" variable (:default-value ("-w")) nil [116 131])
+            ("SRC_DIR" variable (:default-value ("$(abspath $(ACMACSD_ROOT)/sources)")) nil [206 251])
+            ("ACMACS_BASE_SOURCES" variable (:default-value ("virus-name.cc" "color.cc")) nil [252 297])
+            ("CLANG" variable (:default-value ("$(shell if g++ --version 2>&1 | grep -i llvm >/dev/null; then echo Y; else echo N; fi)")) nil [372 467])
+            ("OPTIMIZATION" variable (:default-value ("-O3")) nil [796 842])
+            ("PROFILE" variable nil nil [842 858])
+            ("CXXFLAGS" variable (:default-value ("-MMD" "-g" "$(OPTIMIZATION)" "$(PROFILE)" "-fPIC" "-std=$(STD)" "$(WEVERYTHING)" "$(WARNINGS)" "-Icc" "-I$(BUILD)/include" "-I$(ACMACSD_ROOT)/include" "$(PKG_INCLUDES)")) nil [858 1015])
+            ("LDFLAGS" variable (:default-value ("$(OPTIMIZATION)" "$(PROFILE)")) nil [1015 1052])
+            ("LIB_DIR" variable (:default-value ("$(ACMACSD_ROOT)/lib")) nil [1053 1083])
+            ("ACMACS_BASE_LIB" variable (:default-value ("$(DIST)/libacmacsbase.so")) nil [1083 1126])
+            ("ACMACS_BASE_LDLIBS" variable nil nil [1126 1162])
+            ("BUILD" variable (:default-value ("build")) nil [1601 1615])
+            ("DIST" variable (:default-value ("$(abspath dist)")) nil [1615 1638])
+            ("all" function (:arguments ("check-python" "install")) nil [1713 1739])
+            ("install" function (:arguments ("check-acmacsd-root" "make-dirs" "install-packages")) nil [1740 1795])
+            ("make-dirs" function nil nil [1796 2094])
+            ("install-packages" function (:arguments ("install-acmacs-base" "install-3rd-party")) nil [2169 2225])
+            ("install-acmacs-base" function (:arguments ("$(ACMACS_BASE_LIB)")) nil [2226 2925])
+            ("install-3rd-party" function nil nil [2926 2983])
+            ("$(ACMACS_BASE_LIB)" function (:arguments ("$(patsubst %.cc,$(BUILD)/%.o,$(ACMACS_BASE_SOURCES))" "|" "$(DIST)")) nil [3155 3293])
+            ("clean" function nil nil [3294 3343])
+            ("distclean" function (:arguments ("clean")) nil [3344 3378])
+            ("$(BUILD)" function (:arguments ("cc/%.cc" "|" "$(BUILD)")) nil [3453 3526])
+            ("check-acmacsd-root" function nil nil [3601 3621])
+            ("check-python" function nil nil [3682 3803])
+            ("$(DIST)" function nil nil [3804 3831])
+            ("$(BUILD)" function nil nil [3832 3861])
+            (".PHONY" function (:arguments ("check-acmacsd-root" "check-python")) nil [3862 3902]))          
+      :file "Makefile"
+      :pointmax 4068
+      :fsize 4067
+      :lastmodtime '(22711 319 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!eu!AD!sources!acmacs-base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -8,25 +8,28 @@
       :tags 
         '( ("\"\"\"
 \"\"\"" code nil nil [43 50])
-            ("pprint" include nil nil [52 85])
-            ("traceback" include nil nil [52 85])
-            ("os" include nil nil [52 85])
-            ("sys" include nil nil [52 85])
-            ("if" code nil nil [86 164])
-            ("pathlib" include nil nil [164 188])
-            ("sys" variable nil nil [189 268])
-            ("logging" include nil nil [269 283])
-            ("acmacs_map_draw" include nil nil [330 352])
-            ("acmacs_base.timeit" include nil nil [353 390])
-            ("acmacs_base.json" include nil nil [391 441])
+            ("pprint" include nil nil [52 95])
+            ("traceback" include nil nil [52 95])
+            ("tempfile" include nil nil [52 95])
+            ("os" include nil nil [52 95])
+            ("sys" include nil nil [52 95])
+            ("if" code nil nil [96 174])
+            ("pathlib" include nil nil [174 198])
+            ("sys" variable nil nil [199 278])
+            ("logging" include nil nil [279 293])
+            ("acmacs_map_draw" include nil nil [340 362])
+            ("acmacs_base.timeit" include nil nil [363 400])
+            ("acmacs_base.json" include nil nil [401 451])
             ("main" function (:arguments 
-              ( ("args" variable nil (reparse-symbol function_parameters) [526 530]))              ) nil [517 1462])
-            ("sSettings" variable nil nil [1537 6710])
-            ("exit" code nil nil [7918 7933]))          
+              ( ("args" variable nil (reparse-symbol function_parameters) [536 540]))              ) nil [527 1950])
+            ("sSettings" variable nil nil [2025 7279])
+            ("open_image" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [7370 7378]))              ) nil [7355 7965])
+            ("exit" code nil nil [9247 9262]))          
       :file "acmacs-map-draw"
-      :pointmax 8100
-      :fsize 8099
-      :lastmodtime '(22710 33173 0 0)
+      :pointmax 9429
+      :fsize 9428
+      :lastmodtime '(22710 64438 0 0)
       :unmatched-syntax nil))
   :file "!Users!eu!AD!sources!acmacs-map-draw!bin!semantic.cache"
   :semantic-tag-version "2.0"
