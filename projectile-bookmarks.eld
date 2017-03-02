@@ -1,1 +1,1 @@
-("~/AD/sources/" "~/Shared/AC/" "~/Shared/buch/" "~/ac/acmacs/" "~/Shared/emacs/" "~/AD/sources/signature-page/" "~/AD/sources/acmacs-map-draw/")
+("~/Shared/emacs/" "~/AD/sources/" "~/Shared/AC/" "~/Shared/buch/" "~/ac/acmacs/" "~/AD/sources/signature-page/" "~/AD/sources/acmacs-map-draw/")
