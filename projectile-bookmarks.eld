@@ -1,1 +1,1 @@
-("~/Shared/buch/" "~/AD/sources/" "~/ac/acmacs/" "~/Shared/AC/" "~/Shared/emacs/" "~/AD/sources/signature-page/" "~/AD/sources/acmacs-map-draw/")
+("~/Shared/buch/" "~/Shared/AC/" "~/ac/acmacs/" "~/AD/sources/" "~/GH/eupa/" "~/ac/acmacs/build/eupa/build/antigenic-map-viewer/eupa/" "~/ac/acmacs/build/eupa/" "~/ac/acmacs/build/eupa/build/antigenic-map-viewer/" "~/Shared/Unix-Common/" "~/AD/" "~/Shared/emacs/" "~/Shared/scripts/" "~/AD/sources/signature-page/" "~/AD/sources/acmacs-map-draw/")

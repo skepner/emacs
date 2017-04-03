@@ -33,7 +33,7 @@
 (global-set-key [A-M-return] '(lambda () (interactive) (switch-to-buffer "Summary")))
 
 (define-key wl-summary-mode-map (kbd "A") 'wl-summary-reply)
-(define-key wl-summary-mode-map (kbd "a") 'wl-summary-reply-with-citation))
+(define-key wl-summary-mode-map (kbd "a") 'wl-summary-reply-with-citation)
 
 ; "%n%T%P%M/%D(%W)%h:%m %t%[%17(%c %f%) %] %s"
 (setq wl-folder-summary-line-format-alist
@@ -55,7 +55,7 @@
   "^Date:"
   "^Reply-To:"))
 
-;; ----------------------------------------------------------------------
+;; ;; ----------------------------------------------------------------------
 
 ; https://github.com/dholm/dotemacs/blob/master/.emacs.d/lisp/apps/wanderlust.el
 (defun wl-summary-overview-entity-compare-by-reply-date (a b)
