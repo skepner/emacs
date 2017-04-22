@@ -190,7 +190,7 @@ Antigenic Cartography
 
 (require 'compile)
 ; python messages
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-debug "^ *\\(\\(D\\)EBUG 201.*\\)$" 2 2 2 2 2 (1 font-lock-doc-face)))
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-debug "^ *\\(\\(D\\)EBUG 201.*\\)$" 2 2 2 2 2 (1 font-lock-function-name-face)))
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-debug)
 (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-info "^ *\\(\\(I\\)NFO 201.*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-info)
@@ -205,6 +205,8 @@ Antigenic Cartography
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-warning)
 (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-info "^ *\\(\\(I\\)NFO: .*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-info)
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-debug "^ *\\(\\(D\\)EBUG: .*\\)$" 2 2 2 2 2 (1 font-lock-function-name-face)))
+(add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-debug)
 
 ;; ----------------------------------------------------------------------
 ;; Kb macros
