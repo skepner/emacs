@@ -45,7 +45,7 @@
                       less-css-mode
                       markdown-mode
                       minibuffer-complete-cycle
-                      projectile
+                      ; projectile
                       python-mode
                       real-auto-save
                       smartparens
