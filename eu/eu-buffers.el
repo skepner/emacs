@@ -25,6 +25,7 @@
   '(
     ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name) 'multi) 21 "AD/ssm-report (%d)")
     ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name) 'multi) 21 "AD/signature-page (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-whocc" buffer-file-name) 'multi) 21 "AD/acmacs-whocc (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/" buffer-file-name) 'multi) 21 "AD/acmacs-map-draw (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-chart/" buffer-file-name) 'multi) 21 "AD/acmacs-chart (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-draw/" buffer-file-name) 'multi) 21 "AD/acmacs-draw (%d)")
