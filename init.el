@@ -37,7 +37,7 @@
                       helm
                       helm-descbinds
                       helm-describe-modes
-                      helm-projectile
+                      ; helm-projectile
                       ; helm-dash
                       jq-mode
                       js2-mode
