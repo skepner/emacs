@@ -89,6 +89,9 @@
 ;; (global-set-key [S-kp-delete] 'delete-trailing-spaces)       ; in the current line
 (global-set-key [S-kp-delete] 'delete-trailing-whitespace) ; in the buffer
 
+(global-set-key [A-C-M-up] 'scroll-down-line)
+(global-set-key [A-C-M-down] 'scroll-up-line)
+
 (global-set-key [M-up] 'eu-scroll-other-window)
 (global-set-key [M-down] 'eu-scroll-other-window)
 
@@ -97,7 +100,7 @@
 
 (define-key global-map "\C-xt" 'eu-toggle-truncate-lines)
 
-(global-set-key [S-f9] 'kill-compilation)
+; (global-set-key [S-f9] 'kill-compilation)
 (global-set-key [f8] 'next-error)
 (global-set-key [S-f8] '(lambda () (interactive) (next-error -1)))
 
@@ -171,7 +174,7 @@
 (global-set-key [?\A-\M-5] '(lambda () (interactive) (eu-switch-to-compilation-buffer 5)))
 (global-set-key [?\A-\M-0] 'eu-switch-to-compilation-autoclose-buffer)
 
-(define-key compilation-mode-map "\C-cr" 'rename-uniquely)
+(global-set-key "\C-cr" 'rename-uniquely)
 ;(define-key compilation-mode-map [mouse-2] 'c++-demangle-mouse)
 (define-key compilation-mode-map [f7] 'compile-goto-error)
 (define-key compilation-mode-map [mouse-3] 'compile-mouse-goto-error)

@@ -74,6 +74,29 @@
             nil
           (eu-compile-find-makefile pattern up-dir stop-directory))))))
 
+;; ----------------------------------------------------------------------
+; kill compilation by sending SIGINT, then SIGQUIT, then SIGKILL
+;; ----------------------------------------------------------------------
+
+(defun eu-kill-compilation ()
+  "Kill the process made by the \\[compile] or \\[grep] commands. First sends SIGINT, then SIGQUIT, then SIGKILL"
+  (interactive)
+  (let ((buffer (compilation-find-buffer)))
+    (if (get-buffer-process buffer)
+        (progn
+          (interrupt-process (get-buffer-process buffer))
+          (sleep-for 1)
+          (if (get-buffer-process buffer)
+              (progn
+                (quit-process (get-buffer-process buffer))
+                (sleep-for 1)
+                (if (get-buffer-process buffer)
+                    (kill-process (get-buffer-process buffer))
+                ))))
+      (error "The %s process is not running" (downcase mode-name)))))
+
+(global-set-key [S-f9] 'eu-kill-compilation)
+
 ;----------------------------------------------------------------------
 
 ;;     (progn
