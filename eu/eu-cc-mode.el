@@ -86,6 +86,7 @@
   (define-key c++-mode-map "\C-cb" 'eu-br-find)
 
   (define-key c-mode-base-map "\C-c\C-k" 'eu-comment-word)
+  (define-key c-mode-base-map "\C-c\C-r" 'eu-comment-region)
 
     ;(define-key c++-mode-map (quote [4194402]) '(lambda () (interactive) (insert "begin()"))) ; Alt-b
     ;(define-key c++-mode-map (quote [4194405]) '(lambda () (interactive) (insert "end()"))) ; Alt-e
@@ -275,6 +276,29 @@
       (insert "/*")
       (forward-word 1)
       (insert "*/")
+      )))
+
+(defun eu-comment-region (beg end arg)
+  (interactive (list (mark) (point) current-prefix-arg))
+  (if arg
+      (save-excursion
+        (goto-char (- end 3))
+        (if (looking-at " \\*/")
+            (delete-char 3 nil)
+          (progn
+            (forward-char)
+            (if (looking-at "\\*/")
+                (delete-char 2 nil))))
+        (goto-char beg)
+        (if (looking-at "/\\* ")
+            (delete-char 3 nil)
+          (if (looking-at "/\\*")
+              (delete-char 2 nil))))
+    (save-excursion
+      (goto-char end)
+      (insert " */")
+      (goto-char beg)
+      (insert "/* ")
       )))
 
 ;----------------------------------------------------------------------
