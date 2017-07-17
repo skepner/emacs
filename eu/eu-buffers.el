@@ -23,6 +23,8 @@
 
 (setq msb-menu-cond
   '(
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-api" buffer-file-name) 'multi) 21 "AD/acmacs-api (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-webserver" buffer-file-name) 'multi) 21 "AD/acmacs-webserver (%d)")
     ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name) 'multi) 21 "AD/ssm-report (%d)")
     ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name) 'multi) 21 "AD/signature-page (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-whocc" buffer-file-name) 'multi) 21 "AD/acmacs-whocc (%d)")
