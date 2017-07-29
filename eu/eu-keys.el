@@ -145,6 +145,9 @@
 (global-set-key (kbd "C-h b") 'helm-descbinds)
 (global-set-key (kbd "C-h m") 'helm-describe-modes)
 (global-set-key (kbd "C-M-,") 'helm-etags-select)
+(global-set-key (kbd "C-M-g") 'helm-ag)
+(global-set-key (kbd "C-M-S-g") 'helm-do-ag)
+(global-set-key (kbd "C-M-b") 'helm-do-ag-buffers)
 (define-key minibuffer-local-map (kbd "C-M-h") 'helm-minibuffer-history)
 
 ;----------------------------------------------------------------------

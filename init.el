@@ -22,6 +22,7 @@
 (require 'msb)
 (require 'pulse)
 (require 'recentf)
+(require 'sass-mode)
 (require 'tex-mode)
 
 ;; ----------------------------------------------------------------------
@@ -32,9 +33,11 @@
                       coffee-mode
                       csharp-mode       ; for Uno
                       dash-at-point
-                      ; elm-mode
+                                        ; elm-mode
+                      haml-mode         ; required by sass-mode
                       haskell-mode
                       helm
+                      helm-ag
                       helm-descbinds
                       helm-describe-modes
                       ; helm-projectile
@@ -48,6 +51,7 @@
                       ; projectile
                       python-mode
                       real-auto-save
+                      sass-mode
                       smartparens
                       typescript-mode
                       wanderlust
