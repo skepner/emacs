@@ -7,6 +7,7 @@
   (file-name-directory (file-truename user-init-file)))
 (add-to-list 'load-path eu-emacs-package-dir-root)
 (add-to-list 'load-path (concat eu-emacs-package-dir-root "eu"))
+(add-to-list 'load-path (concat eu-emacs-package-dir-root "cc-mode-5.33"))
 
 ;; ----------------------------------------------------------------------
 
