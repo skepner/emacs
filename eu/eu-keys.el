@@ -140,7 +140,7 @@
 (global-set-key (kbd "C-M-l") 'helm-locate)
 (global-set-key (kbd "C-M-o") 'helm-occur)
 (global-set-key (kbd "C-M-p") 'helm-projectile)
-(global-set-key [S-f4] 'helm-projectile)
+;(global-set-key [S-f4] 'helm-projectile)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-h b") 'helm-descbinds)
 (global-set-key (kbd "C-h m") 'helm-describe-modes)

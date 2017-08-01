@@ -23,6 +23,7 @@
 
 (setq msb-menu-cond
   '(
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-api/client" buffer-file-name)) 21 "AD/acmacs-api client (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-api" buffer-file-name)) 21 "AD/acmacs-api (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-webserver" buffer-file-name)) 21 "AD/acmacs-webserver (%d)")
     ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name)) 21 "AD/ssm-report (%d)")
