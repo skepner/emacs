@@ -331,7 +331,53 @@
 
 (autoload 'awk-mode "cc-mode" nil t)
 
-;----------------------------------------------------------------------
+;; ----------------------------------------------------------------------
+; rtags
+;; ----------------------------------------------------------------------
+
+(require 'rtags)
+(require 'helm-rtags)
+(setq rtags-use-helm t)
+(setq rtags-completions-enabled t)
+(rtags-enable-standard-keybindings)
+
+(define-key c++-mode-map (kbd "A-C-.") 'rtags-find-symbol-at-point)
+(define-key c++-mode-map (kbd "A-C-,") 'rtags-find-references-at-point)
+(define-key c++-mode-map (kbd "A-C-v") 'rtags-find-virtuals-at-point)
+;(define-key c++-mode-map (kbd "A-C-S-v") 'rtags-print-enum-value-at-point)
+(define-key c++-mode-map (kbd "A-C-/") 'rtags-find-all-references-at-point)
+;(define-key c++-mode-map (kbd "A-C-y") 'rtags-cycle-overlays-on-screen)
+(define-key c++-mode-map (kbd "A-C->") 'rtags-find-symbol)
+(define-key c++-mode-map (kbd "A-C-<") 'rtags-find-references)
+;; (define-key c++-mode-map (kbd "A-C-[") 'rtags-location-stack-back)
+;; (define-key c++-mode-map (kbd "A-C-]") 'rtags-location-stack-forward)
+;; (define-key c++-mode-map (kbd "A-C-D") 'rtags-diagnostics)
+(define-key c++-mode-map (kbd "A-C-x") 'rtags-compile-file)
+(define-key c++-mode-map (kbd "A-C-G") 'rtags-guess-function-at-point)
+;; (define-key c++-mode-map (kbd "A-C-p") 'rtags-dependency-tree)
+  ;; (define-key c++-mode-map (kbd "A-C-P") 'rtags-dependency-tree-all)
+  ;; (define-key c++-mode-map (kbd "A-C-e") 'rtags-reparse-file)
+  ;; (define-key c++-mode-map (kbd "A-C-E") 'rtags-preprocess-file)
+  ;; (define-key c++-mode-map (kbd "A-C-R") 'rtags-rename-symbol)
+  ;; (define-key c++-mode-map (kbd "A-C-M") 'rtags-symbol-info)
+  ;; (define-key c++-mode-map (kbd "A-C-U") 'rtags-display-summary-as-message)
+(define-key c++-mode-map (kbd "A-C-S") 'rtags-display-summary)
+  ;; (define-key c++-mode-map (kbd "A-C-O") 'rtags-goto-offset)
+  ;; (define-key c++-mode-map (kbd "A-C-;") 'rtags-find-file)
+  ;; (define-key c++-mode-map (kbd "A-C-F") 'rtags-fixit)
+  ;; (define-key c++-mode-map (kbd "A-C-L") 'rtags-copy-and-print-current-location)
+  ;; (define-key c++-mode-map (kbd "A-C-X") 'rtags-fix-fixit-at-point)
+(define-key c++-mode-map (kbd "A-C-B") 'rtags-show-rtags-buffer)
+;;(define-key c++-mode-map (kbd "A-C-K") 'rtags-make-member)
+;;(define-key c++-mode-map (kbd "A-C-I") 'rtags-imenu)
+(define-key c++-mode-map (kbd "A-C-T") 'rtags-taglist)
+(define-key c++-mode-map (kbd "A-C-h") 'rtags-print-class-hierarchy)
+;;(define-key c++-mode-map (kbd "A-C-a") 'rtags-print-source-arguments)
+;;(define-key c++-mode-map (kbd "A-C-a") 'rtags-find-functions-called-by-this-function)
+;;(define-key c++-mode-map (kbd "A-C-l") 'rtags-list-results)
+;;  (define-key c++-mode-map (kbd "A-C-Z") 'rtags-location-stack-visualize)
+
+;; ----------------------------------------------------------------------
 
 (provide 'eu-cc-mode)
 

@@ -16,10 +16,6 @@
 (global-set-key [f5] 'delete-other-windows)
 (global-set-key [f6] 'other-window)
 
-(global-set-key [f3] 'gr)
-(global-set-key [S-f3] 'query-replace-regexp)
-(global-set-key [C-S-f3] 're-search-forward)
-
 (defun eu-goto-previous-mark ()
   (interactive)
   (set-mark-command t)
@@ -27,6 +23,9 @@
 
 (global-set-key [f1] 'set-mark-command)
 (global-set-key [M-f1] 'eu-goto-previous-mark)
+
+(global-set-key [S-f3] 'query-replace-regexp)
+(global-set-key [C-S-f3] 're-search-forward)
 
 (global-set-key [f10] 'what-line)
 (global-set-key [C-f10] 'goto-line)
@@ -145,12 +144,18 @@
 (global-set-key (kbd "C-h b") 'helm-descbinds)
 (global-set-key (kbd "C-h m") 'helm-describe-modes)
 (global-set-key (kbd "C-M-,") 'helm-etags-select)
-(global-set-key (kbd "C-M-g") 'helm-ag)
-(global-set-key (kbd "C-M-S-g") 'helm-do-ag)
-(global-set-key (kbd "C-M-b") 'helm-do-ag-buffers)
 (define-key minibuffer-local-map (kbd "C-M-h") 'helm-minibuffer-history)
 
 ;----------------------------------------------------------------------
+; grep
+
+(global-set-key [f3] '(lambda () (interactive) (helm-do-ag (file-name-directory (buffer-file-name)))))
+(global-set-key [A-f3] '(lambda () (interactive) (let ((current-prefix-arg '(4))) (call-interactively 'helm-do-ag))))
+(global-set-key [M-f3] '(lambda () (interactive) (helm-ag (file-name-directory (buffer-file-name)))))
+(global-set-key (kbd "C-M-b") 'helm-do-ag-buffers)
+(define-key helm-map [f3] 'helm-follow-mode)
+
+(global-set-key (kbd "C-M-g") 'gr)
 
 ;----------------------------------------------------------------------
 

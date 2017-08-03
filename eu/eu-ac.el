@@ -45,10 +45,10 @@
   (interactive)
   (let ((dirs (split-string (buffer-file-name) "/")))
     (catch 'eu-buffer-renamed
-      (dolist (kdir '("acmacs" "python" "GH" "AD"))
+      (dolist (kdir '("acmacs" "python" "GH" "sources"))
         (let ((subl (cdr (member kdir dirs))))
           (if subl
-              (and (rename-buffer (mapconcat 'identity subl "/")) (throw 'eu-buffer-renamed 1))))))))
+              (and (rename-buffer (mapconcat 'identity subl "  ")) (throw 'eu-buffer-renamed 1))))))))
 
 (defun eu-rename-buffer-old ()
   (interactive)
