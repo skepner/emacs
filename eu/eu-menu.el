@@ -26,6 +26,8 @@
            ("AW"
             ["list whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
             ["list users" (eu-compile-push-history "aw -h albertine aw-user.py list") t]
+            "-"
+            ["aw command samples" (find-file "~/ac/acmacs/docs/template") t]
             )
            ("SSM"
             ["edit information-list-vaccines" (find-file "~/ac/acmacs/acmacs-web/data/information-list-vaccines.pydata.bz2" t) t]
@@ -49,9 +51,10 @@
             ["wsgi-startup-error.log" (eu-tail-file "/Users/eu/AcmacsWeb/log/wsgi-startup-error.log") t]
             )
            "-"
-           ["mds svn" (svn-status "~/ac/mds/trunk") t]
+           ["ceirs" (find-file "~/Shared/AC/ceirs.org") t]
+           ["todo" (find-file "~/Shared/AC/todo.org") t]
 
-           "-")
+           )
 
            (list (append '("Buch") (eu-buch-make-menu)))
 
