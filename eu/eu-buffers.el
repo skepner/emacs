@@ -23,20 +23,20 @@
 
 (setq msb-menu-cond
   '(
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-base/" buffer-file-name)) 21 "AD/acmacs-base (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-api/client" buffer-file-name)) 21 "AD/acmacs-api client (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-api" buffer-file-name)) 21 "AD/acmacs-api (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/acmacs-webserver" buffer-file-name)) 21 "AD/acmacs-webserver (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name)) 21 "AD/ssm-report (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name)) 21 "AD/signature-page (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/acmacs-whocc" buffer-file-name)) 21 "AD/acmacs-whocc (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/" buffer-file-name)) 21 "AD/acmacs-map-draw (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-chart/" buffer-file-name)) 21 "AD/acmacs-chart (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-draw/" buffer-file-name)) 21 "AD/acmacs-draw (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/" buffer-file-name)) 21 "AD/acmacs-map-draw (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-tree-maker" buffer-file-name)) 21 "AD/tree-maker (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/seqdb/" buffer-file-name)) 21 "AD/seqdb (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-webserver" buffer-file-name)) 21 "AD/acmacs-webserver (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-whocc" buffer-file-name)) 21 "AD/acmacs-whocc (%d)")
     ((and buffer-file-name (string-match "/AD/sources/hidb" buffer-file-name)) 21 "AD/hidb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/locationdb" buffer-file-name)) 21 "AD/locationdb (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/acmacs-base/" buffer-file-name)) 21 "AD/acmacs-base (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/seqdb/" buffer-file-name)) 21 "AD/seqdb (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name)) 21 "AD/signature-page (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name)) 21 "AD/ssm-report (%d)")
 
     ((and buffer-file-name (string-match "/AD/sources/seqdb-make-tree-signature-page" buffer-file-name) 'multi) 32 "AD/seqdb-make-tree-signature-page (%d)")
 
