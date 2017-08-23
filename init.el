@@ -93,6 +93,7 @@
 (require 'eu-menu)
 (require 'eu-projects)
 (require 'eu-mail)
+(require 'eu-helm)
 
 ;; ----------------------------------------------------------------------
 

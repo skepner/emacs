@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: main
+# key: main
+# --
+int main(int argc, char* const argv[])
+{
+    try {
+        return 0;
+    }
+    catch (std::exception& err) {
+        std::cerr << "ERROR: " << err.what() << '\n';
+        return 1;
+    }
+}

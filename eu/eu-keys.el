@@ -128,29 +128,6 @@
 (global-set-key (kbd "M-v") 'yank)
 
 ;----------------------------------------------------------------------
-; helm
-;; ----------------------------------------------------------------------
-
-(global-set-key [f4] 'helm-mini)
-(global-set-key [C-f4] 'helm-imenu)
-(global-set-key [M-f4] 'helm-resume)
-(global-set-key (kbd "C-M-i") 'helm-semantic-or-imenu)
-(define-key python-mode-map (kbd "C-M-i") 'helm-semantic-or-imenu)
-(global-set-key (kbd "C-M-y") 'helm-show-kill-ring)
-(global-set-key (kbd "C-M-f") 'helm-find-files)
-(global-set-key (kbd "C-M-l") 'helm-locate)
-(global-set-key (kbd "C-M-o") 'helm-occur)
-(global-set-key (kbd "C-M-p") 'helm-projectile)
-;(global-set-key [S-f4] 'helm-projectile)
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-h b") 'helm-descbinds)
-(global-set-key (kbd "C-h m") 'helm-describe-modes)
-(global-set-key (kbd "C-M-,") 'helm-etags-select)
-(define-key minibuffer-local-map (kbd "C-M-h") 'helm-minibuffer-history)
-
-(add-to-list 'dash-at-point-mode-alist '(perl-mode . "perl"))
-
-;----------------------------------------------------------------------
 ; grep
 
 (global-set-key [f3] '(lambda () (interactive) (helm-do-ag (file-name-directory (buffer-file-name)))))
