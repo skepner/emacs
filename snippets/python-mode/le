@@ -1,4 +1,4 @@
 # name: module_logger.error
 # key: le
 # --
-module_logger.${3:error}('$1 {}'.format($2))
+module_logger.${3:error}("$1 {}".format($2))
