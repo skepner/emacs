@@ -2,6 +2,27 @@
 
        ;; ----------------------------------------------------------------------
 
+       (add-hook 'mail-mode-hook 'mail-abbrevs-setup)
+       (add-hook 'mail-mode-hook 'flyspell-mode)
+       (mail-abbrevs-mode)
+
+       (defun eu-mailrc-updated ()
+         (interactive)
+         (setq mail-abbrevs nil)
+         (setq mail-aliases nil))
+
+       (defun eu-mail ()
+         (interactive)
+         (mail)
+         (let ((mail-save-dir "/r/mail"))
+           (if (not (file-accessible-directory-p mail-save-dir))
+               (make-directory mail-save-dir))
+           (write-file (make-temp-file (concat mail-save-dir "/" (format-time-string "%Y-%m%d-%H%M%S") ".")))))
+
+       (global-set-key (kbd "A-C-M-S-m") 'eu-mail)
+
+       ;; ----------------------------------------------------------------------
+
        (autoload 'wl "wl" "Wanderlust" t)
 
        (autoload 'wl-user-agent-compose "wl-draft" nil t)
