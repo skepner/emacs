@@ -118,6 +118,7 @@
 (add-hook 'makefile-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'python-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'typescript-mode-hook 'eu-func-delimiter-set-hook)
+(add-hook 'sh-mode-hook 'eu-func-delimiter-set-hook)
 
 ;----------------------------------------------------------------------
 
