@@ -41,6 +41,11 @@
                  )))
          (mu4e~headers-jump-to-maildir "/INBOX"))
 
+       (defun eu-mu4e-compose-mode-init ()
+         (flyspell-mode))
+
+       (add-hook 'mu4e-compose-mode-hook 'eu-mu4e-compose-mode-init)
+
        (global-set-key [(shift return)] 'eu-mu4e)
 
        (define-key mu4e-headers-mode-map [f3] 'mu4e-update-mail-and-index)
