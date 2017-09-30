@@ -132,7 +132,8 @@
 
 (global-set-key [f3] '(lambda () (interactive) (helm-do-ag (file-name-directory (buffer-file-name)))))
 (global-set-key [A-f3] '(lambda () (interactive) (let ((current-prefix-arg '(4))) (call-interactively 'helm-do-ag))))
-(global-set-key [M-f3] '(lambda () (interactive) (helm-ag (file-name-directory (buffer-file-name)))))
+(global-set-key [M-f3] '(lambda () (interactive) (helm-do-ag "~/AD/sources")))
+;(global-set-key [M-f3] '(lambda () (interactive) (helm-ag (file-name-directory (buffer-file-name)))))
 (global-set-key (kbd "C-M-b") 'helm-do-ag-buffers)
 (define-key helm-map [f3] 'helm-follow-mode)
 
