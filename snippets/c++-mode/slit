@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: string_literals
+# key: slit
+# --
+using namespace std::string_literals;
