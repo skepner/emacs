@@ -1,0 +1,4 @@
+#name : std::begin()
+# key: @b
+# --
+std::begin($1)

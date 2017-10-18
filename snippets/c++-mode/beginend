@@ -1,5 +1,4 @@
 #name : v.begin(), v.end()
-# key: @b
-# xkey: beginend
+# key: @be
 # --
-${1:v}.begin(), $1.end()
+std::begin(${1:v}), std::end($1)

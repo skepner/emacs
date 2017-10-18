@@ -1,0 +1,4 @@
+#name : std::end()
+# key: @e
+# --
+std::end($1)
