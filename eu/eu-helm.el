@@ -11,7 +11,7 @@
 (global-set-key (kbd "C-M-f") 'helm-find-files)
 (global-set-key (kbd "C-M-l") 'helm-locate)
 (global-set-key (kbd "C-M-o") 'helm-occur)
-(global-set-key (kbd "C-M-p") 'helm-projectile)
+(global-set-key (kbd "C-M-p") '(lambda nil (interactive) (helm-find-files-1 "~/D/org")))
 ;(global-set-key [S-f4] 'helm-projectile)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-h b") 'helm-descbinds)
