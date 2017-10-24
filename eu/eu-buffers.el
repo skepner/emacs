@@ -37,7 +37,8 @@
     ((and buffer-file-name (string-match "/AD/sources/locationdb" buffer-file-name)) 21 "AD/locationdb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/seqdb/" buffer-file-name)) 21 "AD/seqdb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name)) 21 "AD/signature-page (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/ssm-report" buffer-file-name)) 21 "AD/ssm-report (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/ssm-report/" buffer-file-name)) 21 "AD/ssm-report (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/ssm-report-n" buffer-file-name)) 21 "AD/ssm-report-n (%d)")
 
     ((and buffer-file-name (string-match "/AD/sources/seqdb-make-tree-signature-page" buffer-file-name) 'multi) 32 "AD/seqdb-make-tree-signature-page (%d)")
 
