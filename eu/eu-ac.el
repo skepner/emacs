@@ -205,7 +205,7 @@ Antigenic Cartography
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-warning)
 (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-info "^ *\\(\\(I\\)NFO: .*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-info)
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-debug "^ *\\(\\(D\\)EBUG: .*\\)$" 2 2 2 2 2 (1 font-lock-function-name-face)))
+(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-debug "^ *\\(\\(D\\)EBUG: .*\\)$" 2 2 2 2 2 (1 font-lock-string-face)))
 (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-debug)
 
 ;; ----------------------------------------------------------------------
