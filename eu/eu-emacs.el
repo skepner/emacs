@@ -204,41 +204,6 @@
   )
 
 ;; ----------------------------------------------------------------------
-; helm
-;; ----------------------------------------------------------------------
-
-;; https://www.reddit.com/r/emacs/comments/376won/select_helm_candidate_by_using_mouse_click/
-;; https://www.reddit.com/r/emacs/comments/5sv6xa/select_helm_candidate_by_using_mouse_click/
-
-;; (defun helm-select-candidate-by-mouse (prefix event)
-;;   "Select helm candidate by using mouse(click).  With PREFIX, also execute its first action."
-;;   (interactive "P\ne")
-;;   (if (helm-alive-p)
-;;       (progn
-;;         (with-helm-buffer
-;;           (let* ((posn (elt event 1))
-;;                  (cursor (line-number-at-pos (point)))
-;;                  (pointer (line-number-at-pos (posn-point posn))))
-;;             (helm--next-or-previous-line (if (> pointer cursor)
-;;                                              'next
-;;                                            'previous)
-;;                                          (abs (- pointer cursor)))))
-;;         (when prefix (helm-maybe-exit-minibuffer)))
-;;     (mouse-drag-region event)))
-
-;; (define-key helm-map (kbd "<down-mouse-1>") 'helm-select-candidate-by-mouse)
-;; (define-key helm-map (kbd "<mouse-1>") 'ignore)
-
-;; ----------------------------------------------------------------------
-;; projectile
-;; ----------------------------------------------------------------------
-
-;; (require 'projectile)
-;; (projectile-global-mode)
-;; (setq projectile-completion-system 'helm)
-;; (helm-projectile-on)
-
-;; ----------------------------------------------------------------------
 
 (provide 'eu-emacs)
 
