@@ -4,12 +4,14 @@
 (defun eu-assign-key (key)
   (interactive "kShow current buffer using key: ")
   (if (or (not (global-key-binding key)) (y-or-n-p "Redefine that key? "))
-      (let ((action (if (buffer-file-name)
-                        `(lambda nil (interactive) (find-file ,(buffer-file-name)))
-                      `(lambda nil (interactive) (switch-to-buffer ,(buffer-name))))))
+      (progn
+        (rename-buffer (format "%s <%s>" (buffer-name) (key-description key)))
+        (let ((action (if (buffer-file-name)
+                          `(lambda nil (interactive) (find-file ,(buffer-file-name)))
+                        `(lambda nil (interactive) (switch-to-buffer ,(buffer-name))))))
                                         ;(prin1 action)
-        (global-set-key key action)
-        (message (format "Key assigned to %s" (or (buffer-file-name) (buffer-name)))))))
+          (global-set-key key action)
+          (message (format "Key assigned to %s" (or (buffer-file-name) (buffer-name))))))))
 
 (defun eu--project-find-file (filename)
   `(lambda nil (interactive) (find-file ,filename)))
@@ -18,6 +20,10 @@
 
 (defun eu--project-make-filename (filename)
   (concat (file-name-as-directory eu--project-root-dir) filename))
+
+;; (defun eukey (key)
+;;   (interactive "kKey: ")
+;;   (message (format "key: %s" (key-description key))))
 
 ;; ----------------------------------------------------------------------
 
