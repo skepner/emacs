@@ -18,10 +18,26 @@
 (define-key minibuffer-local-map (kbd "C-M-h") 'helm-minibuffer-history)
 
 (global-set-key (kbd "C-M-p") '(lambda nil (interactive) (helm-find-files-1 "~/D/org")))
-(global-set-key (kbd "C-M-a") '(lambda nil (interactive) (helm-find-1 "~/ac/acmacs")))
-(global-set-key (kbd "C-M-s") '(lambda nil (interactive) (helm-find-1 "~/AD/sources")))
 
 (add-to-list 'dash-at-point-mode-alist '(perl-mode . "perl"))
+
+; grep
+(global-set-key [f3] '(lambda () (interactive) (helm-do-ag (file-name-directory (buffer-file-name)))))
+(global-set-key [A-f3] '(lambda () (interactive) (let ((current-prefix-arg '(4))) (call-interactively 'helm-do-ag))))
+;(global-set-key [M-f3] '(lambda () (interactive) (helm-ag (file-name-directory (buffer-file-name)))))
+(global-set-key (kbd "C-M-b") 'helm-do-ag-buffers)
+(define-key helm-map [f3] 'helm-follow-mode)
+(global-set-key [M-f3] '(lambda () (interactive) (helm-do-ag (eu-project-root))))
+
+; find
+(global-set-key (kbd "C-M-s") '(lambda nil (interactive) (helm-find-1 (eu-project-root))))
+
+; AD
+;(global-set-key (kbd "C-M-s") '(lambda nil (interactive) (helm-find-1 "~/AD/sources")))
+(global-set-key [M-f3] '(lambda () (interactive) (helm-do-ag "~/AD/sources")))
+
+; acmacs-c
+(global-set-key (kbd "C-M-a") '(lambda nil (interactive) (helm-find-1 "~/ac/acmacs")))
 
 ;; ----------------------------------------------------------------------
 

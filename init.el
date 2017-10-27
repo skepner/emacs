@@ -55,7 +55,6 @@
                       sass-mode
                       smartparens
                       typescript-mode
-                      wanderlust
                       yasnippet
                       )
   "A list of packages to ensure are installed at launch.")

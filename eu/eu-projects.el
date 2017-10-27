@@ -13,6 +13,22 @@
           (global-set-key key action)
           (message (format "Key assigned to %s" (or (buffer-file-name) (buffer-name))))))))
 
+;; ======================================================================
+
+(defun eu-project-root ()
+  "Returns project root based on the current buffer file name"
+  (let ((bfn (buffer-file-name)))
+    (cond ((not bfn)
+           (message "cannot infer directory from the current buffer file name") nil)
+          ((string-match "/AD/" bfn)
+           "~/AD/sources")
+          ((string-match "/ac/acmacs/" bfn)
+           "~/ac/acmacs")
+          (t
+            "~/"))))
+
+;; ======================================================================
+
 (defun eu--project-find-file (filename)
   `(lambda nil (interactive) (find-file ,filename)))
 
@@ -24,6 +40,7 @@
 ;; (defun eukey (key)
 ;;   (interactive "kKey: ")
 ;;   (message (format "key: %s" (key-description key))))
+
 
 ;; ----------------------------------------------------------------------
 
