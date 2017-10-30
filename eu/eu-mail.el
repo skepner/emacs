@@ -34,11 +34,12 @@
          (let ((mbsync-root "/r/mail/mbsync/"))
            (if (not (file-accessible-directory-p (concat mbsync-root "drafts")))
                (progn
-                 (make-directory (concat mbsync-root "drafts" t))
-                 (make-directory (concat mbsync-root "sent" t))
-                 (make-directory (concat mbsync-root "trash" t))
-                 (shell-command "mu index -m /r/mail/mbsync --rebuild")
+                 (make-directory (concat mbsync-root "drafts") t)
+                 (make-directory (concat mbsync-root "sent") t)
+                 (make-directory (concat mbsync-root "trash") t)
+                 (shell-command "mu index -m /r/mail/mbsync")
                  )))
+         (mu4e-update-mail-and-index nil)
          (mu4e~headers-jump-to-maildir "/INBOX"))
 
        (defun eu-mu4e-compose-mode-init ()
