@@ -27,6 +27,7 @@
     ((and buffer-file-name (string-match "/AD/sources/acmacs-base/" buffer-file-name)) 21 "AD/acmacs-base (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-api/client" buffer-file-name)) 21 "AD/acmacs-api client (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-api" buffer-file-name)) 21 "AD/acmacs-api (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-chart-n/" buffer-file-name)) 21 "AD/acmacs-chart-n (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-chart/" buffer-file-name)) 21 "AD/acmacs-chart (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-draw/" buffer-file-name)) 21 "AD/acmacs-draw (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/" buffer-file-name)) 21 "AD/acmacs-map-draw (%d)")
