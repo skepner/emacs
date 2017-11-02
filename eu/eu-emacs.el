@@ -204,6 +204,26 @@
   )
 
 ;; ----------------------------------------------------------------------
+;; magit
+;; ----------------------------------------------------------------------
+
+(require 'magit)
+
+(global-set-key [?\A-\M-\C-g] #'magit-list-repositories)
+
+;; Https://emacs.stackexchange.com/questions/19253/how-can-i-commit-and-push-in-one-command-from-emacs
+(defun eu-magit-commit-and-push (prefix)
+  (interactive "P")
+  (add-hook 'with-editor-post-finish-hook
+            (lambda ()
+              (call-interactively #'magit-push-current-to-upstream))
+            t t)
+  (with-editor-finish nil))
+
+(define-key magit-status-mode-map (kbd "<f12>") #'eu-magit-commit-and-push)
+
+
+;; ----------------------------------------------------------------------
 
 (provide 'eu-emacs)
 
