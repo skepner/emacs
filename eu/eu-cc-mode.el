@@ -352,6 +352,8 @@
 
 (define-key c++-mode-map (kbd "A-C-.") 'rtags-find-symbol-at-point)
 (define-key c++-mode-map (kbd "A-C-,") 'rtags-find-references-at-point)
+(define-key c++-mode-map (kbd "M-.") 'rtags-find-symbol-at-point)
+(define-key c++-mode-map (kbd "M-,") 'rtags-find-references-at-point)
 (define-key c++-mode-map (kbd "A-C-v") 'rtags-find-virtuals-at-point)
 ;(define-key c++-mode-map (kbd "A-C-S-v") 'rtags-print-enum-value-at-point)
 (define-key c++-mode-map (kbd "A-C-/") 'rtags-find-all-references-at-point)
