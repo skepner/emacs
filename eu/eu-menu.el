@@ -106,6 +106,7 @@
                    ["odette nginx" (find-file "/scp:odette:/home/eu/Shared/System/Nginx/sites-available/default.public") t]
                    "-"
                    ["hidb-night-build log" (find-file "/scp:i19:/syn/eu/log/hidb4-night-build.log") t]
+                   ["hidb5-update log" (find-file "/scp:i19:/syn/eu/log/whocc-hidb5-update.log") t]
                    ;; "-"
                    ;;  ["x12 apache ssl" (find-file "/scp:gilberte:/etc/apache2/sites/0000_any_443_acmacs-web.antigenic-cartography.org.conf") t]
                    ;; "-"

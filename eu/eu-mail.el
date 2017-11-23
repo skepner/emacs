@@ -47,7 +47,7 @@
 
        (add-hook 'mu4e-compose-mode-hook 'eu-mu4e-compose-mode-init)
 
-       (global-set-key [(shift return)] 'eu-mu4e)
+       (global-set-key [(control shift return)] 'eu-mu4e)
 
        (define-key mu4e-headers-mode-map [f3] 'mu4e-update-mail-and-index)
        (define-key mu4e-view-mode-map [f3] 'mu4e-update-mail-and-index)
