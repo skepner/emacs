@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: std::string_vew
+# key: sv
+# --
+std::string_view
