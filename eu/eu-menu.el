@@ -38,6 +38,10 @@
                    "-"
                    ["aw command samples" (find-file "~/ac/acmacs/docs/template") t]
                    )
+                  ("AD"
+                   ["remake-all R" (eu-compile-push-history "ad remake-all T=R") t]
+                   ["remake-all D" (eu-compile-push-history "ad remake-all T=D") t]
+                   )
                   ("SSM"
                    ["edit information-list-vaccines" (find-file "~/ac/acmacs/acmacs-web/data/information-list-vaccines.pydata.bz2" t) t]
                    ["update on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines") t]
