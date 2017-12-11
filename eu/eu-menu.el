@@ -13,6 +13,7 @@
                   ["today" (find-file "~/D/org/today.org") t]
                   ["todo" (find-file "~/D/org/todo.org") t]
                   ["ceirs" (find-file "~/D/org/ceirs.org") t]
+                  ["whocc" (find-file "~/D/org/whocc.org") t]
                   "-"
                   ["dtra" (find-file "~/Shared/AC/Projects/Nicola-DTRA/README" t) t]
                   )
