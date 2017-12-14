@@ -42,7 +42,10 @@
     ((and buffer-file-name (string-match "/AD/sources/ssm-report/" buffer-file-name)) 21 "AD/ssm-report (%d)")
     ((and buffer-file-name (string-match "/AD/sources/ssm-report-n" buffer-file-name)) 21 "AD/ssm-report-n (%d)")
 
-    ((and buffer-file-name (string-match "/AD/sources/seqdb-make-tree-signature-page" buffer-file-name) 'multi) 32 "AD/seqdb-make-tree-signature-page (%d)")
+    ((and buffer-file-name (string-match "/Shared/experiments" buffer-file-name) 'multi) 21 "experiments (%d)")
+
+    ; ((and buffer-file-name (string-match "/AD/sources/seqdb-make-tree-signature-page" buffer-file-name) 'multi) 32 "AD/seqdb-make-tree-signature-page (%d)")
+
 
     ((and buffer-file-name (string-match "/Shared/AC/Projects/old/ssm-report" buffer-file-name) 'multi) 51 "old/ssm-report (%d)")
     ((and buffer-file-name (string-match "/Shared/AC/Projects/old/seqdb" buffer-file-name) 'multi) 52 "old/seqdb (%d)")
