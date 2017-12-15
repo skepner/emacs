@@ -44,6 +44,8 @@
 ; Python
 ;----------------------------------------------------------------------
 
+(require 'python-mode)
+
 (defun eu-python-mode-setup ()
   (interactive)
   (set (make-local-variable 'electric-indent-chars) '()))
