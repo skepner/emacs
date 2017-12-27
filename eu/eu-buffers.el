@@ -34,6 +34,7 @@
     ((and buffer-file-name (string-match "/AD/sources/acmacs-tree-maker" buffer-file-name)) 21 "AD/tree-maker (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-webserver" buffer-file-name)) 21 "AD/acmacs-webserver (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-whocc" buffer-file-name)) 21 "AD/acmacs-whocc (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs.r" buffer-file-name)) 21 "AD/acmacs.r (%d)")
     ((and buffer-file-name (string-match "/AD/sources/hidb-5" buffer-file-name)) 21 "AD/hidb-5 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/hidb" buffer-file-name)) 21 "AD/hidb-4 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/locationdb" buffer-file-name)) 21 "AD/locationdb (%d)")
