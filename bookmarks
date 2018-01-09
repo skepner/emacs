@@ -2,21 +2,16 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("RTags_2"
- (filename . "~/AD/sources/seqdb/cc/seqdb.cc")
- (front-context-string . "aVirusType == \"A")
- (rear-context-string . "       else if (")
- (position . 7355))
-("RTags_1"
- (filename . "~/AD/sources/seqdb/cc/seqdb.cc")
- (front-context-string . "aVirusType == \"A")
- (rear-context-string . "       else if (")
- (position . 7234))
+(("RTags_1"
+ (filename . "~/AD/sources/acmacs-chart-2/cc/titers.cc")
+ (front-context-string . "update(acmacs::c")
+ (rear-context-string . ":chart::Titers::")
+ (position . 6923))
 ("RTags_0"
- (filename . "~/AD/sources/seqdb/cc/seqdb.cc")
- (front-context-string . "aVirusType == \"B")
- (rear-context-string . ") {\n        if (")
- (position . 6917))
+ (filename . "~/AD/sources/acmacs-chart-2/cc/titers.cc")
+ (front-context-string . "update(acmacs::c")
+ (rear-context-string . ":chart::Titers::")
+ (position . 6402))
 ("r"
  (filename . "~/AD/sources/signature-page/cc/antigenic-maps-layout.cc")
  (front-context-string . "    if (report_a")
