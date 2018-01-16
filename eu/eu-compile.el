@@ -75,6 +75,11 @@
             nil
           (eu-compile-find-makefile pattern up-dir stop-directory))))))
 
+(global-set-key [f9] 'eu-compile)
+(global-set-key [C-f9] 'eu-compile-autoclose)
+(global-set-key [kp-8] 'eu-compile-no-ask)
+(global-set-key [A-f9] 'eu-compile-cd-pwd)
+
 ;; ----------------------------------------------------------------------
 ; kill compilation by sending SIGINT, then SIGQUIT, then SIGKILL
 ;; ----------------------------------------------------------------------
@@ -143,7 +148,13 @@
 ;----------------------------------------------------------------------
 
 (defun eu-compile-autoclose (command)
-  (interactive)
+  (interactive
+   (list
+    (let ((command (eval compile-command)))
+      (if (or compilation-read-command current-prefix-arg)
+          (compilation-read-command command)
+        command))))
+  (save-some-buffers t)
   (compilation-start command nil 'eu-compile-autoclose-name))
 
 (defun eu-compile-autoclose-name (mode)

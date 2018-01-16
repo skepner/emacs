@@ -165,11 +165,6 @@
 (define-key compilation-mode-map [mouse-3] 'compile-mouse-goto-error)
 (define-key compilation-mode-map [down-mouse-2] 'msb)
 
-(global-set-key [f9] 'eu-compile)
-(global-set-key [C-f9] 'eu-compile-no-ask)
-(global-set-key [kp-8] 'eu-compile-no-ask)
-(global-set-key [A-f9] 'eu-compile-cd-pwd)
-
 ;----------------------------------------------------------------------
 ; Scroll Other Window by Meta-Arrows
 ;----------------------------------------------------------------------
