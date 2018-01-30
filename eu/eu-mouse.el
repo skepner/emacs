@@ -23,7 +23,7 @@
 
 ; disable wheel for magic mouse
 (global-set-key [wheel-up] 'eu-nope)
-(global-set-key [wheel-down] 'eu-nope)
+;(global-set-key [wheel-down] 'eu-nope)
 (global-set-key [wheel-left] 'forward-sexp)
 (global-set-key [wheel-right] 'backward-sexp)
 
@@ -34,6 +34,16 @@
 ;; (global-set-key [C-down-mouse-1] 'eu-nope)
 ;; (global-set-key [C-drag-mouse-1] 'eu-nope)
 ;; (global-set-key [C-up-mouse-1] 'eu-nope)
+
+;; ----------------------------------------------------------------------
+; wheel
+;; ----------------------------------------------------------------------
+
+(defun eu-wheel-down () (interactive) (if (not (one-window-p)) (scroll-other-window 1)))
+(defun eu-wheel-up () (interactive) (if (not (one-window-p)) (scroll-other-window -1)))
+
+(global-set-key [wheel-down] 'eu-wheel-down)
+(global-set-key [wheel-up] 'eu-wheel-up)
 
 ;----------------------------------------------------------------------
 
