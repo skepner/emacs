@@ -37,7 +37,7 @@
                    ["list whocc" (eu-compile-push-history "aw -h albertine aw-chain.py list-whocc") t]
                    ["list users" (eu-compile-push-history "aw -h albertine aw-user.py list") t]
                    "-"
-                   ["aw command samples" (find-file "~/ac/acmacs/docs/template") t]
+                   ["aw command samples (template)" (find-file "~/ac/acmacs/docs/template") t]
                    )
                   ("AD"
                    ["remake-all R" (eu-compile-push-history "ad remake-all T=R") t]
