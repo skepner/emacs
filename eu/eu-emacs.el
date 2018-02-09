@@ -229,7 +229,7 @@
 (add-to-list 'load-path (concat eu-emacs-package-dir-root "neotree"))
 (require 'neotree)
 (global-set-key [A-f8] 'neotree-toggle)
-(global-set-key [kp-4] 'neotree-toggle)
+(global-set-key [M-kp-4] 'neotree-toggle)
 
 ; speedbar
 (require 'sr-speedbar)
