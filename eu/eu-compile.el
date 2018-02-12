@@ -75,11 +75,6 @@
             nil
           (eu-compile-find-makefile pattern up-dir stop-directory))))))
 
-(global-set-key [f9] 'eu-compile)
-(global-set-key [C-f9] 'eu-compile-autoclose)
-(global-set-key [kp-8] 'eu-compile-no-ask)
-(global-set-key [A-f9] 'eu-compile-cd-pwd)
-
 ;; ----------------------------------------------------------------------
 ; kill compilation by sending SIGINT, then SIGQUIT, then SIGKILL
 ;; ----------------------------------------------------------------------
@@ -168,6 +163,11 @@
 
 (add-hook 'compilation-finish-functions 'eu-compile-autoclose-finish-hook)
 
+(defun eu-compile-autoclose-no-ask ()
+  (interactive)
+  (let ((compilation-read-command nil))
+    (call-interactively 'eu-compile-autoclose)))
+
 ;----------------------------------------------------------------------
 ; Shrink compilation window
 ;----------------------------------------------------------------------
@@ -178,7 +178,18 @@
 
 (add-hook 'compilation-finish-functions 'eu-shrink-compilation-window)
 
-;----------------------------------------------------------------------
+;; ----------------------------------------------------------------------
+;; keys
+;; ----------------------------------------------------------------------
+
+(global-set-key [f9] 'eu-compile)
+(global-set-key [C-f9] 'eu-compile-autoclose)
+(global-set-key [kp-8] 'eu-compile-no-ask)
+(global-set-key [kp-7] 'eu-compile-autoclose-no-ask)
+(global-set-key [A-f9] 'eu-compile-cd-pwd)
+
+
+;; ----------------------------------------------------------------------
 
 (provide 'eu-compile)
 
