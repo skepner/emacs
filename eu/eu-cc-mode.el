@@ -412,6 +412,27 @@
 ;;  (define-key c++-mode-map (kbd "A-C-Z") 'rtags-location-stack-visualize)
 
 ;; ----------------------------------------------------------------------
+;; clang format
+;; ----------------------------------------------------------------------
+
+;; https://clang.llvm.org/docs/ClangFormat.html
+(let ((clang-format-lib "/usr/local/opt/llvm/share/clang/clang-format.el"))
+  (if (file-readable-p clang-format-lib)
+      (progn
+        (load clang-format-lib)
+        (define-key c++-mode-map [C-A-tab] 'clang-format-region)
+        (define-key c-mode-map [C-A-tab] 'clang-format-region))))
+
+;; ----------------------------------------------------------------------
+;; clang rename
+;; ----------------------------------------------------------------------
+
+(let ((clang-rename-lib "/usr/local/opt/llvm/share/clang/clang-rename.el"))
+  (if (file-readable-p clang-rename-lib)
+      (progn
+        (load clang-rename-lib))))
+
+;; ----------------------------------------------------------------------
 
 (provide 'eu-cc-mode)
 
