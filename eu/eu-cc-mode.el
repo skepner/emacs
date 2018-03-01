@@ -421,7 +421,16 @@
       (progn
         (load clang-format-lib)
         (define-key c++-mode-map [C-A-tab] 'clang-format-region)
-        (define-key c-mode-map [C-A-tab] 'clang-format-region))))
+        (define-key c-mode-map [C-A-tab] 'clang-format-region)
+
+        (defun eu-clang-fromat-sexp ()
+          (interactive)
+          (save-excursion
+            (mark-sexp)
+            (clang-format-region (region-beginning) (region-end))
+            (pulse-momentary-highlight-region (region-beginning) (region-end))))
+        (define-key c++-mode-map (kbd "A-e") 'eu-clang-fromat-sexp)
+)))
 
 ;; ----------------------------------------------------------------------
 ;; clang rename
