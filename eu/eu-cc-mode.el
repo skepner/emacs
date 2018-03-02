@@ -426,7 +426,7 @@
         (defun eu-clang-fromat-sexp ()
           (interactive)
           (save-excursion
-            (mark-sexp)
+            (mark-defun) ; (mark-sexp)
             (clang-format-region (region-beginning) (region-end))
             (pulse-momentary-highlight-region (region-beginning) (region-end))))
         (define-key c++-mode-map (kbd "A-e") 'eu-clang-fromat-sexp)
