@@ -2,6 +2,8 @@
 ; helm
 ;; ----------------------------------------------------------------------
 
+(require 'helm-swoop)
+
 (global-set-key [f4] 'helm-mini)
 (global-set-key [C-f4] 'helm-imenu)
 (global-set-key [M-f4] 'helm-resume)
@@ -10,11 +12,18 @@
 (global-set-key (kbd "C-M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-M-f") 'helm-find-files)
 (global-set-key (kbd "C-M-l") 'helm-locate)
+(global-set-key (kbd "C-M-m") 'helm-man-woman)
 (global-set-key (kbd "C-M-o") 'helm-occur)
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-h a") 'helm-apropos)
+(global-set-key (kbd "C-h c") 'helm-colors)
 (global-set-key (kbd "C-h b") 'helm-descbinds)
 (global-set-key (kbd "C-h m") 'helm-describe-modes)
+(global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
+(global-set-key (kbd "C-h t") 'helm-top)
+(global-set-key (kbd "C-h x") 'helm-register)
 (global-set-key (kbd "C-M-,") 'helm-etags-select)
+(global-set-key (kbd "C-M-s") 'helm-swoop)
 (define-key minibuffer-local-map (kbd "C-M-h") 'helm-minibuffer-history)
 
 (global-set-key (kbd "C-M-p") '(lambda nil (interactive) (helm-find-files-1 "~/D/org")))

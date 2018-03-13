@@ -41,8 +41,9 @@
                       helm-ag
                       helm-descbinds
                       helm-describe-modes
+                      helm-swoop
                       ; helm-projectile
-                      ; helm-dash
+                                        ; helm-dash
                       jq-mode
                       js2-mode
                       json-mode
@@ -56,6 +57,10 @@
                       smartparens
                       typescript-mode
                       yasnippet
+
+                      ;ivy
+                      ;ivy-rtags
+                      ;counsel
                       )
   "A list of packages to ensure are installed at launch.")
 (require 'eu-package)
