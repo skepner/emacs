@@ -2,17 +2,7 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("RTags_1"
- (filename . "~/AD/sources/acmacs-chart-2/cc/titers.cc")
- (front-context-string . "update(acmacs::c")
- (rear-context-string . ":chart::Titers::")
- (position . 6923))
-("RTags_0"
- (filename . "~/AD/sources/acmacs-chart-2/cc/titers.cc")
- (front-context-string . "update(acmacs::c")
- (rear-context-string . ":chart::Titers::")
- (position . 6402))
-("r"
+(("r"
  (filename . "~/AD/sources/signature-page/cc/antigenic-maps-layout.cc")
  (front-context-string . "    if (report_a")
  (rear-context-string . "ind_antigens);\n\n")
