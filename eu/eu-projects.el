@@ -48,6 +48,20 @@
 
 ;; ----------------------------------------------------------------------
 
+(defun eu-project-marina ()
+  (interactive)
+  (global-set-key (kbd "A-i") (eu--project-find-file "~/Shared/experiments/marina.skepner.eu/index.html"))
+  (global-set-key (kbd "A-c") (eu--project-find-file "~/Shared/experiments/marina.skepner.eu/main.css"))
+  (global-set-key (kbd "A-j") (eu--project-find-file "~/Shared/experiments/marina.skepner.eu/main.js"))
+  )
+
+(defun eu-project-chart ()
+  (interactive)
+  (global-set-key (kbd "A-c") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/chart.hh"))
+  (global-set-key (kbd "A-m") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/chart-modify.hh"))
+  (global-set-key (kbd "A-a") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/chart-grid-test.cc"))
+  )
+
 (defun eu-project-seqdb ()
   (interactive)
   (setq eu--project-root-dir "~/AD/sources/seqdb")
