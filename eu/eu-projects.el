@@ -57,9 +57,15 @@
 
 (defun eu-project-chart ()
   (interactive)
+  (global-set-key (kbd "A-a") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/chart-grid-test.cc"))
   (global-set-key (kbd "A-c") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/chart.hh"))
   (global-set-key (kbd "A-m") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/chart-modify.hh"))
-  (global-set-key (kbd "A-a") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/chart-grid-test.cc"))
+  (global-set-key (kbd "A-g") (eu--project-find-file "/Users/eu/AD/sources/acmacs-chart-2/cc/grid-test.hh"))
+  )
+
+(defun eu-project-acmacs-r ()
+  (interactive)
+  (global-set-key (kbd "A-a") (eu--project-find-file "/Users/eu/AD/sources/acmacs.r/src/acmacs.cpp"))
   )
 
 (defun eu-project-seqdb ()
