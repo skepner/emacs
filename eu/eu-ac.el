@@ -43,12 +43,14 @@
 
 (defun eu-rename-buffer ()
   (interactive)
-  (let ((dirs (split-string (buffer-file-name) "/")))
+  (let* ((dirs (split-string (buffer-file-name) "/"))
+         (prefix (if (equal (nth 1 dirs) "scp:i19:") "@i19 " "")))
+    (message (concat "prefix: " prefix))
     (catch 'eu-buffer-renamed
       (dolist (kdir '("acmacs" "python" "GH" "sources"))
         (let ((subl (cdr (member kdir dirs))))
           (if subl
-              (and (rename-buffer (mapconcat 'identity subl "  ")) (throw 'eu-buffer-renamed 1))))))))
+              (and (rename-buffer (concat prefix (mapconcat 'identity subl "  "))) (throw 'eu-buffer-renamed 1))))))))
 
 (defun eu-rename-buffer-old ()
   (interactive)
