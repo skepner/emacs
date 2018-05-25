@@ -6,15 +6,15 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq interpreter-mode-alist (cons '("node" . js2-mode) interpreter-mode-alist))
 
-(add-hook 'js2-mode-hook 'eu-js2-mode-setup)
-
 (defun eu-js2-mode-setup ()
   (interactive)
   (modify-syntax-entry ?_ "w" js2-mode-syntax-table)
-  (define-key js2-mode-map [C-right] 'forward-word)
-  (define-key js2-mode-map [M-right] 'forward-sexp)
-  (define-key js2-mode-map [C-left] 'backward-word)
-  (define-key js2-mode-map [M-left] 'backward-sexp)
+  (define-key js2-mode-map [C-right] 'forward-sexp)
+  (define-key js2-mode-map [M-right] 'forward-paragraph)
+  (define-key js2-mode-map [A-right] 'forward-word)
+  (define-key js2-mode-map [C-left] 'backward-sexp)
+  (define-key js2-mode-map [M-left] 'backward-paragraph)
+  (define-key js2-mode-map [A-left] 'backward-word)
   (define-key js2-mode-map [home] 'js2-beginning-of-line)
   (define-key js2-mode-map [end] 'js2-end-of-line)
   (define-key js2-mode-map [f8] 'next-error)
@@ -24,6 +24,9 @@
   (set (make-local-variable 'electric-indent-chars) '(?{ ?} ?( ?) ?[ ?] ?: ?\; ?, ?* ?\n))
   (electric-indent-mode t)
 )
+
+(add-hook 'js-mode-hook 'eu-js2-mode-setup)
+
 
 ;----------------------------------------------------------------------
 ; Coffeescript
