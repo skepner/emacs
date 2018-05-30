@@ -44,8 +44,9 @@
                    ["remake-all D" (eu-compile-push-history "ad remake-all T=D") t]
                    )
                   ("SSM"
-                   ["SSM report preparation" (find-file "/scp:i19:/syn/WebSites/Protected/eu/who-vcm/index.html") t]
+                   ["SSM report preparation index" (find-file "/scp:i19:/syn/WebSites/Protected/eu/who-vcm/index.html") t]
                    ["SSM report index" (find-file "/scp:i19:/syn/WebSites/Protected/ssmreport/index.html") t]
+                   ["SSM report preparation instructions" (find-file "~/AD/sources/ssm-report/doc/report-prepare.org") t]
                    "-"
                    ["edit information-list-vaccines" (find-file "~/ac/acmacs/acmacs-web/data/information-list-vaccines.pydata.bz2" t) t]
                    ["update on localhost and albertine" (eu-compile-push-history "~/ac/acmacs/scripts/acmacs-web-update-vaccines") t]
