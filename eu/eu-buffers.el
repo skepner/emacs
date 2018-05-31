@@ -37,7 +37,7 @@
     ((and buffer-file-name (string-match "/AD/sources/acmacs-whocc" buffer-file-name) 'multi) 21 "AD/acmacs-whocc (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs.r" buffer-file-name) 'multi) 21 "AD/acmacs.r (%d)")
     ((and buffer-file-name (string-match "/AD/sources/hidb-5" buffer-file-name) 'multi) 21 "AD/hidb-5 (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/hidb" buffer-file-name)) 21 "AD/hidb-4 (%d)")
+    ; ((and buffer-file-name (string-match "/AD/sources/hidb" buffer-file-name)) 21 "AD/hidb-4 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/locationdb" buffer-file-name) 'multi) 21 "AD/locationdb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/seqdb/" buffer-file-name) 'multi) 21 "AD/seqdb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name) 'multi) 21 "AD/signature-page (%d)")
