@@ -46,7 +46,7 @@
 (global-set-key [M-f3] '(lambda () (interactive) (helm-do-ag "~/AD/sources")))
 
 ; acmacs-c
-(global-set-key (kbd "C-M-a") '(lambda nil (interactive) (helm-find-1 "~/ac/acmacs")))
+(global-set-key [A-M-f3] '(lambda () (interactive) (helm-do-ag "~/ac/acmacs")))
 
 ;; ----------------------------------------------------------------------
 
