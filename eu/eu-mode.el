@@ -123,7 +123,14 @@
 (add-hook 'typescript-mode-hook 'eu-func-delimiter-set-hook)
 (add-hook 'sh-mode-hook 'eu-func-delimiter-set-hook)
 
-;----------------------------------------------------------------------
+;;----------------------------------------------------------------------
+; org-mode
+;; ----------------------------------------------------------------------
+
+(with-eval-after-load 'org-mode
+  '(define-key org-mode-map [C-tab] 'hippie-expand))
+
+;; ----------------------------------------------------------------------
 
 (provide 'eu-mode)
 
