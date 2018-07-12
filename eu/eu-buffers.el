@@ -31,6 +31,7 @@
     ((and buffer-file-name (string-match "/AD/sources/acmacs-chart-2/" buffer-file-name) 'multi) 21 "AD/acmacs-chart-2 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-chart-1/" buffer-file-name)) 21 "AD/acmacs-chart-1 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-draw/" buffer-file-name) 'multi) 21 "AD/acmacs-draw (%d)")
+    ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/js/ace-view/201807/" buffer-file-name) 'multi) 21 "AD ace-view/201807 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/" buffer-file-name) 'multi) 21 "AD/acmacs-map-draw (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-tree-maker" buffer-file-name) 'multi) 21 "AD/tree-maker (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-webserver" buffer-file-name) 'multi) 21 "AD/acmacs-webserver (%d)")
