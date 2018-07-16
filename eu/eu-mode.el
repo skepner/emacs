@@ -48,18 +48,17 @@
 
 (defun eu-python-mode-setup ()
   (interactive)
-  (set (make-local-variable 'electric-indent-chars) '()))
+  (set (make-local-variable 'electric-indent-chars) '())
+  (define-key python-mode-map [?\A-\M-t] '(lambda () (interactive) (insert "True")))
+  (define-key python-mode-map [?\A-\M-f] '(lambda () (interactive) (insert "False")))
+  (define-key python-mode-map [?\A-\M-n] '(lambda () (interactive) (insert "None")))
+  (define-key python-mode-map "\r" 'py-newline-and-indent)
+  (define-key python-mode-map (kbd "<return>") 'py-newline-and-indent)
+  (define-key python-mode-map [?\C-j] 'newline)
+  )
 
 (add-hook 'python-mode-hook 'eu-python-mode-setup)
-
 (add-hook 'python-mode-hook 'abbrev-mode)
-
-(define-key python-mode-map [?\A-\M-t] '(lambda () (interactive) (insert "True")))
-(define-key python-mode-map [?\A-\M-f] '(lambda () (interactive) (insert "False")))
-(define-key python-mode-map [?\A-\M-n] '(lambda () (interactive) (insert "None")))
-(define-key python-mode-map "\r" 'py-newline-and-indent)
-(define-key python-mode-map (kbd "<return>") 'py-newline-and-indent)
-(define-key python-mode-map [?\C-j] 'newline)
 
 (defun eu-python-indent-line ()
   (interactive)

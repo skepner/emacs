@@ -1,8 +1,18 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("r"
+(("RTags_1"
+ (filename . "~/AD/sources/acmacs-chart-2/cc/common.cc")
+ (front-context-string . "ChartData(const ")
+ (rear-context-string . ":AntigenEntry>::")
+ (position . 6145))
+("RTags_0"
+ (filename . "~/AD/sources/acmacs-chart-2/cc/common.cc")
+ (front-context-string . "antigens_;\n    C")
+ (rear-context-string . "a<AntigenEntry> ")
+ (position . 5188))
+("r"
  (filename . "~/AD/sources/signature-page/cc/antigenic-maps-layout.cc")
  (front-context-string . "    if (report_a")
  (rear-context-string . "ind_antigens);\n\n")
