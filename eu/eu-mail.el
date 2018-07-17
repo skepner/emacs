@@ -26,32 +26,32 @@
        ;; mu4e
        ;; ----------------------------------------------------------------------
 
-       (add-to-list 'load-path (car (last (file-expand-wildcards "/usr/local/Cellar/mu/*/share/emacs/site-lisp/mu/mu4e" t))))
-       (require 'mu4e)
+       ;; (add-to-list 'load-path (car (last (file-expand-wildcards "/usr/local/Cellar/mu/*/share/emacs/site-lisp/mu/mu4e" t))))
+       ;; (require 'mu4e)
 
-       (defun eu-mu4e ()
-         (interactive)
-         (let ((mbsync-root "/r/mail/mbsync/"))
-           (if (not (file-accessible-directory-p (concat mbsync-root "drafts")))
-               (progn
-                 (make-directory (concat mbsync-root "drafts") t)
-                 (make-directory (concat mbsync-root "sent") t)
-                 (make-directory (concat mbsync-root "trash") t)
-                 (shell-command "mu index -m /r/mail/mbsync")
-                 )))
-         (mu4e-update-mail-and-index nil)
-         (mu4e~headers-jump-to-maildir "/INBOX"))
+       ;; (defun eu-mu4e ()
+       ;;   (interactive)
+       ;;   (let ((mbsync-root "/r/mail/mbsync/"))
+       ;;     (if (not (file-accessible-directory-p (concat mbsync-root "drafts")))
+       ;;         (progn
+       ;;           (make-directory (concat mbsync-root "drafts") t)
+       ;;           (make-directory (concat mbsync-root "sent") t)
+       ;;           (make-directory (concat mbsync-root "trash") t)
+       ;;           (shell-command "mu index -m /r/mail/mbsync")
+       ;;           )))
+       ;;   (mu4e-update-mail-and-index nil)
+       ;;   (mu4e~headers-jump-to-maildir "/INBOX"))
 
-       (defun eu-mu4e-compose-mode-init ()
-         (flyspell-mode))
+       ;; (defun eu-mu4e-compose-mode-init ()
+       ;;   (flyspell-mode))
 
-       (add-hook 'mu4e-compose-mode-hook 'eu-mu4e-compose-mode-init)
+       ;; (add-hook 'mu4e-compose-mode-hook 'eu-mu4e-compose-mode-init)
 
-       (global-set-key [(control shift return)] 'eu-mu4e)
+       ;; (global-set-key [(control shift return)] 'eu-mu4e)
 
-       (define-key mu4e-headers-mode-map [f3] 'mu4e-update-mail-and-index)
-       (define-key mu4e-view-mode-map [f3] 'mu4e-update-mail-and-index)
-       (define-key mu4e-view-mode-map (kbd "r") 'mu4e-compose-reply)
+       ;; (define-key mu4e-headers-mode-map [f3] 'mu4e-update-mail-and-index)
+       ;; (define-key mu4e-view-mode-map [f3] 'mu4e-update-mail-and-index)
+       ;; (define-key mu4e-view-mode-map (kbd "r") 'mu4e-compose-reply)
 
        ;; ----------------------------------------------------------------------
        ;; Wanderlust

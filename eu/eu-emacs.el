@@ -253,6 +253,15 @@
 (auto-complete-mode)
 
 ;; ----------------------------------------------------------------------
+;; yasnippet
+;; ----------------------------------------------------------------------
+
+(require 'yasnippet)
+
+;; https://joaotavora.github.io/yasnippet/snippet-expansion.html
+(define-key yas-minor-mode-map (kbd "<S-tab>") #'yas-expand)
+
+;; ----------------------------------------------------------------------
 
 (provide 'eu-emacs)
 
