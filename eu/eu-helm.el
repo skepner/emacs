@@ -9,6 +9,7 @@
 (global-set-key [M-f4] 'helm-resume)
 (global-set-key (kbd "C-M-i") 'helm-semantic-or-imenu)
 (define-key python-mode-map (kbd "C-M-i") 'helm-semantic-or-imenu)
+(define-key emacs-lisp-mode-map (kbd "C-M-i") 'helm-semantic-or-imenu)
 (global-set-key (kbd "C-M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-M-f") 'helm-find-files)
 (global-set-key (kbd "C-M-l") 'helm-locate)

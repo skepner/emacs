@@ -248,9 +248,9 @@
 ;; auto-complete
 ;; ----------------------------------------------------------------------
 
-(require 'auto-complete)
-(ac-config-default)
-(auto-complete-mode)
+;; (require 'auto-complete)
+;; (ac-config-default)
+;; (auto-complete-mode)
 
 ;; ----------------------------------------------------------------------
 ;; yasnippet
