@@ -29,7 +29,7 @@
     ((and buffer-file-name (string-match "/AD/sources/acmacs-api/js" buffer-file-name) 'multi) 21 "AD/acmacs-api JS (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-api/client" buffer-file-name)) 21 "AD/acmacs-api OLD client (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-chart-2/" buffer-file-name) 'multi) 21 "AD/acmacs-chart-2 (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/acmacs-chart-1/" buffer-file-name)) 21 "AD/acmacs-chart-1 (%d)")
+    ;; ((and buffer-file-name (string-match "/AD/sources/acmacs-chart-1/" buffer-file-name)) 21 "AD/acmacs-chart-1 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-draw/" buffer-file-name) 'multi) 21 "AD/acmacs-draw (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/js/ace-view/201807/" buffer-file-name) 'multi) 21 "AD ace-view/201807 (%d)")
     ((and buffer-file-name (string-match "/AD/sources/acmacs-map-draw/" buffer-file-name) 'multi) 21 "AD/acmacs-map-draw (%d)")
@@ -43,7 +43,7 @@
     ((and buffer-file-name (string-match "/AD/sources/seqdb/" buffer-file-name) 'multi) 21 "AD/seqdb (%d)")
     ((and buffer-file-name (string-match "/AD/sources/signature-page" buffer-file-name) 'multi) 21 "AD/signature-page (%d)")
     ((and buffer-file-name (string-match "/AD/sources/ssm-report/" buffer-file-name)) 21 "AD/ssm-report (%d)")
-    ((and buffer-file-name (string-match "/AD/sources/ssm-report-n" buffer-file-name)) 21 "AD/ssm-report-n (%d)")
+    ;; ((and buffer-file-name (string-match "/AD/sources/ssm-report-n" buffer-file-name)) 21 "AD/ssm-report-n (%d)")
 
     ((and buffer-file-name (string-match "/Shared/experiments" buffer-file-name) 'multi) 21 "experiments (%d)")
 
@@ -51,8 +51,10 @@
     ; ((and buffer-file-name (string-match "/AD/sources/seqdb-make-tree-signature-page" buffer-file-name) 'multi) 32 "AD/seqdb-make-tree-signature-page (%d)")
 
 
-    ((and buffer-file-name (string-match "/Shared/AC/Projects/old/ssm-report" buffer-file-name) 'multi) 51 "old/ssm-report (%d)")
-    ((and buffer-file-name (string-match "/Shared/AC/Projects/old/seqdb" buffer-file-name) 'multi) 52 "old/seqdb (%d)")
+    ;; ((and buffer-file-name (string-match "/Shared/AC/Projects/old/ssm-report" buffer-file-name) 'multi) 51 "old/ssm-report (%d)")
+    ;; ((and buffer-file-name (string-match "/Shared/AC/Projects/old/seqdb" buffer-file-name) 'multi) 52 "old/seqdb (%d)")
+
+    ((and buffer-file-name (string-match "/results/ssm/" buffer-file-name)) 21 "SSM data (%d)")
 
                                         ; ----------------------------------------------------------------------
 
