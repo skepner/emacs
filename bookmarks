@@ -3,15 +3,15 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("RTags_1"
- (filename . "~/AD/sources/acmacs-chart-2/cc/common.cc")
- (front-context-string . "ChartData(const ")
- (rear-context-string . ":AntigenEntry>::")
- (position . 6145))
+ (filename . "~/AD/sources/acmacs-base/cc/indexes.hh")
+ (front-context-string . "ReverseSortedInd")
+ (rear-context-string . "  };\n\n    class ")
+ (position . 417))
 ("RTags_0"
- (filename . "~/AD/sources/acmacs-chart-2/cc/common.cc")
- (front-context-string . "antigens_;\n    C")
- (rear-context-string . "a<AntigenEntry> ")
- (position . 5188))
+ (filename . "~/AD/sources/acmacs-base/cc/indexes.hh")
+ (front-context-string . "ReverseSortedInd")
+ (rear-context-string . "       explicit ")
+ (position . 633))
 ("r"
  (filename . "~/AD/sources/signature-page/cc/antigenic-maps-layout.cc")
  (front-context-string . "    if (report_a")

@@ -187,6 +187,20 @@ Antigenic Cartography
   (setq mode-name "whocc-scan2"))
 
 ;; ----------------------------------------------------------------------
+
+(defvar eu-ad-output-highlights
+  '(
+    ("^ *[Ww][Aa][Rr][Nn][^ ]*" . compilation-warning-face)
+    ("^ *[Ee][Rr][Rr][^ ]*" . compilation-error-face)
+    ("^ *INFO[^ ]*" . font-lock-constant-face)
+    ("^=[= A-Za-z]*" . makefile-space)
+    ))
+
+(define-derived-mode eu-ad-output-mode fundamental-mode
+  (setq font-lock-defaults '(eu-ad-output-highlights))
+  (setq mode-name "eu-ad-output"))
+
+;; ----------------------------------------------------------------------
 ;; Compilation mode acmacs log highlighting
 ;; ----------------------------------------------------------------------
 
