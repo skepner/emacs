@@ -193,12 +193,22 @@ Antigenic Cartography
     ("^ *[Ww][Aa][Rr][Nn][^ ]*" . compilation-warning-face)
     ("^ *[Ee][Rr][Rr][^ ]*" . compilation-error-face)
     ("^ *INFO[^ ]*" . font-lock-constant-face)
+    ("^ *DEBUG[^ ]*" . font-lock-comment-face)
     ("^=[= A-Za-z]*" . makefile-space)
     ))
 
 (define-derived-mode eu-ad-output-mode fundamental-mode
   (setq font-lock-defaults '(eu-ad-output-highlights))
   (setq mode-name "eu-ad-output"))
+
+(define-derived-mode eu-shell-mode shell-mode
+  (setq font-lock-defaults '(eu-ad-output-highlights))
+  (setq mode-name "eu-shell-mode"))
+
+(global-set-key [?\M-#] 'eu-shell-mode)
+
+;(global-set-key [?\M-#] '(lambda () (interactive) (setq font-lock-defaults eu-ad-output-highlights)))
+                           ; eu-ad-output-mode)
 
 ;; ----------------------------------------------------------------------
 ;; Compilation mode acmacs log highlighting
