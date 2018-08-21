@@ -261,6 +261,23 @@
 ;; https://joaotavora.github.io/yasnippet/snippet-expansion.html
 (define-key yas-minor-mode-map (kbd "<S-tab>") #'yas-expand)
 
+;;----------------------------------------------------------------------
+; org-mode
+;; ----------------------------------------------------------------------
+
+(require 'org-mode)
+;; (with-eval-after-load 'org-mode
+;;   '(define-key org-mode-map (kbd "C-tab") 'hippie-expand))
+(define-key org-mode-map (kbd "<C-tab>") 'hippie-expand)
+
+;; ----------------------------------------------------------------------
+;; col-highlight
+;; ----------------------------------------------------------------------
+
+(require 'col-highlight)
+;(global-set-key (kbd "C-+") '(lambda () (interactive) (flash-column-highlight)))
+(global-set-key (kbd "C-+") '(lambda () (interactive) (if column-highlight-mode (column-highlight-mode -1) (column-highlight-mode 1))))
+
 ;; ----------------------------------------------------------------------
 
 (provide 'eu-emacs)
