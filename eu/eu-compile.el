@@ -57,7 +57,7 @@
                ((not makefile) (concat "cd " dir " && c2 ./" (file-name-nondirectory (buffer-file-name))))
                ((string-match "im" basename) (concat "cd " dirname " && c2 ./im"))
                ((string-match "\\.cabal$" basename) (concat "cd " dirname " && cabal install -j"))
-               ((and (string-match "Makefile" basename) (string-match "/AD/" dirname)) (concat "gtime gmake -w -C " dirname " -j8 -k T=D"))
+               ((and (string-match "Makefile" basename) (string-match "/AD/" dirname)) (concat "gtime gmake -w -C " dirname " -j8 -k T=R"))
                ((string-match "Makefile" basename) (concat "gmake -w -C " dirname " -j8 -k"))
                ((string-match "CMakeLists.txt" basename) (concat "gmake -w -C " dirname "/build -j8 -k"))
                ((string-match "\\.py$" basename) (concat "cd " dirname " && c2 ./" basename))
