@@ -157,7 +157,9 @@
 (global-set-key [?\A-\M-3] '(lambda () (interactive) (eu-switch-to-compilation-buffer 3)))
 (global-set-key [?\A-\M-4] '(lambda () (interactive) (eu-switch-to-compilation-buffer 4)))
 (global-set-key [?\A-\M-5] '(lambda () (interactive) (eu-switch-to-compilation-buffer 5)))
+(global-set-key [?\A-\M-6] '(lambda () (interactive) (eu-switch-to-compilation-buffer 6)))
 (global-set-key [?\A-\M-0] 'eu-switch-to-compilation-autoclose-buffer)
+(global-set-key [?\A-\M--] 'eu-switch-to-shell-command-output)
 
 (global-set-key "\C-cr" 'rename-uniquely)
 ;(define-key compilation-mode-map [mouse-2] 'c++-demangle-mouse)

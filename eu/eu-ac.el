@@ -207,6 +207,12 @@ Antigenic Cartography
 
 (global-set-key [?\M-#] 'eu-shell-mode)
 
+(define-derived-mode eu-log-fundametal-mode fundamental-mode
+  (setq font-lock-defaults '(eu-ad-output-highlights))
+  (setq mode-name "eu-log-fundametal-mode"))
+
+(global-set-key [?\M-\C-#] 'eu-log-fundametal-mode)
+
 ;(global-set-key [?\M-#] '(lambda () (interactive) (setq font-lock-defaults eu-ad-output-highlights)))
                            ; eu-ad-output-mode)
 
@@ -242,6 +248,18 @@ Antigenic Cartography
 
 (fset 'ac-key-mapper
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([123 34 f1 C-right 134217847 34 44 32 75 101 121 115 58 58 25 125 right return] 0 "%d")) arg)))
+
+;; ----------------------------------------------------------------------
+;; serology
+
+(require 'org)
+
+(defun eu-sexp-shell ()
+  (interactive)
+  (mark-sexp)
+  (call-interactively 'shell-command-on-region))
+
+(define-key org-mode-map (kbd "C-|") 'eu-sexp-shell)
 
 ;; ----------------------------------------------------------------------
 

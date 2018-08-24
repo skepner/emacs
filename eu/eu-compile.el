@@ -9,17 +9,21 @@
 ; switch to compilation buffer
 ;----------------------------------------------------------------------
 
+(defun eu-switch-to-buffer (bname)
+  (let ((b (get-buffer bname)))
+    (if b (switch-to-buffer b) (progn (beep) (message (format "No buffer %s" bname))))))
+
 (defun eu-switch-to-compilation-buffer (p)
   (interactive "p")
-  (let* ((bname (if (> p 1) (format "*compilation*<%d>" p) "*compilation*"))
-         (b (get-buffer bname)))
-    (if b (switch-to-buffer b) (progn (beep) (message (format "No buffer %s" bname))))))
+  (eu-switch-to-buffer (if (> p 1) (format "*compilation*<%d>" p) "*compilation*")))
 
 (defun eu-switch-to-compilation-autoclose-buffer ()
   (interactive)
-  (let* ((bname "*compilation-autoclose*")
-         (b (get-buffer bname)))
-    (if b (switch-to-buffer b) (progn (beep) (message (format "No buffer %s" bname))))))
+  (eu-switch-to-buffer "*compilation-autoclose*"))
+
+(defun eu-switch-to-shell-command-output ()
+  (interactive)
+  (eu-switch-to-buffer "*Shell Command Output*"))
 
 ;; (global-unset-key "\C-b")
 ;; (global-set-key "\C-b\C-c" 'eu-switch-to-compilation-buffer)
