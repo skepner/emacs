@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ld
+# key: ld
+# --
+std::cerr << "DEBUG: $1" $0<< '\n';
