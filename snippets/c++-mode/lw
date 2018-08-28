@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lw
+# key: lw
+# --
+std::cerr << "WARNING: $1" $0<< '\n';

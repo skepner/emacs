@@ -13,7 +13,7 @@
 (global-set-key (kbd "C-M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-M-f") 'helm-find-files)
 (global-set-key (kbd "C-M-l") 'helm-locate)
-(global-set-key (kbd "C-M-m") 'helm-man-woman)
+(global-set-key [C-M-f1] 'helm-man-woman)
 (global-set-key (kbd "C-M-o") 'helm-occur)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-h a") 'helm-apropos)
