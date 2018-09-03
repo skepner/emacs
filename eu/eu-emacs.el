@@ -269,6 +269,7 @@
 ;; (with-eval-after-load 'org-mode
 ;;   '(define-key org-mode-map (kbd "C-tab") 'hippie-expand))
 (define-key org-mode-map (kbd "<C-tab>") 'hippie-expand)
+(define-key org-mode-map (kbd "C-c t") '(lambda () (interactive) (insert "* TODO ")))
 
 ;; ----------------------------------------------------------------------
 ;; col-highlight
