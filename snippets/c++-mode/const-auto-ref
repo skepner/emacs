@@ -1,0 +1,4 @@
+# key: ca
+# name: const-auto-ref
+# --
+const auto& 
