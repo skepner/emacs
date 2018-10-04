@@ -221,24 +221,25 @@ Antigenic Cartography
 ;; ----------------------------------------------------------------------
 
 (require 'compile)
-; python messages
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-debug "^ *\\(\\(D\\)EBUG 201.*\\)$" 2 2 2 2 2 (1 font-lock-function-name-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-debug)
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-info "^ *\\(\\(I\\)NFO 201.*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-info)
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-warning "^ *\\(\\(W\\)ARNING 201.*\\)$" 2 2 2 2 2 (1 compilation-warning-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-warning)
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-error "^ *\\(\\(E\\)RROR 201.*\\)$" 2 2 2 2 2 (1 compilation-error-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-error)
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-cpp-message "^ *\\(\\(\\[\\)[A-Za-z0-9\\-_ ]+\\].*\\)$" 2 2 2 2 2 (1 compilation-line-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-error)
-; AD cc messages
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-warning "^ *\\(\\(W\\)ARNING: .*\\)$" 2 2 2 2 2 (1 compilation-warning-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-warning)
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-info "^ *\\(\\(I\\)NFO: .*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-info)
-(add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-debug "^ *\\(\\(D\\)EBUG: .*\\)$" 2 2 2 2 2 (1 font-lock-string-face)))
-(add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-debug)
+
+;; ;; python messages
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-debug "^ *\\(\\(D\\)EBUG 201.*\\)$" 2 2 2 2 2 (1 font-lock-function-name-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-debug)
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-info "^ *\\(\\(I\\)NFO 201.*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-info)
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-warning "^ *\\(\\(W\\)ARNING 201.*\\)$" 2 2 2 2 2 (1 compilation-warning-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-warning)
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-log-error "^ *\\(\\(E\\)RROR 201.*\\)$" 2 2 2 2 2 (1 compilation-error-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-error)
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacs-cpp-message "^ *\\(\\(\\[\\)[A-Za-z0-9\\-_ ]+\\].*\\)$" 2 2 2 2 2 (1 compilation-line-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacs-log-error)
+;; ;; AD cc messages
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-warning "^ *\\(\\(W\\)ARNING: .*\\)$" 2 2 2 2 2 (1 compilation-warning-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-warning)
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-info "^ *\\(\\(I\\)NFO: .*\\)$" 2 2 2 2 2 (1 compilation-info-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-info)
+;; (add-to-list 'compilation-error-regexp-alist-alist '(eu-acmacsd-cc-log-debug "^ *\\(\\(D\\)EBUG: .*\\)$" 2 2 2 2 2 (1 font-lock-string-face)))
+;; (add-to-list 'compilation-error-regexp-alist 'eu-acmacsd-cc-log-debug)
 
 ;; ----------------------------------------------------------------------
 ;; Kb macros

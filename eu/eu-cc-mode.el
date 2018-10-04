@@ -29,6 +29,8 @@
                                       (inline-open           . +)
                                       (inline-close          . 0)
                                       (substatement-open     . 0)
+                                      (inlambda              . 0)
+                                      (innamespace           . 0)
                                       ))
     (c-echo-semantic-information-p . nil)
     )
