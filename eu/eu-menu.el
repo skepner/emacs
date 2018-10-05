@@ -40,6 +40,11 @@
                    ["aw command samples (template)" (find-file "~/ac/acmacs/docs/template") t]
                    )
                   ("AD"
+                   ["clean-all" (eu-compile-push-history "ad clean-all T=R") t]
+                   ["make-all-no-test R" (eu-compile-push-history "ad make-all-no-test T=R") t]
+                   ["make-all-no-test D" (eu-compile-push-history "ad make-all-no-test T=D") t]
+                   ["make-all R" (eu-compile-push-history "ad make-all T=R") t]
+                   ["make-all D" (eu-compile-push-history "ad make-all T=D") t]
                    ["remake-all R" (eu-compile-push-history "ad remake-all T=R") t]
                    ["remake-all D" (eu-compile-push-history "ad remake-all T=D") t]
                    )
