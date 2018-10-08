@@ -30,7 +30,7 @@
                                       (inline-close          . 0)
                                       (substatement-open     . 0)
                                       (inlambda              . 0)
-                                      (innamespace           . 0)
+                                      (innamespace           . 4)
                                       ))
     (c-echo-semantic-information-p . nil)
     )
