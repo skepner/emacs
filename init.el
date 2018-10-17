@@ -23,13 +23,13 @@
 (require 'msb)
 (require 'pulse)
 (require 'recentf)
-(require 'sass-mode)
+;(require 'sass-mode)
 (require 'tex-mode)
 
 ;; ----------------------------------------------------------------------
 
 (defvar eu-packages '(
-                      apache-mode
+                      ;apache-mode
                       applescript-mode
                       coffee-mode
                       csharp-mode       ; for Uno
@@ -65,7 +65,7 @@
   "A list of packages to ensure are installed at launch.")
 (require 'eu-package)
 
-(autoload 'apache-mode "apache-mode" nil t)
+;(autoload 'apache-mode "apache-mode" nil t)
 (autoload 'applescript-mode "applescript-mode" "Major mode for editing AppleScript source." t)
 (require 'coffee-mode)
 (require 'dash-at-point)
