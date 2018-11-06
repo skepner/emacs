@@ -358,6 +358,15 @@
 ;;     (my-c++-insert-header)
 ;;     (next-line -6)))
 
+;; ----------------------------------------------------------------------
+
+(defun eu-fix-less ()
+  (interactive)
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward "<" nil t)
+      (replace-match "<"))))
+
 ;======================================================================
 
 (autoload 'awk-mode "cc-mode" nil t)
