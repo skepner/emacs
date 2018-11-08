@@ -217,6 +217,37 @@ Antigenic Cartography
                            ; eu-ad-output-mode)
 
 ;; ----------------------------------------------------------------------
+
+(defvar eu-whocc-table-prepare2-highlights
+  '(
+    ;("^ *INFO [^ ]*" . font-lock-constant-face)
+    ("^ * WARN[^ ]*" . compilation-warning-face)
+    ("^ * ERR[^ ]*" . compilation-error-face)
+    ;("warning: \\[[^\\]]+\\]" . compilation-warning-face)
+    ("^.+ warning: \\[.+\\]" . compilation-warning-face)
+    ("^.+ error: \\[.+\\]" . compilation-error-face)
+    ;("info: \\[.+\\]" . font-lock-constant-face)
+    ("debug: \\[.+\\]" . font-lock-comment-face)
+    ;("TARGET_DIR:.+" . font-lock-constant-face)
+    (" /Users[^ ]+" . font-lock-constant-face)
+                                        ;(("TARGET_DIR:1: info: \\(.+\\)" 1) . font-lock-constant-face)
+    (" \\(\\(reference\\|test\\) antigens\\|sera\\):[0-9A-Z -]+" . font-lock-function-name-face)
+    ))
+
+(define-derived-mode eu-whocc-table-prepare2-mode fundamental-mode
+  (setq font-lock-defaults '(eu-whocc-table-prepare2-highlights nil t))
+  (setq mode-name "eu-whocc-table-prepare2-mode"))
+
+(defun eu-compilation-mode-hook-whocc-table-prepare2 (buffer string)
+  (save-excursion
+    (set-buffer buffer)
+    (goto-char (point-min))
+    (if (search-forward "\nc2 whocc-table-prepare2.py " nil t)
+        (eu-whocc-table-prepare2-mode))))
+
+(add-hook 'compilation-finish-functions 'eu-compilation-mode-hook-whocc-table-prepare2)
+
+;; ----------------------------------------------------------------------
 ;; Compilation mode acmacs log highlighting
 ;; ----------------------------------------------------------------------
 
