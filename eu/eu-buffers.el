@@ -72,6 +72,7 @@
                                         ; ----------------------------------------------------------------------
 
     ((and buffer-file-name (string-match "/GH/dtra2" buffer-file-name) 'multi) 110 "DTRA2 (%d)")
+    ((and buffer-file-name (string-match "/Nicola-DTRA/" buffer-file-name) 'multi) 110 "DTRA1 (%d)")
     ((and buffer-file-name (string-match "/GH/" buffer-file-name) 'multi) 110 "GH (%d)")
 
                                         ; ----------------------------------------------------------------------
