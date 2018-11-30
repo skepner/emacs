@@ -58,11 +58,13 @@
 
                                         ; ----------------------------------------------------------------------
 
-    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "ac/acmacs/" buffer-file-name) 'multi) 70 "Acmacs Py (%d)")
-    ((and (eq major-mode 'c++-mode) buffer-file-name (not (string-match "\\.sip$" buffer-file-name)) (string-match "acmacs/" buffer-file-name) 'multi) 70 "Acmacs C++ (%d)")
-    ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "\\.sip$" buffer-file-name) (string-match "acmacs/" buffer-file-name) 'multi) 70 "Acmacs Sip (%d)")
-    ((and buffer-file-name (string-match "ac/acmacs/acmacs-web/yui" buffer-file-name) 'multi) 70 "Acmacs YUI (%d)")
-    ((and buffer-file-name (string-match "ac/acmacs/acmacs-web/static" buffer-file-name) 'multi) 70 "Acmacs AW static (%d)")
+    ((and (eq major-mode 'python-mode) buffer-file-name (string-match "ac/acmacs/" buffer-file-name) 'multi) 70 "C2 Py (%d)")
+    ((and (eq major-mode 'c++-mode) buffer-file-name (not (string-match "\\.sip$" buffer-file-name)) (string-match "ac/acmacs/" buffer-file-name) 'multi) 70 "C2 C++ (%d)")
+    ((and (eq major-mode 'c++-mode) buffer-file-name (string-match "\\.sip$" buffer-file-name) (string-match "ac/acmacs/" buffer-file-name) 'multi) 70 "C2 Sip (%d)")
+    ((and buffer-file-name (string-match "ac/acmacs/acmacs-web/yui" buffer-file-name) 'multi) 70 "C2 YUI (%d)")
+    ((and buffer-file-name (string-match "ac/acmacs/acmacs-web/static" buffer-file-name) 'multi) 70 "C2 AW static (%d)")
+
+    ((and buffer-file-name (string-match "ac/acmacs-c3/" buffer-file-name) 'multi) 70 "C3 (%d)")
 
                                         ; ----------------------------------------------------------------------
 
