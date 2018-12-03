@@ -1,0 +1,13 @@
+ad seqdb-clades-for-sera-in-chart ssm-201809-cdc-h3-hi.ace
+ad seqdb-chart-clades ssm-201809-cdc-h3-hi.ace
+ad seqdb-chart-clades ssm-201809-cdc-h3-hi.ace --csv >ssm-201809-cdc-h3-hi.clades.csv
+ad seqdb-chart-clades ssm-201809-cdc-h3-hi.ace --csv >ssm-201809-cdc-h3-hi.clades.csvad seqdb-clades-for-sera-in-chart ssm-201809-cdc-h3-hi.ace
+l
+lt
+ls -lt
+ls -ltr
+rm ssm-201809-cdc-h3-hi.clades.csvad ssm-201809-cdc-h3-hi.clades.csv
+ad seqdb-chart-clades ssm-201809-cdc-h3-hi.ace --csv 
+ad seqdb-chart-clades ssm-201809-cdc-h3-hi.ace --csv >ssm-201809-cdc-h3-hi.clades.csv
+e ssm-201809-cdc-h3-hi.clades.csv 
+exit
