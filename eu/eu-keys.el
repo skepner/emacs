@@ -1,3 +1,8 @@
+; (setq ns-function-modifier 'hyper)      ; apple keybroard, does not work with logitech
+
+(setq ns-right-command-modifier 'hyper)
+(setq ns-right-alternate-modifier 'super)
+
 ;----------------------------------------------------------------------
 ;  All keyboards
 ;----------------------------------------------------------------------
