@@ -47,7 +47,7 @@
          (prefix (if (equal (nth 1 dirs) "scp:i19:") "@i19 " "")))
     (message (concat "prefix: " prefix))
     (catch 'eu-buffer-renamed
-      (dolist (kdir '("acmacs" "python" "GH" "sources"))
+      (dolist (kdir '("acmacs" "acmacs-c3" "python" "GH" "sources"))
         (let ((subl (cdr (member kdir dirs))))
           (if subl
               (and (rename-buffer (concat prefix (mapconcat 'identity subl "  "))) (throw 'eu-buffer-renamed 1))))))))
