@@ -41,12 +41,12 @@
                    )
                   ("AD"
                    ["clean-all" (eu-compile-push-history "ad clean-all T=R") t]
-                   ["make-all-no-test R" (eu-compile-push-history "ad make-all-no-test T=R") t]
-                   ["make-all-no-test D" (eu-compile-push-history "ad make-all-no-test T=D") t]
-                   ["make-all R" (eu-compile-push-history "ad make-all T=R") t]
-                   ["make-all D" (eu-compile-push-history "ad make-all T=D") t]
-                   ["remake-all R" (eu-compile-push-history "ad remake-all T=R") t]
-                   ["remake-all D" (eu-compile-push-history "ad remake-all T=D") t]
+                   ["make-all-no-test R" (eu-compile-push-history "ad make-all-no-test") t]
+                   ["make-all-no-test D" (eu-compile-push-history "ad make-all-no-test DEBUG=1") t]
+                   ["make-all R" (eu-compile-push-history "ad make-all TEST=1") t]
+                   ["make-all D" (eu-compile-push-history "ad make-all TEST=1 DEBUG=1") t]
+                   ["remake-all R" (eu-compile-push-history "ad remake-all TEST=1") t]
+                   ["remake-all D" (eu-compile-push-history "ad remake-all TEST=1 DEBUG=1") t]
                    )
                   ("SSM"
                    ["SSM report preparation index" (find-file "/scp:i19:/syn/WebSites/Protected/eu/who-vcm/index.html") t]
