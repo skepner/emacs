@@ -85,8 +85,6 @@
                                       try-expand-dabbrev-all-buffers
                                       try-expand-line)))
 
-  (define-key c++-mode-map "\C-cb" 'eu-br-find)
-
   (define-key c-mode-base-map "\C-c\C-k" 'eu-comment-word)
   (define-key c-mode-base-map "\C-c\C-r" 'eu-comment-region)
 
